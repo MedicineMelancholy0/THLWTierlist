@@ -51,12 +51,26 @@
                 <option value="dark">dark</option>
                 <option value="light">light</option>
             </select>
-        </div>   
+        </div>
+
     <a href='src/assets/title1.png' target='_blank'><img src='src/assets/title1.png' alt='title1' width="1690" height="231"></a>
-    <div>EX</div>
-    <a href="src/assets/tiers/ex.png" target='_blank'><img src='src/assets/tiers/ex.png' alt='EX Tier' width="300" height="300"></a>
+
+    <script src="src/js/data/tierlist.js"></script>
+
+    <script>const i = document.createElement("div");
+    i.innerHTML = `<img src="${item.imageURL}" />` // you can add more stuff here, css classes, etc.
+
+    container.appendChild(i); // container is the tier list container</script>
+
+    <!--<div>EX</div>-->
+    <a href="src/assets/tiers/ex.png" target='_blank'><img src='src/assets/tiers/ex.png' alt='EX Tier' width="190" height="200"></a>
+    <div id="EXtier" class="TierRow"></div>
+    
+
     <br>
     <div>SS</div>
+
+
 
 
 <!--        
