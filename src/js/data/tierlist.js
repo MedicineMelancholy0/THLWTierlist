@@ -2,11 +2,11 @@ dataSetVersion = "tierlist"; // Change this when creating a new data set version
 dataSet[dataSetVersion] = {};
 const container = document.getElementByID("EX");
 
-function addCharacter(item.img) {
+function addCharacter(item) {
   const i = document.createElement("div");
-  i.innerHTML = `<img src="${item.imageURL}" />` // you can add more stuff here, css classes, etc.
+  i.innerHTML = <img src="src/assets/${item.img}" />;
   
-  container.appendChild(i); // container is the tier list container
+  container.appendChild(i);
 }
 
 dataSet[dataSetVersion].options = [
