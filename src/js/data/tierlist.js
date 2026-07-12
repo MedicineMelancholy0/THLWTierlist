@@ -85,36 +85,40 @@ dataSet[dataSetVersion].options = [
 ];
 
 dataSet[dataSetVersion].characterData = [
-  {
-    name: "Cz1# Marisa",
-    img: "cz1# marisa.png",
-    opts: {
-      atk: true,
-      e: true
-    }
-  },
-  {
+    {
     name: "L0o Satori",
     img: "L0g Satori.png",
+    tier: "EX",
 opts: {
     p: true,
     dbf: true
 }
   },
   {
-    name: "Arataki Itto",
-    img: "genshin3.png",
+    name: "Cz1# Marisa",
+    img: "cz1# marisa.png",
+    tier: "EX",
+    opts: {
+      atk: true,
+      e: true
+    }
+  },
+  {
+    name: "Cs2# Satori",
+    img: "cs2# satori.png",
+    tier: "EX",
 opts: {
-    men: true,
-    ina: true
+    e: true,
+    supp: true
 }
   },
   {
-    name: "Barbara",
-    img: "genshin4.png",
+    name: "C3>> Toyohime",
+    img: "c3 toyohime.png",
+    tier: "EX",
 opts: {
-    fem: true,
-    mond: true
+    e: true,
+    tec: true
 }
   },
   {
