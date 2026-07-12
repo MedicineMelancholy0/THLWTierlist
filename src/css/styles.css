@@ -6,22 +6,23 @@
 }*/
 
 body {
-  background-color: rgb(217, 210, 233);
+  /*background-color: rgb(217, 210, 233);*/
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
+
 
 @media (prefers-color-scheme: light) {
   html.system {
     --secondary-color: #454545;
-    --primary-color: white;
+    --primary-color: #D9D2E9;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   html.system {
     --secondary-color: #d9d9d9;
-    --primary-color: #000;
+    --primary-color: #20124D;
   }
 
   html.system .button, html.system .image, html.system .text {
@@ -31,14 +32,14 @@ body {
 
 html.light {
   --secondary-color: #454545;
-  --primary-color: white;
+  --primary-color: #D9D2E9;
 }
 
 html.dark {
   --secondary-color: #d9d9d9;
-  --primary-color: #000;
+  --primary-color: #20124D;
 }
-
+/*
 html.dark .button, html.dark .image, html.dark .text {
   border-color: var(--secondary-color);
 }
@@ -152,7 +153,7 @@ p, span, h1, h2, h3, h4, h5, h6, li, td, label, .button {
   animation: sk-scaleout 1.0s infinite ease-in-out;
 }
 
-/* Animation taken from: http://tobiasahlin.com/spinkit/ */
+/* Animation taken from: http://tobiasahlin.com/spinkit/ 
 
 .loading.button > span {
   margin: auto auto 20%;
@@ -244,7 +245,7 @@ p, span, h1, h2, h3, h4, h5, h6, li, td, label, .button {
   text-align: left;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  width: 450px;*/
+  width: 450px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -295,7 +296,7 @@ label:hover {
   .results {
     flex-flow: column wrap;
     max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px));
-    /* 2px for borders */
+    /* 2px for borders 
   }
 }
 
@@ -385,4 +386,4 @@ a:hover {
 
 a:visited {
   color: #6600FF;
-}
+}*/
