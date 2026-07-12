@@ -39,7 +39,7 @@ html.dark {
   --secondary-color: #d9d9d9;
   --primary-color: #20124D;
 }
-/*
+
 html.dark .button, html.dark .image, html.dark .text {
   border-color: var(--secondary-color);
 }
@@ -51,7 +51,7 @@ body {
 p, span, h1, h2, h3, h4, h5, h6, li, td, label, .button {
   color: var(--secondary-color);
 }
-
+/*
 .container {
   display: flex;
   flex-flow: column nowrap;
