@@ -54,7 +54,7 @@
         </div>
 
     <a href='src/assets/title1.png' target='_blank'><img src='src/assets/title1.png' alt='title1' width="1690" height="231"></a>
-
+<!--
     <script src="src/js/data/tierlist.js"></script>
 
     <script>const i = document.createElement("div");
@@ -62,8 +62,8 @@
 
     container.appendChild(i); // container is the tier list container</script>
 
-    <!--<div>EX</div>-->
-    <a href="src/assets/tiers/ex.png" target='_blank'><img src='src/assets/tiers/ex.png' alt='EX Tier' width="180" height="200"></a>
+    <div>EX</div>
+    <a href="src/assets/tiers/ex.png" target='_blank'><img src='src/assets/tiers/ex.png' alt='EX Tier' width="170" height="200"></a>
     <div id="EX">
         
     <script>i.innerHTML = <img src="src/assets/${item.img}" /></script>    
@@ -73,79 +73,44 @@
     
 
     <br>
-    <div>SS</div>
+    <div>SS</div>-->
 
-
-
-
-<!--        
-<div class="container">
-
-    <div class="progress">
-        <span class="progressbattle"></span>
-        <div class="progressbar">
-            <div class="progressfill"><span class="progresstext"></span></div>
-        </div>
-    </div>
-
-    <div class="sorter">
-        <div class="left wrapper">
-            <img src="src/assets/defaultL.png" class="sort image">
-        </div>
-
-        <div class="starting start button">Genshin Character Sorter<br><br>Click to Start!</div>
-        <div class="starting load button">Load <span></span></div>
-
-        <div class="loading button"><div></div><span>Loading...</span></div>
-
-        <div class="sorting tie button">Tie</div>
-        <div class="sorting undo button">Undo</div>
-        <div class="sorting save button">Save Progress</div>
-
-        <div class="finished save button">Generate Result URL</div>
-        <div class="finished getimg button">Generate Image</div>
-        <div class="finished list button">Generate Text List</div>
-
-        <div class="right wrapper">
-            <img src="src/assets/defaultR.png" class="sort image">
-        </div>
-
-        <div class="left sort text"><p></p></div>
-        <div class="right sort text"><p></p></div>
-    </div>
-
-    <div class="options-wrapper">
-        <div class="options"></div>
-    </div>
-    <div class="image selector">Display Images on Result: </div>
-    <div class="time taken"></div>
-    <div class="results"></div>
-
-        <br><br>
-
-        <div>
-            <label for="theme">theme: </label>
-
-            <select name="theme" id="theme" onchange="setTheme(this)">
-                <option value="system">system theme</option>
-                <option value="dark">dark</option>
-                <option value="light">light</option>
-            </select>
-        </div>
-
-        <br>
-
-        <br><br>
-
-        <p>Keyboard controls during sorting: H/LeftArrow (pick left) J/DownArrow (undo) K/UpArrow (tie) L/RightArrow (pick right) S (save progress).</p>
-        <p>Before sorting: S/Enter (start sorting) L (load progress).
-        <p>1/2/3 always correspond to the first/second/third buttons.</p>
-
-        <br><br>
-
-        <p>This will be a changelog now. As of 18/8/2022 I added all new leaked and officially released Sumeru characters and added filters based on Character Nationality.</p>
-    </div>
-</div>-->
 </body>
+
+<script src="src/js/data/tierlist.js"></script>
+
+<a href="src/assets/tiers/ex.png" target="_blank">
+  <img src="src/assets/tiers/ex.png" alt="EX Tier" width="170" height="200">
+</a>
+
+<div id="EX" class="tier-row"></div>
+
+<br>
+<div>SS</div>
+<div id="SS" class="tier-row"></div>
+
+<script>
+  // Pinpoint the EX container in your HTML
+  const containerEX = document.getElementById("EX"); 
+
+  // The helper function that actually builds the image elements
+  function addCharacter(item) {
+    const i = document.createElement("div");
+    i.style.display = "inline-block"; // Keeps images sitting next to each other
+    
+    // Fixed: Added the missing backticks!
+    i.innerHTML = `<img src="src/assets/${item.img}" alt="${item.name}" />`; 
+    
+    containerEX.appendChild(i);
+  }
+
+  // Grab your character array from your data file
+  const characters = dataSet[dataSetVersion].characterData;
+
+  // Filter out ONLY the characters that belong in EX tier, then run our function on them
+  characters
+    .filter(item => item.tier === "EX")
+    .forEach(addCharacter);
+</script>
 
 </html>
