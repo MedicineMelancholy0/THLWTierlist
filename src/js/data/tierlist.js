@@ -1,5 +1,13 @@
 dataSetVersion = "tierlist"; // Change this when creating a new data set version. YYYY-MM-DD format.
 dataSet[dataSetVersion] = {};
+const container = document.getElementByID("EX");
+
+function addCharacter(item.img) {
+  const i = document.createElement("div");
+  i.innerHTML = `<img src="${item.imageURL}" />` // you can add more stuff here, css classes, etc.
+  
+  container.appendChild(i); // container is the tier list container
+}
 
 dataSet[dataSetVersion].options = [
   {
