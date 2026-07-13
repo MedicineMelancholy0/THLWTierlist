@@ -27,6 +27,7 @@
     <h1>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</h1>
     <a href="https://medicinemelancholy0.github.io/THLWTierlist/criteria"><strong>Tiering Criteria</strong></a>
     <a href="https://medicinemelancholy0.github.io/THLWTierlist/info">FAQ, Glossary, Links</a>
+    <a href="https://medicinemelancholy0.github.io/THLWTierlist/changelog"><strong>Changelog</strong></a>
 <!--   <p><strong>Join Touhou LostWord Unofficial here: https://discord.gg/TCjp7VMTps</strong></p>--> 
     <p>Explanations are available for every Character and Tier, visible by clicking on them. Read them to understand how units are ranked as it is not just vibes and they follow a system.</p>
 <!--    <p>In addition, our Calc Sheet will be ported for ease of use. Though for now, please refer to this: https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753</p>--> 
@@ -75,6 +76,7 @@
     <br>
     <div>SS</div>-->
 
+
 <script src="src/js/data/tierlist.js"></script>
 
 <a href="src/assets/tiers/ex.png" target="_blank">
@@ -88,28 +90,25 @@
 <div id="SS" class="tier-row"></div>
 
 <script>
-  // Pinpoint the EX container in your HTML
   const containerEX = document.getElementById("EX"); 
 
-  // The helper function that actually builds the image elements
   function addCharacter(item) {
     const i = document.createElement("div");
-    i.style.display = "inline-block"; // Keeps images sitting next to each other
-    
-    // Fixed: Added the missing backticks!
+    i.style.display = "inline-block";
     i.innerHTML = `<img src="src/assets/${item.img}" alt="${item.name}" />`; 
     
     containerEX.appendChild(i);
   }
 
-  // Grab your character array from your data file
   const characters = dataSet[dataSetVersion].characterData;
 
-  // Filter out ONLY the characters that belong in EX tier, then run our function on them
   characters
     .filter(item => item.tier === "EX")
     .forEach(addCharacter);
 </script>
 
+
+<p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 12/7/2026</p>
 </body>
+
 </html>
