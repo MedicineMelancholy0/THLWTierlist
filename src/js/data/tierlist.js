@@ -96,7 +96,7 @@ dataSet[dataSetVersion].options = [
 dataSet[dataSetVersion].characterData = [
     {
     name: "L0o Satori",
-    img: "L0g Satori.png",
+    img: "l0g Satori.png",
     tier: "EX",
 opts: {
     p: true,
@@ -105,7 +105,7 @@ opts: {
   },
   {
     name: "Cz1# Marisa",
-    img: "cz1# marisa.png",
+    img: "cz2 marisa.png",
     tier: "EX",
     opts: {
       atk: true,
@@ -114,7 +114,7 @@ opts: {
   },
   {
     name: "Cs2# Satori",
-    img: "cs2# satori.png",
+    img: "cs2 satori.png",
     tier: "EX",
 opts: {
     e: true,
@@ -159,7 +159,7 @@ opts: {
   },
   {
     name: "L0o Koishi",
-    img: "L0o Koishi.png",
+    img: "l0o Koishi.png",
     tier: "EX",
 opts: {
     p: true,
