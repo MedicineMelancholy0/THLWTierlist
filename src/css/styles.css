@@ -6,7 +6,7 @@
 }*/
 
 body {
-  background-color: #D9D2E9;
+  /*background-color: #D9D2E9;*/
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -61,6 +61,11 @@ label[for="mode_dark"] { display: grid; }
 :root:has(#mode_light:checked) label[for="mode_dark"] {
    display: grid;
 }
+
+@media (prefers-color-scheme: light) {}
+  :root{
+    background: #D9D2E9;
+  }
 
 @media (prefers-color-scheme: dark) {}
   :root{
