@@ -80,7 +80,7 @@
 <script src="src/js/data/tierlist.js"></script>
 
 <a href="src/assets/tiers/ex.png" target="_blank">
-  <img src="src/assets/tiers/ex.png" alt="EX Tier" width="170" height="200">
+  <img src="src/assets/tiers/ex.png" alt="EX Tier" width="165" height="200">
 </a>
 
 <div id="EX" class="tier-row"></div>
@@ -95,7 +95,7 @@
   function addCharacter(item) {
     const i = document.createElement("div");
     i.style.display = "inline-block";
-    i.innerHTML = `<img src="src/assets/${item.img}" alt="${item.name}" />`; 
+    i.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
     
     containerEX.appendChild(i);
   }
