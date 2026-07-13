@@ -4,7 +4,7 @@ const container = document.getElementById("EX");
 
 function addCharacter(item) {
   const i = document.createElement("div");
-  i.innerHTML = `<img src="src/assets/${item.img}" />`;
+  i.innerHTML = `<img src="src/assets/chara/${item.img}" />`;
   
   container.appendChild(i);
 }
@@ -130,187 +130,210 @@ opts: {
 }
   },
   {
-    name: "Beidou",
-    img: "genshin5.png",
+    name: "Lr1 Gengetsu",
+    img: "SPOILER_gengetsu.jpg",
+    tier: "EX",
 opts: {
-    fem: true,
-    liy: true
+    r: true,
+    tec: true
 }
   },
   {
-    name: "Bennett",
-    img: "genshin6.png",
+    name: "C5> Miko",
+    img: "c5 miko.png",
+    tier: "EX",
 opts: {
-    men: true,
-    mond: true
+    dest: true,
+    e: true
 }
   },
   {
-    name: "Chongyun",
-    img: "genshin7.png",
+    name: "L80 Kasen",
+    img: "kassy.jpg",
+    tier: "EX",
 opts: {
-    men: true,
-    liy: true
+    r: true,
+    atk: true
 }
   },
   {
-    name: "Keqing",
-    img: "genshin8.png",
+    name: "L0o Koishi",
+    img: "L0o Koishi.png",
+    tier: "EX",
 opts: {
-    fem: true,
-    liy: true
+    p: true,
+    dest: true
 }
   },
   {
-    name: "Diluc",
-    img: "genshin9.png",
+    name: "F1 Marisa",
+    img: "f1 mors.png",
+    tier: "EX",
 opts: {
-    men: true,
-    mond: true
+    e: true,
+    dest: true
+}
+  }, //Start of SS
+  {
+    name: "Cb3# Reisen",
+    img: "cb3# reisen.png",
+    tier: "SS",
+opts: {
+    e: true,
+    dbf: true
 }
   },
   {
-    name: "Diona",
-    img: "genshin10.png",
+    name: "L80 Yukari",
+    img: "l80 yukari.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    mond: true
+    r: true,
+    atk: true
 }
   },
   {
-    name: "Eula",
-    img: "genshin11.png",
+    name: "A6æ Rumia",
+    img: "phfes.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    mond: true
+    dest: true,
+    ph: true
 }
   },
   {
-    name: "Fischl",
-    img: "genshin12.png",
+    name: "L10.1 Remilia",
+    img: "l10.1 remilia.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    mond: true
+    e: true,
+    tec: true
 }
   },
   {
-    name: "Ganyu",
-    img: "genshin13.png",
+    name: "L10.1 Flandre",
+    img: "l10.1 flandre.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    liy: true
+    atk: true,
+    e: true
 }
   },
   {
-    name: "Gorou",
-    img: "genshin14.png",
+    name: "Cf1# Koishi",
+    img: "cf1# koishi.png",
+    tier: "SS",
 opts: {
-    men: true,
-    ina: true
+    e: true,
+    tec: true
 }
   },
   {
-    name: "Hu Tao",
-    img: "genshin15.png",
+    name: "L0g Kanako",
+    img: "l0g kanako.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    liy: true
+    p: true,
+    def: true
 }
   },
   {
-    name: "Jean",
-    img: "genshin16.png",
+    name: "C5> Zanmu",
+    img: "spring zanmu.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    mond: true
+    e: true,
+    spd: true
 }
   },
   {
-    name: "Kaedehara Kazuha",
-    img: "genshin17.png",
+    name: "L80 Aya",
+    img: "l80 aya.png",
+    tier: "SS",
 opts: {
-    men: true,
-    ina: true
+    r: true,
+    spd: true
 }
   },
   {
-    name: "Kaeya",
-    img: "genshin18.png",
+    name: "Ce9 Remilia",
+    img: "ce9 remilia.png",
+    tier: "SS",
 opts: {
-    men: true,
-    mond: true
+    e: true,
+    atk: true
 }
   },
   {
-    name: "Kamisato Ayaka",
-    img: "genshin19.png",
+    name: "C5> Saki",
+    img: "c5 saki.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    ina: true
+    atk: true,
+    e: true
 }
   },
   {
-    name: "Klee",
-    img: "genshin20.png",
+    name: "L0g Suwako",
+    img: "l0g suwako.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    mond: true
+    p: true,
+    atk: true
 }
   },
   {
-    name: "Kujou Sara",
-    img: "genshin21.png",
+    name: "C3 Yuyuko",
+    img: "beach yuyu.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    ina: true
+    dest: true,
+    e: true
 }
   },
   {
-    name: "Lisa",
-    img: "genshin22.png",
+    name: "Lm1 Mugetsu",
+    img: "mugetsu.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    mond: true
+    spd: true,
+    r: true
 }
   },
   {
-    name: "Mona",
-    img: "genshin23.png",
+    name: "A14.5& Mamizou",
+    img: "A15.5& Mamizou.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    mond: true
+    dbf: true,
+    ex: true
 }
   },
   {
-    name: "Ningguang",
-    img: "genshin24.png",
+    name: "C5> Hecatia",
+    img: "spring hecatia.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    liy: true
+    e: true,
+    atk: true
 }
   },
   {
-    name: "Noelle",
-    img: "genshin25.png",
+    name: "C3>> Yorihime",
+    img: "c3 yorihime.png",
+    tier: "SS",
 opts: {
-    fem: true,
-    mond: true
+    dest: true,
+    e: true
 }
-  },
+  }, // start of S tier
   {
-    name: "Qiqi",
-    img: "genshin26.png",
+    name: "C3∫ Reisen",
+    img: "C3integral reisen supp.png",
+    tier: "S",
 opts: {
-    fem: true,
-    liy: true
-}
-  },
-  {
-    name: "Raiden Shogun",
-    img: "genshin27.png",
-opts: {
-    fem: true,
-    ina: true
+    supp: true,
+    e: true
 }
   },
   {
