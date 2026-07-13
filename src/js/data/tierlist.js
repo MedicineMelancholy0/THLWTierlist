@@ -96,7 +96,7 @@ dataSet[dataSetVersion].options = [
 dataSet[dataSetVersion].characterData = [
     {
     name: "L0o Satori",
-    img: "l0g Satori.png",
+    img: "lo Satori.png",
     tier: "EX",
 opts: {
     p: true,
@@ -159,7 +159,7 @@ opts: {
   },
   {
     name: "L0o Koishi",
-    img: "l0o Koishi.png",
+    img: "lo Koishi.png",
     tier: "EX",
 opts: {
     p: true,
