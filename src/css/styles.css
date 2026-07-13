@@ -12,7 +12,7 @@ body {
 }
 
 html:has(#mode_dark:checked) p {
-  color: #454545;
+  color: #fff;
   background: #20124D;
 }
 
