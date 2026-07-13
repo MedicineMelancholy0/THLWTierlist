@@ -70,10 +70,12 @@ label[for="mode_dark"] { display: grid; }
 @media (prefers-color-scheme: dark) {}
   :root{
     background: #20124D;
+    --fg: #fff
   }
 
 :root:has(#mode_dark:checked) {
-  --backgrouind: #20124D;    
+  background: #20124D;
+  --fg: #fff;    
 }
 :root:has(#mode_light:checked) {   
   background: #D9D2E9; 
