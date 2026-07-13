@@ -6,7 +6,7 @@
 }*/
 
 body {
-  /*background-color: #D9D2E9;*/
+  background-color: #D9D2E9;
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -64,17 +64,14 @@ label[for="mode_dark"] { display: grid; }
 
 @media (prefers-color-scheme: dark) {}
   :root{
-    --fg: #d9d9d9;
-    --bg: #20124D;
+    background: #20124D;
   }
 
 :root:has(#mode_dark:checked) {
-  --bg: #d9d9d9; 
-  --fg: #20124D;    
+  --backgrouind: #20124D;    
 }
-:root:has(#mode_light:checked) {
-  --bg: #D9D2E9;    
-  --fg: #252525; 
+:root:has(#mode_light:checked) {   
+  background: #D9D2E9; 
 }
 
 /*
