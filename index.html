@@ -90,9 +90,10 @@
     <br>
     <div>SS</div>-->
 
-
+<br><br>
 <script src="src/js/data/tierlist.js"></script>
 
+<br>
 <a href="src/assets/tiers/ex.png" target="_blank">
   <img src="src/assets/tiers/ex.png" alt="EX Tier" width="165" height="200">
 </a>
@@ -100,8 +101,6 @@
 <div id="EX" class="tier-row"></div>
 
 <br>
-<div>SS</div>
-<div id="SS" class="tier-row"></div>
 
 <script>
   const containerEX = document.getElementById("EX"); 
@@ -118,6 +117,37 @@
 
   characters
     .filter(item => item.tier === "EX")
+    .forEach(addCharacter);
+</script>
+
+<br>
+
+<!--SS tier start-->
+
+<script src="src/js/data/tierlist.js"></script>
+
+<a href="src/assets/tiers/ss.png" target="_blank">
+  <img src="src/assets/tiers/ss.png" alt="SS Tier" width="165" height="300">
+</a>
+
+<div id="SS" class="tier-row"></div>
+<br>
+
+<script>
+  const containerSS = document.getElementById("SS"); 
+
+  function addCharacter(item) {
+    const i = document.createElement("div");
+    i.style.display = "inline-block";
+    i.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
+    
+    containerEX.appendChild(i);
+  }
+
+  const characters = dataSet[dataSetVersion].characterData;
+
+  characters
+    .filter(item => item.tier === "SS")
     .forEach(addCharacter);
 </script>
 
