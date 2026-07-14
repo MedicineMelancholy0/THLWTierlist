@@ -177,7 +177,7 @@ opts: {
   }, //Start of SS
   {
     name: "Cb3# Reisen",
-    img: "cb3# reisen.png",
+    img: "cb3 reisen.png",
     tier: "SS",
 opts: {
     e: true,
@@ -195,7 +195,7 @@ opts: {
   },
   {
     name: "A6æ Rumia",
-    img: "phfes.png",
+    img: "phfes rumia.png",
     tier: "SS",
 opts: {
     dest: true,
@@ -222,7 +222,7 @@ opts: {
   },
   {
     name: "Cf1# Koishi",
-    img: "cf1# koishi.png",
+    img: "cf1 koishi.png",
     tier: "SS",
 opts: {
     e: true,
@@ -285,7 +285,7 @@ opts: {
   },
   {
     name: "C3 Yuyuko",
-    img: "beach yuyu.png",
+    img: "beach yuyu.jpg",
     tier: "SS",
 opts: {
     dest: true,
@@ -338,11 +338,12 @@ opts: {
 }
   },
   {
-    name: "Razor",
-    img: "genshin28.png",
+    name: "A17& Eika",
+    img: "a17& eika.png",
+    tier: "S",
 opts: {
-    men: true,
-    mond: true
+    tec: true,
+    ex: true
 }
   },
   {
