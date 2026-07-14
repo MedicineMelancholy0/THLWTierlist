@@ -1,125 +1,89 @@
-<html class="system">
+/** Populate option list. */
+function populateOptions() {
+  const optList = document.querySelector('.options');
+  const optInsert = (name, id, tooltip, checked = false, disabled = false) => {
+    return `<div><label class="option-label" title="${tooltip?tooltip:name}"><input id="cb-${id}" type="checkbox" ${checked?'checked':''} ${disabled?'disabled':''}> ${name}</label></div>`;
+  };
+  const optInsertLarge = (name, id, tooltip, checked = false) => {
+    return `<div class="large option"><label title="${tooltip?tooltip:name}"><input id="cbgroup-${id}" type="checkbox" ${checked?'checked':''}> ${name}</label></div>`;
+  };
 
-<head>
-  <link rel="shortcut icon" href="src/assets/medi.ico" type="image/x-icon">
-  <link rel="icon" href="src/assets/medi.ico" type="image/x-icon">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="og:site_name" content="Touhou Lostword Community Tierlist">
-  <meta name="og:description" content="The Official Touhou LostWord Community Tierlist by Medi and Hibi">
-  <meta name="og:image" content="https://i.postimg.cc/mZKnsV9b/medi2.png">
-  <title>Touhou Lostword Community Tierlist</title>
+  /** Clear out any previous options. */
+  optList.innerHTML = '';
 
-  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+  /** Insert sorter options and set grouped option behavior. */
+  options.forEach(opt => {
+    if ('sub' in opt) {
+      optList.insertAdjacentHTML('beforeend', optInsertLarge(opt.name, opt.key, opt.tooltip, opt.checked));
+      opt.sub.forEach((subopt, subindex) => {
+        optList.insertAdjacentHTML('beforeend', optInsert(subopt.name, `${opt.key}-${subindex}`, subopt.tooltip, subopt.checked, opt.checked === false));
+      });
+      optList.insertAdjacentHTML('beforeend', '<hr>');
 
-  <script src="src/js/data.js"></script>
-  <script src="src/js/data/2022-03-08.js"></script>
+      const groupbox = document.getElementById(`cbgroup-${opt.key}`);
 
-  <script src="src/js/html2canvas.min.js"></script>
-  <script src="src/js/lz-string.min.js"></script>
-  <script src="src/js/seedrandom.min.js"></script>
-  <script src="src/js/main.js"></script>
-</head>
-
-<body>
-
-  <h1>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</h1>
-  <a href="https://medicinemelancholy0.github.io/THLWTierlist/criteria"><strong>Tiering Criteria</strong></a>
-  <a href="https://medicinemelancholy0.github.io/THLWTierlist/info">FAQ, Glossary, Links</a>
-  <a href="https://medicinemelancholy0.github.io/THLWTierlist/changelog"><strong>Changelog</strong></a>
-  
-  <p>Explanations are available for every Character and Tier, visible by clicking on them. Read them to understand how units are ranked as it is not just vibes and they follow a system.</p>
-  <p>Further explanations are available in the Tiering Criteria Section and in the Tier/Character explanations, please read them before making a complaint.</p>
-  <p><strong>Other important Criterias to keep in mind:</strong></p>
-  <p>Only EX, SS, S, and Yukkuri tiers are ordered.</p>
-  <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards</p>
-  <p>(INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
-  <p>Some benchmarks: "good damage" = All that matters is 2.2 mil for ds from my last check up. Compare that number to the calc sheet.</p>
-  <p>Keep in mind, stuff like buffs and neutral dmg fb etc DO matter in this regard, so does sp reduction. And ESPECIALLY def down. Characters who can hit those numbers are usually fine.</p>
-  <br>
-  
-  <div class="Important Links">
-    <a href="https://discord.gg/TCjp7VMTps"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
-    <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753"><strong>Calc Sheet (IMPORTANT!)</strong></a>
-  </div>
-  
-  <br>
-  
-  <div class="theme-toggle">
-    <input type="radio" id="mode_dark" name="mode" value="dark">
-    <label for="mode_dark" aria-label="Switch to dark mode">🌙</label>
-    <input type="radio" id="mode_light" name="mode" value="light">
-    <label for="mode_light" aria-label="Switch to light mode">☀️</label>
-  </div>
-
-  <div class="options-wrapper">
-        <div class="options"></div>
-    </div>
-
-  <br>
-
-  <a href='src/assets/title1.png' target='_blank'>
-    <img src='src/assets/title1.png' alt='title1' width="1690" height="231">
-  </a>
-
-  <br><br>
-
-  <script src="src/js/data/tierlist.js"></script>
-
-  <script>
-    const characters = dataSet[dataSetVersion].characterData;
-
-    function renderCharacterToTier(item, containerId) {
-      const container = document.getElementById(containerId);
-      if (!container) return;
-      
-      const imgContainer = document.createElement("div");
-      imgContainer.style.display = "inline-block";
-      imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
-      container.appendChild(imgContainer);
+      groupbox.parentElement.addEventListener('click', () => {
+        opt.sub.forEach((subopt, subindex) => {
+          document.getElementById(`cb-${opt.key}-${subindex}`).disabled = !groupbox.checked;
+          if (groupbox.checked) { document.getElementById(`cb-${opt.key}-${subindex}`).checked = true; }
+        });
+      });
+    } else {
+      optList.insertAdjacentHTML('beforeend', optInsert(opt.name, opt.key, opt.tooltip, opt.checked));
     }
-  </script> <!--EX-->
+  });
+}
 
-  <a href="src/assets/tiers/ex.png" target="_blank">
-    <img src="src/assets/tiers/ex.png" alt="EX Tier" width="165" height="200">
-  </a>
-  <div id="EX" class="tier-row"></div>
-  
-  <script>
-    characters
-      .filter(item => item.tier === "EX")
-      .forEach(item => renderCharacterToTier(item, "EX"));
-  </script>
+/** 
+ * Preloads images in the filtered character data and converts to base64 representation.
+*/
+function preloadImages() {
+  const totalLength = characterDataToSort.length;
+  let imagesLoaded = 0;
 
-  <br> <!--SS-->
+  const loadImage = async (src) => {
+    const blob = await fetch(src).then(res => res.blob());
+    return new Promise((res, rej) => {
+      const reader = new FileReader();
+      reader.onload = ev => {
+        progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded * 100 / totalLength));
+        res(ev.target.result);
+      };
+      reader.onerror = rej;
+      reader.readAsDataURL(blob);
+    });
+  };
 
-  <a href="src/assets/tiers/ss.png" target="_blank">
-    <img src="src/assets/tiers/ss.png" alt="SS Tier" width="165" height="400">
-  </a>
-  <div id="SS" class="tier-row"></div>
-  
-  <script>
-    characters
-      .filter(item => item.tier === "SS")
-      .forEach(item => renderCharacterToTier(item, "SS"));
-  </script>
+  return Promise.all(characterDataToSort.map(async (char, idx) => {
+    characterDataToSort[idx].img = await loadImage(imageRoot + char.img);
+  }));
+}
 
-  <br> <!--S-->
+/**
+ * Reduces text to a certain rendered width.
+ *
+ * @param {string} text Text to reduce.
+ * @param {string} font Font applied to text. Example "12px Arial".
+ * @param {number} width Width of desired width in px.
+ */
+function reduceTextWidth(text, font, width) {
+  const canvas = reduceTextWidth.canvas || (reduceTextWidth.canvas = document.createElement("canvas"));
+  const context = canvas.getContext("2d");
+  context.font = font;
+  if (context.measureText(text).width < width * 0.8) {
+    return text;
+  } else {
+    let reducedText = text;
+    while (context.measureText(reducedText).width + context.measureText('..').width > width * 0.8) {
+      reducedText = reducedText.slice(0, -1);
+    }
+    return reducedText + '..';
+  }
+}
 
-  <a href="src/assets/tiers/s.png" target="_blank">
-    <img src="src/assets/tiers/s.png" alt="S Tier" width="165" height="400">
-  </a>
-  <div id="S" class="tier-row"></div>
-  
-  <script>
-    characters
-      .filter(item => item.tier === "S")
-      .forEach(item => renderCharacterToTier(item, "S"));
-  </script>
+// window.onload = init;
 
-  <br>
-  <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 12/7/2026</p>
-</body>
-
-</html>
+document.addEventListener('DOMContentLoaded', () => {
+  // Call your setup functions here now that the HTML is fully loaded
+  populateOptions(); 
+});
