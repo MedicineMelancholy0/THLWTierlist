@@ -347,43 +347,48 @@ opts: {
 }
   },
   {
-    name: "Rosaria",
-    img: "genshin29.png",
+    name: "A13& Seiga",
+    img: "a13& seiga.png",
+    tier: "S",
 opts: {
-    fem: true,
-    mond: true
+    dest: true,
+    ex: true
 }
   },
   {
-    name: "Sangonomiya Kokomi",
-    img: "genshin30.png",
+    name: "A9.4& Sakuya",
+    img: "a9.4& sakuya.png",
+    tier: "S",
 opts: {
-    fem: true,
-    ina: true
+    atk: true,
+    ex: true
 }
   },
   {
-    name: "Sayu",
-    img: "genshin32.png",
+    name: "L80 Kokoro",
+    img: "l80 kokoro.png",
+    tier: "S",
 opts: {
-    fem: true,
-    ina: true
+    r: true,
+    atk: true
 }
   },
   {
-    name: "Shenhe",
-    img: "genshin33.png",
+    name: "C3 Sakuya",
+    img: "c3 sakuya.png",
+    tier: "S",
 opts: {
-    fem: true,
-    liy: true
+    supp: true,
+    e: true
 }
   },
   {
-    name: "Sucrose",
-    img: "genshin34.png",
+    name: "C5= Kaguya",
+    img: "c35= kaguya.png",
+    tier: "S",
 opts: {
-    fem: true,
-    mond: true
+    dest: true,
+    e: true
 }
   },
   {
