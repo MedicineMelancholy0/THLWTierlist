@@ -1,28 +1,42 @@
-/*.josefin-sans> {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}*/
+/* 1. DEFINE DEFAULT VARIABLES (LIGHT MODE) */
+:root {
+  --bg: #D9D2E9;
+  --fg: #20124D; /* Dark text for light background */
+}
 
+/* 2. SYSTEM PREFERENCE OVERRIDES */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #20124D;
+    --fg: #fff; /* Light text for dark background */
+  }
+}
+
+/* 3. MANUAL TOGGLE OVERRIDES (using :has) */
+:root:has(#mode_dark:checked) {
+  --bg: #20124D;
+  --fg: #fff;    
+}
+:root:has(#mode_light:checked) {   
+  --bg: #D9D2E9; 
+  --fg: #20124D;
+}
+
+/* 4. APPLY VARIABLES TO THE BODY */
 body {
-  /*background-color: #D9D2E9;*/
+  background-color: var(--bg);
+  color: var(--fg);
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-html:has(#mode_dark:checked) p {
-  color: #fff;
-  background: #20124D;
-}
-
-/* style of the toggle */
+/* Keep your custom toggle styles below */
 .theme-toggle {
   display: flex;
   align-items: center;
 }
 
-/* hide the input */
 .theme-toggle input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
@@ -31,17 +45,16 @@ html:has(#mode_dark:checked) p {
   opacity: 0;
   pointer-events: none;
 }
+
 .theme-toggle label {
-    width: 40px; height: 40px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
+  width: 40px; 
+  height: 40px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
 }
 
-/* icon visibility
- *
- * default light with system and radio button overwrite
- */
+/* Icon visibility logic */
 label[for="mode_light"] { display: none; }
 label[for="mode_dark"] { display: grid; }
 
@@ -49,6 +62,7 @@ label[for="mode_dark"] { display: grid; }
   label[for="mode_light"] { display: grid; }
   label[for="mode_dark"] { display: none; }
 }
+
 :root:has(#mode_dark:checked) label[for="mode_light"] {
    display: grid;
 }
@@ -60,25 +74,6 @@ label[for="mode_dark"] { display: grid; }
 }
 :root:has(#mode_light:checked) label[for="mode_dark"] {
    display: grid;
-}
-
-@media (prefers-color-scheme: light) {}
-  :root{
-    background: #D9D2E9;
-  }
-
-@media (prefers-color-scheme: dark) {}
-  :root{
-    background: #20124D;
-    --fg: #fff
-  }
-
-:root:has(#mode_dark:checked) {
-  background: #20124D;
-  --fg: #fff;    
-}
-:root:has(#mode_light:checked) {   
-  background: #D9D2E9; 
 }
 
 /*
