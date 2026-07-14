@@ -53,7 +53,9 @@
     <label for="mode_light" aria-label="Switch to light mode">☀️</label>
   </div>
 
-  <div class="options"></div>
+  <div class="options-wrapper">
+        <div class="options"></div>
+    </div>
 
   <br>
 
@@ -77,7 +79,7 @@
       imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
       container.appendChild(imgContainer);
     }
-  </script>
+  </script> <!--EX-->
 
   <a href="src/assets/tiers/ex.png" target="_blank">
     <img src="src/assets/tiers/ex.png" alt="EX Tier" width="165" height="200">
@@ -90,7 +92,7 @@
       .forEach(item => renderCharacterToTier(item, "EX"));
   </script>
 
-  <br>
+  <br> <!--SS-->
 
   <a href="src/assets/tiers/ss.png" target="_blank">
     <img src="src/assets/tiers/ss.png" alt="SS Tier" width="165" height="400">
@@ -101,6 +103,19 @@
     characters
       .filter(item => item.tier === "SS")
       .forEach(item => renderCharacterToTier(item, "SS"));
+  </script>
+
+  <br> <!--S-->
+
+  <a href="src/assets/tiers/s.png" target="_blank">
+    <img src="src/assets/tiers/s.png" alt="S Tier" width="165" height="400">
+  </a>
+  <div id="S" class="tier-row"></div>
+  
+  <script>
+    characters
+      .filter(item => item.tier === "S")
+      .forEach(item => renderCharacterToTier(item, "S"));
   </script>
 
   <br>
