@@ -39,7 +39,7 @@ dataSet[dataSetVersion].options = [
   {
     name: "Filter Ultra Fes",
     key: "u",
-    tooltip: "Check this to Sfes/Ufer Characters"
+    tooltip: "Check this to Sfes/Ufes Characters"
   },
   {
     name: "Filter Fes",
@@ -365,6 +365,15 @@ opts: {
 }
   },
   {
+    name: "Lr Aya",
+    img: "zenki.jpg",
+    tier: "S",
+    opts: {
+      tec: true,
+      u: true
+    }
+  },
+  {
     name: "L80 Kokoro",
     img: "l80 kokoro.png",
     tier: "S",
@@ -375,7 +384,7 @@ opts: {
   },
   {
     name: "C3 Sakuya",
-    img: "c3 sakuya.png",
+    img: "c3 sakuya2.png",
     tier: "S",
 opts: {
     supp: true,
@@ -392,93 +401,104 @@ opts: {
 }
   },
   {
-    name: "Tartaglia (Childe)",
-    img: "genshin35.png",
+    name: "L0g Sanae",
+    img: "fake ass sanae.jpg",
+    tier: "S",
 opts: {
-    men: true,
-    liy: true //should i add a snezhnaya one for this? i feel like it's unecessary since he's the only playable character from it so far. I'll keep him as liyueian for now
+    p: true,
+    heal: true //should i add a snezhnaya one for this? i feel like it's unecessary since he's the only playable character from it so far. I'll keep him as liyueian for now
 }
   },
   {
-    name: "Thoma",
-    img: "genshin36.png",
+    name: "C3< Nitori",
+    img: "fall nitori.png",
+    tier: "S",
 opts: {
-    men: true,
-    ina: true
+    tec: true,
+    e: true
 }
   },
   {
-    name: "Lumine",
-    img: "genshin37.png",
+    name: "C3≥ Nitori",
+    img: "mech nitori.png",
+    tier: "S",
 opts: {
-    fem: true,
-    lol: true
+    supp: true,
+    e: true
 }
   },
   {
-    name: "Aether",
-    img: "genshin38.png",
+    name: "C3< Chimata",
+    img: "fall chimata.png",
+    tier: "S",
 opts: {
-    men: true,
-    lol: true
+    supp: true,
+    e: true
 }
   },
   {
-    name: "Amber",
-    img: "genshin31.png",
+    name: "Laa1 Sakuya",
+    img: "laa1 sakuya.png",
+    tier: "S",
 opts: {
-    fem: true,
-    mond: true
+    atk: true,
+    e: true
 }
   },
   {
-    name: "Venti",
-    img: "genshin39.png",
+    name: "A16& Satono",
+    img: "a16& satono.png",
+    tier: "S",
 opts: {
-    men: true,
-    mond: true
+    ex: true,
+    spd: true
 }
   },
   {
-    name: "Xiangling",
-    img: "genshin40.png",
+    name: "C3~ Yoshika",
+    img: "c3~ yoshika.png",
+    tier: "S",
 opts: {
-    fem: true,
-    liy: true
+    dest: true,
+    e: true
 }
   },
   {
-    name: "Xiao",
-    img: "genshin41.png",
+    name: "C3 Cirno",
+    img: "C3 cirno.png",
+    tier: "S",
 opts: {
-    men: true,
-    liy: true
+    spd: true,
+    e: true
 }
   },
   {
-    name: "Xingqiu",
-    img: "genshin42.png",
+    name: "C3 Yukari",
+    img: "c3 yukari.png",
+    tier: "S",
 opts: {
-    men: true,
-    liy: true
+    heal: true,
+    e: true
 }
   },
   {
-    name: "Xinyan",
+    name: "L80 Reimu",
     img: "genshin43.png",
+    tier: "S",
 opts: {
-    fem: true,
-    liy: true
+    r: true,
+    spd: true
 }
   },
   {
-    name: "Yae Miko",
-    img: "genshin44.png",
+    name: "C3 Narumi",
+    img: "c3 narumi.png",
+    tier: "S",
 opts: {
-    fem: true,
-    ina: true
+    atk: true,
+    e: true
 }
-  },
+  }, // Start of A
   {
     name: "Yanfei",
     img: "genshin45.png",
