@@ -581,119 +581,120 @@ opts: {
 }
   },
   {
-    name: "Yaoyao",
-    img: "genshinex5.png",
+    name: "C3' Junko",
+    img: "c3' junko.png",
+    tier: "A",
 opts: {
-   fem: true,
-   liy: true
+   spd: true,
+   e: true
 }
   },
   {
-    name: "Heizou",
-    img: "genshinex6.png",
+    name: "C3' Seiga",
+    img: "c3' seiga.png",
+    tier: "A",
 opts: {
-   men: true,
-   unr: false,
-   ina: true
+   e: true,
+   tec: false
 }
   },
   {
-    name: "Collei",
-    img: "Character_Collei_Card.png",
+    name: "C3' Urumi",
+    img: "c3' urumi.png",
+    tier: "A",
 opts: {
-   fem: true,
-   unr: false,
-   sum: true
+   atk: true,
+   e: false
 }
   },
   {
-    name: "Dori",
-    img: "Character_Dori_Card.png",
+    name: "C3' Nemuno",
+    img: "c3' nemuno.png",
+    tier: "A",
 opts: {
-   fem: true,
-   unr: false,
-   sum: true
+   e: true,
+   dest: false
 }
   },
   {
-    name: "Tighnari",
-    img: "Character_Tighnari_Card.png",
+    name: "Cf1# Reimu",
+    img: "cf1 reimu.png",
+    tier: "A",
 opts: {
-   men: true,
-   unr: false,
-   sum: true
+   dest: true,
+   e: false
 }
   },
   {
-    name: "Alhaitham",
-    img: "al haitham.png",
+    name: "L10.1 Reimu",
+    img: "l10.1 reimu.png",
+    tier: "A",
 opts: {
-   men: true,
-   unr: false,
-   sum: true
+   e: true,
+   tec: false
 }
   },
   {
-    name: "Cyno",
-    img: "cyno.jpg",
+    name: "F1 Koishi",
+    img: "f1 koishi.png",
+    tier: "A",
 opts: {
-   men: true,
-   unr: false,
-   sum: true
+   tec: true,
+   e: false
 }
   },
   {
-    name: "Deyha",
-    img: "deyha.png",
+    name: "Lm1 Mima",
+    img: "lm1 mima.png",
+    tier: "A",
 opts: {
-   fem: true,
-   unr: false,
-   sum: true
+   r: true,
+   dest: false
 }
   },
   {
-    name: "Nahida",
-    img: "kusanali.png",
+    name: "Lr1 Shinki",
+    img: "lr1 shinki.png",
+    tier: "A",
 opts: {
-   fem: true,
-   unr: false,
-   sum: true
+   atk: true,
+   r: false
 }
   },
   {
-    name: "Nilou",
-    img: "nilou.jpg",
+    name: "L80 Ran",
+    img: "l80 ran.png",
+    tier: "A",
 opts: {
-   fem: true,
-   unr: false,
-   sum: true
+   r: true,
+   def: false
 }
   },
   {
-    name: "Candace",
-    img: "candace.jpg",
+    name: "L80 Yuyuko",
+    img: "mv yuyu.jpg",
+    tier: "A",
 opts: {
-   fem: true,
-   unr: false,
-   sum: true
+   tec: true,
+   r: false
 }
   },
   {
-    name: "Layla",
-    img: "layla.png",
+    name: "L80 Miko",
+    img: "l80 miko.png",
+    tier: "A",
 opts: {
-   fem: true,
-   unr: false,
-   sum: true
+   tec: true,
+   r: false
 }
   },
   {
-    name: "Faruzan",
-    img: "faruzan.jpg",
+    name: "A7& Yuyuko",
+    img: "a7& yuyuko.png",
+    tier: "A",
 opts: {
-   fem: true,
-   unr: false,
-   sum: true
+   supp: true,
+   ex: false
 }
   },
   {
