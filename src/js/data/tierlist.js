@@ -10,6 +10,113 @@ function addCharacter(item) {
   container.appendChild(i);
 }
 
+function displayInput(data = null) {
+    const tableBody = document.getElementById("characterData");
+    tableBody.innerHTML = "";
+
+    let characterData = data || characters || [];
+
+    // Retrieves values from character array
+    characterData.forEach((character, index) => {
+        // Creates rows with ONLY character names taken from character objects
+        const row = document.createElement("tr");
+        row.innerHTML = `<td>${character.charName}</td>`
+    tableBody.appendChild(row);    
+        
+    });
+}
+
+// Put the characters into a displayable array that excludes rarities and classes
+
+function filterDefChars(){
+    const defChars = characters.filter(character => {return character.charClass == "def"}); //character = stores an object from the characters array, from there you just check whether the specific attribute matches
+    console.log(defChars)
+    displayInput(defChars);
+}
+
+function filterSuppChars(){
+    const suppChars = characters.filter(character => {return character.charClass == "supp"});
+    displayInput(suppChars);
+}
+
+function filterHealChars(){
+    const healChars = characters.filter(character => {return character.charClass == "heal"});
+    displayInput(healChars);
+}
+
+function filterDebuffChars(){
+    const debuffChars = characters.filter(character => {return character.charClass == "dbf"});
+    displayInput(debuffChars);
+}
+
+function filterAttackChars(){
+    const attackChars = characters.filter(character => {return character.charClass == "atk"});
+    displayInput(attackChars);
+}
+
+function filterTechChars(){
+    const techChars = characters.filter(character => {return character.charClass == "tec"});
+    displayInput(techChars);
+}
+
+function filterSpeedChars(){
+    const spdChars = characters.filter(character => {return character.charClass == "spd"});
+    displayInput(spdChars);
+}
+
+function filterDestChars(){
+    const destChars = characters.filter(character => {return character.charClass == "dest"});
+    displayInput(destChars);
+}
+
+function filterPureChars(){
+    const pureChars = characters.filter(character => {return character.charClass == "p"});
+    displayInput(pureChars);
+}
+
+function filterEpicChars(){
+    const epicChars = characters.filter(character => {return character.charClass == "e"});
+    displayInput(epicChars);
+}
+
+function filterPhChars(){
+    const debuffChars = characters.filter(character => {return character.charClass == "ph"});
+    displayInput(debuffChars);
+}
+
+function filterRelicChars(){
+    const relicChars = characters.filter(character => {return character.charClass == "r"});
+    displayInput(relicChars);
+}
+
+function filterExChars(){
+    const exChars = characters.filter(character => {return character.charClass == "ex"});
+    displayInput(exChars);
+}
+
+function filterUltraChars(){
+    const uChars = characters.filter(character => {return character.charClass == "u"});
+    displayInput(uChars);
+}
+
+function filterFesChars(){
+    const aChars = characters.filter(character => {return character.charClass == "a"});
+    displayInput(aChars);
+}
+
+function filterGenChars(){
+    const genChars = characters.filter(character => {return character.charClass == "g"});
+    displayInput(gChars);
+}
+
+function filterYuChars(){
+    const yuChars = characters.filter(character => {return character.charClass == "y"});
+    displayInput(yuChars);
+}
+
+displayInput();
+
+
 dataSet[dataSetVersion].options = [
   {
     name: "Filter Pure Fes",
@@ -50,6 +157,11 @@ dataSet[dataSetVersion].options = [
     name: "Filter General Characters",
     key: "g",
     tooltip: "Check this to remove characters from the General pool (L1s)."
+  },
+  {
+    name: "Filter Yukkuris",
+    key: "y",
+    tooltip: "Check this to remove Yukkuris."
   }, /* start of classes*/
   {
     name: "Filter Atk Units",
