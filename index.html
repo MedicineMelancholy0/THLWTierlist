@@ -119,6 +119,20 @@ table, th, td {
 
   <br><br>
 
+    <script>
+  const characters = dataSet[dataSetVersion].characterData;
+
+  function renderCharacterToTier(item, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    const imgContainer = document.createElement("div");
+    imgContainer.style.display = "inline-block";
+    imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
+    container.appendChild(imgContainer);
+  }
+  </script>
+
   <script src="src/js/data/tierlist.js"></script>
   </script> <!--EX-->
 
@@ -173,21 +187,6 @@ table, th, td {
   </script>
 
   <br>
-
-
-  <script>
-  const characters = dataSet[dataSetVersion].characterData;
-
-  function renderCharacterToTier(item, containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    
-    const imgContainer = document.createElement("div");
-    imgContainer.style.display = "inline-block";
-    imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
-    container.appendChild(imgContainer);
-  }
-  </script>
 
 <h1><strong>F Tier</strong></h1>
 <p>The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes, because they all share the same cons while having very few pros besides being cute.</p>
