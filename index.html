@@ -13,12 +13,6 @@
   <link rel="stylesheet" type="text/css" href="src/css/reset.css">
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
-  <script src="src/js/data.js"></script>
-  <script src="src/js/data/2022-03-08.js"></script>
-
-  <script src="src/js/html2canvas.min.js"></script>
-  <script src="src/js/lz-string.min.js"></script>
-  <script src="src/js/seedrandom.min.js"></script>
   <script src="src/js/main.js"></script>
   <!--
   <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
@@ -30,6 +24,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <script src="tierlist.js" defer></script>
 
+  <style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
 </head>
 
 <body>
@@ -67,7 +66,7 @@
         <div class="options"></div>
     </div>
 
-  <h1>Character Table!!!</h1> <!--Thanks Fritty-->
+  <h1>Filter by Class</h1> <!--Thanks Fritty-->
   <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
   <label for="class1">Defense</label>
   <input type="checkbox" id="class2" value="supp" onclick="filterSuppChars()">
@@ -85,6 +84,8 @@
   <input type="checkbox" id="class8" value="dest" onclick="filterDestChars()">
   <label for="class8">Destroy</label>
   <input type="checkbox" id="class1" value="p" onclick="filterPureChars()">
+  <br>
+  <h1>Filter by Rarity</h1>
   <label for="class9">Pure Fes</label>
   <input type="checkbox" id="class2" value="e" onclick="filterEpicChars()">
   <label for="class10">Epic Fes</label>
@@ -120,19 +121,6 @@
   <br><br>
 
   <script src="src/js/data/tierlist.js"></script>
-
-  <script>
-    const characters = dataSet[dataSetVersion].characterData;
-
-    function renderCharacterToTier(item, containerId) {
-      const container = document.getElementById(containerId);
-      if (!container) return;
-      
-      const imgContainer = document.createElement("div");
-      imgContainer.style.display = "inline-block";
-      imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
-      container.appendChild(imgContainer);
-    }
   </script> <!--EX-->
 
   <a href="src/assets/tiers/ex.png" target="_blank">
@@ -175,7 +163,7 @@
   <br> <!--A-->
 
   <a href="src/assets/tiers/a.png" target="_blank">
-    <img src="src/assets/tiers/a.png" alt="A Tier" width="165" height="400">
+    <img src="src/assets/tiers/a.png" alt="A Tier" width="165" height="600">
   </a>
   <div id="A" class="tier-row"></div>
   
@@ -186,6 +174,44 @@
   </script>
 
   <br>
+
+
+  <script>
+  const characters = dataSet[dataSetVersion].characterData;
+
+  function renderCharacterToTier(item, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    const imgContainer = document.createElement("div");
+    imgContainer.style.display = "inline-block";
+    imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
+    container.appendChild(imgContainer);
+  }
+  </script>
+
+<h2>F Tier</h2>
+<p>The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes, because they all share the same cons while having very few pros besides being cute.</p>
+<p>Characters here will all more or less share the same universal traits of having next to no:</p>
+<p>Support, Utility, Damage, or Anything Else.</p>
+<p>Thus, may they remain untiered only to exist in the realm of F3.</p>
+
+<table style="width:100%; background-color:#b7b7b7;">
+  <tr>
+    <th>Character</th>
+  </tr>
+  <tr>
+    <td>L1 Reimu</td>
+  </tr>
+  <tr>
+    <td>L1 Marisa</td>
+  </tr>
+  <tr>
+  	<td>L1 Rumia</td>
+  </tr>
+</table>
+
+
   <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 12/7/2026</p>
 </body>
 
