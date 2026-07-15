@@ -1,6 +1,3 @@
-// ==========================================
-// 1. DATASET SETUP & INITIALIZATION
-// ==========================================
 const dataSet = {};
 const dataSetVersion = "tierlist"; 
 dataSet[dataSetVersion] = {};
@@ -27,6 +24,7 @@ dataSet[dataSetVersion].options = [
 
 dataSet[dataSetVersion].characterData = [
   { name: "L1 Reimu", img: "l1 reimu.png", tier: "Dummy", opts: { g: true, def: true } },
+  // start of EX
   { name: "L0o Satori", img: "lo satori.png", tier: "EX", opts: { p: true, dbf: true } },
   { name: "Cz1# Marisa", img: "cz2 marisa.png", tier: "EX", opts: { atk: true, e: true } },
   { name: "Cs2# Satori", img: "cs2 satori.png", tier: "EX", opts: { e: true, supp: true } },
@@ -35,6 +33,7 @@ dataSet[dataSetVersion].characterData = [
   { name: "C5> Miko", img: "c5 miko.png", tier: "EX", opts: { dest: true, e: true } },
   { name: "L80 Kasen", img: "kassy.jpg", tier: "EX", opts: { r: true, atk: true } },
   { name: "L0o Koishi", img: "lo koishi.png", tier: "EX", opts: { p: true, dest: true } },
+  // start of SS
   { name: "F1 Marisa", img: "f1 mors.png", tier: "EX", opts: { e: true, dest: true } },
   { name: "Cb3# Reisen", img: "cb3 reisen.png", tier: "SS", opts: { e: true, dbf: true } },
   { name: "L80 Yukari", img: "l80 yukari.png", tier: "SS", opts: { r: true, atk: true } },
@@ -53,6 +52,7 @@ dataSet[dataSetVersion].characterData = [
   { name: "A14.5& Mamizou", img: "A15.5& Mamizou.png", tier: "SS", opts: { dbf: true, ex: true } },
   { name: "C5> Hecatia", img: "spring hecatia.png", tier: "SS", opts: { e: true, atk: true } },
   { name: "C3>> Yorihime", img: "c3 yorihime.png", tier: "SS", opts: { dest: true, e: true } },
+  // start of S
   { name: "C3∫ Reisen", img: "C3integral reisen supp.png", tier: "S", opts: { supp: true, e: true } },
   { name: "A17& Eika", img: "a17& eika.png", tier: "S", opts: { tec: true, ex: true } },
   { name: "A13& Seiga", img: "a13& seiga.png", tier: "S", opts: { dest: true, ex: true } },
@@ -72,6 +72,7 @@ dataSet[dataSetVersion].characterData = [
   { name: "C3 Yukari", img: "c3 yukari.png", tier: "S", opts: { heal: true, e: true } },
   { name: "L80 Reimu", img: "mv reimu.jpg", tier: "S", opts: { r: true, spd: true } },
   { name: "C3 Narumi", img: "c3 narumi.png", tier: "S", opts: { atk: true, e: true } },
+  // start of A
   { name: "A16.3& Kosuzu", img: "a16.3& kosuzu.png", tier: "A", opts: { atk: true, ex: true } },
   { name: "C3 Sekibanki", img: "sekibanki.jpg", tier: "A", opts: { spd: true, e: true } },
   { name: "C3 Sanae", img: "c3 sanae.png", tier: "A", opts: { dbf: true, e: true } },
@@ -94,86 +95,3 @@ dataSet[dataSetVersion].characterData = [
   { name: "L80 Miko", img: "l80 miko.png", tier: "A", opts: { tec: true, r: false } },
   { name: "A7& Yuyuko", img: "a7& yuyuko.png", tier: "A", opts: { supp: true, ex: false } }
 ];
-
-// ==========================================
-// 2. RENDER & FILTER APPLICATION ENGINE
-// ==========================================
-let characters = [];
-
-// Wait for the DOM structure to load before rendering
-document.addEventListener("DOMContentLoaded", () => {
-  if (dataSet[dataSetVersion] && dataSet[dataSetVersion].characterData) {
-    characters = dataSet[dataSetVersion].characterData;
-  }
-  
-  // Render full dataset initially
-  renderTierList(characters);
-});
-
-// Render characters into correct visual containers
-function renderTierList(charList) {
-  const tiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
-  
-  // Clean all rows first
-  tiers.forEach(tier => {
-    const container = document.getElementById(tier);
-    if (container) {
-      container.innerHTML = "";
-    }
-  });
-
-  // Inject matching characters
-  charList.forEach(item => {
-    if (item.tier) {
-      const container = document.getElementById(item.tier);
-      if (container) {
-        const imgContainer = document.createElement("div");
-        imgContainer.style.display = "inline-block";
-        imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" title="${item.name}" />`;
-        container.appendChild(imgContainer);
-      }
-    }
-  });
-}
-
-// Check all visual checkboxes and filter dynamically
-function applyFilters() {
-  const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'));
-  
-  // If no boxes are clicked, show everyone
-  if (checkedBoxes.length === 0) {
-    renderTierList(characters);
-    return;
-  }
-
-  const activeKeys = checkedBoxes.map(box => box.value);
-
-  const filtered = characters.filter(character => {
-    if (!character.opts) return false;
-    // Keep character if at least one selected filter key is marked true in their opts
-    return activeKeys.some(key => character.opts[key] === true);
-  });
-
-  renderTierList(filtered);
-}
-
-// ==========================================
-// 3. EVENT ROUTING (FOR HTML CLICK HANDLERS)
-// ==========================================
-function filterDefChars() { applyFilters(); }
-function filterSuppChars() { applyFilters(); }
-function filterHealChars() { applyFilters(); }
-function filterDebuffChars() { applyFilters(); }
-function filterAttackChars() { applyFilters(); }
-function filterTechChars() { applyFilters(); }
-function filterSpeedChars() { applyFilters(); }
-function filterDestChars() { applyFilters(); }
-function filterPureChars() { applyFilters(); }
-function filterEpicChars() { applyFilters(); }
-function filterPhChars() { applyFilters(); }
-function filterRelicChars() { applyFilters(); }
-function filterExChars() { applyFilters(); }
-function filterUltraChars() { applyFilters(); }
-function filterFesChars() { applyFilters(); }
-function filterGenChars() { applyFilters(); }
-function filterYuChars() { applyFilters(); }
