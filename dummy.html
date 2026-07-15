@@ -1,0 +1,59 @@
+<html class="system">
+
+<head>
+  <link rel="shortcut icon" href="src/assets/medi.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/medi.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:site_name" content="Touhou Lostword Community Tierlist">
+  <meta name="og:description" content="The Official Touhou LostWord Community Tierlist by Medi and Hibi">
+  <meta name="og:image" content="https://i.postimg.cc/mZKnsV9b/medi2.png">
+  <title>Touhou Lostword Community Tierlist</title>
+
+  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
+  <script src="src/js/data.js"></script>
+  <script src="src/js/data/2022-03-08.js"></script>
+
+  <script src="src/js/html2canvas.min.js"></script>
+  <script src="src/js/lz-string.min.js"></script>
+  <script src="src/js/seedrandom.min.js"></script>
+  <script src="src/js/main.js"></script>
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <input type="radio" id="mode_dark" name="mode" value="dark">
+    <label for="mode_dark" aria-label="Switch to dark mode">🌙</label>
+    <input type="radio" id="mode_light" name="mode" value="light">
+    <label for="mode_light" aria-label="Switch to light mode">☀️</label>
+  </div>
+
+  <script src="src/js/data/tierlist.js"></script>
+
+  <script>
+    const characters = dataSet[dataSetVersion].characterData;
+
+    function renderCharacterToTier(item, containerId) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+      
+      const imgContainer = document.createElement("div");
+      imgContainer.style.display = "inline-block";
+      imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
+      container.appendChild(imgContainer);
+    }
+  </script> <!--Dummy-->
+  <div id="Dummy" class="tier-row"></div>
+  
+  <script>
+    characters
+      .filter(item => item.tier === "Dummy")
+      .forEach(item => renderCharacterToTier(item, "Dummy"));
+  </script>
+
+  <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 12/7/2026</p>
+</body>
+
+</html>
