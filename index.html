@@ -118,6 +118,19 @@
       .forEach(item => renderCharacterToTier(item, "S"));
   </script>
 
+  <br> <!--A-->
+
+  <a href="src/assets/tiers/a.png" target="_blank">
+    <img src="src/assets/tiers/a.png" alt="A Tier" width="165" height="400">
+  </a>
+  <div id="A" class="tier-row"></div>
+  
+  <script>
+    characters
+      .filter(item => item.tier === "A")
+      .forEach(item => renderCharacterToTier(item, "A"));
+  </script>
+
   <br>
   <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 12/7/2026</p>
 </body>
