@@ -84,23 +84,23 @@ table, th, td {
   <label for="class8">Destroy</label>
   <br>
   <h1>Filter by Rarity</h1>
-  <input type="checkbox" id="class1" value="p" onclick="filterPureChars()">
+  <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
   <label for="class9">Pure Fes</label>
-  <input type="checkbox" id="class2" value="e" onclick="filterEpicChars()">
+  <input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
   <label for="class10">Epic Fes</label>
-  <input type="checkbox" id="class3" value="ph" onclick="filterPhChars()">
+  <input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
   <label for="class11">Phantasm Fes</label>
-  <input type="checkbox" id="class4" value="r" onclick="filterRelicChars()">
+  <input type="checkbox" id="class12" value="r" onclick="filterRelicChars()">
   <label for="class12">Relics and Genics</label>
-  <input type="checkbox" id="class5" value="ex" onclick="filterExChars()">
+  <input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
   <label for="class13">Extended Fes</label>
-  <input type="checkbox" id="class6" value="u" onclick="filterUltraChars()">
+  <input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
   <label for="class14">Ultra Fes</label>
-  <input type="checkbox" id="class7" value="a" onclick="filterFesChars()">
+  <input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
   <label for="class15">Festival</label>
-  <input type="checkbox" id="class8" value="g" onclick="filterGenChars()">
+  <input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
   <label for="class16">General</label>
-  <input type="checkbox" id="class8" value="y" onclick="filterYuChars()">
+  <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
   <label for="class17">Yukkuri</label>
   <table>
       <colgroup><col></colgroup>
@@ -109,7 +109,7 @@ table, th, td {
               <th>Character</th>
           </tr>
       </thead>
-      <tbody id="characterTable">
+      <tbody id="characterTable"></tbody>
 
   <br>
 
@@ -191,7 +191,7 @@ table, th, td {
   ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"].forEach(tier => {
   characters
     .filter(item => item.tier === tier)
-    .forEach(item => renderCharacterToItem(item, tier));
+    .forEach(item => renderCharacterToTier(item, tier));
 });
   </script>
 
@@ -222,7 +222,8 @@ table, th, td {
 </table>
 
 
-  <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 12/7/2026</p>
+  <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 15/7/2026</p>
+  <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
 </body>
 
 </html>
