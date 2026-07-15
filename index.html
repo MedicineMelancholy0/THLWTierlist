@@ -119,7 +119,63 @@ table, th, td {
 
   <br><br>
 
-    <script>
+  <script src="src/js/data/tierlist.js"></script>
+  </script> <!--EX-->
+
+  <a href="src/assets/tiers/ex.png" target="_blank">
+    <img src="src/assets/tiers/ex.png" alt="EX Tier" width="165" height="200">
+  </a>
+  <div id="EX" class="tier-row"></div>
+  <!--
+  <script>
+    characters
+      .filter(item => item.tier === "EX")
+      .forEach(item => renderCharacterToTier(item, "EX"));
+  </script>-->
+
+  <br> <!--SS-->
+
+  <a href="src/assets/tiers/ss.png" target="_blank">
+    <img src="src/assets/tiers/ss.png" alt="SS Tier" width="165" height="400">
+  </a>
+  <div id="SS" class="tier-row"></div>
+  
+  <!--<script>
+    characters
+      .filter(item => item.tier === "SS")
+      .forEach(item => renderCharacterToTier(item, "SS"));
+  </script>-->
+
+  <br> <!--S-->
+
+  <a href="src/assets/tiers/s.png" target="_blank">
+    <img src="src/assets/tiers/s.png" alt="S Tier" width="165" height="400">
+  </a>
+  <div id="S" class="tier-row"></div>
+  
+  <!--<script>
+    characters
+      .filter(item => item.tier === "S")
+      .forEach(item => renderCharacterToTier(item, "S"));
+  </script>
+
+  <br> A-->
+
+  <a href="src/assets/tiers/a.png" target="_blank">
+    <img src="src/assets/tiers/a.png" alt="A Tier" width="165" height="800">
+  </a>
+  <div id="A" class="tier-row"></div>
+  
+  <!--<script>
+    characters
+      .filter(item => item.tier === "A")
+      .forEach(item => renderCharacterToTier(item, "A"));
+  </script>-->
+
+  <br>
+
+
+  <script>
   const characters = dataSet[dataSetVersion].characterData;
 
   function renderCharacterToTier(item, containerId) {
@@ -131,62 +187,23 @@ table, th, td {
     imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
     container.appendChild(imgContainer);
   }
-  </script>
 
-  <script src="src/js/data/tierlist.js"></script>
-  </script> <!--EX-->
-
-  <a href="src/assets/tiers/ex.png" target="_blank">
-    <img src="src/assets/tiers/ex.png" alt="EX Tier" width="165" height="200">
-  </a>
-  <div id="EX" class="tier-row"></div>
-  
-  <script>
-    characters
+  characters
       .filter(item => item.tier === "EX")
       .forEach(item => renderCharacterToTier(item, "EX"));
+
+  characters
+  .filter(item => item.tier === "SS")
+  .forEach(item => renderCharacterToTier(item, "SS"));
+
+  characters
+  .filter(item => item.tier === "S")
+  .forEach(item => renderCharacterToTier(item, "S"));
+
+  characters
+  .filter(item => item.tier === "A")
+  .forEach(item => renderCharacterToTier(item, "A"));
   </script>
-
-  <br> <!--SS-->
-
-  <a href="src/assets/tiers/ss.png" target="_blank">
-    <img src="src/assets/tiers/ss.png" alt="SS Tier" width="165" height="400">
-  </a>
-  <div id="SS" class="tier-row"></div>
-  
-  <script>
-    characters
-      .filter(item => item.tier === "SS")
-      .forEach(item => renderCharacterToTier(item, "SS"));
-  </script>
-
-  <br> <!--S-->
-
-  <a href="src/assets/tiers/s.png" target="_blank">
-    <img src="src/assets/tiers/s.png" alt="S Tier" width="165" height="400">
-  </a>
-  <div id="S" class="tier-row"></div>
-  
-  <script>
-    characters
-      .filter(item => item.tier === "S")
-      .forEach(item => renderCharacterToTier(item, "S"));
-  </script>
-
-  <br> <!--A-->
-
-  <a href="src/assets/tiers/a.png" target="_blank">
-    <img src="src/assets/tiers/a.png" alt="A Tier" width="165" height="800">
-  </a>
-  <div id="A" class="tier-row"></div>
-  
-  <script>
-    characters
-      .filter(item => item.tier === "A")
-      .forEach(item => renderCharacterToTier(item, "A"));
-  </script>
-
-  <br>
 
 <h1><strong>F Tier</strong></h1>
 <p>The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes, because they all share the same cons while having very few pros besides being cute.</p>
