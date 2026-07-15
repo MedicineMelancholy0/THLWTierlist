@@ -70,6 +70,24 @@
 </div>
 
 <br>
+var html_content =
+    "<h3>What is Lorem Ipsum?</h3>" +
+    "<p>Lorem Ipsum is simply dummy text...</p>";
+Metro.infobox.create(html_content);
+
+<div class="info-box" data-role="infobox" data-type="alert">
+    <span class="button square closer"></span>
+    <div class="info-box-content">
+        <h3>What is Lorem Ipsum?</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+</div>
+
+Metro.infobox.create("<p>Lorem Ipsum is simply dummy text...</p>", "alert");
+
+<button class="button" onclick="infoBoxEventsExample1()">Open InfoBox</button>
+
+<br>
 <br>
 
   <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 12/7/2026</p>
