@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
   <!-- <script src="src/js/main.js"></script>
- 
+   
   <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
   <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">
   <script src="https://cdn.metroui.org.ua/current/metro.js"></script>-->
@@ -21,13 +21,15 @@
   <title>Character Filtering</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+  <!-- Deferred script is perfect! It loads in the background and executes right before DOMContentLoaded -->
   <script src="src/js/data/tierlist.js" defer></script>
 
   <style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
+    table, th, td {
+      border:1px solid black;
+    }
+  </style>
 </head>
 
 <body>
@@ -62,10 +64,10 @@ table, th, td {
   </div>
 
   <div class="options-wrapper">
-        <div class="options"></div>
-    </div>
+    <div class="options"></div>
+  </div>
 
-  <h1>Filter by Class</h1> <!--Thanks Fritty-->
+  <h1>Filter by Class</h1>
   <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
   <label for="class1">Defense</label>
   <input type="checkbox" id="class2" value="supp" onclick="filterSuppChars()">
@@ -83,6 +85,7 @@ table, th, td {
   <input type="checkbox" id="class8" value="dest" onclick="filterDestChars()">
   <label for="class8">Destroy</label>
   <br>
+  
   <h1>Filter by Rarity</h1>
   <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
   <label for="class9">Pure Fes</label>
@@ -102,14 +105,17 @@ table, th, td {
   <label for="class16">General</label>
   <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
   <label for="class17">Yukkuri</label>
+
+  <!-- Fixed unclosed table bug here -->
   <table>
-      <colgroup><col></colgroup>
-      <thead>
-          <tr>
-              <th>Character</th>
-          </tr>
-      </thead>
-      <tbody id="characterTable"></tbody>
+    <colgroup><col></colgroup>
+    <thead>
+      <tr>
+        <th>Character Table Placeholder</th>
+      </tr>
+    </thead>
+    <tbody id="characterTable"></tbody>
+  </table>
 
   <br>
 
@@ -118,107 +124,141 @@ table, th, td {
   </a>
 
   <br><br>
-  </script> <!--EX-->
 
+  <!-- EX -->
   <a href="src/assets/tiers/ex.png" target="_blank">
     <img src="src/assets/tiers/ex.png" alt="EX Tier" width="165" height="200">
   </a>
   <div id="EX" class="tier-row"></div>
-  <!--
-  <script>
-    characters
-      .filter(item => item.tier === "EX")
-      .forEach(item => renderCharacterToTier(item, "EX"));
-  </script>-->
 
-  <br> <!--SS-->
+  <br> 
 
+  <!-- SS -->
   <a href="src/assets/tiers/ss.png" target="_blank">
     <img src="src/assets/tiers/ss.png" alt="SS Tier" width="165" height="400">
   </a>
   <div id="SS" class="tier-row"></div>
-  
-  <!--<script>
-    characters
-      .filter(item => item.tier === "SS")
-      .forEach(item => renderCharacterToTier(item, "SS"));
-  </script>-->
 
-  <br> <!--S-->
+  <br> 
 
+  <!-- S -->
   <a href="src/assets/tiers/s.png" target="_blank">
     <img src="src/assets/tiers/s.png" alt="S Tier" width="165" height="400">
   </a>
   <div id="S" class="tier-row"></div>
-  
-  <!--<script>
-    characters
-      .filter(item => item.tier === "S")
-      .forEach(item => renderCharacterToTier(item, "S"));
-  </script>
 
-  <br> A-->
+  <br>
 
+  <!-- A -->
   <a href="src/assets/tiers/a.png" target="_blank">
     <img src="src/assets/tiers/a.png" alt="A Tier" width="165" height="800">
   </a>
   <div id="A" class="tier-row"></div>
-  
-  <!--<script>
-    characters
-      .filter(item => item.tier === "A")
-      .forEach(item => renderCharacterToTier(item, "A"));
-  </script>-->
 
   <br>
 
-
+  <!-- Main display logic. Runs strictly after tierlist.js finishes executing. -->
   <script>
-  const characters = dataSet[dataSetVersion].characterData;
+    let characters = [];
 
-  function renderCharacterToTier(item, containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    
-    const imgContainer = document.createElement("div");
-    imgContainer.style.display = "inline-block";
-    imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
-    container.appendChild(imgContainer);
-  }
+    document.addEventListener("DOMContentLoaded", () => {
+      // Safely access dataSet after the deferred script has run
+      if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
+        characters = dataSet[dataSetVersion].characterData;
+      } else {
+        console.error("Database initialization failed. Ensure tierlist.js path is correct.");
+        return;
+      }
 
-  ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"].forEach(tier => {
-  characters
-    .filter(item => item.tier === tier)
-    .forEach(item => renderCharacterToTier(item, tier));
-});
+      // Initial render of all characters
+      renderTierList(characters);
+    });
+
+    // Helper to clear and inject character images
+    function renderTierList(charList) {
+      const activeTiers = ["EX", "SS", "S", "A", "Yukkuri"];
+      
+      activeTiers.forEach(tier => {
+        const container = document.getElementById(tier);
+        if (container) {
+          container.innerHTML = ""; // Clear out previous items
+          
+          charList
+            .filter(item => item.tier === tier)
+            .forEach(item => {
+              const imgContainer = document.createElement("div");
+              imgContainer.style.display = "inline-block";
+              imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" title="${item.name}" />`; 
+              container.appendChild(imgContainer);
+            });
+        }
+      });
+    }
+
+    function applyFilters() {
+      const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'));
+      
+      // If no boxes are checked, show the full list
+      if (checkedBoxes.length === 0) {
+        renderTierList(characters);
+        return;
+      }
+
+      const activeKeys = checkedBoxes.map(box => box.value);
+
+      const filtered = characters.filter(character => {
+        if (!character.opts) return false;
+        // Keep character if at least one selected key is marked true in their opts
+        return activeKeys.some(key => character.opts[key] === true);
+      });
+
+      renderTierList(filtered);
+    }
+
+    function filterDefChars() { applyFilters(); }
+    function filterSuppChars() { applyFilters(); }
+    function filterHealChars() { applyFilters(); }
+    function filterDebuffChars() { applyFilters(); }
+    function filterAttackChars() { applyFilters(); }
+    function filterTechChars() { applyFilters(); }
+    function filterSpeedChars() { applyFilters(); }
+    function filterDestChars() { applyFilters(); }
+    function filterPureChars() { applyFilters(); }
+    function filterEpicChars() { applyFilters(); }
+    function filterPhChars() { applyFilters(); }
+    function filterRelicChars() { applyFilters(); }
+    function filterExChars() { applyFilters(); }
+    function filterUltraChars() { applyFilters(); }
+    function filterFesChars() { applyFilters(); }
+    function filterGenChars() { applyFilters(); }
+    function filterYuChars() { applyFilters(); }
   </script>
 
-<h1><strong>F Tier</strong></h1>
-<p>The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes, because they all share the same cons while having very few pros besides being cute.</p>
-<p>Characters here will all more or less share the same universal traits of having next to no:</p>
-<p>Support, Utility, Damage, or Anything Else.</p>
-<p>Thus, may they remain untiered only to exist in the realm of F3.</p>
+  <h1><strong>F Tier</strong></h1>
+  <p>The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes, because they all share the same cons while having very few pros besides being cute.</p>
+  <p>Characters here will all more or less share the same universal traits of having next to no:</p>
+  <p>Support, Utility, Damage, or Anything Else.</p>
+  <p>Thus, may they remain untiered only to exist in the realm of F3.</p>
 
-<table style="width:100%; background-color:#999999;">
-  <tr>
-    <th>Character</th>
-  </tr>
-  <tr>
-    <td>L1 Reimu</td>
-    <td>L1 Marisa</td>
-    <td>L1 Rumia</td>
-  </tr>
-  <tr>
-    <td>L1 Marisa</td>
-    <td>L1 Marisa</td>
-    <td>L1 Rumia</td>
-  </tr>
-  <tr>
-  	<td>L1 Rumia</td>
-    <td>L1 Rumia</td>
-  </tr>
-</table>
-
+  <table style="width:100%; background-color:#999999;">
+    <tr>
+      <th>Character</th>
+    </tr>
+    <tr>
+      <td>L1 Reimu</td>
+      <td>L1 Marisa</td>
+      <td>L1 Rumia</td>
+    </tr>
+    <tr>
+      <td>L1 Marisa</td>
+      <td>L1 Marisa</td>
+      <td>L1 Rumia</td>
+    </tr>
+    <tr>
+      <td>L1 Rumia</td>
+      <td>L1 Rumia</td>
+    </tr>
+  </table>
 
   <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 15/7/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
