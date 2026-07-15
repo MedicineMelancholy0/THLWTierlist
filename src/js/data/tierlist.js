@@ -95,6 +95,15 @@ dataSet[dataSetVersion].options = [
 
 dataSet[dataSetVersion].characterData = [
     {
+    name: "L1 Reimu",
+    img: "l1 reimu.png",
+    tier: "Dummy",
+opts: {
+    g: true,
+    def: true
+}
+  },
+  {
     name: "L0o Satori",
     img: "lo satori.png",
     tier: "EX",
@@ -483,7 +492,7 @@ opts: {
   },
   {
     name: "L80 Reimu",
-    img: "genshin43.png",
+    img: "mv reimu.jpg",
     tier: "S",
 opts: {
     r: true,
@@ -500,68 +509,75 @@ opts: {
 }
   }, // Start of A
   {
-    name: "Yanfei",
-    img: "genshin45.png",
+    name: "A16.3& Kosuzu",
+    img: "a16.3& kosuzu.png",
+    tier: "A",
 opts: {
-    fem: true,
-    liy: true
+    atk: true,
+    ex: true
 }
   },
   {
-    name: "Yoimiya",
-    img: "genshin46.png",
+    name: "C3 Sekibanki",
+    img: "sekibanki.jpg",
+    tier: "A",
 opts: {
-    fem: true,
-    ina: true
+    spd: true,
+    e: true
 }
   },
   {
-    name: "Yun Jin",
-    img: "genshin47.png",
+    name: "C3 Sanae",
+    img: "c3 sanae.png",
+    tier: "A",
 opts: {
-    fem: true,
-    liy: true
+    dbf: true,
+    e: true
 }
   },
   {
-    name: "Zhongli",
-    img: "genshin48.png",
+    name: "C3 Alice",
+    img: "c3 alice.png",
+    tier: "A",
 opts: {
-    men: true,
-    liy: true
+    dbf: true,
+    e: true
 }
   },
   {
-    name: "Kamisato Ayato",
-    img: "genshinex1.png",
+    name: "C3 Reimu",
+    img: "c3 reimu.png",
+    tier: "A",
 opts: {
-   men: true,
-   ina: true
+   spd: true,
+   e: true
 }
   },
   {
-    name: "Dainslief",
-    img: "genshinex2.png",
+    name: "Ce1 Flandre",
+    img: "ce1 flandre.png",
+    tier: "A",
 opts: {
-   men: true,
-   unr: true,
-   lol: true //same as childe. he's from khanreiah but seems redundant to add a specific filter just for that. he will stay as nationless for now
+   e: true,
+   spd: true
 }
   },
   {
-    name: "Yelan",
-    img: "genshinex3.png",
+    name: "C5= Mokou",
+    img: "c5 mokou.png",
+    tier: "A",
 opts: {
-   fem: true,
-   liy: true
+   atk: true,
+   e: true
 }
   },
   {
-    name: "Kuki Shinobu",
-    img: "genshinex4.png",
+    name: "C5> Eiki",
+    img: "spring eiki.png",
+    tier: "A",
 opts: {
-   fem: true,
-   ina: true
+   e: true,
+   tec: true
 }
   },
   {
