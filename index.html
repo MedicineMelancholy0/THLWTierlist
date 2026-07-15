@@ -20,6 +20,15 @@
   <script src="src/js/lz-string.min.js"></script>
   <script src="src/js/seedrandom.min.js"></script>
   <script src="src/js/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">
+  <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
+
+  <title>Character Filtering</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="tierlist.js" defer></script>
+
 </head>
 
 <body>
@@ -56,6 +65,50 @@
   <div class="options-wrapper">
         <div class="options"></div>
     </div>
+
+  <h1>Character Table!!!</h1> <!--Thanks Fritty-->
+  <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
+  <label for="class1">Defense</label>
+  <input type="checkbox" id="class2" value="supp" onclick="filterSuppChars()">
+  <label for="class2">Support</label>
+  <input type="checkbox" id="class3" value="heal" onclick="filterHealChars()">
+  <label for="class3">Heal</label>
+  <input type="checkbox" id="class4" value="dbf" onclick="filterDebuffChars()">
+  <label for="class4">Debuff</label>
+  <input type="checkbox" id="class5" value="atk" onclick="filterAttackChars()">
+  <label for="class5">Attack</label>
+  <input type="checkbox" id="class6" value="tec" onclick="filterTechChars()">
+  <label for="class6">Tech</label>
+  <input type="checkbox" id="class7" value="spd" onclick="filterSpeedChars()">
+  <label for="class7">Speed</label>
+  <input type="checkbox" id="class8" value="dest" onclick="filterDestChars()">
+  <label for="class8">Destroy</label>
+  <input type="checkbox" id="class1" value="p" onclick="filterPureChars()">
+  <label for="class9">Pure Fes</label>
+  <input type="checkbox" id="class2" value="e" onclick="filterEpicChars()">
+  <label for="class10">Epic Fes</label>
+  <input type="checkbox" id="class3" value="ph" onclick="filterPhChars()">
+  <label for="class11">Phantasm Fes</label>
+  <input type="checkbox" id="class4" value="r" onclick="filterRelicChars()">
+  <label for="class12">Relics and Genics</label>
+  <input type="checkbox" id="class5" value="ex" onclick="filterExChars()">
+  <label for="class13">Extended Fes</label>
+  <input type="checkbox" id="class6" value="u" onclick="filterUltraChars()">
+  <label for="class14">Ultra Fes</label>
+  <input type="checkbox" id="class7" value="a" onclick="filterFesChars()">
+  <label for="class15">Festival</label>
+  <input type="checkbox" id="class8" value="g" onclick="filterGenChars()">
+  <label for="class16">General</label>
+  <input type="checkbox" id="class8" value="y" onclick="filterYuChars()">
+  <label for="class17">Yukkuri</label>
+  <table>
+      <colgroup><col></colgroup>
+      <thead>
+          <tr>
+              <th>Character</th>
+          </tr>
+      </thead>
+      <tbody id="characterTable">
 
   <br>
 
