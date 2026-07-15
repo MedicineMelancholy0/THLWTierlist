@@ -21,7 +21,7 @@
   <title>Character Filtering</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <script src="tierlist.js" defer></script>
+  <script src="src/js/data/tierlist.js" defer></script>
 
   <style>
 table, th, td {
@@ -188,21 +188,11 @@ table, th, td {
     container.appendChild(imgContainer);
   }
 
+  ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"].forEach(tier => {
   characters
-      .filter(item => item.tier === "EX")
-      .forEach(item => renderCharacterToTier(item, "EX"));
-
-  characters
-  .filter(item => item.tier === "SS")
-  .forEach(item => renderCharacterToTier(item, "SS"));
-
-  characters
-  .filter(item => item.tier === "S")
-  .forEach(item => renderCharacterToTier(item, "S"));
-
-  characters
-  .filter(item => item.tier === "A")
-  .forEach(item => renderCharacterToTier(item, "A"));
+    .filter(item => item.tier === tier)
+    .forEach(item => renderCharacterToItem(item, tier));
+});
   </script>
 
 <h1><strong>F Tier</strong></h1>
