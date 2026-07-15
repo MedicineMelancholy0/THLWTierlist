@@ -20,6 +20,7 @@
   <script src="src/js/lz-string.min.js"></script>
   <script src="src/js/seedrandom.min.js"></script>
   <script src="src/js/main.js"></script>
+
   <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
   <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">
   <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
@@ -57,14 +58,7 @@
       .forEach(item => renderCharacterToTier(item, "Dummy"));
   </script>
 
-<!--  <div class="info-box" data-role="infobox" data-type="default">
-    <span class="button square closer"></span>
-    <div class="info-box-content">
-        <h3>What is Lorem Ipsum?</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    </div>
-</div>-->
-
+<script>
 <div class="info-box" data-role="infobox">
     <span class="button square closer"></span>
     <div class="info-box-content">
@@ -72,13 +66,17 @@
         <p>Medories Medories Medories Medories Medories Medories Medories Medories Medories Medories Medories </p>
     </div>
 </div>
+</script>
 
 <br>
+<script>
 var html_content =
     "<h3>What is Lorem Ipsum?</h3>" +
     "<p>Lorem Ipsum is simply dummy text...</p>";
 Metro.infobox.create(html_content);
+</script>
 
+<script>
 <div class="info-box" data-role="infobox" data-type="alert">
     <span class="button square closer"></span>
     <div class="info-box-content">
@@ -86,8 +84,11 @@ Metro.infobox.create(html_content);
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
 </div>
+</script>
 
+<script>
 Metro.infobox.create("<p>Lorem Ipsum is simply dummy text...</p>", "alert");
+</script>
 
 <button class="button" onclick="infoBoxEventsExample1()">Open InfoBox</button>
 
