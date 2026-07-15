@@ -1,4 +1,4 @@
-dataSet = {};
+const dataSet = {};
 dataSetVersion = "tierlist"; // Change this when creating a new data set version. YYYY-MM-DD format.
 dataSet[dataSetVersion] = {};
 const container = document.getElementById("EX");
