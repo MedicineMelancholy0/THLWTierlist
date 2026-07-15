@@ -69,12 +69,13 @@
 </div>
 </script>-->
 
+<!--
 <br>
 <script>
 var html_content =
     "<h3>Information</h3>";
 Metro.infobox.create(html_content);
-</script>
+</script>-->
 
 <!--
 <script>
@@ -90,6 +91,27 @@ Metro.infobox.create(html_content);
 <script>
 Metro.infobox.create("<p>Lorem Ipsum is simply dummy text...</p>", "alert");
 </script>-->
+
+<script>
+function infoBoxEventsExample1() {
+    // 1. Define the content: a styled textbox (using Metro UI input styles)
+    var html_content = 
+        "<h5>Enter Information</h5>" +
+        "<div class='form-group'>" +
+            "<input type='text' data-role='input' placeholder='Type here...'>" +
+        "</div>";
+
+    // 2. Create the InfoBox with a specified size and overlay enabled
+    Metro.infobox.create(html_content, "AAAAAAAAAA", {
+        width: 100,             // Set width to 100px (NOTE: 100px is very small; consider 300 if text is cut off)
+        height: 50,             // Set height to 50px
+        overlay: true,          // Displays the dark backdrop overlay behind the box
+        overlayColor: "#000",   // Optional: Customize overlay color
+        overlayAlpha: 0.5,      // Optional: Opacity of the overlay
+        closeButton: true       // Show the "X" close button so users can close it
+    });
+}
+</script>
 
 <button class="button" onclick="infoBoxEventsExample1()">Explanation</button>
 
