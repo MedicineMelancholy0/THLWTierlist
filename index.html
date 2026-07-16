@@ -159,6 +159,14 @@
 
   <br>
 
+  <!-- B -->
+<a href="src/assets/tiers/b.png" target="_blank">
+  <img src="src/assets/tiers/b.png" alt="B Tier" width="165" height="800">
+</a>
+<div id="A" class="tier-row"></div>
+
+<br>
+
   <!-- Main display logic. Runs strictly after tierlist.js finishes executing. -->
   <script>
     let characters = [];
@@ -178,7 +186,7 @@
 
     // Helper to clear and inject character images
     function renderTierList(charList) {
-      const activeTiers = ["EX", "SS", "S", "A", "Yukkuri"];
+      const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
       
       activeTiers.forEach(tier => {
         const container = document.getElementById(tier);
