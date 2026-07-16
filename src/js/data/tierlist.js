@@ -1,277 +1,174 @@
-<html class="system">
+const dataSet = {};
+const dataSetVersion = "tierlist"; 
+dataSet[dataSetVersion] = {};
 
-<head>
-  <link rel="shortcut icon" href="src/assets/medi.ico" type="image/x-icon">
-  <link rel="icon" href="src/assets/medi.ico" type="image/x-icon">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="og:site_name" content="Touhou Lostword Community Tierlist">
-  <meta name="og:description" content="The Official Touhou LostWord Community Tierlist by Medi and Hibi">
-  <meta name="og:image" content="https://i.postimg.cc/mZKnsV9b/medi2.png">
-  <title>Touhou Lostword Community Tierlist</title>
+dataSet[dataSetVersion].options = [
+  { name: "Filter Pure Fes", key: "p", tooltip: "Check this to remove Pure Fes Characters" },
+  { name: "Filter Epics", key: "e", tooltip: "Check this to remove Epic Characters" },
+  { name: "Filter Relics & Genics", key: "r", tooltip: "Check this to remove Relic and Genic Characters." },
+  { name: "Filter Phantasm Fes", key: "ph", tooltip: "Check this to remove Phantasm Fes Characters." },
+  { name: "Filter ExFes", key: "ex", tooltip: "Check this to remove Extended Fes Characters." },
+  { name: "Filter Battle Pass Characters", key: "b", tooltip: "Check this to remove Battle Pass Characters." },
+  { name: "Filter Ultra Fes", key: "u", tooltip: "Check this to Sfes/Ufes Characters" },
+  { name: "Filter Fes", key: "a", tooltip: "Check this to remove A-Fes Characters." },
+  { name: "Filter General Characters", key: "g", tooltip: "Check this to remove characters from the General pool (L1s)." },
+  { name: "Filter Yukkuris", key: "y", tooltip: "Check this to remove Yukkuris." },
+  { name: "Filter Atk Units", key: "atk", tooltip: "Check this to remove Atk Units." },
+  { name: "Filter Def Units", key: "def", tooltip: "Check this to remove Def Units." },
+  { name: "Filter Spd Units", key: "spd", tooltip: "Check this to remove Spd Units." },
+  { name: "Filter Heal Units", key: "heal", tooltip: "Check this to remove Heal Units." },
+  { name: "Filter Supp Units", key: "supp", tooltip: "Check this to remove Support Units." },
+  { name: "Filter Dbf Units", key: "dbf", tooltip: "Check this to remove Debuff Units." },
+  { name: "Filter Dest Units", key: "dest", tooltip: "Check this to remove Dest Units." },
+  { name: "Filter Tec Units", key: "tec", tooltip: "Check this to remove Tec Units." }
+];
 
-  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
-
-  <!-- <script src="src/js/main.js"></script>
-   
-  <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
-  <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">
-  <script src="https://cdn.metroui.org.ua/current/metro.js"></script>-->
-
-  <title>Character Filtering</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  
-  <!-- Deferred script is perfect! It loads in the background and executes right before DOMContentLoaded -->
-  <script src="src/js/data/tierlist.js" defer></script>
-
-  <style>
-    table, th, td {
-      border:1px solid black;
-    }
-  </style>
-</head>
-
-<body>
-
-  <h1>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</h1>
-  <a href="https://medicinemelancholy0.github.io/THLWTierlist/criteria"><strong>Tiering Criteria</strong></a>
-  <a href="https://medicinemelancholy0.github.io/THLWTierlist/info">FAQ, Glossary, Links</a>
-  <a href="https://medicinemelancholy0.github.io/THLWTierlist/changelog"><strong>Changelog</strong></a>
-  
-  <p>Explanations are available for every Character and Tier, visible by clicking on them. Read them to understand how units are ranked as it is not just vibes and they follow a system.</p>
-  <p>Further explanations are available in the Tiering Criteria Section and in the Tier/Character explanations, please read them before making a complaint.</p>
-  <p><strong>Other important Criterias to keep in mind:</strong></p>
-  <p>Only EX, SS, S, and Yukkuri tiers are ordered.</p>
-  <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards</p>
-  <p>(INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
-  <p>Some benchmarks: "good damage" = All that matters is 2.2 mil for ds from my last check up. Compare that number to the calc sheet.</p>
-  <p>Keep in mind, stuff like buffs and neutral dmg fb etc DO matter in this regard, so does sp reduction. And ESPECIALLY def down. Characters who can hit those numbers are usually fine.</p>
-  <br>
-  
-  <div class="Important Links">
-    <a href="https://discord.gg/TCjp7VMTps"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
-    <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753"><strong>Calc Sheet (IMPORTANT!)</strong></a>
-  </div>
-  
-  <br>
-  
-  <div class="theme-toggle">
-    <input type="radio" id="mode_dark" name="mode" value="dark">
-    <label for="mode_dark" aria-label="Switch to dark mode">🌙</label>
-    <input type="radio" id="mode_light" name="mode" value="light">
-    <label for="mode_light" aria-label="Switch to light mode">☀️</label>
-  </div>
-
-  <div class="options-wrapper">
-    <div class="options"></div>
-  </div>
-
-  <h1>Filter by Class</h1>
-  <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
-  <label for="class1">Defense</label>
-  <input type="checkbox" id="class2" value="supp" onclick="filterSuppChars()">
-  <label for="class2">Support</label>
-  <input type="checkbox" id="class3" value="heal" onclick="filterHealChars()">
-  <label for="class3">Heal</label>
-  <input type="checkbox" id="class4" value="dbf" onclick="filterDebuffChars()">
-  <label for="class4">Debuff</label>
-  <input type="checkbox" id="class5" value="atk" onclick="filterAttackChars()">
-  <label for="class5">Attack</label>
-  <input type="checkbox" id="class6" value="tec" onclick="filterTechChars()">
-  <label for="class6">Tech</label>
-  <input type="checkbox" id="class7" value="spd" onclick="filterSpeedChars()">
-  <label for="class7">Speed</label>
-  <input type="checkbox" id="class8" value="dest" onclick="filterDestChars()">
-  <label for="class8">Destroy</label>
-  <br>
-  
-  <h1>Filter by Rarity</h1>
-  <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
-  <label for="class9">Pure Fes</label>
-  <input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
-  <label for="class10">Epic Fes</label>
-  <input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
-  <label for="class11">Phantasm Fes</label>
-  <input type="checkbox" id="class12" value="r" onclick="filterRelicChars()">
-  <label for="class12">Relics and Genics</label>
-  <input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
-  <label for="class13">Extended Fes</label>
-  <input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
-  <label for="class18">Battle Pass</label>
-  <input type="checkbox" id="class18" value="b" onclick="filterExChars()">
-  <label for="class14">Ultra Fes</label>
-  <input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
-  <label for="class15">Festival</label>
-  <input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
-  <label for="class16">General</label>
-  <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
-  <label for="class17">Yukkuri</label>
-
-  <!-- Fixed unclosed table bug here -->
-  <table>
-    <colgroup><col></colgroup>
-    <thead>
-      <tr>
-        <th>Character Table Placeholder</th>
-      </tr>
-    </thead>
-    <tbody id="characterTable"></tbody>
-  </table>
-
-  <br>
-
-  <a href='src/assets/title1.png' target='_blank'>
-    <img src='src/assets/title1.png' alt='title1' width="1690" height="231">
-  </a>
-
-  <br><br>
-
-  <!-- EX -->
-  <a href="src/assets/tiers/ex.png" target="_blank">
-    <img src="src/assets/tiers/ex.png" alt="EX Tier" width="165" height="200">
-  </a>
-  <div id="EX" class="tier-row"></div>
-
-  <br> 
-
-  <!-- SS -->
-  <a href="src/assets/tiers/ss.png" target="_blank">
-    <img src="src/assets/tiers/ss.png" alt="SS Tier" width="165" height="400">
-  </a>
-  <div id="SS" class="tier-row"></div>
-
-  <br> 
-
-  <!-- S -->
-  <a href="src/assets/tiers/s.png" target="_blank">
-    <img src="src/assets/tiers/s.png" alt="S Tier" width="165" height="400">
-  </a>
-  <div id="S" class="tier-row"></div>
-
-  <br>
-
-  <!-- A -->
-  <a href="src/assets/tiers/a.png" target="_blank">
-    <img src="src/assets/tiers/a.png" alt="A Tier" width="165" height="800">
-  </a>
-  <div id="A" class="tier-row"></div>
-
-  <br>
-
-  <!-- B -->
-<a href="src/assets/tiers/b.png" target="_blank">
-  <img src="src/assets/tiers/b.png" alt="B Tier" width="165" height="800">
-</a>
-<div id="B" class="tier-row"></div>
-
-<br>
-
-  <!-- Main display logic. Runs strictly after tierlist.js finishes executing. -->
-  <script>
-    let characters = [];
-
-    document.addEventListener("DOMContentLoaded", () => {
-      // Safely access dataSet after the deferred script has run
-      if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
-        characters = dataSet[dataSetVersion].characterData;
-      } else {
-        console.error("Database initialization failed. Ensure tierlist.js path is correct.");
-        return;
-      }
-
-      // Initial render of all characters
-      renderTierList(characters);
-    });
-
-    // Helper to clear and inject character images
-    function renderTierList(charList) {
-      const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
-      
-      activeTiers.forEach(tier => {
-        const container = document.getElementById(tier);
-        if (container) {
-          container.innerHTML = ""; // Clear out previous items
-          
-          charList
-            .filter(item => item.tier === tier)
-            .forEach(item => {
-              const imgContainer = document.createElement("div");
-              imgContainer.style.display = "inline-block";
-              imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" title="${item.name}" />`; 
-              container.appendChild(imgContainer);
-            });
-        }
-      });
-    }
-
-    function applyFilters() {
-      const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'));
-      
-      // If no boxes are checked, show the full list
-      if (checkedBoxes.length === 0) {
-        renderTierList(characters);
-        return;
-      }
-
-      const activeKeys = checkedBoxes.map(box => box.value);
-
-      const filtered = characters.filter(character => {
-        if (!character.opts) return false;
-        // Keep character if at least one selected key is marked true in their opts
-        return activeKeys.some(key => character.opts[key] === true);
-      });
-
-      renderTierList(filtered);
-    }
-
-    function filterDefChars() { applyFilters(); }
-    function filterSuppChars() { applyFilters(); }
-    function filterHealChars() { applyFilters(); }
-    function filterDebuffChars() { applyFilters(); }
-    function filterAttackChars() { applyFilters(); }
-    function filterTechChars() { applyFilters(); }
-    function filterSpeedChars() { applyFilters(); }
-    function filterDestChars() { applyFilters(); }
-    function filterPureChars() { applyFilters(); }
-    function filterEpicChars() { applyFilters(); }
-    function filterPhChars() { applyFilters(); }
-    function filterRelicChars() { applyFilters(); }
-    function filterExChars() { applyFilters(); }
-    function filterUltraChars() { applyFilters(); }
-    function filterFesChars() { applyFilters(); }
-    function filterGenChars() { applyFilters(); }
-    function filterYuChars() { applyFilters(); }
-  </script>
-
-  <h1><strong>F Tier</strong></h1>
-  <p>The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes, because they all share the same cons while having very few pros besides being cute.</p>
-  <p>Characters here will all more or less share the same universal traits of having next to no:</p>
-  <p>Support, Utility, Damage, or Anything Else.</p>
-  <p>Thus, may they remain untiered only to exist in the realm of F3.</p>
-
-  <table style="width:100%; background-color:#999999;">
-    <tr>
-      <th>Character</th>
-    </tr>
-    <tr>
-      <td>L1 Reimu</td>
-      <td>L1 Marisa</td>
-      <td>L1 Rumia</td>
-    </tr>
-    <tr>
-      <td>L1 Marisa</td>
-      <td>L1 Marisa</td>
-      <td>L1 Rumia</td>
-    </tr>
-    <tr>
-      <td>L1 Rumia</td>
-      <td>L1 Rumia</td>
-    </tr>
-  </table>
-
-  <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 15/7/2026</p>
-  <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
-</body>
-
-</html>
+dataSet[dataSetVersion].characterData = [
+  { name: "L1 Reimu", img: "l1 reimu.png", tier: "Dummy", opts: { g: true, def: true } },
+  // start of EX
+  { name: "L0o Satori", img: "lo satori.png", tier: "EX", opts: { p: true, dbf: true } },
+  { name: "Cz1# Marisa", img: "cz2 marisa.png", tier: "EX", opts: { atk: true, e: true } },
+  { name: "Cs2# Satori", img: "cs2 satori.png", tier: "EX", opts: { e: true, supp: true } },
+  { name: "C3>> Toyohime", img: "c3 toyohime.png", tier: "EX", opts: { e: true, tec: true } },
+  { name: "Lr1 Gengetsu", img: "SPOILER_gengetsu.jpg", tier: "EX", opts: { r: true, tec: true } },
+  { name: "C5> Miko", img: "c5 miko.png", tier: "EX", opts: { dest: true, e: true } },
+  { name: "L80 Kasen", img: "kassy.jpg", tier: "EX", opts: { r: true, atk: true } },
+  { name: "L0o Koishi", img: "lo koishi.png", tier: "EX", opts: { p: true, dest: true } },
+  // start of SS
+  { name: "F1 Marisa", img: "f1 mors.png", tier: "EX", opts: { e: true, dest: true } },
+  { name: "Cb3# Reisen", img: "cb3 reisen.png", tier: "SS", opts: { e: true, dbf: true } },
+  { name: "L80 Yukari", img: "l80 yukari.png", tier: "SS", opts: { r: true, atk: true } },
+  { name: "A6æ Rumia", img: "phfes rumia.png", tier: "SS", opts: { dest: true, ph: true } },
+  { name: "L10.1 Remilia", img: "l10.1 remilia.png", tier: "SS", opts: { e: true, tec: true } },
+  { name: "L10.1 Flandre", img: "l10.1 flandre.png", tier: "SS", opts: { atk: true, e: true } },
+  { name: "Cf1# Koishi", img: "cf1 koishi.png", tier: "SS", opts: { e: true, tec: true } },
+  { name: "L0g Kanako", img: "lg kanako.png", tier: "SS", opts: { p: true, def: true } },
+  { name: "C5> Zanmu", img: "spring zanmu.png", tier: "SS", opts: { e: true, spd: true } },
+  { name: "L80 Aya", img: "l80 aya.png", tier: "SS", opts: { r: true, spd: true } },
+  { name: "Ce9 Remilia", img: "ce9 remilia.png", tier: "SS", opts: { e: true, atk: true } },
+  { name: "C5> Saki", img: "c5 saki.png", tier: "SS", opts: { atk: true, e: true } },
+  { name: "L0g Suwako", img: "lg suwako.png", tier: "SS", opts: { p: true, atk: true } },
+  { name: "C3 Yuyuko", img: "beach yuyu.jpg", tier: "SS", opts: { dest: true, e: true } },
+  { name: "Lm1 Mugetsu", img: "mugetsu.png", tier: "SS", opts: { spd: true, r: true } },
+  { name: "A14.5& Mamizou", img: "A15.5& Mamizou.png", tier: "SS", opts: { dbf: true, ex: true } },
+  { name: "C5> Hecatia", img: "spring hecatia.png", tier: "SS", opts: { e: true, atk: true } },
+  { name: "C3>> Yorihime", img: "c3 yorihime.png", tier: "SS", opts: { dest: true, e: true } },
+  // start of S
+  { name: "C3∫ Reisen", img: "C3integral reisen supp.png", tier: "S", opts: { supp: true, e: true } },
+  { name: "A17& Eika", img: "a17& eika.png", tier: "S", opts: { tec: true, ex: true } },
+  { name: "Lr Aya", img: "zenki.jpg", tier: "S", opts: { tec: true, u: true } },
+  { name: "A13& Seiga", img: "a13& seiga.png", tier: "S", opts: { dest: true, ex: true } },
+  { name: "A9.4& Sakuya", img: "a9.4& sakuya.png", tier: "S", opts: { atk: true, ex: true } },
+  { name: "L80 Kokoro", img: "l80 kokoro.png", tier: "S", opts: { r: true, atk: true } },
+  { name: "C3 Sakuya", img: "c3 sakuya2.png", tier: "S", opts: { supp: true, e: true } },
+  { name: "C5= Kaguya", img: "c35= kaguya.png", tier: "S", opts: { dest: true, e: true } },
+  { name: "L0g Sanae", img: "fake ass sanae.jpg", tier: "S", opts: { p: true, heal: true } },
+  { name: "C3< Nitori", img: "fall nitori.png", tier: "S", opts: { tec: true, e: true } },
+  { name: "C3≥ Nitori", img: "mech nitori.png", tier: "S", opts: { supp: true, e: true } },
+  { name: "C3< Chimata", img: "fall chimata.png", tier: "S", opts: { supp: true, e: true } },
+  { name: "Laa1 Sakuya", img: "laa1 sakuya.png", tier: "S", opts: { atk: true, e: true } },
+  { name: "A16& Satono", img: "a16& satono.png", tier: "S", opts: { ex: true, spd: true } },
+  { name: "C3~ Yoshika", img: "c3~ yoshika.png", tier: "S", opts: { dest: true, e: true } },
+  { name: "C3 Yukari", img: "c3 yukari.png", tier: "S", opts: { heal: true, e: true } },
+  { name: "C3 Cirno", img: "C3 cirno.png", tier: "S", opts: { spd: true, e: true } },
+  { name: "L80 Reimu", img: "mv reimu.jpg", tier: "S", opts: { r: true, spd: true } },
+  { name: "C3 Narumi", img: "c3 narumi.png", tier: "S", opts: { atk: true, e: true } },
+  // start of A
+  { name: "A16.3& Kosuzu", img: "a16.3& kosuzu.png", tier: "A", opts: { atk: true, ex: true } },
+  { name: "C3 Sekibanki", img: "sekibanki.jpg", tier: "A", opts: { spd: true, e: true } },
+  { name: "C3 Sanae", img: "C3 Sanae.png", tier: "A", opts: { dbf: true, e: true } },
+  { name: "C3 Alice", img: "C3 Alice.png", tier: "A", opts: { dbf: true, e: true } },
+  { name: "C3 Reimu", img: "c3 reimu.png", tier: "A", opts: { spd: true, e: true } },
+  { name: "Ce1 Flandre", img: "C3 prae. 2pdn.png", tier: "A", opts: { e: true, spd: true } },
+  { name: "C5= Mokou", img: "c5 mokou.png", tier: "A", opts: { atk: true, e: true } },
+  { name: "C5> Eiki", img: "spring eiki.png", tier: "A", opts: { e: true, tec: true } },
+  { name: "C3' Junko", img: "C3' Junko.png", tier: "A", opts: { spd: true, e: true } },
+  { name: "C3' Seiga", img: "C3' Seiga.png", tier: "A", opts: { e: true, tec: true } },
+  { name: "C3' Urumi", img: "c3' urumi.png", tier: "A", opts: { atk: true, e: true } },
+  { name: "C3' Nemuno", img: "c3' nemuno.png", tier: "A", opts: { e: true, dest: true } },
+  { name: "Cf1# Reimu", img: "cf1 reimu.png", tier: "A", opts: { dest: true, e: true } },
+  { name: "L10.1 Reimu", img: "idol_reimu.jpg", tier: "A", opts: { e: true, tec: true } },
+  { name: "F1 Koishi", img: "f1 koishi.png", tier: "A", opts: { tec: true, e: true } },
+  { name: "Lm1 Mima", img: "lm1 mima.png", tier: "A", opts: { r: true, dest: true } },
+  { name: "Lr1 Shinki", img: "lr1 shinki.png", tier: "A", opts: { atk: true, r: true } },
+  { name: "L80 Ran", img: "l80 ran.png", tier: "A", opts: { r: true, def: true } },
+  { name: "L80 Yuyuko", img: "mv yuyu.jpg", tier: "A", opts: { tec: true, r: true } },
+  { name: "L80 Miko", img: "l80 miko.png", tier: "A", opts: { tec: true, r: true } },
+  { name: "L80 Sanae", img: "Mv sanae.jpg", tier: "A", opts: { atk: true, r: true } },
+  { name: "A7& Yuyuko", img: "a7& yuyuko.png", tier: "A", opts: { supp: true, ex: true } },
+  { name: "A10& Shizuha", img: "a10& shizuha.png", tier: "A", opts: { dest: true, ex: true } },
+  { name: "A12& Nazrin", img: "a12& nazrin.png", tier: "A", opts: { atk: true, ex: true } },
+  { name: "A12& Shou", img: "a12& shou.png", tier: "A", opts: { spd: true, ex: true } },
+  { name: "A12.5& Hatate", img: "a12.5& hatate.png", tier: "A", opts: { dest: true, ex: true } },
+  { name: "A15& Seiran", img: "a15& Seiran.png", tier: "A", opts: { dest: true, ex: true } },
+  { name: "A15& Clownpiece", img: "a16& clownpiss.png", tier: "A", opts: { tec: true, ex: true } },
+  { name: "A15.3& Doremy", img: "a15.3& doremy.png", tier: "A", opts: { def: true, ex: true } },
+  { name: "A17.5& Kutaka", img: "a17.5& kutaka.png", tier: "A", opts: { spd: true, ex: true } },
+  { name: "F1.-5 Sanae", img: "f1.-5 sanae.png", tier: "A", opts: { supp: true, b: true } },
+  { name: "D8.-5 Flandre", img: "d8.-5 flandre 1.png", tier: "A", opts: { dest: true, b: true } },
+  { name: "R2.-5 Yuyuko", img: "r2.-5 yuyuko.png", tier: "A", opts: { spd: true, b: true } },
+  { name: "W1;4 Suika", img: "w1.-4 suika.png", tier: "A", opts: { dest: true, b: true } },
+  { name: "E1;4 Sakuya", img: "e1.-5 sakuya.png", tier: "A", opts: { dest: true, b: true } },
+  { name: "F1;4 Koishi", img: "f1;4 koishi.png", tier: "A", opts: { tec: true, b: true } },
+  { name: "B3 Seiran", img: "b3 seiran.png", tier: "A", opts: { spd: true, u: true } },
+  { name: "B3 Shinmyoumaru", img: "b5 shinmy.png", tier: "A", opts: { tec: true, u: true } },
+  { name: "Lr Ibaraki-Douji's Arm", img: "Lr Armpdn supp.png", tier: "A", opts: { supp: true, u: true } },
+  { name: "W5 Yuugi", img: "yuugi.jpg", tier: "A", opts: { tec: true, u: true } },
+  { name: "A13 Seiga", img: "seiga.jpg", tier: "A", opts: { dest: true, a: true } },
+  // start of B
+  { name: "C3 Miyoi", img: "c3 miyoi.png", tier: "B", opts: { tec: true, e: true } },
+  { name: "C3 Tenshi", img: "tenshi.jpg", tier: "B", opts: { dest: true, e: true } },
+  { name: "C3 Koishi", img: "c3 koishi.png", tier: "B", opts: { atk: true, e: true } },
+  { name: "C3 Satori", img: "c3 satori.png", tier: "B", opts: { def: true, e: true } },
+  { name: "C3 Miko", img: "c3 miko.png", tier: "B", opts: { spd: true, e: true } },
+  { name: "C3 Kogasa", img: "c3 kogasa.png", tier: "B", opts: { atk: true, e: true } },
+  { name: "C3 Byakuren", img: "c3 byakuren.png", tier: "B", opts: { dest: true, e: true } },
+  { name: "C3 Joon", img: "c3 joon.png", tier: "B", opts: { tec: true, e: true } },
+  { name: "C3 Marisa", img: "c3 marisa.png", tier: "B", opts: { supp: true, e: true } },
+  { name: "C3 Youmu", img: "youmu.jpg", tier: "B", opts: { tec: true, e: true } },
+  { name: "C3 Kasen", img: "c3 kasen.png", tier: "B", opts: { tec: true, e: true } },
+  { name: "Cz1 Marisa", img: "cz1 marisa.png", tier: "B", opts: { spd: true, e: true } },
+  { name: "C5> Koishi", img: "PANK KOOSH.jpg", tier: "B", opts: { dest: true, e: true } },
+  { name: "C5> Flandre", img: "flanny.jpg", tier: "B", opts: { dest: true, e: true } },
+  { name: "C3≦ Komachi", img: "C3less than or equal to Komachi.png", tier: "B", opts: { supp: true, e: true } },
+  { name: "C3≦ Clownpiece", img: "C3less than or equal to Clownpiece.png", tier: "B", opts: { dbf: true, e: true } },
+  { name: "Cb3# Youmu", img: "cb3 youmu.png", tier: "B", opts: { dest: true, e: true } },
+  { name: "L10.1 Marisa", img: "idol_marisa.jpg", tier: "B", opts: { atk: true, e: true } },
+  { name: "L10.1 Youmu", img: "l10.1 youmu.png", tier: "B", opts: { spd: true, e: true } },
+  { name: "F1 Reimu", img: "f1 reimu.png", tier: "B", opts: { atk: true, e: true } },
+  { name: "L80 Remilia", img: "l80 remilia.png", tier: "B", opts: { atk: true, r: true } },
+  { name: "L80 Sakuya", img: "l80 sakuya.png", tier: "B", opts: { dbf: true, r: true } },
+  { name: "L80 Kaguya", img: "l80 kaguya.png", tier: "B", opts: { tec: true, r: true } },
+  { name: "L80 Meiling", img: "l80 meiling.png", tier: "B", opts: { tec: true, r: true } },
+  { name: "L80 Patchouli", img: "l80 patchouli.png", tier: "B", opts: { def: true, r: true } },
+  { name: "L80 Okina", img: "l80 okina.png", tier: "B", opts: { heal: true, r: true } },
+  { name: "L80 Junko", img: "l80 junko.png", tier: "B", opts: { tec: true, r: true } },
+  { name: "L80 Satori", img: "l80 satori.png", tier: "B", opts: { dest: true, r: true } },
+  { name: "L80 Marisa", img: "l80 marisa.png", tier: "B", opts: { spd: true, r: true } },
+  { name: "A6& Rumia", img: "a6& rumia.png", tier: "B", opts: { dest: true, ex: true } },
+  { name: "A6& Koakuma", img: "a6& koakuma.png", tier: "B", opts: { supp: true, ex: true } },
+  { name: "A8& Tewi", img: "a8& tewi.png", tier: "B", opts: { dest: true, ex: true } },
+  { name: "A9& Medicine", img: "a9& medicine.png", tier: "B", opts: { dbf: true, ex: true } },
+  { name: "A13& Futo", img: "a13& futo.png", tier: "B", opts: { heal: true, ex: true } },
+  { name: "A16& Mai", img: "a16& mai.png", tier: "B", opts: { tec: true, ex: true } },
+  { name: "A17& Flandre", img: "weird ass flan.png", tier: "B", opts: { heal: true, ex: true } },
+  { name: "A17.5& Yuuma", img: "a17.5& yuuma.png", tier: "B", opts: { dest: true, ex: true } },
+  { name: "A18& Misumaru", img: "a18& misumaru.png", tier: "B", opts: { dbf: true, ex: true } },
+  { name: "F1.-5 Marisa", img: "f1.-5 marisa.png", tier: "B", opts: { atk: true, b: true } },
+  { name: "B3 Raiko", img: "b3 raiko.png", tier: "B", opts: { tec: true, u: true } },
+  { name: "B3 Toyohime", img: "b3 toyohime.png", tier: "B", opts: { heal: true, u: true } },
+  { name: "B3 Sagume", img: "b3 sagume.png", tier: "B", opts: { supp: true, u: true } },
+  { name: "Lr Kokoro", img: "kokoro.jpg", tier: "B", opts: { dest: true, u: true } },
+  { name: "Lr Flandre", img: "Nishita flan.jpg", tier: "B", opts: { spd: true, u: true } },
+  { name: "E1 Flandre", img: "e1 fland (prae).png", tier: "B", opts: { atk: true, u: true } },
+  { name: "E1 Koakuma", img: "e1 koakuma.png", tier: "B", opts: { heal: true, u: true } },
+  { name: "H5 Letty", img: "h5 letty.png", tier: "B", opts: { def: true, u: true } },
+  { name: "T5 Byakuren", img: "t5 byakuren.png", tier: "B", opts: { spd: true, u: true } },
+  { name: "W1 Suika", img: "watermelon.jpg", tier: "B", opts: { dest: true, u: true } },
+  { name: "W2 Kanako", img: "lolinako.jpg", tier: "B", opts: { supp: true, u: true } },
+  { name: "Z3 Satori", img: "z3 satori.png", tier: "B", opts: { supp: true, u: true } },
+  { name: "A6 Tenshi", img: "tenshi scar.jpg", tier: "B", opts: { atk: true, a: true } },
+  { name: "A12 Kogasa", img: "a12 kogasa.png", tier: "B", opts: { dbf: true, a: true } },
+  { name: "L1a Keine", img: "l1a keine.png", tier: "B", opts: { atk: true, g: true } }
+  // start of C
+];
