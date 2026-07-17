@@ -1,3 +1,8 @@
+.charicon{
+max-width: 10%;
+max-height: 10%
+}
+
 /* 1. DEFINE DEFAULT VARIABLES (LIGHT MODE) */
 :root {
   --bg: #D9D2E9;
