@@ -34,7 +34,7 @@
 
 <body>
 
-  <h1>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</h1>
+  <li class="text-red pt-4"><h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1></li>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/criteria"><strong>Tiering Criteria</strong></a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/info">FAQ, Glossary, Links</a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/changelog"><strong>Changelog</strong></a>
@@ -167,7 +167,7 @@
 
 <br>
 
-  <!-- Main display logic. Runs strictly after tierlist.js finishes executing. -->
+  <!-- Main display logic. Runs after tierlist.js finishes executing. -->
   <script>
     let characters = [];
 
@@ -180,11 +180,11 @@
         return;
       }
 
-      // Initial render of all characters
+      // render of all characters
       renderTierList(characters);
     });
 
-    // Helper to clear and inject character images
+    // clear and inject character images
     function renderTierList(charList) {
       const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
       
@@ -198,7 +198,7 @@
             .forEach(item => {
               const imgContainer = document.createElement("div");
               imgContainer.style.display = "inline-block";
-              imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" title="${item.name}" />`; 
+              imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" title="${item.name}" class="charicon"/>`; 
               container.appendChild(imgContainer);
             });
         }
