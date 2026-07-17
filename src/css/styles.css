@@ -13,7 +13,17 @@ padding: 8px;
 } 
 
 #EX {
-  background-color: #EAD1DC;
+  background-color: rgba(333, 10, 91, 0.5);
+}
+
+.cname {
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #591339;
+  color: #ffffff;
+  padding: 4px 2px;
 }
 
 
