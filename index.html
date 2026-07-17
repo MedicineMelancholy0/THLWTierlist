@@ -98,9 +98,9 @@
   <input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
   <label for="class13">Extended Fes</label>
   <input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
-  <label for="class18">Battle Pass</label>
+  <label for="class18">Ultra Fes</label>
   <input type="checkbox" id="class18" value="b" onclick="filterExChars()">
-  <label for="class14">Ultra Fes</label>
+  <label for="class14">Battle Pass</label>
   <input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
   <label for="class15">Festival</label>
   <input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
@@ -198,7 +198,9 @@
             .forEach(item => {
               const imgContainer = document.createElement("div");
               imgContainer.style.display = "inline-block";
-              imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" title="${item.name}" class="charicon"/>`; 
+              imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" title="${item.name}" class="charicon"/>
+              <div class="cname">${item.name}</div>
+              `; 
               container.appendChild(imgContainer);
             });
         }
