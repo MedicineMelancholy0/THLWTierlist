@@ -7,7 +7,7 @@ max-height: 165;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-gap: 5px;
+gap: 8px;
 background-color: #EAD1DC;
 padding: 8px;
 } 
@@ -18,7 +18,7 @@ padding: 8px;
 
 .cname {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   background-color: #591339;
@@ -26,6 +26,43 @@ padding: 8px;
   padding: 4px 2px;
 }
 
+.Explanation {
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: ##660000;
+  color: #ffffff;
+  padding: 4px 2px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cexplanation:hover{
+  background-color: rgba(102, 0, 0, 0.5);
+}
+
+.modal {
+  background-color: #222222;
+  color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid #591339;
+  width: 65%;
+  border-radius: 8px;
+}
+
+.close-btn {
+  color: #aa0000;
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover{
+  color: #fff;
+}
 
 /* 1. DEFINE DEFAULT VARIABLES (LIGHT MODE) */
 :root {
