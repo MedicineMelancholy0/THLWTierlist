@@ -207,14 +207,14 @@
               // explanation button
               const expBtn = imgContainer.querySelector(".expl");
               expBtn.addEventListener("click", () => {
-                openExplanationModal(item.name);
+                openExplanationModal(item);
               });
             });
         }
       });
     }
 
-    function openExplanationModal(characterName) {
+    function openExplanationModal(character) {
       const modal = document.getElementById("expls");
       const title = document.getElementById("tit");
       const body = document.getElementById("bod");
