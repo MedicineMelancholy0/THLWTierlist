@@ -627,20 +627,22 @@ dataSet[dataSetVersion].characterData = [
     opts: { dbf: true, ex: true },
     explanation: {
       pros: [
-        "Incredible debuff kit featuring high-uptime defense drops and anomaly inflicts that allow her to manipulate enemy stats with ease",
-        "Remarkable utility from skills making her an excellent support slot for heavy EX-tier damage dealers",
-        "Strong flexibility with story cards to maximize break counts on standard spellcards"
+        "High damage spells complimented by good killer, average lw nuke effectively carried by defense down patching all damage inconsistency",
+        "Just spams breaks from her spells",
+        "Support from her kit is very good, particularly good for buff remove stages and further compliments her ability to be a support/buff bot",
+        "Killer is perfect overlap, leading to her being very reliable"
       ],
       mixed: [
-        "Her damage numbers are fair but heavily contingent on complete setups and element matching",
-        "Agi tiering requires precise team speed-tuning to ensure her debuffs land before your primary damage bots act"
+        "Unlike other units around her, she is p hungry and wants to spam boosts, leading to poor card usability without sacrifice."
       ],
       cons: [
-        "Lacks the brute force raw power found in modern L0g or Epic-tier attackers, confining her strictly to a support role"
+        "Amazing buffing is spread throughout spells not as concentrated on skills (admits to having amazing support)",
+        "Utility outside breaking is very bad (admits to having atleast decent breaking utility)",
+        "LONGEST AOE ANIM (sc2) LITERALLY 22.5 SECONDS"
       ],
       extra: [
-        "Usage: Treat her as a reliable engine to enable your hard carries. Pairs brilliantly with high-damage Yang anchors that lack their own innate defense down or anomaly synergy.",
-        "A standout option among non-gacha locked options for general end-game disruption."
+        "Listen guys im trying to be unbiased but its getting to a point where im sounding biased against her. Her weaknesses arent even weaknesses we put for some of these other units. To top it all off, she has amazing off ele content performance in a no poison immune stage as a breaker supporter debuffer potentially nuker etc. Basically another mvmors/gengetsu who has nuking aoe like what?? her first aoe hits 1mil easily no bis rn!!",
+        "NOTABLE PAIRINGS (Not included in tiering): Any yang unit who isn't Earth"
       ]
     }
   },
@@ -651,19 +653,27 @@ dataSet[dataSetVersion].characterData = [
     opts: { e: true, dest: true },
     explanation: {
       pros: [
-        "Phenomenal multi-element coverage across all spellcards, making her an exceptionally flexible breaker for complex EX stages.",
-        "High personal baseline stats allow her to put up significant raw damage numbers even when team support is minimal.",
-        "Excellent self-sufficiency with P recovery, ensuring she hits her peak damage thresholds quickly without hogging team resources."
+        "Above average support",
+        "Good breaking to compliment above average support and agi anoms to use it.",
+        "Killers are amazing, damage is rather high.",
+        "Actual debuffing on a unit this is crazy + can abuse light unit cards"
       ],
       mixed: [
-        "Her best damage profiles are heavily tied to specific killers, causing noticeable performance variance on stages with mixed enemy pools.",
-        "While her kit handles self-buffing remarkably well, she offers very little in the way of immediate utility or offensive amplification for the rest of the team."
+        "Aoe spell killer could be way better, if it hits her role changes a lot",
+        "Passable into buff remove but could be better"
       ],
       cons: [
-        "Completely lacks innate accuracy fixes between gauges, forcing her to rely on specific story cards or teammates to prevent massive damage drop-offs."
+        "Lacking utility, self Acc",
+        "Mono fire + dmg to eff"
+      ],
+      nitpick: [
+        "Gimmick leaves a lot to be desired",
+        "Not Freeze Immune",
+        "Aoe dmg is stupid high on killer it just tends to not hit killer!!"
       ],
       extra: [
-        "Usage: Drop her in as your primary element-breaker and secondary damage anchor. She doesn't need to be babied with P supply, but you absolute must pair her with a solid accuracy provider like L80 Aya to keep her consistent."
+        "Has alot of potential to rise within her tier provided she gets better cards in the future as she can be another util based aoe break + buff spammer (just pretty hard to pull off)",
+        "NOTABLE PAIRINGS (Not included in tiering): Ex Kutaka, Mugetsu, Ex Mamizou"
       ]
     }
   },
@@ -674,19 +684,15 @@ dataSet[dataSetVersion].characterData = [
     opts: { e: true, tec: true },
     explanation: {
       pros: [
-        "Obscene Turn 1 breaking power utilizing high-inflict anomaly skills coupled with instantaneous full-barrier breaks.",
-        "Superb critical scaling and high innate crit accuracy mean her spikes on killer targets are absolutely lethal.",
-        "Provides excellent passive tactical advantages to the team, including strong defensive utility and barrier restoration options."
-      ],
-      mixed: [
-        "Her heavy reliance on specific setups means her momentum can get completely derailed if an enemy stage inflicts priority debuffs or locks down skills early.",
-        "Element distribution on her primary spells is somewhat disjointed, requiring careful planning to optimize damage cycles."
+        "AoE Nuke + LW Nuke gives her a pretty straightforward gameplan",
+        "Good Gimmicks pair well to make her AoE nuke viable."
       ],
       cons: [
-        "Extremely resource-hungry if you want to sustain her damage output across multiple gauge breaks without a dedicated battery teammate."
+        "Utility is Below Average for her tier in terms of Breaks, P, and especially Acc which she has 0 of.",
+        "Really wants more Yin Atk and Crit Atk buffs to maximize dmg output. Also completely lacks def down."
       ],
       extra: [
-        "Usage: An incredible driver for team compositions that look to speedrun barrier anomalies. Pair her with an aggressive anchor who can feed her the extra P she craves after the initial turn 1 dump, and watch bars melt."
+        "Ultimately this character is a very generic AoE nuke unit. Lacks the crazy dmg to res or util like her sister, ending up good but still kinda mid."
       ]
     }
   },
