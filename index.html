@@ -43,10 +43,8 @@
   <p>Further explanations are available in the Tiering Criteria Section and in the Tier/Character explanations, please read them before making a complaint.</p>
   <p><strong>Other important Criterias to keep in mind:</strong></p>
   <p>Only EX, SS, S, and Yukkuri tiers are ordered.</p>
-  <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards</p>
-  <p>(INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
-  <p>Some benchmarks: "good damage" = All that matters is 2.2 mil for ds from my last check up. Compare that number to the calc sheet.</p>
-  <p>Keep in mind, stuff like buffs and neutral dmg fb etc DO matter in this regard, so does sp reduction. And ESPECIALLY def down. Characters who can hit those numbers are usually fine.</p>
+  <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards (INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
+  <p>Some benchmarks: "good damage" = All that matters is 2.2 mil for ds from my last check up. Compare that number to the calc sheet. Keep in mind, stuff like buffs and neutral dmg fb etc DO matter in this regard, so does sp reduction. And ESPECIALLY def down. Characters who can hit those numbers are usually fine.</p>
   <br>
   
   <div class="Important Links">
@@ -56,6 +54,7 @@
   
   <br>
   
+  <h2>Dark & Light Mode Toggle</h2>
   <div class="theme-toggle">
     <input type="radio" id="mode_dark" name="mode" value="dark">
     <label for="mode_dark" aria-label="Switch to dark mode">🌙</label>
@@ -108,16 +107,16 @@
   <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
   <label for="class17">Yukkuri</label>
 
-  <!-- Fixed unclosed table bug here -->
+  <!--
   <table>
-    <colgroup><col></colgroup>
+    <colgroup><col></colgroup> 
     <thead>
       <tr>
         <th>Character Table Placeholder</th>
       </tr>
     </thead>
     <tbody id="characterTable"></tbody>
-  </table>
+  </table>-->
 
   <br>
 
@@ -251,17 +250,17 @@
         exp.mixed.forEach(m => body.innerHTML += `<p class="modal-p">${m}</p>`);
       }
 
+      if (exp.cons && exp.cons.length > 0) {
+        body.innerHTML += `<div class="sub-header header-con">Cons</div>`;
+        exp.cons.forEach(c => body.innerHTML += `<p class="modal-p">${c}</p>`);
+      }
+
       if (exp.nitpick && exp.nitpick.length > 0) {
         body.innerHTML += `<div class="sub-header header-nitpick">Nitpicks</div>`;
         let list = `<ul class="modal-list">`;
         exp.nitpick.forEach(n => list += `<li>${n}</li>`);
         list += `</ul>`;
         body.innerHTML += list;
-      }
-
-      if (exp.cons && exp.cons.length > 0) {
-        body.innerHTML += `<div class="sub-header header-con">Cons</div>`;
-        exp.cons.forEach(c => body.innerHTML += `<p class="modal-p">${c}</p>`);
       }
 
       if (exp.extra && exp.extra.length > 0) {
