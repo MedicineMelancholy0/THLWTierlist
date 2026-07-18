@@ -29,19 +29,19 @@ dataSet[dataSetVersion].characterData = [
   { name: "L0o Satori", img: "lo satori.png", tier: "EX", opts: { p: true, dbf: true },
   explanation: {
     pros: [
-      "Scintillating Party Damage Amplification between her broken Permanent Defense Down, Domain Expansion Skill, and Superb Breaking that makes everyone's numbers quickly multiply by the dozen thanks to the way they interact with each other.",
-      "Hilariously strong damage across the board complemented not just by amazing killer range (and her Crit Mods) but also by her amazing AoE and Anomaly buffs",
-      "Even outside of her amazing breaks, her utility is essentially unparalleled between her basically giving the party negative P buffs letting her be free to run pure buffing cards like Ice Sword to make everyone's innate buffs even stronger."
+      "+ Scintillating Party Damage Amplification between her broken Permanent Defense Down, Domain Expansion Skill, and Superb Breaking that makes everyone's numbers quickly multiply by the dozen thanks to the way they interact with each other.",
+      "+ Hilariously strong damage across the board complemented not just by amazing killer range (and her Crit Mods) but also by her amazing AoE and Anomaly buffs",
+      "+ Even outside of her amazing breaks, her utility is essentially unparalleled between her basically giving the party negative P buffs letting her be free to run pure buffing cards like Ice Sword to make everyone's innate buffs even stronger."
     ],
     boons: [
       "Infinite self barriers makes her invulnerable vs. any 1 enemy"
     ],
     cons: [
-      "Party support outside aoe is literally 0 (be honest when is this an issue if you use one aoe per gauge)"
+      "- Party support outside aoe is literally 0 (be honest when is this an issue if you use one aoe per gauge)"
     ],
     nitpick: [
-      "Skill set up for perma def down is weird, you either ignore her second skill on inflict until g2 or you full send everything and lose out on the second gauge of breaks",
-      "Unlike the other top tiers in this tier, she doesnt buff everyone, a lot of her power is for yang units only"
+      "? Skill set up for perma def down is weird, you either ignore her second skill on inflict until g2 or you full send everything and lose out on the second gauge of breaks",
+      "? Unlike the other top tiers in this tier, she doesnt buff everyone, a lot of her power is for yang units only"
     ],
     extra: [
       "her actual use will largely be as a l0g gengetsu but in just yang comps, which works quite well. In general she will run out of things to complain about lol? How funny",
