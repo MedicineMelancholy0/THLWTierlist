@@ -26,7 +26,29 @@ dataSet[dataSetVersion].options = [
 dataSet[dataSetVersion].characterData = [
   { name: "L1 Reimu", img: "l1 reimu.png", tier: "Dummy", opts: { g: true, def: true } },
   // start of EX
-  { name: "L0o Satori", img: "lo satori.png", tier: "EX", opts: { p: true, dbf: true } },
+  { name: "L0o Satori", img: "lo satori.png", tier: "EX", opts: { p: true, dbf: true },
+  explanation: {
+    pros: [
+      "Scintillating Party Damage Amplification between her broken Permanent Defense Down, Domain Expansion Skill, and Superb Breaking that makes everyone's numbers quickly multiply by the dozen thanks to the way they interact with each other.",
+      "Hilariously strong damage across the board complemented not just by amazing killer range (and her Crit Mods) but also by her amazing AoE and Anomaly buffs",
+      "Even outside of her amazing breaks, her utility is essentially unparalleled between her basically giving the party negative P buffs letting her be free to run pure buffing cards like Ice Sword to make everyone's innate buffs even stronger."
+    ],
+    boons: [
+      "Infinite self barriers makes her invulnerable vs. any 1 enemy"
+    ],
+    cons: [
+      "Party support outside aoe is literally 0 (be honest when is this an issue if you use one aoe per gauge)"
+    ],
+    nitpick: [
+      "Skill set up for perma def down is weird, you either ignore her second skill on inflict until g2 or you full send everything and lose out on the second gauge of breaks",
+      "Unlike the other top tiers in this tier, she doesnt buff everyone, a lot of her power is for yang units only"
+    ],
+    extra: [
+      "her actual use will largely be as a l0g gengetsu but in just yang comps, which works quite well. In general she will run out of things to complain about lol? How funny",
+      "Solos 5 ele ex (infinite barrier lmao)"
+    ]
+  }
+ },
   { name: "Cz1# Marisa", img: "cz2 marisa.png", tier: "EX", opts: { atk: true, e: true } },
   { name: "Cs2# Satori", img: "cs2 satori.png", tier: "EX", opts: { e: true, supp: true } },
   { name: "C3>> Toyohime", img: "c3 toyohime.png", tier: "EX", opts: { e: true, tec: true } },
