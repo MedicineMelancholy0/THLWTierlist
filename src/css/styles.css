@@ -57,7 +57,7 @@ padding: 8px;
 .con {
   background-color: #222222;
   color: #fff;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 20px;
   border: 2px solid #591339;
   width: 65%;
@@ -132,6 +132,16 @@ padding: 8px;
   background-color: #452e0a;
   color: #db841a;
   border-left: 4px solid #fcbc81;
+}
+
+
+/* 🔴 Extra */
+.header-extra {
+  background-color: #151313;
+  color: #7b7a7a;
+  border-left: 4px solid #797979;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /* Bullet list spacing */
