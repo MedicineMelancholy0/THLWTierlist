@@ -211,7 +211,7 @@ dataSet[dataSetVersion].characterData = [
       "noteable pairings:\nif you like running shrine maiden training, use nysen. nysen saves a lot of units with this sorta \"build\" (see: exyuuka) and will basically get around all these issues. NOT FREEZE IMMUNE DO NOT USE LOOTORI WITH HER"
     ]
   }
- }
+ },
   // start of SS
 { name: "F1 Marisa", img: "f1 mors.png", tier: "EX", opts: { e: true, dest: true } },
  {
@@ -631,7 +631,7 @@ dataSet[dataSetVersion].characterData = [
       "Ultimately this character is a very generic AoE nuke unit. Lacks the crazy dmg to res or util like her sister, ending up good but still kinda mid."
     ]
   }
- }
+ },
   // start of S
   { name: "C3∫ Reisen", img: "C3integral reisen supp.png", tier: "S", opts: { supp: true, e: true } },
   { name: "A17& Eika", img: "a17& eika.png", tier: "S", opts: { tec: true, ex: true } },
