@@ -648,9 +648,9 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C5> Hecatia",
-    img: "c5 hecatia.png",
+    img: "spring hecatia.png",
     tier: "SS",
-    opts: { e: true, dest: true },
+    opts: { e: true, atk: true },
     explanation: {
       pros: [
         "Above average support",
@@ -681,7 +681,7 @@ dataSet[dataSetVersion].characterData = [
     name: "C3>> Yorihime",
     img: "c3 yorihime.png",
     tier: "SS",
-    opts: { e: true, tec: true },
+    opts: { e: true, dest: true },
     explanation: {
       pros: [
         "AoE Nuke + LW Nuke gives her a pretty straightforward gameplan",
@@ -697,25 +697,459 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   // start of S
-  { name: "C3∫ Reisen", img: "C3integral reisen supp.png", tier: "S", opts: { supp: true, e: true } },
-  { name: "A17& Eika", img: "a17& eika.png", tier: "S", opts: { tec: true, ex: true } },
-  { name: "Lr Aya", img: "zenki.jpg", tier: "S", opts: { tec: true, u: true } },
-  { name: "A13& Seiga", img: "a13& seiga.png", tier: "S", opts: { dest: true, ex: true } },
-  { name: "A9.4& Sakuya", img: "a9.4& sakuya.png", tier: "S", opts: { atk: true, ex: true } },
-  { name: "L80 Kokoro", img: "l80 kokoro.png", tier: "S", opts: { r: true, atk: true } },
-  { name: "C3 Sakuya", img: "c3 sakuya2.png", tier: "S", opts: { supp: true, e: true } },
-  { name: "C5= Kaguya", img: "c35= kaguya.png", tier: "S", opts: { dest: true, e: true } },
-  { name: "L0g Sanae", img: "fake ass sanae.jpg", tier: "S", opts: { p: true, heal: true } },
-  { name: "C3< Nitori", img: "fall nitori.png", tier: "S", opts: { tec: true, e: true } },
-  { name: "C3≥ Nitori", img: "mech nitori.png", tier: "S", opts: { supp: true, e: true } },
-  { name: "C3< Chimata", img: "fall chimata.png", tier: "S", opts: { supp: true, e: true } },
-  { name: "Laa1 Sakuya", img: "laa1 sakuya.png", tier: "S", opts: { atk: true, e: true } },
-  { name: "A16& Satono", img: "a16& satono.png", tier: "S", opts: { ex: true, spd: true } },
-  { name: "C3~ Yoshika", img: "c3~ yoshika.png", tier: "S", opts: { dest: true, e: true } },
-  { name: "C3 Yukari", img: "c3 yukari.png", tier: "S", opts: { heal: true, e: true } },
-  { name: "C3 Cirno", img: "C3 cirno.png", tier: "S", opts: { spd: true, e: true } },
-  { name: "L80 Reimu", img: "mv reimu.jpg", tier: "S", opts: { r: true, spd: true } },
-  { name: "C3 Narumi", img: "c3 narumi.png", tier: "S", opts: { atk: true, e: true } },
+{ 
+    name: "C3∫ Reisen", 
+    img: "C3integral reisen supp.png", 
+    tier: "S", 
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Great support combined with excellent niches and self quick. high amounts of acc and p support make for great pairings",
+        "Good breaking enabling her to not be useless gauge 1",
+        "Great lw nuking, with good last gauge buffs"
+      ],
+      mixed: [
+        "Support is ultimately harder to make perfect value out of usually as it's placement is awkward (looking at you crit)"
+      ],
+      cons: [
+        "relies on aoe for most of her value which does sort of die off-killer, but without it she is still rather above average",
+        "ultimately, usually just a last word nuke. While overall solid when using her for aoe nuking the quick messes with her and when using her for actual support she tends to struggle getting breaks in. Which means she struggles to have a role outside trios"
+      ],
+      nitpick: [
+        "Below Average Gimmick Skill CD",
+        "Wants her last line's dual scaling set up for max damage output",
+        "Weak to Paralyze"
+      ],
+      extra: [
+        "NOTABLE PAIRINGS (Not included in tiering): Cstroos, Gengetsu, Ex Sakuya, Mima, Works well in conjunction with Yukata Komachi lol"
+      ]
+    }
+  },
+  { 
+    name: "A17& Eika", 
+    img: "a17& eika.png", 
+    tier: "S", 
+    opts: { tec: true, ex: true },
+    explanation: {
+      pros: [
+        "Great Inflicting + Breaking Ability like the C3 Cirno, but even better since she can break 7 without needing to pop both skills.",
+        "Good Support Across her Kit"
+      ],
+      mixed: [
+        "High Damage tends to be restricted by Suboptimal KIllers"
+      ],
+      cons: [
+        "While she has many universal qualities, her p economy is quite bad, requiring the unit she is supporting or the stage in play to fix this issue",
+        "Wants more Crit Atk"
+      ],
+      extra: [
+        "She basically wants to be the geng to the freeze and para yin units (all two of them) but unfortunately, she runs into a few issues here and there. she does the job but dont expect too much (funnily enough she buffs mv kasen better than geng)",
+        "Mid SS Performance with the Luck P Buff"
+      ]
+    }
+  },
+  { 
+    name: "Lr Aya", 
+    img: "zenki.jpg", 
+    tier: "S", 
+    opts: { tec: true, u: true },
+    explanation: {
+      pros: [
+        "Obscene Damage Across both her AoE and Last Word supported by Good Killers and a Shiny New BIS, along with having good self-sustainability.",
+        "Spamming Debuffs across her kit makes her valuable on all 3 gauges supported by Fast AoE Breaks and Praecards. New D-Card helps her support too.",
+        "Good Utility throughout her Kit"
+      ],
+      mixed: [
+        "Killers, while Numerically Wide, are somewhat Unconventional in use. Would like to have Youkai Killer for Full Consistency, as her damage very quickly falls off killer.",
+        "Being disjointed between Wood on AoE and Earth on her LW makes only one usable at a time, usually having her AoE being more valuable while her LW often can't be used to its full potential. Still, it has much use outside of just damage so it's okay.",
+        "Breaks are just average (5/3) combined with not having innate 3p meaning you NEED to pair her with a burn inflictor with some party P rather than having her act as a psuedo-geng."
+      ],
+      cons: [
+        "On top of the above issues, really needs more Yin and Crit Atk to maximize her damage."
+      ],
+      extra: [
+        "Very underrated character especially post rein and d-cards. A bit limited by killers (@@@) and pairings but otherwise tends to destroys stages that she hits killer on lol."
+      ]
+    }
+  },
+  { 
+    name: "A13& Seiga", 
+    img: "a13& seiga.png", 
+    tier: "S", 
+    opts: { dest: true, ex: true },
+    explanation: {
+      pros: [
+        "High Damage Across the Board complemented by Ikaruga and Good Killer",
+        "7 AoE break made even better by having good buffs through her kit. 2 Party Crit Acc II gives her 4 NLM lines and helps party damage significantly."
+      ],
+      mixed: [
+        "Buff Counts are good but she would like better buffs between gauges (particularly in agility)"
+      ],
+      cons: [
+        "Accuracy and SP issues do hurt her consistency, ruining her breaking niche"
+      ],
+      extra: [
+        "Gets a lot from the P Luck Buff"
+      ]
+    }
+  },
+  { 
+    name: "A9.4& Sakuya", 
+    img: "a9.4& sakuya.png", 
+    tier: "S", 
+    opts: { atk: true, ex: true },
+    explanation: {
+      pros: [
+        "Very High Damage Output with a Very Potent AoE Spellcard",
+        "Solid Breaking Capability",
+        "Great Party Crit & Agi Support with Innate Abilities and Cards, Stun Utility on Last Word"
+      ],
+      mixed: [
+        "Could use more innate Yin Atk Buffs, however as a Yin Atk unit, she has many powerful card options.",
+        "89% of her damage is line 1 while her gensokyo killers are lines 2 and 5. if she does not hit killers on line 1, her damage will be miserable even if hitting other lines.",
+        "Can't take consistent advantage of her excessive Crit Acc Buffs Leading To Tedious Testing"
+      ],
+      cons: [
+        "Spellcard 2 Lacks Good Effects, Breaks or Damage",
+        "Significant P Issues"
+      ],
+      extra: [
+        "Actually usable without gengetsu thanks to kasen d card + crazy overflow great job ex sakuya"
+      ]
+    }
+  },
+  { 
+    name: "L80 Kokoro", 
+    img: "l80 kokoro.png", 
+    tier: "S", 
+    opts: { r: true, atk: true },
+    explanation: {
+      pros: [
+        "Great Damage Output Across the Board",
+        "Good Utility (7 AoE Breaks), Good Self Buffs"
+      ],
+      mixed: [
+        "Killers are Passable but flawed (similar to Sprae)",
+        "Tends to have Weirdly Selfish Buffs"
+      ],
+      cons: [
+        "Wants more Innate Debuffs (UNLESS YOU PULL HER BANNER CARD, WHICH CAN REMEDY THAT)"
+      ]
+    }
+  },
+  { 
+    name: "C3 Sakuya", 
+    img: "c3 sakuya2.png", 
+    tier: "S", 
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Powerful Last Word Complemented by Dmg to Eff and Res"
+      ],
+      mixed: [
+        "Util and Support, while having a good start, befuddled due to having below average breaks (5 late) for her tier while wanting to conserve her skill 2 for the second/third gauge.",
+        "All this is exemplified by lacking Yang Atk and Agility buffs between gauges which you would expect better from for her tier."
+      ],
+      cons: [
+        "Lacking Youkai Killer with Subpar AoE killers hurts her Gauge 1/2 Perfomance"
+      ],
+      nitpick: [
+        "LW Doesn't break Poison"
+      ],
+      extra: [
+        "Ex in swimsuit just due to her sheer versatility in support and damage. However swimsuit as a niche has very little standing and the rest of her kit isn't really aging that well tbh she is mostly still SS due to technicality",
+        "NOTABLE PAIRINGS (Not included in tiering): Again, basically any yang unit that isn't metal. Ideally someone who can cover her lackluster AoE nuke. Doesn't mesh with Ex Mamizou quite as well as you'd like but can still work."
+      ]
+    }
+  },
+  { 
+    name: "C5= Kaguya", 
+    img: "c35= kaguya.png", 
+    tier: "S", 
+    opts: { dest: true, e: true },
+    explanation: {
+      pros: [
+        "Actually has achievable high damage thanks to wide killers, good ability to take advantage of -3 def, 50% light and generally going last along with having a high dmg floor and good crit acc",
+        "Generally good party buffs complemented by some slight util"
+      ],
+      mixed: [
+        "AoE damage, like f1 marisa, has a tendency to vary wildly thanks to only having 1 crit line",
+        "Innate Yin Atk are almost all Self",
+        "Essentially Mono Water"
+      ],
+      cons: [
+        "Breaks fall off heavy, made worse due to a lack of yin/freeze units besides A6& Rumia lol???"
+      ],
+      nitpick: [
+        "Stupid evil random fire inline on AoE"
+      ],
+      extra: [
+        "You can think of her as Ex Kosuzu that trades consistent AoE damage for more util and ease of use. (Kosuzu will tend to be more realistically usable due to killers and pairing)"
+      ]
+    }
+  },
+  { 
+    name: "L0g Sanae", 
+    img: "fake ass sanae.jpg", 
+    tier: "S", 
+    opts: { p: true, heal: true },
+    explanation: {
+      pros: [
+        "High Damage Potential on all attacks, with aoe not needing killer to have good damage.",
+        "Good Support letting her not be entirely useless while doing your teams damage (her one job)"
+      ],
+      mixed: [
+        "Reliant on spellcards and party support for Yang Atk and Crit",
+        "Her Buffs are only good for Yang Units, tries to buff Dual Scale",
+        "Party Anomaly Cleanse can be Annoying",
+        "Pretty Questionable killer placement leads to inconsistent damage (at times)"
+      ],
+      cons: [
+        "300$ unit that doesnt solo everthing",
+        "Poor Breaking Skill",
+        "Accuracy is just bad.",
+        "In terms of Cost:Potency, which isn't reflected in this tierlist, she is at the bottom."
+      ],
+      extra: [
+        "$350 btw"
+      ]
+    }
+  },
+  { 
+    name: "C3< Nitori", 
+    img: "fall nitori.png", 
+    tier: "S", 
+    opts: { tec: true, e: true },
+    explanation: {
+      pros: [
+        "High Damage Output across All Spells, supported by Good Buffs + Being Slow makes her Easy to Support",
+        "Breaking 4 sets of Anomalies Instantly on her AoE + Inflicting 4 on Skill lets her pair with almost any Yin unit"
+      ],
+      mixed: [
+        "Killer Range is not as wide as you would like which can limit her use, though she should generally always kill water weak enemies",
+        "Self Charge is somewhat cringe for her breaking role but not the worst thing in the world",
+        "Needs more Yin Def & Crit Atk between gauges"
+      ],
+      cons: [
+        "Wants more debuffs to maximize damage"
+      ]
+    }
+  },
+  { 
+    name: "C3≥ Nitori", 
+    img: "mech nitori.png", 
+    tier: "S", 
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Buffs all Relevant Stats Well across her Kit, mostly on her Spells. Additionally boasts good Acc util for all 3 gauges."
+      ],
+      mixed: [
+        "Great LW and AoE Damage is held back by her Subpar Killers.",
+        "Her 2nd AoE (the one that buffs acc) is very useless in terms of damage",
+        "Having Sk3 being reserved entirely for g3, and then having all her major buffs on a single skill can make practical use a bit problematic in regards to saving her skills between gauges. Essentially used on a gauge-by-gauge basis"
+      ],
+      cons: [
+        "Entirely lacking Debuffs expedites all these issues so much more in terms of practical use"
+      ],
+      extra: [
+        "Essentially this character just doesn’t have enough of anything to be higher. Breaks, buffs, etc all basically just passing marks but she is basically kinda just a yang version of Chimata with worse killer and card options. Run sanshoku card on her Last Word (50% body -2 yang def)"
+      ]
+    }
+  },
+  { 
+    name: "C3< Chimata", 
+    img: "fall chimata.png", 
+    tier: "S", 
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Great damage across the board",
+        "Overall good buffs most notably for dual scaling"
+      ],
+      mixed: [
+        "Killer bottleneck similar to sprae as human/god isn’t good enough for full consistency"
+      ],
+      cons: [
+        "Lacks innate Accuracy"
+      ],
+      nitpick: [
+        "Kinda wants more offensive buffs",
+        "Weak to Paralyze"
+      ],
+      extra: [
+        "expounding on the first ?; not only does she have killer issue but when used as the unit to absorb buffs (her better role if aligned), she seriously just runs out of yin attack and crit attack too fast. supplemented by cards somewhat, but its why shes here. In theory she works but she ends up unable to push her damage far enough.",
+        "Notable teammates: L80 Kasen, C3int Reisen, Gengetsu, C8<< Kokoro, F1 Marisa",
+        "LAST TESTED: Dec 2025"
+      ]
+    }
+  },
+  { 
+    name: "Laa1 Sakuya", 
+    img: "laa1 sakuya.png", 
+    tier: "S", 
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "Great Damage with Good Killers throughout her kit, complemented by Good Overflow",
+        "Decent Utility in All Aspects"
+      ],
+      mixed: [
+        "Support/Buffs are somewhat Below Average for her Tier. Notably lacking in Agility buffs (which she requires a lot of for her LW)",
+        "Has P issues which hurt her damage/breaking roles a good deal"
+      ],
+      cons: [
+        "Lacking Def Down exacerbates all these issues"
+      ],
+      nitpick: [
+        "Gimmicks are Very Mid"
+      ],
+      extra: [
+        "This character’s kit is rather generic and she is basically the epitome of S. Decent in all aspects without true flaws but lacks anything to be higher.",
+        "Note: Counts as 2 units for Yukkuri and Genic skills"
+      ]
+    }
+  },
+  { 
+    name: "A16& Satono", 
+    img: "a16& satono.png", 
+    tier: "S", 
+    opts: { ex: true, spd: true },
+    explanation: {
+      pros: [
+        "Wide Killer Range and Overall High Damage on her lw, with great damage on her aoe",
+        "Very Capable Self Buffs and Decent Party Utility to benefit from said damage",
+        "Great Breaking Ability, akin to C3 Sekibanki"
+      ],
+      boons: [
+        "Immortal vs. 1 unit"
+      ],
+      mixed: [
+        "Support is far below average for her tier, though not necessarily bad."
+      ],
+      cons: [
+        "Lacks Def Down",
+        "Lowkey aoe kinda mid if you dont hit the full killer because only p0 youkai"
+      ]
+    }
+  },
+  { 
+    name: "C3~ Yoshika", 
+    img: "c3~ yoshika.png", 
+    tier: "S", 
+    opts: { dest: true, e: true },
+    explanation: {
+      pros: [
+        "High Damage Across the Board complemented by access to Def Down cards good killers and NLM",
+        "Good Support Across the Board, especially with that Sync skill. Complemented further by good P gain."
+      ],
+      mixed: [
+        "Skill 1's Party Charge is ultra niche and probably not good a lot of the time HOWEVER that skill is entirely disposable and using it is up to your own discretion (but it is needed for acc/agi buffs so kinda an L)"
+      ],
+      cons: [
+        "Low T1 Buffs Overall"
+      ],
+      extra: [
+        "Side note: her kit agrees with herself and the role shes doing way better than most units below her, hence her placement. which was quite surprising given party charge nonsense (dont use the skill). and while she is forced to be poison because shes not the fastest thing alive with unavoidable agi anoms and highest agi stat you can realistically plan around her in trios (or run cs2 +5sp)"
+      ]
+    }
+  },
+  { 
+    name: "C3 Yukari", 
+    img: "c3 yukari.png", 
+    tier: "S", 
+    opts: { heal: true, e: true },
+    explanation: {
+      pros: [
+        "Incredible Yang & Crit Support & Incredible Self Sufficiency. Good debuff potential",
+        "Two party unbinds on skills very useful, though binds aren't as common now",
+        "Great damage all around. SHE LITERALLY HAS A BIS FOR EVERY ATTACK NOW AND REIN. In combination with her buffing it makes her requirements to run super super low since you just want a breaker."
+      ],
+      mixed: [
+        "Party Anomaly Cleanse can be annoying"
+      ],
+      cons: [
+        "Lacks AoE Anomaly breaks (tho itd be kinda a waste)"
+      ],
+      nitpick: [
+        "Buffs make her water ex 8sp farm break",
+        "Long Animations, Tedious",
+        "Primary killers on ST are kinda whack"
+      ],
+      extra: [
+        "This unit was top 1 for 1.5 years. She is a new kind of monster",
+        "NOTABLE PAIRINGS (Not included in tiering): Anyone who breaks before her and gives party P (Getsu Twins and Ex Mamizou)"
+      ]
+    }
+  },
+  { 
+    name: "C3 Cirno", 
+    img: "C3 cirno.png", 
+    tier: "S", 
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Two freeze inflict skills, basically confirms her role as a great breaker",
+        "Buffing between gauges is extremely useful"
+      ],
+      mixed: [
+        "Damage on killer all around her kit is very good but it's limited to swimsuit and fairy content",
+        "Last gauge buffing specifically tends to cause her to suffer"
+      ],
+      cons: [
+        "for her role of a spam breaker, she runs into heavy p issues. Which makes her weirdly want another freeze breaker to break for her in her perfect content",
+        "killer is still niche",
+        "no instant fb or overflow or...anything. units she supports will really want that"
+      ],
+      extra: [
+        "is c3 yuyuko shill pairing. another thousand buffs to yuyucoco!!!! she really is pretty average outside of that though and pairing with coco is uh...certainly not something in high demand. still, shes good at it + isnt ass at everything else so go off"
+      ]
+    }
+  },
+  { 
+    name: "L80 Reimu", 
+    img: "mv reimu.jpg", 
+    tier: "S", 
+    opts: { r: true, spd: true },
+    explanation: {
+      pros: [
+        "Last Word + AoE Spellcard have consistently high damage with great killer range as well as reliable set up",
+        "Debuffs, Support, and Utility make her use very consistent and helpful during shaft. Very reliant on creativity"
+      ],
+      cons: [
+        "Lacks Innate Yang Atk Buffs, but Atk Anoms help in this end.",
+        "Known to need help with some more difficult damage requirements assuming you force her to work instead of using her utility."
+      ],
+      nitpick: [
+        "Lmao Eva II",
+        "Poison Anoms are 1t and she is susceptible to para/freeze"
+      ],
+      extra: [
+        "In addition to being able to spam aoe spell nuke, she can also solo nuke a gauge. Very very rare these days. And still have a working debuff skill!",
+        "DS Solo Count: 18",
+        "Note: Her kit looks really bad on paper. It is only in use you will realize how competent she really is.",
+        "NOTABLE PAIRINGS (Not included in tiering): Mugetsu, C3 Yuyuko, Cz1, Yang/Crit Buffers Appreciated."
+      ]
+    }
+  },
+  { 
+    name: "C3 Narumi", 
+    img: "c3 narumi.png", 
+    tier: "S", 
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "High LW Damage with Decent Buffs for it and Decent Killers making up most of her tier"
+      ],
+      mixed: [
+        "Utility and Buffs, whilst not necessarily bad, are underwhelming for her tier and can lead to consistency issues when not paired with units like Cz2",
+        "Also held back by Dmg to Eff issues"
+      ],
+      cons: [
+        "Let down by lacking good AoE killers and Def Down (Run the Sanshoku card on her Last Word)"
+      ]
+    }
+  },
   // start of A
   { name: "A16.3& Kosuzu", img: "a16.3& kosuzu.png", tier: "A", opts: { atk: true, ex: true } },
   { name: "C3 Sekibanki", img: "sekibanki.jpg", tier: "A", opts: { spd: true, e: true } },
