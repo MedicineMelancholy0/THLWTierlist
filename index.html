@@ -217,12 +217,61 @@
     function openExplanationModal(characterName) {
       const modal = document.getElementById("expls");
       const title = document.getElementById("tit");
-      
+      const body = document.getElementById("bod");
+
+      if (!modal || !title || !body) return;
+      title.innerText = character.name;
+      body.innerHTML = "";
+
+      if (!character.explanation) {
+        body.innerHTML = "<p class='modal-p'>Girls are now tiering, please wait warmly...</p>";
+        modal.style.display = "block";
+        return;
+      }
+
+      const exp = character.explanation;
+
+      // start of pros and cons
+
+      if (exp.pros && exp.pros.length > 0) {
+        body.innerHTML += `<div class="sub-header header-pro">Pros</div>`;
+        exp.pros.forEach(p => body.innerHTML += `<p class="modal-p">${p}</p>`);
+      }
+
+      if (exp.boons && exp.boons.length > 0) {
+        body.innerHTML += `<div class="sub-header header-boon">Boons</div>`;
+        let list = `<ul class="modal-list">`;
+        exp.boons.forEach(b => list += `<li>${b}</li>`);
+        list += `</ul>`;
+        body.innerHTML += list;
+      }
+
+      if (exp.mixed && exp.mixed.length > 0) {
+        body.innerHTML += `<div class="sub-header header-mixed">Mixed/Slight Issue</div>`;
+        exp.mixed.forEach(m => body.innerHTML += `<p class="modal-p">${m}</p>`);
+      }
+
+      if (exp.nitpick && exp.nitpick.length > 0) {
+        body.innerHTML += `<div class="sub-header header-nitpick">Nitpicks</div>`;
+        let list = `<ul class="modal-list">`;
+        exp.nitpick.forEach(n => list += `<li>${n}</li>`);
+        list += `</ul>`;
+        body.innerHTML += list;
+      }
+
+      if (exp.cons && exp.cons.length > 0) {
+        body.innerHTML += `<div class="sub-header header-con">Cons</div>`;
+        exp.cons.forEach(c => body.innerHTML += `<p class="modal-p">${c}</p>`);
+      }
+
+      modal.style.display = "block";
+    }
+      /*
       if (modal && title) {
         title.innerText = characterName;
         modal.style.display = "block";
       }
-    }
+    }*/
 
     // Safely wire up the close triggers when the DOM is ready
     document.addEventListener("DOMContentLoaded", () => {
