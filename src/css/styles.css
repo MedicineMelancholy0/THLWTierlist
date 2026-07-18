@@ -96,35 +96,42 @@ padding: 8px;
   letter-spacing: 1px;
 }
 
-/* 🟢 Positive Elements (Green Accents) */
+/* 🟢 Pro*/
 .header-pro {
   background-color: #1b4332;
   color: #52b788;
   border-left: 4px solid #52b788;
-}
-.header-boon {
-  background-color: #2d6a4f;
-  color: #74c69d;
-  border-left: 4px solid #74c69d;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-/* 🟡 Neutral/Double-Edged Elements (Orange/Yellow Accent) */
+.header-boon {
+  background-color: #1d5a68;
+  color: #3567FF;
+  border-left: 4px solid #89ccff;
+}
+
+/* 🟡 Mixed */
 .header-mixed {
   background-color: #7c4a03;
   color: #ffb703;
   border-left: 4px solid #ffb703;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-/* 🔴 Negative Elements (Red Accents) */
+/* 🔴 Cons */
 .header-nitpick {
   background-color: #5c1d1d;
   color: #fca5a5;
   border-left: 4px solid #fca5a5;
+  font-weight: bold;
+  font-size: 16px;
 }
 .header-con {
-  background-color: #450a0a;
-  color: #ef4444;
-  border-left: 4px solid #ef4444;
+  background-color: #452e0a;
+  color: #db841a;
+  border-left: 4px solid #fcbc81;
 }
 
 /* Bullet list spacing */
