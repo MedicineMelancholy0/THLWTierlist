@@ -57,7 +57,7 @@ padding: 8px;
 .con {
   background-color: #222222;
   color: #fff;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 2px solid #591339;
   width: 65%;
@@ -121,21 +121,21 @@ padding: 8px;
 }
 
 /* 🔴 Cons */
-.header-nitpick {
+.header-con {
   background-color: #5c1d1d;
   color: #fca5a5;
   border-left: 4px solid #fca5a5;
   font-weight: bold;
   font-size: 16px;
 }
-.header-con {
+.header-nitpick {
   background-color: #452e0a;
   color: #db841a;
   border-left: 4px solid #fcbc81;
 }
 
 
-/* 🔴 Extra */
+/* Extra */
 .header-extra {
   background-color: #151313;
   color: #7b7a7a;
