@@ -99,7 +99,7 @@ padding: 8px;
 /* 🟢 Pro*/
 .header-pro {
   background-color: #1b4332;
-  color: #52b788;
+  color: #fff;
   border-left: 4px solid #52b788;
   font-weight: bold;
   font-size: 16px;
@@ -107,14 +107,14 @@ padding: 8px;
 
 .header-boon {
   background-color: #1d5a68;
-  color: #3567FF;
+  color: #fff;
   border-left: 4px solid #89ccff;
 }
 
 /* 🟡 Mixed */
 .header-mixed {
-  background-color: #7c4a03;
-  color: #ffb703;
+  background-color: #ffb703;
+  color: #fff;
   border-left: 4px solid #ffb703;
   font-weight: bold;
   font-size: 16px;
@@ -123,22 +123,22 @@ padding: 8px;
 /* 🔴 Cons */
 .header-con {
   background-color: #5c1d1d;
-  color: #fca5a5;
+  color: #fff;
   border-left: 4px solid #fca5a5;
   font-weight: bold;
   font-size: 16px;
 }
 .header-nitpick {
   background-color: #452e0a;
-  color: #db841a;
+  color: #fff;
   border-left: 4px solid #fcbc81;
 }
 
 
 /* Extra */
 .header-extra {
-  background-color: #151313;
-  color: #7b7a7a;
+  background-color: #7b7a7a;
+  color: #fff;
   border-left: 4px solid #797979;
   font-weight: bold;
   font-size: 16px;
