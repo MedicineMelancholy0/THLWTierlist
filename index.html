@@ -120,25 +120,43 @@
 
   <br>
 
+  <div class="head">
   <a href='src/assets/title1.png' target='_blank'>
     <img src='src/assets/title1.png' alt='title1' width="1690" height="231">
   </a>
+  </div>
 
   <br><br>
 
   <!-- EX -->
-  <a href="src/assets/tiers/ex.png" target="_blank">
-    <img src="src/assets/tiers/ex.png" alt="EX Tier" width="1261" height="200">
-  </a>
-  <div id="EX" class="tier-row"></div>
+   <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/ex.png" target="_blank">
+      <img src="src/assets/tiers/ex.png" class="tier-banner" alt="EX Tier">
+    </a>
+  </div>
+  
+  <div id="EX" class="tier-row">
+  </div>
+  
+  <div class="expl" data-tier="EX">EX Tier Explanation</div>
+</div>
 
   <br> 
 
   <!-- SS -->
-  <a href="src/assets/tiers/ss.png" target="_blank">
-    <img src="src/assets/tiers/ss.png" alt="SS Tier" width="165" height="400">
-  </a>
-  <div id="SS" class="tier-row"></div>
+   <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/ss.png" target="_blank">
+      <img src="src/assets/tiers/ss.png" class="tier-banner" alt="SS Tier">
+    </a>
+  </div>
+  
+  <div id="SS" class="tier-row">
+  </div>
+  
+  <div class="expl" data-tier="SS">SS Tier Explanation</div>
+</div>
 
   <br> 
 
@@ -166,12 +184,12 @@
 
 <br>
 
-  <!-- Main display logic. Runs after tierlist.js finishes executing. -->
+  <!-- Main display logic after tierlist.js finishes executing -->
   <script>
     let characters = [];
 
     document.addEventListener("DOMContentLoaded", () => {
-      // Safely access dataSet after the deferred script has run
+      // access dataSet after the deferred script has run
       if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
         characters = dataSet[dataSetVersion].characterData;
       } else {
@@ -371,6 +389,23 @@
     <h2 id="tit">Placeholder aaaa</h2>
     <p id="bod">Explanations</p>
   </div>
+
+  <div id="ex-notes" class="modal">
+  <div class="modal-overlay">
+    <div class="con">
+      <span class="close-btn" onclick="closeModal('ex-notes')">&times;</span>
+      
+      <div class="sub-header header-pro">EX Tier Explanation</div>
+      <p class="modal-p"> Best of the best. Their flaws and issues almost entirely ignorable/worth for what they provide. Additionally, these units are extremely recommended for players to obtain as soon as possible regardless of their current unit collection. </p>
+      
+      <div class="sub-header header-boon">Further Info:</div>
+      <ul class="modal-list">
+        <li>Units of this caliber are universally proven useful and consistent inside their element. As well as outside their element to a reasonable extent that they (the unit in question) can replace units in the S/A tier even when they themselves lack content favoring</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 </div>
 
 </body>
