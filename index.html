@@ -135,12 +135,12 @@
       <img src="src/assets/tiers/ex.png" class="tier-banner" alt="EX Tier">
     </a>
   </div>
+
+  <div class="expl" data-tier="EX">EX Tier Explanation</div>
+  </div>  
   
   <div id="EX" class="tier-row">
   </div>
-  
-  <div class="expl" data-tier="EX">EX Tier Explanation</div>
-</div>
 
   <br> 
 
@@ -152,11 +152,11 @@
     </a>
   </div>
   
+  <div class="expl" data-tier="SS">SS Tier Explanation</div>
+  </div>
+
   <div id="SS" class="tier-row">
   </div>
-  
-  <div class="expl" data-tier="SS">SS Tier Explanation</div>
-</div>
 
   <br> 
 
@@ -405,8 +405,26 @@
     </div>
   </div>
 </div>
-
 </div>
+
+<script>
+  // Function to show the pop-up
+  function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+  }
+
+  // Function to hide the pop-up
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+  }
+
+  // Optional: Close the pop-up if the user clicks outside the dark box
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal-overlay')) {
+      event.target.closest('.modal').style.display = "none";
+    }
+  }
+</script>
 
 </body>
 
