@@ -6,7 +6,7 @@
 .head {
   max-width: 100%;
   max-height: 100%;
-}*/
+}
 
 .head {
   max-width: 1400px;
@@ -14,6 +14,15 @@
   width: 100%;
   height: auto;
   display: block; 
+}*/
+
+.head {
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+  width: 100%;
 }
 
 .tier-section {
@@ -21,6 +30,11 @@
   max-width: 1400px;
   margin: 0 auto 24px auto;
   padding: 0 10px;
+}
+
+.tiers {
+  width: 100%;
+  display: block;
 }
 
 .tiers a {
@@ -34,20 +48,21 @@
   display: block;
 }
 
-.charicon{
+.charicon {
 width: 100%;
 max-width: 135px;
 height: auto;
 }
 
 .tier-row {
-display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
   padding: 8px;
   width: 100%;
-  /*background-color: #EAD1DC;*/
+  max-width: 1400px; 
+  margin: 0 auto;    
 }
 
 #EX {
@@ -71,12 +86,12 @@ display: flex;
 }
 
 .theme-toggle {
-  font-size: x-large;
+  font-size: 40px;
 }
 
 .cname {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  font-size: clamp(11px, 1.2vw, 14px);
+  font-size: clamp(18px, 1.2vw, 24px);
   width: 100%;
   max-width: 135px; 
   margin: 4px auto;
@@ -127,7 +142,7 @@ display: flex;
 .expl, .tier-expl {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
-  margin: 8px 0;
+  margin: 8px auto; 
   font-weight: bold;
   text-align: center;
   background-color: #660000;
@@ -136,9 +151,8 @@ display: flex;
   cursor: pointer;
   transition: background 0.2s;
   width: 100%;
+  max-width: 1400px; 
   display: block;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .expl:hover{
