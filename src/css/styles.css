@@ -23,10 +23,15 @@
   padding: 0 10px;
 }
 
-.tiers, .tier-banner {
+.tiers a {
+  width: 100%;
+  display: block; 
+}
+
+.tier-banner {
   width: 100%;
   height: auto;
-  display: block; 
+  display: block;
 }
 
 .charicon{
@@ -36,13 +41,12 @@ height: auto;
 }
 
 .tier-row {
-  display: flex;
+display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
-  width: 100%;
   padding: 8px;
-  justify-content: flex-start;
+  width: 100%;
   /*background-color: #EAD1DC;*/
 }
 
@@ -72,14 +76,22 @@ height: auto;
 
 .cname {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  /*font-size: 20px;*/
-  text-size-adjust: 80%;
-  margin: 4px;
+  font-size: clamp(11px, 1.2vw, 14px);
+  width: 100%;
+  max-width: 135px; 
+  margin: 4px auto;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
   font-weight: bold;
   text-align: center;
   background-color: rgba(89, 19, 57, 0.6);
   color: #ffffff;
   padding: 4px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
 }
 
 #SS {
@@ -112,7 +124,7 @@ height: auto;
   transition: background 0.2s;
 }*/
 
-.expl {
+.expl, .tier-expl {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   margin: 8px 0;
@@ -125,6 +137,8 @@ height: auto;
   transition: background 0.2s;
   width: 100%;
   display: block;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .expl:hover{
