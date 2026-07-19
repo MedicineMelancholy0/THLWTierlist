@@ -2,23 +2,28 @@
   box-sizing: border-box;
 }
 
-h1:target {
-  color: #ff0000;
-}
-
+/*
 .head {
   max-width: 100%;
   max-height: 100%;
+}*/
+
+.head {
+  max-width: 1400px;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  display: block; 
 }
 
 .tier-section {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto 24px auto;
   padding: 0 10px;
 }
 
-.tier-banner {
+.tiers, .tier-banner {
   width: 100%;
   height: auto;
   display: block; 
@@ -26,7 +31,7 @@ h1:target {
 
 .charicon{
 width: 100%;
-max-width: 100px;
+max-width: 135px;
 height: auto;
 }
 
@@ -110,7 +115,7 @@ height: auto;
 .expl {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
-  margin: 8px 0 0 0;
+  margin: 8px 0;
   font-weight: bold;
   text-align: center;
   background-color: #660000;
@@ -119,6 +124,7 @@ height: auto;
   cursor: pointer;
   transition: background 0.2s;
   width: 100%;
+  display: block;
 }
 
 .expl:hover{
