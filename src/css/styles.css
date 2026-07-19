@@ -17,17 +17,26 @@
 }*/
 
 .head {
-display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1550px;
+  margin: 0 auto;
   gap: 8px;
   padding: 8px;
   width: 100%;
 }
 
+.head img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .tier-section {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1550px;
   margin: 0 auto 24px auto;
   padding: 0 10px;
 }
@@ -61,7 +70,7 @@ height: auto;
   gap: 8px;
   padding: 8px;
   width: 100%;
-  max-width: 1400px; 
+  max-width: 1550px; 
   margin: 0 auto;    
 }
 
@@ -91,7 +100,7 @@ height: auto;
 
 .cname {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  font-size: clamp(18px, 1.2vw, 24px);
+  font-size: clamp(14px, 1.2vw, 28px);
   width: 100%;
   max-width: 135px; 
   margin: 4px auto;
@@ -125,24 +134,9 @@ height: auto;
   background-color: rgba(63, 98, 48, 0.6);
 }
 
-/*
-.expl {
-  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin: 4px;
-  font-weight: bold;
-  text-align: center;
-  background-color: #660000;
-  color: #ffffff;
-  padding: 4px 2px;
-  cursor: pointer;
-  transition: background 0.2s;
-}*/
-
 .expl, .tier-expl {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
-  margin: 8px auto; 
   font-weight: bold;
   text-align: center;
   background-color: #660000;
@@ -151,8 +145,12 @@ height: auto;
   cursor: pointer;
   transition: background 0.2s;
   width: 100%;
-  max-width: 1400px; 
+  max-width: 1550px;
   display: block;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .expl:hover{
