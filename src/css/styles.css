@@ -1,16 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+h1:target {
+  color: #ff0000;
+}
+
+.head {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tier-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto 24px auto;
+  padding: 0 10px;
+}
+
+.tier-banner {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
 .charicon{
-max-width: 165px;
-max-height: 165px;
+width: 100%;
+max-width: 100px;
+height: auto;
 }
 
 .tier-row {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 8px;
-background-color: #EAD1DC;
-padding: 8px;
-} 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  padding: 8px;
+  justify-content: flex-start;
+  /*background-color: #EAD1DC;*/
+}
 
 #EX {
   background-color: rgba(333, 10, 91, 0.4);
@@ -32,9 +61,14 @@ padding: 8px;
   background-color: rgba(182, 215, 168, 0.4);
 }
 
+.theme-toggle {
+  font-size: x-large;
+}
+
 .cname {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  /*font-size: 20px;*/
+  text-size-adjust: 80%;
   margin: 4px;
   font-weight: bold;
   text-align: center;
@@ -59,6 +93,7 @@ padding: 8px;
   background-color: rgba(63, 98, 48, 0.6);
 }
 
+/*
 .expl {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -70,6 +105,20 @@ padding: 8px;
   padding: 4px 2px;
   cursor: pointer;
   transition: background 0.2s;
+}*/
+
+.expl {
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 8px 0 0 0;
+  font-weight: bold;
+  text-align: center;
+  background-color: #660000;
+  color: #ffffff;
+  padding: 10px 2px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
 }
 
 .expl:hover{
