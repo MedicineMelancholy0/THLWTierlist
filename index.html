@@ -45,14 +45,11 @@
   <p>Only EX, SS, S, and Yukkuri tiers are ordered.</p>
   <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards (INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
   <p>Some benchmarks: "good damage" = All that matters is 2.2 mil for ds from my last check up. Compare that number to the calc sheet. Keep in mind, stuff like buffs and neutral dmg fb etc DO matter in this regard, so does sp reduction. And ESPECIALLY def down. Characters who can hit those numbers are usually fine.</p>
-  <br>
   
   <div class="Important Links">
     <a href="https://discord.gg/TCjp7VMTps"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
     <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753"><strong>Calc Sheet (IMPORTANT!)</strong></a>
   </div>
-  
-  <br>
   
   <h2>Dark & Light Mode Toggle</h2>
   <div class="theme-toggle">
@@ -65,6 +62,8 @@
   <div class="options-wrapper">
     <div class="options"></div>
   </div>
+
+  <br>
 
   <h1>Filter by Class</h1>
   <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
@@ -159,25 +158,43 @@
   <br> 
 
   <!-- S -->
-  <a href="src/assets/tiers/s2.png" target="_blank">
-    <img src="src/assets/tiers/s2.png" class="tier-banner" alt="S Tier">
-  </a>
+     <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/s2.png" target="_blank">
+      <img src="src/assets/tiers/s2.png" class="tier-banner" alt="S Tier">
+    </a>
+  </div>
+  
+  <div class="tier-expl" onclick="openModal('s-tier-modal')">S Tier Explanation</div>
+  </div>
   <div id="S" class="tier-row"></div>
 
   <br>
 
   <!-- A -->
-  <a href="src/assets/tiers/a2.png" target="_blank">
-    <img src="src/assets/tiers/a2.png"class="tier-banner" alt="A Tier">
-  </a>
+   <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/a2.png" target="_blank">
+      <img src="src/assets/tiers/a2.png" class="tier-banner" alt="A Tier">
+    </a>
+  </div>
+  
+  <div class="tier-expl" onclick="openModal('a-tier-modal')">A Tier Explanation</div>
+  </div>
   <div id="A" class="tier-row"></div>
 
   <br>
 
   <!-- B -->
-<a href="src/assets/tiers/b2.png" target="_blank">
-  <img src="src/assets/tiers/b2.png" class="tier-banner" alt="B Tier">
-</a>
+   <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/b2.png" target="_blank">
+      <img src="src/assets/tiers/b2.png" class="tier-banner" alt="B Tier">
+    </a>
+  </div>
+  
+  <div class="tier-expl" onclick="openModal('b-tier-modal')">B Tier Explanation</div>
+  </div>
 <div id="B" class="tier-row"></div>
 
 <br>
@@ -523,6 +540,84 @@
         <div class="sub-header header-pro">EX Tier Explanation</div>
         <p class="modal-p">
           Best of the best. Their flaws and issues almost entirely ignorable/worth for what they provide. Additionally, these units are extremely recommended for players to obtain as soon as possible regardless of their current unit collection. Units of this caliber are universally proven useful and consistent inside their element. As well as outside their element to a reasonable extent that they (the unit in question) can replace units in the S/A tier even when they themselves lack content favoring.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="ss-tier-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('ss-tier-modal')">&times;</span>
+        <div class="sub-header header-pro">SS Tier Explanation</div>
+        <p class="modal-p">
+          The tier in between EX and S, representing great units that have issues preventing them from being universal options. 
+        </p>
+        <p class="modal-p">
+          Units in this tier are typically units who either
+        </p>
+        <p class="modal-p">
+          A. Have universal aspects to them (not to the extent of EX) and lack the heights of EX tier in favored content and/or
+        </p>
+        <p class="modal-p">
+          B. Units who have equal heights to EX but lack the consistency to reach them/outside ele performance to justify being raised
+        </p>
+        <p class="modal-p">
+          Units are defined as universal when they are the easiest and most consistent units to run in content that does favor them as much as it doesn't. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="s-tier-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('s-tier-modal')">&times;</span>
+        <div class="sub-header header-pro">S Tier Explanation</div>
+        <p class="modal-p">
+          Generally good units that have some notable flaws but still perform well in opportunities expected of them such as effective elements. These units' flaws prevent them from being universal answers who always have a place in any stage.
+        </p>
+        <p class="modal-p">
+          Units in S typically are reliable in a multitude of facets but not universal in any capacity. Units are defined as universal when they are the easiest and most consistent units to run in content that does favors them as much as it doesn't. One may find issues with using these units as answers to all favorable content however, they are reliable in what they preform which can be favored or unfavored.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="a-tier-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('a-tier-modal')">&times;</span>
+        <div class="sub-header header-pro">A Tier Explanation</div>
+        <p class="modal-p">
+          A tier units have one fundamental idea being that they are less consistent than the s tier units with the same heights/abuseable strengths as them. As opposed to s tier whom are universal in these strengths without noteable flaws to prevent them and B tier whom lack the heights too many areas to form this consistent use case that A and S have. Most obvious example of this is AoE damage where units without abusable AoEs will drop very quickly unless they have something specific to save them (such as L80 Miko and B3 Shinmy's breaking and supportive abilities)
+        </p>
+        <p class="modal-p">
+          Consistent AoEs have to either 1. have high enough damage (usually above 650k on our calc sheet) to justify placing here on not terrible killers (below 170ish) OR have enough utility (6-7 breaks + good buffs, ideally across two gauges) to be here for the most part. So EX Clownpiece's AoE damage is abysmal but her breaking ability and buffs are so good that she's here. Meanwhile EX Seiran's buffs/util aren't good but her AoE is generally good enough calc-wise and performance-wise to where she can stay.
+        </p>
+        <p class="modal-p">
+          QUANTIFYING AOE DMG: AoE Damage is generally "passing" at 700k and actively becomes "good" at 1.2m+ (check our calc sheet) where, for this tier, killer is not as much of a concern (weird as it may seem). AoE Damage can perform better or worse than calc expects based on buff reqs and how quickly it breaks. Likewise, characters here generally need to have at LEAST 2.7m damage on their Last Word with 3.5m+ being preferred. Though again this is augmented by things like access to def down.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="b-tier-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('b-tier-modal')">&times;</span>
+        <div class="sub-header header-pro">B Tier Explanation</div>
+        <p class="modal-p">
+          Same as A tier, but tend to have more flaws.
+        </p>
+        <p class="modal-p">
+          Units in this tier have similar strengths to the units in A but more weaknesses/even less consistency. 
+        </p>
+        <p class="modal-p">
+          Inconsistency is defined as: A situation where the units strengths can match well into one stage with specific gimmicks but not in others. While A tier has a lot of these units, the units in B have even more flaws and often less niches.
+        </p>
+        <p class="modal-p">
+          This mostly boils down to 1. inconsistent AoE damage (usually by virtue of lacking p0 killer) or lacking utility (mostly breaks). Other flaws can include underwhelming killer sets or lacking buffs throughout their kit which means most of the units here are effectively limited to one gauge and don't fit the 3t 10/15sp farm criteria OR they are only used for one thing such as niche shill content or breaks without support/damage that allow them to go up. For example L80 Patchouli technically has a powerful buff throughout her kit (stored power) but her innate support and utility is bad on top of horrible AoE spellcard damage and a LW nuke that has never really proven itself hence her placement. Meanwhile characters like B3 Raiko can be used throughout all 3 gauges but are very limited to being only a supporter/breaker without the heights of, say, B3 Shinmyoumaru (6/3 breaks instead of 7/7) to compensate hence she remains here.
         </p>
       </div>
     </div>
