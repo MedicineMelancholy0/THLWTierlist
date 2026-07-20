@@ -595,28 +595,22 @@ dataSet[dataSetVersion].characterData = [
     opts: { spd: true, r: true },
     explanation: {
       pros: [
-        "High Damage Output",
-        "Broken Supporting Capability and ability to run cards (flexibility)",
-        "Very Above Average Breaking Ability (worse than her sis)",
-        "Basically yang gengetsu. (Unfortunately, she is lacking in gengetsus break utility, noteably poison break.)"
+        "High-Damaging Last Word with Early Breaks and Debuffs",
+        "Powerful Yang and Crit Support throughout all Gauges thanks to her Kit and Card Options",
+        "Generally Great Party P and Breaking Utility (7/4) also supported by having Good Debuffs on All Attacks"
       ],
       mixed: [
         "In general, she will tend to struggle if you burn her skills early as her last word buffing isnt very helpful at enabling her own nuking",
-        "Niche Resonance (Most modern units use slice scale so it's actually not that bad but not as universal as other genics)",
-        "Very Slow Self Anomaly Infliction tends to limit her buffs after turn 1"
+        "Niche Resonance limits pairing and doesn't give as much Damage Amplification vs. Modern Rank II-Era Buffs"
       ],
       cons: [
-        "Questionable AoE Spellcard Damage"
+        "Having Bad Self Anomaly Infliction is a genuine concern now as it can really limit her pairings, especially seeing as her AoE lacks a Poison Break thus hurting her role as a Universal Yang Buffer",
+        "Horrible AoE Spellcard Damage"
       ],
       nitpick: [
         "Can't Quite take advantage of her Excessive Crit Acc Buffs",
         "Needs to use extremely rare and tedious to grind cards to get her Ekari tier support (not accounting tediousness of cards into tiering it is just annoying)",
         "Not Freeze/Para Immune"
-      ],
-      extra: [
-        "+++ Extremely fun to use",
-        "She's now basically ekari with aoe breaks (similar to gengetsu, but gengetsu does more...much more. all thanks to that burn break and debuffing and- ). Incredible",
-        "NOTABLE PAIRINGS (Not included in tiering): Gunko, Everyone else in this tier and the one below it."
       ]
     }
   },
@@ -653,27 +647,18 @@ dataSet[dataSetVersion].characterData = [
     opts: { e: true, atk: true },
     explanation: {
       pros: [
-        "Above average support",
-        "Good breaking to compliment above average support and agi anoms to use it.",
-        "Killers are amazing, damage is rather high.",
-        "Actual debuffing on a unit this is crazy + can abuse light unit cards"
+        "Consistent Yang/Crit Support complemented by Innate Self-Sustainability through Spd Anoms ",
+        "Great LW Damage is complemented by Innate Debuffs + Access to Barrier Status D-Cards"
       ],
       mixed: [
-        "Aoe spell killer could be way better, if it hits her role changes a lot",
-        "Passable into buff remove but could be better"
+        "AoE Spellcard is Held Back by Bad p0 killers (damage drastically rises against Humans) and 5/2 Breaks. This can also come into confliction with her Spd Anoms since if nobody is outspeeding her then her AoE just kinda does nothing because it's 2 breaks (lol).",
+        "Passable into buff remove but could be better (2 crit atk on AoE is kinda... lol)"
       ],
       cons: [
-        "Lacking utility, self Acc",
-        "Mono fire + dmg to eff"
+        "Tends to Lack Utility outside of Party P and Anomaly Infliction. Similarly lacks Party Agi outside of Sk2"
       ],
       nitpick: [
-        "Gimmick leaves a lot to be desired",
         "Not Freeze Immune",
-        "Aoe dmg is stupid high on killer it just tends to not hit killer!!"
-      ],
-      extra: [
-        "Has alot of potential to rise within her tier provided she gets better cards in the future as she can be another util based aoe break + buff spammer (just pretty hard to pull off)",
-        "NOTABLE PAIRINGS (Not included in tiering): Ex Kutaka, Mugetsu, Ex Mamizou"
       ]
     }
   },
@@ -895,23 +880,21 @@ dataSet[dataSetVersion].characterData = [
     opts: { p: true, heal: true },
     explanation: {
       pros: [
-        "High Damage Potential on all attacks, with aoe not needing killer to have good damage.",
-        "Good Support letting her not be entirely useless while doing your teams damage (her one job)"
+        "Good Nuking AoE (despite lacking p0 killer) and Last Word that features Innate Debuffs. Further supported thanks to her myriad of inline buffs.",
+        "Consistent Yang Support letting her not be entirely useless while doing your teams damage (her one job)",
+        "Decent Barrier Restore, Party P, and Unbind Utility"
       ],
       mixed: [
-        "Reliant on spellcards and party support for Yang Atk and Crit",
-        "Her Buffs are only good for Yang Units, tries to buff Dual Scale",
+        "Crit and Dual Scaling Support tends to be Flaccid in Practice due Mid-Size Numbers",
+        "Her only Rank II Damage Amp is her Domain Expansion which itself isn't even that good",
         "Party Anomaly Cleanse can be Annoying",
         "Pretty Questionable killer placement leads to inconsistent damage (at times)"
       ],
       cons: [
-        "300$ unit that doesnt solo everthing",
-        "Poor Breaking Skill",
-        "Accuracy is just bad.",
-        "In terms of Cost:Potency, which isn't reflected in this tierlist, she is at the bottom."
+        "Bad Innate Accuracy and Breaking Ability makes her already bad Consistency Problems even worse."
       ],
       extra: [
-        "$350 btw"
+        "In terms of Cost:Potency, which isn't reflected in this tierlist, she is at the bottom."
       ]
     }
   },
@@ -1061,24 +1044,16 @@ dataSet[dataSetVersion].characterData = [
     opts: { heal: true, e: true },
     explanation: {
       pros: [
-        "Incredible Yang & Crit Support & Incredible Self Sufficiency. Good debuff potential",
-        "Two party unbinds on skills very useful, though binds aren't as common now",
-        "Great damage all around. SHE LITERALLY HAS A BIS FOR EVERY ATTACK NOW AND REIN. In combination with her buffing it makes her requirements to run super super low since you just want a breaker."
+        "High Yang/Crit Support across All Gauges supported by Good Innate Accuracy",
+        "Good Unbind/Party P Utility, along with some Party P",
+        "Very High Damage across her AoE Spellcards"
       ],
       mixed: [
         "Party Anomaly Cleanse can be annoying"
       ],
       cons: [
-        "Lacks AoE Anomaly breaks (tho itd be kinda a waste)"
-      ],
-      nitpick: [
-        "Buffs make her water ex 8sp farm break",
-        "Long Animations, Tedious",
-        "Primary killers on ST are kinda whack"
-      ],
-      extra: [
-        "This unit was top 1 for 1.5 years. She is a new kind of monster",
-        "NOTABLE PAIRINGS (Not included in tiering): Anyone who breaks before her and gives party P (Getsu Twins and Ex Mamizou)"
+        "Lacks AoE Anomaly Infliction on Skill making her require a Yang Breaker/Gengetsu type unit to Duo",
+        "Despite having Good Killers and Innate Debuffs her LW tends to hold her back because of being mismatched between AoE and Last Word elements while having... really not that high innate damage on top of lacking Rank II innate damage amplification outside of 1 Party Yang Atk II on her Last Word "
       ]
     }
   },
@@ -1107,32 +1082,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "L80 Reimu", 
-    img: "mv reimu.jpg", 
-    tier: "S", 
-    opts: { r: true, spd: true },
-    explanation: {
-      pros: [
-        "Last Word + AoE Spellcard have consistently high damage with great killer range as well as reliable set up",
-        "Debuffs, Support, and Utility make her use very consistent and helpful during shaft. Very reliant on creativity"
-      ],
-      cons: [
-        "Lacks Innate Yang Atk Buffs, but Atk Anoms help in this end.",
-        "Known to need help with some more difficult damage requirements assuming you force her to work instead of using her utility."
-      ],
-      nitpick: [
-        "Lmao Eva II",
-        "Poison Anoms are 1t and she is susceptible to para/freeze"
-      ],
-      extra: [
-        "In addition to being able to spam aoe spell nuke, she can also solo nuke a gauge. Very very rare these days. And still have a working debuff skill!",
-        "DS Solo Count: 18",
-        "Note: Her kit looks really bad on paper. It is only in use you will realize how competent she really is.",
-        "NOTABLE PAIRINGS (Not included in tiering): Mugetsu, C3 Yuyuko, Cz1, Yang/Crit Buffers Appreciated."
-      ]
-    }
-  },
-  { 
     name: "C3 Narumi", 
     img: "c3 narumi.png", 
     tier: "S", 
@@ -1147,6 +1096,30 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "Let down by lacking good AoE killers and Def Down (Run the Sanshoku card on her Last Word)"
+      ]
+    }
+  },
+    { 
+    name: "L80 Reimu", 
+    img: "mv reimu.jpg", 
+    tier: "S", 
+    opts: { r: true, spd: true },
+    explanation: {
+      pros: [
+        "Last Word + AoE Damage are Consistently High, supported by Mvmu's Ample Debuffs",
+        "D Sk2's Yang Def Down is Disposable allowing for Ease of Use, while her Sk1 has High Utility for All Gauges (yes party poison is util.) "
+      ],
+      cons: [
+        "AoE Spell Targets Yin which can make pairing her difficult in modern stages (especially as she is Yang/Burn) seeing how modern stages tend to overnerf one of the defs",
+        "Though Atk Anoms certainly help, she really tends to lack Yang/Crit Atk and even Agility between gauges as her Solo Buffs are quite mid. This can make her performance content where you don't hit both LW and AoE Eff (Sun/Star) fall off very quickly.",
+        "This in general leads to her having a hard time in modern stages where she can't just out-util stages anymore because not only does she have bad innate buffs and support, but simply lacks Damage Amplification overall."
+      ],
+      nitpick: [
+        "Lmao Eva II",
+        "Poison Anoms are 1t and she is susceptible to para/freeze"
+      ],
+      extra: [
+        "DS Solo Count: 18"
       ]
     }
   },
