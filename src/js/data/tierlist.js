@@ -3321,216 +3321,1841 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   // start of C
-  { name: "C8<< Kokoro", img: "C8lessthanlessthan Kokoro.png", tier: "C", opts: { atk: true, e: true } },
-  { name: "C3 Mystia", img: "C3 (perhaps) Mystia.png", tier: "C", opts: { atk: true, e: true } },
-  { name: "C3 Remilia", img: "c3 remilia.png", tier: "C", opts: { atk: true, e: true } },
-  { name: "C3 Wakasagihime", img: "C3 wakasagihime.png", tier: "C", opts: { atk: true, e: true } },
-  { name: "C3< Aya", img: "autumn aya.png", tier: "C", opts: { atk: true, e: true } },
-  { name: "C3~ Tsukasa", img: "c3~ tsukasa.png", tier: "C", opts: { atk: true, e: true } },
-  { name: "C3 Kyouko", img: "C3 (perhaps) Kyouko.png", tier: "C", opts: { atk: true, e: true } },
-  { name: "F1 Sanae", img: "f1 sanae.png", tier: "C", opts: { atk: true, e: true } },
-  { name: "L80 Shion", img: "l80 shion.png", tier: "C", opts: { atk: true, r: true } },
-  { name: "L80 Nitori", img: "l80 nitori.png", tier: "C", opts: { atk: true, r: true } },
-  { name: "L80 Koishi", img: "lo koishi.png", tier: "C", opts: { atk: true, r: true } },
-  { name: "L80 Reisen", img: "Mv rei.jpg", tier: "C", opts: { atk: true, r: true } },
-  { name: "L80 Youmu", img: "l80 youmu.png", tier: "C", opts: { atk: true, r: true } },
-  { name: "L80 Byakuren", img: "l80 byakuren spd.png", tier: "C", opts: { atk: true, r: true } },
-  { name: "L80 Kanako", img: "l80 kanako.png", tier: "C", opts: { atk: true, r: true } },
-  { name: "A7& Lily", img: "a7& lily.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "A10& Minoriko", img: "a10& minoriko.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "A12.8& Daiyousei", img: "a12.3& dai.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "A13& Tojiko", img: "a13& tojiko.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "A14.5& Sumireko", img: "a14.5& sumireko.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "A15A& Sanae", img: "a15a& sanae atk.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "A16& Eternity", img: "a16& clownpiss.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "A16& Aunn", img: "a16& aunn spd.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "A19& Sanae", img: "a19& sanae attacl.png", tier: "C", opts: { atk: true, ex: true } },
-  { name: "B3;6 Eirin", img: "b3;6 eirin.png", tier: "C", opts: { atk: true, b: true } },
-  { name: "D8.-5 Remilia", img: "d8.-5 remilia.png", tier: "C", opts: { atk: true, b: true } },
-  { name: "W2.-5 Suwako", img: "w1.-5 suwako.png", tier: "C", opts: { atk: true, b: true } },
-  { name: "H5;7 Yuuka", img: "h5;7 yuuka.png", tier: "C", opts: { atk: true, b: true } },
-  { name: "L25ws Yukari", img: "l25ws medikari.png", tier: "C", opts: { atk: true, b: true } },
-  { name: "B2 Junko", img: "b2 junko.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B3 Seija", img: "b3 peacekeeper.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B5 Lunasa", img: "b5 lunasa.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B3 Ringo", img: "b3 ringo.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B3 Yatsuhashi", img: "b3 yatsuhashi.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B3 Hecatia", img: "b3 hecatia.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B3 Eiki", img: "b3 eiki.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "S5 Rin", img: "s5 rin.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B3 Reimu", img: "b3 reimu.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B5 Reisen", img: "b5 reisen.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "B5 Yuyuko", img: "b5 yuyuko.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "E1 Patchouli", img: "e1 patchouli.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "E1 Sakuya", img: "e1 sakuya.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "E1 Meiling", img: "e1 meiling.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "E9 Remilia", img: "e9 remilia.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "H5 Mystia", img: "h5 mystia.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "H5 Yuuka", img: "h5 yuuka.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "H5 Keine", img: "h5 keine.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "Lr Tenshi", img: "lr tenshi.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "S2 Satori", img: "s2 satori.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "S5 Koishi", img: "s5 koishi.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "T5 Tenshi", img: "t5 tenshi.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "T5 Mokou", img: "t5 mokou.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "W3 Parsee", img: "w3 parsee.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "W5 Kasen", img: "kassy.jpg", tier: "C", opts: { atk: true, u: true } },
-  { name: "Y5 Futo", img: "y5 futo.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "Z3 Alice", img: "z3 alice.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "Z3 Remilia", img: "z3 remilia.png", tier: "C", opts: { atk: true, u: true } },
-  { name: "A6 Reimu", img: "a6 reimu.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A6 Koakuma", img: "a6 koakuma.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A6 Patchouli", img: "a6 patchouli.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A6 Flandre", img: "a6 flandre.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A6 Sunny", img: "a6 sunny.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A6 Yukari", img: "a6 yukari.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A6 Yuyuko", img: "a6 yuyuko.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A6 Lunasa", img: "Lunasa scar.jpg", tier: "C", opts: { atk: true, a: true } },
-  { name: "A6 Merlin", img: "Merlin scar.jpg", tier: "C", opts: { atk: true, a: true } },
-  { name: "A7A Reimu", img: "a7a reimu.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A7B Sakuya", img: "a7b sakuya.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A7 Chen", img: "a7 chen.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A7 Ran", img: "a7 ran.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A8 Star", img: "A7 Star.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A10.3 Ringo", img: "A10.3 Ringo.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A13 Futo", img: "A13 Futo.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "A14 Seija", img: "seija.jpg", tier: "C", opts: { atk: true, a: true } },
-  { name: "A19 Ran", img: "A9 Ran.png", tier: "C", opts: { atk: true, a: true } },
-  { name: "L1 Ibaraki's Arm", img: "l1 arm.png", tier: "C", opts: { atk: true, g: true } },
+  {
+    name: "C8<< Kokoro",
+    img: "C8lessthanlessthan Kokoro.png",
+    tier: "C",
+    opts: { tec: true, e: true },
+    explanation: {
+      pros: [
+        "Behold the TRUE secret hidden gengetsu clone who is actually able to replace gengetsu*",
+        "Actually good breaking ability. 7 aoe breaks with 1p Break (She's not Bp Remi but it's still decent)",
+        "Decent Supportive Abilities"
+      ],
+      boons: [
+        "The SURPERIOR Chunni Design. I'm sorry Koishi fans she just is."
+      ],
+      mixed: [
+        "Killer Range isn't Bad but isn't Super Amazing"
+      ],
+      cons: [
+        "Solo LW instantly kills her"
+      ],
+      extra: [
+        "THE VILLAIN OF C TIER",
+        "RED for Gengetsu for she is the true gengetsu powercreep",
+        "she would be SS with an AOE Lw. Maybe low ex due to awful lw killer and awful lw pre effs. She is hilariously underseated due to her st lw. more than ex kosuzu is underseated due to needing gengetsu. In general theyll have the same buffing agi checks breaking etc. For usual play. HOWEVER, her aoe spell p0 is quite bad for what a st lw needs and she is noticeably worse than gengetsu for the nuking turn in duos giving her inconsistency. still, hilariously underseated. if our tierlist didnt hate st lws, shed be high A (aka, if we didnt anti bias her bc of st lw)"
+      ]
+    }
+  },
+  {
+    name: "C3 Mystia",
+    img: "C3 (perhaps) Mystia.png",
+    tier: "C",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Useful Support & Buffs, Good Breaking Potential",
+        "Both AoEs have Huge Damage Potential",
+        "Dmg to Eff & Res"
+      ],
+      mixed: [
+        "Party Acc Tied to Sk3"
+      ],
+      cons: [
+        "Lacks Crit Atk or Yin Debuffs",
+        "SC2 is Useless in Practice. Furthermore, her class conflicts with her intended combat role.",
+        "Poor Killers",
+        "Solo Last Word (Killing Myself)"
+      ],
+      nitpick: [
+        "P issues"
+      ],
+      extra: [
+        "(She would be S if she had an AoE LW)"
+      ]
+    }
+  },
+  {
+    name: "C3 Remilia",
+    img: "c3 remilia.png",
+    tier: "C",
+    opts: { def: true, e: true },
+    explanation: {
+      pros: [
+        "High Damage Potential",
+        "Great Breaking Capability"
+      ],
+      boons: [
+        "Her stat distribution is very minmaxed"
+      ],
+      mixed: [
+        "Killers are a Mixed Bag"
+      ],
+      cons: [
+        "Lacking in Atk Self Setup or Support",
+        "No Accuracy in her Kit",
+        "Often times nerfed or lacks places for use in content"
+      ],
+      nitpick: [
+        "Bis isn't a bis for no reason"
+      ]
+    }
+  },
+  {
+    name: "C3 Wakasagihime",
+    img: "C3 wakasagihime.png",
+    tier: "C",
+    opts: { heal: true, e: true },
+    explanation: {
+      pros: [
+        "Decent Yang Debuffing thanks to Rank II on LW Stacking well with innate Rank I's + Scales Well with Cards",
+        "High Acc Buffs + 2 Unbinds + Barrier Restore + 2 Party Yang Atk II are the majority of her use outside debuffing"
+      ],
+      boons: [],
+      mixed: [
+        "AoE and LW Damage can be Surprisingly Practical, but it is mostly held back due to low innate Yang Atk buffs and poor Killers + Dmg to Eff Issues",
+        "Does not have enough of anything in her kit to have a proper niche besides maybe Debuffing, see below for more info"
+      ],
+      cons: [
+        "Being essentially Mono Water w/ poor innate Anomaly Breaks holds her back significantly"
+      ],
+      extra: [
+        "Like Miyoi, makes me feel lesbian",
+        "Ultimately unable to rise to B due to not committing to anything. Generally is lacking the atk buffs + Yang debuffs to properly go up. Wants more scaling to do proper damage. Wants more breaking (and a bit more P) to properly have util. She is simply mid-grades across the board and lacks swimsuit content to compensate"
+      ]
+    }
+  },
+  {
+    name: "C3< Aya",
+    img: "autumn aya.png",
+    tier: "C",
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "Great scaling and damage potential on lw",
+        "Niche debuffing but can be useful (unlike some units)"
+      ],
+      boons: [
+        "Dmg to Res unit!!"
+      ],
+      mixed: [
+        "Her Gimmick is Niche"
+      ],
+      cons: [
+        "What is that killer (its like gengetsu and mugetsu not that its particularly bad or useless)",
+        "Awful breaking and utility"
+      ],
+      nitpick: [
+        "WHAT ARE THOSE \"BUFFS\" LMAOOOOOO"
+      ],
+      extra: [
+        "@"
+      ]
+    }
+  },
+  {
+    name: "C3~ Tsukasa",
+    img: "c3~ tsukasa.png",
+    tier: "C",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Last gauge nuking is quite practical due to high amount of buff cheesing, complimented by ikagura"
+      ],
+      mixed: [
+        "Role as spam breaker is present, but she doesn't have p to make use of it as a proper strength",
+        "high damage to res is present but it's not high enough to be a consistent nuke there"
+      ],
+      cons: [
+        "bad killer further ruining preformance",
+        "bad support especially between gauges due to few saveable skills and bad aoe pre eff"
+      ],
+      extra: [
+        "this unit is such a cluster fuck of design, and the exact reason why i hate modern nn, because they will think 300% slice (and lower base damage than rednae) makes things justified enough to ensure everything she does isn't practical"
+      ]
+    }
+  },
+  {
+    name: "C3 Kyouko",
+    img: "C3 (perhaps) Kyouko.png",
+    tier: "C",
+    opts: { dest: true, e: true },
+    explanation: {
+      pros: [
+        "Party 2 Crit II",
+        "High Damage Potential, AoE can nuke"
+      ],
+      mixed: [
+        "Buffs Could be Better"
+      ],
+      cons: [
+        "Breaking Ability Lags Behind",
+        "Befuddled by Dmg to Eff Issues and Poor Killers"
+      ],
+      nitpick: [
+        "Nullify Anoms instead of literally anything useful"
+      ],
+      extra: [
+        "@@@@"
+      ]
+    }
+  },
+  {
+    name: "F1 Sanae",
+    img: "f1 sanae.png",
+    tier: "C",
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Stupid High LW Damage, Complemented by Ikaruga",
+        "Great Yin Support"
+      ],
+      mixed: [
+        "Skills are Difficult to use, especially with breaks. Party Acc is locked to her Gimmick Skill with long CD. P skill inflicts unbreakable anomalies unless you use her Last Word.",
+        "RNG Anomaly Inflicts tend to be annoying for Consistency"
+      ],
+      cons: [
+        "Only source of Acc and Party Acc is her Gimmick Skill",
+        "Soupy Elements & Weird Inflicts - AoE Poison on Skill but only breaks Paralyze AoE. Therefore Breaks are Ass",
+        "Lacks Spellcard Damage",
+        "Lacking in own scaling support + Low Scaling Stats"
+      ],
+      nitpick: [
+        "Where poison break on shot",
+        "Extremely awful animations"
+      ]
+    }
+  },
+  {
+    name: "L80 Shion",
+    img: "l80 shion.png",
+    tier: "C",
+    opts: { dest: true, r: true },
+    explanation: {
+      pros: [
+        "Great Breaking Ability",
+        "Good AoE Spell Nuking Ability"
+      ],
+      boons: [
+        "2nd Best Solo LW In the Game"
+      ],
+      mixed: [
+        "Is Very Reliant on Cards for Support as her Innate Support is Not Good"
+      ],
+      cons: [
+        "Generally lacks Utility outside Breaks",
+        "Solo LW Immediately Culls Usefulness"
+      ],
+      extra: [
+        "PRACTICALLY SPEAKING this character could be in high B low A. Her AoE nukes are very good (with overflow and good buffs) however because we anti-bias st-lws (for our own reasons, see FAQ) she is hard-capped at C. However in trio performance she can outperform even some A tiers"
+      ]
+    }
+  },
+  {
+    name: "L80 Nitori",
+    img: "l80 nitori.png",
+    tier: "C",
+    opts: { spd: true, r: true },
+    explanation: {
+      pros: [
+        "Good T1 Support",
+        "Good Damage Potential"
+      ],
+      cons: [
+        "Mixed Yin/Yang hurts her in Practice",
+        "Lacks Utility and Breaks and lacks Good Debuffs. 0 Acc in her Entire Kit",
+        "Saddled by Poor Killers and Dmg to Eff Issues"
+      ]
+    }
+  },
+  {
+    name: "L80 Koishi",
+    img: "koosh.jpg",
+    tier: "C",
+    opts: { def: true, r: true },
+    explanation: {
+      pros: [
+        "Solid Damage Potential on Last Word",
+        "Solid Overall Support and Breaking"
+      ],
+      mixed: [
+        "Middling Debuff Potential without Story Cards",
+        "Trades scaling for extremely high Yin Atk stat. This kind of backfires into making her equal to someone with mid stats into both",
+        "RNG"
+      ],
+      cons: [
+        "Terrible Spellcard Damage",
+        "In practice cant buff or debuff properly so just kinda does nothing if you dont babysit her"
+      ]
+    }
+  },
+  {
+    name: "L80 Reisen",
+    img: "Mv rei.jpg",
+    tier: "C",
+    opts: { atk: true, r: true },
+    explanation: {
+      pros: [
+        "Ultra-Wide Killers on LW and ST Attack, High Damage Potential",
+        "Good Party Yin Atk Sustainability"
+      ],
+      mixed: [
+        "Disjointed Elements"
+      ],
+      cons: [
+        "Lacks Utility",
+        "Dual Scaling Issues",
+        "Aoe Lacks Breaks or Competres Killers to Survive"
+      ]
+    }
+  },
+  {
+    name: "L80 Youmu",
+    img: "l80 youmu.png",
+    tier: "C",
+    opts: { supp: true, r: true },
+    explanation: {
+      pros: [
+        "With Rank IIs, Anthology Buffs, Atk Anoms, Dmg to Eff and Res and Innate Debuffs, her Last Word is Actually Usable for Damage",
+        "Decent Yang Support with the Rank II Addition"
+      ],
+      cons: [
+        "Supportive Capabilities for Crit, Scaling, and Yin in any Substantive way is Subpar at Best",
+        "AoE Spellcard has Poor Breaks, No Damage and No Support making her effectively Dead outside of her Skills and Last Word"
+      ]
+    }
+  },
+  {
+    name: "L80 Byakuren",
+    img: "l80 byakuren spd.png",
+    tier: "C",
+    opts: { tec: true, r: true },
+    explanation: {
+      pros: [
+        "Debuffs AND poison are a great combo",
+        "Great killer, hyg+pp"
+      ],
+      mixed: [
+        "Dmg to res unit yet still cant kill higher difficulty content on res (her dmg ceiling is unimpressive)",
+        "No Atk Anoms"
+      ],
+      cons: [
+        "AoE Spell is Ass",
+        "ass buffs like actually 0 yang or crit in whole kit",
+        "elemental & bullet type spread is awful",
+        "30% dmg to res is quickly outpaced by other better rank ii buffs in this tier"
+      ]
+    }
+  },
+  {
+    name: "L80 Kanako",
+    img: "l80 kanako.png",
+    tier: "C",
+    opts: { tec: true, r: true },
+    explanation: {
+      pros: [
+        "Decent Last Word Damage (Thanks to Rein and Debuffing)",
+        "Great Self-Buffing Across Buff Removal, Good Party Support and Debuffs"
+      ],
+      mixed: [
+        "That Evil RNG Stun on her ST"
+      ],
+      cons: [
+        "Spellcard Damage Tends to be Ass",
+        "Extremely Inconsistent Elements tend to limit her use severely"
+      ],
+      nitpick: [
+        "Awful just abysmal spirit power economy"
+      ]
+    }
+  },
+  {
+    name: "A7& Lily",
+    img: "a7& lily.png",
+    tier: "C",
+    opts: { dest: true, ex: true },
+    explanation: {
+      pros: [
+        "Youkai Killer",
+        "Acc Sufficient",
+        "Her Effects are Decent"
+      ],
+      mixed: [
+        "Killers Overlap with NLM Lines",
+        "Essentially a Mono Sun Unit",
+        "Needs a considerable amount of support"
+      ],
+      cons: [
+        "Shit Breaks",
+        "Shit Spellcard Dmg",
+        "0 Anomaly Interactions on Ability"
+      ],
+      nitpick: [
+        "Her Skill 3 has 1 self barr cleanse. Like why"
+      ]
+    }
+  },
+  {
+    name: "A10& Minoriko",
+    img: "a10& minoriko.png",
+    tier: "C",
+    opts: { tec: true, ex: true },
+    explanation: {
+      pros: [
+        "Actually Competent Killer Set w/ bis makes her damage usable",
+        "Good Debuffs & 3 Turns of Party Yin II, further capitalized on by good card access",
+        "While needing p, her breaks are amazing"
+      ],
+      mixed: [
+        "5 AoE Spellcards but no nuking spell",
+        "Very Much a Buff Sink - Needs lots of support to give back to the party. Mostly in P and Acc",
+        "Damage Output Tends to be Unreliable"
+      ],
+      cons: [
+        "Only Breaks 1 Set of Anomalies at a Time. Breaking is NOT complemented by low speed and low P gain.",
+        "Party Paralyze & Poison can & will be annoying",
+        "Unreliable for Farming, very much a clear unit."
+      ],
+      nitpick: [
+        "Only LW lines that matter are her lines 1 and 6 effectively; God Killer is secondary (why)"
+      ],
+      extra: [
+        "Note that she isn't the type of unit that pairs with, say, Gengetsu. She isn't providing anything to the high tier characters who do everything. Rather acting as a battery for chars who kinda struggle in aspects. Personal damage is low on G3 though not bad for G2. Basically a util unit with chip dmg that isn't negligble with BIS. Very weird unit."
+      ]
+    }
+  },
+  {
+    name: "A12.8& Daiyousei",
+    img: "a12.3& dai.png",
+    tier: "C",
+    opts: { dest: true, ex: true },
+    explanation: {
+      pros: [
+        "Hilarious nuking ability thanks to dest gimmicks."
+      ],
+      mixed: [
+        "In general outside of the crit ii and party agi her buffs are simply lacking",
+        "Killers are decent but not particularly great (she is dest so she can get away with it but she needs crit acc support)",
+        "Essentially Mono Moon while being dmg to eff"
+      ],
+      cons: [
+        "Shit Breaks"
+      ],
+      extra: [
+        "we are not raising this unit, everyone who wants this unit raised should really revaluate our standards at what exdai actually does in a comp. she is a worse version of c3 kyouko. plain and simple. enjoy your c3 cirno tho!!"
+      ]
+    }
+  },
+  {
+    name: "A13& Tojiko",
+    img: "a13& tojiko.png",
+    tier: "C",
+    opts: { spd: true, ex: true },
+    explanation: {
+      pros: [
+        "Good Self Buffing & Enemy Debuffing",
+        "Good Killers Wowie"
+      ],
+      mixed: [
+        "Can't use her Crit Acc Buffs",
+        "Essentially Mono Wood BUT remedied by dmg to res"
+      ],
+      cons: [
+        "AoE is Completely Dead in the water, between lacking damage, support or breaks."
+      ]
+    }
+  },
+  {
+    name: "A14.5& Sumireko",
+    img: "a14.5& sumireko.png",
+    tier: "C",
+    opts: { dest: true, ex: true },
+    explanation: {
+      pros: [
+        "Has Aura",
+        "Good Killers, Very good damage on lw solid damage elsewhere",
+        "Good Self Sustainability + light but effective debuffing"
+      ],
+      boons: [
+        "Good Stall Ability"
+      ],
+      mixed: [
+        "Mixed Bullet Type LW, but high weight on p0 so it’s fine. (also runs 50% earth -2 yang def anyways)"
+      ],
+      cons: [
+        "AoE tends to leave a lot to be desired",
+        "Very Very Lackluster Support"
+      ],
+      nitpick: [
+        "Can’t cycle her Yang Atk II"
+      ],
+      extra: [
+        "NOT locked to dmg to eff like you might expect"
+      ]
+    }
+  },
+  {
+    name: "A15A& Sanae",
+    img: "a15a& sanae atk.png",
+    tier: "C",
+    opts: { tec: true, ex: true },
+    explanation: {
+      pros: [
+        "Good Breaking Utility",
+        "Overall Decent Support as Well"
+      ],
+      boons: [
+        "INSANE Res Nuke on Killer"
+      ],
+      mixed: [
+        "Very Low AoE SC Dmg Even On KIller"
+      ],
+      cons: [
+        "Awful, Awful Killers, Hampering Usability Immediately"
+      ],
+      nitpick: [
+        "Has some P Issues",
+        "Lmfao Eva II (Again)"
+      ]
+    }
+  },
+  {
+    name: "A16& Eternity",
+    img: "a16& eternity.png",
+    tier: "C",
+    opts: { heal: true, ex: true },
+    explanation: {
+      pros: [
+        "Good Yin Def Buffs, can Debuff",
+        "Party Yin Atk II + Now has Real Scaling = Good Changes",
+        "2 Unbinds Good when Necessary"
+      ],
+      mixed: [
+        "Party Anom Cleanse can be Annoying",
+        "Needs Yin & Crit Atk Support"
+      ],
+      cons: [
+        "Between her soupy elements and low anom inflict her breaking ability suffers",
+        "Bad Killers"
+      ]
+    }
+  },
+  {
+    name: "A16& Aunn",
+    img: "a16& aunn def.png",
+    tier: "C",
+    opts: { def: true, ex: true },
+    explanation: {
+      pros: [
+        "Solid enough killer",
+        "Support on paper is quite passable albeit split, no buffing yang units with party p no breaking while buffing yin. Still passable"
+      ],
+      mixed: [
+        "Utility is too split to be effective",
+        "Support is too split to be effective"
+      ],
+      cons: [
+        "Set up is still bad as she is reliant on things she can not buff for her damage",
+        "Versatility is greatly hindered by being fully mixed and unlike exkosuzu not having the benefits of both, just the weaknesses.*"
+      ],
+      nitpick: [
+        "Keeps causing drama"
+      ],
+      extra: [
+        "What does she do, she has like 6/10 in everything and 6/10 doesnt cut it",
+        "* From earlier, Exkosuzu doesnt have this treatment as she buffs her attack, she will get the yin she needs in yang times and vise versa as well as has def down to help. Additionally, prae card makes her really good just in general as it perfectly buffs what exkosuzu wants besides crit.\nAunn meanwhile has none of that despite requiring it. Awesome design nn",
+        "Here lies the 8th coming of hibis hopes and dreams, for this is the 8th unit they have been hyped for just to be utterly unusable"
+      ]
+    }
+  },
+  {
+    name: "A19& Sanae",
+    img: "a19& sanae attacl.png",
+    tier: "C",
+    opts: { dest: true, ex: true },
+    explanation: {
+      pros: [
+        "Youkai Killer",
+        "Good Breaking Ability"
+      ],
+      mixed: [
+        "Crit Def II Down will be hard to utilize, almost no point over Crit Atk II Up",
+        "Debuffs Eva instead of buffing Acc"
+      ],
+      cons: [
+        "Divided Bullet Type Last Word",
+        "Next to no self buffs aside from Agi, Lacks P (She wants P as a breaker)",
+        "Low Innate Yang Def Down"
+      ]
+    }
+  },
+  {
+    name: "B3;6 Eirin",
+    img: "b3;6 eirin.png",
+    tier: "C",
+    opts: { tec: true, b: true },
+    explanation: {
+      pros: [
+        "Good Self Buffs"
+      ],
+      mixed: [
+        "Lacks Yang Atk outside of Spells",
+        "Mid Anomaly Breaks",
+        "Devastatingly High LW and AoE Damage tied to Poor, Mismatched Killers and Reliance on Dmg to Eff"
+      ],
+      cons: [
+        "Weirdly Selfish Buffs"
+      ]
+    }
+  },
+  {
+    name: "D8.-5 Remilia",
+    img: "d8.-5 remilia.png",
+    tier: "C",
+    opts: { tec: true, b: true },
+    explanation: {
+      pros: [
+        "Amazing Breaking Ability, 7 Breaks between 2 Gauges"
+      ],
+      boons: [
+        "Competent Solo LW thanks to Good Killers (Found Pres is nice for EBR)"
+      ],
+      cons: [
+        "P issues limit use as a breaker",
+        "Solo LW immediately hurts her practical use",
+        "AoE Dmg is very sad"
+      ]
+    }
+  },
+  {
+    name: "W2.-5 Suwako",
+    img: "w1.-5 suwako.png",
+    tier: "C",
+    opts: { dbf: true, b: true },
+    explanation: {
+      pros: [
+        "Overall Good Debuffing Abilities, usable between multiple gauges"
+      ],
+      mixed: [
+        "Good Damage held back by Restrictive Killers"
+      ],
+      cons: [
+        "Lacks Buffs"
+      ],
+      nitpick: [
+        "Party SP Skill in the same skill as debuff skill"
+      ],
+      extra: [
+        "A12 Kogasa, the 2nd verse. However she is worse in just about every aspect, making her a lot more inconsistent in practice than Kogasa."
+      ]
+    }
+  },
+  {
+    name: "H5;7 Yuuka",
+    img: "h5;7 yuuka.png",
+    tier: "C",
+    opts: { tec: true, b: true },
+    explanation: {
+      pros: [
+        "Good Buffs across her Kit",
+        "Good Damage across her kit with good killers complemented by 50% dmg to Res",
+        "Good Breaking Ability"
+      ],
+      cons: [
+        "Solo Last Word"
+      ],
+      nitpick: [
+        "Lacks 3p"
+      ],
+      extra: [
+        "---------- worst design in the entire game, ever",
+        "Like C3 Mystia she would be S with an AoE LW"
+      ]
+    }
+  },
+  {
+    name: "L25ws Yukari",
+    img: "l25ws medikari.png",
+    tier: "C",
+    opts: { dbf: true, b: true },
+    explanation: {
+      pros: [
+        "Decent Damage Output on her Last Word",
+        "Decent Utility and Debuffing for her Tier"
+      ],
+      cons: [
+        "AoE damage is dead",
+        "Lacks Offensive Buffs, doesn't specialize in anything. Tends to be capped by numbers severely."
+      ]
+    }
+  },
+  {
+    name: "B2 Junko",
+    img: "b2 junko.png",
+    tier: "C",
+    opts: { atk: true, u: true },
+    explanation: {
+      pros: [
+        "Extremely Wide Killer Range",
+        "Neutral Damage means she can kill anyone she isn't nerfed against",
+        "Can Break Any Anomaly",
+        "Yin Atk unit = Praecard Abuser"
+      ],
+      mixed: [
+        "She is entirely neutral (except for shots)"
+      ],
+      cons: [
+        "Needs help in breaks and setting up and in P. Very hard to use in practice",
+        "Low Spellcard Damage",
+        "Her weird blind passive. This would normally be a / but this really causes more grief than good so it's here."
+      ]
+    }
+  },
+  {
+    name: "B3 Seija",
+    img: "W5 Seija.png",
+    tier: "C",
+    opts: { dest: true, u: true },
+    explanation: {
+      pros: [
+        "Decent Buffs"
+      ],
+      mixed: [
+        "Very Privy to High Damage Variance. Really wants outside support in Acc and Crit Acc",
+        "Wants more buffs in general"
+      ],
+      cons: [
+        "Generally Lacks Util or Debuffs",
+        "Disjointed Elemental Spread"
+      ],
+      nitpick: [
+        "Needs P Support"
+      ],
+      extra: [
+        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ (Good Gengetsu Synergy)"
+      ]
+    }
+  },
+  {
+    name: "B5 Lunasa",
+    img: "b5 lunasa.png",
+    tier: "C",
+    opts: { atk: true, u: true },
+    explanation: {
+      pros: [
+        "Solid Self Sustainability and Support",
+        "Decent Breaks"
+      ],
+      cons: [
+        "Poor Killers",
+        "Yang Atk Gain is after Spellcards Finish"
+      ],
+      extra: [
+        "Good for Wood EX"
+      ]
+    }
+  },
+  {
+    name: "B3 Ringo",
+    img: "b3 ringo.png",
+    tier: "C",
+    opts: { tec: true, u: true },
+    explanation: {
+      pros: [
+        "High Damage Potential"
+      ],
+      mixed: [
+        "Large Parts of her Kit being dedicated to Enemy Atk Down is useless at best"
+      ],
+      cons: [
+        "Rng & Mediocre Breaks",
+        "Party Paralyze can be Very Annoying",
+        "Another dual scaling unit that can't set it up"
+      ]
+    }
+  },
+  {
+    name: "B3 Yatsuhashi",
+    img: "b3 yatsuhashi.png",
+    tier: "C",
+    opts: { supp: true, u: true },
+    explanation: {
+      pros: [
+        "Useful Support in All Aspects"
+      ],
+      mixed: [
+        "Unfocused, Rainbow Elements"
+      ],
+      cons: [
+        "Poor Damage, Poor Killers"
+      ]
+    }
+  },
+  {
+    name: "B3 Hecatia",
+    img: "b3 hecatia.png",
+    tier: "C",
+    opts: { supp: true, u: true },
+    explanation: {
+      pros: [
+        "Good Yin Support, Debuffs & Utility",
+        "High Damage Potential"
+      ],
+      mixed: [
+        "Middling Killers & Random Yang Lines Limit Use & Damage",
+        "Optimizing Yin Support can be annoying"
+      ],
+      cons: [
+        "Dual Scaling Issues, trash stat distribution",
+        "Unfocused, Subpar Breaks",
+        "Low Spellcard Damage"
+      ]
+    }
+  },
+  {
+    name: "B3 Eiki",
+    img: "b3 eiki.png",
+    tier: "C",
+    opts: { dbf: true, u: true },
+    explanation: {
+      pros: [
+        "Exceptional Yin-Yang Debuffs. Able to get -10 Def down on both Turn 1 and more with Poison",
+        "Decent Breaks"
+      ],
+      mixed: [
+        "Acc on Boost is Self"
+      ],
+      cons: [
+        "Lacks Damage and Buffs overall"
+      ],
+      extra: [
+        "Best pure Rank I debuffer in the game."
+      ]
+    }
+  },
+  {
+    name: "S5 Rin",
+    img: "s5 rin.png",
+    tier: "C",
+    opts: { spd: true, u: true },
+    explanation: {
+      pros: [
+        "Good Party Support on Skills & Some Debuffing Now",
+        "Good Breaking Capability"
+      ],
+      mixed: [
+        "Party Burn can be Annoying"
+      ],
+      cons: [
+        "Low Damage, Lacks Niches"
+      ]
+    }
+  },
+  {
+    name: "B3 Reimu",
+    img: "b3 reimu.png",
+    tier: "C",
+    opts: { tec: true, u: true },
+    explanation: {
+      pros: [
+        "High Damage Output on Last Word and Spellcards",
+        "Decent Self Sustainability"
+      ],
+      mixed: [
+        "No Killers on p0 of Last Word",
+        "Needs Help with Dual Scaling"
+      ],
+      cons: [
+        "Poor Breaks in Modern Era"
+      ],
+      extra: [
+        "She gets Acc and Crit Atk in her rebirth."
+      ]
+    }
+  },
+  {
+    name: "B5 Reisen",
+    img: "b5 reisen.png",
+    tier: "C",
+    opts: { def: true, u: true },
+    explanation: {
+      pros: [
+        "Great Party Yin Def Support",
+        "Decently Self Sufficient",
+        "High Damage Potential"
+      ],
+      boons: [
+        "Great Tanking Utility, for what it's worth."
+      ],
+      mixed: [
+        "AoE spell's high damage potential is tied to poop killers"
+      ],
+      cons: [
+        "Inflicts Anomalies Post-Spellcard",
+        "Lacks AoE Anomaly Breaks",
+        "Needs Crit Atk, P and Yin Atk Support"
+      ],
+      extra: [
+        "The original immortal. This unit was crazy back in the day"
+      ]
+    }
+  },
+  {
+    name: "B5 Yuyuko",
+    img: "b5 yuyuko.png",
+    tier: "C",
+    opts: { dbf: true, u: true },
+    explanation: {
+      pros: [
+        "Idk her breaks and debuffs are ok",
+        "P0 AoE Killers and her killer dmg is very good thanks to scaling and dmg to eff"
+      ],
+      mixed: [
+        "Essentially Mono Wood"
+      ],
+      cons: [
+        "0 sources of acc in her kit",
+        "Killer bad L",
+        "Half her kit is just useless, i WILL cry if they leave her like this"
+      ],
+      nitpick: [
+        "Used the wrong theme smh"
+      ]
+    }
+  },
+  {
+    name: "E1 Patchouli",
+    img: "e1 patchouli.png",
+    tier: "C",
+    opts: { atk: true, u: true },
+    explanation: {
+      pros: [
+        "Quite Good Last Word Damage",
+        "Decent Self Sufficiency",
+        "Support & Debuffs now Good"
+      ],
+      boons: [
+        "One of the Strongest ST SC's in the game lol"
+      ],
+      mixed: [
+        "AoE Spellcard Damage is just OK",
+        "Support Lags Behind for Modern Standards"
+      ],
+      cons: [
+        "Aside from Earth, very mixed elements",
+        "Cannot Break the Anomalies she Inflicts on turn 1 without external supports. Can't break her skill inflict anom on AoE either.",
+        "Relies on Cards for Crit Atk and Yang Def Down as she lacks those"
+      ]
+    }
+  },
+  {
+    name: "E1 Sakuya",
+    img: "e1 sakuya.png",
+    tier: "C",
+    opts: { dest: true, u: true },
+    explanation: {
+      pros: [
+        "Very High Damage Potential with High Crit Accuracy & Decent Killers",
+        "Self Sufficienct in Crit, Accuracy & P",
+        "Breaking Ability now up to par (good)"
+      ],
+      mixed: [
+        "Middling Self Setup in Yang Atk & Agility"
+      ],
+      cons: [
+        "Low Support",
+        "Sun locked"
+      ],
+      nitpick: [
+        "Lost her incinerate & charge in recent Buffs"
+      ]
+    }
+  },
+  {
+    name: "E1 Meiling",
+    img: "e1 meiling.png",
+    tier: "C",
+    opts: { def: true, u: true },
+    explanation: {
+      pros: [
+        "High Damage Output & Great Killers",
+        "Good Yin & Tank Sustainability",
+        "Has Real Debuffs"
+      ],
+      mixed: [
+        "Below average support"
+      ],
+      cons: [
+        "Weak Spellcard Damage",
+        "Weak & RNG Breaks",
+        "Poor Buff Removal Recovery"
+      ],
+      extra: [
+        "Very similar to kannagi ngl"
+      ]
+    }
+  },
+  {
+    name: "E9 Remilia",
+    img: "e9 remilia.png",
+    tier: "C",
+    opts: { dest: true, u: true },
+    explanation: {
+      pros: [
+        "Great Damage Output, Especially on Last Word, complemented by Damage to Res",
+        "Decent Yin & Crit Support, Somewhat Self Sustainable"
+      ],
+      mixed: [
+        "Could use more Yin Def Buffs, Needs Support in General"
+      ],
+      cons: [
+        "Inflicts AoE Anomalies she doesn't break on AoE",
+        "AoE Spellcard lacks breaks, lacks AoE Anomaly Breaks in general"
+      ],
+      nitpick: [
+        "RNG Self Barr"
+      ]
+    }
+  },
+  {
+    name: "H5 Mystia",
+    img: "h5 mystia.png",
+    tier: "C",
+    opts: { dest: true, u: true },
+    explanation: {
+      pros: [
+        "Good Nuke Potential",
+        "Good Break Potential"
+      ],
+      mixed: [
+        "Weird and Flawed Support & Self Setup, Carried by Cards",
+        "Stun util is cucked by RNG"
+      ],
+      cons: [
+        "Bad Killers",
+        "NEGATIVE DMG TO RES??"
+      ],
+      extra: [
+        "She got rebirth btw",
+        "I have no idea what this unit is tyring to be"
+      ]
+    }
+  },
+  {
+    name: "H5 Yuuka",
+    img: "h5 yuuka.png",
+    tier: "C",
+    opts: { tec: true, u: true },
+    explanation: {
+      pros: [
+        "Decent Damage Output, Decent Killer Range",
+        "Decent Breaking Ability",
+        "Decent Support"
+      ],
+      cons: [
+        "Everything she offers is very replaceable and what she does do tends to be disappointing.",
+        "Needs to graze offensive anomalies for accuracy."
+      ],
+      nitpick: [
+        "Supposed to be a good breaker but often isn't."
+      ]
+    }
+  },
+  {
+    name: "H5 Keine",
+    img: "h5 keine.png",
+    tier: "C",
+    opts: { supp: true, u: true },
+    explanation: {
+      pros: [
+        "Fantastic Yin & Crit Support Everywhere, Especially with the Fishing without a Net card",
+        "Short Skill Cooldowns make for ease of use"
+      ],
+      cons: [
+        "Unfocused Elements",
+        "Bad Killers"
+      ],
+      nitpick: [
+        "Recent \"Buffs\" hurt in practice (do not upgrade her skill 3)"
+      ]
+    }
+  },
+  {
+    name: "Lr Tenshi",
+    img: "lr tenshi.png",
+    tier: "C",
+    opts: { dbf: true, u: true },
+    explanation: {
+      pros: [
+        "Decent Debuffing Ability, Mostly for Crit Def Down"
+      ],
+      mixed: [
+        "Good Killer Range with Extremely Poor Damage Ceiling",
+        "Debuff Placement in Skills are Difficult to Use"
+      ],
+      cons: [
+        "Generally Lacks Support or Buffs"
+      ]
+    }
+  },
+  {
+    name: "S2 Satori",
+    img: "s2 satori.png",
+    tier: "C",
+    opts: { heal: true, u: true },
+    explanation: {
+      pros: [
+        "Decently Wide Killers",
+        "Ok Yin Atk Setup, Decent Debuffs",
+        "Good Utility"
+      ],
+      mixed: [
+        "Somewhat Selfish Attack Buffs",
+        "Very Fire-Locked"
+      ],
+      cons: [
+        "No AoE Anomaly Breaks",
+        "Spellcards Lack Attack Buffs",
+        "Low Damage. Needs Rebirth + 100% Buff Card to catch up to average. Still has low spellcard damage (Her scaling is totally fucked)"
+      ],
+      nitpick: [
+        "Primarily scales off Yin Def with a relatively small Yin Def stat"
+      ]
+    }
+  },
+  {
+    name: "S5 Koishi",
+    img: "S5 koishi.png",
+    tier: "C",
+    opts: { supp: true, u: true },
+    explanation: {
+      pros: [
+        "Party Buffs are Good",
+        "Good Killers",
+        "Instantly breaks burn on both AoEs (good overflow)"
+      ],
+      boons: [
+        "Fast AoE Anims",
+        "Actually Competent ST LW"
+      ],
+      mixed: [
+        "AoEs can do damage... but it's her secondary killers (not bad killers but not good!)",
+        "Again very niche and essentially useless gimmick"
+      ],
+      cons: [
+        "Deplorable Breaking",
+        "Mixed Bullet Type LW",
+        "ST LW"
+      ],
+      nitpick: [
+        "Mid Ass Stats"
+      ]
+    }
+  },
+  {
+    name: "T5 Tenshi",
+    img: "t5 tenshi.png",
+    tier: "C",
+    opts: { spd: true, u: true },
+    explanation: {
+      pros: [
+        "Very High Damage Potential on Last Word ",
+        "Good Debuffs & Agility Support"
+      ],
+      mixed: [
+        "RNG Barr Support"
+      ],
+      cons: [
+        "Poor AoE Spellcard Damage",
+        "Needs heavy Yang & Crit support",
+        "Anomalies are Single Target",
+        "Damage to eff means her \"crazy damage\" is often overblown to the point it could fail"
+      ],
+      extra: [
+        "*Possbily the most overblown unit of all time, in a fire stage where she is unable to nuke all enemies (dmg to eff unit) she provides less than even some C tier units",
+        "Solos 4 Ele EX"
+      ]
+    }
+  },
+  {
+    name: "T5 Mokou",
+    img: "t5 mokou.png",
+    tier: "C",
+    opts: { tec: true, u: true },
+    explanation: {
+      pros: [
+        "Great Breaking Ability, fast breaks on 2 anomalies with up to 7 breaks, basically the third st lw gengetsu",
+        "Good Supporting Ability"
+      ],
+      boons: [
+        "Competent LW on killer"
+      ],
+      cons: [
+        "Solo Last Word",
+        "Bald Killers"
+      ],
+      extra: [
+        "Because d8.-5 Remi was so good we needed a second one",
+        "Also because c8<< Kokoro was so good we needed an sfes version of her"
+      ]
+    }
+  },
+  {
+    name: "W3 Parsee",
+    img: "w3 parsee.png",
+    tier: "C",
+    opts: { tec: true, u: true },
+    explanation: {
+      pros: [
+        "Respectable Killer Range",
+        "Good Party Yin Support, Generally Self Sufficient"
+      ],
+      mixed: [
+        "Could use more Crit Buffs"
+      ],
+      cons: [
+        "Aside from her Last Word, only Breaks 1 Anomaly at a Time, particularly, her AoE breaks only Freeze",
+        "AWFUL damage ceiling"
+      ]
+    }
+  },
+  {
+    name: "W5 Kasen",
+    img: "not kasen.jpg",
+    tier: "C",
+    opts: { spd: true, u: true },
+    explanation: {
+      pros: [
+        "Spammable Buffs Across the Board",
+        "Good Killers back up High Damage Output"
+      ],
+      mixed: [
+        "Damage is Gutted by Reliance on Dmg to Eff and Late Debuffs"
+      ],
+      cons: [
+        "Lacks Good Breaks or Util ",
+        "Low Spellcard Damags"
+      ],
+      nitpick: [
+        "Looks at me funny",
+        "No BIS in Modern Day"
+      ],
+      extra: [
+        "@@"
+      ]
+    }
+  },
+  {
+    name: "Y5 Futo",
+    img: "y5 futo.png",
+    tier: "C",
+    opts: { atk: true, u: true },
+    explanation: {
+      pros: [
+        "Overall Good Self Sustainable Buffs (Also she can abuse Summer Monster)"
+      ],
+      mixed: [
+        "Niche Damage - lacks good killers"
+      ],
+      cons: [
+        "Almost All her Buffs are Selfish"
+      ]
+    }
+  },
+  {
+    name: "Z3 Alice",
+    img: "z3 alice.png",
+    tier: "C",
+    opts: { def: true, u: true },
+    explanation: {
+      pros: [
+        "Amazing Last Word Nuke with Great Card Access for Debuffs"
+      ],
+      cons: [
+        "Lacks Buffs throughout Gauges",
+        "Not that it matters since her AoE Spellcard Damage sucks anyways",
+        "Soupy and RNG Breaks"
+      ],
+      extra: [
+        "Generally just a one-note nuker"
+      ]
+    }
+  },
+  {
+    name: "Z3 Remilia",
+    img: "mg remi.jpg",
+    tier: "C",
+    opts: { heal: true, u: true },
+    explanation: {
+      pros: [
+        "Great LW Nuke with Good Cards",
+        "Good Party Yin Support",
+        "Good Debuffs & Utility"
+      ],
+      mixed: [
+        "Somewhat Soupy Elements"
+      ],
+      cons: [
+        "Low Spellcard Damage (Her ST SC looks good, but it just... isn't.",
+        "Anomalies are Solo-Targeting, no AoE Anomaly Breaks outside of LW?",
+        "Lacks Crit Atk"
+      ],
+      nitpick: [
+        "Tediously Long Animations"
+      ]
+    }
+  },
+  {
+    name: "A6 Reimu",
+    img: "a6 reimu.png",
+    tier: "C",
+    opts: { atk: true, a: true },
+    explanation: {
+      pros: [
+        "Decent Damage Output, Very High AoE Spellcard Damage",
+        "Decent Self Sustainability"
+      ],
+      mixed: [
+        "Bad p0 killer in Last Word"
+      ],
+      cons: [
+        "Very Dated Breaks, Next to No Anomaly Interaction",
+        "Middling Support"
+      ],
+      extra: [
+        "Any character can do impressive things https://www.youtube.com/watch?v=Jnn-wgfBX3w&t=5s",
+        "Probably the best 100 Luck farmer"
+      ]
+    }
+  },
+  {
+    name: "A6 Koakuma",
+    img: "a6 koakuma.png",
+    tier: "C",
+    opts: { supp: true, a: true },
+    explanation: {
+      pros: [
+        "Great Yin and P Support for the Party"
+      ],
+      mixed: [
+        "Good Damage tied to Bad Killers"
+      ],
+      cons: [
+        "Lacks Breaks"
+      ],
+      nitpick: [
+        "Extremely long animations"
+      ],
+      extra: [
+        "Lowkey underrated? Her util/support is quite good in combo with cards and she's not completely useless damage-wise either."
+      ]
+    }
+  },
+  {
+    name: "A6 Patchouli",
+    img: "a6 patchouli.png",
+    tier: "C",
+    opts: { dest: true, a: true },
+    explanation: {
+      pros: [
+        "Nice Damage Potential",
+        "Decent AoE Spell",
+        "Healthy amounts of Crit Acc"
+      ],
+      mixed: [
+        "Support & Self Setup are very Card Reliant",
+        "Dated Anomaly Breaks"
+      ],
+      cons: [
+        "Very Mixed Elements",
+        "Bad Killers"
+      ],
+      extra: [
+        "EX tier in satisfying animations"
+      ]
+    }
+  },
+  {
+    name: "A6 Flandre",
+    img: "a6 flandre.png",
+    tier: "C",
+    opts: { spd: true, a: true },
+    explanation: {
+      pros: [
+        "Good Dmg Potential on Killer",
+        "Decent Skills & Setup, Useful Debuff Utility"
+      ],
+      mixed: [
+        "Middling Breaks",
+        "Essentially Star Locked",
+        "Needs Yin Atk Support"
+      ],
+      cons: [
+        "Bad Killers"
+      ],
+      extra: [
+        "Praecard + 40% Dmg to eff goes crazy on her. If only I could combine her potent ability with her sisters' potent skills... oh well."
+      ]
+    }
+  },
+  {
+    name: "A6 Sunny",
+    img: "a6 sunny.png",
+    tier: "C",
+    opts: { dbf: true, a: true },
+    explanation: {
+      pros: [
+        "Solid Skills for Debuffing and Support on Low Cooldowns",
+        "Very Notable Stun Utility, Guaranteed on Last Word and ST SC"
+      ],
+      mixed: [
+        "Decent though mildly dated breaks, nearly entirely mono-sun"
+      ],
+      cons: [
+        "Low Damage"
+      ],
+      extra: [
+        "Note: With more developed boxes and units with Bind Cleanse, Stun Utility can fall off."
+      ]
+    }
+  },
+  {
+    name: "A6 Yukari",
+    img: "a6 yukari.png",
+    tier: "C",
+    opts: { spd: true, a: true },
+    explanation: {
+      pros: [
+        "Solid Damage Output",
+        "Great Party Support and Setup, Especially in Agility"
+      ],
+      mixed: [
+        "Middling Crit Debuffs - Large Room for Improvement"
+      ],
+      cons: [
+        "Extremely Numbers Locked - Doesn't have enough anything to warrant a higher tier"
+      ]
+    }
+  },
+  {
+    name: "A6 Yuyuko",
+    img: "yuyu_scar.jpg",
+    tier: "C",
+    opts: { heal: true, a: true },
+    explanation: {
+      pros: [
+        "Solid Damage Potential w/ Good Card Options",
+        "Good Self Buffs"
+      ],
+      cons: [
+        "Selfish Buffs & Needs Support",
+        "Breaking Lags Behind",
+        "Needs Crit Atk"
+      ],
+      extra: [
+        "The funniest face on thlw"
+      ]
+    }
+  },
+  {
+    name: "A6 Lunasa",
+    img: "Lunasa scar.jpg",
+    tier: "C",
+    opts: { tec: true, a: true },
+    explanation: {
+      pros: [
+        "Great Self Setup",
+        "Good Damage Potential, great AoE",
+        "Good Support, Especially in Crit Atk"
+      ],
+      mixed: [
+        "Somewhat Soupy"
+      ],
+      cons: [
+        "Multiple sources of RNG",
+        "AoE is backloaded af with 0 p refund capability"
+      ]
+    }
+  },
+  {
+    name: "A6 Merlin",
+    img: "Merlin scar.jpg",
+    tier: "C",
+    opts: { atk: true, a: true },
+    explanation: {
+      pros: [
+        "Decent Damage Potential on Decent Killers",
+        "Solid Debuffs Everywhere"
+      ],
+      cons: [
+        "Wants more Yang Atk and Scaling Buffs",
+        "Inflicts unbreakable Paralyze on AoE",
+        "Anomalies are Single Target",
+        "Somewhat Selfish, Can't extend her Yang Atk Buffs"
+      ],
+      extra: [
+        "She's like mini prae x kannagi"
+      ]
+    }
+  },
+  {
+    name: "A7A Reimu",
+    img: "a7a reimu.png",
+    tier: "C",
+    opts: { tec: true, a: true },
+    explanation: {
+      pros: [
+        "Achievable damage leads to it being higher than expected for normal use",
+        "Good Yang Self Setup & Support"
+      ],
+      mixed: [
+        "Somewhat Soupy Breaks"
+      ],
+      cons: [
+        "Needs Crit Atk",
+        "Needs more debuffs",
+        "Raw cap is certainly fes tier alright..lol"
+      ],
+      extra: [
+        "Your baseline for a good fes"
+      ]
+    }
+  },
+  {
+    name: "A7B Sakuya",
+    img: "a7b sakuya.png",
+    tier: "C",
+    opts: { tec: true, a: true },
+    explanation: {
+      pros: [
+        "Like Reimu, her Damage is achievable and Decent for Use",
+        "Solid Yang & Crit Setup",
+        "Overflow + Breaks give her decent Util"
+      ],
+      mixed: [
+        "Somewhat Soupy"
+      ],
+      cons: [
+        "Needs more Agility Buffs",
+        "Very, Very Noticeable Damage Ceiling"
+      ],
+      extra: [
+        "solos moon ex",
+        "ALL HAIL OUR QUEEN OF OVERFLOW"
+      ]
+    }
+  },
+  {
+    name: "A7 Chen",
+    img: "a7 chen.png",
+    tier: "C",
+    opts: { tec: true, a: true },
+    explanation: {
+      pros: [
+        "Decent Dmg Potential",
+        "Decent Self Setup"
+      ],
+      boons: [
+        "Can AoE SC Nuke"
+      ],
+      mixed: [
+        "Unimpressive Killer Range"
+      ],
+      cons: [
+        "ST Anom into RNG Anom... Wtf?",
+        "Very Varied Elements outside of Mono Wood AoE SC"
+      ],
+      extra: [
+        "Pcb Chonn (shes like a6 meiling where she was delayed for a year)"
+      ]
+    }
+  },
+  {
+    name: "A7 Ran",
+    img: "a7 ran.png",
+    tier: "C",
+    opts: { supp: true, a: true },
+    explanation: {
+      pros: [
+        "Lots of Acc, Agi & P Support"
+      ],
+      boons: [
+        "Her FS is very fast (useful in low dmg req speed purple farms like drop stage)"
+      ],
+      mixed: [
+        "Not Particularly Ample in Yin Def or Atk, or Crit Atk support",
+        "Pretty questionable Anom Interactions, but her Elemental Layout is solid"
+      ],
+      cons: [
+        "Unimpressive Killers + Low Scalings = Really Bad Damage"
+      ],
+      extra: [
+        "Most useful in Vs. L1 Eiki"
+      ]
+    }
+  },
+  {
+    name: "A8 Star",
+    img: "A7 Star.png",
+    tier: "C",
+    opts: { dbf: true, a: true },
+    explanation: {
+      pros: [
+        "Good Yang Debuffing throughout her Kit, backed up slightly by AoE Res Def Down (only 1.1x damage though)",
+        "Decent Breaking and Acc Support"
+      ],
+      boons: [
+        "Freeze and Paralyze Immune"
+      ],
+      mixed: [
+        "High AoE and LW Damage limited by Bad Killers"
+      ],
+      cons: [
+        "Low Buffs limit her severely"
+      ]
+    }
+  },
+  {
+    name: "A10.3 Ringo",
+    img: "A10.3 Ringo.png",
+    tier: "C",
+    opts: { heal: true, a: true },
+    explanation: {
+      pros: [
+        "Decent Anomaly Breaks (Albiet lacking the speed to use them)",
+        "Decent Party Buffs/Util"
+      ],
+      mixed: [
+        "Mono Moon",
+        "No Party Barr or P thus can’t climb enough to reach B",
+        "Killers are So So"
+      ],
+      cons: [
+        "Lacks Crit Atk or Def Down"
+      ]
+    }
+  },
+  {
+    name: "A13 Futo",
+    img: "A13 Futo.png",
+    tier: "C",
+    opts: { heal: true, a: true },
+    explanation: {
+      pros: [
+        "Boat",
+        "Good Support Util & Debuffs",
+        "Damage is Decent"
+      ],
+      mixed: [
+        "Killers are usable but not that good. Has p0 AoE anti but is secondary LW"
+      ],
+      cons: [
+        "Horrendous LW Distribution (Use normal dmg up)",
+        "Inflicts Burn she doesn't Break"
+      ],
+      nitpick: [
+        "Can't use Crit Acc Buffs"
+      ]
+    }
+  },
+  {
+    name: "A14 Seija",
+    img: "seija.jpg",
+    tier: "C",
+    opts: { dbf: true, a: true },
+    explanation: {
+      pros: [
+        "Good Damage Potential w/ Great Killers",
+        "Good Yang Debuffs Everywhere",
+        "Decent Party Buffs & Support"
+      ],
+      mixed: [
+        "Half of the stuff in her skills is useless"
+      ],
+      cons: [
+        "Doesn't set up her own Yin Atk & Def",
+        "No AoE Anomaly Breaks"
+      ]
+    }
+  },
+  {
+    name: "A19 Ran",
+    img: "A9 Ran.png",
+    tier: "C",
+    opts: { spd: true, a: true },
+    explanation: {
+      pros: [
+        "Good Killer Range",
+        "High AoE Damage Potential",
+        "Decent Support"
+      ],
+      mixed: [
+        "Needs Support Too",
+        "2 Self Quicks are Weird"
+      ],
+      cons: [
+        "Incapable of AoE Breaking",
+        "Dual Scaling Issues",
+        "Lacks Accuracy"
+      ],
+      nitpick: [
+        "WHY IS THIS UNIT NOT DEF"
+      ]
+    }
+  },
+  {
+    name: "L1 Ibaraki's Arm",
+    img: "l1 arm.png",
+    tier: "C",
+    opts: { dest: true, g: true },
+    explanation: {
+      pros: [
+        "Great Crit Support, Additional (Inconsistent) Stun Utility",
+        "Decently High Damage Output that's even better with Rebirth"
+      ],
+      mixed: [
+        "Low Innate Yin Atk Gain"
+      ],
+      cons: [
+        "Poor Elemental Breaks, Dated Anomaly Breaks",
+        "Can't set up her dual scaling. Her dual scaling is also very low."
+      ]
+    }
+  },
   // D tier
-  { name: "C3 Shion", img: "c3 shion.png", tier: "D", opts: { atk: true, e: true } },
-  { name: "C3 Flandre", img: "c3 flandre.png", tier: "D", opts: { atk: true, e: true } },
+  { name: "C3 Shion", img: "shion.jpg", tier: "D", opts: { supp: true, e: true } },
+  { name: "C3 Flandre", img: "c3 flandre.png", tier: "D", opts: { dbf: true, e: true } },
   { name: "C3 Komachi", img: "c3 komatits.png", tier: "D", opts: { atk: true, e: true } },
-  { name: "C3 Kokoro", img: "c3 kokoro.png", tier: "D", opts: { atk: true, e: true } },
-  { name: "C3 Hecatia", img: "c3 hecatia.png", tier: "D", opts: { atk: true, e: true } },
-  { name: "C3< Alice", img: "autumn alice.png", tier: "D", opts: { atk: true, e: true } },
-  { name: "C3∫ Sagume", img: "C3integral sagume.png", tier: "D", opts: { atk: true, e: true } },
-  { name: "C8<< Koishi", img: "C8lessthanlessthan Koishi.png", tier: "D", opts: { atk: true, e: true } },
+  { name: "C3 Kokoro", img: "c3 kokoro.png", tier: "D", opts: { dbf: true, e: true } },
+  { name: "C3 Hecatia", img: "c3 hecatia.png", tier: "D", opts: { dbf: true, e: true } },
+  { name: "C3< Alice", img: "autumn alice.png", tier: "D", opts: { heal: true, e: true } },
+  { name: "C3∫ Sagume", img: "C3integral sagume.png", tier: "D", opts: { heal: true, e: true } },
+  { name: "C8<< Koishi", img: "C8lessthanlessthan Koishi.png", tier: "D", opts: { spd: true, e: true } },
   { name: "C3≥ Hina", img: "mech hina.png", tier: "D", opts: { atk: true, e: true } },
-  { name: "L80 Flandre", img: "l80 flandre.png", tier: "D", opts: { atk: true, r: true } },
+  { name: "L80 Flandre", img: "l80 flandre.png", tier: "D", opts: { def: true, r: true } },
   { name: "L80 Alice", img: "l80 alice.png", tier: "D", opts: { atk: true, r: true } },
-  { name: "L80 Suwako", img: "lg suwako.png", tier: "D", opts: { atk: true, r: true } },
-  { name: "L80 Parsee", img: "l80 parsee.png", tier: "D", opts: { atk: true, r: true } },
-  { name: "L80 Mokou", img: "l80 mokou.png", tier: "D", opts: { atk: true, r: true } },
-  { name: "A6& Cirno", img: "a6& cirno.png", tier: "D", opts: { atk: true, ex: true } },
+  { name: "L80 Suwako", img: "mv suwa.jpg", tier: "D", opts: { supp: true, r: true } },
+  { name: "L80 Parsee", img: "l80 parsee.png", tier: "D", opts: { dbf: true, r: true } },
+  { name: "L80 Mokou", img: "l80 mokou.png", tier: "D", opts: { heal: true, r: true } },
+  { name: "A6& Cirno", img: "a6& cirno.png", tier: "D", opts: { dbf: true, ex: true } },
   { name: "A7.5& Suika", img: "a7.5& suika.png", tier: "D", opts: { atk: true, ex: true } },
-  { name: "A12& Nue", img: "a12& nue.jfif", tier: "D", opts: { atk: true, ex: true } },
-  { name: "A12& Ichirin", img: "a12& ichirin.png", tier: "D", opts: { atk: true, ex: true } },
-  { name: "A12& Murasa", img: "a12& Murasa.png", tier: "D", opts: { atk: true, ex: true } },
+  { name: "A12& Nue", img: "a12& nue.jfif", tier: "D", opts: { dest: true, ex: true } },
+  { name: "A12& Ichirin", img: "a12& ichirin.png", tier: "D", opts: { tec: true, ex: true } },
+  { name: "A12& Murasa", img: "a12& Murasa.png", tier: "D", opts: { spd: true, ex: true } },
   { name: "L50ws Yukari", img: "l50ws yukari.png", tier: "D", opts: { atk: true, b: true } },
-  { name: "R8.-5 Youmu", img: "r8.-5 youmu.png", tier: "D", opts: { atk: true, b: true } },
+  { name: "R8.-5 Youmu", img: "r8.-5 youmu.png", tier: "D", opts: { spd: true, b: true } },
   { name: "B1 Reisen", img: "b1 reisen.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "B3 Komachi", img: "b3 komachi.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "B3 Benben", img: "b3 benben.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "B3 Rei'sen", img: "b3 reisen.png", tier: "D", opts: { atk: true, u: true } },
+  { name: "B3 Komachi", img: "b3 komachi.png", tier: "D", opts: { spd: true, u: true } },
+  { name: "B3 Benben", img: "b3 benben.png", tier: "D", opts: { dbf: true, u: true } },
+  { name: "B3 Rei'sen", img: "b3 reisen.png", tier: "D", opts: { supp: true, u: true } },
   { name: "B3 Yorihime", img: "b3 yorihimee.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "B5 Alice", img: "b5 alice.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "B5 Yukari", img: "b5 Yukari.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "B5 Lyrica", img: "b5 lyrica.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "H5 Doremy", img: "h5 doremy.png", tier: "D", opts: { atk: true, u: true } },
+  { name: "B5 Alice", img: "b5 alice.png", tier: "D", opts: { supp: true, u: true } },
+  { name: "B5 Yukari", img: "b5 Yukari.png", tier: "D", opts: { heal: true, u: true } },
+  { name: "B5 Lyrica", img: "b5 lyrica.png", tier: "D", opts: { dest: true, u: true } },
+  { name: "H5 Doremy", img: "h5 doremy.png", tier: "D", opts: { dbf: true, u: true } },
   { name: "Lr Nitori", img: "mech nitori.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "R2 Yuyuko", img: "r2 yuyuko.png", tier: "D", opts: { atk: true, u: true } },
+  { name: "R2 Yuyuko", img: "r2 yuyuko.png", tier: "D", opts: { spd: true, u: true } },
   { name: "S5 Utsuho", img: "s5 utsuho.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "W2 Suwako", img: "w1.-5 suwako.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "W3 Momiji", img: "w3 momiji.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "Z1 Marisa", img: "z1 marisa.png", tier: "D", opts: { atk: true, u: true } },
-  { name: "A6 Marisa", img: "a6 marisa.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A6 Rumia", img: "a6 rumia.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A6 Meiling", img: "a6 meiling.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A6 Remilia", img: "a6 remi.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A6 Lyrica", img: "Lyrica scar.jpg", tier: "D", opts: { atk: true, a: true } },
-  { name: "A6 Yuuka", img: "a6 yuuka.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A7B Reimu", img: "a7b reimu.png", tier: "D", opts: { atk: true, a: true } },
+  { name: "W2 Suwako", img: "suwawa.jpg", tier: "D", opts: { dbf: true, u: true } },
+  { name: "W3 Momiji", img: "w3 momiji.png", tier: "D", opts: { spd: true, u: true } },
+  { name: "Z1 Marisa", img: "z1 marisa.png", tier: "D", opts: { dest: true, u: true } },
+  { name: "A6 Marisa", img: "a6 marisa.png", tier: "D", opts: { spd: true, a: true } },
+  { name: "A6 Rumia", img: "a6 rumia.png", tier: "D", opts: { dest: true, a: true } },
+  { name: "A6 Meiling", img: "a6 meiling.png", tier: "D", opts: { spd: true, a: true } },
+  { name: "A6 Remilia", img: "a6 remi.png", tier: "D", opts: { spd: true, a: true } },
+  { name: "A6 Lyrica", img: "Lyrica scar.jpg", tier: "D", opts: { spd: true, a: true } },
+  { name: "A6 Yuuka", img: "a6 yuuka.png", tier: "D", opts: { heal: true, a: true } },
+  { name: "A7B Reimu", img: "a7b reimu.png", tier: "D", opts: { spd: true, a: true } },
   { name: "A7A Marisa", img: "a7a marisa.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A7B Marisa", img: "a7b marisa.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A7A Sakuya", img: "a7a sakuya.png", tier: "D", opts: { atk: true, a: true } },
+  { name: "A7B Marisa", img: "a7b marisa.png", tier: "D", opts: { dest: true, a: true } },
+  { name: "A7A Sakuya", img: "a7a sakuya.png", tier: "D", opts: { spd: true, a: true } },
   { name: "A7 Cirno", img: "a7 cirno.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A7 Yukari", img: "a7 yukari.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A7 Luna", img: "a7 Luna.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A8 Tewi", img: "a8 tewi.jfif", tier: "D", opts: { atk: true, a: true } },
-  { name: "A8 Eirin", img: "a8 eirin.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A8 Mokou", img: "a8 mokou.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A9.7 Akyuu", img: "a9.4 Akyuu.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A10 Suwako", img: "a10 suwako.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A10.5 Patchouli", img: "a10.5 patchy tec.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A12.3 Meiling", img: "a12.3 Meiling.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A13 Miko", img: "a13 miko.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "A14 Shinmy", img: "shinmy.jpg", tier: "D", opts: { atk: true, a: true } },
-  { name: "A16 Okina", img: "A16 Okina.png", tier: "D", opts: { atk: true, a: true } },
-  { name: "L1 Nazrin", img: "nazrin.png", tier: "D", opts: { atk: true, g: true } },
-  { name: "L1 Mike", img: "l1 mike.png", tier: "D", opts: { atk: true, g: true } },
+  { name: "A7 Yukari", img: "a7 yukari.png", tier: "D", opts: { tec: true, a: true } },
+  { name: "A7 Luna", img: "A7 Luna.png", tier: "D", opts: { dbf: true, a: true } },
+  { name: "A8 Tewi", img: "a8 tewi.jfif", tier: "D", opts: { dest: true, a: true } },
+  { name: "A8 Eirin", img: "a8 eirin.png", tier: "D", opts: { tec: true, a: true } },
+  { name: "A8 Mokou", img: "a8 mokou.png", tier: "D", opts: { spd: true, a: true } },
+  { name: "A9.7 Akyuu", img: "A9.4 Akyuu.png", tier: "D", opts: { def: true, a: true } },
+  { name: "A10 Suwako", img: "a10 suwako.png", tier: "D", opts: { dest: true, a: true } },
+  { name: "A10.5 Patchouli", img: "a10.5 patchy tec.png", tier: "D", opts: { tec: true, a: true } },
+  { name: "A12.3 Meiling", img: "a12.3 Meiling.png", tier: "D", opts: { tec: true, a: true } },
+  { name: "A13 Miko", img: "a13 miko.png", tier: "D", opts: { def: true, a: true } },
+  { name: "A14 Shinmy", img: "shinmy.jpg", tier: "D", opts: { tec: true, a: true } },
+  { name: "A16 Okina", img: "A16 Okina.png", tier: "D", opts: { tec: true, a: true } },
+  { name: "L1 Nazrin", img: "nazrin.png", tier: "D", opts: { supp: true, g: true } },
+  { name: "L1 Mike", img: "l1 mike.png", tier: "D", opts: { supp: true, g: true } },
   { name: "L1 Chimata", img: "l1 chimata.png", tier: "D", opts: { atk: true, g: true } },
-  { name: "L1 Momoyo", img: "l1 momoyo.png", tier: "D", opts: { atk: true, g: true } },
-  { name: "L1 Enoko", img: "l1 enoko.png", tier: "D", opts: { atk: true, g: true } },
+  { name: "L1 Momoyo", img: "l1 momoyo.png", tier: "D", opts: { dest: true, g: true } },
+  { name: "L1 Enoko", img: "l1 enoko.png", tier: "D", opts: { spd: true, g: true } },
   { name: "L1 Chiyari", img: "l1 chiyari.png", tier: "D", opts: { atk: true, g: true } },
-  { name: "L1 Zanmu", img: "l1 zanmu def.png", tier: "D", opts: { atk: true, g: true } },
-  { name: "L1 Ubame", img: "l1 ubame.png", tier: "D", opts: { atk: true, g: true } },
-  { name: "Az1 Marisa", img: "Az1 Marisa.png", tier: "D", opts: { atk: true, y: true } },
+  { name: "L1 Zanmu", img: "l1 zanmu heal.png", tier: "D", opts: { heal: true, g: true } },
+  { name: "L1 Ubame", img: "l1 ubame.png", tier: "D", opts: { dest: true, g: true } },
+  { name: "Az1 Marisa", img: "Az1 Marisa.png", tier: "D", opts: { dbf: true, y: true } },
   // E tier
   { name: "F1;4 Reimu", img: "f1;4 Reimu.png", tier: "E", opts: { atk: true, b: true } },
-  { name: "B3 Kaguya", img: "b3 kaguya.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B3 Kokoro", img: "b3 kokoro.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B3 Kutaka", img: "b3 kutaka.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B3 Marisa", img: "b3 marisa.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B3 Reisen", img: "b3 reisen.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B3 Sakuya", img: "b3 sakuya.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B3 Sanae", img: "b3 sanae.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B3 Youmu", img: "b3 youmu.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B5 Merlin", img: "b5 merlin.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "B5 Mokou", img: "b5 mokou.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "E1 Remilia", img: "e1 remi.png", tier: "E", opts: { atk: true, u: true } },
+  { name: "B3 Kaguya", img: "b3 kaguya.png", tier: "E", opts: { spd: true, u: true } },
+  { name: "B3 Kokoro", img: "SPOILER_kokoro.jpg", tier: "E", opts: { spd: true, u: true } },
+  { name: "B3 Kutaka", img: "b3 kutaka.png", tier: "E", opts: { tec: true, u: true } },
+  { name: "B3 Marisa", img: "b3 marisa.png", tier: "E", opts: { tec: true, u: true } },
+  { name: "B3 Reisen", img: "b3 reisen.png", tier: "E", opts: { tec: true, u: true } },
+  { name: "B3 Sakuya", img: "b3 sakuya.png", tier: "E", opts: { tec: true, u: true } },
+  { name: "B3 Sanae", img: "b3 sanae.png", tier: "E", opts: { tec: true, u: true } },
+  { name: "B3 Youmu", img: "b3 youmu.png", tier: "E", opts: { tec: true, u: true } },
+  { name: "B5 Merlin", img: "b5 merlin.png", tier: "E", opts: { spd: true, u: true } },
+  { name: "B5 Mokou", img: "b5 mokou.png", tier: "E", opts: { def: true, u: true } },
+  { name: "E1 Remilia", img: "e1 remi.png", tier: "E", opts: { supp: true, u: true } },
   { name: "E7 Cirno", img: "e7 cirno.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "E7 Daiyousei", img: "e7 daiyousei.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "H5 Wriggle", img: "h5 wriggle.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "R8 Youmu", img: "r8 youmu.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "T5 Reisen", img: "t5 reisen.png", tier: "E", opts: { atk: true, u: true } },
-  { name: "W5 Sanae", img: "fake ass sanae.jpg", tier: "E", opts: { atk: true, u: true } },
-  { name: "A6 Cirno", img: "a6 cirno.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A6 Daiyousei", img: "a6 daiyousei.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A6 Marisa", img: "a6 marisa.png", tier: "E", opts: { atk: true, a: true } },
+  { name: "E7 Daiyousei", img: "e7 daiyousei.png", tier: "E", opts: { heal: true, u: true } },
+  { name: "H5 Wriggle", img: "h5 wriggle.png", tier: "E", opts: { spd: true, u: true } },
+  { name: "R8 Youmu", img: "r8 youmu.png", tier: "E", opts: { spd: true, u: true } },
+  { name: "T5 Reisen", img: "t5 reisen.png", tier: "E", opts: { dest: true, u: true } },
+  { name: "W5 Sanae", img: "sanarr.jpg", tier: "E", opts: { atk: true, u: true } },
+  { name: "A6 Cirno", img: "a6 cirno.png", tier: "E", opts: { dbf: true, a: true } },
+  { name: "A6 Daiyousei", img: "a6 daiyousei.png", tier: "E", opts: { dbf: true, a: true } },
   { name: "A6 Sakuya", img: "a6 sakuya.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A6 Youmu", img: "youmu.jpg", tier: "E", opts: { atk: true, a: true } },
-  { name: "A7 Youmu", img: "a7 youmu.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A7 Yuyuko", img: "a7 yuyuko.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A8 Reisen", img: "a6 reisen.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A9 Aya", img: "a9 aya.png", tier: "E", opts: { atk: true, a: true } },
+  { name: "A6 Youmu", img: "youmu.jpg", tier: "E", opts: { dbf: true, a: true } },
+  { name: "A7 Youmu", img: "a7 youmu.png", tier: "E", opts: { dest: true, a: true } },
+  { name: "A7 Yuyuko", img: "a7 yuyuko.png", tier: "E", opts: { heal: true, a: true } },
+  { name: "A8 Reisen", img: "a6 reisen.png", tier: "E", opts: { spd: true, a: true } },
+  { name: "A9 Aya", img: "a9 aya.png", tier: "E", opts: { dbf: true, a: true } },
   { name: "A10 Kanako", img: "a10 kanko (why is bitch so big wtf).png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A10 Nitori", img: "a10 nitori.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A10 Sanae", img: "a10 sanae.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A11 Koishi", img: "a11 koishi.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A11 Satori", img: "a11 satori.png", tier: "E", opts: { atk: true, a: true } },
+  { name: "A10 Nitori", img: "a10 nitori.png", tier: "E", opts: { tec: true, a: true } },
+  { name: "A10 Sanae", img: "a10 sanae.png", tier: "E", opts: { spd: true, a: true } },
+  { name: "A11 Koishi", img: "a11 koishi.png", tier: "E", opts: { spd: true, a: true } },
+  { name: "A11 Satori", img: "a11 satori.png", tier: "E", opts: { tec: true, a: true } },
   { name: "A12 Byakuren", img: "a12 byakuren.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A13 Yoshika", img: "a13 yoshika.jfif", tier: "E", opts: { atk: true, a: true } },
-  { name: "A18 Takane", img: "A18 Takane.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A18.5 Nitori", img: "a18.5 nitori.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "L1 Biten", img: "l1 biten.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Chen", img: "l1 chen.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Cirno", img: "l1 cirno.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Hecatia", img: "l1 hecatia.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Hisami", img: "l1 hisami dbf.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Ichirin", img: "l1 arm.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Kanako", img: "l1 Kanako.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Keiki", img: "l1 keiki.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Kisume", img: "l1 kisume.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Kosuzu", img: "l1 kosuzu.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Lily", img: "l1 lily.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Megumu", img: "l1 megumu.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Misumaru", img: "l1 misumaru.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Nue", img: "l1 nue.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Okina", img: "l1 okina.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Sagume", img: "l1 sagume.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Sannyo", img: "l1 sannyo.png", tier: "E", opts: { atk: true, g: true } },
+  { name: "A13 Yoshika", img: "a13 yoshika.jfif", tier: "E", opts: { dbf: true, a: true } },
+  { name: "A18 Takane", img: "A18 Takane.png", tier: "E", opts: { dbf: true, a: true } },
+  { name: "A18.5 Nitori", img: "a18.5 nitori.png", tier: "E", opts: { dest: true, a: true } },
+  { name: "L1 Biten", img: "l1 biten.png", tier: "E", opts: { tec: true, g: true } },
+  { name: "L1 Chen", img: "l1 chen.png", tier: "E", opts: { spd: true, g: true } },
+  { name: "L1 Cirno", img: "l1 cirno.png", tier: "E", opts: { dest: true, g: true } },
+  { name: "L1 Hecatia", img: "l1 hecatia.png", tier: "E", opts: { dest: true, g: true } },
+  { name: "L1 Hisami", img: "l1 hisami dbf.png", tier: "E", opts: { dest: true, g: true } },
+  { name: "L1 Ichirin", img: "l1 arm.png", tier: "E", opts: { dest: true, g: true } },
+  { name: "L1 Kanako", img: "l1 Kanako.png", tier: "E", opts: { def: true, g: true } },
+  { name: "L1 Keiki", img: "l1 keiki.png", tier: "E", opts: { tec: true, g: true } },
+  { name: "L1 Kisume", img: "l1 kisume.png", tier: "E", opts: { dest: true, g: true } },
+  { name: "L1 Kosuzu", img: "l1 kosuzu.png", tier: "E", opts: { dest: true, g: true } },
+  { name: "L1 Lily", img: "l1 lily.png", tier: "E", opts: { heal: true, g: true } },
+  { name: "L1 Megumu", img: "l1 megumu.png", tier: "E", opts: { spd: true, g: true } },
+  { name: "L1 Misumaru", img: "l1 misumaru.png", tier: "E", opts: { tec: true, g: true } },
+  { name: "L1 Nue", img: "l1 nue.png", tier: "E", opts: { spd: true, g: true } },
+  { name: "L1 Okina", img: "l1 okina.png", tier: "E", opts: { dest: true, g: true } },
+  { name: "L1 Sagume", img: "l1 sagume.png", tier: "E", opts: { dbf: true, g: true } },
+  { name: "L1 Sannyo", img: "l1 sannyo.png", tier: "E", opts: { dbf: true, g: true } },
   { name: "L1 Toyohime", img: "l1 toyohime.png", tier: "E", opts: { atk: true, g: true } },
-  { name: "L1 Tsukasa", img: "l1 tsukasa.png", tier: "E", opts: { atk: true, g: true } },
+  { name: "L1 Tsukasa", img: "l1 tsukasa.png", tier: "E", opts: { dbf: true, g: true } },
   { name: "L1 Yuuma", img: "l1 yuuma.png", tier: "E", opts: { atk: true, g: true } },
   // Yukkuri
-  { name: "Aa Sanae", img: "Aa Sanae.png", tier: "Yukkuri", opts: { atk: true, y: true } },
+  { name: "Aa Sanae", img: "Aa Sanae.png", tier: "Yukkuri", opts: { dest: true, y: true } },
   { name: "Aa Cirno", img: "yukkuri cirno.png", tier: "Yukkuri", opts: { atk: true, y: true } },
-  { name: "Aa Reimu", img: "yukkuri reimu.png", tier: "Yukkuri", opts: { atk: true, y: true } },
-  { name: "Aa Yuyuko", img: "Aa Yuyuko.png", tier: "Yukkuri", opts: { atk: true, y: true } },
-  { name: "Aa Remilia", img: "Aa remilia.png", tier: "Yukkuri", opts: { atk: true, y: true } },
-  { name: "Aa Youmu", img: "Aa youmu.png", tier: "Yukkuri", opts: { atk: true, y: true } },
-  { name: "Aa Flandre", img: "Aa flandre.png", tier: "Yukkuri", opts: { atk: true, y: true } },
-  { name: "Aa Alice", img: "Aa alice.png", tier: "Yukkuri", opts: { atk: true, y: true } },
-  { name: "Aa Marisa", img: "yukkuri marisa.png", tier: "Yukkuri", opts: { atk: true, y: true } }
+  { name: "Aa Reimu", img: "yukkuri reimu.png", tier: "Yukkuri", opts: { dest: true, y: true } },
+  { name: "Aa Yuyuko", img: "Aa Yuyuko.png", tier: "Yukkuri", opts: { dbf: true, y: true } },
+  { name: "Aa Remilia", img: "Aa remilia.png", tier: "Yukkuri", opts: { tec: true, y: true } },
+  { name: "Aa Youmu", img: "Aa youmu.png", tier: "Yukkuri", opts: { tec: true, y: true } },
+  { name: "Aa Flandre", img: "Aa flandre.png", tier: "Yukkuri", opts: { spd: true, y: true } },
+  { name: "Aa Alice", img: "Aa alice.png", tier: "Yukkuri", opts: { supp: true, y: true } },
+  { name: "Aa Marisa", img: "yukkuri marisa.png", tier: "Yukkuri", opts: { supp: true, y: true } }
 ];
