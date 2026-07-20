@@ -2,20 +2,6 @@
   box-sizing: border-box;
 }
 
-/*
-.head {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.head {
-  max-width: 1400px;
-  max-height: 100%;
-  width: 100%;
-  height: auto;
-  display: block; 
-}*/
-
 .head {
   display: flex;
   flex-direction: row;
@@ -270,7 +256,7 @@ height: auto;
   font-size: 16px;
 }
 .header-nitpick {
-  background-color: #452e0a;
+  background-color: #d98601;
   color: #fff;
   border-left: 4px solid #fcbc81;
 }
