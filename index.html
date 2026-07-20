@@ -12,17 +12,9 @@
 
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
-  <!-- <script src="src/js/main.js"></script>
-   
-  <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
-  <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">
-  <script src="https://cdn.metroui.org.ua/current/metro.js"></script>-->
-
   <title>Character Filtering</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  
-  <!-- Deferred script is perfect! It loads in the background and executes right before DOMContentLoaded -->
   <script src="src/js/data/tierlist.js" defer></script>
 
   <style>
@@ -34,7 +26,7 @@
 
 <body>
 
-  <li class="text-red pt-4"><h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1></li>
+  <b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/criteria"><strong>Tiering Criteria</strong></a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/info">FAQ, Glossary, Links</a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/changelog"><strong>Changelog</strong></a>
@@ -106,17 +98,6 @@
   <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
   <label for="class17">Yukkuri</label>
 
-  <!--
-  <table>
-    <colgroup><col></colgroup> 
-    <thead>
-      <tr>
-        <th>Character Table Placeholder</th>
-      </tr>
-    </thead>
-    <tbody id="characterTable"></tbody>
-  </table>-->
-
   <br>
 
   <div class="head">
@@ -128,8 +109,8 @@
   <!-- EX -->
    <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/ex2.png" target="_blank">
-      <img src="src/assets/tiers/ex2.png" class="tier-banner" alt="EX Tier">
+    <a href="src/assets/tiers/ex3.png" target="_blank">
+      <img src="src/assets/tiers/ex3.png" class="tier-banner" alt="EX Tier">
     </a>
   </div>
 
@@ -144,8 +125,8 @@
   <!-- SS -->
    <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/ss2.png" target="_blank">
-      <img src="src/assets/tiers/ss2.png" class="tier-banner" alt="SS Tier">
+    <a href="src/assets/tiers/ss3.png" target="_blank">
+      <img src="src/assets/tiers/ss3.png" class="tier-banner" alt="SS Tier">
     </a>
   </div>
   
@@ -160,8 +141,8 @@
   <!-- S -->
      <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/s2.png" target="_blank">
-      <img src="src/assets/tiers/s2.png" class="tier-banner" alt="S Tier">
+    <a href="src/assets/tiers/s3.png" target="_blank">
+      <img src="src/assets/tiers/s3.png" class="tier-banner" alt="S Tier">
     </a>
   </div>
   
@@ -174,8 +155,8 @@
   <!-- A -->
    <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/a2.png" target="_blank">
-      <img src="src/assets/tiers/a2.png" class="tier-banner" alt="A Tier">
+    <a href="src/assets/tiers/a3.png" target="_blank">
+      <img src="src/assets/tiers/a3.png" class="tier-banner" alt="A Tier">
     </a>
   </div>
   
@@ -188,8 +169,8 @@
   <!-- B -->
    <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/b2.png" target="_blank">
-      <img src="src/assets/tiers/b2.png" class="tier-banner" alt="B Tier">
+    <a href="src/assets/tiers/b3.png" target="_blank">
+      <img src="src/assets/tiers/b3.png" class="tier-banner" alt="B Tier">
     </a>
   </div>
   
@@ -303,12 +284,6 @@
 
       modal.style.display = "block";
     }
-      /*
-      if (modal && title) {
-        title.innerText = characterName;
-        modal.style.display = "block";
-      }
-    }*/
 
     // Safely wire up the close triggers when the DOM is ready
     document.addEventListener("DOMContentLoaded", () => {
@@ -592,13 +567,6 @@
         <p class="modal-p">
           A tier units have one fundamental idea being that they are less consistent than the s tier units with the same heights/abuseable strengths as them. As opposed to s tier whom are universal in these strengths without noteable flaws to prevent them and B tier whom lack the heights too many areas to form this consistent use case that A and S have. Most obvious example of this is AoE damage where units without abusable AoEs will drop very quickly unless they have something specific to save them (such as L80 Miko and B3 Shinmy's breaking and supportive abilities)
         </p>
-        <p class="modal-p">
-          Consistent AoEs have to either 1. have high enough damage (usually above 650k on our calc sheet) to justify placing here on not terrible killers (below 170ish) OR have enough utility (6-7 breaks + good buffs, ideally across two gauges) to be here for the most part. So EX Clownpiece's AoE damage is abysmal but her breaking ability and buffs are so good that she's here. Meanwhile EX Seiran's buffs/util aren't good but her AoE is generally good enough calc-wise and performance-wise to where she can stay.
-        </p>
-        <p class="modal-p">
-          QUANTIFYING AOE DMG: AoE Damage is generally "passing" at 700k and actively becomes "good" at 1.2m+ (check our calc sheet) where, for this tier, killer is not as much of a concern (weird as it may seem). AoE Damage can perform better or worse than calc expects based on buff reqs and how quickly it breaks. Likewise, characters here generally need to have at LEAST 2.7m damage on their Last Word with 3.5m+ being preferred. Though again this is augmented by things like access to def down.
-        </p>
-      </div>
     </div>
   </div>
 
