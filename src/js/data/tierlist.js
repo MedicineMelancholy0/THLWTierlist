@@ -1365,7 +1365,7 @@ dataSet[dataSetVersion].characterData = [
     ],
     cons: [
       "Largely lacks most of the utility and support to be useful in other roles, and due to the above, isn't particularly consistent in her own damage role either."
-    ]
+    ],
     mixed: [
       "Largely falls short in the realistic damage side, due to low scale buffs  low crit attack buffs"
     ]
@@ -1402,7 +1402,7 @@ dataSet[dataSetVersion].characterData = [
     ],
     cons: [
       "While her last word works fine, her aoe is especially lacking in killer. With some of the worst killer for a nuking aoe in the game and lacking the raw damage to make it nuke outside of killer content. She has all other facets of a strong aoe nuke role, but this is her massive flaw keeping her in the lower tiers."
-    ]
+    ],
     mixed: [
       "Is yin, poison, extremely fast, and with selfish agi. Making her very difficult to play around in general. Even beyond normal tiering standard."
     ],
