@@ -52,10 +52,8 @@
   <div class="theme-toggle">
     <input type="radio" id="mode_dark" name="mode" value="dark">
     <label for="mode_dark" aria-label="Switch to dark mode">🌙</label>
-    <p><strong>Switch to Light</strong></p>
     <input type="radio" id="mode_light" name="mode" value="light">
     <label for="mode_light" aria-label="Switch to light mode">☀️</label>
-    <p><strong>Switch to Dark</strong></p>
   </div>
 
   <!--
@@ -516,12 +514,21 @@
     </div>
   </div>
 
+  <div id="changelog-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('changelog-modal')">&times;</span>
+        <div class="sub-header header-pro">Changelog</div>
+        <p class="modal-p">x/x/26 ~ Opening!</p>
+      </div>
+    </div>
+  </div>
+
   <div id="defs-modal" class="modal">
     <div class="modal-overlay">
       <div class="con">
         <span class="close-btn" onclick="closeModal('defs-modal')">&times;</span>
         <div class="sub-header header-pro">Tierlist Definitions</div>
-        
         <p class="modal-p">
           <strong>Damage reqs:</strong> Damage reqs are simply the practical damage cap. Which is about 2.2million for all intensive purposes in modern ds. Notice how our meme calc sheet has very few aoes to even remotely hit that high. This is because you have many additional factors in a real gameplay setting. What is say, a 650k aoe at cap can quickly become 300k at 5/12. And then 600k again with proper rank ii. And then 2.4mil on full break. So on and so forth. It is important to keep in mind there are no blanket statements to the practical damage cap. So ultimately one will need to test for themselves as we do. Just keep in mind a unit's own buffs can very much matter for this practical damage. So almost nothing is created equal.
         </p>
@@ -553,7 +560,7 @@
     <div class="modal-overlay">
       <div class="con">
         <span class="close-btn" onclick="closeModal('criteria-modal')">&times;</span>
-        <div class="sub-header header-pro"><strong>Official Tiering Criteria</strong></h1>
+        <div class="sub-header header-pro"><strong>Official Tiering Criteria</strong></div>
         <p class="modal-p">Our way of tiering units is meant to be as close to objective as possible. While maintaining true objectivity is impossible, dicussed below here is our criteria for how we judge units for their placement. Of course, you are free to disagree or view things differently than us. However, the point of this little article is to explain our viewpoint and why we place units when they do in a more concrete manner. Just a few things to note below...</p>
         <p class="modal-p">ALL UNITS ARE ASSUMED 25 LUCK W/ MAX REIN BUFFS AND STANDARD BUFFS</h2>
         <p class="modal-p">NUMBERS WISE: Magic number for LWs when translated between our calc and in-game stuff tends to be at around 2.2mil to "pass." Though having such a low cap is obviously far from ideal, which can end up docking points.</h3>
@@ -644,16 +651,6 @@
         <p class="modal-p">When you bring unit + weakness inflict, you bring 2 units. At that point, what's stopping you from just bringing two other EX tiers? Being reliant on another unit to fulfill one of your gaps is a sign of weakness.</p>
         <p class="modal-p"><b>Will you ever make a story card tierlist?</b></p>
         <p class="modal-p">No and we never will. The issue is, by design, theyre all supposed to be puzzle pieces. So the only real way to rate them is how often they can be used as such.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="changelog-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('changelog-modal')">&times;</span>
-        <div class="sub-header header-pro">Changelog</div>
-        <p class="modal-p">x/x/26 ~ Opening!</p>
       </div>
     </div>
   </div>
