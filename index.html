@@ -26,7 +26,7 @@
 
 <body>
 
-  <b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
+  <h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/criteria"><strong>Tiering Criteria</strong></a>
   <!--<a href="https://medicinemelancholy0.github.io/THLWTierlist/info">FAQ, Glossary, Links</a>-->
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/changelog"><strong>Changelog</strong></a>
@@ -43,8 +43,10 @@
     <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753"><strong>Calc Sheet (IMPORTANT!)</strong></a>
   </div>
 
+  <div class="tier-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
+  <!--
   <div class="def-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
-  </div>  
+  </div>-->  
   
   <h2>Dark & Light Mode Toggle</h2>
   <div class="theme-toggle">
@@ -118,7 +120,7 @@
     </a>
   </div>
 
-  <div class="tier-expl" onclick="openModal('ex-tier-modal')">EX Tier Explanation</div>
+  <div class="tier-expl" onclick="openModal('ex-tier-modal')">Tier Explanation</div>
   </div>  
   
   <div id="EX" class="tier-row">
@@ -134,7 +136,7 @@
     </a>
   </div>
   
-  <div class="tier-expl" onclick="openModal('ss-tier-modal')">SS Tier Explanation</div>
+  <div class="tier-expl" onclick="openModal('ss-tier-modal')">Tier Explanation</div>
   </div>
 
   <div id="SS" class="tier-row">
@@ -150,7 +152,7 @@
     </a>
   </div>
   
-  <div class="tier-expl" onclick="openModal('s-tier-modal')">S Tier Explanation</div>
+  <div class="tier-expl" onclick="openModal('s-tier-modal')">Tier Explanation</div>
   </div>
   <div id="S" class="tier-row"></div>
 
@@ -164,7 +166,7 @@
     </a>
   </div>
   
-  <div class="tier-expl" onclick="openModal('a-tier-modal')">A Tier Explanation</div>
+  <div class="tier-expl" onclick="openModal('a-tier-modal')">Tier Explanation</div>
   </div>
   <div id="A" class="tier-row"></div>
 
@@ -178,7 +180,7 @@
     </a>
   </div>
   
-  <div class="tier-expl" onclick="openModal('b-tier-modal')">B Tier Explanation</div>
+  <div class="tier-expl" onclick="openModal('b-tier-modal')">Tier Explanation</div>
   </div>
 <div id="B" class="tier-row"></div>
 
@@ -512,33 +514,34 @@
     </div>
   </div>
 
-  <div id="def-expl" class="modal">
+  <div id="defs-modal" class="modal">
     <div class="modal-overlay">
       <div class="con">
         <span class="close-btn" onclick="closeModal('defs-modal')">&times;</span>
-        <div class="sub-header header-pro">Tier Explanation</div>
+        <div class="sub-header header-pro">Tierlist Definitions</div>
+        
         <p class="modal-p">
-          Damage reqs: Damage reqs are simply the practical damage cap. Which is about 2.2million for all intensive purposes in modern ds. Notice how our meme calc sheet has very few aoes to even remotely hit that high. This is because you have many additional factors in a real gameplay setting. What is say, a 650k aoe at cap can quickly become 300k at 5/12. And then 600k again with proper rank ii. And then 2.4mil on full break. So on and so forth. It is important to keep in mind there are no blanket statements to the practical damage cap. So ultimately one will need to test for themselves as we do. Just keep in mind a unit's own buffs can very much matter for this practical damage. So almost nothing is created equal.
+          <strong>Damage reqs:</strong> Damage reqs are simply the practical damage cap. Which is about 2.2million for all intensive purposes in modern ds. Notice how our meme calc sheet has very few aoes to even remotely hit that high. This is because you have many additional factors in a real gameplay setting. What is say, a 650k aoe at cap can quickly become 300k at 5/12. And then 600k again with proper rank ii. And then 2.4mil on full break. So on and so forth. It is important to keep in mind there are no blanket statements to the practical damage cap. So ultimately one will need to test for themselves as we do. Just keep in mind a unit's own buffs can very much matter for this practical damage. So almost nothing is created equal.
         </p>
-        <p class="modal-p">Overflow = Bullets not being ordered perfectly linear in a spell. ie. the line 6 blind break appearing earlier than expected etc. Refer to strat guide for more info</p>
-        <p class="modal-p">BIS = Best in slot. The story card that offers the most damage (usually a 90%+ buff)</p>
-        <p class="modal-p">[Bullet] Nerf/Cuck = Bullet type restrictions, usually in Divergent Spirits 120</p>
-        <p class="modal-p">DS120 = Divergent Spirits Stages Level 120</p>
-        <p class="modal-p">EB = Eternal Battle. EBR = Eternal Battle Ranked, EBL = Eternal Battle Limited</p>
-        <p class="modal-p">NLM = Bullet line with 34%+ base crit rate</p>
-        <p class="modal-p">Prae Card = Hunting the Hunter Luck/Fate card. Mostly renowned for its potent Atk Locked Yin Atk Up + Yin Def Down card.</p>
-        <p class="modal-p">BS = Barrier Status Luck/Fate card. Mostly known for -3 Def, 50% light effect.</p>
-        <p class="modal-p">Shansoku = 50% body, 50% liquid, -2 yang def card</p>
-        <p class="modal-p">CQ = Challenge Quest. Divergent Spirits, Eternal Battle (Limited, Ranked is seperate), Advanced Challenge Stages, and Elemental EX Nightmare.</p>
-        <p class="modal-p">Mixed = Having both Yin/Yang divide your spellcard/Last Word</p>
-        <p class="modal-p">Soupy = Juggling 3-4 Elements across a single attack or set of attacks</p>
-        <p class="modal-p">Rainbow = 4+ Elements in an attack or set of attacks</p>
-        <p class="modal-p">Sfes = Another term for Ultra Festival</p>
-        <p class="modal-p">Scaling = Refers to Hard/Slice scaling in certain attacks</p>
-        <p class="modal-p">Unbind = Lock Cleanse/Debuff Cleanse</p>
-        <p class="modal-p">Boost Scale = Spellcard effects that increase based on P used rather tthan awakening level (relatively uncommon)</p>
-        <p class="modal-p">A-Fes = Character with A universe code (NOT including those ending in &)</p>
-        <p class="modal-p">Rein = Reincarnation/Fantasy rebirth. Funfact rein as a term was made in 2021</p>
+        <p class="modal-p"><strong>Overflow:</strong> Bullets not being ordered perfectly linear in a spell. ie. the line 6 blind break appearing earlier than expected etc. Refer to strat guide for more info</p>
+        <p class="modal-p"><strong>BIS:</strong> Best in slot. The story card that offers the most damage (usually a 90%+ buff)</p>
+        <p class="modal-p"><strong>[Bullet] Nerf/Cuck:</strong> Bullet type restrictions, usually in Divergent Spirits 120</p>
+        <p class="modal-p"><strong>DS120:</strong> Divergent Spirits Stages Level 120</p>
+        <p class="modal-p"><strong>EB:</strong> Eternal Battle. Static modes break down into: EBR = Eternal Battle Ranked, EBL = Eternal Battle Limited</p>
+        <p class="modal-p"><strong>NLM:</strong> Bullet line with 34%+ base crit rate</p>
+        <p class="modal-p"><strong>Prae Card:</strong> Hunting the Hunter Luck/Fate card. Mostly renowned for its potent Atk Locked Yin Atk Up + Yin Def Down card.</p>
+        <p class="modal-p"><strong>BS:</strong> Barrier Status Luck/Fate card. Mostly known for -3 Def, 50% light effect.</p>
+        <p class="modal-p"><strong>Shansoku:</strong> 50% body, 50% liquid, -2 yang def card</p>
+        <p class="modal-p"><strong>CQ:</strong> Challenge Quest. Divergent Spirits, Eternal Battle (Limited, Ranked is seperate), Advanced Challenge Stages, and Elemental EX Nightmare.</p>
+        <p class="modal-p"><strong>Mixed:</strong> Having both Yin/Yang divide your spellcard/Last Word</p>
+        <p class="modal-p"><strong>Soupy:</strong> Juggling 3-4 Elements across a single attack or set of attacks</p>
+        <p class="modal-p"><strong>Rainbow:</strong> 4+ Elements in an attack or set of attacks</p>
+        <p class="modal-p"><strong>Sfes:</strong> Another term for Ultra Festival</p>
+        <p class="modal-p"><strong>Scaling:</strong> Refers to Hard/Slice scaling in certain attacks</p>
+        <p class="modal-p"><strong>Unbind:</strong> Lock Cleanse/Debuff Cleanse</p>
+        <p class="modal-p"><strong>Boost Scale:</strong> Spellcard effects that increase based on P used rather than awakening level (relatively uncommon)</p>
+        <p class="modal-p"><strong>A-Fes:</strong> Character with A universe code (NOT including those ending in &)</p>
+        <p class="modal-p"><strong>Rein:</strong> Reincarnation/Fantasy rebirth. Funfact rein as a term was made in 2021</p>
       </div>
     </div>
   </div>
@@ -547,7 +550,7 @@
     <div class="modal-overlay">
       <div class="con">
         <span class="close-btn" onclick="closeModal('ex-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">Tier Explanation</div>
+        <div class="sub-header header-pro">EX Tier Explanation</div>
         <p class="modal-p">
           Best of the best. Their flaws and issues almost entirely ignorable/worth for what they provide. Additionally, these units are extremely recommended for players to obtain as soon as possible regardless of their current unit collection. Units of this caliber are universally proven useful and consistent inside their element. As well as outside their element to a reasonable extent that they (the unit in question) can replace units in the S/A tier even when they themselves lack content favoring.
         </p>
@@ -559,7 +562,7 @@
     <div class="modal-overlay">
       <div class="con">
         <span class="close-btn" onclick="closeModal('ss-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">Tier Explanation</div>
+        <div class="sub-header header-pro">SS Tier Explanation</div>
         <p class="modal-p">
           The tier in between EX and S, representing great units that have issues preventing them from being universal options. 
         </p>
@@ -583,7 +586,7 @@
     <div class="modal-overlay">
       <div class="con">
         <span class="close-btn" onclick="closeModal('s-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">Tier Explanation</div>
+        <div class="sub-header header-pro">S Tier Explanation</div>
         <p class="modal-p">
           Generally good units that have some notable flaws but still perform well in opportunities expected of them such as effective elements. These units' flaws prevent them from being universal answers who always have a place in any stage.
         </p>
@@ -598,7 +601,7 @@
     <div class="modal-overlay">
       <div class="con">
         <span class="close-btn" onclick="closeModal('a-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">Tier Explanation</div>
+        <div class="sub-header header-pro">A Tier Explanation</div>
         <p class="modal-p">
           A tier units have one fundamental idea being that they are less consistent than the s tier units with the same heights/abuseable strengths as them. As opposed to s tier whom are universal in these strengths without noteable flaws to prevent them and B tier whom lack the heights too many areas to form this consistent use case that A and S have. Most obvious example of this is AoE damage where units without abusable AoEs will drop very quickly unless they have something specific to save them (such as L80 Miko and B3 Shinmy's breaking and supportive abilities)
         </p>
@@ -609,7 +612,7 @@
     <div class="modal-overlay">
       <div class="con">
         <span class="close-btn" onclick="closeModal('b-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">Tier Explanation</div>
+        <div class="sub-header header-pro">B Tier Explanation</div>
         <p class="modal-p">
           Same as A tier, but tend to have more flaws.
         </p>
