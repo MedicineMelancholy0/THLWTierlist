@@ -182,9 +182,65 @@
   
   <div class="tier-expl" onclick="openModal('b-tier-modal')">Tier Explanation</div>
   </div>
-<div id="B" class="tier-row"></div>
+  <div id="B" class="tier-row"></div>
 
-<br>
+  <br>
+
+  <!-- C -->
+   <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/c3.png" target="_blank">
+      <img src="src/assets/tiers/c3.png" class="tier-banner" alt="C Tier">
+    </a>
+  </div>
+  
+  <div class="tier-expl" onclick="openModal('c-tier-modal')">Tier Explanation</div>
+  </div>
+  <div id="C" class="tier-row"></div>
+
+  <br>
+
+  <!-- D -->
+   <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/d3.png" target="_blank">
+      <img src="src/assets/tiers/d3.png" class="tier-banner" alt="D Tier">
+    </a>
+  </div>
+  
+  <div class="tier-expl" onclick="openModal('d-tier-modal')">Tier Explanation</div>
+  </div>
+  <div id="D" class="tier-row"></div>
+
+  <br>
+
+  <!-- E -->
+   <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/e3.png" target="_blank">
+      <img src="src/assets/tiers/e3.png" class="tier-banner" alt="E Tier">
+    </a>
+  </div>
+  
+  <div class="tier-expl" onclick="openModal('e-tier-modal')">Tier Explanation</div>
+  </div>
+  <div id="E" class="tier-row"></div>
+
+  <br>
+
+  <!-- Yukkuri -->
+   <div class="tier-section">
+    <div class="tiers">
+    <a href="src/assets/tiers/yukkuri2.png" target="_blank">
+      <img src="src/assets/tiers/yukkuri2.png" class="tier-banner" alt="Yukkuri Tier">
+    </a>
+  </div>
+  
+  <div class="tier-expl" onclick="openModal('y-tier-modal')">Tier... Explanation...</div>
+  </div>
+  <div id="Y" class="tier-row"></div>
+
+  <br>
 
   <!-- Main display logic after tierlist.js finishes executing -->
   <script>
@@ -716,6 +772,7 @@
         </p>
     </div>
   </div>
+  </div>
 
   <div id="b-tier-modal" class="modal">
     <div class="modal-overlay">
@@ -733,6 +790,66 @@
         </p>
         <p class="modal-p">
           This mostly boils down to 1. inconsistent AoE damage (usually by virtue of lacking p0 killer) or lacking utility (mostly breaks). Other flaws can include underwhelming killer sets or lacking buffs throughout their kit which means most of the units here are effectively limited to one gauge and don't fit the 3t 10/15sp farm criteria OR they are only used for one thing such as niche shill content or breaks without support/damage that allow them to go up. For example L80 Patchouli technically has a powerful buff throughout her kit (stored power) but her innate support and utility is bad on top of horrible AoE spellcard damage and a LW nuke that has never really proven itself hence her placement. Meanwhile characters like B3 Raiko can be used throughout all 3 gauges but are very limited to being only a supporter/breaker without the heights of, say, B3 Shinmyoumaru (6/3 breaks instead of 7/7) to compensate hence she remains here.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="c-tier-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('c-tier-modal')">&times;</span>
+        <div class="sub-header header-pro">C Tier Explanation</div>
+        <p class="modal-p">
+          Friends who are only really solid in early game and fall off pretty quickly after your box starts getting more developed.
+        </p>
+        <p class="modal-p">
+          Units in this tier typically lack the ability to have above one niche. They are often specialists who can do one thing semi-reliably. In addition they have other aspects to them that while not noteable aren't useless. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="d-tier-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('d-tier-modal')">&times;</span>
+        <div class="sub-header header-pro">D Tier Explanation</div>
+        <p class="modal-p">
+          Friends who will likely not be the best option for any content aside from very new accounts.
+        </p>
+        <p class="modal-p">
+          Similar to the C tier, however units here lack even that one niche reliably/have a reliable niche and no semblance of a kit left to do anything else. That said, they still come close. VERY occasionally they may be able to do something in 1 specific pairing or situation but that is mostly due to pure chance and having the stars align rather than being a testament to their kit.
+        </p>
+        <p class="modal-p">
+          This is the point where my notes will go to shit because the unit in question doesn't have a lot to them that isnt obvious.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="e-tier-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('e-tier-modal')">&times;</span>
+        <div class="sub-header header-pro">E Tier Explanation</div>
+        <p class="modal-p">
+          Friends who are likely not the best scenario for any situation and are mostly only used for memes.
+        </p>
+        <p class="modal-p">
+          Effectively the D tier however they do not reach the bare minimum in some aspects requiring units to do additional work in those aspects. In other words, D tier units who actively make your team worse due to what they lack outside their occasional niche. Exceptions: L1 Sannyo, L1 Tsukasa, L1 Megumu
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="y-tier-modal" class="modal">
+    <div class="modal-overlay">
+      <div class="con">
+        <span class="close-btn" onclick="closeModal('y-tier-modal')">&times;</span>
+        <div class="sub-header header-pro">Yukkuri Shitte Ne</div>
+        <p class="modal-p">
+          These characters technically don't qualify for the main list due to a lack of anything important but since it's funny we gave them their own list.
         </p>
       </div>
     </div>
