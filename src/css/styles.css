@@ -264,7 +264,7 @@ body.small-icons .expl {
   max-width: 1550px;
   display: block;
   margin-top: 8px;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -552,7 +552,7 @@ label[for="mode_dark"] { display: grid; }
   font-weight: bold;
   text-align: center;
   padding: 6px 12px;
-  margin: 2px auto 6px auto; 
+  margin: 4px auto 12px auto; 
   max-width: 700px;
   border-radius: 4px;
   cursor: pointer;
