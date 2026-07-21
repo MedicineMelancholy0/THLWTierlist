@@ -388,6 +388,20 @@ height: auto;
   --fg: #20124D;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("cavern.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.25;
+  z-index: -1;
+  pointer-events: none;
+}
+
 body {
   background-color: var(--bg);
   color: var(--fg);
@@ -440,19 +454,6 @@ label[for="mode_dark"] { display: grid; }
 }
 :root:has(#mode_light:checked) label[for="mode_dark"] {
    display: grid;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url("src/assets/cavern.png") no-repeat center center;
-  background-size: cover;
-  opacity: 0.25;
-  pointer-events: none;
 }
 
 .tier-row.collapsed {
