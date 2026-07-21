@@ -457,8 +457,8 @@ body.small-icons .expl {
   --fg: #fff;    
 }
 :root:has(#mode_light:checked) {   
-  --bg: rgba(217, 210, 233, 0.85); 
-  --fg: #20124D;
+  --bg: rgba(217, 210, 233, 0.95); 
+  --fg: #09031d;
 }
 
 body::before {
