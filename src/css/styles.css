@@ -22,6 +22,22 @@
   display: none !important;
 }
 
+.search-container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#charSearchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
 .head {
   display: flex;
   flex-direction: row;
@@ -140,7 +156,7 @@ height: auto;
 }
 
 #EX .cname {
-  background-color: rgba(120, 20, 220, 0.85);
+  background-color: rgba(203, 151, 254, 0.85);
 }
 
 #SS .cname {
@@ -156,7 +172,7 @@ height: auto;
 }
 
 #B .cname {
-  background-color: rgba(65, 132, 36, 0.75);
+  background-color: rgba(75, 167, 35, 0.75);
 }
 
 #C .cname {
@@ -164,7 +180,7 @@ height: auto;
 }
 
 #D .cname {
-  background-color: rgba(81, 24, 238, 0.5);
+  background-color: rgba(32, 4, 109, 0.5);
 }
 
 #E .cname {
