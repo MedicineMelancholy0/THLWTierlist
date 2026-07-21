@@ -25,6 +25,13 @@
 </head>
 
 <body>
+  <div class="Frontpage">
+  <div class="collapse-bar">
+    <label for="toggle-intro" class="collapse-label">
+      <input type="checkbox" id="toggle-intro">
+      <span>I Don't Want To See This Stuff</span>
+    </label>
+  </div>
 
   <h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
   <!--<a href="https://medicinemelancholy0.github.io/THLWTierlist/criteria"><strong>Tiering Criteria</strong></a>
@@ -55,6 +62,7 @@
     <input type="radio" id="mode_light" name="mode" value="light">
     <label for="mode_light" aria-label="Switch to light mode">☀️</label>
   </div>
+</div>
 
   <!--
   <div class="options-wrapper">
@@ -189,8 +197,8 @@
   <!-- C -->
    <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/c3.png" target="_blank">
-      <img src="src/assets/tiers/c3.png" class="tier-banner" alt="C Tier">
+    <a href="src/assets/tiers/c4.png" target="_blank">
+      <img src="src/assets/tiers/c4.png" class="tier-banner" alt="C Tier">
     </a>
   </div>
   
@@ -238,7 +246,7 @@
   
   <div class="tier-expl" onclick="openModal('y-tier-modal')">Tier... Explanation...</div>
   </div>
-  <div id="Y" class="tier-row"></div>
+  <div id="Yukkuri" class="tier-row"></div>
 
   <br>
 
@@ -856,23 +864,70 @@
   </div>
 
 <script>
-  // Function to show the pop-up
   function openModal(modalId) {
     document.getElementById(modalId).style.display = "block";
   }
 
-  // Function to hide the pop-up
   function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
   }
 
-  // Optional: Close the pop-up if the user clicks outside the dark box
   window.onclick = function(event) {
     if (event.target.classList.contains('modal-overlay')) {
       event.target.closest('.modal').style.display = "none";
     }
   }
 </script>
+
+<script>
+  // Cookie helper functions
+function setCookie(name, value, days) {
+  let expires = "";
+  if (days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
+}
+
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i].trim();
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+// Initialize collapse handler on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.getElementById("toggle-intro");
+  const introContent = document.getElementById("intro-content");
+
+  // Read cookie state
+  const isCollapsed = getCookie("intro_collapsed") === "true";
+
+  // Apply initial state
+  if (isCollapsed) {
+    checkbox.checked = true;
+    introContent.classList.add("is-collapsed");
+  }
+
+  // Listen for user checkbox toggle
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      introContent.classList.add("is-collapsed");
+      setCookie("intro_collapsed", "true", 365); // Save preference for 1 year
+    } else {
+      introContent.classList.remove("is-collapsed");
+      setCookie("intro_collapsed", "false", 365);
+    }
+  });
+});
+</script>
+
 
 </body>
 
