@@ -2,6 +2,26 @@
   box-sizing: border-box;
 }
 
+.collapse-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 0;
+  margin-bottom: 10px;
+}
+
+.collapse-label {
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.is-collapsed {
+  display: none !important;
+}
+
 .head {
   display: flex;
   flex-direction: row;
@@ -65,7 +85,7 @@ height: auto;
 }
 
 #SS {
-  background-color: rgba(217, 210, 233, 0.4);
+  background-color: rgba(217, 210, 233, 0.75);
 }
 
 #S {
@@ -73,11 +93,27 @@ height: auto;
 }
 
 #A {
-  background-color: rgba(249, 203, 156, 0.4);
+  background-color: rgba(240, 175, 110, 0.4);
 }
 
 #B {
-  background-color: rgba(182, 215, 168, 0.4);
+  background-color: rgba(182, 215, 168, 0.5);
+}
+
+#C {
+  background-color: rgba(135, 197, 255, 0.6);
+}
+
+#D {
+  background-color: rgba(106, 65, 219, 0.5);
+}
+
+#E {
+  background-color: rgba(240, 191, 141, 0.5);
+}
+
+#Yukkuri {
+  background-color: rgba(11, 83, 148, 0.5);
 }
 
 .theme-toggle {
@@ -109,15 +145,31 @@ height: auto;
 }
 
 #S {
-  background-color: rgba(102, 0, 0, 0.6);
+  background-color: rgba(222, 0, 0, 0.6);
 }
 
 #A {
-  background-color: rgba(180, 95, 6, 0.6);
+  background-color: rgba(255, 139, 16, 0.6);
 }
 
 #B {
-  background-color: rgba(63, 98, 48, 0.6);
+  background-color: rgba(65, 132, 36, 0.6);
+}
+
+#C {
+  background-color: rgba(16, 99, 173, 0.8);
+}
+
+#D {
+  background-color: rgba(81, 24, 238, 0.5);
+}
+
+#E {
+  background-color: rgba(188, 128, 68, 0.5);
+}
+
+#Yukkuri {
+  background-color: rgba(12, 115, 204, 0.5);
 }
 
 .expl, .tier-expl {
