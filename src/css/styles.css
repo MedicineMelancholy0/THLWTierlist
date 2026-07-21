@@ -131,7 +131,6 @@ height: auto;
   overflow-wrap: break-word;
   font-weight: bold;
   text-align: center;
-  background-color: rgba(89, 19, 57, 0.6);
   color: #ffffff;
   padding: 4px 2px;
   display: flex;
@@ -140,36 +139,40 @@ height: auto;
   min-height: 40px;
 }
 
-#SS {
-  background-color: rgba(52, 29, 71, 0.6);
+#EX .cname {
+  background-color: rgba(120, 20, 220, 0.85);
 }
 
-#S {
-  background-color: rgba(222, 0, 0, 0.6);
+#SS .cname {
+  background-color: rgba(52, 29, 71, 0.75);
 }
 
-#A {
-  background-color: rgba(255, 139, 16, 0.6);
+#S .cname {
+  background-color: rgba(222, 0, 0, 0.75);
 }
 
-#B {
-  background-color: rgba(65, 132, 36, 0.6);
+#A .cname {
+  background-color: rgba(255, 139, 16, 0.8);
 }
 
-#C {
+#B .cname {
+  background-color: rgba(65, 132, 36, 0.75);
+}
+
+#C .cname {
   background-color: rgba(16, 99, 173, 0.8);
 }
 
-#D {
+#D .cname {
   background-color: rgba(81, 24, 238, 0.5);
 }
 
-#E {
-  background-color: rgba(188, 128, 68, 0.5);
+#E .cname {
+  background-color: rgba(188, 128, 68, 0.8);
 }
 
-#Yukkuri {
-  background-color: rgba(12, 115, 204, 0.5);
+#Yukkuri .cname {
+  background-color: rgba(12, 115, 204, 0.8);
 }
 
 .expl, .tier-expl {
