@@ -6495,7 +6495,7 @@ dataSet[dataSetVersion].characterData = [
   { name: "L1 Cirno", img: "l1 cirno.png", tier: "E", opts: { dest: true, g: true } },
   { name: "L1 Hecatia", img: "l1 hecatia.png", tier: "E", opts: { dest: true, g: true } },
   { name: "L1 Hisami", img: "l1 hisami dest.png", tier: "E", opts: { dest: true, g: true } },
-  { name: "L1 Ichirin", img: "l1 arm.png", tier: "E", opts: { dest: true, g: true } },
+  { name: "L1 Ichirin", img: "l1 ichirin.png", tier: "E", opts: { dest: true, g: true } },
   { name: "L1 Kanako", img: "l1 Kanako.png", tier: "E", opts: { def: true, g: true } },
   { name: "L1 Keiki", img: "l1 keiki.png", tier: "E", opts: { tec: true, g: true } },
   { name: "L1 Kisume", img: "l1 kisume.png", tier: "E", opts: { dest: true, g: true } },
