@@ -95,10 +95,21 @@ a:link {
   display: block;
 }
 
+/*
 .charicon {
 width: 100%;
 max-width: 135px;
 height: auto;
+}*/
+
+.charicon {
+  width: 135px;
+  height: 135px;
+}
+
+body.small-icons .charicon {
+  width: 75px;
+  height: 75px;
 }
 
 .tier-row {
