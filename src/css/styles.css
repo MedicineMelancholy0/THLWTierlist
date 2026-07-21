@@ -522,3 +522,9 @@ label[for="mode_dark"] { display: grid; }
 .tier-toggle-bar:hover {
   background-color: rgba(0, 0, 0, 0.65);
 }
+
+.Qs {
+  color: rgb(167, 61, 130);
+  font-weight: bold;
+  font-size: 20px;
+}
