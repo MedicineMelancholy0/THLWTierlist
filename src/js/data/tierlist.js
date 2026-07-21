@@ -2,6 +2,21 @@ const dataSet = {};
 const dataSetVersion = "tierlist"; 
 dataSet[dataSetVersion] = {};
 
+function toggleTierRow(tierId) {
+  const container = document.getElementById(tierId);
+  const toggleBtn = document.getElementById(`toggle-btn-${tierId}`);
+  
+  if (!container) return;
+
+  const isNowCollapsed = container.classList.toggle("collapsed");
+
+  if (toggleBtn) {
+    toggleBtn.textContent = isNowCollapsed 
+      ? `▶ Show Tier ${tierId} (${container.children.length} Units)` 
+      : `▼ Hide Tier ${tierId}`;
+  }
+}
+
 dataSet[dataSetVersion].options = [
   { name: "Filter Pure Fes", key: "p", tooltip: "Check this to remove Pure Fes Characters" },
   { name: "Filter Epics", key: "e", tooltip: "Check this to remove Epic Characters" },
