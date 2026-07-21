@@ -128,6 +128,8 @@
   }
   
   localStorage.setItem('iconSize', isSmall ? 'small' : 'large');
+
+  fitNameplateText();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -1015,6 +1017,40 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+</script>
+
+<script>
+function fitNameplateText() {
+  document.querySelectorAll('.cname').forEach(el => {
+    let span = el.querySelector('.cname-text');
+    if (!span) {
+      span = document.createElement('span');
+      span.className = 'cname-text';
+      span.style.whiteSpace = 'nowrap';
+      span.style.display = 'inline-block';
+      span.innerHTML = el.innerHTML;
+      el.innerHTML = '';
+      el.appendChild(span);
+    }
+    const style = window.getComputedStyle(el);
+    const padding = (parseFloat(style.paddingLeft) || 0) + (parseFloat(style.paddingRight) || 0);
+    const maxAllowedWidth = el.clientWidth - padding - 2; 
+
+    if (maxAllowedWidth <= 0) return; 
+    let size = 28;
+    span.style.fontSize = size + 'px';
+    while (span.offsetWidth > maxAllowedWidth && size > 8) {
+      size -= 0.5;
+      span.style.fontSize = size + 'px';
+    }
+  });
+}
+document.addEventListener('DOMContentLoaded', fitNameplateText);
+window.addEventListener('load', fitNameplateText);
+
+if (document.fonts) {
+  document.fonts.ready.then(fitNameplateText);
+}
 </script>
 
 
