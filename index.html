@@ -197,58 +197,66 @@
   <br>
 
   <!-- B -->
-   <div class="tier-section">
+  <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/b3.png" target="_blank">
       <img src="src/assets/tiers/b3.png" class="tier-banner" alt="B Tier">
-    </a>
+    </div>
+    <div class="tier-expl" onclick="openModal('b-tier-modal')">Tier Explanation</div>
   </div>
-  
-  <div class="tier-expl" onclick="openModal('b-tier-modal')">Tier Explanation</div>
+
+  <div id="toggle-btn-B" class="tier-toggle-bar" onclick="toggleTierRow('B')">
+    ▶ Display B Tier
   </div>
-  <div id="B" class="tier-row"></div>
+
+  <div id="B" class="tier-row collapsed"></div>
 
   <br>
 
   <!-- C -->
-   <div class="tier-section">
+    <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/c4.png" target="_blank">
       <img src="src/assets/tiers/c4.png" class="tier-banner" alt="C Tier">
-    </a>
+    </div>
+    <div class="tier-expl" onclick="openModal('c-tier-modal')">Tier Explanation</div>
   </div>
-  
-  <div class="tier-expl" onclick="openModal('c-tier-modal')">Tier Explanation</div>
+
+  <div id="toggle-btn-C" class="tier-toggle-bar" onclick="toggleTierRow('C')">
+    ▶ Display C Tier
   </div>
-  <div id="C" class="tier-row"></div>
+
+  <div id="C" class="tier-row collapsed"></div>
 
   <br>
 
   <!-- D -->
-   <div class="tier-section">
+    <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/d3.png" target="_blank">
       <img src="src/assets/tiers/d3.png" class="tier-banner" alt="D Tier">
-    </a>
+    </div>
+    <div class="tier-expl" onclick="openModal('d-tier-modal')">Tier Explanation</div>
   </div>
-  
-  <div class="tier-expl" onclick="openModal('d-tier-modal')">Tier Explanation</div>
+
+  <div id="toggle-btn-D" class="tier-toggle-bar" onclick="toggleTierRow('D')">
+    ▶ Display D Tier
   </div>
-  <div id="D" class="tier-row"></div>
+
+  <div id="D" class="tier-row collapsed"></div>
 
   <br>
 
   <!-- E -->
-   <div class="tier-section">
+    <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/e3.png" target="_blank">
       <img src="src/assets/tiers/e3.png" class="tier-banner" alt="E Tier">
-    </a>
+    </div>
+    <div class="tier-expl" onclick="openModal('e-tier-modal')">Tier Explanation</div>
   </div>
-  
-  <div class="tier-expl" onclick="openModal('e-tier-modal')">Tier Explanation</div>
+
+  <div id="toggle-btn-E" class="tier-toggle-bar" onclick="toggleTierRow('E')">
+    ▶ Display E Tier
   </div>
-  <div id="E" class="tier-row"></div>
+
+  <div id="E" class="tier-row collapsed"></div>
 
   <br>
 
@@ -286,24 +294,31 @@
     // clear and inject character images, main tierlist function ------------------------------------------------------------------
     function renderTierList(charList) {
       const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
-      
+
       activeTiers.forEach(tier => {
         const container = document.getElementById(tier);
         if (container) {
           container.innerHTML = ""; // Clear out previous items
-          
+
           charList
             .filter(item => item.tier === tier)
             .forEach(item => {
               const imgContainer = document.createElement("div");
               imgContainer.style.display = "inline-block";
-              imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" title="${item.name}" class="charicon"/>
-              <div class="cname">${item.name}</div>
-              <div class="expl">Explanation</div>
+
+              imgContainer.innerHTML = `
+                <img src="src/assets/chara/${item.img}" 
+                    alt="${item.name}" 
+                    title="${item.name}" 
+                    class="charicon" 
+                    loading="lazy" />
+                <div class="cname">${item.name}</div>
+                <div class="expl">Explanation</div>
               `; 
+
               container.appendChild(imgContainer);
-              
-              // explanation button
+
+              // Explanation button listener
               const expBtn = imgContainer.querySelector(".expl");
               expBtn.addEventListener("click", () => {
                 openExplanationModal(item);
