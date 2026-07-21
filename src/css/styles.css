@@ -444,3 +444,16 @@ label[for="mode_dark"] { display: grid; }
 :root:has(#mode_light:checked) label[for="mode_dark"] {
    display: grid;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("src/assets/cavern.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.25;
+  pointer-events: none;
+}
