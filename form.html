@@ -20,6 +20,14 @@
 
 <body>
 
+    <div class="Frontpage">
+    <div class="collapse-bar">
+      <label for="toggle-intro" class="collapse-label">
+        <input type="checkbox" id="toggle-intro">
+        <span>I Don't Want To See This Stuff</span>
+      </label>
+    </div>
+    <div id="intro-content">
     <div class="Important Links">
     <a href="https://discord.gg/TCjp7VMTps"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
     <br>
@@ -38,13 +46,18 @@
       <input type="radio" id="mode_light" name="mode" value="light">
       <label for="mode_light" aria-label="Switch to light mode">☀️</label>
     </div>
+    </div>
+    </div>
+    </div>
+
+    <br>
 
     <h1>These include transcripts of form feedback, if you do not want to be on this board, say so. However you will be anonymous regardless.</h1>
     <h3>Color Scheme: </h3>
-    <p><span style="color: red;">Red</span> = Form Text</p>
-    <p><span style="color: pink;">Pink</span> = Medi's Response</p>
-    <p><span style="color: blue;"> = Hibi's Response</span></p>
-    <p><span style="color: black;"> = Kuro's Response</span></p>
+    <p><b><span style="color: red;">Red</span> = Form Text</b></p>
+    <p><b><span style="color: pink;">Pink</span> = Medi's Response</b></p>
+    <p><b><span style="color: blue;">Blue</span>= Hibi's Response</b></p>
+    <p><b><span style="color: black;">Black/span>= Kuro's Response</b></p>
 
     <!-- FORM STARTS HERE -->
 
@@ -78,6 +91,33 @@
 
   <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 21/7/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const checkbox = document.getElementById("toggle-intro");
+    const introContent = document.getElementById("intro-content");
+
+    if (!checkbox || !introContent) return;
+
+    const isCollapsed = localStorage.getItem("intro_collapsed") === "true";
+
+    if (isCollapsed) {
+      checkbox.checked = true;
+      introContent.classList.add("is-collapsed");
+    }
+
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        introContent.classList.add("is-collapsed");
+        localStorage.setItem("intro_collapsed", "true");
+      } else {
+        introContent.classList.remove("is-collapsed");
+        localStorage.setItem("intro_collapsed", "false");
+      }
+    });
+  });
+  </script>
 
 </body>
 
