@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+a {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a:link {
+  color: rgb(0, 255, 174);
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .collapse-bar {
   display: flex;
   justify-content: flex-end;
@@ -156,11 +168,11 @@ height: auto;
 }
 
 #EX .cname {
-  background-color: rgba(203, 151, 254, 0.85);
+  background-color: rgba(333, 10, 91, 0.7);
 }
 
 #SS .cname {
-  background-color: rgba(52, 29, 71, 0.75);
+  background-color: rgba(36, 1, 65, 0.75);
 }
 
 #S .cname {
