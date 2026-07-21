@@ -110,6 +110,31 @@
 <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
 <label for="class17">Yukkuri</label>
 
+<button class="button primary" id="size-toggle-btn" onclick="toggleIconSize()">
+  Switch to Small Icons
+</button>
+
+<script>
+  function toggleIconSize() {
+  const isSmall = document.body.classList.toggle('small-icons');
+  const btn = document.getElementById('size-toggle-btn');
+  
+  if (btn) {
+    btn.textContent = isSmall ? 'Switch to Large Icons' : 'Switch to Small Icons';
+  }
+  
+  localStorage.setItem('iconSize', isSmall ? 'small' : 'large');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('iconSize') === 'small') {
+    document.body.classList.add('small-icons');
+    const btn = document.getElementById('size-toggle-btn');
+    if (btn) btn.textContent = 'Switch to Large Icons';
+  }
+});
+</script>
+
   <div class="search-container">
   <input
     type="text" 
@@ -461,7 +486,7 @@
       return matchesSearch && matchesBoxes;
     });
     renderTierList(filtered);
-    
+
   }
 
     function filterDefChars() { applyFilters(); }
