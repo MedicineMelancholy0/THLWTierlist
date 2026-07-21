@@ -36,6 +36,7 @@
 
       <h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
       
+      <p><b>Currently tracking <span id="total-character-count">0</span> units!</b></p>
       <p>Explanations are available for every Character and Tier, visible by clicking on them. Read them to understand how units are ranked as it is not just vibes and they follow a system. Further explanations are available in the Tiering Criteria Section and in the Tier/Character explanations, please read them before making a complaint.</p>
       <p><strong>Other important Criterias to keep in mind:</strong></p>
       <p>Only EX, SS, S, and Yukkuri tiers are ordered.</p>
@@ -293,6 +294,10 @@
 
     // clear and inject character images, main tierlist function ------------------------------------------------------------------
     function renderTierList(charList) {
+      const countDisplay = document.getElementById("total-character-count");
+      if (countDisplay) {
+        countDisplay.textContent = charList.length;
+      }
       const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
 
       activeTiers.forEach(tier => {
