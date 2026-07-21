@@ -367,38 +367,35 @@ height: auto;
   margin-bottom: 6px;
 }
 
-/* 1. DEFINE DEFAULT VARIABLES (LIGHT MODE) */
 :root {
-  --bg: #D9D2E9;
-  --fg: #20124D; /* Dark text for light background */
-}
-
-/* 2. SYSTEM PREFERENCE OVERRIDES */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #20124D;
-    --fg: #fff; /* Light text for dark background */
-  }
-}
-
-/* 3. MANUAL TOGGLE OVERRIDES (using :has) */
-:root:has(#mode_dark:checked) {
-  --bg: #20124D;
-  --fg: #fff;    
-}
-:root:has(#mode_light:checked) {   
-  --bg: #D9D2E9; 
+  --bg: rgba(217, 210, 233, 0.85); 
   --fg: #20124D;
 }
 
-/* 4. APPLY VARIABLES TO THE BODY */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: rgba(32, 18, 77, 0.85);
+    --fg: #fff;
+  }
+}
+
+:root:has(#mode_dark:checked) {
+  --bg: rgba(32, 18, 77, 0.85);
+  --fg: #fff;    
+}
+:root:has(#mode_light:checked) {   
+  --bg: rgba(217, 210, 233, 0.85); 
+  --fg: #20124D;
+}
+
 body {
   background-color: var(--bg);
   color: var(--fg);
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  transition: background-color 0.3s, color 0.3s;
 }
+
 
 /* Keep your custom toggle styles below */
 .theme-toggle {
@@ -456,4 +453,27 @@ body::before {
   background-size: cover;
   opacity: 0.25;
   pointer-events: none;
+}
+
+.tier-row.collapsed {
+  display: none !important;
+}
+
+.tier-toggle-bar {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-family: "Josephin Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 12px;
+  margin: 6px auto;
+  max-width: 90%;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.tier-toggle-bar:hover {
+  background-color: rgba(0, 0, 0, 0.65);
 }
