@@ -111,7 +111,7 @@
   <label for="class17">Yukkuri</label>
 
   <div class="search-container">
-  <input 
+  <input
     type="text" 
     id="charSearchInput" 
     placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
@@ -132,67 +132,71 @@
   <br>
 
   <div class="head">
-  <a href='src/assets/title1.png' target='_blank'>
+  <!--<a href='src/assets/title1.png' target='_blank'>-->
     <img src='src/assets/title1.png' alt='title1' width="1550" height="195">
   </a>
   </div>
 
   <!-- EX -->
-   <div class="tier-section">
+  <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/ex3.png" target="_blank">
       <img src="src/assets/tiers/ex3.png" class="tier-banner" alt="EX Tier">
-    </a>
+    </div>
+    <div class="tier-expl" onclick="openModal('ex-tier-modal')">Tier Explanation</div>
   </div>
 
-  <div class="tier-expl" onclick="openModal('ex-tier-modal')">Tier Explanation</div>
-  </div>  
-  
-  <div id="EX" class="tier-row">
+  <div id="toggle-btn-EX" class="tier-toggle-bar" onclick="toggleTierRow('EX')">
+    ▶ Display EX Tier
   </div>
+
+  <div id="EX" class="tier-row"></div>
 
   <br> 
 
   <!-- SS -->
-   <div class="tier-section">
+  <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/ss3.png" target="_blank">
       <img src="src/assets/tiers/ss3.png" class="tier-banner" alt="SS Tier">
-    </a>
-  </div>
-  
-  <div class="tier-expl" onclick="openModal('ss-tier-modal')">Tier Explanation</div>
+    </div>
+    <div class="tier-expl" onclick="openModal('ss-tier-modal')">Tier Explanation</div>
   </div>
 
-  <div id="SS" class="tier-row">
+  <div id="toggle-btn-SS" class="tier-toggle-bar" onclick="toggleTierRow('SS')">
+    ▶ Display SS Tier
   </div>
+
+  <div id="SS" class="tier-row"></div>
 
   <br> 
 
   <!-- S -->
-     <div class="tier-section">
+  <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/s3.png" target="_blank">
       <img src="src/assets/tiers/s3.png" class="tier-banner" alt="S Tier">
-    </a>
+    </div>
+    <div class="tier-expl" onclick="openModal('s-tier-modal')">Tier Explanation</div>
   </div>
-  
-  <div class="tier-expl" onclick="openModal('s-tier-modal')">Tier Explanation</div>
+
+  <div id="toggle-btn-S" class="tier-toggle-bar" onclick="toggleTierRow('S')">
+    ▶ Display S Tier
   </div>
+
   <div id="S" class="tier-row"></div>
 
   <br>
 
   <!-- A -->
-   <div class="tier-section">
+  <div class="tier-section">
     <div class="tiers">
-    <a href="src/assets/tiers/a3.png" target="_blank">
       <img src="src/assets/tiers/a3.png" class="tier-banner" alt="A Tier">
-    </a>
+    </div>
+    <div class="tier-expl" onclick="openModal('a-tier-modal')">Tier Explanation</div>
   </div>
-  
-  <div class="tier-expl" onclick="openModal('a-tier-modal')">Tier Explanation</div>
+
+  <div id="toggle-btn-A" class="tier-toggle-bar" onclick="toggleTierRow('A')">
+    ▶ Display A Tier
   </div>
+
   <div id="A" class="tier-row"></div>
 
   <br>
@@ -206,10 +210,10 @@
   </div>
 
   <div id="toggle-btn-B" class="tier-toggle-bar" onclick="toggleTierRow('B')">
-    ▶ Display B Tier
+    ▼ Hide Tier B
   </div>
 
-  <div id="B" class="tier-row collapsed"></div>
+  <div id="B" class="tier-row"></div>
 
   <br>
 
@@ -225,7 +229,7 @@
     ▶ Display C Tier
   </div>
 
-  <div id="C" class="tier-row collapsed"></div>
+  <div id="C" class="tier-row"></div>
 
   <br>
 
@@ -241,7 +245,7 @@
     ▶ Display D Tier
   </div>
 
-  <div id="D" class="tier-row collapsed"></div>
+  <div id="D" class="tier-row"></div>
 
   <br>
 
@@ -257,11 +261,11 @@
     ▶ Display E Tier
   </div>
 
-  <div id="E" class="tier-row collapsed"></div>
+  <div id="E" class="tier-row"></div>
 
   <br>
 
-  <!-- Yukkuri -->
+  <!-- Yukkuri
    <div class="tier-section">
     <div class="tiers">
     <a href="src/assets/tiers/yukkuri2.png" target="_blank">
@@ -271,6 +275,19 @@
   
   <div class="tier-expl" onclick="openModal('y-tier-modal')">Tier... Explanation...</div>
   </div>
+  <div id="Yukkuri" class="tier-row"></div>-->
+
+    <div class="tier-section">
+    <div class="tiers">
+      <img src="src/assets/tiers/yukkuri2.png" class="tier-banner" alt="Yukkuri Tier">
+    </div>
+    <div class="tier-expl" onclick="openModal('y-tier-modal')">Tier... Explanation...</div>
+  </div>
+
+  <div id="toggle-btn-Y" class="tier-toggle-bar" onclick="toggleTierRow('Yukkuri')">
+    ▶ Display Yukkuri Tier
+  </div>
+
   <div id="Yukkuri" class="tier-row"></div>
 
   <br>
@@ -293,45 +310,59 @@
     });
 
     // clear and inject character images, main tierlist function ------------------------------------------------------------------
-    function renderTierList(charList) {
-      const countDisplay = document.getElementById("total-character-count");
-      if (countDisplay) {
-        countDisplay.textContent = charList.length;
-      }
-      const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
-
-      activeTiers.forEach(tier => {
-        const container = document.getElementById(tier);
-        if (container) {
-          container.innerHTML = ""; // Clear out previous items
-
-          charList
-            .filter(item => item.tier === tier)
-            .forEach(item => {
-              const imgContainer = document.createElement("div");
-              imgContainer.style.display = "inline-block";
-
-              imgContainer.innerHTML = `
-                <img src="src/assets/chara/${item.img}" 
-                    alt="${item.name}" 
-                    title="${item.name}" 
-                    class="charicon" 
-                    loading="lazy" />
-                <div class="cname">${item.name}</div>
-                <div class="expl">Explanation</div>
-              `; 
-
-              container.appendChild(imgContainer);
-
-              // Explanation button listener
-              const expBtn = imgContainer.querySelector(".expl");
-              expBtn.addEventListener("click", () => {
-                openExplanationModal(item);
-              });
-            });
-        }
-      });
+  function renderTierList(charList) {
+    // 1. Update total/filtered count display
+    const countDisplay = document.getElementById("total-character-count");
+    if (countDisplay) {
+      countDisplay.textContent = charList.length;
     }
+
+    // 2. Check if the user is typing in the search bar
+    const searchInput = document.getElementById("charSearchInput");
+    const isSearching = searchInput && searchInput.value.trim().length > 0;
+
+    const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
+
+    activeTiers.forEach(tier => {
+      const container = document.getElementById(tier);
+      if (container) {
+        container.innerHTML = ""; // Clear previous cards
+
+        const matches = charList.filter(item => item.tier === tier);
+        
+        if (isSearching && matches.length > 0) {
+          container.classList.remove("collapsed");
+          const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
+          if (toggleBtn) {
+            toggleBtn.textContent = `▼ Hide Tier ${tier}`;
+          }
+        }
+
+        // Render matching character cards
+        matches.forEach(item => {
+          const imgContainer = document.createElement("div");
+          imgContainer.style.display = "inline-block";
+
+          imgContainer.innerHTML = `
+            <img src="src/assets/chara/${item.img}" 
+                alt="${item.name}" 
+                title="${item.name}" 
+                class="charicon" 
+                loading="lazy" />
+            <div class="cname">${item.name}</div>
+            <div class="expl">Explanation</div>
+          `;
+
+          container.appendChild(imgContainer);
+
+          const expBtn = imgContainer.querySelector(".expl");
+          expBtn.addEventListener("click", () => {
+            openExplanationModal(item);
+          });
+        });
+      }
+    });
+  }
 
     function openExplanationModal(character) {
       const modal = document.getElementById("expls");
