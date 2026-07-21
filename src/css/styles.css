@@ -528,3 +528,25 @@ label[for="mode_dark"] { display: grid; }
   font-weight: bold;
   font-size: 20px;
 }
+
+.expl-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  max-width: 1550px;
+  margin: 8px auto;
+  padding: 0 10px;
+}
+
+.expl-container .tier-expl {
+  flex: 1;      
+  width: auto;  
+  margin: 0; 
+}
+
+@media (max-width: 600px) {
+  .expl-container {
+    flex-direction: column;
+  }
+}
