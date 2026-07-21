@@ -26,43 +26,39 @@
 
 <body>
   <div class="Frontpage">
-  <div class="collapse-bar">
-    <label for="toggle-intro" class="collapse-label">
-      <input type="checkbox" id="toggle-intro">
-      <span>I Don't Want To See This Stuff</span>
-    </label>
-  </div>
+    <div class="collapse-bar">
+      <label for="toggle-intro" class="collapse-label">
+        <input type="checkbox" id="toggle-intro">
+        <span>I Don't Want To See This Stuff</span>
+      </label>
+    </div>
+    <div id="intro-content">
 
-  <h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
-  <!--<a href="https://medicinemelancholy0.github.io/THLWTierlist/criteria"><strong>Tiering Criteria</strong></a>
-  <a href="https://medicinemelancholy0.github.io/THLWTierlist/info">FAQ, Glossary, Links</a>
-  <a href="https://medicinemelancholy0.github.io/THLWTierlist/changelog"><strong>Changelog</strong></a>-->
-  
-  <p>Explanations are available for every Character and Tier, visible by clicking on them. Read them to understand how units are ranked as it is not just vibes and they follow a system. Further explanations are available in the Tiering Criteria Section and in the Tier/Character explanations, please read them before making a complaint.</p>
-  <p><strong>Other important Criterias to keep in mind:</strong></p>
-  <p>Only EX, SS, S, and Yukkuri tiers are ordered.</p>
-  <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards (INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
-  <div class="Important Links">
-    <a href="https://discord.gg/TCjp7VMTps"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
-    <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753"><strong>Calc Sheet (IMPORTANT!)</strong></a>
-  </div>
+      <h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
+      
+      <p>Explanations are available for every Character and Tier, visible by clicking on them. Read them to understand how units are ranked as it is not just vibes and they follow a system. Further explanations are available in the Tiering Criteria Section and in the Tier/Character explanations, please read them before making a complaint.</p>
+      <p><strong>Other important Criterias to keep in mind:</strong></p>
+      <p>Only EX, SS, S, and Yukkuri tiers are ordered.</p>
+      <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards (INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
+      <div class="Important Links">
+        <a href="https://discord.gg/TCjp7VMTps"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
+        <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753"><strong>Calc Sheet (IMPORTANT!)</strong></a>
+      </div>
 
-  <div class="tier-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
-  <div class="tier-expl" onclick="openModal('criteria-modal')">Tiering Criteria</div>
-  <div class="tier-expl" onclick="openModal('faq-modal')">FAQ</div>
-  <div class="tier-expl" onclick="openModal('changelog-modal')">Changelog</div>
-  <!--
-  <div class="def-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
-  </div>-->  
-  
-  <h2>Dark & Light Mode Toggle</h2>
-  <div class="theme-toggle">
-    <input type="radio" id="mode_dark" name="mode" value="dark">
-    <label for="mode_dark" aria-label="Switch to dark mode">🌙</label>
-    <input type="radio" id="mode_light" name="mode" value="light">
-    <label for="mode_light" aria-label="Switch to light mode">☀️</label>
+      <div class="tier-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
+      <div class="tier-expl" onclick="openModal('criteria-modal')">Tiering Criteria</div>
+      <div class="tier-expl" onclick="openModal('faq-modal')">FAQ</div>
+      <div class="tier-expl" onclick="openModal('changelog-modal')">Changelog</div>
+    </div>
+
+    <h2>Dark & Light Mode Toggle</h2>
+    <div class="theme-toggle">
+      <input type="radio" id="mode_dark" name="mode" value="dark">
+      <label for="mode_dark" aria-label="Switch to dark mode">🌙</label>
+      <input type="radio" id="mode_light" name="mode" value="light">
+      <label for="mode_light" aria-label="Switch to light mode">☀️</label>
+    </div>
   </div>
-</div>
 
   <!--
   <div class="options-wrapper">
@@ -880,49 +876,26 @@
 </script>
 
 <script>
-  // Cookie helper functions
-function setCookie(name, value, days) {
-  let expires = "";
-  if (days) {
-    const date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    expires = "; expires=" + date.toUTCString();
-  }
-  document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
-}
-
-function getCookie(name) {
-  const nameEQ = name + "=";
-  const ca = document.cookie.split(';');
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i].trim();
-    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-  }
-  return null;
-}
-
-// Initialize collapse handler on page load
 document.addEventListener("DOMContentLoaded", () => {
   const checkbox = document.getElementById("toggle-intro");
   const introContent = document.getElementById("intro-content");
 
-  // Read cookie state
-  const isCollapsed = getCookie("intro_collapsed") === "true";
+  if (!checkbox || !introContent) return;
 
-  // Apply initial state
+  const isCollapsed = localStorage.getItem("intro_collapsed") === "true";
+
   if (isCollapsed) {
     checkbox.checked = true;
     introContent.classList.add("is-collapsed");
   }
 
-  // Listen for user checkbox toggle
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) {
       introContent.classList.add("is-collapsed");
-      setCookie("intro_collapsed", "true", 365); // Save preference for 1 year
+      localStorage.setItem("intro_collapsed", "true");
     } else {
       introContent.classList.remove("is-collapsed");
-      setCookie("intro_collapsed", "false", 365);
+      localStorage.setItem("intro_collapsed", "false");
     }
   });
 });
