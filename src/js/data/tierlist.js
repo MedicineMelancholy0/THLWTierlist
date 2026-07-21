@@ -3871,7 +3871,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A19& Sanae",
-    img: "a19& sanae attacl.png",
+    img: "a19& sanae dbf.png",
     tier: "C",
     opts: { dbf: true, ex: true },
     explanation: {
@@ -6476,7 +6476,7 @@ dataSet[dataSetVersion].characterData = [
   { name: "A6 Cirno", img: "a6 cirno.png", tier: "E", opts: { dbf: true, a: true } },
   { name: "A6 Daiyousei", img: "a6 daiyousei.png", tier: "E", opts: { dbf: true, a: true } },
   { name: "A6 Sakuya", img: "a6 sakuya.png", tier: "E", opts: { atk: true, a: true } },
-  { name: "A6 Youmu", img: "youmu scar.jpg", tier: "E", opts: { dbf: true, a: true } },
+  { name: "A6 Youmu", img: "youmu scar.jpg", tier: "E", opts: { def: true, a: true } },
   { name: "A7 Youmu", img: "a7 youmu.png", tier: "E", opts: { dest: true, a: true } },
   { name: "A7 Yuyuko", img: "a7 yuyuko.png", tier: "E", opts: { supp: true, a: true } },
   { name: "A8 Reisen", img: "a6 reisen.png", tier: "E", opts: { spd: true, a: true } },
