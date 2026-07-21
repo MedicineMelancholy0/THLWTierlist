@@ -41,7 +41,7 @@
       <p><strong>Other important Criterias to keep in mind:</strong></p>
       <p>Only EX, SS, S, and Yukkuri tiers are ordered.</p>
       <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards (INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
-      <div class="Important Links">
+      <div class="Important-Links">
         <a href="https://discord.gg/TCjp7VMTps"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
         <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753"><strong>Calc Sheet (IMPORTANT!)</strong></a>
       </div>
@@ -88,27 +88,27 @@
   <label for="class8">Destroy</label>
   <br>
   
-  <h1>Filter by Rarity</h1>
-  <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
-  <label for="class9">Pure Fes</label>
-  <input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
-  <label for="class10">Epic Fes</label>
-  <input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
-  <label for="class11">Phantasm Fes</label>
-  <input type="checkbox" id="class12" value="r" onclick="filterRelicChars()">
-  <label for="class12">Relics and Genics</label>
-  <input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
-  <label for="class13">Extended Fes</label>
-  <input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
-  <label for="class18">Ultra Fes</label>
-  <input type="checkbox" id="class18" value="b" onclick="filterExChars()">
-  <label for="class14">Battle Pass</label>
-  <input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
-  <label for="class15">Festival</label>
-  <input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
-  <label for="class16">General</label>
-  <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
-  <label for="class17">Yukkuri</label>
+<h1>Filter by Rarity</h1>
+<input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
+<label for="class9">Pure Fes</label>
+<input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
+<label for="class10">Epic Fes</label>
+<input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
+<label for="class11">Phantasm Fes</label>
+<input type="checkbox" id="class12" value="r" onclick="filterRelicChars()">
+<label for="class12">Relics and Genics</label>
+<input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
+<label for="class13">Extended Fes</label>
+<input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
+<label for="class14">Ultra Fes</label>
+<input type="checkbox" id="class18" value="b" onclick="filterBattleChars()">
+<label for="class18">Battle Pass</label>
+<input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
+<label for="class15">Festival</label>
+<input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
+<label for="class16">General</label>
+<input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
+<label for="class17">Yukkuri</label>
 
   <div class="search-container">
   <input
@@ -146,7 +146,7 @@
   </div>
 
   <div id="toggle-btn-EX" class="tier-toggle-bar" onclick="toggleTierRow('EX')">
-    ▶ Display EX Tier
+     ▼ Hide EX Tier
   </div>
 
   <div id="EX" class="tier-row"></div>
@@ -162,7 +162,7 @@
   </div>
 
   <div id="toggle-btn-SS" class="tier-toggle-bar" onclick="toggleTierRow('SS')">
-    ▶ Display SS Tier
+     ▼ Hide SS Tier
   </div>
 
   <div id="SS" class="tier-row"></div>
@@ -178,7 +178,7 @@
   </div>
 
   <div id="toggle-btn-S" class="tier-toggle-bar" onclick="toggleTierRow('S')">
-    ▶ Display S Tier
+     ▼ Hide S Tier
   </div>
 
   <div id="S" class="tier-row"></div>
@@ -194,7 +194,7 @@
   </div>
 
   <div id="toggle-btn-A" class="tier-toggle-bar" onclick="toggleTierRow('A')">
-    ▶ Display A Tier
+     ▼ Hide A Tier
   </div>
 
   <div id="A" class="tier-row"></div>
@@ -210,7 +210,7 @@
   </div>
 
   <div id="toggle-btn-B" class="tier-toggle-bar" onclick="toggleTierRow('B')">
-    ▼ Hide Tier B
+    ▼ Hide B Tier
   </div>
 
   <div id="B" class="tier-row"></div>
@@ -226,7 +226,7 @@
   </div>
 
   <div id="toggle-btn-C" class="tier-toggle-bar" onclick="toggleTierRow('C')">
-    ▶ Display C Tier
+     ▼ Hide C Tier
   </div>
 
   <div id="C" class="tier-row"></div>
@@ -242,7 +242,7 @@
   </div>
 
   <div id="toggle-btn-D" class="tier-toggle-bar" onclick="toggleTierRow('D')">
-    ▶ Display D Tier
+     ▼ Hide D Tier
   </div>
 
   <div id="D" class="tier-row"></div>
@@ -258,7 +258,7 @@
   </div>
 
   <div id="toggle-btn-E" class="tier-toggle-bar" onclick="toggleTierRow('E')">
-    ▶ Display E Tier
+     ▼ Hide E Tier
   </div>
 
   <div id="E" class="tier-row"></div>
@@ -285,7 +285,7 @@
   </div>
 
   <div id="toggle-btn-Y" class="tier-toggle-bar" onclick="toggleTierRow('Yukkuri')">
-    ▶ Display Yukkuri Tier
+     ▼ Hide Yukkuri Tier
   </div>
 
   <div id="Yukkuri" class="tier-row"></div>
@@ -329,7 +329,7 @@
         container.innerHTML = ""; // Clear previous cards
 
         const matches = charList.filter(item => item.tier === tier);
-        
+
         if (isSearching && matches.length > 0) {
           container.classList.remove("collapsed");
           const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
@@ -445,7 +445,8 @@
   function applyFilters() {
     const searchInput = document.getElementById("charSearchInput");
     const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : "";
-    const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'));
+    const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+      .filter(box => box.id !== "toggle-intro");
     const activeKeys = checkedBoxes.map(box => box.value);
     const filtered = characters.filter(character => {
       const matchesSearch = character.name.toLowerCase().includes(searchQuery);
@@ -460,6 +461,7 @@
       return matchesSearch && matchesBoxes;
     });
     renderTierList(filtered);
+    
   }
 
     function filterDefChars() { applyFilters(); }
