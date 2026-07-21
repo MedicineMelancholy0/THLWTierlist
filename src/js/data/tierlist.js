@@ -12,8 +12,8 @@ function toggleTierRow(tierId) {
 
   if (toggleBtn) {
     toggleBtn.textContent = isNowCollapsed 
-      ? `▶ Show Tier ${tierId} (${container.children.length} Units)` 
-      : `▼ Hide Tier ${tierId}`;
+      ? `▶ Show ${tierId} Tier (${container.children.length} Units)` 
+      : `▼ Hide ${tierId} Tier`;
   }
 }
 
