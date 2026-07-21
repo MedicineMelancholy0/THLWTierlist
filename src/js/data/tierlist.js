@@ -3110,7 +3110,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "E1 Flandre",
+    name: "E1 Flandre (Prae)",
     img: "e1 flan (prae).png",
     tier: "B",
     opts: { atk: true, u: true },
@@ -4149,7 +4149,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "S5 Rin",
+    name: "S5 Rin (Orin)",
     img: "s5 rin.png",
     tier: "C",
     opts: { spd: true, u: true },
@@ -5750,7 +5750,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "S5 Utsuho",
+    name: "S5 Utsuho (Okuu)",
     img: "s5 utsuho.png",
     tier: "D",
     opts: { atk: true, u: true },
