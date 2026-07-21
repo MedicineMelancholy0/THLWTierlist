@@ -251,7 +251,7 @@ body.small-icons .expl {
   margin-right: auto;
 }
 
-.size-toggle-btn {
+#size-toggle-btn {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
