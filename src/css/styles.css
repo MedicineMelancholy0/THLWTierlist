@@ -21,6 +21,10 @@ a:link {
   margin-bottom: 10px;
 }
 
+.collapse-bar:has(#toggle-intro:checked) + #intro-content {
+  display: none;
+}
+
 .collapse-label {
   font-weight: bold;
   cursor: pointer;
@@ -30,7 +34,7 @@ a:link {
   gap: 6px;
 }
 
-.is-collapsed {
+.collapsed {
   display: none !important;
 }
 
@@ -454,10 +458,6 @@ label[for="mode_dark"] { display: grid; }
 }
 :root:has(#mode_light:checked) label[for="mode_dark"] {
    display: grid;
-}
-
-.tier-row.collapsed {
-  display: none !important;
 }
 
 .tier-toggle-bar {
