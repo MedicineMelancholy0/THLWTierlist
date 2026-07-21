@@ -1473,6 +1473,25 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "L10.1 Sakuya",
+    img: "l10.1 Sakuya.png",
+    tier: "A",
+    opts: { e: true, dest: true },
+    explanation: {
+      pros: [
+        "Big Last Word Damage supported by Damage to Eff and Res",
+        "Great Crit Sustainability & Support"
+      ],
+      cons: [
+        "Lacks Acc and P Sustainability",
+        "Awful Buff Cleanse Restoration, Poor Breaking, and Bad p0 AoE Spellcard Killers make using her between gauges very challenging"
+      ],
+      boons: [
+        "4 Para Inflict on Skill makes Pairing with her Much more Realistic"
+      ]
+    }
+  },
+  {
     name: "F1 Koishi",
     img: "f1 koishi.png",
     tier: "A",
