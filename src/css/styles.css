@@ -130,7 +130,7 @@ body.small-icons .expl {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 14px;
   padding: 8px;
   width: 100%;
   max-width: 1550px; 
@@ -178,8 +178,9 @@ body.small-icons .expl {
 }
 
 .cname {
-  container-type: inline-size;
-  font-size: clamp(9px, 11cqw, 14px); 
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
   width: 100%;
   max-width: 135px;
   height: 36px;
@@ -190,7 +191,9 @@ body.small-icons .expl {
   align-items: center;
   justify-content: center;
 }
+
 /*
+
 .cname {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(14px, 1.2vw, 28px);
