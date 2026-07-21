@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--Very basic idea of how forms work demonstrated with the two input types the form would use
+for any required inputs put required like you can see for the radio button for Very Satisfied
+if I recall for a group of radio buttons only one needs the required tag but I'd advise you to 
+double check how you should be handling that
+Appropriate styling should prevent the form elements from bunching together, namely the combination of display: block and float: left properties and of course margins-->
+
+<head>
+  <link rel="shortcut icon" href="src/assets/medi.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/medi.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:site_name" content="Touhou LostWord Community Tierlist Q/A And Feedback Form">
+  <meta name="og:description" content="Touhou LostWord Community Tierlist Q/A And Feedback Form">
+  <meta name="og:image" content="https://i.postimg.cc/mZKnsV9b/medi2.png">
+  <title>Touhou LostWord Community Tierlist Q/A And Feedback Form</title>
+
+  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
+  <title>Character Filtering</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="src/js/data/tierlist.js" defer></script>
+</head>
+
+
+<form action="responsecollectionpage.php"> <!--Directs to website where the response can be submitted and viewed by tierlist contributors, 
+    I am unfortunately unfamiliar with php so I'd suggest looking for the appropriate tutorials or asking someone who might be-->
+    <p>How satisfied are you with the current CHARACTER PLACEMENT layout of the tierlist?</p>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="verySatisfied" required>
+        Very Satisfied
+    </label>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="satisfied">
+        Satisfied
+    </label>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="neutral">
+        Neutral/idk
+    </label>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="unsatisified">
+        Unsatisfied
+    </label>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="veryUnsatisfied">
+        Very Unsatisfied
+    </label>
+
+    <br>
+
+    <p>How satisfied are you with the current LAYOUT of the tierlist?</p>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="verySatisfied" required>
+        Very Satisfied
+    </label>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="satisfied">
+        Satisfied
+    </label>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="neutral">
+        Neutral/idk
+    </label>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="unsatisified">
+        Unsatisfied
+    </label>
+    <label for="satisfaction">
+        <input type="radio" name="satisfaction" value="veryUnsatisfied">
+        Very Unsatisfied
+    </label>
+
+    <br><br>
+    <br>
+
+    <label for="layoutFeedback">What changes would you make to the TL layout?</label>
+    <br>
+    <textarea id="layoutFeedback" placeholder="N/A"></textarea>
+
+    <input type="submit">
+
+</form>
