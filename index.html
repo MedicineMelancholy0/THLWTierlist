@@ -108,6 +108,29 @@
   <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
   <label for="class17">Yukkuri</label>
 
+  <div class="search-container">
+  <input 
+    type="text" 
+    id="charSearchInput" 
+    placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
+    autocomplete="off"
+  />
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("charSearchInput");
+
+  if (searchInput) {
+  searchInput.addEventListener("input", (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    const filteredList = masterCharList.filter(character => 
+      character.name.toLowerCase().includes(query)
+    );
+    renderTierList(filteredList);
+  });
+}
+  </script>
+
   <br>
 
   <div class="head">
@@ -563,7 +586,20 @@
   </table>
 </div>
 
-  <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 17/7/2026</p>
+
+  <h1>Credits:</h1>
+  <img src='src/assets/chara/l1 kogasa.png' alt='title1' width="150" height="150">
+  <p><b>Medi</b> - Main Tierlist Dev. Being a Kogasa and Medicine fan is my only personality trait.</p>
+  <a href="https://archiveofourown.org/series/3691483"><strong>Read my Fanfic! Flandre's Bizarre Adventure</strong></a>
+  <a href="https://x.com/Medigasa"><strong>Check out my Twitter! (Comission Me!)</strong></a>
+
+  <img src='src/assets/chara/l1 hibi.png' alt='title1' width="150" height="150">
+  <p><b>Hibi</b> - Main Discord & Calc Person. Yapper extraordinare.</p>
+
+  <img src='src/assets/chara/l1 kuro.png' alt='title1' width="150" height="60">
+  <p><b>Kuro</b> - ✞︎☜︎☼︎✡︎📬︎ ✞︎☜︎☼︎✡︎📬︎ ✋︎☠︎❄︎☜︎☼︎☜︎💧︎❄︎✋︎☠︎☝︎</p>
+
+  <p>Tierlist Beta 0.0.1, Copyright @MedicineMelancholy0, Updated 20/7/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
 
   <div id="expls" class="modal">
