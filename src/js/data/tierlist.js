@@ -914,26 +914,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "C3< Nitori", 
-    img: "fall nitori.png", 
-    tier: "S", 
-    opts: { tec: true, e: true },
-    explanation: {
-      pros: [
-        "High Damage Output across All Spells, supported by Good Buffs + Being Slow makes her Easy to Support",
-        "Breaking 4 sets of Anomalies Instantly on her AoE + Inflicting 4 on Skill lets her pair with almost any Yin unit"
-      ],
-      mixed: [
-        "Killer Range is not as wide as you would like which can limit her use, though she should generally always kill water weak enemies",
-        "Self Charge is somewhat cringe for her breaking role but not the worst thing in the world",
-        "Needs more Yin Def & Crit Atk between gauges"
-      ],
-      cons: [
-        "Wants more debuffs to maximize damage"
-      ]
-    }
-  },
-  { 
     name: "C3≥ Nitori", 
     img: "mech nitori.png", 
     tier: "S", 
@@ -978,6 +958,26 @@ dataSet[dataSetVersion].characterData = [
       extra: [
         "expounding on the first ?; not only does she have killer issue but when used as the unit to absorb buffs (her better role if aligned), she seriously just runs out of yin attack and crit attack too fast. supplemented by cards somewhat, but its why shes here. In theory she works but she ends up unable to push her damage far enough.",
         "Notable teammates: L80 Kasen, C3int Reisen, Gengetsu, C8<< Kokoro, F1 Marisa",
+      ]
+    }
+  },
+  { 
+    name: "C3< Nitori", 
+    img: "fall nitori.png", 
+    tier: "S", 
+    opts: { tec: true, e: true },
+    explanation: {
+      pros: [
+        "High Damage Output across All Spells, supported by Good Buffs + Being Slow makes her Easy to Support",
+        "Breaking 4 sets of Anomalies Instantly on her AoE + Inflicting 4 on Skill lets her pair with almost any Yin unit"
+      ],
+      mixed: [
+        "Killer Range is not as wide as you would like which can limit her use, though she should generally always kill water weak enemies",
+        "Self Charge is somewhat cringe for her breaking role but not the worst thing in the world",
+        "Needs more Yin Def & Crit Atk between gauges"
+      ],
+      cons: [
+        "Wants more debuffs to maximize damage"
       ]
     }
   },
