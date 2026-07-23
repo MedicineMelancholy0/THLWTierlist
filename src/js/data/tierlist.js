@@ -1259,6 +1259,28 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "Cf1 Reimu",
+    img: "cf1 reimu.png",
+    tier: "A",
+    opts: { tec: true, e: true },
+    explanation: {
+      pros: [
+        "Extremely High Damage to Res that she can Support makes her and her party have Decently Practical Damage on Res",
+        "7/7 Breaks make her value skyrocket"
+      ],
+      mixed: [
+        "Though her Damage is still High she Lacks p0 Killer Across her Entire Kit which does hurt her quite a bit",
+        "Can't act as a Geng despite having 7/7 breaks due to generally lacking good buffs and having low util outside of breaking so in practice she still kinda needs to be carried"
+      ],
+      cons: [
+        "Generally lacks t1 buffs across all 3 gauges, made even worse thanks to having double quick and high innate agi"
+      ],
+      extra: [
+        "Usage: Do not ever even THINK of using this unit without an amazingly competent AoE damage unit because she will just fucking die immediately she genuinely does nothing of value outside of having an upgraded version of eextewi skill but somehow worse util like what are we doing"
+      ]
+    }
+  }
+  {
     name: "Ce1 Flandre",
     img: "C3 prae2.png",
     tier: "A",
@@ -1986,6 +2008,27 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "AoE Killer leaves a lot to be desired even if not technically bad numerically speaking, killers in general are very heavily carried by Parallel Presence killer in her Last Word which is a known unstable range.",
         "Needs a good deal of Crit Atk and P to maximize her usage"
+      ]
+    }
+  },
+  {
+    name: "D8;9 Yuyuko",
+    img: "d8;9 yuyuko.png",
+    tier: "A",
+    opts: { atk: true, b: true },
+    explanation: {
+      pros: [
+        "Decently High Damage across her AoE and Last Word supported by Wide Killers",
+        "Decent Buffs and Util throughout her Kit"
+      ],
+      mixed: [
+        "AoE and Last Word can never hit 10 yin attack because her p0 has self -1 yin atk for some reason"
+      ],
+      cons: [
+        "Though she follows A tier philosophy and kit metrics, generally just lacks the numbers to be higher, similar to the other battle pass units"
+      ],
+      extra: [
+        "Usage: Her AoE is 75% of her value as it has p0 found pres much like bp flan, plus it can break."
       ]
     }
   },
