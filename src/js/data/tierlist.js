@@ -1454,7 +1454,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Cf1# Reimu",
-    img: "cf1 reimu.png",
+    img: "ny reimu.png",
     tier: "A",
     opts: { spd: true, e: true },
     explanation: {
