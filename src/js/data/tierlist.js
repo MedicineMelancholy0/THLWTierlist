@@ -1279,7 +1279,7 @@ dataSet[dataSetVersion].characterData = [
         "Usage: Do not ever even THINK of using this unit without an amazingly competent AoE damage unit because she will just fucking die immediately she genuinely does nothing of value outside of having an upgraded version of eextewi skill but somehow worse util like what are we doing"
       ]
     }
-  }
+  },
   {
     name: "Ce1 Flandre",
     img: "C3 prae2.png",
