@@ -253,8 +253,6 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
-  
-  // start of SS
   { 
     name: "F1 Marisa", 
     img: "f1 mors.png", 
@@ -293,7 +291,7 @@ dataSet[dataSetVersion].characterData = [
   { 
     name: "Cb3# Reisen", 
     img: "cb3 reisen.png", 
-    tier: "SS", 
+    tier: "EX", 
     opts: { e: true, dbf: true },
     explanation: {
       pros: [
@@ -316,7 +314,7 @@ dataSet[dataSetVersion].characterData = [
   { 
     name: "L80 Yukari", 
     img: "l80 yukari.png", 
-    tier: "SS", 
+    tier: "EX", 
     opts: { r: true, atk: true },
     explanation: {
       pros: [
@@ -334,6 +332,7 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  // start of SS
   { 
     name: "A6æ Rumia", 
     img: "phfes rumia.png", 
@@ -1446,7 +1445,6 @@ dataSet[dataSetVersion].characterData = [
         "Has her P and Anom Inflict Skill Seperated making her MUCH better for Duos. This is combined with Competent Buff Counts on Gauge 1+2 makes her actually not bad for Duos.",
         "Has Full Anom Immunity (lol)"
       ],
-      nitpicks: [],
       mixed: [
         "AoE Benefits Very Little from Crit Acc II Meaning there's 0 Damage Amp and her AoE Damage Falls off a Cliff Unless you hit Niche Killers"
       ]
@@ -2028,7 +2026,7 @@ dataSet[dataSetVersion].characterData = [
         "Though she follows A tier philosophy and kit metrics, generally just lacks the numbers to be higher, similar to the other battle pass units"
       ],
       extra: [
-        "Usage: Her AoE is 75% of her value as it has p0 found pres much like bp flan, plus it can break."
+        "Usage: Her AoE is 75% of her value as it has found pres much like bp flan, plus it can break. Note this AoE is very backloaded and the Found pres is only on line 6"
       ]
     }
   },
