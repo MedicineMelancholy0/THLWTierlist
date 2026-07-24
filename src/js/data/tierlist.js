@@ -289,6 +289,27 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "L80 Yukari", 
+    img: "l80 yukari.png", 
+    tier: "EX", 
+    opts: { r: true, atk: true },
+    explanation: {
+      pros: [
+        "Massive Damage with Great Killers Across the Board Backed Up by Great Cards (Ikaruga) and Great Dmg to Res. Basically the best G3 Nuke in the game.",
+        "Very High Buff Counts on All Gauges to Support said Damage, along with being easy to support thanks to having low Agility (Also giving her Rank II Skills more value by giving them an actual Rank I platform to multiply off of)"
+      ],
+      mixed: [
+        "Wants more Yin Atk/Def on Last Word"
+      ],
+      nitpick: [
+        "2t Gimmicks are Kinda Annoying but Mostly Savable"
+      ],
+      cons: [
+        "Lacks Utility outside of Party P (Self Acc)"
+      ]
+    }
+  },
+  { 
     name: "Cb3# Reisen", 
     img: "cb3 reisen.png", 
     tier: "EX", 
@@ -308,27 +329,6 @@ dataSet[dataSetVersion].characterData = [
       extra: [
         "usage: imma be so fr guys this character is ex++ with a character liek cz2 backing her and then if you suddenly dont use cz2 youre kinda fucked. HOWEVER what Reisen really excels at is simply obscene damage amp. for chars who generally have sufficient self buffs (like Ex Yuuka) hence she has a non-negligible amount of duos and practical use.",
         "note: 50% AGI sync is slightly overrated, modern units typically have more damage from their atk side than their scaling side thanks to rank ii attack being spammed on everyone's last gauge, so while nice it isnt like \"oh youre buffing 2/3rds of the damage thats op\""
-      ]
-    }
-  },
-  { 
-    name: "L80 Yukari", 
-    img: "l80 yukari.png", 
-    tier: "EX", 
-    opts: { r: true, atk: true },
-    explanation: {
-      pros: [
-        "Massive Damage with Great Killers Across the Board Backed Up by Great Cards (Ikaruga) and Great Dmg to Res. Basically the best G3 Nuke in the game.",
-        "Very High Buff Counts on All Gauges to Support said Damage, along with being easy to support thanks to having low Agility (Also giving her Rank II Skills more value by giving them an actual Rank I platform to multiply off of)"
-      ],
-      mixed: [
-        "Wants more Yin Atk/Def on Last Word"
-      ],
-      nitpick: [
-        "2t Gimmicks are Kinda Annoying but Mostly Savable"
-      ],
-      cons: [
-        "Lacks Utility outside of Party P (Self Acc)"
       ]
     }
   },
