@@ -4065,6 +4065,30 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "B1 Reisen",
+    img: "b1 reisen.png",
+    tier: "C",
+    opts: { atk: true, u: true },
+    explanation: {
+      pros: [
+        "Big Damage Potential",
+        "Decently Self Sufficient, Decent Support"
+      ],
+      mixed: [
+        "Can't Take Advantage of her Crit Acc Buffs",
+        "Needs more Crit Atk Support"
+      ],
+      cons: [
+        "Poor Anomaly Breaks",
+        "Middling Spell Damage"
+      ],
+      extra: [
+        "Great Voice",
+        "awful voice"
+      ]
+    }
+  },
+  {
     name: "B2 Junko",
     img: "b2 junko.png",
     tier: "C",
@@ -4101,7 +4125,8 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "Generally Lacks Util or Debuffs",
-        "Disjointed Elemental Spread"
+        "Disjointed Elemental Spread",
+        "Being full specular is a debuff"
       ],
       nitpick: [
         "Needs P Support"
@@ -5567,30 +5592,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "Lacks Util outside of Breaks"
-      ]
-    }
-  },
-  {
-    name: "B1 Reisen",
-    img: "b1 reisen.png",
-    tier: "D",
-    opts: { atk: true, u: true },
-    explanation: {
-      pros: [
-        "Big Damage Potential",
-        "Decently Self Sufficient, Decent Support"
-      ],
-      mixed: [
-        "Can't Take Advantage of her Crit Acc Buffs",
-        "Needs more Crit Atk Support"
-      ],
-      cons: [
-        "Poor Anomaly Breaks",
-        "Middling Spell Damage"
-      ],
-      extra: [
-        "Great Voice",
-        "awful voice"
       ]
     }
   },
