@@ -340,7 +340,7 @@ dataSet[dataSetVersion].characterData = [
     opts: { dest: true, ph: true },
     explanation: {
       pros: [
-        "L0g-Tier Damage Numbers across the Board complemented both by Wide Killer Range and High Natural Crit Counts",
+        "L0g-Tier Damage Numbers across the Board complemented both by High Natural Crit Counts",
         "Aforementioned Damage Numbers are Supported by Good T1 Buffs and Great Rank II's, along with the ever-useful 50% Light -3 Def Down D-Cards",
         "All this with basically Negative P issues allowing her to Spam Damage + Breaks + Debuffs without running out of Gas"
       ],
@@ -628,54 +628,6 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
- { 
-    name: "A14.5& Mamizou", 
-    img: "A15.5& Mamizou.png", 
-    tier: "SS", 
-    opts: { dbf: true, ex: true },
-    explanation: {
-      pros: [
-        "High damage spells complimented by good killer, average lw nuke effectively carried by defense down patching all damage inconsistency",
-        "Just spams breaks from her spells",
-        "Support from her kit is very good, particularly good for buff remove stages and further compliments her ability to be a support/buff bot",
-        "Killer is perfect overlap, leading to her being very reliable"
-      ],
-      mixed: [
-        "Unlike other units around her, she is p hungry and wants to spam boosts, leading to poor card usability without sacrifice."
-      ],
-      cons: [
-        "Amazing buffing is spread throughout spells not as concentrated on skills (admits to having amazing support)",
-        "Utility outside breaking is very bad (admits to having atleast decent breaking utility)",
-        "LONGEST AOE ANIM (sc2) LITERALLY 22.5 SECONDS"
-      ],
-      extra: [
-        "Listen guys im trying to be unbiased but its getting to a point where im sounding biased against her. Her weaknesses arent even weaknesses we put for some of these other units. To top it all off, she has amazing off ele content performance in a no poison immune stage as a breaker supporter debuffer potentially nuker etc. Basically another mvmors/gengetsu who has nuking aoe like what?? her first aoe hits 1mil easily no bis rn!!",
-        "NOTABLE PAIRINGS (Not included in tiering): Any yang unit who isn't Earth"
-      ]
-    }
-  },
-  {
-    name: "C5> Hecatia",
-    img: "spring hecatia.png",
-    tier: "SS",
-    opts: { e: true, atk: true },
-    explanation: {
-      pros: [
-        "Consistent Yang/Crit Support complemented by Innate Self-Sustainability through Spd Anoms ",
-        "Great LW Damage is complemented by Innate Debuffs + Access to Barrier Status D-Cards"
-      ],
-      mixed: [
-        "AoE Spellcard is Held Back by Bad p0 killers (damage drastically rises against Humans) and 5/2 Breaks. This can also come into confliction with her Spd Anoms since if nobody is outspeeding her then her AoE just kinda does nothing because it's 2 breaks (lol).",
-        "Passable into buff remove but could be better (2 crit atk on AoE is kinda... lol)"
-      ],
-      cons: [
-        "Tends to Lack Utility outside of Party P and Anomaly Infliction. Similarly lacks Party Agi outside of Sk2"
-      ],
-      nitpick: [
-        "Not Freeze Immune",
-      ]
-    }
-  },
   {
     name: "C3>> Yorihime",
     img: "c3 yorihime.png",
@@ -696,6 +648,54 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   // start of S
+  { 
+  name: "A14.5& Mamizou", 
+  img: "A15.5& Mamizou.png", 
+  tier: "S", 
+  opts: { dbf: true, ex: true },
+  explanation: {
+    pros: [
+      "High damage spells complimented by good killer, average lw nuke effectively carried by defense down patching all damage inconsistency",
+      "Just spams breaks from her spells",
+      "Support from her kit is very good, particularly good for buff remove stages and further compliments her ability to be a support/buff bot",
+      "Killer is perfect overlap, leading to her being very reliable"
+    ],
+    mixed: [
+      "Unlike other units around her, she is p hungry and wants to spam boosts, leading to poor card usability without sacrifice."
+    ],
+    cons: [
+      "Amazing buffing is spread throughout spells not as concentrated on skills (admits to having amazing support)",
+      "Utility outside breaking is very bad (admits to having atleast decent breaking utility)",
+      "LONGEST AOE ANIM (sc2) LITERALLY 22.5 SECONDS"
+    ],
+    extra: [
+      "Listen guys im trying to be unbiased but its getting to a point where im sounding biased against her. Her weaknesses arent even weaknesses we put for some of these other units. To top it all off, she has amazing off ele content performance in a no poison immune stage as a breaker supporter debuffer potentially nuker etc. Basically another mvmors/gengetsu who has nuking aoe like what?? her first aoe hits 1mil easily no bis rn!!",
+      "NOTABLE PAIRINGS (Not included in tiering): Any yang unit who isn't Earth"
+    ]
+  }
+},
+{
+  name: "C5> Hecatia",
+  img: "spring hecatia.png",
+  tier: "S",
+  opts: { e: true, atk: true },
+  explanation: {
+    pros: [
+      "Consistent Yang/Crit Support complemented by Innate Self-Sustainability through Spd Anoms ",
+      "Great LW Damage is complemented by Innate Debuffs + Access to Barrier Status D-Cards"
+    ],
+    mixed: [
+      "AoE Spellcard is Held Back by Bad p0 killers (damage drastically rises against Humans) and 5/2 Breaks. This can also come into confliction with her Spd Anoms since if nobody is outspeeding her then her AoE just kinda does nothing because it's 2 breaks (lol).",
+      "Passable into buff remove but could be better (2 crit atk on AoE is kinda... lol)"
+    ],
+    cons: [
+      "Tends to Lack Utility outside of Party P and Anomaly Infliction. Similarly lacks Party Agi outside of Sk2"
+    ],
+    nitpick: [
+      "Not Freeze Immune",
+    ]
+  }
+},
 { 
     name: "C3∫ Reisen", 
     img: "C3integral reisen supp.png", 
