@@ -114,7 +114,7 @@
 </button>
 
 <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
-  Hide Explanation Buttons
+  Hide Explanation Buttons (You can click on the char icon)
 </button>
 
 <script>
@@ -1067,6 +1067,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('expl-toggle-btn');
     if (btn) btn.textContent = 'Show Explanation Buttons';
   }
+  applyFilters();
 });
 </script>
 </body>
