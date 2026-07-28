@@ -1040,13 +1040,14 @@ function fitNameplateText() {
       el.innerHTML = '';
       el.appendChild(span);
     }
-    const style = window.getComputedStyle(el);
-    const padding = (parseFloat(style.paddingLeft) || 0) + (parseFloat(style.paddingRight) || 0);
-    const maxAllowedWidth = el.clientWidth - padding - 2; 
-
-    if (maxAllowedWidth <= 0) return; 
     let size = 28;
     span.style.fontSize = size + 'px';
+    const style = window.getComputedStyle(el);
+    const padding = (parseFloat(style.paddingLeft) || 0) + (parseFloat(style.paddingRight) || 0);
+    const maxAllowedWidth = el.clientWidth - padding - 2;
+
+    if (maxAllowedWidth <= 0) return;
+
     while (span.offsetWidth > maxAllowedWidth && size > 8) {
       size -= 0.5;
       span.style.fontSize = size + 'px';
