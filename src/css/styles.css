@@ -618,13 +618,13 @@ body::before {
   top: -15vh;
   left: 0;
   width: 100vw;
-  height: 130vh; /* taller than viewport so it has room to shift without showing gaps */
-  background: url("cavern.png") no-repeat center center;
+  height: 130vh;
+  background: url("cavern.png") no-repeat center top;
   background-size: cover;
   opacity: 0.5;
   z-index: -1;
   pointer-events: none;
-  transform: translateY(calc(var(--scroll-y, 0) * 0.3px));
+  transform: translateY(var(--parallax-offset, 0px));
   will-change: transform;
 }
 
