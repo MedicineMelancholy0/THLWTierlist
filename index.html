@@ -64,11 +64,6 @@
   </div>
   </div>
 
-  <!--
-  <div class="options-wrapper">
-    <div class="options"></div>
-  </div>-->
-
   <br>
 
   <h1>Filter by Class</h1>
@@ -159,6 +154,35 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   </script>
+
+  <div class="tier-nav">
+  <button onclick="jumpToTier('EX')">EX</button>
+  <button onclick="jumpToTier('SS')">SS</button>
+  <button onclick="jumpToTier('S')">S</button>
+  <button onclick="jumpToTier('A')">A</button>
+  <button onclick="jumpToTier('B')">B</button>
+  <button onclick="jumpToTier('C')">C</button>
+  <button onclick="jumpToTier('D')">D</button>
+  <button onclick="jumpToTier('E')">E</button>
+  <button onclick="jumpToTier('Yukkuri')">Yukkuri</button>
+</div>
+
+<script>
+  function jumpToTier(tierId) {
+  const group = document.getElementById(`tier-group-${tierId}`);
+  if (!group) return;
+  if (getComputedStyle(group).display === 'none') {
+    alert(`No ${tierId} tier characters match your current filters.`);
+    return;
+  }
+  const row = document.getElementById(tierId);
+  if (row && row.classList.contains('collapsed')) {
+    toggleTierRow(tierId);
+  }
+
+  group.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
 
   <br>
 
@@ -603,7 +627,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <img src='src/assets/chara/l1 kuro.png' alt='title1' width="150" height="60">
   <p><b>Kuro</b> - ✞︎☜︎☼︎✡︎📬︎ ✞︎☜︎☼︎✡︎📬︎ ✋︎☠︎❄︎☜︎☼︎☜︎💧︎❄︎✋︎☠︎☝︎</p>
 
-  <p>Tierlist Beta 0.0.2, Copyright @MedicineMelancholy0, Updated 27/7/2026</p>
+  <p>Tierlist Beta 0.0.5, Copyright @MedicineMelancholy0, Updated 27/7/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
 
   <div id="expls" class="modal">
@@ -660,10 +684,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="modal-p">@: Needs to be carried by a Gengbot (Someone with more than 7 breaks and high agi/speed, aka most of EX)</p>
         <p class="modal-p">Anthology Card: Special cards for L80 Characters that give special restricted buffs</p>
         <p class="modal-p"><b>NICKNAMES</b></p>
-        <p class="modal-p">Lootori: L0o Satori. Looishi: L0o Koishi</p>
-        <p class="modal-p">Farisa/Fmos: F1 Marisa</p>
-        <p class="modal-p">MVKari: L80 Yukari. In general, MV + xxxx is just a shorthand of an L80 character's name.</p>
-        <p class="modal-p">Cz2: Cz1# Marisa</p>
+        <p class="modal-p">A catalogue of nicknames can be found here (Thanks Silent): https://docs.google.com/document/d/1RbZPZWeaHcIvC_qqpjRA1uPaBUCoa3LS2QkN-81tC1k/edit?tab=t.0#heading=h.1co6enmd8cut</p>
       </div>
     </div>
   </div>
