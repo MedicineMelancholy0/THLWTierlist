@@ -320,6 +320,51 @@ body.small-icons .expl {
   margin-right: auto;
 }
 
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.filter-group h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.filter-group input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.filter-group label {
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #660000;
+  border: 2px solid transparent;
+  padding: 8px 14px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.filter-group label:hover {
+  background-color: #8a0000;
+  transform: scale(1.05);
+}
+
+.filter-group input[type="checkbox"]:checked + label {
+  background-color: #ffffff;
+  color: #660000;
+  border: 2px solid #660000;
+}
+
 .tier-nav {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   padding: 12px 0;
@@ -344,6 +389,11 @@ body.small-icons .expl {
 .tier-nav button:hover {
   background-color: #8a0000;
   transform: scale(1.05);
+}
+
+.tier-nav h2 {
+  width: 100%;
+  text-align: center;
 }
 
 #size-toggle-btn {
