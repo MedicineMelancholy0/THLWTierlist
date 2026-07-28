@@ -95,13 +95,6 @@ a:link {
   display: block;
 }
 
-/*
-.charicon {
-width: 100%;
-max-width: 135px;
-height: auto;
-}*/
-
 .charicon {
   width: 135px;
   height: 135px;
@@ -396,7 +389,7 @@ body.small-icons .expl {
   text-align: center;
 }
 
-#size-toggle-btn {
+.button.primary {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
