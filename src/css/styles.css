@@ -178,12 +178,43 @@ body.small-icons .expl {
   font-size: 60px;
 }
 
-.f-tier-header { font-size: clamp(28px, 6vw, 56px); }
+.f-tier-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #999999;
+  color: #000000;
+  font-family: 'Josephin Sans', Arial, sans-serif;
+  border: 2px solid #000000;
+}
+
+.f-tier-title {
+  font-size: clamp(28px, 6vw, 56px);
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 10px 5px 10px;
+}
+
+.f-tier-desc {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 15px;
+  border-top: 2px solid #000000;
+}
 
 .f-tier-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0;
+}
+
+.f-tier-col {
+  padding: 12px 8px;
+  border: 2px solid #000000;
+  font-size: 16px;
+  line-height: 1.5;
+  vertical-align: top;
 }
 
 @media (max-width: 768px) {
