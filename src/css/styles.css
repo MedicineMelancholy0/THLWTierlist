@@ -178,6 +178,22 @@ body.small-icons .expl {
   font-size: 60px;
 }
 
+.f-tier-header { font-size: clamp(28px, 6vw, 56px); }
+
+.f-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+}
+
+@media (max-width: 768px) {
+  .f-tier-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .f-tier-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
 .cname {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
