@@ -301,7 +301,7 @@ body.small-icons .expl {
   background-color: rgba(12, 115, 204, 0.8);
 }
 
-.expl, .tier-expl {
+.expl, .tier-expl, .tier-nav {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
