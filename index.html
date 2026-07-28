@@ -1011,7 +1011,21 @@ if (document.fonts) {
 }
 </script>
 
+<script>
+  let ticking = false;
 
+  function updateParallax() {
+    document.documentElement.style.setProperty('--scroll-y', window.scrollY);
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  });
+</script>
 </body>
 
 </html>
