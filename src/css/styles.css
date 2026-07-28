@@ -178,6 +178,10 @@ body.small-icons .expl {
   font-size: 60px;
 }
 
+.tier-group {
+  scroll-margin-top: 80px;
+}
+
 .f-tier-section {
   max-width: 1400px;
   margin: 0 auto;
