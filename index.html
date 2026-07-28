@@ -136,25 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-  <div class="search-container">
-  <input
-    type="text" 
-    id="charSearchInput" 
-    placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
-    autocomplete="off"
-  />
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const searchInput = document.getElementById("charSearchInput");
-
-      if (searchInput) {
-        searchInput.addEventListener("input", applyFilters);
-      }
-    });
-  </script>
-
   <div class="tier-nav">
   <h2>Jump to Tier</h2>
 
@@ -185,6 +166,29 @@ document.addEventListener('DOMContentLoaded', () => {
   group.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 </script>
+
+  <div class="search-container">
+  <input
+    type="text" 
+    id="charSearchInput" 
+    placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
+    autocomplete="off"
+  />
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchInput = document.getElementById("charSearchInput");
+
+      if (searchInput) {
+        searchInput.addEventListener("input", applyFilters);
+      }
+    });
+  </script>
+
+  <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
+  Hide Explanation Buttons
+  </button>
 
   <p>Welcome to Hibi's Yappage Corner. This is where Hibi will update their yappage.</p>
   <p>On this week's agenda... by the way everyone please pull mvkaris anthology it is quite relevant to her tier, as she has more damage on average from using antho x2 on aoe which obviously, lets her get 4 yin atk ii for last gauge, firmly making her have the best last gauge damage in the game</p>
@@ -418,28 +422,35 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleBtn.textContent = `▼ Hide ${tier} Tier`;
           }
         }
-
+        // aa
         matches.forEach(item => {
-          const imgContainer = document.createElement("div");
-          imgContainer.style.display = "inline-block";
+        const imgContainer = document.createElement("div");
+        imgContainer.style.display = "inline-block";
 
-          imgContainer.innerHTML = `
-            <img src="src/assets/chara/${item.img}" 
-                alt="${item.name}" 
-                title="${item.name}" 
-                class="charicon" 
-                loading="lazy" />
-            <div class="cname">${item.name}</div>
-            <div class="expl">Explanation</div>
-          `;
+        imgContainer.innerHTML = `
+          <img src="src/assets/chara/${item.img}" 
+              alt="${item.name}" 
+              title="${item.name}" 
+              class="charicon" 
+              loading="lazy" />
+          <div class="cname">${item.name}</div>
+          ${showExplButtons ? '<div class="expl">Explanation</div>' : ''}
+        `;
 
-          container.appendChild(imgContainer);
+        container.appendChild(imgContainer);
 
+        if (showExplButtons) {
           const expBtn = imgContainer.querySelector(".expl");
           expBtn.addEventListener("click", () => {
             openExplanationModal(item);
           });
-        });
+        } else {
+          imgContainer.style.cursor = "pointer";
+          imgContainer.addEventListener("click", () => {
+            openExplanationModal(item);
+          });
+        }
+      });
       }
     });
     fitNameplateText();
@@ -1034,6 +1045,29 @@ if (document.fonts) {
 
   window.addEventListener('resize', updateParallax);
   updateParallax();
+</script>
+
+<script>
+  let showExplButtons = true;
+
+function toggleExplButtons() {
+  showExplButtons = !showExplButtons;
+  const btn = document.getElementById('expl-toggle-btn');
+  if (btn) {
+    btn.textContent = showExplButtons ? 'Hide Explanation Buttons' : 'Show Explanation Buttons';
+  }
+  localStorage.setItem('showExplButtons', showExplButtons ? 'true' : 'false');
+  applyFilters(); // re-renders whatever's currently filtered/searched, with the new setting applied
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('showExplButtons');
+  if (saved === 'false') {
+    showExplButtons = false;
+    const btn = document.getElementById('expl-toggle-btn');
+    if (btn) btn.textContent = 'Show Explanation Buttons';
+  }
+});
 </script>
 </body>
 
