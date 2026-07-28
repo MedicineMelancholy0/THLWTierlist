@@ -589,7 +589,7 @@ body.small-icons .expl {
   --bg: rgba(217, 210, 233, 0.95); 
   --fg: #09031d;
 }
-
+/*
 body::before {
   content: "";
   position: fixed;
@@ -610,8 +610,31 @@ body {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   transition: background-color 0.3s, color 0.3s;
+}*/
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -15vh;
+  left: 0;
+  width: 100vw;
+  height: 130vh; /* taller than viewport so it has room to shift without showing gaps */
+  background: url("cavern.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+  transform: translateY(calc(var(--scroll-y, 0) * 0.3px));
+  will-change: transform;
 }
 
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
 /* Keep your custom toggle styles below */
 .theme-toggle {
