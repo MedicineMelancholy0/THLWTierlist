@@ -148,7 +148,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "Lr1 Gengetsu", 
+    name: "Lr1 Renko - Gengetsu", 
     img: "SPOILER_gengetsu.jpg", 
     tier: "EX", 
     opts: { r: true, tec: true },
@@ -603,7 +603,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "Lm1 Mugetsu", 
+    name: "Lm1 Maribel - Mugetsu", 
     img: "mugetsu.png", 
     tier: "SS", 
     opts: { spd: true, r: true },
@@ -1543,7 +1543,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Lm1 Mima",
+    name: "Lm1 Maribel - Mima",
     img: "lm1 mima.png",
     tier: "A",
     opts: { r: true, dest: true },
@@ -1570,7 +1570,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Lr1 Shinki",
+    name: "Lr1 Renko - Shinki",
     img: "lr1 shinki.png",
     tier: "A",
     opts: { atk: true, r: true },
@@ -3039,24 +3039,17 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "F1.-5 Marisa",
+    name: "D8.-5 Marisa",
     img: "d8.-5 marisa.png",
     tier: "B",
     opts: { atk: true, b: true },
     explanation: {
       pros: [
-        "Buffs/Self Sustain/Support are Decent",
-        "Anomaly Breaking is quite Good"
+        "7/5 breaks with decent agi stats and agi anoms lets her act almost like a miniature Gengetsu",
+        "Decent support throughout her kit, especially with access to praecard"
       ],
       cons: [
-        "Mono Star or No Ele",
-        "Lacks Good Killers"
-      ],
-      mixed: [
-        "Not only is her Gimmick extremely mid, it's also potentially comp harmful"
-      ],
-      extra: [
-        "Even without good killers her damage is on par with L80 Sakuya, just to show how mid the latter's damage is nowadays (or how easy content reqs can be at times)"
+        "Somewhat low damage further hampered by extremely bad killers and a mediocre gimmick"
       ]
     }
   },
