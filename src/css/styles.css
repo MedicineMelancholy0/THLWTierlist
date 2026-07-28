@@ -301,7 +301,7 @@ body.small-icons .expl {
   background-color: rgba(12, 115, 204, 0.8);
 }
 
-.expl, .tier-expl, .tier-nav {
+.expl, .tier-expl {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -318,6 +318,32 @@ body.small-icons .expl {
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.tier-nav {
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.tier-nav button {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #660000;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.tier-nav button:hover {
+  background-color: #8a0000;
+  transform: scale(1.05);
 }
 
 #size-toggle-btn {
