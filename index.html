@@ -1015,7 +1015,13 @@ if (document.fonts) {
   let ticking = false;
 
   function updateParallax() {
-    document.documentElement.style.setProperty('--scroll-y', window.scrollY);
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
+
+    const maxShift = window.innerHeight * 0.15; // matches the 15vh buffer baked into the CSS
+    const offset = progress * maxShift;
+
+    document.documentElement.style.setProperty('--parallax-offset', `-${offset}px`);
     ticking = false;
   }
 
@@ -1025,6 +1031,9 @@ if (document.fonts) {
       ticking = true;
     }
   });
+
+  window.addEventListener('resize', updateParallax);
+  updateParallax();
 </script>
 </body>
 
