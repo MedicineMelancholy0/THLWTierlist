@@ -66,6 +66,7 @@
 
   <br>
 
+  <div class="filter-group">
   <h1>Filter by Class</h1>
   <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
   <label for="class1">Defense</label>
@@ -106,6 +107,7 @@
   <label for="class16">General</label>
   <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
   <label for="class17">Yukkuri</label>
+  </div>
 
 <br>
 
@@ -156,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
   </script>
 
   <div class="tier-nav">
+  <h2>Jump to Tier</h2>
+
   <button onclick="jumpToTier('EX')">EX</button>
   <button onclick="jumpToTier('SS')">SS</button>
   <button onclick="jumpToTier('S')">S</button>
