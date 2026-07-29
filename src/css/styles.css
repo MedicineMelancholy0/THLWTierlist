@@ -367,7 +367,18 @@ body.small-icons .expl {
   gap: 14px;
 }
 
-.tier-nav button, .jtt {
+.tier-nav h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.jtt {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tier-nav button, 
+.tier-nav-btn {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -376,10 +387,12 @@ body.small-icons .expl {
   border: none;
   padding: 10px 16px;
   cursor: pointer;
+  border-radius: 4px;
   transition: background 0.2s, transform 0.15s;
 }
 
-.tier-nav button:hover, .jtt:hover {
+.tier-nav button:hover, 
+.tier-nav-btn:hover {
   background-color: #8a0000;
   transform: scale(1.05);
 }
