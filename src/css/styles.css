@@ -389,6 +389,66 @@ body.small-icons .expl {
   text-align: center;
 }
 
+.toggle-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 8px auto 2px auto;
+}
+
+.toggle-row #size-toggle-btn,
+.toggle-row #expl-toggle-btn {
+  width: auto;
+  flex: 1 1 auto;
+  max-width: none;
+  font-size: 15px;
+  padding: 8px 10px;
+  margin: 0;
+}
+
+.visually-hidden-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.filters-toggle-label {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 8px auto;
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #660000;
+  color: #ffffff;
+  padding: 10px 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.filters-toggle-label:hover {
+  background-color: #8a0000;
+}
+
+.filters-panel {
+  overflow: hidden;
+  max-height: 3000px;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
+  opacity: 1;
+}
+
+.filters-panel.is-collapsed {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  margin: 0;
+}
+
 .button.primary {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
