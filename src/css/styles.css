@@ -367,8 +367,8 @@ body.small-icons .expl {
   gap: 14px;
 }
 
-.tier-nav button {
-  font-family: inherit;
+.tier-nav button, .jtt {
+  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
@@ -379,7 +379,7 @@ body.small-icons .expl {
   transition: background 0.2s, transform 0.15s;
 }
 
-.tier-nav button:hover {
+.tier-nav button:hover, .jtt:hover {
   background-color: #8a0000;
   transform: scale(1.05);
 }
