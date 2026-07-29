@@ -66,57 +66,6 @@
 
   <br>
 
-  <div class="filter-group">
-  <h1>Filter by Class</h1>
-  <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
-  <label for="class1">Defense</label>
-  <input type="checkbox" id="class2" value="supp" onclick="filterSuppChars()">
-  <label for="class2">Support</label>
-  <input type="checkbox" id="class3" value="heal" onclick="filterHealChars()">
-  <label for="class3">Heal</label>
-  <input type="checkbox" id="class4" value="dbf" onclick="filterDebuffChars()">
-  <label for="class4">Debuff</label>
-  <input type="checkbox" id="class5" value="atk" onclick="filterAttackChars()">
-  <label for="class5">Attack</label>
-  <input type="checkbox" id="class6" value="tec" onclick="filterTechChars()">
-  <label for="class6">Tech</label>
-  <input type="checkbox" id="class7" value="spd" onclick="filterSpeedChars()">
-  <label for="class7">Speed</label>
-  <input type="checkbox" id="class8" value="dest" onclick="filterDestChars()">
-  <label for="class8">Destroy</label>
-  <br>
-  
-  <h1>Filter by Rarity</h1>
-  <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
-  <label for="class9">Pure Fes</label>
-  <input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
-  <label for="class10">Epic Fes</label>
-  <input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
-  <label for="class11">Phantasm Fes</label>
-  <input type="checkbox" id="class12" value="r" onclick="filterRelicChars()">
-  <label for="class12">Relics and Genics</label>
-  <input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
-  <label for="class13">Extended Fes</label>
-  <input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
-  <label for="class14">Ultra Fes</label>
-  <input type="checkbox" id="class18" value="b" onclick="filterExChars()">
-  <label for="class18">Battle Pass</label>
-  <input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
-  <label for="class15">Festival</label>
-  <input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
-  <label for="class16">General</label>
-  <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
-  <label for="class17">Yukkuri</label>
-  </div>
-
-<button class="button primary" id="size-toggle-btn" onclick="toggleIconSize()">
-  Switch to Small Icons
-</button>
-
-<button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
-  Hide Explanation Buttons (You can click on the char icon)
-</button>
-
 <script>
   function toggleIconSize() {
   const isSmall = document.body.classList.toggle('small-icons');
@@ -140,20 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-  <div class="tier-nav">
-  <h2>Jump to Tier</h2>
-
-  <button onclick="jumpToTier('EX')">EX</button>
-  <button onclick="jumpToTier('SS')">SS</button>
-  <button onclick="jumpToTier('S')">S</button>
-  <button onclick="jumpToTier('A')">A</button>
-  <button onclick="jumpToTier('B')">B</button>
-  <button onclick="jumpToTier('C')">C</button>
-  <button onclick="jumpToTier('D')">D</button>
-  <button onclick="jumpToTier('E')">E</button>
-  <button onclick="jumpToTier('Yukkuri')">Yukkuri</button>
-</div>
-
 <script>
   function jumpToTier(tierId) {
   const group = document.getElementById(`tier-group-${tierId}`);
@@ -170,6 +105,82 @@ document.addEventListener('DOMContentLoaded', () => {
   group.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 </script>
+
+<input type="checkbox" id="toggle-filters" class="visually-hidden-checkbox">
+<label for="toggle-filters" class="filters-toggle-label">Show/Hide Toggles &amp; Filters</label>
+
+<div id="filters-panel" class="filters-panel">
+
+  <div class="filter-group">
+    <h1>Filter by Class</h1>
+    <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
+    <label for="class1">Defense</label>
+    <input type="checkbox" id="class2" value="supp" onclick="filterSuppChars()">
+    <label for="class2">Support</label>
+    <input type="checkbox" id="class3" value="heal" onclick="filterHealChars()">
+    <label for="class3">Heal</label>
+    <input type="checkbox" id="class4" value="dbf" onclick="filterDebuffChars()">
+    <label for="class4">Debuff</label>
+    <input type="checkbox" id="class5" value="atk" onclick="filterAttackChars()">
+    <label for="class5">Attack</label>
+    <input type="checkbox" id="class6" value="tec" onclick="filterTechChars()">
+    <label for="class6">Tech</label>
+    <input type="checkbox" id="class7" value="spd" onclick="filterSpeedChars()">
+    <label for="class7">Speed</label>
+    <input type="checkbox" id="class8" value="dest" onclick="filterDestChars()">
+    <label for="class8">Destroy</label>
+    <br>
+    
+    <h1>Filter by Rarity</h1>
+    <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
+    <label for="class9">Pure Fes</label>
+    <input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
+    <label for="class10">Epic Fes</label>
+    <input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
+    <label for="class11">Phantasm Fes</label>
+    <input type="checkbox" id="class12" value="r" onclick="filterRelicChars()">
+    <label for="class12">Relics and Genics</label>
+    <input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
+    <label for="class13">Extended Fes</label>
+    <input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
+    <label for="class14">Ultra Fes</label>
+    <input type="checkbox" id="class18" value="b" onclick="filterExChars()">
+    <label for="class18">Battle Pass</label>
+    <input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
+    <label for="class15">Festival</label>
+    <input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
+    <label for="class16">General</label>
+    <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
+    <label for="class17">Yukkuri</label>
+  </div>
+
+  <div class="toggle-row">
+    <button class="button primary" id="size-toggle-btn" onclick="toggleIconSize()">
+      Switch to Small Icons
+    </button>
+
+    <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
+      Hide Explanation Buttons
+    </button>
+  </div>
+
+  <div class="tier-nav">
+    <h2>Jump to Tier</h2>
+
+    <button onclick="jumpToTier('EX')">EX</button>
+    <button onclick="jumpToTier('SS')">SS</button>
+    <button onclick="jumpToTier('S')">S</button>
+    <button onclick="jumpToTier('A')">A</button>
+    <button onclick="jumpToTier('B')">B</button>
+    <button onclick="jumpToTier('C')">C</button>
+    <button onclick="jumpToTier('D')">D</button>
+    <button onclick="jumpToTier('E')">E</button>
+    <button onclick="jumpToTier('Yukkuri')">Yukkuri</button>
+  </div>
+
+</div>
+
+<!-- search-container stays here, outside filters-panel, wherever it already lives -->
 
   <div class="search-container">
   <input
@@ -538,7 +549,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById("charSearchInput");
     const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : "";
     const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
-      .filter(box => box.id !== "toggle-intro");
+      .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters");
     const activeKeys = checkedBoxes.map(box => box.value);
     const filtered = characters.filter(character => {
       const matchesSearch = character.name.toLowerCase().includes(searchQuery);
@@ -1068,6 +1079,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btn) btn.textContent = 'Show Explanation Buttons';
   }
   applyFilters();
+});
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.getElementById("toggle-filters");
+  const panel = document.getElementById("filters-panel");
+
+  if (!checkbox || !panel) return;
+
+  const isCollapsed = localStorage.getItem("filters_collapsed") === "true";
+
+  if (isCollapsed) {
+    checkbox.checked = true;
+    panel.classList.add("is-collapsed");
+  }
+
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      panel.classList.add("is-collapsed");
+      localStorage.setItem("filters_collapsed", "true");
+    } else {
+      panel.classList.remove("is-collapsed");
+      localStorage.setItem("filters_collapsed", "false");
+    }
+  });
 });
 </script>
 </body>
