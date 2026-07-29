@@ -19,6 +19,12 @@
 </head>
 
 <body>
+  <div class="head">
+  <!--<a href='src/assets/title1.png' target='_blank'>-->
+    <img src='src/assets/title1.png' alt='title1' width="1550" height="195">
+  </a>
+  </div>
+
   <div class="Frontpage">
     <div class="collapse-bar">
       <label for="toggle-intro" class="collapse-label">
@@ -203,12 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   <p>Welcome to Hibi's Yappage Corner. This is where Hibi will update their yappage.</p>
   <p>On this week's agenda... by the way everyone please pull mvkaris anthology it is quite relevant to her tier, as she has more damage on average from using antho x2 on aoe which obviously, lets her get 4 yin atk ii for last gauge, firmly making her have the best last gauge damage in the game</p>
-
-  <div class="head">
-  <!--<a href='src/assets/title1.png' target='_blank'>-->
-    <img src='src/assets/title1.png' alt='title1' width="1550" height="195">
-  </a>
-  </div>
 
 <!-- EX -->
 <div class="tier-group" id="tier-group-EX">
@@ -401,71 +401,92 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // clear and inject character images, main tierlist function ------------------------------------------------------------------
-  function renderTierList(charList) {
-    // 1. Update total/filtered count display
-    const countDisplay = document.getElementById("total-character-count");
-    if (countDisplay) {
-      countDisplay.textContent = charList.length;
-    }
+    function renderTierList(charList) {
+      // 1. Update total/filtered count display
+      const countDisplay = document.getElementById("total-character-count");
+      if (countDisplay) {
+        countDisplay.textContent = charList.length;
+      }
 
-    // 2. Check if the user is typing in the search bar
-    const searchInput = document.getElementById("charSearchInput");
-    const isSearching = searchInput && searchInput.value.trim().length > 0;
+      // 2. Check if the user is typing in the search bar
+      const searchInput = document.getElementById("charSearchInput");
+      const isSearching = searchInput && searchInput.value.trim().length > 0;
 
-    const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
+      const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
 
-    activeTiers.forEach(tier => {
-      const container = document.getElementById(tier);
-      const group = document.getElementById(`tier-group-${tier}`);
+      activeTiers.forEach(tier => {
+        const container = document.getElementById(tier);
+        const group = document.getElementById(`tier-group-${tier}`);
 
-      if (container) {
-        container.innerHTML = "";
+        if (container) {
+          container.innerHTML = "";
 
-        const matches = charList.filter(item => item.tier === tier);
-        if (group) {
-          group.style.display = matches.length === 0 ? "none" : "";
-        }
-
-        if (isSearching && matches.length > 0) {
-          container.classList.remove("collapsed");
-          const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
-          if (toggleBtn) {
-            toggleBtn.textContent = `▼ Hide ${tier} Tier`;
+          const matches = charList.filter(item => item.tier === tier);
+          if (group) {
+            group.style.display = matches.length === 0 ? "none" : "";
           }
-        }
-        // aa
-        matches.forEach(item => {
-        const imgContainer = document.createElement("div");
-        imgContainer.style.display = "inline-block";
 
-        imgContainer.innerHTML = `
-          <img src="src/assets/chara/${item.img}" 
-              alt="${item.name}" 
-              title="${item.name}" 
-              class="charicon" 
-              loading="lazy" />
-          <div class="cname">${item.name}</div>
-          ${showExplButtons ? '<div class="expl">Explanation</div>' : ''}
-        `;
+          if (isSearching && matches.length > 0) {
+            container.classList.remove("collapsed");
+            const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
+            if (toggleBtn) {
+              toggleBtn.textContent = `▼ Hide ${tier} Tier`;
+            }
+          }
+          
+          matches.forEach(item => {
+            const imgContainer = document.createElement("div");
+            imgContainer.style.display = "inline-block";
 
-        container.appendChild(imgContainer);
+            imgContainer.innerHTML = `
+              <img src="src/assets/chara/${item.img}" 
+                  alt="${item.name}" 
+                  title="${item.name}" 
+                  class="charicon" 
+                  loading="lazy" />
+              <div class="cname">${item.name}</div>
+              ${showExplButtons ? '<div class="expl">Explanation</div>' : ''}
+            `;
 
-        if (showExplButtons) {
-          const expBtn = imgContainer.querySelector(".expl");
-          expBtn.addEventListener("click", () => {
-            openExplanationModal(item);
-          });
-        } else {
-          imgContainer.style.cursor = "pointer";
-          imgContainer.addEventListener("click", () => {
-            openExplanationModal(item);
+            container.appendChild(imgContainer);
+
+            if (showExplButtons) {
+              const expBtn = imgContainer.querySelector(".expl");
+              expBtn.addEventListener("click", () => {
+                openExplanationModal(item);
+              });
+            } else {
+              imgContainer.style.cursor = "pointer";
+              imgContainer.addEventListener("click", () => {
+                openExplanationModal(item);
+              });
+            }
           });
         }
       });
+
+      // 3. F Tier Search Logic (Static HTML Check)
+      const fContainer = document.getElementById("F");
+      const fToggleBtn = document.getElementById("toggle-btn-F");
+
+      if (fContainer) {
+        if (isSearching) {
+          const query = searchInput.value.trim().toLowerCase();
+          const fText = fContainer.innerText.toLowerCase();
+
+          if (fText.includes(query)) {
+            fContainer.classList.remove("collapsed");
+            if (fToggleBtn) fToggleBtn.textContent = "▼ Hide F Tier";
+          }
+        } else {
+          // Reset to collapsed when the user clears their search
+          fContainer.classList.add("collapsed");
+          if (fToggleBtn) fToggleBtn.textContent = "▶ Show F Tier";
+        }
       }
-    });
-    fitNameplateText();
-  }
+
+      fitNameplateText();
+    }
 
     function openExplanationModal(character) {
       const modal = document.getElementById("expls");
@@ -587,54 +608,75 @@ document.addEventListener('DOMContentLoaded', () => {
   </script>
 
 <!-- Fart Tier -->
-<div class="f-tier-section">
+<div class="f-tier-section" id="tier-group-F">
   <div class="f-tier-title">F Tier</div>
-  <div class="f-tier-desc">
-    The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes,<br>
-    because they all share the same cons while having very few pros besides being cute.<br>
-    Characters here will all more or less share the same universal traits of having next to no:<br>
-    Support, Utility, Damage, or Anything Else.<br>
-    Thus, may they remain untiered only to exist in the realm of F3.
+
+  <!-- Toggle Button -->
+  <div id="toggle-btn-F" class="tier-toggle-bar" onclick="toggleTierRow('F')">
+    ▶ Show F Tier
   </div>
 
-  <div class="f-tier-grid">
-    <div class="f-tier-col">
-      - L1 Reimu<br>- L1 Marisa<br>- L1 Rumia<br>- L1 Daiyousei<br>- L1 Meiling<br>
-      - L1 Koakuma<br>- L1 Patchouli<br>- L1 Sakuya<br>- L1 Remilia<br>- L1 Flandre<br>
-      - L1 Letty<br>- L1 Alice<br>- L1 Lunasa<br>- L1 Merlin<br>- L1 Lyrica
+  <!-- Collapsible Container (collapsed by default) -->
+  <div id="F" class="f-tier-content collapsed">
+    <div class="f-tier-desc">
+      The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes,<br>
+      because they all share the same cons while having very few pros besides being cute.<br>
+      Characters here will all more or less share the same universal traits of having next to no:<br>
+      Support, Utility, Damage, or Anything Else.<br>
+      Thus, may they remain untiered only to exist in the realm of F3.
     </div>
-    <div class="f-tier-col">
-      - L1 Youmu<br>- L1 Yuyuko<br>- L1 Ran<br>- L1 Yukari<br>- L1 Suika<br>
-      - L1 Wriggle<br>- L1 Mystia<br>- L1 Keine<br>- L1 Tewi<br>- L1 Reisen<br>
-      - L1 Kaguya<br>- L1 Mokou<br>- L1 Aya<br>- L1 Yuuka<br>- L1 Komachi
-    </div>
-    <div class="f-tier-col">
-      - L1 Eiki<br>- L1 Shizuha<br>- L1 Minoriko<br>- L1 Hina<br>- L1 Nitori<br>
-      - L1 Momiji<br>- L1 Sanae<br>- L1 Suwako<br>- L1 Iku<br>- L1 Tenshi<br>
-      - L1 Yamame<br>- L1 Parsee<br>- L1 Yuugi<br>- L1 Satori
-    </div>
-    <div class="f-tier-col">
-      - L1 Rin<br>- L1 Utsuho<br>- L1 Koishi<br>- L1 Kogasa<br>- L1 Murasa<br>
-      - L1 Shou<br>- L1 Byakuren<br>- L1 Hatate<br>- L1 Kyouko<br>- L1 Yoshika<br>
-      - L1 Seiga<br>- L1 Tojiko<br>- L1 Futo<br>- L1 Miko<br>- L1 Mamizou
-    </div>
-    <div class="f-tier-col">
-      - L1 Kokoro<br>- L1 Wakasagihime<br>- L1 Sekibanki<br>- L1 Kagerou<br>- L1 Benben<br>
-      - L1 Yatsuhashi<br>- L1 Seija<br>- L1 Shinmy<br>- L1 Raiko<br>- L1 Sumireko<br>
-      - L1 Seiran<br>- L1 Ringo<br>- L1 Doremy<br>- L1 Clownpiece<br>- L1 Junko
-    </div>
-    <div class="f-tier-col">
-      - L1 Joon<br>- L1 Shion<br>- L1 Eternity<br>- L1 Nemuno<br>- L1 Aunn<br>
-      - L1 Narumi<br>- L1 Mai<br>- L1 Satono<br>- L1 Eika<br>- L1 Urumi<br>
-      - L1 Kutaka<br>- L1 Yachie<br>- L1 Mayumi<br>- L1 Saki<br>- L1 Takane
-    </div>
-    <div class="f-tier-col">
-      - L1 Star<br>- L1 Luna<br>- L1 Sunny<br>- L1 Kasen<br>- L1 Akyuu<br>
-      - L1 Rei'sen<br>- L1 Yorihime<br>- A7 Alice<br>- B5 Medicine<br>- Y5 Tewi<br>
-      - L1 Medicine<br>- L1 Eirin<br>- A6 Alice
+
+    <div class="f-tier-grid">
+      <div class="f-tier-col">
+        - L1 Reimu<br>- L1 Marisa<br>- L1 Rumia<br>- L1 Daiyousei<br>- L1 Meiling<br>
+        - L1 Koakuma<br>- L1 Patchouli<br>- L1 Sakuya<br>- L1 Remilia<br>- L1 Flandre<br>
+        - L1 Letty<br>- L1 Alice<br>- L1 Lunasa<br>- L1 Merlin<br>- L1 Lyrica
+      </div>
+      <div class="f-tier-col">
+        - L1 Youmu<br>- L1 Yuyuko<br>- L1 Ran<br>- L1 Yukari<br>- L1 Suika<br>
+        - L1 Wriggle<br>- L1 Mystia<br>- L1 Keine<br>- L1 Tewi<br>- L1 Reisen<br>
+        - L1 Kaguya<br>- L1 Mokou<br>- L1 Aya<br>- L1 Yuuka<br>- L1 Komachi
+      </div>
+      <div class="f-tier-col">
+        - L1 Eiki<br>- L1 Shizuha<br>- L1 Minoriko<br>- L1 Hina<br>- L1 Nitori<br>
+        - L1 Momiji<br>- L1 Sanae<br>- L1 Suwako<br>- L1 Iku<br>- L1 Tenshi<br>
+        - L1 Yamame<br>- L1 Parsee<br>- L1 Yuugi<br>- L1 Satori
+      </div>
+      <div class="f-tier-col">
+        - L1 Rin<br>- L1 Utsuho<br>- L1 Koishi<br>- L1 Kogasa<br>- L1 Murasa<br>
+        - L1 Shou<br>- L1 Byakuren<br>- L1 Hatate<br>- L1 Kyouko<br>- L1 Yoshika<br>
+        - L1 Seiga<br>- L1 Tojiko<br>- L1 Futo<br>- L1 Miko<br>- L1 Mamizou
+      </div>
+      <div class="f-tier-col">
+        - L1 Kokoro<br>- L1 Wakasagihime<br>- L1 Sekibanki<br>- L1 Kagerou<br>- L1 Benben<br>
+        - L1 Yatsuhashi<br>- L1 Seija<br>- L1 Shinmy<br>- L1 Raiko<br>- L1 Sumireko<br>
+        - L1 Seiran<br>- L1 Ringo<br>- L1 Doremy<br>- L1 Clownpiece<br>- L1 Junko
+      </div>
+      <div class="f-tier-col">
+        - L1 Joon<br>- L1 Shion<br>- L1 Eternity<br>- L1 Nemuno<br>- L1 Aunn<br>
+        - L1 Narumi<br>- L1 Mai<br>- L1 Satono<br>- L1 Eika<br>- L1 Urumi<br>
+        - L1 Kutaka<br>- L1 Yachie<br>- L1 Mayumi<br>- L1 Saki<br>- L1 Takane
+      </div>
+      <div class="f-tier-col">
+        - L1 Star<br>- L1 Luna<br>- L1 Sunny<br>- L1 Kasen<br>- L1 Akyuu<br>
+        - L1 Rei'sen<br>- L1 Yorihime<br>- A7 Alice<br>- B5 Medicine<br>- Y5 Tewi<br>
+        - L1 Medicine<br>- L1 Eirin<br>- A6 Alice
+      </div>
     </div>
   </div>
 </div>
+
+<div class="jtt">
+<button class="tier-nav-btn" id="back-to-top-btn" onclick="scrollToTop()">
+  ↑ Back to Top
+</button>
+</div>
+
+<script>
+  function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
 
   <h1>Credits:</h1>
   <img src='src/assets/chara/l1 kogasa.png' alt='title1' width="150" height="150">
@@ -649,7 +691,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <img src='src/assets/chara/l1 kuro.png' alt='title1' width="150" height="60">
   <p><b>Kuro</b> - ✞︎☜︎☼︎✡︎📬︎ ✞︎☜︎☼︎✡︎📬︎ ✋︎☠︎❄︎☜︎☼︎☜︎💧︎❄︎✋︎☠︎☝︎</p>
 
-  <p>Tierlist Beta 0.0.5, Copyright @MedicineMelancholy0, Updated 27/7/2026</p>
+  <p>Tierlist Beta 0.0.6, Copyright @MedicineMelancholy0, Updated 29/7/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
 
   <div id="expls" class="modal">
@@ -1056,6 +1098,26 @@ if (document.fonts) {
 
   window.addEventListener('resize', updateParallax);
   updateParallax();
+</script>
+
+<script>
+  function toggleTierRow(tierId) {
+  const container = document.getElementById(tierId);
+  const toggleBtn = document.getElementById(`toggle-btn-${tierId}`);
+  if (!container) return;
+
+  const isNowCollapsed = container.classList.toggle("collapsed");
+
+  if (toggleBtn) {
+    if (tierId === "F") {
+      toggleBtn.textContent = isNowCollapsed ? "▶ Show F Tier" : "▼ Hide F Tier";
+    } else {
+      toggleBtn.textContent = isNowCollapsed 
+        ? `▶ Show ${tierId} Tier (${container.children.length} Units)` 
+        : `▼ Hide ${tierId} Tier`;
+    }
+  }
+}
 </script>
 
 <script>
