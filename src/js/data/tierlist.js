@@ -137,6 +137,7 @@ dataSet[dataSetVersion].characterData = [
         "Notably lacking true t1 crit. Due to the above pros, she has means to avoid this as a weakness, but it needs to be addressed"
       ],
       nitpick: [
+        "Somehow has P issues if you're 3p boosting with her AoE and using a damaging card which can be annoying for some duos",
         "Gimmicks could be better but being this good already with those gimmicks means she only scales that much better with decent teammates (not hard)",
         "Freeze Vulnerable (NOT A BIG DEAL IN PRACTICE)",
         "No anomaly interaction on shots (lol)"
@@ -1536,9 +1537,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       mixed: [
         "Questionable Skill Setup - While Quick helps with Breaks, it tends to hurt AoE nuking (even with that overflow)"
-      ],
-      extra: [
-        "Again, 6 line ele, 100% card and dual scale and still gets beaten by L10.1, who has none of those",
       ]
     }
   },
@@ -4902,8 +4900,7 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "Needs Crit Atk",
-        "Needs more debuffs",
-        "Raw cap is certainly fes tier alright..lol"
+        "Needs more debuffs"
       ],
       extra: [
         "Your baseline for a good fes"
@@ -6008,11 +6005,11 @@ dataSet[dataSetVersion].characterData = [
     opts: { spd: true, a: true },
     explanation: {
       pros: [
-        "Youkai Killer, uses KS for debuffs",
+        "Youkai Killer, uses KS for debuffs or uses new Ofuda D-Card for BIS and much-needed Yang buffs",
         "Breaks are relatively good for this tier"
       ],
       mixed: [
-        "Mid Self Setup. NEeds a lot of Crit & Yang Support",
+        "Mid Self Setup. Needs a lot of Crit Support",
         "RNG Anom Breaks, 3p locked"
       ],
       cons: [
