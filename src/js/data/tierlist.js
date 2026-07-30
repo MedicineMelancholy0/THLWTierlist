@@ -3422,24 +3422,20 @@ dataSet[dataSetVersion].characterData = [
     opts: { spd: true, e: true },
     explanation: {
       pros: [
-        "Useful Support & Buffs, Good Breaking Potential",
-        "Both AoEs have Huge Damage Potential",
-        "Dmg to Eff & Res"
+        "Good overall Utility and Yin Buffing throughout her kit supported by 7 breaks and Great Card Options",
+        "Both AoE spellcards feature high damage supported by 35% increased dmg to Eff and Res. Her damage and breaking skills now additionally have actual functionability within herself thanks to her new P restoration ability."
       ],
       mixed: [
-        "Party Acc Tied to Sk3"
+        "Said damage is limited to subpar killers and held back by slow breaks while her innate spellcard buffs are below average. Supporting her is difficult without Cs2# Satori due to her extreme speed, notably having her Quick (which her Party Acc is tied to) being effectively a debuff",
+        "Lacks Crit Atk between Gauges",
+        "7/3 breaks makes her G2 subject to fraud out at any given moment"
       ],
       cons: [
-        "Lacks Crit Atk or Yin Debuffs",
-        "SC2 is Useless in Practice. Furthermore, her class conflicts with her intended combat role.",
-        "Poor Killers",
-        "Solo Last Word (Killing Myself)"
-      ],
-      nitpick: [
-        "P issues"
+        "Solo Last Word immediately kills her performance in any given stage. HOWEVER it can run praecard (aoe -3 def) and kill any singular unit while providing good party buffs so not horrendously unusable"
       ],
       extra: [
-        "(She would be S if she had an AoE LW)"
+        "(She would be S if she had an AoE LW)",
+        "Notes are assumed with new JP Buffs"
       ]
     }
   },
