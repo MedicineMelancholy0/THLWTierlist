@@ -1071,30 +1071,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "C3 Cirno", 
-    img: "C3 cirno.png", 
-    tier: "S", 
-    opts: { spd: true, e: true },
-    explanation: {
-      pros: [
-        "Two freeze inflict skills, basically confirms her role as a great breaker",
-        "Buffing between gauges is extremely useful"
-      ],
-      mixed: [
-        "Damage on killer all around her kit is very good but it's limited to swimsuit and fairy content",
-        "Last gauge buffing specifically tends to cause her to suffer"
-      ],
-      cons: [
-        "for her role of a spam breaker, she runs into heavy p issues. Which makes her weirdly want another freeze breaker to break for her in her perfect content",
-        "killer is still niche",
-        "no instant fb or overflow or...anything. units she supports will really want that"
-      ],
-      extra: [
-        "is c3 yuyuko shill pairing. another thousand buffs to yuyucoco!!!! she really is pretty average outside of that though and pairing with coco is uh...certainly not something in high demand. still, shes good at it + isnt ass at everything else so go off"
-      ]
-    }
-  },
-  { 
     name: "C3 Narumi", 
     img: "c3 narumi.png", 
     tier: "S", 
@@ -1162,6 +1138,30 @@ dataSet[dataSetVersion].characterData = [
         "@@@@@@@ Gengetsu moments, aura, and a whole lot of gengetsu",
         "Kosuzu is genuinely amazing in the content she can perform in. The issue is mostly consistency as she has a 0 in some aspects and is ultra-reliant on gengetsu to get away with what she does, preventing an uptier.",
         "She is easily the meta water unit. Only reason she is A is because we do look past the moments when her breaking and buffs are carried. Still, having those moments at all is ridiculous. Hence her placement.",
+      ]
+    }
+  },
+  { 
+    name: "C3 Cirno", 
+    img: "C3 cirno.png", 
+    tier: "A", 
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Two freeze inflict skills, basically confirms her role as a great breaker",
+        "Buffing between gauges is extremely useful"
+      ],
+      mixed: [
+        "Damage on killer all around her kit is very good but it's limited to swimsuit and fairy content",
+        "Last gauge buffing specifically tends to cause her to suffer"
+      ],
+      cons: [
+        "for her role of a spam breaker, she runs into heavy p issues. Which makes her weirdly want another freeze breaker to break for her in her perfect content",
+        "killer is still niche",
+        "no instant fb or overflow or...anything. units she supports will really want that"
+      ],
+      extra: [
+        "is c3 yuyuko shill pairing. another thousand buffs to yuyucoco!!!! she really is pretty average outside of that though and pairing with coco is uh...certainly not something in high demand. still, shes good at it + isnt ass at everything else so go off"
       ]
     }
   },
