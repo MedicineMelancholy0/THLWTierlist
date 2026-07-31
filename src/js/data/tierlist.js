@@ -1281,6 +1281,28 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "Cf1 Sanae",
+    img: "cf1 sanae.png",
+    tier: "A",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Extremely High Last Word damage with killer that hits basically 90% of the game",
+        "High Agility Support throughout her Kit"
+      ],
+      boon: [
+        "90% of her AoE damage is in P0 which makes saving SP/not having to use skill 1 an advantage for her"
+      ],
+      mixed: [
+        "Self fast on inflict and Self P is still a detriment on her accuracy support even if it doesn't hurt her as much",
+        "Lacks Youkai Killer on her AoE (still hits a lot of characters)"
+      ],
+      cons: [
+        "Generally just lacks buffs throughout Gauges 2-3 making her AoE inconsistent while her LW lacks Def Down while she herself is rather difficult to properly support and make the most of."
+      ]
+    }
+  },
+  {
     name: "Ce1 Flandre",
     img: "C3 prae2.png",
     tier: "A",
@@ -2734,26 +2756,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "L80 Okina",
-    img: "l80 okina.png",
-    tier: "B",
-    opts: { heal: true, r: true },
-    explanation: {
-      pros: [
-        "Overall good Utility and Support"
-      ],
-      cons: [
-        "Last Word Damage gutted due to lacking Debuffs, Breaks or Good Killers or Scaling",
-        "Unfocused, Rainbow Elements",
-        "Her Buff is only 15% more dmg. It kinda sucks considering modern units throw around 50% and 100% and she has 15"
-      ],
-      mixed: [
-        "Needy for Crit Atk, P & Buffs",
-        "Great AoE Spellcard Nuke is tied to Relatively Meager Killers"
-      ]
-    }
-  },
-  {
     name: "L80 Junko",
     img: "l80 junko.png",
     tier: "B",
@@ -3732,6 +3734,26 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "L80 Okina",
+    img: "l80 okina.png",
+    tier: "C",
+    opts: { heal: true, r: true },
+    explanation: {
+      pros: [
+        "Overall good Utility and Support"
+      ],
+      cons: [
+        "Last Word Damage gutted due to lacking Debuffs, Breaks or Good Killers or Scaling",
+        "Unfocused, Rainbow Elements",
+        "Her Buff is only 15% more dmg. It kinda sucks considering modern units throw around 50% and 100% and she has 15"
+      ],
+      mixed: [
+        "Needy for Crit Atk, P & Buffs",
+        "Great AoE Spellcard Nuke is tied to Relatively Meager Killers"
+      ]
+    }
+  },
+  {
     name: "A7& Lily",
     img: "a7& lily.png",
     tier: "C",
@@ -3878,27 +3900,6 @@ dataSet[dataSetVersion].characterData = [
       nitpick: [
         "Has some P Issues",
         "Lmfao Eva II (Again)"
-      ]
-    }
-  },
-  {
-    name: "A16& Eternity",
-    img: "a16& eternity.png",
-    tier: "C",
-    opts: { heal: true, ex: true },
-    explanation: {
-      pros: [
-        "Good Yin Def Buffs, can Debuff",
-        "Party Yin Atk II + Now has Real Scaling = Good Changes",
-        "2 Unbinds Good when Necessary"
-      ],
-      mixed: [
-        "Party Anom Cleanse can be Annoying",
-        "Needs Yin & Crit Atk Support"
-      ],
-      cons: [
-        "Between her soupy elements and low anom inflict her breaking ability suffers",
-        "Bad Killers"
       ]
     }
   },
@@ -4221,24 +4222,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "S5 Rin (Orin)",
-    img: "s5 rin.png",
-    tier: "C",
-    opts: { spd: true, u: true },
-    explanation: {
-      pros: [
-        "Good Party Support on Skills & Some Debuffing Now",
-        "Good Breaking Capability"
-      ],
-      mixed: [
-        "Party Burn can be Annoying"
-      ],
-      cons: [
-        "Low Damage, Lacks Niches"
-      ]
-    }
-  },
-  {
     name: "B3 Reimu",
     img: "b3 reimu.png",
     tier: "C",
@@ -4284,29 +4267,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "The original immortal. This unit was crazy back in the day"
-      ]
-    }
-  },
-  {
-    name: "B5 Yuyuko",
-    img: "b5 yuyuko.png",
-    tier: "C",
-    opts: { dbf: true, u: true },
-    explanation: {
-      pros: [
-        "Idk her breaks and debuffs are ok",
-        "P0 AoE Killers and her killer dmg is very good thanks to scaling and dmg to eff"
-      ],
-      mixed: [
-        "Essentially Mono Wood"
-      ],
-      cons: [
-        "0 sources of acc in her kit",
-        "Killer bad L",
-        "Half her kit is just useless, i WILL cry if they leave her like this"
-      ],
-      nitpick: [
-        "Used the wrong theme smh"
       ]
     }
   },
@@ -4464,6 +4424,25 @@ dataSet[dataSetVersion].characterData = [
       ],
       nitpick: [
         "Recent \"Buffs\" hurt in practice (do not upgrade her skill 3)"
+      ]
+    }
+  },
+  {
+    name: "H5 Momoyo",
+    img: "h5 momoyo 2.png",
+    tier: "C",
+    opts: { atk: true, u: true },
+    explanation: {
+      pros: [
+        "Massive Damage to Res + Youkai Killer + High Scaling makes her AoE nuke genuinely great on fb* (This is called Foreshadowing)",
+        "Good Yin buffs throughout her kit, notably having consistent Yin Attack throughout every gauge along with Party Dmg to Res being appreciated"
+      ],
+      mixed: [
+        "Will want more Yin Def and Crit Atk throughout gauges",
+        "Util-Wise she is lacking aside from Party Acc on Skill and some minor Party P and Breaks"
+      ]
+      cons: [
+        "------ Her biggest and most egregious con is that her perfectly good kit is completely shoveled by the fact that all her important damaging lines have the Piercing effect. This means she basically has no Last Word and her AoE can't do damage off full break. She can't even take advantage of Permanent Defense Down. So she is basically just being tiered like a Solo Last Word unit."
       ]
     }
   },
@@ -4807,64 +4786,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A6 Yukari",
-    img: "a6 yukari.png",
-    tier: "C",
-    opts: { spd: true, a: true },
-    explanation: {
-      pros: [
-        "Solid Damage Output",
-        "Great Party Support and Setup, Especially in Agility"
-      ],
-      mixed: [
-        "Middling Crit Debuffs - Large Room for Improvement"
-      ],
-      cons: [
-        "Extremely Numbers Locked - Doesn't have enough anything to warrant a higher tier"
-      ]
-    }
-  },
-  {
-    name: "A6 Yuyuko",
-    img: "yuyu_scar.jpg",
-    tier: "C",
-    opts: { heal: true, a: true },
-    explanation: {
-      pros: [
-        "Solid Damage Potential w/ Good Card Options",
-        "Good Self Buffs"
-      ],
-      cons: [
-        "Selfish Buffs & Needs Support",
-        "Breaking Lags Behind",
-        "Needs Crit Atk"
-      ],
-      extra: [
-        "The funniest face on thlw"
-      ]
-    }
-  },
-  {
-    name: "A6 Lunasa",
-    img: "Lunasa scar.jpg",
-    tier: "C",
-    opts: { tec: true, a: true },
-    explanation: {
-      pros: [
-        "Great Self Setup",
-        "Good Damage Potential, great AoE",
-        "Good Support, Especially in Crit Atk"
-      ],
-      mixed: [
-        "Somewhat Soupy"
-      ],
-      cons: [
-        "Multiple sources of RNG",
-        "AoE is backloaded af with 0 p refund capability"
-      ]
-    }
-  },
-  {
     name: "A6 Merlin",
     img: "Merlin scar.jpg",
     tier: "C",
@@ -4904,55 +4825,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Your baseline for a good fes"
-      ]
-    }
-  },
-  {
-    name: "A7B Sakuya",
-    img: "a7b sakuya.png",
-    tier: "C",
-    opts: { tec: true, a: true },
-    explanation: {
-      pros: [
-        "Like Reimu, her Damage is achievable and Decent for Use",
-        "Solid Yang & Crit Setup",
-        "Overflow + Breaks give her decent Util"
-      ],
-      mixed: [
-        "Somewhat Soupy"
-      ],
-      cons: [
-        "Needs more Agility Buffs",
-        "Very, Very Noticeable Damage Ceiling"
-      ],
-      extra: [
-        "solos moon ex",
-        "ALL HAIL OUR QUEEN OF OVERFLOW"
-      ]
-    }
-  },
-  {
-    name: "A7 Chen",
-    img: "a7 chen.png",
-    tier: "C",
-    opts: { tec: true, a: true },
-    explanation: {
-      pros: [
-        "Decent Dmg Potential",
-        "Decent Self Setup"
-      ],
-      boons: [
-        "Can AoE SC Nuke"
-      ],
-      mixed: [
-        "Unimpressive Killer Range"
-      ],
-      cons: [
-        "ST Anom into RNG Anom... Wtf?",
-        "Very Varied Elements outside of Mono Wood AoE SC"
-      ],
-      extra: [
-        "Pcb Chonn (shes like a6 meiling where she was delayed for a year)"
       ]
     }
   },
@@ -5045,26 +4917,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A14 Seija",
-    img: "seija.jpg",
-    tier: "C",
-    opts: { dbf: true, a: true },
-    explanation: {
-      pros: [
-        "Good Damage Potential w/ Great Killers",
-        "Good Yang Debuffs Everywhere",
-        "Decent Party Buffs & Support"
-      ],
-      mixed: [
-        "Half of the stuff in her skills is useless"
-      ],
-      cons: [
-        "Doesn't set up her own Yin Atk & Def",
-        "No AoE Anomaly Breaks"
-      ]
-    }
-  },
-  {
     name: "A19 Ran",
     img: "A9 Ran.png",
     tier: "C",
@@ -5086,25 +4938,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       nitpick: [
         "WHY IS THIS UNIT NOT DEF"
-      ]
-    }
-  },
-  {
-    name: "L1 Ibaraki's Arm",
-    img: "l1 arm.png",
-    tier: "C",
-    opts: { dest: true, g: true },
-    explanation: {
-      pros: [
-        "Great Crit Support, Additional (Inconsistent) Stun Utility",
-        "Decently High Damage Output that's even better with Rebirth"
-      ],
-      mixed: [
-        "Low Innate Yin Atk Gain"
-      ],
-      cons: [
-        "Poor Elemental Breaks, Dated Anomaly Breaks",
-        "Can't set up her dual scaling. Her dual scaling is also very low."
       ]
     }
   },
@@ -5404,28 +5237,26 @@ dataSet[dataSetVersion].characterData = [
     opts: { heal: true, r: true },
     explanation: {
       pros: [
-        "Good Party Support, Especially for Yang",
-        "Good Debuffs",
-        "Unbinds useful when needed"
+        "The Primary Appeal of her Kit is her Yang Def and Atk II Buffs for the Party which can go a long way with proper support",
+        "Has up to 5 Def Down on her Last Word with innate debuff + Barrier Status card"
       ],
       boons: [
         "Immortal vs. 1 unit"
       ],
       mixed: [
-        "Secondary Gensokyo Killers",
-        "Low Dual Scaling Values"
+        "Generally lacks Utility outside of Party Acc on Graze, Graze restoration and her 2 Unbinds"
       ],
       cons: [
-        "Soupy Breaks, Poor Anomaly Breaks",
-        "Can't set up her Dual Scaling",
-        "Using Skills Effectively Exceedingly Difficult",
-        "Low Damage Everywhere (Though if it hits full killer her AOE is one of the strongest in the game)"
+        "Skill 2 Combined P, Yang Attack and Unbinds which can make her practical use very limited in situations where you want them to be spread out",
+        "Extremely bad Rank I buffs between Gauges made exponentially worse by being Dual Scaling as well as having 0 Crit Attack and Very Few Innate Yang Atk Buffs",
+        "High Damage Potential is further limited by having her Gensokyo killers being secondary while her p0 killers on her AoE and Last Word are virtually nonexistent (yes even if they're Para Pres, see FAQ)"
       ],
       nitpick: [
         "Extremely Long LW"
       ],
       extra: [
-        "Immortal vs. Solo Enemy"
+        "Immortal vs. Solo Enemy",
+        "Basically she is now an EBR merchant like the other recently buffed old relics."
       ]
     }
   },
@@ -5535,6 +5366,27 @@ dataSet[dataSetVersion].characterData = [
       ],
       nitpick: [
         "Has Piercing Lines"
+      ]
+    }
+  },
+  {
+    name: "A16& Eternity",
+    img: "a16& eternity.png",
+    tier: "D",
+    opts: { heal: true, ex: true },
+    explanation: {
+      pros: [
+        "Good Yin Def Buffs, can Debuff",
+        "Party Yin Atk II + Now has Real Scaling = Good Changes",
+        "2 Unbinds Good when Necessary"
+      ],
+      mixed: [
+        "Party Anom Cleanse can be Annoying",
+        "Needs Yin & Crit Atk Support"
+      ],
+      cons: [
+        "Between her soupy elements and low anom inflict her breaking ability suffers",
+        "Bad Killers"
       ]
     }
   },
@@ -5713,6 +5565,29 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "B5 Yuyuko",
+    img: "b5 yuyuko.png",
+    tier: "D",
+    opts: { dbf: true, u: true },
+    explanation: {
+      pros: [
+        "Idk her breaks and debuffs are ok",
+        "P0 AoE Killers and her killer dmg is very good thanks to scaling and dmg to eff"
+      ],
+      mixed: [
+        "Essentially Mono Wood"
+      ],
+      cons: [
+        "0 sources of acc in her kit",
+        "Killer bad L",
+        "Half her kit is just useless, i WILL cry if they leave her like this"
+      ],
+      nitpick: [
+        "Used the wrong theme smh"
+      ]
+    }
+  },
+  {
     name: "B5 Lyrica",
     img: "b5 lyrica.png",
     tier: "D",
@@ -5809,6 +5684,24 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Poor Killers, Can't take Real Advantage of her Crit Buffs as she isn't Dest",
         "Can't set up her own Dual Scale at all"
+      ]
+    }
+  },
+  {
+    name: "S5 Rin (Orin)",
+    img: "s5 rin.png",
+    tier: "D",
+    opts: { spd: true, u: true },
+    explanation: {
+      pros: [
+        "Good Party Support on Skills & Some Debuffing Now",
+        "Good Breaking Capability"
+      ],
+      mixed: [
+        "Party Burn can be Annoying"
+      ],
+      cons: [
+        "Low Damage, Lacks Niches"
       ]
     }
   },
@@ -5999,6 +5892,64 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "A6 Yukari",
+    img: "a6 yukari.png",
+    tier: "D",
+    opts: { spd: true, a: true },
+    explanation: {
+      pros: [
+        "Solid Damage Output",
+        "Great Party Support and Setup, Especially in Agility"
+      ],
+      mixed: [
+        "Middling Crit Debuffs - Large Room for Improvement"
+      ],
+      cons: [
+        "Extremely Numbers Locked - Doesn't have enough anything to warrant a higher tier"
+      ]
+    }
+  },
+  {
+    name: "A6 Yuyuko",
+    img: "yuyu_scar.jpg",
+    tier: "D",
+    opts: { heal: true, a: true },
+    explanation: {
+      pros: [
+        "Solid Damage Potential w/ Good Card Options",
+        "Good Self Buffs"
+      ],
+      cons: [
+        "Selfish Buffs & Needs Support",
+        "Breaking Lags Behind",
+        "Needs Crit Atk"
+      ],
+      extra: [
+        "The funniest face on thlw"
+      ]
+    }
+  },
+  {
+    name: "A6 Lunasa",
+    img: "Lunasa scar.jpg",
+    tier: "D",
+    opts: { tec: true, a: true },
+    explanation: {
+      pros: [
+        "Great Self Setup",
+        "Good Damage Potential, great AoE",
+        "Good Support, Especially in Crit Atk"
+      ],
+      mixed: [
+        "Somewhat Soupy"
+      ],
+      cons: [
+        "Multiple sources of RNG",
+        "AoE is backloaded af with 0 p refund capability"
+      ]
+    }
+  },
+  {
     name: "A7B Reimu",
     img: "a7b reimu.png",
     tier: "D",
@@ -6071,6 +6022,55 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Here's one thing that is obvious SHE IS NOT A DOG"
+      ]
+    }
+  },
+  {
+    name: "A7B Sakuya",
+    img: "a7b sakuya.png",
+    tier: "D",
+    opts: { tec: true, a: true },
+    explanation: {
+      pros: [
+        "Like Reimu, her Damage is achievable and Decent for Use",
+        "Solid Yang & Crit Setup",
+        "Overflow + Breaks give her decent Util"
+      ],
+      mixed: [
+        "Somewhat Soupy"
+      ],
+      cons: [
+        "Needs more Agility Buffs",
+        "Very, Very Noticeable Damage Ceiling"
+      ],
+      extra: [
+        "solos moon ex",
+        "ALL HAIL OUR QUEEN OF OVERFLOW"
+      ]
+    }
+  },
+  {
+    name: "A7 Chen",
+    img: "a7 chen.png",
+    tier: "D",
+    opts: { tec: true, a: true },
+    explanation: {
+      pros: [
+        "Decent Dmg Potential",
+        "Decent Self Setup"
+      ],
+      boons: [
+        "Can AoE SC Nuke"
+      ],
+      mixed: [
+        "Unimpressive Killer Range"
+      ],
+      cons: [
+        "ST Anom into RNG Anom... Wtf?",
+        "Very Varied Elements outside of Mono Wood AoE SC"
+      ],
+      extra: [
+        "Pcb Chonn (shes like a6 meiling where she was delayed for a year)"
       ]
     }
   },
@@ -6296,6 +6296,26 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "A14 Seija",
+    img: "seija.jpg",
+    tier: "D",
+    opts: { dbf: true, a: true },
+    explanation: {
+      pros: [
+        "Good Damage Potential w/ Great Killers",
+        "Good Yang Debuffs Everywhere",
+        "Decent Party Buffs & Support"
+      ],
+      mixed: [
+        "Half of the stuff in her skills is useless"
+      ],
+      cons: [
+        "Doesn't set up her own Yin Atk & Def",
+        "No AoE Anomaly Breaks"
+      ]
+    }
+  },
+  {
     name: "A14 Shinmy",
     img: "shinmy.jpg",
     tier: "D",
@@ -6487,6 +6507,25 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Bad Killer",
         "No Util"
+      ]
+    }
+  },
+  {
+    name: "L1 Ibaraki's Arm",
+    img: "l1 arm.png",
+    tier: "D",
+    opts: { dest: true, g: true },
+    explanation: {
+      pros: [
+        "Great Crit Support, Additional (Inconsistent) Stun Utility",
+        "Decently High Damage Output that's even better with Rebirth"
+      ],
+      mixed: [
+        "Low Innate Yin Atk Gain"
+      ],
+      cons: [
+        "Poor Elemental Breaks, Dated Anomaly Breaks",
+        "Can't set up her dual scaling. Her dual scaling is also very low."
       ]
     }
   },
