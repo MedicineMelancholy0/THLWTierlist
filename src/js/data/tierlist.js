@@ -4440,7 +4440,7 @@ dataSet[dataSetVersion].characterData = [
       mixed: [
         "Will want more Yin Def and Crit Atk throughout gauges",
         "Util-Wise she is lacking aside from Party Acc on Skill and some minor Party P and Breaks"
-      ]
+      ],
       cons: [
         "------ Her biggest and most egregious con is that her perfectly good kit is completely shoveled by the fact that all her important damaging lines have the Piercing effect. This means she basically has no Last Word and her AoE can't do damage off full break. She can't even take advantage of Permanent Defense Down. So she is basically just being tiered like a Solo Last Word unit."
       ]
