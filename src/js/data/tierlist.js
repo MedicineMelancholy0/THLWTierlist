@@ -1089,6 +1089,24 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  {
+    name: "C3' Urumi",
+    img: "c3' urumi.png",
+    tier: "S",
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "Good focus on yang attack while really only being reliant on it for her damage.",
+        "Complimenting her specialization she has quite great damage"
+      ],
+      cons: [
+        "Largely lacks most of the utility and support to be useful in other roles, and due to the above, isn't particularly consistent in her own damage role either."
+      ],
+      mixed: [
+        "Largely falls short in the realistic damage side, due to low scale buffs  low crit attack buffs"
+      ]
+    }
+  },
   // start of A
   {
     name: "A16.3& Kosuzu",
@@ -1406,24 +1424,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Seiga is a unit that *should* have most aspects of a competent kit. But in practice she is basically just a breaker. A good breaker, but still.",
-      ]
-    }
-  },
-  {
-    name: "C3' Urumi",
-    img: "c3' urumi.png",
-    tier: "A",
-    opts: { atk: true, e: true },
-    explanation: {
-      pros: [
-        "Good focus on yang attack while really only being reliant on it for her damage.",
-        "Complimenting her specialization she has quite great damage"
-      ],
-      cons: [
-        "Largely lacks most of the utility and support to be useful in other roles, and due to the above, isn't particularly consistent in her own damage role either."
-      ],
-      mixed: [
-        "Largely falls short in the realistic damage side, due to low scale buffs  low crit attack buffs"
       ]
     }
   },
