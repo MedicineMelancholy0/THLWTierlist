@@ -3879,31 +3879,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A15A& Sanae",
-    img: "a15a& sanae atk.png",
-    tier: "C",
-    opts: { tec: true, ex: true },
-    explanation: {
-      pros: [
-        "Good Breaking Utility",
-        "Overall Decent Support as Well"
-      ],
-      boons: [
-        "INSANE Res Nuke on Killer"
-      ],
-      mixed: [
-        "Very Low AoE SC Dmg Even On KIller"
-      ],
-      cons: [
-        "Awful, Awful Killers, Hampering Usability Immediately"
-      ],
-      nitpick: [
-        "Has some P Issues",
-        "Lmfao Eva II (Again)"
-      ]
-    }
-  },
-  {
     name: "A16& Aunn",
     img: "a16& aunn def.png",
     tier: "C",
@@ -5366,6 +5341,31 @@ dataSet[dataSetVersion].characterData = [
       ],
       nitpick: [
         "Has Piercing Lines"
+      ]
+    }
+  },
+  {
+    name: "A15A& Sanae",
+    img: "a15a& sanae atk.png",
+    tier: "D",
+    opts: { tec: true, ex: true },
+    explanation: {
+      pros: [
+        "Good Breaking Utility",
+        "Overall Decent Support as Well"
+      ],
+      boons: [
+        "INSANE Res Nuke on Killer"
+      ],
+      mixed: [
+        "Very Low AoE SC Dmg Even On KIller"
+      ],
+      cons: [
+        "Awful, Awful Killers, Hampering Usability Immediately"
+      ],
+      nitpick: [
+        "Has some P Issues",
+        "Lmfao Eva II (Again)"
       ]
     }
   },
