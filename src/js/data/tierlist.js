@@ -1089,30 +1089,6 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
-    { 
-    name: "L80 Reimu", 
-    img: "mv reimu.jpg", 
-    tier: "S", 
-    opts: { r: true, spd: true },
-    explanation: {
-      pros: [
-        "Last Word + AoE Damage are Consistently High, supported by Mvmu's Ample Debuffs",
-        "D Sk2's Yang Def Down is Disposable allowing for Ease of Use, while her Sk1 has High Utility for All Gauges (yes party poison is util.) "
-      ],
-      cons: [
-        "AoE Spell Targets Yin which can make pairing her difficult in modern stages (especially as she is Yang/Burn) seeing how modern stages tend to overnerf one of the defs",
-        "Though Atk Anoms certainly help, she really tends to lack Yang/Crit Atk and even Agility between gauges as her Solo Buffs are quite mid. This can make her performance content where you don't hit both LW and AoE Eff (Sun/Star) fall off very quickly.",
-        "This in general leads to her having a hard time in modern stages where she can't just out-util stages anymore because not only does she have bad innate buffs and support, but simply lacks Damage Amplification overall."
-      ],
-      nitpick: [
-        "Lmao Eva II",
-        "Poison Anoms are 1t and she is susceptible to para/freeze"
-      ],
-      extra: [
-        "DS Solo Count: 18"
-      ]
-    }
-  },
   // start of A
   {
     name: "A16.3& Kosuzu",
@@ -2647,6 +2623,30 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "@@"
+      ]
+    }
+  },
+  { 
+    name: "L80 Reimu", 
+    img: "mv reimu.jpg", 
+    tier: "B", 
+    opts: { r: true, spd: true },
+    explanation: {
+      pros: [
+        "Last Word + AoE Damage are Consistently High, supported by Mvmu's Ample Debuffs",
+        "D Sk2's Yang Def Down is Disposable allowing for Ease of Use, while her Sk1 has High Utility for All Gauges (yes party poison is util.) "
+      ],
+      cons: [
+        "AoE Spell Targets Yin which can make pairing her difficult in modern stages (especially as she is Yang/Burn) seeing how modern stages tend to overnerf one of the defs",
+        "Though Atk Anoms certainly help, she really tends to lack Yang/Crit Atk and even Agility between gauges as her Solo Buffs are quite mid. This can make her performance content where you don't hit both LW and AoE Eff (Sun/Star) fall off very quickly.",
+        "This in general leads to her having a hard time in modern stages where she can't just out-util stages anymore because not only does she have bad innate buffs and support, but simply lacks Damage Amplification overall."
+      ],
+      nitpick: [
+        "Lmao Eva II",
+        "Poison Anoms are 1t and she is susceptible to para/freeze"
+      ],
+      extra: [
+        "DS Solo Count: 18"
       ]
     }
   },
