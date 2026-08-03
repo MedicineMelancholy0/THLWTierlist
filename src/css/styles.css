@@ -408,8 +408,6 @@ body.small-icons .expl {
 }
 
 .toggle-row {
-  color: #ffffff;
-  background-color: #4e0066;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -420,6 +418,8 @@ body.small-icons .expl {
 
 .toggle-row #size-toggle-btn,
 .toggle-row #expl-toggle-btn {
+  color: #ffffff;
+  background-color: #4e0066;
   width: auto;
   flex: 1 1 auto;
   max-width: none;
@@ -802,8 +802,6 @@ label[for="mode_dark"] { display: grid; }
 }
 
 .expl-container {
-  background-color: #036600;
-  color: #ffffff;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -811,6 +809,10 @@ label[for="mode_dark"] { display: grid; }
   max-width: 1550px;
   margin: 8px auto;
   padding: 0 10px;
+}
+
+.expl-container .tier-expl {
+  background-color: #036600;
 }
 
 .expl-container button:hover {
