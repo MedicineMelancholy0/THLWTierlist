@@ -353,14 +353,14 @@ body.small-icons .expl {
 }
 
 .filter-group label:hover {
-  background-color: #8a0000;
+  background-color: #009178;
   transform: scale(1.05);
 }
 
 .filter-group input[type="checkbox"]:checked + label {
-  background-color: #ffffff;
-  color: #660000;
-  border: 2px solid #660000;
+  background-color: #c3f5ff;
+  color: #006655;
+  border: 2px solid #006655;
 }
 
 .tier-nav {
@@ -408,6 +408,8 @@ body.small-icons .expl {
 }
 
 .toggle-row {
+  color: #ffffff;
+  background-color: #4e0066;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -424,6 +426,12 @@ body.small-icons .expl {
   font-size: 15px;
   padding: 8px 10px;
   margin: 0;
+}
+
+
+.toggle-row button:hover {
+  background-color: #720793;
+  transform: scale(1.05);
 }
 
 .visually-hidden-checkbox {
@@ -794,6 +802,8 @@ label[for="mode_dark"] { display: grid; }
 }
 
 .expl-container {
+  background-color: #036600;
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -801,6 +811,11 @@ label[for="mode_dark"] { display: grid; }
   max-width: 1550px;
   margin: 8px auto;
   padding: 0 10px;
+}
+
+.expl-container button:hover {
+  background-color: #0d9e08;
+  transform: scale(1.05);
 }
 
 .expl-container .tier-expl {
