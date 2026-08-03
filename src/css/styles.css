@@ -813,17 +813,14 @@ label[for="mode_dark"] { display: grid; }
 
 .expl-container .tier-expl {
   background-color: #036600;
-}
-
-.expl-container button:hover {
-  background-color: #0d9e08;
-  transform: scale(1.05);
-}
-
-.expl-container .tier-expl {
   flex: 1;      
   width: auto;  
   margin: 0; 
+}
+
+.expl-container .tier-expl:hover {
+  background-color: #0d9e08;
+  transform: scale(1.05);
 }
 
 @media (max-width: 600px) {
