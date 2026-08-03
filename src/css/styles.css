@@ -313,6 +313,11 @@ body.small-icons .expl {
   margin-right: auto;
 }
 
+.expl label:hover {
+  background-color: #8a0000;
+  transform: scale(1.05);
+}
+
 .filter-group {
   display: flex;
   flex-wrap: wrap;
@@ -339,7 +344,7 @@ body.small-icons .expl {
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #660000;
+  background-color: #006655;
   border: 2px solid transparent;
   padding: 8px 14px;
   cursor: pointer;
@@ -383,7 +388,7 @@ body.small-icons .expl {
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #660000;
+  background-color: #006605;
   border: none;
   padding: 10px 16px;
   cursor: pointer;
@@ -393,7 +398,7 @@ body.small-icons .expl {
 
 .tier-nav button:hover, 
 .tier-nav-btn:hover {
-  background-color: #8a0000;
+  background-color: #008a30;
   transform: scale(1.05);
 }
 
