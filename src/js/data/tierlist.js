@@ -176,29 +176,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "C5> Miko", 
-    img: "c5 miko.png", 
-    tier: "EX", 
-    opts: { dest: true, e: true },
-    explanation: {
-      pros: [
-        "Second highest damage in the game lw, CURRENT HIGHEST ON AOE FULL KILLER (until lootori gets her bis anyways)",
-        "Damage is complimented by her having a surprisingly solid buff count throughout her kit avoiding the large issues logwako and looshi (aoe) have. Making her absurd damage very practical",
-        "In addition to her buffing, which is pretty solid for herself and very above average for party, she has proper 4 break aoe and 3 inflict, allowing her to be used both as the damage bot in teams like an l0 and the supportive unit for poison comps",
-        "Lw nlm lets her hit above nyshi...off killer...what"
-      ],
-      cons: [
-        "AoE p0 killers are lacking for her to reach said damage bot peaks, this can be mitigated by attempting to abuse the nlm. But it is a flaw that inhibits her use cases as the damage bot like she wants to do",
-        "Due to the lack of def down and lack of acc, the most common means of shafting, she can very much \"fraud out\" in a similar vain to how f1mors was perceived after release...only...worse. to the point of being an issue.",
-        "worst theme in the game?"
-      ],
-      extra: [
-        "Tldr: a unit with such silly rank ii, scaling, and raw damage gets to keep their raw neutral damage. However, it's only 7mil. A lot to be sure! But not...silly like her eff dmg is.",
-        "The final con is a genuine concern to remember before calling her undertiered, no other character in ex has to deal with both of these issues and they become very prominent very quickly unless the stage is designed to do neither def up nor acc shaft. These issues CAN be fixed by much easier than normal though, due to the sheer damage output. To the point something silly like mv ran can work if 5 actions can work."
-      ]
-    }
-  },
-  { 
     name: "L80 Kasen", 
     img: "kassy.jpg", 
     tier: "EX", 
@@ -251,6 +228,29 @@ dataSet[dataSetVersion].characterData = [
       extra: [
         "You know, for a unit trying to be many things at once like lootori, she somehow misses? Lootori gets by because her numbers are frankly just higher and she does more with less (big focus on agi and crit help, and def down), in addition has agi anoms for more consistency overall.",
         "noteable pairings:\nif you like running shrine maiden training, use nysen. nysen saves a lot of units with this sorta \"build\" (see: exyuuka) and will basically get around all these issues. NOT FREEZE IMMUNE DO NOT USE LOOTORI WITH HER"
+      ]
+    }
+  },
+  { 
+    name: "C5> Miko", 
+    img: "c5 miko.png", 
+    tier: "EX", 
+    opts: { dest: true, e: true },
+    explanation: {
+      pros: [
+        "Second highest damage in the game lw, CURRENT HIGHEST ON AOE FULL KILLER (until lootori gets her bis anyways)",
+        "Damage is complimented by her having a surprisingly solid buff count throughout her kit avoiding the large issues logwako and looshi (aoe) have. Making her absurd damage very practical",
+        "In addition to her buffing, which is pretty solid for herself and very above average for party, she has proper 4 break aoe and 3 inflict, allowing her to be used both as the damage bot in teams like an l0 and the supportive unit for poison comps",
+        "Lw nlm lets her hit above nyshi...off killer...what"
+      ],
+      cons: [
+        "AoE p0 killers are lacking for her to reach said damage bot peaks, this can be mitigated by attempting to abuse the nlm. But it is a flaw that inhibits her use cases as the damage bot like she wants to do",
+        "Due to the lack of def down and lack of acc, the most common means of shafting, she can very much \"fraud out\" in a similar vain to how f1mors was perceived after release...only...worse. to the point of being an issue.",
+        "worst theme in the game?"
+      ],
+      extra: [
+        "Tldr: a unit with such silly rank ii, scaling, and raw damage gets to keep their raw neutral damage. However, it's only 7mil. A lot to be sure! But not...silly like her eff dmg is.",
+        "The final con is a genuine concern to remember before calling her undertiered, no other character in ex has to deal with both of these issues and they become very prominent very quickly unless the stage is designed to do neither def up nor acc shaft. These issues CAN be fixed by much easier than normal though, due to the sheer damage output. To the point something silly like mv ran can work if 5 actions can work."
       ]
     }
   },
@@ -2198,31 +2198,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "C3 Koishi",
-    img: "c3 koishi.png",
-    tier: "B",
-    opts: { atk: true, e: true },
-    explanation: {
-      pros: [
-        "Great Party Support, 5t party Agi II is lol, low skill cooldown is especially amazing",
-        "Self Sustainable in Buffs"
-      ],
-      mixed: [
-        "Soupy Elements",
-        "High Damage Variance (thanks to bad killer placement",
-        "As a Yang Unit, Debuffs Yin Def"
-      ],
-      cons: [
-        "Overly reliant on Damage to Eff & Meh Killers",
-        "Low Damage Ceiling she literally doesn't even have scaling on her p0 LW",
-        "As a pure support, she will struggle due to lacking a lot of good qualities (party acc, other util) and as a mixture of all three roles she faces consistency issues thanks to low damage"
-      ],
-      nitpick: [
-        "Her LW is so stupidly long it sucks for use, even when she DOES have use"
-      ]
-    }
-  },
-  {
     name: "C3 Satori",
     img: "c3 satori.png",
     tier: "B",
@@ -3165,6 +3140,31 @@ dataSet[dataSetVersion].characterData = [
       extra: [
         "(She would be S if she had an AoE LW)",
         "Notes are assumed with new JP Buffs"
+      ]
+    }
+  },
+  {
+    name: "C3 Koishi",
+    img: "c3 koishi.png",
+    tier: "C",
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "Great Party Support, 5t party Agi II is lol, low skill cooldown is especially amazing",
+        "Self Sustainable in Buffs"
+      ],
+      mixed: [
+        "Soupy Elements",
+        "High Damage Variance (thanks to bad killer placement",
+        "As a Yang Unit, Debuffs Yin Def"
+      ],
+      cons: [
+        "Overly reliant on Damage to Eff & Meh Killers",
+        "Low Damage Ceiling she literally doesn't even have scaling on her p0 LW",
+        "As a pure support, she will struggle due to lacking a lot of good qualities (party acc, other util) and as a mixture of all three roles she faces consistency issues thanks to low damage"
+      ],
+      nitpick: [
+        "Her LW is so stupidly long it sucks for use, even when she DOES have use"
       ]
     }
   },
