@@ -650,6 +650,24 @@ dataSet[dataSetVersion].characterData = [
   },
   // start of S
   { 
+  name: "A16& Okina", 
+  img: "a16& okina.png", 
+  tier: "S", 
+  opts: { tec: true, ex: true },
+  explanation: {
+    pros: [
+      "H7/7 Breaker is obviously very good and lets her pair with many characters effectively, especially with having actually good P economy",
+      "Further, she has great killers and damage further enabled by her quick breaks and good buffs making her overall very useful on the part of carrying her weight"
+    ],
+    cons: [
+      "Her buffs are a little too selfish locking her from her true role as a Yang-Getsu. This is the only problem keeping her from SS but can be remedied by better cards similar to ExEika"
+    ],
+    extra: [
+      "Why the fuck are you small"
+    ]
+  }
+},
+  { 
   name: "A14.5& Mamizou", 
   img: "A15.5& Mamizou.png", 
   tier: "S", 
@@ -2697,6 +2715,26 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "L80 Kanako",
+    img: "l80 kanako.png",
+    tier: "B",
+    opts: { tec: true, r: true },
+    explanation: {
+      pros: [
+        "Access to 7 Breaks + Quick + Able to break Multiple Types of Anomalies Immediately Skyrockets her Modern Usefulness as a Supporter",
+        "Further Supplanted by Great Support and Buffs thanks to having amazing Anomaly Buffs and Great Support thanks to Rebirth and Anthology Card, along with her new Crit II on her Last Word",
+        "All supplanted to help make her Last Word genuinely good in tandem with innate def down"
+      ],
+      cons: [
+        "AoE Spellcard Damage still has no damage due to lacking p0 killer and ultimately leads to her remaining B",
+        "Extremely Inconsistent Elements tend to limit her use severely"
+      ],
+      nitpick: [
+        "Awful just abysmal spirit power economy"
+      ]
+    }
+  },
+  {
     name: "A8& Tewi",
     img: "a8& tewi.png",
     tier: "B",
@@ -3265,6 +3303,25 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "C3∫ Ran",
+    img: "c3int ran.png",
+    tier: "C",
+    opts: { dest: true, e: true },
+    explanation: {
+      pros: [
+        "The Best STLW in the Game backed by a High-Damaging AoE Spellcard making for consistent damage"
+      ],
+      mixed: [
+        "High Buff Counts throughout her Kit, also further supplanted by High Acc Support. However she is rather slow so the buffs aren't as good as they would like to be (aka her skills)",
+        "Leans into Acc Support too much while leaving out space for other kinds of Util or Buffs (Nursen Issue)"
+      ],
+      cons: [
+        "Earth AoE (the bad one) has 7 breaks while the Metal AoE (the good one) doesn't even have anomaly infliction tethering her to require a good breaker or pair of breakers",
+        "Solo Last Word without debuffs so she loses a lot of her potential kit immediately"
+      ]
+    }
+  },
+  {
     name: "C3∫ Sagume",
     img: "C3integral sagume.png",
     tier: "C",
@@ -3284,9 +3341,6 @@ dataSet[dataSetVersion].characterData = [
       nitpick: [
         "i hate ebr shill i hate ebr shill i hate ebr shill i hate ebr shill i hate ebr shill i hate ebr shill",
         "I don't like her sneakers"
-      ],
-      extra: [
-        "LAST TESTED: Dec 2025"
       ]
     }
   },
@@ -3484,28 +3538,6 @@ dataSet[dataSetVersion].characterData = [
         "ass buffs like actually 0 yang or crit in whole kit",
         "elemental & bullet type spread is awful",
         "30% dmg to res is quickly outpaced by other better rank ii buffs in this tier"
-      ]
-    }
-  },
-  {
-    name: "L80 Kanako",
-    img: "l80 kanako.png",
-    tier: "C",
-    opts: { tec: true, r: true },
-    explanation: {
-      pros: [
-        "Decent Last Word Damage (Thanks to Rein and Debuffing)",
-        "Great Self-Buffing Across Buff Removal, Good Party Support and Debuffs"
-      ],
-      mixed: [
-        "That Evil RNG Stun on her ST"
-      ],
-      cons: [
-        "Spellcard Damage Tends to be Ass",
-        "Extremely Inconsistent Elements tend to limit her use severely"
-      ],
-      nitpick: [
-        "Awful just abysmal spirit power economy"
       ]
     }
   },
