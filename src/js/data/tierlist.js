@@ -555,31 +555,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "L0g Suwako", 
-    img: "lg suwako.png", 
-    tier: "SS", 
-    opts: { p: true, atk: true },
-    explanation: {
-      pros: [
-        "Simply Amazing Damage Potential Everywhere",
-        "Good Support and Utility - Domain Expansion and Buffs are quite useful"
-      ],
-      cons: [
-        "$300 unit that doesn't solo everything",
-        "Shoots Herself in the foot with Agility*",
-        "Needs Better Dual Scaling & Crit Buffs to achieve aforementioned damage potential.",
-        "Terrible AoE Killers & Worse AoE Breaks make her use very difficult."
-      ],
-      nitpick: [
-        "Ultra Long AoE"
-      ],
-      extra: [
-        "*While Agi Anoms help this unit with Acc Issues, it completely shoots her in the foot in terms of breaks. Since she will go first most of the time, her AoE will have abysmal damage 99% of the time even on killer and eff because of her speed. Which makes her fail at like her only real usecase over mamizou (WHOS FREE AND EASY TO MLB)",
-        "NOTABLE PAIRINGS (Not included in tiering): Cz2, Sanmu, anyone who breaks before her. (Ex Mamizou)"
-      ]
-    }
-  },
-  { 
     name: "C3 Yuyuko", 
     img: "beach yuyu.jpg", 
     tier: "SS", 
@@ -648,25 +623,50 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  { 
+    name: "L0g Suwako", 
+    img: "lg suwako.png", 
+    tier: "SS", 
+    opts: { p: true, atk: true },
+    explanation: {
+      pros: [
+        "Simply Amazing Damage Potential Everywhere",
+        "Good Support and Utility - Domain Expansion and Buffs are quite useful"
+      ],
+      cons: [
+        "$300 unit that doesn't solo everything",
+        "Shoots Herself in the foot with Agility*",
+        "Needs Better Dual Scaling & Crit Buffs to achieve aforementioned damage potential.",
+        "Terrible AoE Killers & Worse AoE Breaks make her use very difficult."
+      ],
+      nitpick: [
+        "Ultra Long AoE"
+      ],
+      extra: [
+        "*While Agi Anoms help this unit with Acc Issues, it completely shoots her in the foot in terms of breaks. Since she will go first most of the time, her AoE will have abysmal damage 99% of the time even on killer and eff because of her speed. Which makes her fail at like her only real usecase over mamizou (WHOS FREE AND EASY TO MLB)",
+        "NOTABLE PAIRINGS (Not included in tiering): Cz2, Sanmu, anyone who breaks before her. (Ex Mamizou)"
+      ]
+    }
+  },
   // start of S
   { 
-  name: "A16& Okina", 
-  img: "a16& okina.png", 
-  tier: "S", 
-  opts: { tec: true, ex: true },
-  explanation: {
-    pros: [
-      "H7/7 Breaker is obviously very good and lets her pair with many characters effectively, especially with having actually good P economy",
-      "Further, she has great killers and damage further enabled by her quick breaks and good buffs making her overall very useful on the part of carrying her weight"
-    ],
-    cons: [
-      "Her buffs are a little too selfish locking her from her true role as a Yang-Getsu. This is the only problem keeping her from SS but can be remedied by better cards similar to ExEika"
-    ],
-    extra: [
-      "Why the fuck are you small"
-    ]
-  }
-},
+    name: "A16& Okina", 
+    img: "a16& okina.png", 
+    tier: "S", 
+    opts: { tec: true, ex: true },
+    explanation: {
+      pros: [
+        "H7/7 Breaker is obviously very good and lets her pair with many characters effectively, especially with having actually good P economy",
+        "Further, she has great killers and damage further enabled by her quick breaks and good buffs making her overall very useful on the part of carrying her weight"
+      ],
+      cons: [
+        "Her buffs are a little too selfish locking her from her true role as a Yang-Getsu. This is the only problem keeping her from SS but can be remedied by better cards similar to ExEika"
+      ],
+      extra: [
+        "Why the fuck are you small"
+      ]
+    }
+  },
   { 
   name: "A14.5& Mamizou", 
   img: "A15.5& Mamizou.png", 
@@ -1648,34 +1648,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "L80 Miko",
-    img: "l80 miko.png",
-    tier: "A",
-    opts: { tec: true, r: true },
-    explanation: {
-      pros: [
-        "++++++++ Hype moments and aura (said twice for dramatic effect)",
-        "Great Killers, Nuking is quite good",
-        "Party 2 Crit II is quite good, st crit def ii is more situational but fine",
-        "Super Good Breaking From Skills/Aoe/Lw",
-        "Dmg to eff and res"
-      ],
-      cons: [
-        "Awful AoE Killers",
-        "Lacking in typical yang buffs and debuffs",
-        "Elements and bullet types (yes multiple) are horrendous"
-      ],
-      boons: [
-        "Fairy Killer p0 on AoE (EB memes)",
-        "90% Of lw is p0, so much of her lw trolling is okay"
-      ],
-      extra: [
-        "SS for EB, low A everything else",
-        "The gimmicky mid tier filled with hype moments and aura"
-      ]
-    }
-  },
-{
     name: "L80 Sanae",
     img: "Mv sanae.jpg",
     tier: "A",
@@ -1691,6 +1663,30 @@ dataSet[dataSetVersion].characterData = [
       ],
       mixed: [
         "AoE Spellcard misses Youkai killer which can quickly make her damage fall off"
+      ]
+    }
+  },
+  { 
+    name: "L80 Reimu", 
+    img: "mv reimu.jpg", 
+    tier: "A", 
+    opts: { r: true, spd: true },
+    explanation: {
+      pros: [
+        "Last Word + AoE Damage are Consistently High, supported by Mvmu's Ample Debuffs",
+        "D Sk2's Yang Def Down is Disposable allowing for Ease of Use, while her Sk1 has High Utility for All Gauges (yes party poison is util.) "
+      ],
+      cons: [
+        "AoE Spell Targets Yin which can make pairing her difficult in modern stages (especially as she is Yang/Burn) seeing how modern stages tend to overnerf one of the defs",
+        "Though Atk Anoms certainly help, she really tends to lack Yang/Crit Atk and even Agility between gauges as her Solo Buffs are quite mid. This can make her performance content where you don't hit both LW and AoE Eff (Sun/Star) fall off very quickly.",
+        "This in general leads to her having a hard time in modern stages where she can't just out-util stages anymore because not only does she have bad innate buffs and support, but simply lacks Damage Amplification overall."
+      ],
+      nitpick: [
+        "Lmao Eva II",
+        "Poison Anoms are 1t and she is susceptible to para/freeze"
+      ],
+      extra: [
+        "DS Solo Count: 18"
       ]
     }
   },
@@ -2576,30 +2572,6 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
-  { 
-    name: "L80 Reimu", 
-    img: "mv reimu.jpg", 
-    tier: "B", 
-    opts: { r: true, spd: true },
-    explanation: {
-      pros: [
-        "Last Word + AoE Damage are Consistently High, supported by Mvmu's Ample Debuffs",
-        "D Sk2's Yang Def Down is Disposable allowing for Ease of Use, while her Sk1 has High Utility for All Gauges (yes party poison is util.) "
-      ],
-      cons: [
-        "AoE Spell Targets Yin which can make pairing her difficult in modern stages (especially as she is Yang/Burn) seeing how modern stages tend to overnerf one of the defs",
-        "Though Atk Anoms certainly help, she really tends to lack Yang/Crit Atk and even Agility between gauges as her Solo Buffs are quite mid. This can make her performance content where you don't hit both LW and AoE Eff (Sun/Star) fall off very quickly.",
-        "This in general leads to her having a hard time in modern stages where she can't just out-util stages anymore because not only does she have bad innate buffs and support, but simply lacks Damage Amplification overall."
-      ],
-      nitpick: [
-        "Lmao Eva II",
-        "Poison Anoms are 1t and she is susceptible to para/freeze"
-      ],
-      extra: [
-        "DS Solo Count: 18"
-      ]
-    }
-  },
   {
     name: "L80 Remilia",
     img: "l80 remi.png",
@@ -2711,6 +2683,34 @@ dataSet[dataSetVersion].characterData = [
         "@ instead lmao",
         "Just use mugetsu usually, mvmors is less reliable as your other unit needs to be able to break themselves. and if you can use sanmu you always will.",
         "NOTABLE PAIRINGS (Not included in tiering): Same as Mugetsu but worse. Yang/Burn is possibly the most neutered archetype in the game."
+      ]
+    }
+  },
+  {
+    name: "L80 Miko",
+    img: "l80 miko.png",
+    tier: "B",
+    opts: { tec: true, r: true },
+    explanation: {
+      pros: [
+        "++++++++ Hype moments and aura (said twice for dramatic effect)",
+        "Great Killers, Nuking is quite good",
+        "Party 2 Crit II is quite good, st crit def ii is more situational but fine",
+        "Super Good Breaking From Skills/Aoe/Lw",
+        "Dmg to eff and res"
+      ],
+      cons: [
+        "Awful AoE Killers",
+        "Lacking in typical yang buffs and debuffs",
+        "Elements and bullet types (yes multiple) are horrendous"
+      ],
+      boons: [
+        "Fairy Killer p0 on AoE (EB memes)",
+        "90% Of lw is p0, so much of her lw trolling is okay"
+      ],
+      extra: [
+        "SS for EB, low A everything else",
+        "The gimmicky mid tier filled with hype moments and aura"
       ]
     }
   },
