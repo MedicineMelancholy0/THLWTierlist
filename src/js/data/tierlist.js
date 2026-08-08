@@ -578,32 +578,6 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
-  { 
-    name: "Lm1 Maribel - Mugetsu", 
-    img: "mugetsu.png", 
-    tier: "SS", 
-    opts: { spd: true, r: true },
-    explanation: {
-      pros: [
-        "High-Damaging Last Word with Early Breaks and Debuffs",
-        "Powerful Yang and Crit Support throughout all Gauges thanks to her Kit and Card Options",
-        "Generally Great Party P and Breaking Utility (7/4) also supported by having Good Debuffs on All Attacks"
-      ],
-      mixed: [
-        "In general, she will tend to struggle if you burn her skills early as her last word buffing isnt very helpful at enabling her own nuking",
-        "Niche Resonance limits pairing and doesn't give as much Damage Amplification vs. Modern Rank II-Era Buffs"
-      ],
-      cons: [
-        "Having Bad Self Anomaly Infliction is a genuine concern now as it can really limit her pairings, especially seeing as her AoE lacks a Poison Break thus hurting her role as a Universal Yang Buffer",
-        "Horrible AoE Spellcard Damage"
-      ],
-      nitpick: [
-        "Can't Quite take advantage of her Excessive Crit Acc Buffs",
-        "Needs to use extremely rare and tedious to grind cards to get her Ekari tier support (not accounting tediousness of cards into tiering it is just annoying)",
-        "Not Freeze/Para Immune"
-      ]
-    }
-  },
   {
     name: "C3>> Yorihime",
     img: "c3 yorihime.png",
@@ -623,10 +597,34 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  // start of S
+  { 
+    name: "A16& Okina", 
+    img: "a16& okina.png", 
+    tier: "S", 
+    opts: { tec: true, ex: true },
+    explanation: {
+      pros: [
+        "7/7 Breaker is obviously very good and lets her pair with many characters effectively, especially with having actually good P economy",
+        "Further, she has great killers and damage further enabled by her quick breaks and good buffs making her overall very useful on the part of carrying her weight"
+      ],
+      mixed: [
+        "Disjointed LW and Element Elements",
+        "Generally lacks Crit Atk"
+      ],
+      cons: [
+        "Her buffs are a little too selfish locking her from her true role as a Yang-Getsu. This is the only problem keeping her from SS but can be remedied by better cards similar to ExEika, all while lacking innate debuffs"
+      ],
+      extra: [
+        "Expounding on her con, her self agi II is basically the limiting edict here as it makes it excruciatingly difficult to save her sk3 in a way such that her agi II is saved for g3. So her LW damage is projected to be rather mid in current content due to having to go first and not having innate debuffs."
+        "Why the fuck are you small"
+      ]
+    }
+  },
   { 
     name: "L0g Suwako", 
     img: "lg suwako.png", 
-    tier: "SS", 
+    tier: "S", 
     opts: { p: true, atk: true },
     explanation: {
       pros: [
@@ -648,22 +646,29 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
-  // start of S
   { 
-    name: "A16& Okina", 
-    img: "a16& okina.png", 
+    name: "Lm1 Maribel - Mugetsu", 
+    img: "mugetsu.png", 
     tier: "S", 
-    opts: { tec: true, ex: true },
+    opts: { spd: true, r: true },
     explanation: {
       pros: [
-        "H7/7 Breaker is obviously very good and lets her pair with many characters effectively, especially with having actually good P economy",
-        "Further, she has great killers and damage further enabled by her quick breaks and good buffs making her overall very useful on the part of carrying her weight"
+        "High-Damaging Last Word with Early Breaks and Debuffs",
+        "Powerful Yang and Crit Support throughout all Gauges thanks to her Kit and Card Options",
+        "Generally Great Party P and Breaking Utility (7/4) also supported by having Good Debuffs on All Attacks"
+      ],
+      mixed: [
+        "In general, she will tend to struggle if you burn her skills early as her last word buffing isnt very helpful at enabling her own nuking",
+        "Niche Resonance limits pairing and doesn't give as much Damage Amplification vs. Modern Rank II-Era Buffs"
       ],
       cons: [
-        "Her buffs are a little too selfish locking her from her true role as a Yang-Getsu. This is the only problem keeping her from SS but can be remedied by better cards similar to ExEika"
+        "Having Bad Self Anomaly Infliction is a genuine concern now as it can really limit her pairings, especially seeing as her AoE lacks a Poison Break thus hurting her role as a Universal Yang Buffer",
+        "Horrible AoE Spellcard Damage"
       ],
-      extra: [
-        "Why the fuck are you small"
+      nitpick: [
+        "Can't Quite take advantage of her Excessive Crit Acc Buffs",
+        "Needs to use extremely rare and tedious to grind cards to get her Ekari tier support (not accounting tediousness of cards into tiering it is just annoying)",
+        "Not Freeze/Para Immune"
       ]
     }
   },
