@@ -616,7 +616,7 @@ dataSet[dataSetVersion].characterData = [
         "Her buffs are a little too selfish locking her from her true role as a Yang-Getsu. This is the only problem keeping her from SS but can be remedied by better cards similar to ExEika, all while lacking innate debuffs"
       ],
       extra: [
-        "Expounding on her con, her self agi II is basically the limiting edict here as it makes it excruciatingly difficult to save her sk3 in a way such that her agi II is saved for g3. So her LW damage is projected to be rather mid in current content due to having to go first and not having innate debuffs."
+        "Expounding on her con, her self agi II is basically the limiting edict here as it makes it excruciatingly difficult to save her sk3 in a way such that her agi II is saved for g3. So her LW damage is projected to be rather mid in current content due to having to go first and not having innate debuffs.",
         "Why the fuck are you small"
       ]
     }
