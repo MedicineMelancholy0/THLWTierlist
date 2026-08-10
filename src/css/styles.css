@@ -425,7 +425,11 @@ body.small-icons .expl {
   transform: scale(1.05);
 }
 
-:root:has(#mode_mami:checked) .expl, .tier-expl {
+:root:has(#mode_medi:checked) :is(.expl, .tier-expl) {
+  background-color: rgba(74, 4, 4, 0.75);
+}
+
+:root:has(#mode_mami:checked) :is(.expl, .tier-expl) {
   background-color: rgba(121, 81, 0, 0.75);
 }
 
@@ -548,11 +552,11 @@ body.small-icons .expl {
   transform: scale(1.05);
 }
 
-:root:has(#mode_medi:checked) .tier-nav button, .tier-nav-btn {
+:root:has(#mode_medi:checked) :is(.tier-nav button, .tier-nav-btn) {
   background-color: rgba(74, 4, 4, 0.75);
 }
 
-:root:has(#mode_mami:checked) .tier-nav button, .tier-nav-btn {
+:root:has(#mode_mami:checked) :is(.tier-nav button, .tier-nav-btn) {
   background-color: rgba(155, 109, 19, 0.75);
 }
 
@@ -589,6 +593,24 @@ body.small-icons .expl {
 
 .toggle-row button:hover {
   background-color: #720793;
+  transform: scale(1.05);
+}
+
+:root:has(#mode_medi:checked) .toggle-row #size-toggle-btn, .toggle-row #expl-toggle-btn {
+  background-color: rgba(74, 4, 4, 0.75);
+}
+
+:root:has(#mode_mami:checked) .toggle-row #size-toggle-btn, .toggle-row #expl-toggle-btn {
+  background-color: rgba(155, 109, 19, 0.75);
+}
+
+:root:has(#mode_medi:checked) .toggle-row button:hover {
+  background-color: rgba(146, 9, 9, 0.75);
+  transform: scale(1.05);
+}
+
+:root:has(#mode_mami:checked) .toggle-row button:hover {
+  background-color: rgba(218, 153, 25, 0.75);
   transform: scale(1.05);
 }
 
@@ -833,14 +855,14 @@ extra
   --bg: rgba(29, 3, 51, 0.963);
   --fg: #f0dede;
   --bg-img: url("medicine card.png");
-  --bg-opacity: 0.5;
+  --bg-opacity: 0.2;
 }
 
 :root:has(#mode_mami:checked) {
   --bg: rgba(37, 14, 9, 0.9);
   --fg: #e8e7cf;
   --bg-img: url("mamiran.png");
-  --bg-opacity: 0.5;
+  --bg-opacity: 0.2;
 }
 
 body::before {
@@ -914,6 +936,34 @@ body {
   border: 2px solid #ffffff;
 }
 
+:root:has(#mode_medi:checked) .theme-toggle label {
+  background-color: rgba(74, 4, 4, 0.75);
+}
+
+:root:has(#mode_mami:checked) .theme-toggle label {
+  background-color: rgba(155, 109, 19, 0.75);
+}
+
+:root:has(#mode_medi:checked) .theme-toggle label:hover {
+  background-color: rgba(146, 9, 9, 0.75);
+  transform: scale(1.05);
+}
+
+:root:has(#mode_mami:checked) .theme-toggle label:hover {
+  background-color: rgba(218, 153, 25, 0.75);
+  transform: scale(1.05);
+}
+
+:root:has(#mode_medi:checked) .theme-toggle input[type="radio"]:checked + label {
+  background-color: #b12b2b;
+  border: 2px solid #ffffff;
+}
+
+:root:has(#mode_medi:checked) .theme-toggle input[type="radio"]:checked + label {
+  background-color: #9c912a;
+  border: 2px solid #ffffff;
+}
+
 .tier-toggle-bar {
   background-color: rgba(0, 0, 0, 0.4);
   color: #ffffff;
@@ -958,6 +1008,24 @@ body {
 
 .expl-container .tier-expl:hover {
   background-color: #0d9e08;
+  transform: scale(1.05);
+}
+
+:root:has(#mode_medi:checked) .expl-container .tier-expl {
+  background-color: rgba(74, 4, 4, 0.75);
+}
+
+:root:has(#mode_mami:checked) .expl-container .tier-expl {
+  background-color: rgba(155, 109, 19, 0.75);
+}
+
+:root:has(#mode_medi:checked) .expl-container .tier-expl:hover {
+  background-color: rgba(146, 9, 9, 0.75);
+  transform: scale(1.05);
+}
+
+:root:has(#mode_mami:checked) .expl-container .tier-expl:hover {
+  background-color: rgba(218, 153, 25, 0.75);
   transform: scale(1.05);
 }
 
