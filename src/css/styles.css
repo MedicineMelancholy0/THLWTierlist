@@ -167,10 +167,6 @@ body.small-icons .expl {
   background-color: rgba(11, 83, 148, 0.5);
 }
 
-.theme-toggle {
-  font-size: 60px;
-}
-
 .tier-group {
   scroll-margin-top: 80px;
 }
@@ -727,6 +723,10 @@ body.small-icons .expl {
   --bg-img: url("tower.png");
 }
 
+:root:has(#mode_light:checked) .cname {
+  color: #d9d2e9;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -749,52 +749,53 @@ body {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   transition: background-color 0.3s, color 0.3s;
-  isolation: isolate; /* Fixed: prevents z-index: -1 from hiding behind body background */
+  isolation: isolate;
 }
 
-/* Keep your custom toggle styles below */
 .theme-toggle {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin: 12px auto;
+  padding: 0 10px;
 }
 
 .theme-toggle input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  margin: 0;
   position: absolute;
   opacity: 0;
-  pointer-events: none;
+  width: 0;
+  height: 0;
 }
 
 .theme-toggle label {
-  width: 40px; 
-  height: 40px;
-  display: grid;
-  place-items: center;
+  flex: 1 1 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4e0066;
+  padding: 10px 8px;
+  text-decoration: none;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s, transform 0.15s;
 }
 
-/* Icon visibility logic */
-label[for="mode_light"] { display: none; }
-label[for="mode_dark"] { display: grid; }
-
-@media (prefers-color-scheme: dark) {
-  label[for="mode_light"] { display: grid; }
-  label[for="mode_dark"] { display: none; }
+.theme-toggle label:hover {
+  background-color: #720793;
+  transform: scale(1.03);
 }
 
-:root:has(#mode_dark:checked) label[for="mode_light"] {
-   display: grid;
-}
-:root:has(#mode_dark:checked) label[for="mode_dark"] {
-   display: none;
-}
-:root:has(#mode_light:checked) label[for="mode_light"] {
-   display: none;
-}
-:root:has(#mode_light:checked) label[for="mode_dark"] {
-   display: grid;
+.theme-toggle input[type="radio"]:checked + label {
+  background-color: #bc1189;
+  border: 2px solid #ffffff;
 }
 
 .tier-toggle-bar {
