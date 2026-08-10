@@ -89,9 +89,7 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Has nn bias because nn loves the color red so her secondary killer is bluemu secondary killer but better????",
-        "DS Solo Count: IDK a lot",
-        "Undeniably the best unit in the game, to the point where a new tier was considered to be made for her (which wouldve been better than most biased units in non bias content .ie better than most c3 in swimsuit stage). As such she gets a custom border",
-        "NOTABLE PAIRINGS (Not included in tiering):\nLITERALLY EVERYONE! C5> Zanmu + L0g Suwako and L80 Kokoro, L10.1 Sakuya especially."
+        "DS Solo Count: IDK a lot"
       ]
     }
   },
