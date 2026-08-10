@@ -175,7 +175,7 @@ body.small-icons .expl {
   scroll-margin-top: 80px;
 }
 
-.introtext, .formresponse {
+.introtext {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -183,6 +183,16 @@ body.small-icons .expl {
   font-family: 'Josephin Sans', Arial, sans-serif;
   border: 2px solid #000000;
   text-align: center;
+}
+
+.formresponse {
+  max-width: 1400px;
+  margin: 5 auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Josephin Sans', Arial, sans-serif;
+  border: 2px solid #000000;
+  text-align: justify;
 }
 
 .Important-Links {
