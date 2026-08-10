@@ -590,7 +590,7 @@ body.small-icons .expl {
 .close-btn {
   color: #aa0000;
   float: left;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: bold;
   cursor: pointer;
   line-height: 0.8;
@@ -704,7 +704,7 @@ body.small-icons .expl {
   --fg: #fff;    
 }
 :root:has(#mode_light:checked) {   
-  --bg: rgba(217, 210, 233, 0.95); 
+  --bg: rgba(242, 240, 248, 0.95); 
   --fg: #09031d;
 }
 /*
