@@ -68,6 +68,13 @@
     <label for="mode_dark" aria-label="Switch to dark mode">Dark Mode</label>
     <input type="radio" id="mode_light" name="mode" value="light">
     <label for="mode_light" aria-label="Switch to light mode">Light Mode</label>
+    
+    <input type="radio" id="mode_medi" name="mode" value="medicine">
+    <label for="mode_medi" aria-label="Switch to scarlet theme">Medicine Mode</label>
+
+    <input type="radio" id="mode_mami" name="mode" value="mamizou">
+    <label for="mode_mami" aria-label="Switch to forest theme">Mamizou Mode</label>
+
   </div>
   </div>
   </div>
@@ -1185,6 +1192,28 @@ document.addEventListener('DOMContentLoaded', () => {
       panel.classList.remove("is-collapsed");
       localStorage.setItem("filters_collapsed", "false");
     }
+  });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const themeRadios = document.querySelectorAll('.theme-toggle input[type="radio"]');
+
+  // Restore saved theme on load
+  const savedTheme = localStorage.getItem('siteTheme');
+  if (savedTheme) {
+    const savedRadio = document.getElementById(savedTheme);
+    if (savedRadio) savedRadio.checked = true;
+  }
+
+  // Save whenever the user picks a new theme
+  themeRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (radio.checked) {
+        localStorage.setItem('siteTheme', radio.id);
+      }
+    });
   });
 });
 </script>
