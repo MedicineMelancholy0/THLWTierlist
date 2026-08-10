@@ -196,7 +196,11 @@ body.small-icons .expl {
   border: 2px solid #000000;
   text-align: justify;
   color: rgba(0, 0, 0, 0.1);
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+  text-shadow:
+      -0.5px -0.5px 0 #ffffff,
+      0.5px -0.5px 0 #ffffff,
+      -0.5px  0.5px 0 #ffffff,
+      0.5px  0.5px 0 #ffffff;
 }
 
 .Important-Links {
