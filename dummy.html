@@ -23,72 +23,213 @@
 </head>
 
 <body>
-  <div class="theme-toggle">
-    <input type="radio" id="mode_dark" name="mode" value="dark">
-    <label for="mode_dark" aria-label="Switch to dark mode">🌙</label>
-    <input type="radio" id="mode_light" name="mode" value="light">
-    <label for="mode_light" aria-label="Switch to light mode">☀️</label>
+  <div class="head">
+  <!--<a href='src/assets/title1.png' target='_blank'>-->
+    <img src='src/assets/title1.png' alt='title1' width="1550" height="195">
+  </a>
   </div>
 
-  <script src="src/js/data/tierlist.js"></script>
-<!--
-  <script>
-    const characters = dataSet[dataSetVersion].characterData;
+  <div class="Frontpage">
+    <div class="collapse-bar">
+      <label for="toggle-intro" class="collapse-label">
+        <input type="checkbox" id="toggle-intro">
+        <span>I Don't Want To See This Stuff</span>
+      </label>
+    </div>
+    <div id="intro-content">
 
-    function renderCharacterToTier(item, containerId) {
-      const container = document.getElementById(containerId);
-      if (!container) return;
+      <div style="text-align:center;">
+      <h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
+      </div>
       
-      const imgContainer = document.createElement("div");
-      imgContainer.style.display = "inline-block";
-      imgContainer.innerHTML = `<img src="src/assets/chara/${item.img}" alt="${item.name}" />`; 
-      container.appendChild(imgContainer);
-    }
-  </script> --><!--Dummy-->
-  <div id="Dummy" class="tier-row"></div>
-  
-  <script>
-    characters
-      .filter(item => item.tier === "Dummy")
-      .forEach(item => renderCharacterToTier(item, "Dummy"));
-  </script>
+      <div class="introtext">
+      <p><b>Currently tracking <span id="total-character-count">0</span> units!</b></p>
+      <p>Explanations are available for every Character and Tier, visible by clicking on them. Read them to understand how units are ranked as it is not just vibes and they follow a system. Further explanations are available in the Tiering Criteria Section and in the Tier/Character explanations, please read them before making a complaint.</p>
+      <p><strong>Other important Criterias to keep in mind:</strong></p>
+      <p>Only EX, SS, S, and Yukkuri tiers are ordered from left (best) to right (worst).</p>
+      <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards (INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
+      </div>
 
-<div class="tier-nav">
-  <button onclick="jumpToTier('EX')">EX</button>
-  <button onclick="jumpToTier('SS')">SS</button>
-  <button onclick="jumpToTier('S')">S</button>
-  <button onclick="jumpToTier('A')">A</button>
-  <button onclick="jumpToTier('B')">B</button>
-  <button onclick="jumpToTier('C')">C</button>
-  <button onclick="jumpToTier('D')">D</button>
-  <button onclick="jumpToTier('E')">E</button>
-  <button onclick="jumpToTier('Yukkuri')">Yukkuri</button>
-</div>
+    <div class="Important-Links">
+      <a href="https://discord.gg/TCjp7VMTps" class="link-btn"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
+      <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753" class="link-btn"><strong>Calc Sheet (IMPORTANT!)</strong></a>
+      <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="link-btn" title="Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy"><strong>Q&A & Feedback Form</strong></a>
+      <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="link-btn"><strong>View Form Responses</strong></a>
+      <a href="https://lw.ayako.id/" class="link-btn"><strong>Ayako's LW Data Tracker</strong></a>
+    </div>
+
+    <p>Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy</p>
+
+    <div class="expl-container">
+      <div class="tier-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
+      <div class="tier-expl" onclick="openModal('criteria-modal')">Tiering Criteria</div>
+      <div class="tier-expl" onclick="openModal('faq-modal')">FAQ</div>
+      <div class="tier-expl" onclick="openModal('changelog-modal')">Changelog</div>
+    </div>
+    
+  <div class="theme-toggle">
+    <input type="radio" id="mode_dark" name="mode" value="dark">
+    <label for="mode_dark" aria-label="Switch to dark mode">Dark Mode</label>
+    <input type="radio" id="mode_light" name="mode" value="light">
+    <label for="mode_light" aria-label="Switch to light mode">Light Mode</label>
+
+    <input type="radio" id="mode_medi" name="mode" value="medicine">
+    <label for="mode_medi" aria-label="Switch to scarlet theme">Medicine Mode</label>
+
+    <input type="radio" id="mode_mami" name="mode" value="mamizou">
+    <label for="mode_mami" aria-label="Switch to forest theme">Mamizou Mode</label>
+    
+  </div>
+  </div>
+  </div>
+
+  <br>
+
+<script>
+  function toggleIconSize() {
+  const isSmall = document.body.classList.toggle('small-icons');
+  const btn = document.getElementById('size-toggle-btn');
+  
+  if (btn) {
+    btn.textContent = isSmall ? 'Switch to Large Icons' : 'Switch to Small Icons';
+  }
+  
+  localStorage.setItem('iconSize', isSmall ? 'small' : 'large');
+
+  fitNameplateText();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('iconSize') === 'small') {
+    document.body.classList.add('small-icons');
+    const btn = document.getElementById('size-toggle-btn');
+    if (btn) btn.textContent = 'Switch to Large Icons';
+  }
+});
+</script>
 
 <script>
   function jumpToTier(tierId) {
   const group = document.getElementById(`tier-group-${tierId}`);
   if (!group) return;
-
-  // Case 1: tier is hidden because the current filter has 0 matches for it.
-  // Scrolling to a display:none element does nothing, so bail out gracefully.
   if (getComputedStyle(group).display === 'none') {
     alert(`No ${tierId} tier characters match your current filters.`);
     return;
   }
-
-  // Case 2: tier row is manually collapsed — expand it so the jump is useful.
   const row = document.getElementById(tierId);
   if (row && row.classList.contains('collapsed')) {
-    toggleTierRow(tierId); // reuses your existing function to expand + fix button text
+    toggleTierRow(tierId);
   }
 
   group.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 </script>
 
+<input type="checkbox" id="toggle-filters" class="visually-hidden-checkbox">
+<label for="toggle-filters" class="filters-toggle-label">Show/Hide Toggles &amp; Filters</label>
+
+<div id="filters-panel" class="filters-panel">
+
+  <div class="filter-group">
+    <h1>Filter by Class</h1>
+    <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
+    <label for="class1">Defense</label>
+    <input type="checkbox" id="class2" value="supp" onclick="filterSuppChars()">
+    <label for="class2">Support</label>
+    <input type="checkbox" id="class3" value="heal" onclick="filterHealChars()">
+    <label for="class3">Heal</label>
+    <input type="checkbox" id="class4" value="dbf" onclick="filterDebuffChars()">
+    <label for="class4">Debuff</label>
+    <input type="checkbox" id="class5" value="atk" onclick="filterAttackChars()">
+    <label for="class5">Attack</label>
+    <input type="checkbox" id="class6" value="tec" onclick="filterTechChars()">
+    <label for="class6">Tech</label>
+    <input type="checkbox" id="class7" value="spd" onclick="filterSpeedChars()">
+    <label for="class7">Speed</label>
+    <input type="checkbox" id="class8" value="dest" onclick="filterDestChars()">
+    <label for="class8">Destroy</label>
+    <br>
+    
+    <h1>Filter by Rarity</h1>
+    <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
+    <label for="class9">Pure Fes</label>
+    <input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
+    <label for="class10">Epic Fes</label>
+    <input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
+    <label for="class11">Phantasm Fes</label>
+    <input type="checkbox" id="class12" value="r" onclick="filterRelicChars()">
+    <label for="class12">Relics and Genics</label>
+    <input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
+    <label for="class13">Extended Fes</label>
+    <input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
+    <label for="class14">Ultra Fes</label>
+    <input type="checkbox" id="class18" value="b" onclick="filterExChars()">
+    <label for="class18">Battle Pass</label>
+    <input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
+    <label for="class15">Festival</label>
+    <input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
+    <label for="class16">General</label>
+    <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
+    <label for="class17">Yukkuri</label>
+  </div>
+
+  <div class="toggle-row">
+    <button class="button primary" id="size-toggle-btn" onclick="toggleIconSize()">
+      Switch to Small Icons
+    </button>
+
+    <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
+      Hide Explanation Buttons
+    </button>
+  </div>
+
+  <div class="tier-nav">
+    <h2>Jump to Tier</h2>
+
+    <button onclick="jumpToTier('EX')">EX</button>
+    <button onclick="jumpToTier('SS')">SS</button>
+    <button onclick="jumpToTier('S')">S</button>
+    <button onclick="jumpToTier('A')">A</button>
+    <button onclick="jumpToTier('B')">B</button>
+    <button onclick="jumpToTier('C')">C</button>
+    <button onclick="jumpToTier('D')">D</button>
+    <button onclick="jumpToTier('E')">E</button>
+    <button onclick="jumpToTier('Yukkuri')">Yukkuri</button>
+  </div>
+
+</div>
+
+<!-- search-container stays here, outside filters-panel, wherever it already lives -->
+
+  <div class="search-container">
+  <input
+    type="text" 
+    id="charSearchInput" 
+    placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
+    autocomplete="off"
+  />
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchInput = document.getElementById("charSearchInput");
+
+      if (searchInput) {
+        searchInput.addEventListener("input", applyFilters);
+      }
+    });
+  </script>
 
 
+<script src="src/js/data/tierlist.js"></script>
+
+<div id="Dummy" class="tier-row"></div>
+
+<script>
+  characters
+    .filter(item => item.tier === "Dummy")
+    .forEach(item => renderCharacterToTier(item, "Dummy"));
+</script>
 
 <!-- EX -->
 <div class="tier-group" id="tier-group-EX">
