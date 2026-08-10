@@ -198,30 +198,33 @@ body.small-icons .expl {
 .Important-Links {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   gap: 10px;
+  color: #fff;
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 16px auto;
 }
 
 .link-btn {
-  display: block;
-  width: 100%;
+  flex: 1 1 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  text-decoration: none;
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
   background-color: #890160;
-  padding: 10px 14px;
+  padding: 10px 8px;
+  text-decoration: none;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s;
 }
 
 .link-btn:hover {
   background-color: #bc1189;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .f-tier-section {
