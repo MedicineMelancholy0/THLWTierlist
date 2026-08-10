@@ -186,6 +186,8 @@ body.small-icons .expl {
 }
 
 .formresponse {
+  font-size: 15px;
+  line-height: 1.5;
   max-width: 1400px;
   margin: 10px auto;
   width: 100%;
@@ -194,18 +196,14 @@ body.small-icons .expl {
   border: 2px solid #000000;
   text-align: justify;
   color: rgba(0, 0, 0, 0.1);
-  text-shadow:
-      -1px -1px 0 #ffffff,
-      1px -1px 0 #ffffff,
-      -1px  1px 0 #ffffff,
-      1px  1px 0 #ffffff;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
 }
 
 .Important-Links {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  font-size: 16px;
+  font-size: 20px;
   gap: 8px;
   color: #fff;
   width: 100%;
