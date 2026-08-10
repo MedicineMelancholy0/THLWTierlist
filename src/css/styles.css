@@ -560,13 +560,8 @@ body.small-icons .expl {
   background-color: rgba(155, 109, 19, 0.75);
 }
 
-:root:has(#mode_medi:checked) .tier-nav button:hover, .tier-nav-btn:hover {
+:root:has(#mode_medi:checked) :is(.tier-nav button, .tier-nav-btn):hover {
   background-color: rgba(218, 153, 25, 0.75);
-  transform: scale(1.05);
-}
-
-:root:has(#mode_mami:checked) .tier-nav button, .tier-nav-btn {
-  background-color: rgba(155, 109, 19, 0.75);
   transform: scale(1.05);
 }
 
@@ -596,11 +591,11 @@ body.small-icons .expl {
   transform: scale(1.05);
 }
 
-:root:has(#mode_medi:checked) .toggle-row #size-toggle-btn, .toggle-row #expl-toggle-btn {
+:root:has(#mode_medi:checked) :is(.toggle-row #size-toggle-btn, .toggle-row #expl-toggle-btn) {
   background-color: rgba(74, 4, 4, 0.75);
 }
 
-:root:has(#mode_mami:checked) .toggle-row #size-toggle-btn, .toggle-row #expl-toggle-btn {
+:root:has(#mode_mami:checked) :is(.toggle-row #size-toggle-btn, .toggle-row #expl-toggle-btn) {
   background-color: rgba(155, 109, 19, 0.75);
 }
 
@@ -959,7 +954,7 @@ body {
   border: 2px solid #ffffff;
 }
 
-:root:has(#mode_medi:checked) .theme-toggle input[type="radio"]:checked + label {
+:root:has(#mode_mami:checked) .theme-toggle input[type="radio"]:checked + label {
   background-color: #9c912a;
   border: 2px solid #ffffff;
 }
