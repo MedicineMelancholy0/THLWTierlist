@@ -5,10 +5,10 @@
   <link rel="icon" href="src/assets/medi.ico" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="og:site_name" content="Touhou Lostword Community Tierlist">
-  <meta name="og:description" content="The Official Touhou LostWord Community Tierlist by Medi and Hibi">
+  <meta name="og:site_name" content="Touhou LostWord Community Tierlist Q/A And Feedback Form Responses">
+  <meta name="og:description" content="Touhou LostWord Community Tierlist Q/A And Feedback Form Responses">
   <meta name="og:image" content="https://i.postimg.cc/mZKnsV9b/medi2.png">
-  <title>Touhou Lostword Community Tierlist</title>
+  <title>Touhou LostWord Community Tierlist Q/A And Feedback Form Responses</title>
 
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
@@ -19,13 +19,8 @@
 </head>
 
 <body>
-  <div class="head">
-  <!--<a href='src/assets/title1.png' target='_blank'>-->
-    <img src='src/assets/title1.png' alt='title1' width="1550" height="195">
-  </a>
-  </div>
 
-  <div class="Frontpage">
+    <div class="Frontpage">
     <div class="collapse-bar">
       <label for="toggle-intro" class="collapse-label">
         <input type="checkbox" id="toggle-intro">
@@ -33,36 +28,14 @@
       </label>
     </div>
     <div id="intro-content">
-
-      <div style="text-align:center;">
-      <h1><b>Welcome to the official Touhou Lostword Community Tierlist, managed primarily by medicine.melancholy and _hibi_ on Discord.</b></h1>
-      </div>
-      
-      <div class="introtext">
-      <p><b>Currently tracking <span id="total-character-count">0</span> units!</b></p>
-      <p>Explanations are available for every Character and Tier, visible by clicking on them. Read them to understand how units are ranked as it is not just vibes and they follow a system. Further explanations are available in the Tiering Criteria Section and in the Tier/Character explanations, please read them before making a complaint.</p>
-      <p><strong>Other important Criterias to keep in mind:</strong></p>
-      <p>Only EX, SS, S, and Yukkuri tiers are ordered from left (best) to right (worst).</p>
-      <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards (INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
-      </div>
-
     <div class="Important-Links">
       <a href="https://discord.gg/TCjp7VMTps" class="link-btn"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
       <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753" class="link-btn"><strong>Calc Sheet (IMPORTANT!)</strong></a>
       <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="link-btn" title="Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy"><strong>Q&A & Feedback Form</strong></a>
       <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="link-btn"><strong>View Form Responses</strong></a>
       <a href="https://lw.ayako.id/" class="link-btn"><strong>Ayako's LW Data Tracker</strong></a>
+      <a href="https://docs.google.com/spreadsheets/d/1o1r4sZzIA6oD5-xL_esx3XtPs9EePav2Mj7CbtEOYSU/edit?gid=1744976796#gid=1744976796">Previous form archives</a>
     </div>
-
-    <p>Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy</p>
-
-    <div class="expl-container">
-      <div class="tier-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
-      <div class="tier-expl" onclick="openModal('criteria-modal')">Tiering Criteria</div>
-      <div class="tier-expl" onclick="openModal('faq-modal')">FAQ</div>
-      <div class="tier-expl" onclick="openModal('changelog-modal')">Changelog</div>
-    </div>
-    
 
     <h2>Dark & Light Mode Toggle</h2>
     <div class="theme-toggle">
@@ -71,621 +44,182 @@
       <input type="radio" id="mode_light" name="mode" value="light">
       <label for="mode_light" aria-label="Switch to light mode">☀️</label>
     </div>
-  </div>
-  </div>
+    </div>
+    </div>
 
-  <br>
-
-<script>
-  function toggleIconSize() {
-  const isSmall = document.body.classList.toggle('small-icons');
-  const btn = document.getElementById('size-toggle-btn');
-  
-  if (btn) {
-    btn.textContent = isSmall ? 'Switch to Large Icons' : 'Switch to Small Icons';
-  }
-  
-  localStorage.setItem('iconSize', isSmall ? 'small' : 'large');
-
-  fitNameplateText();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('iconSize') === 'small') {
-    document.body.classList.add('small-icons');
-    const btn = document.getElementById('size-toggle-btn');
-    if (btn) btn.textContent = 'Switch to Large Icons';
-  }
-});
-</script>
-
-<script>
-  function jumpToTier(tierId) {
-  const group = document.getElementById(`tier-group-${tierId}`);
-  if (!group) return;
-  if (getComputedStyle(group).display === 'none') {
-    alert(`No ${tierId} tier characters match your current filters.`);
-    return;
-  }
-  const row = document.getElementById(tierId);
-  if (row && row.classList.contains('collapsed')) {
-    toggleTierRow(tierId);
-  }
-
-  group.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-</script>
-
-<input type="checkbox" id="toggle-filters" class="visually-hidden-checkbox">
-<label for="toggle-filters" class="filters-toggle-label">Show/Hide Toggles &amp; Filters</label>
-
-<div id="filters-panel" class="filters-panel">
-
-  <div class="filter-group">
-    <h1>Filter by Class</h1>
-    <input type="checkbox" id="class1" value="def" onclick="filterDefChars()">
-    <label for="class1">Defense</label>
-    <input type="checkbox" id="class2" value="supp" onclick="filterSuppChars()">
-    <label for="class2">Support</label>
-    <input type="checkbox" id="class3" value="heal" onclick="filterHealChars()">
-    <label for="class3">Heal</label>
-    <input type="checkbox" id="class4" value="dbf" onclick="filterDebuffChars()">
-    <label for="class4">Debuff</label>
-    <input type="checkbox" id="class5" value="atk" onclick="filterAttackChars()">
-    <label for="class5">Attack</label>
-    <input type="checkbox" id="class6" value="tec" onclick="filterTechChars()">
-    <label for="class6">Tech</label>
-    <input type="checkbox" id="class7" value="spd" onclick="filterSpeedChars()">
-    <label for="class7">Speed</label>
-    <input type="checkbox" id="class8" value="dest" onclick="filterDestChars()">
-    <label for="class8">Destroy</label>
     <br>
+<div style="text-align:center;">
+    <h1>These include transcripts of form feedback, if you do not want to be on this board, say so. However you will be anonymous regardless.</h1>
+    <h3>Color Scheme: </h3>
+    <p><b><span style="color: #38761d;">Green</span> = Form Text</b></p>
+    <p><b><span style="color: pink;">Pink</span> = Medi's Response</b></p>
+    <p><b><span style="color: cyan;">Cyan</span>= Hibi's Response</b></p>
+    <p><b><span style="color: #000001;">Black</span>= Kuro's Response</b></p>
+    </div>
+
+    <!-- FORM STARTS HERE -->
+
+<div class="formresponse">
+<h2><b>865:</b></h2>
+<p><span style="color: #38761d;">It probably doesn't matter a whole lot given how low-tier she is, but it's a little misleading for Enchanter's notes to note in her cons that she has "No AoE Anom Breaks". Wording might imply she does have ST anom breaks somewhere in her kit, when she in fact lacks any anom breaks in her attacks.</span></p>
+<p><span style="color: pink;">ill just update it</span></p>
+<p><span style="color: #38761d;">More of a question, but is part of why EX Sumireko's AOE isn't great the horrific accuracy? When using her I've noticed that despite the ostensibly 60-70% it feels more like 50% at times.</span></p>
+<p><span style="color: pink;">yeah but thats also par for the course with dests</span></p>
+<p><span style="color: #38761d;">Also, might not be the right people to ask this, but why is EX Eika's SP production on Spell Cards so, so ass? Easy to see why you call her SP economy bad and needing a duo partner to address.</span></p>
+<p><span style="color: pink;">no p regen on passive or aoe + kinda mid innate p gain on her aoe</span></p>
+</div>
+
+<div class="formresponse">
+<h2><b>864:</b></h2>
+<p><span style="color: #38761d;">Have a button so you can see all the banners running currently so you know the best one to pull</span></p>
+<p><span style="color: pink;">i dont think i can do this but i can link Ayako's site which does do that</span></p>
+</div>
+
+<div class="formresponse">
+<h2><b>862:</b></h2>
+<p><span style="color: #38761d;">recall a few months ago there was a curve presented in the tl (which I can't seem to find anymore) along the lines of "ex tier is lootori/cz2 at the top, then cs2/mvkasen slightly below, then f1 mors and sanmu WAY below", how is the current relation of ex/ss tier given all the drastic changes that happened?<br>- sanmu, logwako, mug completely mogged<br>- coco, exmami, nursen heavily dropped<br>- mumi, muflan, nysen, mvkari, looshi skyrocketed (even bunnyori to a lower extent)<br>- also lootori above cz2 now???<br>the whole placement feel so distant from that of a few months ago so I'd appreciate if you enlighten us what criteria got changed that caused such a massive shake up in the top tiers</span></p>
+<p><span style="color: pink;">i don't understand this question. this is a tierlist, not a monolith. if characters stop working they drop. if they work in content they're not "supposed" to they go up. no criteria change or anything like that, some of these characters were just never that good.</span></p>
+<p><span style="color: #38761d;">also pls add back the feedback form link to the google docs thx</span></p>
+<p><span style="color: pink;">its still there?</span></p>
+</div>
+
+<div class="formresponse">
+<h2><b>861:</b></h2>
+<p><span style="color: #38761d;">does c3 koishi still deserve b tier? s3 is nice but with no boost/graze or sc buffs its basically all her support and i cant imagine her aoe doing any damage ever.</span></p>
+<p><span style="color: pink;">she in fact does not. c3 kogasa may also drop. nice catch</span></p>
+<p><span style="color: #38761d;">can you guys calc kisume aoe on both p0 eff and full eff just because i think its funny she did something once tysm</span></p>
+<p><span style="color: pink;">will get to it this weekend</span></p>
+</div>
+
+<div class="formresponse">
+<h2><b>860:</b></h2>
+<p><span style="color: #38761d;">- Could you please explain how yall use the shorten breaking acronym (ex. 6/3, 7/4 and in one of the responses I saw a 9/3????)</span></p>
+<p><span style="color: pink;">first number is anomaly breaks on the first gauge, second gauge is the second number, provided only one skill is used. So a character who is 7/3 typically has 4 inflict on skill and 3 on their aoe, meaning once that skill is gone it's a normal 3 break aoe (nykoishi)</span></p>
+<p><span style="color: pink;">7/7 is characters like bunny toyohime who have 3 inflict on 2 skills, and their aoe inflicts 2. and then there's cases liek c3 cirno who are either 6/6 if 1 skill per gauge but if you use both inflict skills she can inflict 9 anomalies and fb everyone on g1</span></p>
+<p><span style="color: #38761d;">- wdym “What is say, a 650k aoe at cap can quickly become 300k at 5/12.” Emphasis on the 5/12</span></p>
+<p><span style="color: pink;">characters on the calc sheet are calced at 12sp (unless they have rein) and this number drops when their sp is #38761duced naturally</span></p>
+<p><span style="color: #38761d;">- The form tracking page on light mode makes the pink and #38761d colo#38761d text impossible to read. Also Kuro’s color is impacted on Dark Mode (It turns white lol) </span></p>
+<p><span style="color: pink;">i will have to fix that thanks for bringing that to my attention</span></p>
+</div>
     
-    <h1>Filter by Rarity</h1>
-    <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
-    <label for="class9">Pure Fes</label>
-    <input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
-    <label for="class10">Epic Fes</label>
-    <input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
-    <label for="class11">Phantasm Fes</label>
-    <input type="checkbox" id="class12" value="r" onclick="filterRelicChars()">
-    <label for="class12">Relics and Genics</label>
-    <input type="checkbox" id="class13" value="ex" onclick="filterExChars()">
-    <label for="class13">Extended Fes</label>
-    <input type="checkbox" id="class14" value="u" onclick="filterUltraChars()">
-    <label for="class14">Ultra Fes</label>
-    <input type="checkbox" id="class18" value="b" onclick="filterExChars()">
-    <label for="class18">Battle Pass</label>
-    <input type="checkbox" id="class15" value="a" onclick="filterFesChars()">
-    <label for="class15">Festival</label>
-    <input type="checkbox" id="class16" value="g" onclick="filterGenChars()">
-    <label for="class16">General</label>
-    <input type="checkbox" id="class17" value="y" onclick="filterYuChars()">
-    <label for="class17">Yukkuri</label>
-  </div>
+<h2><b>859:</b></h2>
+<p><span style="color: #38761d;">I seriously don’t get how loli Kanako survived in B given the rework of B-D. She is seriously lacking in damage for both her LW and aoe even with support. This goes against the reworked definition for B tier where a unit can have a decent aoe and lw nuke given they are supported.<br>Her aoe also has bad breaks. She is merely a support bot.</span></p>
+<p><span style="color: #a64d79;">because her support is that good that it allows her to stay in B. She has yang support up the ass, decent util, 8 def down. this character is never dropping'</span></p>
+<p><span style="color: #38761d;">Some notes that need updating:<br>Susak: “mostly still SS due to technicality” Not SS anymore<br>Zatori: “you use her as a aoe spell and lw nuke” Aoe was proven to be lacking in dmg leading to her downtier<br>H5 Letty: “if you doubled said numbers shed be ss This should be removed as it is far from being true now<br>A7 Luna: Her entire note about her being the best in D can be removed as she has finally risen</span></p>
+<p><span style="color: #a64d79;">sure</span></p>
+
+<h2><b>858:</b></h2>
+<p><span style="color: #38761d;">Based on ignoring killer values below 150, coldkou should be C (atrocious AoE AND LW off killer even with support capping her buffs, never nuked a single enemy off killer alone - hibi NEEDS to stop glazing this unit for duoing exclusively her own DS and coldguya DS<br>which are both designed exactly for her to work - if we tier exclusively on hyper shilled content, may as well put all Yang metal units two tiers higher)<br>Mima, NY Reimu, mumu, MV Miko (she only breaks 6/6 or 9/3) can go to B too</span></p>
+<p><span style="color: #a64d79;">the problem here is there are too many characters in A with AoE killer below 150 who absolutely deserve to be in A - ebonk, gunko, exhatate, exkutaka, b3 shimmy... these characters shouldn't drop. I also don't know why mumu or mima are there.<br>anyways, we need a different system to finally get a way for coldkou to drop because she just can't rn unfortunately.</span></p>
+<p><span style="color: #38761d;">And if Lr Arm is not nuking newest EBL A3 with the tailor made swordswoman killer change, she may drop to B too</span></p>
+<p><span style="color: cyan;">i dont know what you're expecting her to do on full res</span></p>
+<p><span style="color: #38761d;">On the other hand I think exyuuka has proven herself to tier in S - being able to work with nysen flawlessly is just that good - nysen is more picky than a good chunk of EX tier units<br>Remember we have units like sanmu who has 95% of her performance carried by Cz2 while exyuuka even can 4T solo old EBL and duo more modern DS than the bottom 5 S-tier units combined<br>(exsatono can’t even nuke on killer and likes to go fast to only breaks 6 while having few proper partners)</span></p>
+<p><span style="color: cyan;">ex yuuka physically an not be S on the virtue that she requires specific other units with extreme rank ii to cover her aoe inconsistency, meaning she needs specific breakers/geng, so shes not S<br>same why a unit whos fast + has quick spam cant be S unless they have absurd overflow as they also need a specific geng<br>the tierlist doesnt tier off specific combos, so no<br>(also exyuuka has been dead for quite a bit actually)</span></p>
+<p><span style="color: #38761d;">also pink saki just continues to exceed expectations even on res content since her self setup is just that good and I think there is an argument for her to be EX- below MV Aya</span></p>
+<p><span style="color: #a64d79;">in my experience using her she is tie#38761d perfectly rn. she can be very strong and versatile but she does have her drawbacks and they are significant. she is very similar to cstroos i think except a bit harder to use. so i think current position is fine.</span></p>
+<p><span style="color: cyan;">ill be honest i have not used saki yet at all, so i cant comment, her practical puts he rbehind cstroos. and she preforms about the same as cstroos when medi uses her. so for all intensive purposes shes slightly worse than cstroos.<br>If you are surprised shes preforming this well. it may be funny to say this but cstroos SHOULD preform straight better.</span></p>
+<p><span style="color: #38761d;">And although Cf1 Reimu is not spectacular, I still think maid yoshika has a lot of positive traits between damage and proper self setups that let her easily exceed, say, epic chimata</span></p>
+<p><span style="color: #a64d79;">this character needs to prove herself to do anything beyond dying on g2 first to consider going up</span></p>
+<p><span style="color: cyan;">for bl4 we, once again, dont look at specific duos like that nor that way, well known best duo from a numbers perspective (if you can pull it off) f1 mors + mvkari doesnt defacto mean that f1 mors is gonna go up because she buffs yukari to the sun. neither will a character like bl4 move<br>up JUST because she can prove she can buff specifically maidyoshika. speaking of maid yoshika. maidyoshika doesnt even lose that much by not having bl4 there specifically. meaning she can use other options like bunyo or mumi. proving that shes not limited to specific units like<br>how almost all of bl4s use case is limited to maidyoshika. its kinda said. but thats life. bl4 just has that shit of buffs in comparison to those two that despite having slightly better rank ii in modern stages the damage will even out. maidyoshika buffs were afterall, never that amazing</span></p>
+<p><span style="color: #38761d;">units like W5 Yuugi, W1 Suika, C3 Reimu, B3 Toyo, B3 Seiran have been overly reliant on youkai killer for killer range<br>However most modern DS has at least one non-youkai and not having another effective killer tag has been hurting them a lot<br>This coupled with the fact that they do need a good amount of support as a potential nuke and that they can’t nuke on eff only means that they just generally suck and should be lowe#38761d considerably<br>Not to mention that the weaker AoEs among them (W5 Yuugi is particularly terrible) have a good chance of not nuking even the youkai enemies with full support</span></p>
+<p><span style="color: #a64d79;">Ig i see the point but i also don’t think the problem is that bad? Idk</span></p>
+<p><span style="color: cyan;">Wuugi aoe is supposed to nuke with cs2 as per kuros last check<br>And this Is another character i don’t rlly use<br>But i think if we are going to be dropping characters for not having 3/3 on aoes… we have a lot of work to do<br>So i don’t think these characters should drop for that reason<br>If there is a reason for them to drop its being tied to eff dmg and having nothing to deal with res</span></p>
+
+<h2><b>857:</b></h2>
+<p><span style="color: #38761d;">For W5 Yuugi, shouldn't the bottom nitpick be "Who Will Wuse Wuugi Win Wenty Wenty Wix" instead of "Wenty Wenty Wive"? I mean we're 8 months into 2026 already</span></p>
+<p><span style="color: #a64d79;">...sure</span></p>
+
+<h2><b>856:</b></h2>
+<p><span style="color: #38761d;">A15& Sanae to D. Most part of her kit is really bad. Her elements are extremely inconsistent, her killer is practically non-existent, her support is middling, and she has little to no debuff to make her worth using.<br>This is an extremely bad look as the tier below her have people like L80 Suwako, Lr Nitori, and L50ws Yukari at least doesn't mess up as bad as Sanae.</span></p>
+<p><span style="color: #a64d79;">take your bundle deal too</span></p>
+
+<h2><b>855:</b></h2>
+<p><span style="color: #38761d;">B5 Lunasa to D, I just don't see how she is better than Lr Nitori.</span></p>
+<p><span style="color: #a64d79;">idk how you came to this conclusion when Lunasa can actually kill on killer and Nitori can't. Denied.</span></p>
+
+<h2><b>854:</b></h2>
+<p><span style="color: #38761d;">An additional note for a6 sunny bc she has one of the most detailed anima in the game, like her anima isn't just the character jiggling around Im so shocked</span></p>
+<p><span style="color: #a64d79;">maybe i will provide a link to that mod i made that makes a6 sunny a fightable boss in eosd. did you guys know i used to make touhou mods?</span></p>
+
+<h2><b>853:</b></h2>
+<p><span style="color: #38761d;">MV Reimu to B. basically her AoE is poor and she has poor synergy with all relatively newer units<br>with Yang units, she must go first especially on T1 to break the burn inflicted on her p skill but only breaking 6/3, no party p skill and general lack of support outside of party accuracy make her basically a card launcher<br>with Yin units, her AoE can’t nuke since she lacks self buffs to make it nuke, and her LW and skill 2 are just useless for yin partners who also rarely benefit from party poison in skill 1<br>Her LW is not bad as a set up on gauge 3 especially with ofuda d cards but it’s long past days that it can nuke without support</span></p>
+<p><span style="color: #a64d79;">yes. killed</span></p>
+
+<h2><b>852:</b></h2>
+<p><span style="color: #38761d;">outdated notes:<br>f1shi notes comparing her to l10.1 is outdated as l10.1 has best in slots (lol)<br>a7a reimu has better bises too (debuffs especially with a 3 yang up 2 yang def down)<br>a7b reimu has better bises too now so prob need to change that singular cons to mixed issue ?</span></p>
+<p><span style="color: #a64d79;">everything updated</span></p>
+
+<h2><b>851:</b></h2>
+<p><span style="color: #38761d;">It is more of a curiosity, but as an owner of B3 Sagume, I have found her kind of underwhelming for a B tier compa#38761d to other B-tiers I own?<br>Her high potential LW damage only feels like it materializes about a third of the time if that, even when she has significant help, a reasonably good card and good buffs from other units, and is attacking into Moon/Metal, and she suffers from inc#38761dibly extreme SP issues<br>(she might have the worst SP upkeep and generation of any unit I use semi-regullarly, often gives L80Myon a serious run for her money in that regard).<br>She can easily go from 4 SP to 1-2 from a single AOE use against multiple enemies, and her shots kinda suck at getting it back for her LW plus 6 cooldown on her party SP skill.<br>Her AOE sometimes has decent damage, but it's soupiness really kills her breaking potential even with a relatively accessible (2P) para break (partly due to no skill para inflict so she has to rely on the 2 pre-spell), and her killer range is somewhat narrow.<br>Bullet weights mean almost half of the bullets are also Star, the element that shows up nowhere else in her kit, while both Metal lines have Specular, which I have seen hurt her more than help, and the Moon lines lack Youkai, her one wide killer,<br>and are stuck with Human/Inchling, which also isn't great and in my experience leaves her doing middling damage against even somewhat weak and debuffed foes.<br>Relatedly, her AOE breaks para, but inlines blind, and her solo breaks blind, but inlines para. Her buffing really feels like the only semi-consistent part of her kit in my time using her, even her barrier-restore abilities fall behind. Just figure she might be worth testing</span></p>
+<p>the blind inflict is very easy to go around because you only need 4 breaks for azusa to instant break or inflict para to compensate<br>additionally her aoe damage, calc wise at least, is quite good and if she drops a loooooool of also people are dropping<br>ntm there are a ton in B that doesn't have the consistent killer that azusa/oto has<br>but yeah idt azusa or oto drops consistent aoe damage w/ anti and then additional support with decentish lw</p>
+
+<h2><b>850:</b></h2>
+<p><span style="color: #38761d;">Opinion: Solo lastword characters should be capped to B instead of C as some of them still work in trios and are more useful than some characters in B. If the argument is that they are capped because they can't work in duos then why not open the door on the trios tiers? Food for thought.</span></p>
+<p><span style="color: cyan;">there are simply more cases even outside of ds that having no spells and a lw trumps having usable spells and a lw. pretty much any ac stage. pretty much any ebl, etc. this game simply punishes st lws too much</span></p>
+
+<h2><b>849:</b></h2>
+<p><span style="color: #38761d;">For the new site, I get it's standard convention, but it may be good to highlight whether it's the right side or left side that is the "higher in the list", just to be more clear, especially since many of the orde#38761d tiers have multiple horizontal layers.</span></p>
+<p><span style="color: pink;">sure</span></p>
+<p><span style="color: #38761d;">No real need, but having the SS Border-based subtiers on the new site could be cool, as would more sub-tiers in the orde#38761d tiers to help explain niches.</span></p>
+<p><span style="color: pink;">i want to do this eventually but i dont know how rn</span></p>
+<p><span style="color: #38761d;">On the new website, Please include the Nickname/Terminology glossary. New players may not know what "MVkari" or "fmors" mean in the notes. (Other stuff is like being clear on what different cards or things mentioned being used are.<br>Like the "Yukari Anthology Story Card", if that makes its way into a character's explanation, it should probably be by name or have an entry in the glossary)</span></p>
+<p><span style="color: pink;">sure</span></p>
+<p><span style="color: #38761d;">Likewise, reworking the Banners in the icons could be a good idea for a standalone site, but otherwise, the Banner key is needed, (and the page/section on the other resources would be great to port over too).</span></p>
+<p><span style="color: pink;">i dont really plan to continue anything with the banners as i consider them visual noise and we have a filter system now which should cover everything. as for other resources... will probably get to them</span></p>
+<p><span style="color: #38761d;">And a small niggle : For new players, maybe change names like "Lr1 Shinki" to "Lr1 Renko - Shinki" so it matches more with the names on global? Like, unfortunately unless you know Touhou, the only place a new player would find the names "Mima", "Shinki", "Mugetsu", and "Gengetsu" are from the pop-up spellcard/nature descriptions.</span></p>
+<p><span style="color: pink;">sure</span></p>
+<p><span style="color: #38761d;">The tier list is one of the best resources to a new player, and it does feel there are quite a few barriers to use until a newbie joins the discord and learns the lingo.<br>Also the fun comments from the spreadsheet kind of really are a part of the charm/vibe of the tier list, so I would like to see them be preserved/kept/expanded on the new site if possible.</span></p>
+<p><span style="color: pink;">they are not going away</span></p>
+
+    <h2><b>848:</b></h2>
+<p><span style="color: #38761d;">ex mamizou to mid S<br>her kit has too many issues including but not exclusive to needing 3p to do anything and yet severely lacks p, very late breaks and only breaks 3 on gauge 2, a low damage amplifier comparable to some A tier units, no res nuking capability<br>If she goes first and be the utility bot, her 7/3 breaks, accuracy spam and unfocused Yang buffs are pretty decent but not immediately SS worthy<br>Even BP Koishi has 7/3 breaks and party yang/accuracy on AoE but she has 2p poison break on AoE and 1p poison break on LW and thus somehow fewer p issues as a utility bot<br>Yet since most of her potential teammates all have at least one quick (nysen/nyshi even has 2) and she is not realistically outspending units with agi anoms, she is quite likely to go last and hope her partner(s) support her enough to do damage.<br>Even so, her practical damage is not trivially universal or consistent to finish any gauge when hitting only either eff or killer, which in some ways explains her lack of shillable content<br>her desperate need for p is known to negatively affect everyone’s card options and her choice of AoE (opting for the weaker AoE2 because it’s her only source of crit buffs and p)<br>Ultimately being just okayish in all roles even when given good cards and partners is very much not emblematic of SS</span></p>
+<p><span style="color: pink;">i think she still has ss qualities but whatever i dont want to defend this unit anymore</span></p>
+
+<h2><b>847:</b></h2>
+<p><span style="color: #38761d;">Unless this affects phrumia’s tier, the note on her having a wide killer range is incorrect as her aoes hit 194 and her lw hits 206 on p0.</span></p>
+<p><span style="color: pink;">again this doesnt really change anything but.. note updated</span></p>
+
+<h2><b>846:</b></h2>
+<p><span style="color: #38761d;">ph rumia should be lowe#38761d in SS simply by the fact that her killer range was overestimated and is important to her damage consistency<br>even with capped yin/agility, missing killer still hurts her damage a lot and yet her killer sets are just moderate throughout while explicitly requires externally support to do dest stuff</span></p>
+<p><span style="color: cyan;">eh, her tiering is the same even with re-evaluated killer ranges. Her res damage on nlm only is still quite good and her sc1 kinda carries everything</span></p>
+
+<h2><b>845:</b></h2>
+<p><span style="color: #38761d;">do the tier list mainly consider actual usage (results) or theoretical usage (calcs)?<br>for instance mvkasen AoE calcs indicate that it would be atrocious off killer while only having ~50% killer coverage including parapres - yet her results are stellar as she hits killers on way way more than 50% of DS<br>we also have a million Yang metal content that make nyshi/l0gnako/mvran look like the most broken group of units ever<br>while exmami has good numbers and better killer coverage but she has no remarkable results other than pairing with a perfectly aligned unit of the DS/EBL<br>if going by calcs, mvkasen would have a lot of reasons to be lower in EX until NN gives her FR 2.0 with the best anthology card in the game<br>if going by results, exmami could even be in A because someone like exyuuka has much more results everywhere<br>As a result, units with a lot of content or no content can be either heavily overrated or underrated depending on tiering philosophy and I would argue the current form of TL indicates that it juggles between both from unit to unit<br>A more standardised approach to units especially S or above would be much appreciated</span></p>
+<p><span style="color: cyan;">The main thing is practicals. And by this i mean calcs that realistically hit minimum damage requi#38761d for stages. Which is why units like exmami, mv kasen, most of s tier etc. Aren't punished THAT badly for having what is "low damage".<br>Since they largely actually buff themselves to reach the minimum damage requi#38761d for content. (I do agree exmami should be lower tho) Nobody cares if you do 2 million or 20 so long as it kills. And for some reason modern units often have a 20 mil cap and then get 1.5 mil on average<br>because their buff is that shit or they have other in practice issues (like mv ran, who is JUST in practice issues)<br>Results are then only used to prove/provide counter arguments to this theoritical. We basically take an imagineary stage. See if the unit can farm it realistically. And then tier off that. If im wrong, and the unit is actually proven to farm stages of around that level.<br>Then the usage proved that the therotical was actually incorrect and they are infact consistent in what was attempted (such as getting x unit to aoe nuke)<br>When deemed consistent in a facet, wether it be aoe damage or lw damage or utility, it is assumed that you can preform the actions over and over again. So when a character has like an aoe damage problem because you just cant set up their aoe to actually nuke literally ever,<br>youll see that unit quickly go from SS to A/B tier. As was the case with like cz1.<br>As such, Ex tier is the tier of being universal in element as well as having universal elements across all content. Whether that be utility (cs2). Universal damage (spriko). A combination of both with some drawbacks (looshi) or everything in the game at once (lootori).<br>We can rightfully assume that these charaters are ex because theoritical tests and stages proved they meet the requi#38761d minimums. And then in game usage and testing proved that correct. No its not raw calcs no its not raw usage. Its using usage to prove x is fine/isnt</span></p>
+
+<h2><b>844:</b></h2>
+<p><span style="color: #38761d;">Hi, sorry, this is mostly just me asking questions. First of all, I pulled for Yukari's Ant Card and got 5 copies. How many should I just limit break now or how many should I throw in the cooking pot to stew for a couple of months.</span></p>
+<p><span style="color: pink;">you need 2 mlb so funnel all but 1 into one of them and shove them into the collection</span></p>
+<p><span style="color: #38761d;">Also, while I do agree that luck buffs shouldn't be counted for the list, is it safe to assume that if in theory, a seperate FES/L1/(Non-#38761d Marisa) Yukkuri tier list was made for luck buffs, it would just be the same as clicking FES only in the search and just not much changing in the tier list?<br>If so, at least A6 Merlin would be close to top tier in one type of tier list. The one in my heart.</span></p>
+<p><span style="color: pink;">probably more or less the same</span></p>
+<p><span style="color: #38761d;">Anyway, new website looks great! :D</span></p>
+<p><span style="color: pink;">thanks!!</span></p>
+
+<h2><b>843:</b></h2>
+<p><span style="color: #38761d;">F1 Marisa to SS. Based on the definition of EX tier: "Units of this caliber are universally proven useful and consistent inside their element. As well as outside their element to a reasonable extent..." she kinda doesn't fit considering that she struggles on contents outside of wood/star,<br>while at the same time she still needs to be babied in contents that favo#38761d her thanks to her meager self buffs and lack of debuffs, which is exacerbated by the lack of card options due to being Hard+Dest+Laser-DCard-that-is-for-Yang.</span></p>
+<p><span style="color: cyan;">So one fundamental thing, f1 mors has a supportive role. And infact quite the good one. While she lacks acc she has the raw buffing and sto#38761d power to actually make up the gap of being forced to run an acc card, so you don't actually lose anything from that.<br>That is why she is deamed universal. Additionally her aoe nuke is one of the highest in game. Almost as high as cz2. So when she hits killer on her aoe in the same vein as spriko she will also be universal in that sense. There is holes in the logic.<br>Shes simply too slow, there can be issues with last gauge due to the weird buff situation. But theres no denying she does actually fit the ex tier definition. Unlike the two next closest; nysen who has multiple issues when being both the damage role and the support role.<br>she has such a specific kit that her damage role can only work with an entire one unit being lootori. And even still it has some issues if you cant kill first gauge properly (but who am ikidding its lootori+nysen it hasnt failed to kill before).<br>and her supportive role heavily relies on the damage bot giving her p as well as just generally being able to nuke with what is actually noteably below average damage amp on the starting gauges. Basically forcing the other unit to require high buffs to cover her 0.<br>Which is taken into account. And mvkari who simply doesnt have universal utility only and PURELY universal damage. Fmors comfortably gaps the both of them. (Also kinda funny that looshi has all these flaws being mentioned.)</span></p>
+<p><span style="color: #38761d;">L80 Kasen lower in EX. Genuinely, her numbers just aren't good especially with how her killer is narrow + the lack of good aoe damage, she needs extra buffs with how NN throws anomaly inflict at wave start making her attack anoms hard to utilize, and she lacks the heights to be a Geng alternative because of lacking utility.</span></p>
+<p><span style="color: cyan;">we know her numbers are bad, we know her killer is narrow, her utility is bad. yet shes still SOMEHOW always proving shes ex through sheer bullshit. she is not lowering as no argument to make her lower counts for the fact she is about the only vs b3 myon duo (atleast at launch),<br>still nukes+duos vs musak, 12+5sp duos vs urumi. etc etc. shes SUPPOSED to be bad shes SUPPOSED to be a candidate for lowering. yet in practice the things that are supposed to be a huge issue for her like her low base numbers just..dont..matter.<br>And its absurd that they often dont matter. I wouldnt be surprised if the game is bugged and is increasing her damage when youre not looking at this point. But jokes aside, i would be fine with lowering her if all use cases of her still to this day didnt prove those aren't an issue.</span></p>
+
+<h2><b>842:</b></h2>
+<p><span style="color: #38761d;">Re: Gengetsu, I hate to be mean but your response were just “generally a geng is OP” while addressing ZERO concerns I raised. tell me how is she supposed to save either her skill 2 or 3 on T1 without Cs2 or being 150 luck (who she also doesn’t synergise that well BTW because<br>Gengetsu AoE has nuked approximately zero DS despite debuff and break spam in the last year). tell me why she has notably more difficulty duoing with other non-OP yin units in modern yin DS, something every other yin units in EX have done<br>Fast multiple breaks WERE cool when there wasn’t approximately 10 units that break 7/7. her only viable modern usage is going first to break 7 and launch some cards which really do no justice to the so-called Swiss army flexibility description in the notes<br>She is just not that notably better than, say, muremi, who very definitely does something more than breaks</span></p>
+<p><span style="color: cyan;">Thats because most of the concerns listed have been dealt with before. I can go into them if you want but its largely the same deal as then:<br>Forced skill 2 on t1. But the aoe gauges are the hardest and geng gives -2 def +6 crit +3 yin atk for the last gauge. On average you're killing regardless assumin g your other lastword is relevatively aligned. If this was solo nuking i'd understand. But it isnt. And thats before cards.<br>To put that into perspective, bunyo gives 1 def down 6 yin atk and 2 crit ii. which is less damage amp. mumi can be more than geng depending on where your damage is from. but to my knowledge she isnt either. Similar stuff. Even if you save their crit ii skills. Geng still gives enough to kill.<br>I honestly dont get this complaint. When was the last non ex or basically ex tier duo? The last few ds have been what i deam as mu flan shilling. Nobody really duod them. I guess mv remi did duo vs musak with cs2 but cant when geng? Idk i dont get this point duos with below the first two tiers are EXTREMELY rare.<br>The next two points are things we dont consider. so what if her niche is being more crowded? its still gengetsu, despite everything. Hence the point i made last time. The tierlist wont magically NOT value mvkasen because theres more sto#38761d powers for example.<br>Lastly, mumi lacks a lot of what makes gengetsu so consistent. A better comparison would be to bunyo whos largely a strict upgrade outside last gauge.<br>mumi has:no accuracy so she is forced to run an acc card on atleast one gauge unless her pairing has agi anoms. in which case while she can rely on the sure hit lines theres no means of letting her outspeed their last gauge to debuff for them so the last gaug unit basically HAS to be muflan or mvkari<br>somehow still has p issues.<br>has a lot of problems when being the damage role, kinda just requires cs2 for them with 0 other usable pairings.<br>If she was as good as cs2 and by extension bunyo at breaking. shed be ex. but she has these issues</span></p>
 
-  <div class="toggle-row">
-    <button class="button primary" id="size-toggle-btn" onclick="toggleIconSize()">
-      Switch to Small Icons
-    </button>
+    <h2><b>841:</b></h2>
+    <p><span style="color: #38761d;">I think Gengetsu should be lower in EX. the combination of 3p break while having party 1p on resonance skill means she is almost always forced to toggle on skill 3 T1, making her support on last gauge extremely poor. Yes she can stack -8 def down with 50% card even when enemy is immune to burn/blind BUT her p0 killers are practically non-existent and the AoE has relatively low raw damage in general and does not have party p/barrier on AoE. Skill 2 is more difficult to save nowadays because her AoE pre-eff inflicts blind which is realistically only broken by Mima (who you don’t bring nowadays) and etoyo (on 3p and thus heavily limiting her AoE damage).  Her support is decent between her skill 3, a Sun/light/party 4 Yin d card and a few buffs sprinkled here and there. However, the two 100% sto#38761d power units in EX have roughly similar, if not more support while still being able to AoE nuke occasionally without relying on eff. Cs2 gets to ignore her AoE damage issue because she has infinite party P, ridiculous amount of buffs, party 3 Yin ATK II for 3T and a few good cards to make up for it. Such are a luxury that Gengetsu doesn’t always get to afford.  She is not bad by any means but her highs seem to be overestimated at the moment. Unless they delete all barriers from DS, she would be overshadowed by most of her colleagues in EX units who also has the means to be really amazing unlike Gengetsu who only has her consistency to boast in exchange of actual highs.</span></p> 
+    <p><span style="color: cyan;">Cs2 is quite frankly a mid A tier if used in the damage role. Being a geng bot is simply that important inherently. Geng has a similar amount of buffs on average. Due to being able to take care of acc so they dont have to run an acc card. And otherwise the only difference is cs2 is just simply better in the last gauge and has a damage role as opposed to gengetsu have a very poor one. I dont get the complaint her aoe inflicts blind.,..just..break it? If youre aiming to not break it, by abusing def down, why have the complaint blind units are in a tough spot? Overall just..being a universal geng bot is simply that valuable these days. Her support is good enough to make it worth her going first due to not needing to take care of acc unlike cs2. And in general...being a geng is just that important tbh. Does it seem weird that despite being a worse cs2 (USUALLY) shes still where she is? Perhaps. But its just that valuable. For example. The sto#38761d power bots are great truly. But when have you requi#38761d a sto#38761d power to make a real comp? You basically always require a geng equal in duos. So how does having sto#38761d power make one just as big of a requirement to comps? Just food for thought. Its a touchy and debatable subject in general.</span></p>
 
-    <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
-      Hide Explanation Buttons
-    </button>
-  </div>
+    <h2><b>840:</b></h2>
+    <p><span style="color: #38761d;">C3 Joon should be lower as other than her poison inflict n break she doesn't have much valuable to her kit. Unimpressive damage (too low) and imo her buffs and debuffs can be too little (it's not a lot) or just doesn't find some value in comps compa#38761d to other units. From her notes she is very replaceable and doesn't have any great value except only for her poison inflict and breaking. Her gimmick skill also sucks</span></p>
+    <p><span style="color: pink;">i think B is perfect for Joon because there's no part of her kit that's particularly bad and she actually has decent potential to duo with nysen, but she doesn't excel at anything so she feels kinda mid in practice. but having 7 aoe break and pretty high util value prevents her from dropping since she at least has that role and it can be pretty good for trios/certain duos - certainly not worse than some of the other people in B right now (every generic lw nuke w/o an AoE)</span></p>
 
-  <div class="tier-nav">
-    <h2>Jump to Tier</h2>
+    <h2><b>839:</b></h2>
+    <p><span style="color: #38761d;">hii can you calc c3 mystia lw hitting eff/res with mima and muremi resonance, has 10 crit acc ii, has 10 yin atk ii, has 10 crit atk ii, and with 125% sto#38761d power, just curious because shes getting a buff</span></p>
+    <p><span style="color: pink;">Uh... I think we'll do this after her buff is implemented. I'll make a follow up once that's out.</span></p>
 
-    <button onclick="jumpToTier('EX')">EX</button>
-    <button onclick="jumpToTier('SS')">SS</button>
-    <button onclick="jumpToTier('S')">S</button>
-    <button onclick="jumpToTier('A')">A</button>
-    <button onclick="jumpToTier('B')">B</button>
-    <button onclick="jumpToTier('C')">C</button>
-    <button onclick="jumpToTier('D')">D</button>
-    <button onclick="jumpToTier('E')">E</button>
-    <button onclick="jumpToTier('Yukkuri')">Yukkuri</button>
-  </div>
 
-</div>
-
-<!-- search-container stays here, outside filters-panel, wherever it already lives -->
-
-  <div class="search-container">
-  <input
-    type="text" 
-    id="charSearchInput" 
-    placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
-    autocomplete="off"
-  />
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const searchInput = document.getElementById("charSearchInput");
-
-      if (searchInput) {
-        searchInput.addEventListener("input", applyFilters);
-      }
-    });
-  </script>
-
-  <p>Welcome to Hibi's Yappage Corner. This is where Hibi will update their yappage.</p>
-  <p>On this week's agenda... by the way everyone please pull mvkaris anthology it is quite relevant to her tier, as she has more damage on average from using antho x2 on aoe which obviously, lets her get 4 yin atk ii for last gauge, firmly making her have the best last gauge damage in the game</p>
-
-<!-- EX -->
-<div class="tier-group" id="tier-group-EX">
-  <div class="tier-section">
-    <div class="tiers">
-      <img src="src/assets/tiers/ex3.png" class="tier-banner" alt="EX Tier">
-    </div>
-    <div class="tier-expl" onclick="openModal('ex-tier-modal')">Tier Explanation (ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-EX" class="tier-toggle-bar" onclick="toggleTierRow('EX')">
-     ▼ Hide EX Tier
-  </div>
-
-  <div id="EX" class="tier-row"></div>
-
-  <hr class="tier-divider">
-</div>
-
-<!-- SS -->
-<div class="tier-group" id="tier-group-SS">
-  <div class="tier-section">
-    <div class="tiers">
-      <img src="src/assets/tiers/ss3.png" class="tier-banner" alt="SS Tier">
-    </div>
-    <div class="tier-expl" onclick="openModal('ss-tier-modal')">Tier Explanation (ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-SS" class="tier-toggle-bar" onclick="toggleTierRow('SS')">
-     ▼ Hide SS Tier
-  </div>
-
-  <div id="SS" class="tier-row"></div>
-
-  <hr class="tier-divider">
-</div>
-
-  <!-- S -->
-   <div class="tier-group" id="tier-group-S">
-    <div class="tier-section">
-      <div class="tiers">
-        <img src="src/assets/tiers/s3.png" class="tier-banner" alt="S Tier">
-      </div>
-      <div class="tier-expl" onclick="openModal('s-tier-modal')">Tier Explanation (ORDERED)</div>
-    </div>
-
-    <div id="toggle-btn-S" class="tier-toggle-bar" onclick="toggleTierRow('S')">
-      ▼ Hide S Tier
-    </div>
-
-    <div id="S" class="tier-row"></div>
-
-    <hr class="tier-divider">
-  </div>
-
-  <!-- A -->
-   <div class="tier-group" id="tier-group-A">
-    <div class="tier-section">
-      <div class="tiers">
-        <img src="src/assets/tiers/a3.png" class="tier-banner" alt="A Tier">
-      </div>
-      <div class="tier-expl" onclick="openModal('a-tier-modal')">Tier Explanation (NOT ORDERED)</div>
-    </div>
-
-    <div id="toggle-btn-A" class="tier-toggle-bar" onclick="toggleTierRow('A')">
-      ▼ Hide A Tier
-    </div>
-
-    <div id="A" class="tier-row"></div>
-
-    <hr class="tier-divider">
-  </div>
-
-  <!-- B -->
-   <div class="tier-group" id="tier-group-B">
-    <div class="tier-section">
-      <div class="tiers">
-        <img src="src/assets/tiers/b3.png" class="tier-banner" alt="B Tier">
-      </div>
-      <div class="tier-expl" onclick="openModal('b-tier-modal')">Tier Explanation (NOT ORDERED)</div>
-    </div>
-
-    <div id="toggle-btn-B" class="tier-toggle-bar" onclick="toggleTierRow('B')">
-      ▼ Hide B Tier
-    </div>
-
-    <div id="B" class="tier-row"></div>
-
-    <hr class="tier-divider">
-   </div>
-
-  <!-- C -->
-   <div class="tier-group" id="tier-group-C">
-    <div class="tier-section">
-    <div class="tiers">
-      <img src="src/assets/tiers/c4.png" class="tier-banner" alt="C Tier">
-    </div>
-    <div class="tier-expl" onclick="openModal('c-tier-modal')">Tier Explanation (NOT ORDERED)</div>
-  </div>
-
-    <div id="toggle-btn-C" class="tier-toggle-bar" onclick="toggleTierRow('C')">
-      ▼ Hide C Tier
-    </div>
-
-    <div id="C" class="tier-row"></div>
-
-    <hr class="tier-divider">
-  </div>
-
-  <!-- D -->
-   <div class="tier-group" id="tier-group-D">
-    <div class="tier-section">
-    <div class="tiers">
-      <img src="src/assets/tiers/d3.png" class="tier-banner" alt="D Tier">
-    </div>
-    <div class="tier-expl" onclick="openModal('d-tier-modal')">Tier Explanation (NOT ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-D" class="tier-toggle-bar" onclick="toggleTierRow('D')">
-    ▼ Hide D Tier
-  </div>
-
-  <div id="D" class="tier-row"></div>
-
-  <hr class="tier-divider">
-  </div>
-
-  <!-- E -->
-   <div class="tier-group" id="tier-group-E">
-    <div class="tier-section">
-    <div class="tiers">
-      <img src="src/assets/tiers/e3.png" class="tier-banner" alt="E Tier">
-    </div>
-    <div class="tier-expl" onclick="openModal('e-tier-modal')">Tier Explanation (NOT ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-E" class="tier-toggle-bar" onclick="toggleTierRow('E')">
-     ▼ Hide E Tier
-  </div>
-
-  <div id="E" class="tier-row"></div>
-
-  <hr class="tier-divider">
-  </div>
-
-  <!-- Yukkuri
-   <div class="tier-section">
-    <div class="tiers">
-    <a href="src/assets/tiers/yukkuri2.png" target="_blank">
-      <img src="src/assets/tiers/yukkuri2.png" class="tier-banner" alt="Yukkuri Tier">
-    </a>
-  </div>
-  
-  <div class="tier-expl" onclick="openModal('y-tier-modal')">Tier... Explanation...</div>
-  </div>
-  <div id="Yukkuri" class="tier-row"></div>-->
-
-  <div class="tier-group" id="tier-group-Yukkuri">
-    <div class="tier-section">
-    <div class="tiers">
-      <img src="src/assets/tiers/yukkuri2.png" class="tier-banner" alt="Yukkuri Tier">
-    </div>
-    <div class="tier-expl" onclick="openModal('y-tier-modal')">Tier... Explanation... (Ordered)</div>
-  </div>
-
-  <div id="toggle-btn-Y" class="tier-toggle-bar" onclick="toggleTierRow('Yukkuri')">
-     ▼ Hide Yukkuri Tier
-  </div>
-
-  <div id="Yukkuri" class="tier-row"></div>
-  </div>
-
-  <br>
-
-  <!-- Main display logic after tierlist.js finishes executing -->
-  <script>
-    let characters = [];
-
-    document.addEventListener("DOMContentLoaded", () => {
-      // access dataSet after the deferred script has run
-      if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
-        characters = dataSet[dataSetVersion].characterData;
-      } else {
-        console.error("Database initialization failed. Ensure tierlist.js path is correct.");
-        return;
-      }
-
-      // render of all characters
-      renderTierList(characters);
-    });
-
-    // clear and inject character images, main tierlist function ------------------------------------------------------------------
-    function renderTierList(charList) {
-      // 1. Update total/filtered count display
-      const countDisplay = document.getElementById("total-character-count");
-      if (countDisplay) {
-        countDisplay.textContent = charList.length;
-      }
-
-      // 2. Check if the user is typing in the search bar
-      const searchInput = document.getElementById("charSearchInput");
-      const isSearching = searchInput && searchInput.value.trim().length > 0;
-
-      const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
-
-      activeTiers.forEach(tier => {
-        const container = document.getElementById(tier);
-        const group = document.getElementById(`tier-group-${tier}`);
-
-        if (container) {
-          container.innerHTML = "";
-
-          const matches = charList.filter(item => item.tier === tier);
-          if (group) {
-            group.style.display = matches.length === 0 ? "none" : "";
-          }
-
-          if (isSearching && matches.length > 0) {
-            container.classList.remove("collapsed");
-            const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
-            if (toggleBtn) {
-              toggleBtn.textContent = `▼ Hide ${tier} Tier`;
-            }
-          }
-          
-          matches.forEach(item => {
-            const imgContainer = document.createElement("div");
-            imgContainer.style.display = "inline-block";
-
-            imgContainer.innerHTML = `
-              <img src="src/assets/chara/${item.img}" 
-                  alt="${item.name}" 
-                  title="${item.name}" 
-                  class="charicon" 
-                  loading="lazy" />
-              <div class="cname">${item.name}</div>
-              ${showExplButtons ? '<div class="expl">Explanation</div>' : ''}
-            `;
-
-            container.appendChild(imgContainer);
-
-            if (showExplButtons) {
-              const expBtn = imgContainer.querySelector(".expl");
-              expBtn.addEventListener("click", () => {
-                openExplanationModal(item);
-              });
-            } else {
-              imgContainer.style.cursor = "pointer";
-              imgContainer.addEventListener("click", () => {
-                openExplanationModal(item);
-              });
-            }
-          });
-        }
-      });
-
-      // 3. F Tier Search Logic (Static HTML Check)
-      const fContainer = document.getElementById("F");
-      const fToggleBtn = document.getElementById("toggle-btn-F");
-
-      if (fContainer) {
-        if (isSearching) {
-          const query = searchInput.value.trim().toLowerCase();
-          const fText = fContainer.innerText.toLowerCase();
-
-          if (fText.includes(query)) {
-            fContainer.classList.remove("collapsed");
-            if (fToggleBtn) fToggleBtn.textContent = "▼ Hide F Tier";
-          }
-        } else {
-          // Reset to collapsed when the user clears their search
-          fContainer.classList.add("collapsed");
-          if (fToggleBtn) fToggleBtn.textContent = "▶ Show F Tier";
-        }
-      }
-
-      fitNameplateText();
-    }
-
-    function openExplanationModal(character) {
-      const modal = document.getElementById("expls");
-      const title = document.getElementById("tit");
-      const body = document.getElementById("bod");
-
-      if (!modal || !title || !body) return;
-      title.innerText = character.name;
-      body.innerHTML = "";
-
-      if (!character.explanation) {
-        body.innerHTML = "<p class='modal-p'>Girls are now tiering, please wait warmly...</p>";
-        modal.style.display = "block";
-        return;
-      }
-
-      const exp = character.explanation;
-
-      // start of pros and cons
-
-      if (exp.pros && exp.pros.length > 0) {
-        body.innerHTML += `<div class="sub-header header-pro">Pros</div>`;
-        exp.pros.forEach(p => body.innerHTML += `<p class="modal-p">${p}</p>`);
-      }
-
-      if (exp.boons && exp.boons.length > 0) {
-        body.innerHTML += `<div class="sub-header header-boon">Boons</div>`;
-        let list = `<ul class="modal-list">`;
-        exp.boons.forEach(b => list += `<li>${b}</li>`);
-        list += `</ul>`;
-        body.innerHTML += list;
-      }
-
-      if (exp.mixed && exp.mixed.length > 0) {
-        body.innerHTML += `<div class="sub-header header-mixed">Mixed/Slight Issue</div>`;
-        exp.mixed.forEach(m => body.innerHTML += `<p class="modal-p">${m}</p>`);
-      }
-
-      if (exp.cons && exp.cons.length > 0) {
-        body.innerHTML += `<div class="sub-header header-con">Cons</div>`;
-        exp.cons.forEach(c => body.innerHTML += `<p class="modal-p">${c}</p>`);
-      }
-
-      if (exp.nitpick && exp.nitpick.length > 0) {
-        body.innerHTML += `<div class="sub-header header-nitpick">Nitpicks</div>`;
-        let list = `<ul class="modal-list">`;
-        exp.nitpick.forEach(n => list += `<li>${n}</li>`);
-        list += `</ul>`;
-        body.innerHTML += list;
-      }
-
-      if (exp.extra && exp.extra.length > 0) {
-        body.innerHTML += `<div class="sub-header header-extra">Notes</div>`;
-        exp.extra.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
-      }
-
-      modal.style.display = "block";
-    }
-
-    // Safely wire up the close triggers when the DOM is ready
-    document.addEventListener("DOMContentLoaded", () => {
-      const modal = document.getElementById("expls");
-
-      // Closes any modal when its close button (X) is clicked
-      document.addEventListener("click", (event) => {
-        if (event.target.classList.contains("close-btn")) {
-          const modal = event.target.closest(".modal");
-          if (modal) modal.style.display = "none";
-        }
-      });
-
-      // Closes any modal when clicking its dim background overlay
-      window.addEventListener("click", (event) => {
-        if (event.target.classList.contains("modal-overlay")) {
-          const modal = event.target.closest(".modal");
-          if (modal) modal.style.display = "none";
-        }
-      });
-    });
-
-  function applyFilters() {
-    const searchInput = document.getElementById("charSearchInput");
-    const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : "";
-    const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
-      .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters");
-    const activeKeys = checkedBoxes.map(box => box.value);
-    const filtered = characters.filter(character => {
-      const matchesSearch = character.name.toLowerCase().includes(searchQuery);
-      let matchesBoxes = true;
-      if (activeKeys.length > 0) {
-        if (!character.opts) {
-          matchesBoxes = false;
-        } else {
-          matchesBoxes = activeKeys.some(key => character.opts[key] === true);
-        }
-      }
-      return matchesSearch && matchesBoxes;
-    });
-    renderTierList(filtered);
-
-  }
-
-    function filterDefChars() { applyFilters(); }
-    function filterSuppChars() { applyFilters(); }
-    function filterHealChars() { applyFilters(); }
-    function filterDebuffChars() { applyFilters(); }
-    function filterAttackChars() { applyFilters(); }
-    function filterTechChars() { applyFilters(); }
-    function filterSpeedChars() { applyFilters(); }
-    function filterDestChars() { applyFilters(); }
-    function filterPureChars() { applyFilters(); }
-    function filterEpicChars() { applyFilters(); }
-    function filterPhChars() { applyFilters(); }
-    function filterRelicChars() { applyFilters(); }
-    function filterExChars() { applyFilters(); }
-    function filterUltraChars() { applyFilters(); }
-    function filterFesChars() { applyFilters(); }
-    function filterGenChars() { applyFilters(); }
-    function filterYuChars() { applyFilters(); }
-  </script>
-
-<!-- Fart Tier -->
-<div class="f-tier-section" id="tier-group-F">
-  <div class="f-tier-title">F Tier</div>
-
-  <!-- Toggle Button -->
-  <div id="toggle-btn-F" class="tier-toggle-bar" onclick="toggleTierRow('F')">
-    ▶ Show F Tier
-  </div>
-
-  <!-- Collapsible Container (collapsed by default) -->
-  <div id="F" class="f-tier-content collapsed">
-    <div class="f-tier-desc">
-      The Hall of Shame: Characters here will get no icon (because it will be very annoying to port all them in) and no notes,<br>
-      because they all share the same cons while having very few pros besides being cute.<br>
-      Characters here will all more or less share the same universal traits of having next to no:<br>
-      Support, Utility, Damage, or Anything Else.<br>
-      Thus, may they remain untiered only to exist in the realm of F3.
-    </div>
-
-    <div class="f-tier-grid">
-      <div class="f-tier-col">
-        - L1 Reimu<br>- L1 Marisa<br>- L1 Rumia<br>- L1 Daiyousei<br>- L1 Meiling<br>
-        - L1 Koakuma<br>- L1 Patchouli<br>- L1 Sakuya<br>- L1 Remilia<br>- L1 Flandre<br>
-        - L1 Letty<br>- L1 Alice<br>- L1 Lunasa<br>- L1 Merlin<br>- L1 Lyrica
-      </div>
-      <div class="f-tier-col">
-        - L1 Youmu<br>- L1 Yuyuko<br>- L1 Ran<br>- L1 Yukari<br>- L1 Suika<br>
-        - L1 Wriggle<br>- L1 Mystia<br>- L1 Keine<br>- L1 Tewi<br>- L1 Reisen<br>
-        - L1 Kaguya<br>- L1 Mokou<br>- L1 Aya<br>- L1 Yuuka<br>- L1 Komachi
-      </div>
-      <div class="f-tier-col">
-        - L1 Eiki<br>- L1 Shizuha<br>- L1 Minoriko<br>- L1 Hina<br>- L1 Nitori<br>
-        - L1 Momiji<br>- L1 Sanae<br>- L1 Suwako<br>- L1 Iku<br>- L1 Tenshi<br>
-        - L1 Yamame<br>- L1 Parsee<br>- L1 Yuugi<br>- L1 Satori
-      </div>
-      <div class="f-tier-col">
-        - L1 Rin<br>- L1 Utsuho<br>- L1 Koishi<br>- L1 Kogasa<br>- L1 Murasa<br>
-        - L1 Shou<br>- L1 Byakuren<br>- L1 Hatate<br>- L1 Kyouko<br>- L1 Yoshika<br>
-        - L1 Seiga<br>- L1 Tojiko<br>- L1 Futo<br>- L1 Miko<br>- L1 Mamizou
-      </div>
-      <div class="f-tier-col">
-        - L1 Kokoro<br>- L1 Wakasagihime<br>- L1 Sekibanki<br>- L1 Kagerou<br>- L1 Benben<br>
-        - L1 Yatsuhashi<br>- L1 Seija<br>- L1 Shinmy<br>- L1 Raiko<br>- L1 Sumireko<br>
-        - L1 Seiran<br>- L1 Ringo<br>- L1 Doremy<br>- L1 Clownpiece<br>- L1 Junko
-      </div>
-      <div class="f-tier-col">
-        - L1 Joon<br>- L1 Shion<br>- L1 Eternity<br>- L1 Nemuno<br>- L1 Aunn<br>
-        - L1 Narumi<br>- L1 Mai<br>- L1 Satono<br>- L1 Eika<br>- L1 Urumi<br>
-        - L1 Kutaka<br>- L1 Yachie<br>- L1 Mayumi<br>- L1 Saki<br>- L1 Takane
-      </div>
-      <div class="f-tier-col">
-        - L1 Star<br>- L1 Luna<br>- L1 Sunny<br>- L1 Kasen<br>- L1 Akyuu<br>
-        - L1 Rei'sen<br>- L1 Yorihime<br>- A7 Alice<br>- B5 Medicine<br>- Y5 Tewi<br>
-        - L1 Medicine<br>- L1 Eirin<br>- A6 Alice
-      </div>
-    </div>
-  </div>
-</div>
-
-<br>
-
-<div class="jtt">
-<button class="tier-nav-btn" id="back-to-top-btn" onclick="scrollToTop()">
-  ↑ Back to Top
-</button>
-</div>
-
-<script>
-  function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
-
-  <h1>Credits:</h1>
+<!-- C#38761dITS -->
+  <h1>C#38761dits:</h1>
   <img src='src/assets/chara/l1 kogasa.png' alt='title1' width="150" height="150">
   <p><b>Medi</b> - Main Tierlist Dev. Being a Kogasa and Medicine fan is my only personality trait.</p>
   <a href="https://archiveofourown.org/series/3691483"><strong>Read my Fanfic! Flandre's Bizarre Adventure</strong></a>
@@ -698,498 +232,36 @@ document.addEventListener('DOMContentLoaded', () => {
   <img src='src/assets/chara/l1 kuro.png' alt='title1' width="150" height="60">
   <p><b>Kuro</b> - ✞︎☜︎☼︎✡︎📬︎ ✞︎☜︎☼︎✡︎📬︎ ✋︎☠︎❄︎☜︎☼︎☜︎💧︎❄︎✋︎☠︎☝︎</p>
 
-  <p>Tierlist Beta 0.0.8, Copyright @MedicineMelancholy0, Updated 4/8/2026</p>
+  <p>Tierlist Beta 0.0.9, Copyright @MedicineMelancholy0, Updated 10/8/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
 
-  <div id="expls" class="modal">
-    <div class="con">
-      <span class="close-btn">&times;</span>
-      <h2 id="tit">Placeholder aaaa</h2>
-      <p id="bod">Explanations</p>
-    </div>
-  </div>
 
-  <div id="changelog-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('changelog-modal')">&times;</span>
-        <div class="sub-header header-pro">Changelog</div>
-        <p class="modal-p">7/8/26 ~ Added A16& Okina to top of S, added C3int Ran to C, Uptiered L80 Kanako to B. Uptiered L80 Reimu to A. Downtiered L80 Miko to B. Downtiered L0g Suwako and Mugetsu to S below EX Okina.</p>
-        <p class="modal-p">4/8/26 ~ Downtiered C3 Koishi and Kogasa to C, Lowered C5> Miko within EX to be below L0o Koishi</p>
-        <p class="modal-p">1/8/26 ~ Completely reworked how B, C, and D work. Essentially: Very similar to the previous system. However, certain support is taken into account less while having a decent AoE nuke is supported more. Basically, if a character below A can be supported and have a decent AoE and LW nuke, B. If they are just a LW nuke and their AoE is glorified card holder/breaker, C. If you're not consistent in anything except having a LW, D. Note that this is NOT all-encompassing so characters like B2 Junko remain despite basically not having an AoE because neutral damage is that good + has cs2 memes. Supporters are also valued similarly to before. Killer values under 150 are ignored. Consistency in traits still apply.</p>
-        <p class="modal-p">Full changes:</p>
-        <ul class="modal-list">
-          <li>Uptiered C3 Kyouko to B.</li>
-          <li>Uptiered R8.-5 Youmu, C3int Sagume, L80 Alice, L80 Mokou, L80 Parsee, A6 Marisa, A7 Luna, Villain Koishi to C.</li>
-          <li>Downtiered A6& Rumia, A6& Koakuma, L80 Meiling, L80 Kaguya, L80 Satori, C3 Kasen, W1 Suika, Lr Kokoro, Lr Flandre, H5 Letty, A6 Tenshi, E1 Flandre, T5 Byakuren and F1 Reimu to C.</li>
-          <li>Downtiered A15A& Sanae, B1 Reisen, A13& Tojiko, A10& Minoriko, A6 Merlin, A6 Flandre, Z3 Remilia, Z3 Alice, S2 Satori, B5 Reisen, A7A Reimu, E1 Patchouli and B3 Seija to D.</li>
-          <li>Downtiered A6 Remilia and A7 Cirno to E.</li>
-        </ul>
-        <p class="modal-p">31/7/26 ~ Added Cf1 Sanae to A and H5 Momoyo to C. Uptiered C3' Urumi to S. Downtiered L80 Reimu to B. Downtiered L80 Okina to C. Downtiered A16& Eternity, B5 Yuyuko, S5 Rin, A6 Yukari, A6 Yuyuko, A6 Lunasa, A7 Chen, A7A Sakuya and A14 Seija to D. Furthermore marked L80 Reimu as a candidate for demotion. Updated notes for L80 Mokou.</p>
-        <p class="modal-p">29/7/26 ~ Downtiered C3 Cirno to A, Updated notes for C3 Mystia</p>
-        <p class="modal-p">28/7/26 ~ Updated notes for D8.-5 Marisa</p>
-        <p class="modal-p">26/7/26 ~ Higher L80 Aya in SS, Spring Zanmu and Ce9 Remilia dropped from EX-</p>
-        <p class="modal-p">25/7/26 ~ Downtiered A14.5& Mamizou and C5> Hecatia to S</p>
-        <p class="modal-p">24/7/26 ~ Uptiered L80 Yukari and Cb3# Reisen to EX</p>
-        <p class="modal-p">23/7/26 ~ Added D8;9 Yuyuko and Cf1 Reimu to A</p>
-        <p class="modal-p">22/7/26 ~ Lowered Fall Nitori to be below Fall Chimata within S as duos for her continue to increase in difficulty. Additionally, attempted to reduce the size of explanation popups to be more compact and readable. And added back a corner for hibi to yap in.</p>
-        <p class="modal-p">21/7/26 ~ Opening!</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="defs-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('defs-modal')">&times;</span>
-        <div class="sub-header header-pro">Tierlist Definitions</div>
-        <p class="modal-p">
-          <strong>Damage reqs:</strong> Damage reqs are simply the practical damage cap. Which is about 2.2million for all intensive purposes in modern ds. Notice how our meme calc sheet has very few aoes to even remotely hit that high. This is because you have many additional factors in a real gameplay setting. What is say, a 650k aoe at cap can quickly become 300k at 5/12. And then 600k again with proper rank ii. And then 2.4mil on full break. So on and so forth. It is important to keep in mind there are no blanket statements to the practical damage cap. So ultimately one will need to test for themselves as we do. Just keep in mind a unit's own buffs can very much matter for this practical damage. So almost nothing is created equal.
-        </p>
-        <p class="modal-p"><strong>Overflow:</strong> Bullets not being ordered perfectly linear in a spell. ie. the line 6 blind break appearing earlier than expected etc. Refer to strat guide for more info</p>
-        <p class="modal-p"><strong>BIS:</strong> Best in slot. The story card that offers the most damage (usually a 90%+ buff)</p>
-        <p class="modal-p"><strong>[Bullet] Nerf/Cuck:</strong> Bullet type restrictions, usually in Divergent Spirits 120</p>
-        <p class="modal-p"><strong>DS120:</strong> Divergent Spirits Stages Level 120</p>
-        <p class="modal-p"><strong>EB:</strong> Eternal Battle. Static modes break down into: EBR = Eternal Battle Ranked, EBL = Eternal Battle Limited</p>
-        <p class="modal-p"><strong>NLM:</strong> Bullet line with 34%+ base crit rate</p>
-        <p class="modal-p"><strong>Prae Card:</strong> Hunting the Hunter Luck/Fate card. Mostly renowned for its potent Atk Locked Yin Atk Up + Yin Def Down card.</p>
-        <p class="modal-p"><strong>BS:</strong> Barrier Status Luck/Fate card. Mostly known for -3 Def, 50% light effect.</p>
-        <p class="modal-p"><strong>Shansoku:</strong> 50% body, 50% liquid, -2 yang def card</p>
-        <p class="modal-p"><strong>CQ:</strong> Challenge Quest. Divergent Spirits, Eternal Battle (Limited, Ranked is seperate), Advanced Challenge Stages, and Elemental EX Nightmare.</p>
-        <p class="modal-p"><strong>Mixed:</strong> Having both Yin/Yang divide your spellcard/Last Word</p>
-        <p class="modal-p"><strong>Soupy:</strong> Juggling 3-4 Elements across a single attack or set of attacks</p>
-        <p class="modal-p"><strong>Rainbow:</strong> 4+ Elements in an attack or set of attacks</p>
-        <p class="modal-p"><strong>Sfes:</strong> Another term for Ultra Festival</p>
-        <p class="modal-p"><strong>Scaling:</strong> Refers to Hard/Slice scaling in certain attacks</p>
-        <p class="modal-p"><strong>Unbind:</strong> Lock Cleanse/Debuff Cleanse</p>
-        <p class="modal-p"><strong>Boost Scale:</strong> Spellcard effects that increase based on P used rather than awakening level (relatively uncommon)</p>
-        <p class="modal-p"><strong>A-Fes:</strong> Character with A universe code (NOT including those ending in &)</p>
-        <p class="modal-p"><strong>Rein:</strong> Reincarnation/Fantasy rebirth. Funfact rein as a term was made in 2021</p>
-        <p class="modal-p">@: Needs to be carried by a Gengbot (Someone with more than 7 breaks and high agi/speed, aka most of EX)</p>
-        <p class="modal-p">Anthology Card: Special cards for L80 Characters that give special restricted buffs</p>
-        <p class="modal-p"><b>NICKNAMES</b></p>
-        <p class="modal-p">A catalogue of nicknames can be found here (Thanks Silent): https://docs.google.com/document/d/1RbZPZWeaHcIvC_qqpjRA1uPaBUCoa3LS2QkN-81tC1k/edit?tab=t.0#heading=h.1co6enmd8cut</p>
-      </div>
-    </div>
-  </div>
-
-  
-  <div id="criteria-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('criteria-modal')">&times;</span>
-        <div class="sub-header header-pro"><strong>Official Tiering Criteria</strong></div>
-        <p class="modal-p">Our way of tiering units is meant to be as close to objective as possible. While maintaining true objectivity is impossible, dicussed below here is our criteria for how we judge units for their placement. Of course, you are free to disagree or view things differently than us. However, the point of this little article is to explain our viewpoint and why we place units when they do in a more concrete manner. Just a few things to note below...</p>
-        <p class="modal-p">ALL UNITS ARE ASSUMED 25 LUCK W/ MAX REIN BUFFS AND STANDARD BUFFS</h2>
-        <p class="modal-p">NUMBERS WISE: Magic number for LWs when translated between our calc and in-game stuff tends to be at around 2.2mil to "pass." Though having such a low cap is obviously far from ideal, which can end up docking points.</h3>
-        <p class="modal-p">Killer ranges: Generally to "pass" a character would like to hit at least 1/3-1/2 of the same, so around 180ish characters. 180 flat is not good, it still docks points, but it would be "passing" in the sense of a D on a report card.</h3>
-        <p class="modal-p">1. Unit cost is ignored, as is the capability for one unit to replace another.</h2>
-        <p class="modal-p">Take for instance Mima and A6& Rumia. Objectively, A6& Rumia is simply Mima but worse in almost every way (except acc) despite being the same cost, but this is not held particularly against Rumia. Our viewpoint is that this list simply shows each units' capabilities without assuming the existence of units that completely outclass them, whether or not in their own element. As another point, F1 Reimu is infamously outclassed by the modern yin/sun options such as Gengetsu, L80 Kasen and Cf1# Reimu, but she remains in High A despite their existence as what she provides is enough to get her there. Trying to make a tierlist that factors in both cost and replacement, which is essentially a SYP (should you pull) list muddies waters and complicates things a lot.  Our mindset is it would be better to have a (close to) objective resource that outlines each unit for what they provide, and then having players discuss and make decisions based then.  (Just in case this didn't get the point across, imagine being new and having A6& Rumia, but not Mima. In the system outlined above, Rumia would be placed in C and you would be made to think she is unusable garbage when she still has A-worthy capabilities.) Where being replaced/outclassed does become a problem is when story cards can replace units, as at that point the unit becomes more of a waste of a slot and resources.</p>
-        <br>
-        <p class="modal-p">2. The primary source of judgement on this list is capability in Divergent Sprits.</h2>
-        <p class="modal-p">Characters that can Duo or Solo farm DS stages in 3 turns, or provide a lot in DS120 stages, are the most favourably looked upon by us as that is the content we have to go on that is the most consistent and commonly made to evaluate units with. If a character needs is very trio-reliant, that is held against them as it means they do not have the damage, support, breaks, and/or utility to go solo/duo and thus need more to get them working. We are aware that most people do not try to make 10sp duo farms and most people use trios. The point of the tierlist isn't to be for those who do, because those people generally don't need a tierlist. Instead, it is to have a semi-consistent baseline to hold units against and judge them accordingly. Now, as for Eternal Battle, it is also ranked to an extent, but with far less 'points' scored than DS. This is because it is wildly different, being much more prone to having specific units be shilled, and is very inconsistent and uncommon. It also needs very different requirements, thus trying to account it too much proves unuseful.  As for gamemode like Arena, Tower, and Moriya Unmapped: these gamemode are simply too easy and have different requirements, thus they are not accounted for (also giving usually worse rewards.)</p>
-        <br>
-        <p class="modal-p">Extra Note on how Pros/Cons are Listed, Going down the Unit List</h3>
-        <p class="modal-p">Generally, we tend to judge the units in EX-S on a harsher scale compared to units below them. This is due to a combination of factors, being that lower tier units generally have less to talk about and overall are less capable of accomplishing any designated task, while at the same time units in higher tiers are supposed to be more universal. Anything that hurts said universability will be judged in a harsher lens as it tends to go further in limiting their potential than units below them. For example, C3 Tenshi not having Attack Anomalies is docked as a con against her while it isn't mentioned for anyone below B. This is because, as an S tier unit (as of writing) she has the POTENTIAL to be great, but has a major thorn in her side in that she is extremely weak to buff cleansing situations. Attack anomalies would have greatly helped her in retaining her buffs (like C3 Yuyuko) but as she can't she ends up being considerably more reliant on party members to function as a result. Meanwhile, for your average B tier unit, they generally don't even have half of Tenshi's damage potential, so missing Attack Anomalies isn't a big deal in the end. This can apply to anything, like being susceptible to paralyze or having inoptimal skill layouts.</p>
-        <br>
-        <p class="modal-p">With that out of the way, how we judge units is as follows:</h3>
-        <p class="modal-p"><strong>Explaining how tiering is done:</strong></h2>
-        <p class="modal-p">Tiering tldr: Tiering is done by using sort of a checklist to combine objective factors and to see how well they are in addition to what is missing</p>
-        <p class="modal-p">Step 1: What does the unit do?</h3>
-        <p class="modal-p">In this step look at the unit's kit and observe what they actually do. High damage? High breaks? Support? Debuffing? Etc High damage, somewhere in the 4mil+ on realistic with 1000 base defense. 6+ breaks on decent cooldowns. Etc.</p>
-        <p class="modal-p">Examples:</p>
-        <p class="modal-p">Unit has poor last word damage, good debuffing, solid buffing and breaking. That is what they are designed to do.</p>
-        <p class="modal-p">Unit has great aoe damage, aoe breaking on all spells, damage, support, and solid debuffing. </p>
-        <p class="modal-p">Step 2: Take said strengths and compare them to objective in practice elements.</h3>
-        <p class="modal-p">Take those strengths, and then see their "realistics" and how good said strengths actually are. This step is the longest. </p>
-        <p class="modal-p">Assumptions: As is safe to assume and easy to tier for. We assume a player has the needed number of bis cards and the highly recommended cards that  were stated would be amazing and should be farmed/pulled for. Its hard to tier for anything but this, as say we ignored it but you were a lucky few who kept  grinding and found themselves with a lucky card or two that can really carry a unit. Suddenly for you a unit would be much better. So in that instance who do we tier for? The common player who will be attempting to catch up with you or you who the common player will eventually reach (hopefully).  As ds is valued by far the most, we will judge based on given factors like buff remove every gauge and such. </p>
-        <p class="modal-p">Examples: </p>
-        <p class="modal-p">Lastword damage is especially bad 1.6mil cap. Realistics (non fb def down included buffs included) unit hits a resounding 10% of the usual 1.3mil for modern level 100. Further more unit shows unreliability in killer. Due to the lack of damage, their ability to duo is extremely low. </p>
-        <p class="modal-p">Debuffing is the highest in the game, -10 given proper card, skill use, and last word use. Additionally, it is extremely reliable. </p>
-        <p class="modal-p">Killer is also very low, 30% of ds and 33% of the game in the current state. Unreliable. </p>
-        <p class="modal-p">Buffs are solid for one gauge. Post buff removal and due to the lack of buffs from ability and pre effect their support falls of a cliff. Card usage is quite reliable due to quick + breaking utility being good. Making them worth running in that role. </p>
-        <p class="modal-p">in trios, which is the only place this unit can function, such things are not of concern, so unit will fall into around B tier at this stage. </p>
-        <p class="modal-p">Unit has 100% storedpower for 3t, perfectly reliable assuming their Rank I buff throughout gauges is at least competent.</p>
-        <p class="modal-p">Unit needs x amount of buffs to make it to the expected damage requirements.</p>
-        <p class="modal-p">Step 3: Not at first glance/advanced checks (at this point, this takes me the most time)</h3>
-        <p class="modal-p">This step is usually almost exclusively a check of utility and is a thing ever since mvmu was invented. Youre basically checking "does everything agree" or finer details. If unit is shaping up to be a B tier aoe spell nuker with a st lw. Can they actually do that in practice before in practice tests happen. Is what they give on paper worth it compared to what you could be doing / will be fighting. Are their pros valuable for the current tier given?</p>
-        <p class="modal-p">Example: Unit has 100% stored power, tied to barrier which is unfortunate. However, the remainder of their kit's buffs dont let this be a true positive When used as a buffer with their damage skill they lack the other tier one buffs for the role so youd need to bring a tier 1 buffer shafting them leading to them being replaced in practice by a truly relevant t1 buffer. </p>
-        <p class="modal-p">Example: Unit has an amazing aoe spell which can somewhat supplement the loss of an aoe last word. However, their raw speed makes it near  impossible to get off in pratice. They just can't abuse the thing that would save them. In niche situations it can work out, however it is something to hold against them. So their pro of strong aoe spell doesnt pass the "is it valuable" question leading to another point of inconsistency. Resulting in a lower tier. </p>
-        <p class="modal-p">Example: Unit is pretty good in standard 3t situations. But beyond that scope. Unit also has incredible solo abilities thanks to their amazing yet thus far undervalued utility. Stuns, barriers, defense down to counter the spam of enemy defense up. Spells that reach their requirements. It is all there, as they have these abilities in addition to their already determined to be valuable abilities they should be given extra props for them. </p>
-        <p class="modal-p">Example: Imma be real, this unit is entirely damage, they have little to nothing that isn't obvious and the majority of the kit agrees with itself for their role. Damage is high enough for resisted nuking though. Giving them surprising out of element preformance.</p>
-        <p class="modal-p">Step 4: Tier specific questions.</h3>
-        <p class="modal-p">You see those silly tier descriptions, do another check to see if the unit fits said definition to avoid small issues that can be hard to weed out.</p>
-        <p class="modal-p">Example: They have perfect preformance inside of their element. Geniuely amazing. However, based on their kit with the buffs and such in addition to 60% damage to resist they actually have the ability to nuke outside of element. Combined their killers theyre actually really really good at this. </p>
-        <p class="modal-p">Step 5: In practice</h3>
-        <p class="modal-p">By this point, the unit is on the tierlist, however we still may not know if our assumptions and calculators included everything. So they are tested thoroughly and if nothing disagrees with our assumptions they remain where they are. If something changes, such the unit's kit does actually agree with itself and we just didn't think about it well enough. Then the tiering will change. As you can imagine this can be caused by anything. F1 mors can actually work in practice and was assumed not to because her t1 buffs suck? Well turns out they dont suck as badly, or rather, her scaling with the realistc t1 buffs she can obtain in most comps does actually get her by when calcs say they wouldnt.</p>
-        <p class="modal-p">Example: This unit can actually be used as the sole damage dealer when it looked like they couldn't. Their lack of t1 buffs is less of an issue than as calced and their ability to pull their damage off is better than calcs would assume. </p>
-        <p class="modal-p">Step 6: Congratulate yourself on tiering with as little bias as you can possibly think of. </h2>
-        <p class="modal-p">Please ask any questions, this is heavily abridged. More accurately, the first two steps are a massive list of yes or no questions for the most part. This is just a simple way to think how we do. </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="faq-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('faq-modal')">&times;</span>
-        <div class="sub-header header-pro">FAQ</div>
-        <p class="modal-p"><b>What sets us apart from other Tierlists?</b></p>
-        <p class="modal-p">We operate on a small but dedicated team of players who are open to any and all feedback, actively play and calculate new things while remaining adherent to a strict set of guidelines while remaining transparent about everything we do. If you need something, just ask. We will explain everything.</p>
-        <p class="modal-p"><b>What is Utility?</b></p>
-        <p class="modal-p">Utility can be defined as support that doesn't directly increase damage. For example, stuns and party accuracy between gauges are some of the biggest sources of utility. Utility also qualifies as anomaly breaks (which are generally to be expected), party barrier restoration, party unbinds, useful shots (look at the getsu sisters) and things like party poison (usually more useful than not nowadays) qualify as utility. Gengetsu currently has the best universal utility in the game as a measuring stick.</p>
-        <p class="modal-p"><b>WHY are units assumed to be 25 luck and without the +2p buffs from 150 luck?</b></p>
-        <p class="modal-p">We cannot tier around individual accounts. If we want to assume everyone starts at 2p, solving half of their issues, everyone would be in SS or EX. At the cost of a $10,000 hole in your wallet. This helps nobody. Therefore we will not be accounting for it. Anybody who says this is dumb: seriously ask yourself, what use is a tierlist catered exclusively to whales?</p>
-        <p class="modal-p"><b>Will PhFes Switch Links be taken into consideration for tiering?</b></p>
-        <p class="modal-p">No. Even though the switch links (40% stat increase, skill 4) are undeniably helpful... they don't help with our criteria of 10sp duos. The fundamental issue is that the switch links tether the character to being switched, meaning they have to rely on the vanguard exfes to do something for at least one gauge if they want to duo ("trios" should be trivial but that is a low bar) however most ExFes are... pretty bad at dealing with a whole gauge by themselves without outside support with the exceptions of EX Sakuya, Yuyuko and Seiran. So it's still functionally a trio at the end of the day and they will be ranked as if they are normal units with 3 skills and no stat switch links.</p>
-        <p class="modal-p"><b>Why are ST LWs Bad?</b></p>
-        <p class="modal-p">99% Of this games' Challenge Content is more than 1 enemy. Solo target last words... target 1 enemy. Ignoring how most ST LWs in this game just suck, it is just inefficient by design and a waste of a unit slot. They barely ever do what a potent ST Spell, Last Word or even an AoE Spellcard can do. The few times they are useful, they tend not to be the most efficient solution, or it is very very niche. So it is simply docked as a con.</p>
-        <p class="modal-p"><b>Isn't this a Global Tierlist? Why are JP Characters and Reins added so soon?</b></p>
-        <p class="modal-p">Becise Medi is very imaptient (don't ask this won't be fixed)</p>
-        <p class="modal-p"><b>Why is Parallel Presence Killer not Valued Much if it has So Many People?</b></p>
-        <p class="modal-p">Long story short: it isn't actually that wide, doesn't have that many stages, and is often wiped by killer change leading niche killers like soul or fairy to be overall more useful somehow.</p>
-        <p class="modal-p"><b>Why is being reliant on Damage to Eff/Being Mono Ele Bad?</b></p>
-        <p class="modal-p">Most units are already perfectly capable of nuking in their element, sometimes even without killers. Most content nowadays has around 2-3 different elements of weakness for each gauge. Especially with killer change content, units might have a hard time nuking other enemies, especially if resisted. If they can already over kill their primary element but can't do anything about the others (damage to res), they're effectively tethered to it and need more support/nukers. Thus it is counted as at least a / (mixed/double edged sword.) Extra Note: Devs tend to directly nerf base power with higher dmg to eff, which is why neutral dmg tends to fall off a cliff for these units.</p>
-        <p class="modal-p"><b>Thlw is a game without the most amount of obtainable options at the end of the day. Saving unit slots is extremely valuable as a result. So units with incredible aoe spells are highly valued. Additionally they also let you run purely supportive units, making the game much easier. And making the game easier is an example of a better unit.</b></p>
-        <p class="modal-p"><b>But what about Arena or Tower? Or MU?</b></p>
-        <p class="modal-p">The issue with both of these is that neither are challenging enough to provide much use here. Additionally with Arena, the rewards are too shit to consider. They are also just fundamentally different as clear content. Arena is just a Dmg to Eff check, while Tower is an 'Anything Goes' type deal with its damage sponges. Neither metric would help much here.</p>
-        <p class="modal-p"><b>What about classes? Isn't it expected that supp/heal/dbf units won't do much dmg?</b></p>
-        <p class="modal-p">Classes in this game are basically cosmetic with the exception of class locked cards and nerfs. Everyone does damage. Ever since the olden days of otohime and ekari, it has been proven that even "non-offensive" classes are more than capable of nuking.  Therefore having a bad class is not an excuse for having low damage. It just sucks all the same.</p>
-        <p class="modal-p"><b>How is buff cleansing accounted for?</b></p>
-        <p class="modal-p">Characters who are particular weak to buff cleansing. (ie. all their buffs are just from skills with long cds) ARE put lower on the list. Buff cleansing is now a normal expected part of every stage and lacking shorter cooldowns, anom buffs, good spell buffs, abilities, etc.  Will put units behind noticeably. As such units are typically placed lower depending on how bad they are countered by buff cleanse. Do they have good enough inlines? How many buffs do they need for damage? Can they run cards to help?  These questions are things we ask when a unit has buff removal issues and might soften the blow so keep that in mind.</p>
-        <p class="modal-p"><b>Why are the tiers so bloated?</b></p>
-        <p class="modal-p">As of writing this game has over 400 characters. We get 1, sometimes 2 every week. Having tiers be bloated is unavoidable no matter how we try to raise, drop, or judge units. Judging them too harshly based on arbitrary difficulty that doesn't actually exists helps nobody. Blame NN for shitting out units like they just ate taco bell.</p>
-        <p class="modal-p"><b>Ok, why not make in-between tiers then, like an A+ or B-?</b></p>
-        <p class="modal-p">The reason why we don't make these is because they don't solve much except tier bloat. Most differences between units aren't that  minute to warrant such ultra-specificity. Thus we have decided not to add these. </p>
-        <p class="modal-p"><b>Why is x unit so high when y unit completely replaces her?</b></p>
-        <p class="modal-p">This tierlist does not judge units based on how replaceable they are by other units because it's not really that helpful if you don't have Y unit. It only starts being a problem in our eyes when x unit is completely replaced by cards.</p>
-        <p class="modal-p"><b>How is ranked EBR accounted for? Isn't it silly to see mid-low tier units being represented a lot by ranked EB?</b></p>
-        <p class="modal-p">As of writing there are 2 ranked EBs and both are pretty different requirement wise. They are also pretty fundamentally different for the rest of the game as well. For what it's worth, they are accounted for, but with low priority so it doesn't impact much on the TL. This may change if they decide to increase the rate that they are produced. It also plays into how lower tier units aren't necessarily bad but rather function within specific niches, which is what Ranked EB essentially is. As for NON-RANKED Eternal Battle stages, that being EBL (Eternal Battle Limited), those are factored into tier considerations. As it qualifies as Challenge Quests for our purposes and is consistent enough to what we already have to be included.</p>
-        <p class="modal-p"><b>Why is x unit so low when they can take advantage of weakness inflict?</b></p>
-        <p class="modal-p">When you bring unit + weakness inflict, you bring 2 units. At that point, what's stopping you from just bringing two other EX tiers? Being reliant on another unit to fulfill one of your gaps is a sign of weakness.</p>
-        <p class="modal-p"><b>Will you ever make a story card tierlist?</b></p>
-        <p class="modal-p">No and we never will. The issue is, by design, theyre all supposed to be puzzle pieces. So the only real way to rate them is how often they can be used as such.</p>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="ex-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('ex-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">EX Tier Explanation</div>
-        <p class="modal-p">
-          Best of the best. Their flaws and issues almost entirely ignorable/worth for what they provide. Additionally, these units are extremely recommended for players to obtain as soon as possible regardless of their current unit collection. Units of this caliber are universally proven useful and consistent inside their element. As well as outside their element to a reasonable extent that they (the unit in question) can replace units in the S/A tier even when they themselves lack content favoring.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="ss-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('ss-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">SS Tier Explanation</div>
-        <p class="modal-p">
-          The tier in between EX and S, representing great units that have issues preventing them from being universal options. 
-        </p>
-        <p class="modal-p">
-          Units in this tier are typically units who either
-        </p>
-        <p class="modal-p">
-          A. Have universal aspects to them (not to the extent of EX) and lack the heights of EX tier in favored content and/or
-        </p>
-        <p class="modal-p">
-          B. Units who have equal heights to EX but lack the consistency to reach them/outside ele performance to justify being raised
-        </p>
-        <p class="modal-p">
-          Units are defined as universal when they are the easiest and most consistent units to run in content that does favor them as much as it doesn't. 
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="s-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('s-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">S Tier Explanation</div>
-        <p class="modal-p">
-          Generally good units that have some notable flaws but still perform well in opportunities expected of them such as effective elements. These units' flaws prevent them from being universal answers who always have a place in any stage.
-        </p>
-        <p class="modal-p">
-          Units in S typically are reliable in a multitude of facets but not universal in any capacity. Units are defined as universal when they are the easiest and most consistent units to run in content that does favors them as much as it doesn't. One may find issues with using these units as answers to all favorable content however, they are reliable in what they preform which can be favored or unfavored.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="a-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('a-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">A Tier Explanation</div>
-        <p class="modal-p">
-          A tier units have one fundamental idea being that they are less consistent than the s tier units with the same heights/abuseable strengths as them. As opposed to s tier whom are universal in these strengths without noteable flaws to prevent them and B tier whom lack the heights too many areas to form this consistent use case that A and S have. Most obvious example of this is AoE damage where units without abusable AoEs will drop very quickly unless they have something specific to save them (such as L80 Miko and B3 Shinmy's breaking and supportive abilities)
-        </p>
-    </div>
-  </div>
-  </div>
-
-  <div id="b-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('b-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">B Tier Explanation</div>
-        <p class="modal-p">
-          Same as A tier, but tend to have more flaws.
-        </p>
-        <p class="modal-p">
-          Units in this tier have similar strengths to the units in A but more weaknesses/even less consistency. 
-        </p>
-        <p class="modal-p">
-          Inconsistency is defined as: A situation where the units strengths can match well into one stage with specific gimmicks but not in others. While A tier has a lot of these units, the units in B have even more flaws and often less niches.
-        </p>
-        <p class="modal-p">
-          This mostly boils down to 1. inconsistent AoE damage (usually by virtue of lacking p0 killer) or lacking utility (mostly breaks). Other flaws can include underwhelming killer sets or lacking buffs throughout their kit which means most of the units here are effectively limited to one gauge and don't fit the 3t 10/15sp farm criteria OR they are only used for one thing such as niche shill content or breaks without support/damage that allow them to go up. For example L80 Patchouli technically has a powerful buff throughout her kit (stored power) but her innate support and utility is bad on top of horrible AoE spellcard damage and a LW nuke that has never really proven itself hence her placement. Meanwhile characters like B3 Raiko can be used throughout all 3 gauges but are very limited to being only a supporter/breaker without the heights of, say, B3 Shinmyoumaru (6/3 breaks instead of 7/7) to compensate hence she remains here.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="c-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('c-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">C Tier Explanation</div>
-        <p class="modal-p">
-          Friends who are only really solid in early game and fall off pretty quickly after your box starts getting more developed.
-        </p>
-        <p class="modal-p">
-          Units in this tier typically lack the ability to have above one niche. They are often specialists who can do one thing semi-reliably. In addition they have other aspects to them that while not noteable aren't useless. 
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="d-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('d-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">D Tier Explanation</div>
-        <p class="modal-p">
-          Friends who will likely not be the best option for any content aside from very new accounts.
-        </p>
-        <p class="modal-p">
-          Similar to the C tier, however units here lack even that one niche reliably/have a reliable niche and no semblance of a kit left to do anything else. That said, they still come close. VERY occasionally they may be able to do something in 1 specific pairing or situation but that is mostly due to pure chance and having the stars align rather than being a testament to their kit.
-        </p>
-        <p class="modal-p">
-          This is the point where my notes will go to shit because the unit in question doesn't have a lot to them that isnt obvious.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="e-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('e-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">E Tier Explanation</div>
-        <p class="modal-p">
-          Friends who are likely not the best scenario for any situation and are mostly only used for memes.
-        </p>
-        <p class="modal-p">
-          Effectively the D tier however they do not reach the bare minimum in some aspects requiring units to do additional work in those aspects. In other words, D tier units who actively make your team worse due to what they lack outside their occasional niche. Exceptions: L1 Sannyo, L1 Tsukasa, L1 Megumu
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="y-tier-modal" class="modal">
-    <div class="modal-overlay">
-      <div class="con">
-        <span class="close-btn" onclick="closeModal('y-tier-modal')">&times;</span>
-        <div class="sub-header header-pro">Yukkuri Shitte Ne</div>
-        <p class="modal-p">
-          These characters technically don't qualify for the main list due to a lack of anything important but since it's funny we gave them their own list.
-        </p>
-      </div>
-    </div>
-  </div>
-
-<script>
-  function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-  }
-
-  function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    if (event.target.classList.contains('modal-overlay')) {
-      event.target.closest('.modal').style.display = "none";
-    }
-  }
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const checkbox = document.getElementById("toggle-intro");
-  const introContent = document.getElementById("intro-content");
-
-  if (!checkbox || !introContent) return;
-
-  const isCollapsed = localStorage.getItem("intro_collapsed") === "true";
-
-  if (isCollapsed) {
-    checkbox.checked = true;
-    introContent.classList.add("is-collapsed");
-  }
-
-  checkbox.addEventListener("change", () => {
-    if (checkbox.checked) {
-      introContent.classList.add("is-collapsed");
-      localStorage.setItem("intro_collapsed", "true");
-    } else {
-      introContent.classList.remove("is-collapsed");
-      localStorage.setItem("intro_collapsed", "false");
-    }
-  });
-});
-</script>
-
-<script>
-function fitNameplateText() {
-  document.querySelectorAll('.cname').forEach(el => {
-    let span = el.querySelector('.cname-text');
-    if (!span) {
-      span = document.createElement('span');
-      span.className = 'cname-text';
-      span.style.whiteSpace = 'nowrap';
-      span.style.display = 'inline-block';
-      span.innerHTML = el.innerHTML;
-      el.innerHTML = '';
-      el.appendChild(span);
-    }
-    let size = 28;
-    span.style.fontSize = size + 'px';
-    const style = window.getComputedStyle(el);
-    const padding = (parseFloat(style.paddingLeft) || 0) + (parseFloat(style.paddingRight) || 0);
-    const maxAllowedWidth = el.clientWidth - padding - 2;
-
-    if (maxAllowedWidth <= 0) return;
-
-    while (span.offsetWidth > maxAllowedWidth && size > 8) {
-      size -= 0.5;
-      span.style.fontSize = size + 'px';
-    }
-  });
-}
-document.addEventListener('DOMContentLoaded', fitNameplateText);
-window.addEventListener('load', fitNameplateText);
-
-if (document.fonts) {
-  document.fonts.ready.then(fitNameplateText);
-}
-</script>
-
-<script>
-  let ticking = false;
-
-  function updateParallax() {
-    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
-
-    const maxShift = window.innerHeight * 0.15; // matches the 15vh buffer baked into the CSS
-    const offset = progress * maxShift;
-
-    document.documentElement.style.setProperty('--parallax-offset', `-${offset}px`);
-    ticking = false;
-  }
-
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(updateParallax);
-      ticking = true;
-    }
-  });
-
-  window.addEventListener('resize', updateParallax);
-  updateParallax();
-</script>
-
-<script>
-  function toggleTierRow(tierId) {
-  const container = document.getElementById(tierId);
-  const toggleBtn = document.getElementById(`toggle-btn-${tierId}`);
-  if (!container) return;
-
-  const isNowCollapsed = container.classList.toggle("collapsed");
-
-  if (toggleBtn) {
-    if (tierId === "F") {
-      toggleBtn.textContent = isNowCollapsed ? "▶ Show F Tier" : "▼ Hide F Tier";
-    } else {
-      toggleBtn.textContent = isNowCollapsed 
-        ? `▶ Show ${tierId} Tier (${container.children.length} Units)` 
-        : `▼ Hide ${tierId} Tier`;
-    }
-  }
-}
-</script>
-
-<script>
-  let showExplButtons = true;
-
-function toggleExplButtons() {
-  showExplButtons = !showExplButtons;
-  const btn = document.getElementById('expl-toggle-btn');
-  if (btn) {
-    btn.textContent = showExplButtons ? 'Hide Explanation Buttons' : 'Show Explanation Buttons';
-  }
-  localStorage.setItem('showExplButtons', showExplButtons ? 'true' : 'false');
-  applyFilters(); // re-renders whatever's currently filtered/searched, with the new setting applied
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('showExplButtons');
-  if (saved === 'false') {
-    showExplButtons = false;
-    const btn = document.getElementById('expl-toggle-btn');
-    if (btn) btn.textContent = 'Show Explanation Buttons';
-  }
-  applyFilters();
-});
-</script>
-
-<script>
+  <script>
   document.addEventListener("DOMContentLoaded", () => {
-  const checkbox = document.getElementById("toggle-filters");
-  const panel = document.getElementById("filters-panel");
+    const checkbox = document.getElementById("toggle-intro");
+    const introContent = document.getElementById("intro-content");
 
-  if (!checkbox || !panel) return;
+    if (!checkbox || !introContent) return;
 
-  const isCollapsed = localStorage.getItem("filters_collapsed") === "true";
+    const isCollapsed = localStorage.getItem("intro_collapsed") === "true";
 
-  if (isCollapsed) {
-    checkbox.checked = true;
-    panel.classList.add("is-collapsed");
-  }
-
-  checkbox.addEventListener("change", () => {
-    if (checkbox.checked) {
-      panel.classList.add("is-collapsed");
-      localStorage.setItem("filters_collapsed", "true");
-    } else {
-      panel.classList.remove("is-collapsed");
-      localStorage.setItem("filters_collapsed", "false");
+    if (isCollapsed) {
+      checkbox.checked = true;
+      introContent.classList.add("is-collapsed");
     }
+
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        introContent.classList.add("is-collapsed");
+        localStorage.setItem("intro_collapsed", "true");
+      } else {
+        introContent.classList.remove("is-collapsed");
+        localStorage.setItem("intro_collapsed", "false");
+      }
+    });
   });
-});
-</script>
+  </script>
+
 </body>
 
 </html>
-
