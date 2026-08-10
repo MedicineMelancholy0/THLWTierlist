@@ -700,26 +700,27 @@ body.small-icons .expl {
 :root {
   --bg: rgba(217, 210, 233, 0.85); 
   --fg: #20124D;
-  --bg-img: url("tower.png") no-repeat center top;
+  --bg-img: url("tower.png"); /* Fixed: keep only url() here */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: rgba(32, 18, 77, 0.85);
     --fg: #fff;
-    --bg-img: url("cavern.png") no-repeat center top;
+    --bg-img: url("cavern.png");
   }
 }
 
 :root:has(#mode_dark:checked) {
   --bg: rgba(32, 18, 77, 0.85);
   --fg: #fff;    
-  --bg-img: url("cavern.png") no-repeat center top;
+  --bg-img: url("cavern.png");
 }
+
 :root:has(#mode_light:checked) {   
   --bg: rgba(242, 240, 248, 0.95); 
   --fg: #09031d;
-  --bg-img: url("tower.png") no-repeat center top;
+  --bg-img: url("tower.png");
 }
 
 body::before {
@@ -744,6 +745,7 @@ body {
   font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   transition: background-color 0.3s, color 0.3s;
+  isolation: isolate; /* Fixed: prevents z-index: -1 from hiding behind body background */
 }
 
 /* Keep your custom toggle styles below */
