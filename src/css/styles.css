@@ -187,7 +187,7 @@ body.small-icons .expl {
 
 .formresponse {
   max-width: 1400px;
-  margin: 5 auto;
+  margin: 10 auto;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: 'Josephin Sans', Arial, sans-serif;
@@ -197,7 +197,7 @@ body.small-icons .expl {
 
 .Important-Links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
   width: 100%;
@@ -700,45 +700,27 @@ body.small-icons .expl {
 :root {
   --bg: rgba(217, 210, 233, 0.85); 
   --fg: #20124D;
+  --bg-img: url("tower.png") no-repeat center top;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: rgba(32, 18, 77, 0.85);
     --fg: #fff;
+    --bg-img: url("cavern.png") no-repeat center top;
   }
 }
 
 :root:has(#mode_dark:checked) {
   --bg: rgba(32, 18, 77, 0.85);
   --fg: #fff;    
+  --bg-img: url("cavern.png") no-repeat center top;
 }
 :root:has(#mode_light:checked) {   
   --bg: rgba(242, 240, 248, 0.95); 
   --fg: #09031d;
+  --bg-img: url("tower.png") no-repeat center top;
 }
-/*
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url("cavern.png") no-repeat center center;
-  background-size: cover;
-  opacity: 0.5;
-  z-index: -1;
-  pointer-events: none;
-}
-
-body {
-  background-color: var(--bg);
-  color: var(--fg);
-  font-family: "Josephin Sans", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  transition: background-color 0.3s, color 0.3s;
-}*/
 
 body::before {
   content: "";
@@ -747,7 +729,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 130vh;
-  background: url("cavern.png") no-repeat center top;
+  background: var(--bg-img) no-repeat center top;
   background-size: cover;
   opacity: 0.5;
   z-index: -1;
@@ -808,22 +790,6 @@ label[for="mode_dark"] { display: grid; }
 :root:has(#mode_light:checked) label[for="mode_dark"] {
    display: grid;
 }
-
-/*
-.tier-toggle-bar {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #ffffff;
-  font-family: "Josephin Sans", Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding: 8px 12px;
-  margin: 6px auto;
-  max-width: 90%;
-  border-radius: 4px;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 0.2s ease;
-}*/
 
 .tier-toggle-bar {
   background-color: rgba(0, 0, 0, 0.4);
