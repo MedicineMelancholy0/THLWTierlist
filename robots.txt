@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://medicinemelancholy0.github.io/THLWTierlist/sitemap.xml
