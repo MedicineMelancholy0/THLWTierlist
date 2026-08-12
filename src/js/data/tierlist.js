@@ -85,7 +85,8 @@ dataSet[dataSetVersion].characterData = [
         "Acc is kinda schizo - Lacks Party Acc Buffs"
       ],
       nitpick: [
-        "Primary killers on ST are kinda whack (but it doesnt matter much cause of her raw dmg!)"
+        "Primary killers on ST are kinda whack (but it doesnt matter much cause of her raw dmg!)",
+        "Stored Power lasting only 2 turns which can make t3 nuking ever so slightly suboptimal"
       ],
       extra: [
         "Has nn bias because nn loves the color red so her secondary killer is bluemu secondary killer but better????",
@@ -180,23 +181,24 @@ dataSet[dataSetVersion].characterData = [
     opts: { r: true, atk: true },
     explanation: {
       pros: [
-        "Party 100% Damage Up!!!!",
-        "Incredible Crit Support & Good Yin Support",
-        "Strong Damage to Res & Anomaly Breaks",
-        "As a yin atk unit, has absurd card options to fix many flaws INCLUDING 100% -4 DEF WHAT"
+        "Doubles Party Damage Almost Unconditionally while providing Amazing Party Crit Support in tandem with Good Yin Support from PraeCards making her Support Very Good",
+        "High Damage to Res, Fast Overflow, Attack Anomalies and INSANE 100% -4 DEF CARD Basically ensures her damage is consistently great even off killer",
+        "Consistently High Party P Utility to Ensure her Stored Power Works"
       ],
       boons: [
         "Super Good Sticks (made for her lol)"
       ],
       mixed: [
-        "Her use is also co-dependent on other units rather than providing much solo aside from her Skill 3. (think gengetsu, try and emulate kasen + gengetsu + aoe nuker with her)"
+        "Bad Accuracy Support/Sustainability Between Gauges",
+        "AoE Spellcard's Cap Damage is worse than most other EX tiers making it subject to fraud out more in higher-difficulty content (but this is rare)"
       ],
       cons: [
-        "Lacks strong killers"
+        "Lacking Strong Killers can lead to her being somewhat shafted in higher difficulty content where she doesn't hit killer, notably in her AoE"
       ],
       nitpick: [
         "ST Doesn't break the anomalies it inflicts",
-        "Not Freeze/Para Immune"
+        "Not Freeze/Para Immune",
+        "Doesn't have 7+ breaks on any gauge like the rest of EX (But has overflow and anom infliction on a non major p skill so it can work"
       ],
       extra: [
         "NOTABLE PAIRINGS (Not included in tiering): ??? EVeryone? Esp in conjunction with Gengetsu lol",
@@ -217,7 +219,7 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "$300 who doesn’t solo everything",
-        "Despite the above, the buffs she needs for her own minimum requirements are still lacking, much like logwako, especially due to her lack of accuracy and lack of any practical buffing last gauge outside ability. Due to these reasons she is highly inconsistent at both those roles (1/3 and 3/3) resulting in her missing ex",
+        "Despite the above, the buffs she needs for her own minimum requirements are still lacking, much like logwako, especially due to her lack of accuracy and lack of any practical buffing last gauge outside ability. Due to these reasons she is highly inconsistent at both those roles (1/3 and 3/3) which can lead to her damage quickly frauding out (especially on Gauge 3)",
         "Lacking Innate Debuffs especially doesn't help with her last gauge problem. As her damage is actually below average for modern l0s. Still high, but not high enough to make 3 crit yang atk and def work (if that, she can run into p issues as well)"
       ],
       nitpick: [
@@ -259,17 +261,12 @@ dataSet[dataSetVersion].characterData = [
     opts: { e: true, dest: true },
     explanation: {
       pros: [
-        "Stupid High Damage Output, Wide Killers + 4 NLM linesa",
-        "Superb Breaking Ability, even if extremely unrealistic.",
-        "More Party 100% Damage Up!!"
-      ],
-      boons: [
-        "CORRECTION, shes ace",
-        "not a skill bot anymore!!! (usually worth investing in to fixing her flaws)"
+        "High Damage Across the Board Complemented by Great Killers and 4 NLM lines on her Last Word",
+        "7/4 Breaks (Enabled by having a seperate primary P and burn inflict skill) in addition to her innate support + great card option allows her to be used as a geng-type breaker/supporter (requires shill due to her innate slow speed making her prefer to be a aoe nuke going last. but she still has said flexibility and it works!)",
+        "Unconditionally doubles the party's damage for 3 turns, greatly increasing her flexibility and supportive capabilities."
       ],
       mixed: [
-        "Dmg to Eff Issues",
-        "Aoe damage is effectively where this unit earns her placement. Which both has questionable killer and requires between gauge support (@@@@@)"
+        "AoE Spellcard is VERY Subject to Fraud Out at any Given Moment due to a combination of being reliant on Damage to Eff, Subpar line 1 killers (while lacking NLM lines outside line 6) and generally being reliant on heavy outside support (@) and it can still fail even when given proper support."
       ],
       nitpick: [
         "All her stuns besides LW are cucked by RNG",
@@ -277,7 +274,7 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "AoE Spell Elements are Disjointed from the rest of her kit (further making more of her power in her aoe)",
-        "Outside of Stored Power, Low Innate Support, Lacks Utility, Debuffing. (@@@@@) Which means she is effectively just a damage unit 99% of the time unless someone else does all of those roles (wonder who)",
+        "Expounding on her first con, she has very low innate utility outside of breaking and, worse, has no innate Yin Def Down, making even her Last Word not a sure-kill in situations where she can't properly get her Last Word set up due to lacking consistent buffs between gauges in such a way that lets her keep her damage (unlike, say, L80 Kasen)",
         "Just really wants gengetsu/cs2/bunnyo outside them she is reliant on stuff like mima with buffing cards and its just not the same"
       ],
       extra: [
@@ -294,17 +291,17 @@ dataSet[dataSetVersion].characterData = [
     opts: { r: true, atk: true },
     explanation: {
       pros: [
-        "Massive Damage with Great Killers Across the Board Backed Up by Great Cards (Ikaruga) and Great Dmg to Res. Basically the best G3 Nuke in the game.",
+        "Straight-Up Universal Damage with Great Killers Across the Board Backed Up by Great Cards (Ikaruga) and Great Dmg to Res. Basically the best G3 Nuke in the game when you realize her Anthology Card is also her AoE's BIS and she can stack up 4 Yin Atk II for the last gauge while not losing out on her damage.",
         "Very High Buff Counts on All Gauges to Support said Damage, along with being easy to support thanks to having low Agility (Also giving her Rank II Skills more value by giving them an actual Rank I platform to multiply off of)"
       ],
       mixed: [
-        "Wants more Yin Atk/Def on Last Word"
+        "Wants more Yin Atk/Def on Last Word to maximize its damage"
       ],
       nitpick: [
         "2t Gimmicks are Kinda Annoying but Mostly Savable"
       ],
       cons: [
-        "Lacks Utility outside of Party P (Self Acc)"
+        "Lacks Utility outside of Party P (Self Acc) so she is essentially just a very big damage bot."
       ]
     }
   },
@@ -611,7 +608,8 @@ dataSet[dataSetVersion].characterData = [
         "Generally lacks Crit Atk"
       ],
       cons: [
-        "Her buffs are a little too selfish locking her from her true role as a Yang-Getsu. This is the only problem keeping her from SS but can be remedied by better cards similar to ExEika, all while lacking innate debuffs"
+        "Her buffs are a little too selfish locking her from her true role as a Yang-Getsu. This is the only problem keeping her from SS but can be remedied by better cards similar to ExEika, all while lacking innate debuffs",
+        "Due to lacking Debuffs (and Crit Atk) her G3 performance is also suboptimal not letting her be used like a true Froyo clone"
       ],
       extra: [
         "Expounding on her con, her self agi II is basically the limiting edict here as it makes it excruciatingly difficult to save her sk3 in a way such that her agi II is saved for g3. So her LW damage is projected to be rather mid in current content due to having to go first and not having innate debuffs.",
@@ -3026,7 +3024,7 @@ dataSet[dataSetVersion].characterData = [
     opts: { supp: true, u: true },
     explanation: {
       pros: [
-        "Good Damage Potential on Last Word and AoE with Great Slicing and Youkai Killers ",
+        "Good Damage Potential on Last Word with Great Slicing and Youkai Killers ",
         "Great Party Yin Support",
         "Damage to Res makes her much more Universal"
       ],
@@ -3123,7 +3121,7 @@ dataSet[dataSetVersion].characterData = [
         "Decent Supporting Ability"
       ],
       boons: [
-        "New best Solo LW in the game"
+        "Extremely Good Solo LW"
       ],
       mixed: [
         "Misses out on Breaks/AoE Damage if she wants to maximize Support due to the nature of her kit design",
