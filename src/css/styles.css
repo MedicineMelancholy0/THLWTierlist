@@ -856,6 +856,17 @@ extra
   --bg-opacity: 0.2;
 }
 
+body {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -870,19 +881,6 @@ body::before {
   pointer-events: none;
   transform: translateY(var(--parallax-offset, 0px));
   will-change: transform;
-}
-
-body {
-  background-color: var(--bg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  color: var(--fg);
-  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  transition: background-color 0.3s, color 0.3s;
-  isolation: isolate;
 }
 
 .theme-toggle {
