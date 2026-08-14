@@ -235,7 +235,7 @@ body.small-icons .expl {
   max-width: 1400px;
   margin: 10px auto;
   width: 100%;
-  background-color: rgba(18, 10, 35, 0.85);
+  background-color: rgba(18, 10, 35, 0.9);
   color: #ffffff;
   font-family: 'Josefin Sans', Arial, sans-serif;
   border: 2px solid #000000;
@@ -815,27 +815,27 @@ body.small-icons .expl {
 :root {
   --bg: rgba(217, 210, 233, 0.85); 
   --fg: #20124D;
-  --bg-img: url("/THLWTierlist/src/css/tower.png");
+  --bg-img: url("tower.png");
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: rgba(32, 18, 77, 0.85);
     --fg: #fff;
-    --bg-img: url("/THLWTierlist/src/css/cavern.png");
+    --bg-img: url("cavern.png");
   }
 }
 
 :root:has(#mode_dark:checked) {
   --bg: rgba(32, 18, 77, 0.85);
   --fg: #fff;    
-  --bg-img: url("/THLWTierlist/src/css/cavern.png");
+  --bg-img: url("cavern.png");
 }
 
 :root:has(#mode_light:checked) {   
   --bg: rgba(218, 206, 255, 0.95); 
   --fg: #09031d;
-  --bg-img: url("/THLWTierlist/src/css/tower.png");
+  --bg-img: url("tower.png");
 }
 /*
 extra
