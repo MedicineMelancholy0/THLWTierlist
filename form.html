@@ -48,6 +48,15 @@
     </div>
     </div>
 
+    <script>
+      const savedTheme = localStorage.getItem('siteTheme');
+      if (savedTheme === 'dark') {
+        document.getElementById('mode_dark').checked = true;
+      } else if (savedTheme === 'light') {
+        document.getElementById('mode_light').checked = true;
+      }
+    </script>
+
     <br>
 <div style="text-align:center;">
     <h1>These include transcripts of form feedback, if you do not want to be on this board, say so. However you will be anonymous regardless.</h1>
