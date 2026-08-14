@@ -57,6 +57,36 @@
       }
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const darkRadio = document.getElementById('mode_dark');
+          const lightRadio = document.getElementById('mode_light');
+          const savedTheme = localStorage.getItem('siteTheme');
+
+          // 1. Restore saved theme or default based on system dark mode preference
+          if (savedTheme === 'dark') {
+            darkRadio.checked = true;
+          } else if (savedTheme === 'light') {
+            lightRadio.checked = true;
+          } else {
+            // Fallback if user has no saved theme preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              darkRadio.checked = true;
+            } else {
+              lightRadio.checked = true;
+            }
+          }
+
+          // 2. Save theme to localStorage whenever toggled on this page
+          darkRadio.addEventListener('change', () => {
+            if (darkRadio.checked) localStorage.setItem('siteTheme', 'dark');
+          });
+          lightRadio.addEventListener('change', () => {
+            if (lightRadio.checked) localStorage.setItem('siteTheme', 'light');
+          });
+        });
+      </script>
+
     <br>
 <div style="text-align:center;">
     <h1>These include transcripts of form feedback, if you do not want to be on this board, say so. However you will be anonymous regardless.</h1>
