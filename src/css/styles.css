@@ -874,7 +874,6 @@ body::before {
 
 body {
   background-color: var(--bg);
-  background-image: var(--bg-img);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
