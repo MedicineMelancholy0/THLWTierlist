@@ -409,7 +409,7 @@ dataSet[dataSetVersion].characterData = [
         "Two quick skills making using her for her great damage and between gauge buffs a NIGHTMARE, but its really only an issue past the first gauge in some combos."
       ],
       cons: [
-        "For an ex unit she is lacking in universal outside element content as her damage is largely gated behind her 45% dmg to eff (not an issue for lw, is an issue for aoe). aka, dmg to eff issues",
+        "She is lacking in universal damage outside of her metal element content as her damage is largely gated behind her 45% dmg to eff (not an issue for lw, is an issue for aoe). aka, dmg to eff issues",
         "Lower than wanted t1 buffs, but it isn't bad just..lower than what is wanted in this tier and given what she gives.",
         "Lacks Def Down on LW, and her LW damage tends to suffer greatly for it"
       ],
@@ -1126,6 +1126,30 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  {
+    name: "C3∫ Yachie",
+    img: "c3int yachie.png",
+    tier: "S",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Kit's Practicality is Saved by High Damage to Res, Innate Def Down, and Seperated Inflict and P Skills making her duos far more viable",
+        "Functions as a great Dest Support thanks to her Crit Acc buffing and otherwise decent utility (party 1.2p)"
+      ],
+      cons: [
+        "Bad p0 AoE killers do hold her back quite significantly",
+        "Just has no Accuracy or Crit Atk throughout her kit exasperating all her problems"
+      ],
+      boons: [
+        "LW Breaks 7",
+        "Has party unbind and CD reduce as well... for some reason"
+      ],
+      mixed: [
+        "Generally doesn't have enough buffs for full consistency between all gauges, notably being a problem for her last word despite having def down.",
+        "Notably numbers-locked as her raw damage just isn't high enough, especially as she doesn't benefit at all from her Crit Acc II or crit acc at all, making her highly reliant on outside support"
+      ]
+    }
+  },
   // start of A
   {
     name: "A16.3& Kosuzu",
@@ -1688,6 +1712,23 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "DS Solo Count: 18"
+      ]
+    }
+  },
+  {
+    name: "L80 Remilia",
+    img: "l80 remi.png",
+    tier: "A",
+    opts: { atk: true, r: true },
+    explanation: {
+      pros: [
+        "AoE Spellcard and Last Word are capable of Nuking thanks to high damage floors pairing with her new buffs. Gauge 3 is especially practical now due to 6 lines of killer and innate def down, all supported by good damage to Eff and Res along with Atk Anoms that lets it all actually usable. (Also Prae Cards for her AoE making her buffs between gauges actually great)",
+        "AoE Spellcard breaks 3 types of anomalies with good overflow (what) making her duos actually practical"
+      ],
+      cons: [
+        "Generally has very bad killers meaning the practicality of her kit, even with her buffs, is tenantive",
+        "Elemental Spread is Disjointed",
+        "Effectively 0 Util outside of randomly breaking 7 burn on a single enemy on her AoE making her just a weirdly practical damage bot. Further supplanted by having her Burn Inflict be tied to her Def Down II skill which you really don't want to waste"
       ]
     }
   },
@@ -2570,26 +2611,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Overall she is extremely bottlenecked by killer, no utility to speak of to make it worth it either."
-      ]
-    }
-  },
-  {
-    name: "L80 Remilia",
-    img: "l80 remi.png",
-    tier: "B",
-    opts: { atk: true, r: true },
-    explanation: {
-      pros: [
-        "Great Damage to Eff & Res, High Damaging AoE Spellcard and Last Word (on killer and thanks to rein)",
-        "Decent Party Support & Debuffs, can abuse Prae Card",
-        "Some useful utility that is niche but extremely rare (looking at you aoe spell)"
-      ],
-      cons: [
-        "Long Skill Cooldowns & Middling Self Setup make her especially susceptable to buff cleanse",
-        "Poor Killers"
-      ],
-      mixed: [
-        "Very Mixed Elements, Aside from Last Word"
       ]
     }
   },
