@@ -2027,24 +2027,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "E1;4 Sakuya",
-    img: "e1.-5 sakuya.png",
-    tier: "A",
-    opts: { dest: true, b: true },
-    explanation: {
-      pros: [
-        "High Damage with a great Killer range backed up with an AoE nuke",
-        "Good Buffs & Util to sustain her performance throughout her kit"
-      ],
-      cons: [
-        "Generally just doesn't have the numbers or def down to be higher."
-      ],
-      extra: [
-        "Very similar to wuika where shes better than the original, has good stuff in her kit (even if very formulaic) but entirely held back by numbers which would let her be s probably"
-      ]
-    }
-  },
-  {
     name: "F1;4 Koishi",
     img: "f1;4 koishi.png",
     tier: "A",
@@ -2143,35 +2125,6 @@ dataSet[dataSetVersion].characterData = [
         "Stuns aren't Guaranteed",
         "Noticeable Damage Ceilings limit Damage Potential",
         "Reliant on Cards for Debuffs"
-      ]
-    }
-  },
-  {
-    name: "W5 Yuugi",
-    img: "yuugi.jpg",
-    tier: "A",
-    opts: { tec: true, u: true },
-    explanation: {
-      pros: [
-        "Good Damage Potential on Last Word and AoE, complemented by quick breaks on her AoE",
-        "Decent Yin & Crit Support Across her Kit",
-        "Yin Debuffs Everywhere, making her a good Option for Yin Teams"
-      ],
-      cons: [
-        "Yin Debuffs after Spellcards Finish limit Personal Damage",
-        "Extremely dependent on Damage to Eff. Immediately dies against Non-Wood Enemies."
-      ],
-      nitpicks: [
-        "Evasion down + no acc = IM SUFFERING STOOOP IT BURNNS",
-        "Who Will Wuse Wuugi Win Wenty Wenty Wive"
-      ],
-      mixed: [
-        "Soupy Elements & Mediocre Breaks limit Utility and Damage",
-        "Needs P Support",
-        "Debuffs Evasion instead of buffing Accuracy leading to Inconsistent Damage and Breaks"
-      ],
-      extra: [
-        "@@@"
       ]
     }
   },
@@ -2927,6 +2880,24 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "E1;4 Sakuya",
+    img: "e1.-5 sakuya.png",
+    tier: "B",
+    opts: { dest: true, b: true },
+    explanation: {
+      pros: [
+        "High Damage with a great Killer range backed up with an AoE nuke",
+        "Good Buffs & Util to sustain her performance throughout her kit"
+      ],
+      cons: [
+        "Generally just doesn't have the numbers or def down to be higher."
+      ],
+      extra: [
+        "Very similar to wuika where shes better than the original, has good stuff in her kit (even if very formulaic) but entirely held back by numbers which would let her be s probably"
+      ]
+    }
+  },
+  {
     name: "B3 Raiko",
     img: "b5 raiko.png",
     tier: "B",
@@ -3035,6 +3006,35 @@ dataSet[dataSetVersion].characterData = [
       ],
       mixed: [
         "Overly Tied to Wood"
+      ]
+    }
+  },
+  {
+    name: "W5 Yuugi",
+    img: "yuugi.jpg",
+    tier: "B",
+    opts: { tec: true, u: true },
+    explanation: {
+      pros: [
+        "Good Damage Potential on Last Word and AoE, complemented by quick breaks on her AoE",
+        "Decent Yin & Crit Support Across her Kit",
+        "Yin Debuffs Everywhere, making her a good Option for Yin Teams"
+      ],
+      cons: [
+        "Yin Debuffs after Spellcards Finish limit Personal Damage",
+        "Extremely dependent on Damage to Eff. Immediately dies against Non-Wood Enemies."
+      ],
+      nitpicks: [
+        "Evasion down + no acc = IM SUFFERING STOOOP IT BURNNS",
+        "Who Will Wuse Wuugi Win Wenty Wenty Wive"
+      ],
+      mixed: [
+        "Soupy Elements & Mediocre Breaks limit Utility and Damage",
+        "Needs P Support",
+        "Debuffs Evasion instead of buffing Accuracy leading to Inconsistent Damage and Breaks"
+      ],
+      extra: [
+        "@@@"
       ]
     }
   },
