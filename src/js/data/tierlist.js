@@ -7379,6 +7379,21 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "L1 Chimi", 
+    img: "l1 chimi.jpg", 
+    tier: "E", 
+    opts: { dbf: true, g: true },
+    explanation: {
+      pros: [
+        "has 5 def down on 2 skills"
+      ],
+      cons: [
+        "solo lw",
+        "bad damage"
+      ]
+    }
+  },
+  { 
     name: "L1 Cirno", 
     img: "l1 cirno.png", 
     tier: "E", 
