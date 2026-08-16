@@ -4256,30 +4256,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "E1 Meiling",
-    img: "e1 meiling.png",
-    tier: "C",
-    opts: { def: true, u: true },
-    explanation: {
-      pros: [
-        "High Damage Output & Great Killers",
-        "Good Yin & Tank Sustainability",
-        "Has Real Debuffs"
-      ],
-      mixed: [
-        "Below average support"
-      ],
-      cons: [
-        "Weak Spellcard Damage",
-        "Weak & RNG Breaks",
-        "Poor Buff Removal Recovery"
-      ],
-      extra: [
-        "Very similar to kannagi ngl"
-      ]
-    }
-  },
-  {
     name: "E9 Remilia",
     img: "e9 remilia.png",
     tier: "C",
@@ -5574,6 +5550,30 @@ dataSet[dataSetVersion].characterData = [
         "Aside from Earth, very mixed elements",
         "Cannot Break the Anomalies she Inflicts on turn 1 without external supports. Can't break her skill inflict anom on AoE either.",
         "Relies on Cards for Crit Atk and Yang Def Down as she lacks those"
+      ]
+    }
+  },
+  {
+    name: "E1 Meiling",
+    img: "e1 meiling.png",
+    tier: "D",
+    opts: { def: true, u: true },
+    explanation: {
+      pros: [
+        "High Damage Output & Great Killers",
+        "Good Yin & Tank Sustainability",
+        "Has Real Debuffs"
+      ],
+      mixed: [
+        "Below average support"
+      ],
+      cons: [
+        "Weak Spellcard Damage",
+        "Weak & RNG Breaks",
+        "Poor Buff Removal Recovery"
+      ],
+      extra: [
+        "Very similar to kannagi ngl"
       ]
     }
   },
