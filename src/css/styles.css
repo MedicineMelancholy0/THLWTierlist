@@ -102,6 +102,18 @@ a:link {
   transform: scale(1.05);
 }
 
+@media (min-width: 601px) {
+  .quick-btn {
+    min-width: 140px;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+body {
+  padding-bottom: 60px; /* roughly the bar's height */
+}
+
 .head {
   display: flex;
   flex-direction: row;
