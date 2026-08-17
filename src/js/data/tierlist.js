@@ -39,12 +39,12 @@ dataSet[dataSetVersion].options = [
 ];
 
 dataSet[dataSetVersion].characterData = [
-  { name: "L1 Reimu", img: "l1 reimu.png", tier: "Dummy", opts: { g: true, def: true } },
+  { name: "L1 Reimu", img: "l1 reimu.webp", tier: "Dummy", opts: { g: true, def: true } },
   
   // start of EX
   { 
     name: "L0o Satori", 
-    img: "lo satori.png", 
+    img: "lo satori.webp", 
     tier: "EX", 
     opts: { p: true, dbf: true },
     explanation: {
@@ -71,7 +71,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Cz1# Marisa", 
-    img: "cz2 marisa.png", 
+    img: "cz2 marisa.webp", 
     tier: "EX", 
     opts: { atk: true, e: true },
     explanation: {
@@ -96,7 +96,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Cs2# Satori", 
-    img: "cs2 satori.png", 
+    img: "cs2 satori.webp", 
     tier: "EX", 
     opts: { e: true, supp: true },
     explanation: {
@@ -120,7 +120,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3>> Toyohime", 
-    img: "c3 toyohime.png", 
+    img: "c3 toyohime.webp", 
     tier: "EX", 
     opts: { e: true, tec: true },
     explanation: {
@@ -149,7 +149,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Lr1 Renko - Gengetsu", 
-    img: "SPOILER_gengetsu.jpg", 
+    img: "SPOILER_gengetsu.webp", 
     tier: "EX", 
     opts: { r: true, tec: true },
     explanation: {
@@ -176,7 +176,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L80 Kasen", 
-    img: "kassy.jpg", 
+    img: "kassy.webp", 
     tier: "EX", 
     opts: { r: true, atk: true },
     explanation: {
@@ -208,7 +208,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L0o Koishi", 
-    img: "lo koishi.png", 
+    img: "lo koishi.webp", 
     tier: "EX", 
     opts: { p: true, dest: true },
     explanation: {
@@ -233,7 +233,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C5> Miko", 
-    img: "c5 miko.png", 
+    img: "c5 miko.webp", 
     tier: "EX", 
     opts: { dest: true, e: true },
     explanation: {
@@ -256,7 +256,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "F1 Marisa", 
-    img: "f1 mors.png", 
+    img: "f1 mors.webp", 
     tier: "EX", 
     opts: { e: true, dest: true },
     explanation: {
@@ -286,7 +286,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L80 Yukari", 
-    img: "l80 yukari.png", 
+    img: "l80 yukari.webp", 
     tier: "EX", 
     opts: { r: true, atk: true },
     explanation: {
@@ -307,7 +307,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Cb3# Reisen", 
-    img: "cb3 reisen.png", 
+    img: "cb3 reisen.webp", 
     tier: "EX", 
     opts: { e: true, dbf: true },
     explanation: {
@@ -331,7 +331,7 @@ dataSet[dataSetVersion].characterData = [
   // start of SS
   { 
     name: "A6æ Rumia", 
-    img: "phfes rumia.png", 
+    img: "phfes rumia.webp", 
     tier: "SS", 
     opts: { dest: true, ph: true },
     explanation: {
@@ -359,7 +359,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L10.1 Remilia", 
-    img: "l10.1 remilia.png", 
+    img: "l10.1 remilia.webp", 
     tier: "SS", 
     opts: { e: true, tec: true },
     explanation: {
@@ -379,7 +379,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L10.1 Flandre", 
-    img: "l10.1 flandre.png", 
+    img: "l10.1 flandre.webp", 
     tier: "SS", 
     opts: { atk: true, e: true },
     explanation: {
@@ -396,7 +396,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Cf1# Koishi", 
-    img: "cf1 koishi.png", 
+    img: "cf1 koishi.webp", 
     tier: "SS", 
     opts: { e: true, tec: true },
     explanation: {
@@ -420,7 +420,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L0g Kanako", 
-    img: "lg kanako.png", 
+    img: "lg kanako.webp", 
     tier: "SS", 
     opts: { p: true, def: true },
     explanation: {
@@ -450,7 +450,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L80 Aya", 
-    img: "l80 aya.png", 
+    img: "l80 aya.webp", 
     tier: "SS", 
     opts: { r: true, spd: true },
     explanation: {
@@ -472,7 +472,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C5> Zanmu", 
-    img: "spring zanmu.png", 
+    img: "spring zanmu.webp", 
     tier: "SS", 
     opts: { e: true, spd: true },
     explanation: {
@@ -500,7 +500,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Ce9 Remilia", 
-    img: "ce9 remilia.png", 
+    img: "ce9 remilia.webp", 
     tier: "SS", 
     opts: { e: true, atk: true },
     explanation: {
@@ -526,7 +526,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C5> Saki", 
-    img: "c5 saki.png", 
+    img: "c5 saki.webp", 
     tier: "SS", 
     opts: { atk: true, e: true },
     explanation: {
@@ -551,7 +551,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3 Yuyuko", 
-    img: "beach yuyu.jpg", 
+    img: "beach yuyu.webp", 
     tier: "SS", 
     opts: { dest: true, e: true },
     explanation: {
@@ -575,7 +575,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3>> Yorihime",
-    img: "c3 yorihime.png",
+    img: "c3 yorihime.webp",
     tier: "SS",
     opts: { e: true, dest: true },
     explanation: {
@@ -595,7 +595,7 @@ dataSet[dataSetVersion].characterData = [
   // start of S
   { 
     name: "A16& Okina", 
-    img: "a16& okina.png", 
+    img: "a16& okina.webp", 
     tier: "S", 
     opts: { tec: true, ex: true },
     explanation: {
@@ -619,7 +619,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L0g Suwako", 
-    img: "lg suwako.png", 
+    img: "lg suwako.webp", 
     tier: "S", 
     opts: { p: true, atk: true },
     explanation: {
@@ -644,7 +644,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Lm1 Maribel - Mugetsu", 
-    img: "mugetsu.png", 
+    img: "mugetsu.webp", 
     tier: "S", 
     opts: { spd: true, r: true },
     explanation: {
@@ -670,7 +670,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
   name: "A14.5& Mamizou", 
-  img: "A15.5& Mamizou.png", 
+  img: "A15.5& Mamizou.webp", 
   tier: "S", 
   opts: { dbf: true, ex: true },
   explanation: {
@@ -696,7 +696,7 @@ dataSet[dataSetVersion].characterData = [
 },
 {
   name: "C5> Hecatia",
-  img: "spring hecatia.png",
+  img: "spring hecatia.webp",
   tier: "S",
   opts: { e: true, atk: true },
   explanation: {
@@ -718,7 +718,7 @@ dataSet[dataSetVersion].characterData = [
 },
 { 
     name: "C3∫ Reisen", 
-    img: "C3integral reisen supp.png", 
+    img: "C3integral reisen supp.webp", 
     tier: "S", 
     opts: { supp: true, e: true },
     explanation: {
@@ -746,7 +746,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A17& Eika", 
-    img: "a17& eika.png", 
+    img: "a17& eika.webp", 
     tier: "S", 
     opts: { tec: true, ex: true },
     explanation: {
@@ -769,7 +769,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Lr Aya", 
-    img: "zenki.jpg", 
+    img: "zenki.webp", 
     tier: "S", 
     opts: { tec: true, u: true },
     explanation: {
@@ -793,7 +793,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A13& Seiga", 
-    img: "a13& seiga.png", 
+    img: "a13& seiga.webp", 
     tier: "S", 
     opts: { dest: true, ex: true },
     explanation: {
@@ -814,7 +814,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A9.4& Sakuya", 
-    img: "a9.4& sakuya.png", 
+    img: "a9.4& sakuya.webp", 
     tier: "S", 
     opts: { atk: true, ex: true },
     explanation: {
@@ -839,7 +839,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L80 Kokoro", 
-    img: "l80 kokoro.png", 
+    img: "l80 kokoro.webp", 
     tier: "S", 
     opts: { r: true, atk: true },
     explanation: {
@@ -858,7 +858,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3 Sakuya", 
-    img: "c3 sakuya2.png", 
+    img: "c3 sakuya2.webp", 
     tier: "S", 
     opts: { supp: true, e: true },
     explanation: {
@@ -883,7 +883,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C5= Kaguya", 
-    img: "c35= kaguya.png", 
+    img: "c35= kaguya.webp", 
     tier: "S", 
     opts: { dest: true, e: true },
     explanation: {
@@ -909,7 +909,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L0g Sanae", 
-    img: "fake ass sanae.jpg", 
+    img: "fake ass sanae.webp", 
     tier: "S", 
     opts: { p: true, heal: true },
     explanation: {
@@ -934,7 +934,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3≥ Nitori", 
-    img: "mech nitori.png", 
+    img: "mech nitori.webp", 
     tier: "S", 
     opts: { supp: true, e: true },
     explanation: {
@@ -956,7 +956,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3< Chimata", 
-    img: "fall chimata.png", 
+    img: "fall chimata.webp", 
     tier: "S", 
     opts: { supp: true, e: true },
     explanation: {
@@ -982,7 +982,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3< Nitori", 
-    img: "fall nitori.png", 
+    img: "fall nitori.webp", 
     tier: "S", 
     opts: { tec: true, e: true },
     explanation: {
@@ -1002,7 +1002,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Laa1 Sakuya", 
-    img: "laa1 sakuya.png", 
+    img: "laa1 sakuya.webp", 
     tier: "S", 
     opts: { atk: true, e: true },
     explanation: {
@@ -1028,7 +1028,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A16& Satono", 
-    img: "a16& satono.png", 
+    img: "a16& satono.webp", 
     tier: "S", 
     opts: { ex: true, spd: true },
     explanation: {
@@ -1051,7 +1051,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3~ Yoshika", 
-    img: "c3~ yoshika.png", 
+    img: "c3~ yoshika.webp", 
     tier: "S", 
     opts: { dest: true, e: true },
     explanation: {
@@ -1072,7 +1072,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3 Yukari", 
-    img: "c3 yukari.png", 
+    img: "c3 yukari.webp", 
     tier: "S", 
     opts: { heal: true, e: true },
     explanation: {
@@ -1092,7 +1092,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3 Narumi", 
-    img: "c3 narumi.png", 
+    img: "c3 narumi.webp", 
     tier: "S", 
     opts: { atk: true, e: true },
     explanation: {
@@ -1110,7 +1110,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3' Urumi",
-    img: "c3' urumi.png",
+    img: "c3' urumi.webp",
     tier: "S",
     opts: { atk: true, e: true },
     explanation: {
@@ -1128,7 +1128,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3∫ Yachie",
-    img: "c3int yachie.png",
+    img: "c3int yachie.webp",
     tier: "S",
     opts: { spd: true, e: true },
     explanation: {
@@ -1153,7 +1153,7 @@ dataSet[dataSetVersion].characterData = [
   // start of A
   {
     name: "A16.3& Kosuzu",
-    img: "a16.3& kosuzu.png",
+    img: "a16.3& kosuzu.webp",
     tier: "A",
     opts: { atk: true, ex: true },
     explanation: {
@@ -1181,7 +1181,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "C3 Cirno", 
-    img: "C3 cirno.png", 
+    img: "C3 cirno.webp", 
     tier: "A", 
     opts: { spd: true, e: true },
     explanation: {
@@ -1205,7 +1205,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Sekibanki",
-    img: "sekibanki.jpg",
+    img: "sekibanki.webp",
     tier: "A",
     opts: { spd: true, e: true },
     explanation: {
@@ -1228,7 +1228,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Sanae",
-    img: "C3 Sanae.png",
+    img: "C3 Sanae.webp",
     tier: "A",
     opts: { dbf: true, e: true },
     explanation: {
@@ -1253,7 +1253,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Alice",
-    img: "C3 Alice.png",
+    img: "C3 Alice.webp",
     tier: "A",
     opts: { dbf: true, e: true },
     explanation: {
@@ -1274,7 +1274,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Reimu",
-    img: "c3 reimu.png",
+    img: "c3 reimu.webp",
     tier: "A",
     opts: { spd: true, e: true },
     explanation: {
@@ -1297,7 +1297,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Cf1 Reimu",
-    img: "cf1 reimu.png",
+    img: "cf1 reimu.webp",
     tier: "A",
     opts: { tec: true, e: true },
     explanation: {
@@ -1319,7 +1319,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Cf1 Sanae",
-    img: "cf1 sanae.png",
+    img: "cf1 sanae.webp",
     tier: "A",
     opts: { spd: true, e: true },
     explanation: {
@@ -1341,7 +1341,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ce1 Flandre",
-    img: "C3 prae2.png",
+    img: "C3 prae2.webp",
     tier: "A",
     opts: { e: true, spd: true },
     explanation: {
@@ -1367,7 +1367,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C5= Mokou",
-    img: "c5 mokou.png",
+    img: "c5 mokou.webp",
     tier: "A",
     opts: { atk: true, e: true },
     explanation: {
@@ -1388,7 +1388,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C5> Eiki",
-    img: "spring eiki.png",
+    img: "spring eiki.webp",
     tier: "A",
     opts: { e: true, tec: true },
     explanation: {
@@ -1419,7 +1419,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3' Junko",
-    img: "C3' Junko.png",
+    img: "C3' Junko.webp",
     tier: "A",
     opts: { spd: true, e: true },
     explanation: {
@@ -1445,7 +1445,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3' Seiga",
-    img: "C3' Seiga.png",
+    img: "C3' Seiga.webp",
     tier: "A",
     opts: { e: true, tec: true },
     explanation: {
@@ -1472,7 +1472,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3' Nemuno",
-    img: "c3' nemuno.png",
+    img: "c3' nemuno.webp",
     tier: "A",
     opts: { e: true, dest: true },
     explanation: {
@@ -1494,7 +1494,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Cf1# Reimu",
-    img: "ny reimu.png",
+    img: "ny reimu.webp",
     tier: "A",
     opts: { spd: true, e: true },
     explanation: {
@@ -1517,7 +1517,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L10.1 Reimu",
-    img: "idol_reimu.jpg",
+    img: "idol_reimu.webp",
     tier: "A",
     opts: { e: true, tec: true },
     explanation: {
@@ -1536,7 +1536,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L10.1 Sakuya",
-    img: "l10.1 Sakuya.png",
+    img: "l10.1 Sakuya.webp",
     tier: "A",
     opts: { e: true, dest: true },
     explanation: {
@@ -1555,7 +1555,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "F1 Koishi",
-    img: "f1 koishi.png",
+    img: "f1 koishi.webp",
     tier: "A",
     opts: { tec: true, e: true },
     explanation: {
@@ -1583,7 +1583,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Lm1 Maribel - Mima",
-    img: "lm1 mima.png",
+    img: "lm1 mima.webp",
     tier: "A",
     opts: { r: true, dest: true },
     explanation: {
@@ -1610,7 +1610,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Lr1 Renko - Shinki",
-    img: "lr1 shinki.png",
+    img: "lr1 shinki.webp",
     tier: "A",
     opts: { atk: true, r: true },
     explanation: {
@@ -1628,7 +1628,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Ran",
-    img: "l80 ran.png",
+    img: "l80 ran.webp",
     tier: "A",
     opts: { r: true, def: true },
     explanation: {
@@ -1653,7 +1653,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Yuyuko",
-    img: "mv yuyu.jpg",
+    img: "mv yuyu.webp",
     tier: "A",
     opts: { tec: true, r: true },
     explanation: {
@@ -1674,7 +1674,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Sanae",
-    img: "Mv sanae.jpg",
+    img: "Mv sanae.webp",
     tier: "A",
     opts: { atk: true, r: true },
     explanation: {
@@ -1693,7 +1693,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L80 Reimu", 
-    img: "mv reimu.jpg", 
+    img: "mv reimu.webp", 
     tier: "A", 
     opts: { r: true, spd: true },
     explanation: {
@@ -1717,7 +1717,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Remilia",
-    img: "l80 remi.png",
+    img: "l80 remi.webp",
     tier: "A",
     opts: { atk: true, r: true },
     explanation: {
@@ -1734,7 +1734,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7& Yuyuko",
-    img: "a7& yuyuko.png",
+    img: "a7& yuyuko.webp",
     tier: "A",
     opts: { supp: true, ex: true },
     explanation: {
@@ -1755,7 +1755,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A9& Yuuka",
-    img: "a9& yuuka.png",
+    img: "a9& yuuka.webp",
     tier: "A",
     opts: { dest: true, ex: true },
     explanation: {
@@ -1779,7 +1779,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A10& Shizuha",
-    img: "a10& shizuha.png",
+    img: "a10& shizuha.webp",
     tier: "A",
     opts: { dest: true, ex: true },
     explanation: {
@@ -1799,7 +1799,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12& Nazrin",
-    img: "a12& nazrin.png",
+    img: "a12& nazrin.webp",
     tier: "A",
     opts: { atk: true, ex: true },
     explanation: {
@@ -1820,7 +1820,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12& Shou",
-    img: "a12& shou.png",
+    img: "a12& shou.webp",
     tier: "A",
     opts: { spd: true, ex: true },
     explanation: {
@@ -1838,7 +1838,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12.5& Hatate",
-    img: "a12.5& hatate.png",
+    img: "a12.5& hatate.webp",
     tier: "A",
     opts: { dest: true, ex: true },
     explanation: {
@@ -1860,7 +1860,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A15& Seiran",
-    img: "a15& Seiran.png",
+    img: "a15& Seiran.webp",
     tier: "A",
     opts: { dest: true, ex: true },
     explanation: {
@@ -1883,7 +1883,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A15& Clownpiece",
-    img: "a16& clownpiss.png",
+    img: "a16& clownpiss.webp",
     tier: "A",
     opts: { tec: true, ex: true },
     explanation: {
@@ -1906,7 +1906,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A15.3& Doremy",
-    img: "a15.3& doremy.png",
+    img: "a15.3& doremy.webp",
     tier: "A",
     opts: { def: true, ex: true },
     explanation: {
@@ -1924,7 +1924,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A17.5& Kutaka",
-    img: "a17.5& kutaka.png",
+    img: "a17.5& kutaka.webp",
     tier: "A",
     opts: { spd: true, ex: true },
     explanation: {
@@ -1947,7 +1947,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "F1.-5 Sanae",
-    img: "f1.-5 sanae.png",
+    img: "f1.-5 sanae.webp",
     tier: "A",
     opts: { supp: true, b: true },
     explanation: {
@@ -1967,7 +1967,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "D8.-5 Flandre",
-    img: "d8.-5 flandre 1.png",
+    img: "d8.-5 flandre 1.webp",
     tier: "A",
     opts: { dest: true, b: true },
     explanation: {
@@ -1990,7 +1990,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "R2.-5 Yuyuko",
-    img: "r2.-5 yuyuko.png",
+    img: "r2.-5 yuyuko.webp",
     tier: "A",
     opts: { spd: true, b: true },
     explanation: {
@@ -2010,7 +2010,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W1;4 Suika",
-    img: "w1.-4 suika.png",
+    img: "w1.-4 suika.webp",
     tier: "A",
     opts: { dest: true, b: true },
     explanation: {
@@ -2028,7 +2028,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "F1;4 Koishi",
-    img: "f1;4 koishi.png",
+    img: "f1;4 koishi.webp",
     tier: "A",
     opts: { tec: true, b: true },
     explanation: {
@@ -2045,7 +2045,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "D8;9 Yuyuko",
-    img: "d8;9 yuyuko.png",
+    img: "d8;9 yuyuko.webp",
     tier: "A",
     opts: { atk: true, b: true },
     explanation: {
@@ -2066,7 +2066,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Seiran",
-    img: "b3 seiran.png",
+    img: "b3 seiran.webp",
     tier: "A",
     opts: { spd: true, u: true },
     explanation: {
@@ -2084,7 +2084,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Shinmyoumaru",
-    img: "b5 shinmy.png",
+    img: "b5 shinmy.webp",
     tier: "A",
     opts: { tec: true, u: true },
     explanation: {
@@ -2105,7 +2105,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Lr Ibaraki-Douji's Arm",
-    img: "Lr Armpdn supp.png",
+    img: "Lr Armpdn supp.webp",
     tier: "A",
     opts: { supp: true, u: true },
     explanation: {
@@ -2130,7 +2130,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A13 Seiga",
-    img: "seiga.jpg",
+    img: "seiga.webp",
     tier: "A",
     opts: { dest: true, a: true },
     explanation: {
@@ -2161,7 +2161,7 @@ dataSet[dataSetVersion].characterData = [
   // start of B tier
   {
     name: "C3 Miyoi",
-    img: "c3 miyoi.png",
+    img: "c3 miyoi.webp",
     tier: "B",
     opts: { tec: true, e: true },
     explanation: {
@@ -2184,7 +2184,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Tenshi",
-    img: "tenshi.jpg",
+    img: "tenshi.webp",
     tier: "B",
     opts: { dest: true, e: true },
     explanation: {
@@ -2208,7 +2208,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Satori",
-    img: "c3 satori.png",
+    img: "c3 satori.webp",
     tier: "B",
     opts: { def: true, e: true },
     explanation: {
@@ -2230,7 +2230,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Miko",
-    img: "C3 Miko.png",
+    img: "C3 Miko.webp",
     tier: "B",
     opts: { spd: true, e: true },
     explanation: {
@@ -2259,7 +2259,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Byakuren",
-    img: "c3 byakuren.jfif",
+    img: "c3 byakuren.webp",
     tier: "B",
     opts: { dest: true, e: true },
     explanation: {
@@ -2279,7 +2279,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Joon",
-    img: "c3 joon.png",
+    img: "c3 joon.webp",
     tier: "B",
     opts: { tec: true, e: true },
     explanation: {
@@ -2301,7 +2301,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Marisa",
-    img: "c3 marisa.png",
+    img: "c3 marisa.webp",
     tier: "B",
     opts: { supp: true, e: true },
     explanation: {
@@ -2318,7 +2318,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Youmu",
-    img: "youmu.jpg",
+    img: "youmu.webp",
     tier: "B",
     opts: { tec: true, e: true },
     explanation: {
@@ -2347,7 +2347,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Kyouko",
-    img: "C3 (perhaps) Kyouko.png",
+    img: "C3 (perhaps) Kyouko.webp",
     tier: "B",
     opts: { dest: true, e: true },
     explanation: {
@@ -2372,7 +2372,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Cz1 Marisa",
-    img: "cz1 marisa.jpg",
+    img: "cz1 marisa.webp",
     tier: "B",
     opts: { spd: true, e: true },
     explanation: {
@@ -2398,7 +2398,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C5> Koishi",
-    img: "PANK KOOSH.jpg",
+    img: "PANK KOOSH.webp",
     tier: "B",
     opts: { dest: true, e: true },
     explanation: {
@@ -2426,7 +2426,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C5> Flandre",
-    img: "flanny.jpg",
+    img: "flanny.webp",
     tier: "B",
     opts: { dest: true, e: true },
     explanation: {
@@ -2446,7 +2446,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3≦ Komachi",
-    img: "C3less than or equal to Komachi.png",
+    img: "C3less than or equal to Komachi.webp",
     tier: "B",
     opts: { supp: true, e: true },
     explanation: {
@@ -2468,7 +2468,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3≦ Clownpiece",
-    img: "C3less than or equal to Clownpiece.png",
+    img: "C3less than or equal to Clownpiece.webp",
     tier: "B",
     opts: { dbf: true, e: true },
     explanation: {
@@ -2495,7 +2495,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Cb3# Youmu",
-    img: "cb3 youmu.png",
+    img: "cb3 youmu.webp",
     tier: "B",
     opts: { dest: true, e: true },
     explanation: {
@@ -2517,7 +2517,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L10.1 Marisa",
-    img: "idol_marisa.jpg",
+    img: "idol_marisa.webp",
     tier: "B",
     opts: { atk: true, e: true },
     explanation: {
@@ -2538,7 +2538,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L10.1 Youmu",
-    img: "l10.1 Youmu.png",
+    img: "l10.1 Youmu.webp",
     tier: "B",
     opts: { spd: true, e: true },
     explanation: {
@@ -2569,7 +2569,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Sakuya",
-    img: "l80 sakuya.png",
+    img: "l80 sakuya.webp",
     tier: "B",
     opts: { dbf: true, r: true },
     explanation: {
@@ -2589,7 +2589,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Patchouli",
-    img: "l80 patchy.png",
+    img: "l80 patchy.webp",
     tier: "B",
     opts: { def: true, r: true },
     explanation: {
@@ -2613,7 +2613,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Junko",
-    img: "l80 junko.png",
+    img: "l80 junko.webp",
     tier: "B",
     opts: { tec: true, r: true },
     explanation: {
@@ -2642,7 +2642,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Marisa",
-    img: "l80 marisa.png",
+    img: "l80 marisa.webp",
     tier: "B",
     opts: { spd: true, r: true },
     explanation: {
@@ -2663,7 +2663,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Miko",
-    img: "l80 miko.png",
+    img: "l80 miko.webp",
     tier: "B",
     opts: { tec: true, r: true },
     explanation: {
@@ -2691,7 +2691,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Kanako",
-    img: "l80 kanako.png",
+    img: "l80 kanako.webp",
     tier: "B",
     opts: { tec: true, r: true },
     explanation: {
@@ -2711,7 +2711,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A8& Tewi",
-    img: "a8& tewi.png",
+    img: "a8& tewi.webp",
     tier: "B",
     opts: { dest: true, ex: true },
     explanation: {
@@ -2730,7 +2730,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A9& Medicine",
-    img: "a9& medicine.png",
+    img: "a9& medicine.webp",
     tier: "B",
     opts: { dbf: true, ex: true },
     explanation: {
@@ -2754,7 +2754,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A13& Futo",
-    img: "a13& futo.png",
+    img: "a13& futo.webp",
     tier: "B",
     opts: { heal: true, ex: true },
     explanation: {
@@ -2779,7 +2779,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A16& Mai",
-    img: "a16& smai.png",
+    img: "a16& smai.webp",
     tier: "B",
     opts: { tec: true, ex: true },
     explanation: {
@@ -2797,7 +2797,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A17& Flandre",
-    img: "a17& flan.png",
+    img: "a17& flan.webp",
     tier: "B",
     opts: { heal: true, ex: true },
     explanation: {
@@ -2821,7 +2821,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A17.5& Yuuma",
-    img: "a17.5& yuuma.png",
+    img: "a17.5& yuuma.webp",
     tier: "B",
     opts: { dest: true, ex: true },
     explanation: {
@@ -2846,7 +2846,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A18& Misumaru",
-    img: "a18& misumaru.png",
+    img: "a18& misumaru.webp",
     tier: "B",
     opts: { dbf: true, ex: true },
     explanation: {
@@ -2866,7 +2866,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "D8.-5 Marisa",
-    img: "d8.-5 marisa.png",
+    img: "d8.-5 marisa.webp",
     tier: "B",
     opts: { atk: true, b: true },
     explanation: {
@@ -2881,7 +2881,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "E1;4 Sakuya",
-    img: "e1.-5 sakuya.png",
+    img: "e1.-5 sakuya.webp",
     tier: "B",
     opts: { dest: true, b: true },
     explanation: {
@@ -2899,7 +2899,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Raiko",
-    img: "b5 raiko.png",
+    img: "b5 raiko.webp",
     tier: "B",
     opts: { tec: true, u: true },
     explanation: {
@@ -2917,7 +2917,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Toyohime",
-    img: "b3 toyohime.png",
+    img: "b3 toyohime.webp",
     tier: "B",
     opts: { heal: true, u: true },
     explanation: {
@@ -2939,7 +2939,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Sagume",
-    img: "b3 sagume.png",
+    img: "b3 sagume.webp",
     tier: "B",
     opts: { supp: true, u: true },
     explanation: {
@@ -2959,7 +2959,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "E1 Koakuma",
-    img: "e1 koakuma.png",
+    img: "e1 koakuma.webp",
     tier: "B",
     opts: { heal: true, u: true },
     explanation: {
@@ -2988,7 +2988,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W2 Kanako",
-    img: "lolinako.jpg",
+    img: "lolinako.webp",
     tier: "B",
     opts: { supp: true, u: true },
     explanation: {
@@ -3011,7 +3011,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W5 Yuugi",
-    img: "yuugi.jpg",
+    img: "yuugi.webp",
     tier: "B",
     opts: { tec: true, u: true },
     explanation: {
@@ -3040,7 +3040,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Z3 Satori",
-    img: "z3 satori.png",
+    img: "z3 satori.webp",
     tier: "B",
     opts: { supp: true, u: true },
     explanation: {
@@ -3065,7 +3065,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12 Kogasa",
-    img: "A12 Kogasa.png",
+    img: "A12 Kogasa.webp",
     tier: "B",
     opts: { dbf: true, a: true },
     explanation: {
@@ -3085,7 +3085,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1a Keine",
-    img: "L1a keine atk.png",
+    img: "L1a keine atk.webp",
     tier: "B",
     opts: { atk: true, g: true },
     explanation: {
@@ -3107,7 +3107,7 @@ dataSet[dataSetVersion].characterData = [
   // start of C
   {
     name: "C8<< Kokoro",
-    img: "C8lessthanlessthan Kokoro.png",
+    img: "C8lessthanlessthan Kokoro.webp",
     tier: "C",
     opts: { tec: true, e: true },
     explanation: {
@@ -3134,7 +3134,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C8<< Koishi",
-    img: "C8lessthanlessthan Koishi.png",
+    img: "C8lessthanlessthan Koishi.webp",
     tier: "C",
     opts: { spd: true, e: true },
     explanation: {
@@ -3159,7 +3159,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Kogasa",
-    img: "c3 kogasa.png",
+    img: "c3 kogasa.webp",
     tier: "C",
     opts: { atk: true, e: true },
     explanation: {
@@ -3181,7 +3181,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Mystia",
-    img: "C3 (perhaps) Mystia.png",
+    img: "C3 (perhaps) Mystia.webp",
     tier: "C",
     opts: { spd: true, e: true },
     explanation: {
@@ -3205,7 +3205,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Koishi",
-    img: "c3 koishi.png",
+    img: "c3 koishi.webp",
     tier: "C",
     opts: { atk: true, e: true },
     explanation: {
@@ -3230,7 +3230,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Remilia",
-    img: "c3 remilia.png",
+    img: "c3 remilia.webp",
     tier: "C",
     opts: { def: true, e: true },
     explanation: {
@@ -3256,7 +3256,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Wakasagihime",
-    img: "C3 wakasagihime.png",
+    img: "C3 wakasagihime.webp",
     tier: "C",
     opts: { heal: true, e: true },
     explanation: {
@@ -3280,7 +3280,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Kasen",
-    img: "c3 kasen seal.png",
+    img: "c3 kasen seal.webp",
     tier: "C",
     opts: { supp: true, e: true },
     explanation: {
@@ -3298,7 +3298,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3< Aya",
-    img: "autumn aya.png",
+    img: "autumn aya.webp",
     tier: "C",
     opts: { atk: true, e: true },
     explanation: {
@@ -3326,7 +3326,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3∫ Ran",
-    img: "c3int ran.png",
+    img: "c3int ran.webp",
     tier: "C",
     opts: { dest: true, e: true },
     explanation: {
@@ -3345,7 +3345,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3∫ Sagume",
-    img: "C3integral sagume.png",
+    img: "C3integral sagume.webp",
     tier: "C",
     opts: { heal: true, e: true },
     explanation: {
@@ -3368,7 +3368,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3~ Tsukasa",
-    img: "c3~ tsukasa.png",
+    img: "c3~ tsukasa.webp",
     tier: "C",
     opts: { spd: true, e: true },
     explanation: {
@@ -3390,7 +3390,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "F1 Sanae",
-    img: "f1 sanae.png",
+    img: "f1 sanae.webp",
     tier: "C",
     opts: { supp: true, e: true },
     explanation: {
@@ -3416,7 +3416,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "F1 Reimu",
-    img: "f1 reimu.png",
+    img: "f1 reimu.webp",
     tier: "C",
     opts: { atk: true, e: true },
     explanation: {
@@ -3444,7 +3444,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Shion",
-    img: "l80 shion.png",
+    img: "l80 shion.webp",
     tier: "C",
     opts: { dest: true, r: true },
     explanation: {
@@ -3469,7 +3469,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Nitori",
-    img: "l80 nitori.png",
+    img: "l80 nitori.webp",
     tier: "C",
     opts: { spd: true, r: true },
     explanation: {
@@ -3486,7 +3486,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Koishi",
-    img: "koosh.jpg",
+    img: "koosh.webp",
     tier: "C",
     opts: { dbf: true, r: true },
     explanation: {
@@ -3507,7 +3507,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Reisen",
-    img: "Mv rei.jpg",
+    img: "Mv rei.webp",
     tier: "C",
     opts: { atk: true, r: true },
     explanation: {
@@ -3527,7 +3527,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Youmu",
-    img: "l80 youmu.png",
+    img: "l80 youmu.webp",
     tier: "C",
     opts: { supp: true, r: true },
     explanation: {
@@ -3543,7 +3543,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Byakuren",
-    img: "l80 byakuren spd.png",
+    img: "l80 byakuren spd.webp",
     tier: "C",
     opts: { tec: true, r: true },
     explanation: {
@@ -3565,7 +3565,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Alice",
-    img: "l80 alice.png",
+    img: "l80 alice.webp",
     tier: "C",
     opts: { atk: true, r: true },
     explanation: {
@@ -3587,7 +3587,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Mokou",
-    img: "l80 mokou.png",
+    img: "l80 mokou.webp",
     tier: "C",
     opts: { heal: true, r: true },
     explanation: {
@@ -3617,7 +3617,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Parsee",
-    img: "l80 parsee.png",
+    img: "l80 parsee.webp",
     tier: "C",
     opts: { dbf: true, r: true },
     explanation: {
@@ -3637,7 +3637,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Okina",
-    img: "l80 okina.png",
+    img: "l80 okina.webp",
     tier: "C",
     opts: { heal: true, r: true },
     explanation: {
@@ -3657,7 +3657,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Satori",
-    img: "l80 satori.png",
+    img: "l80 satori.webp",
     tier: "C",
     opts: { dest: true, r: true },
     explanation: {
@@ -3682,7 +3682,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Meiling",
-    img: "meimei.jpg",
+    img: "meimei.webp",
     tier: "C",
     opts: { tec: true, r: true },
     explanation: {
@@ -3701,7 +3701,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Kaguya",
-    img: "l80 kaguya.jpg",
+    img: "l80 kaguya.webp",
     tier: "C",
     opts: { tec: true, r: true },
     explanation: {
@@ -3723,7 +3723,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6& Rumia",
-    img: "a6& rumia.png",
+    img: "a6& rumia.webp",
     tier: "C",
     opts: { dest: true, ex: true },
     explanation: {
@@ -3745,7 +3745,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6& Koakuma",
-    img: "a6& koa.png",
+    img: "a6& koa.webp",
     tier: "C",
     opts: { supp: true, ex: true },
     explanation: {
@@ -3776,7 +3776,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7& Lily",
-    img: "a7& lily.png",
+    img: "a7& lily.webp",
     tier: "C",
     opts: { dest: true, ex: true },
     explanation: {
@@ -3802,7 +3802,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12.8& Daiyousei",
-    img: "a12.3& dai.png",
+    img: "a12.3& dai.webp",
     tier: "C",
     opts: { dest: true, ex: true },
     explanation: {
@@ -3824,7 +3824,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A14.5& Sumireko",
-    img: "a14.5& sumireko.png",
+    img: "a14.5& sumireko.webp",
     tier: "C",
     opts: { dest: true, ex: true },
     explanation: {
@@ -3853,7 +3853,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A16& Aunn",
-    img: "a16& aunn def.png",
+    img: "a16& aunn def.webp",
     tier: "C",
     opts: { def: true, ex: true },
     explanation: {
@@ -3881,7 +3881,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A19& Sanae",
-    img: "a19& sanae dbf.png",
+    img: "a19& sanae dbf.webp",
     tier: "C",
     opts: { dbf: true, ex: true },
     explanation: {
@@ -3902,7 +3902,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3;6 Eirin",
-    img: "b3;6 eirin.png",
+    img: "b3;6 eirin.webp",
     tier: "C",
     opts: { tec: true, b: true },
     explanation: {
@@ -3921,7 +3921,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "D8.-5 Remilia",
-    img: "d8.-5 remilia.png",
+    img: "d8.-5 remilia.webp",
     tier: "C",
     opts: { tec: true, b: true },
     explanation: {
@@ -3940,7 +3940,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W2.-5 Suwako",
-    img: "w1.-5 suwako.png",
+    img: "w1.-5 suwako.webp",
     tier: "C",
     opts: { dbf: true, b: true },
     explanation: {
@@ -3963,7 +3963,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "H5;7 Yuuka",
-    img: "h5;7 yuuka.png",
+    img: "h5;7 yuuka.webp",
     tier: "C",
     opts: { tec: true, b: true },
     explanation: {
@@ -3986,7 +3986,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "R8.-5 Youmu",
-    img: "r8.-5 youmu.png",
+    img: "r8.-5 youmu.webp",
     tier: "C",
     opts: { spd: true, b: true },
     explanation: {
@@ -4004,7 +4004,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L25ws Yukari",
-    img: "l25ws medikari.png",
+    img: "l25ws medikari.webp",
     tier: "C",
     opts: { dbf: true, b: true },
     explanation: {
@@ -4020,7 +4020,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B2 Junko",
-    img: "b2 junko.png",
+    img: "b2 junko.webp",
     tier: "C",
     opts: { atk: true, u: true },
     explanation: {
@@ -4042,7 +4042,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B5 Lunasa",
-    img: "b5 lunasa.png",
+    img: "b5 lunasa.webp",
     tier: "C",
     opts: { atk: true, u: true },
     explanation: {
@@ -4061,7 +4061,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Ringo",
-    img: "b3 ringo.png",
+    img: "b3 ringo.webp",
     tier: "C",
     opts: { tec: true, u: true },
     explanation: {
@@ -4080,7 +4080,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Yatsuhashi",
-    img: "b3 yatsuhashi.png",
+    img: "b3 yatsuhashi.webp",
     tier: "C",
     opts: { supp: true, u: true },
     explanation: {
@@ -4097,7 +4097,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Hecatia",
-    img: "b3 hecatia.png",
+    img: "b3 hecatia.webp",
     tier: "C",
     opts: { supp: true, u: true },
     explanation: {
@@ -4118,7 +4118,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Eiki",
-    img: "b3 eiki.png",
+    img: "b3 eiki.webp",
     tier: "C",
     opts: { dbf: true, u: true },
     explanation: {
@@ -4139,7 +4139,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Reimu",
-    img: "b3 reimu.png",
+    img: "b3 reimu.webp",
     tier: "C",
     opts: { tec: true, u: true },
     explanation: {
@@ -4161,7 +4161,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Lr Kokoro",
-    img: "kokoro.jpg",
+    img: "kokoro.webp",
     tier: "C",
     opts: { dest: true, u: true },
     explanation: {
@@ -4185,7 +4185,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Lr Flandre",
-    img: "Nishita flan.jpg",
+    img: "Nishita flan.webp",
     tier: "C",
     opts: { spd: true, u: true },
     explanation: {
@@ -4210,7 +4210,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "E1 Flandre (Prae)",
-    img: "e1 flan (prae).png",
+    img: "e1 flan (prae).webp",
     tier: "C",
     opts: { atk: true, u: true },
     explanation: {
@@ -4234,7 +4234,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "E1 Sakuya",
-    img: "e1 sakuya.png",
+    img: "e1 sakuya.webp",
     tier: "C",
     opts: { dest: true, u: true },
     explanation: {
@@ -4257,7 +4257,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "E9 Remilia",
-    img: "e9 remilia.png",
+    img: "e9 remilia.webp",
     tier: "C",
     opts: { dest: true, u: true },
     explanation: {
@@ -4279,7 +4279,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "H5 Mystia",
-    img: "h5 mystia.png",
+    img: "h5 mystia.webp",
     tier: "C",
     opts: { dest: true, u: true },
     explanation: {
@@ -4303,7 +4303,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "H5 Yuuka",
-    img: "h5 yuuka.png",
+    img: "h5 yuuka.webp",
     tier: "C",
     opts: { tec: true, u: true },
     explanation: {
@@ -4323,7 +4323,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "H5 Keine",
-    img: "h5 keine.png",
+    img: "h5 keine.webp",
     tier: "C",
     opts: { supp: true, u: true },
     explanation: {
@@ -4342,7 +4342,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "H5 Momoyo",
-    img: "h5 momoyo 2.png",
+    img: "h5 momoyo 2.webp",
     tier: "C",
     opts: { atk: true, u: true },
     explanation: {
@@ -4361,7 +4361,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "H5 Letty",
-    img: "h5 letty.png",
+    img: "h5 letty.webp",
     tier: "C",
     opts: { def: true, u: true },
     explanation: {
@@ -4384,7 +4384,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Lr Tenshi",
-    img: "lr tenshi.png",
+    img: "lr tenshi.webp",
     tier: "C",
     opts: { dbf: true, u: true },
     explanation: {
@@ -4402,7 +4402,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "S5 Koishi",
-    img: "S5 Koishi.png",
+    img: "S5 Koishi.webp",
     tier: "C",
     opts: { supp: true, u: true },
     explanation: {
@@ -4431,7 +4431,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "T5 Tenshi",
-    img: "t5 tenshi.png",
+    img: "t5 tenshi.webp",
     tier: "C",
     opts: { spd: true, u: true },
     explanation: {
@@ -4456,7 +4456,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "T5 Byakuren",
-    img: "t5 byakuren.png",
+    img: "t5 byakuren.webp",
     tier: "C",
     opts: { spd: true, u: true },
     explanation: {
@@ -4475,7 +4475,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "T5 Mokou",
-    img: "t5 mokou.png",
+    img: "t5 mokou.webp",
     tier: "C",
     opts: { tec: true, u: true },
     explanation: {
@@ -4498,7 +4498,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W1 Suika",
-    img: "watermelon.jpg",
+    img: "watermelon.webp",
     tier: "C",
     opts: { dest: true, u: true },
     explanation: {
@@ -4523,7 +4523,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W3 Parsee",
-    img: "w3 parsee.png",
+    img: "w3 parsee.webp",
     tier: "C",
     opts: { tec: true, u: true },
     explanation: {
@@ -4542,7 +4542,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W5 Kasen",
-    img: "not kasen.jpg",
+    img: "not kasen.webp",
     tier: "C",
     opts: { spd: true, u: true },
     explanation: {
@@ -4568,7 +4568,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Y5 Futo",
-    img: "y5 futo.png",
+    img: "y5 futo.webp",
     tier: "C",
     opts: { atk: true, u: true },
     explanation: {
@@ -4585,7 +4585,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Reimu",
-    img: "a6 reimu.png",
+    img: "a6 reimu.webp",
     tier: "C",
     opts: { atk: true, a: true },
     explanation: {
@@ -4608,7 +4608,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Marisa",
-    img: "a6 marisa.png",
+    img: "a6 marisa.webp",
     tier: "C",
     opts: { spd: true, a: true },
     explanation: {
@@ -4632,7 +4632,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Koakuma",
-    img: "a6 koakuma.png",
+    img: "a6 koakuma.webp",
     tier: "C",
     opts: { supp: true, a: true },
     explanation: {
@@ -4655,7 +4655,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Patchouli",
-    img: "a6 patchouli.png",
+    img: "a6 patchouli.webp",
     tier: "C",
     opts: { dest: true, a: true },
     explanation: {
@@ -4679,7 +4679,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Sunny",
-    img: "a6 sunny.png",
+    img: "a6 sunny.webp",
     tier: "C",
     opts: { dbf: true, a: true },
     explanation: {
@@ -4700,7 +4700,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7 Ran",
-    img: "a7 ran.png",
+    img: "a7 ran.webp",
     tier: "C",
     opts: { supp: true, a: true },
     explanation: {
@@ -4724,7 +4724,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Tenshi",
-    img: "tenshi scar.jpg",
+    img: "tenshi scar.webp",
     tier: "C",
     opts: { atk: true, a: true },
     explanation: {
@@ -4740,7 +4740,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7 Luna",
-    img: "A7 Luna.png",
+    img: "A7 Luna.webp",
     tier: "C",
     opts: { dbf: true, a: true },
     explanation: {
@@ -4766,7 +4766,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A8 Star",
-    img: "A7 Star.png",
+    img: "A7 Star.webp",
     tier: "C",
     opts: { dbf: true, a: true },
     explanation: {
@@ -4787,7 +4787,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A10.3 Ringo",
-    img: "A10.3 Ringo.png",
+    img: "A10.3 Ringo.webp",
     tier: "C",
     opts: { heal: true, a: true },
     explanation: {
@@ -4807,7 +4807,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A13 Futo",
-    img: "A13 Futo.png",
+    img: "A13 Futo.webp",
     tier: "C",
     opts: { heal: true, a: true },
     explanation: {
@@ -4830,7 +4830,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A19 Ran",
-    img: "A9 Ran.png",
+    img: "A9 Ran.webp",
     tier: "C",
     opts: { spd: true, a: true },
     explanation: {
@@ -4856,7 +4856,7 @@ dataSet[dataSetVersion].characterData = [
   // D tier
   {
     name: "C3 Shion",
-    img: "shion.jpg",
+    img: "shion.webp",
     tier: "D",
     opts: { supp: true, e: true },
     explanation: {
@@ -4878,7 +4878,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Flandre",
-    img: "c3 flandre.png",
+    img: "c3 flandre.webp",
     tier: "D",
     opts: { dbf: true, e: true },
     explanation: {
@@ -4900,7 +4900,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Komachi",
-    img: "c3 komatits.png",
+    img: "c3 komatits.webp",
     tier: "D",
     opts: { atk: true, e: true },
     explanation: {
@@ -4926,7 +4926,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Kokoro",
-    img: "c3 kokoro.png",
+    img: "c3 kokoro.webp",
     tier: "D",
     opts: { dbf: true, e: true },
     explanation: {
@@ -4945,7 +4945,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Hecatia",
-    img: "c3 hecatia.png",
+    img: "c3 hecatia.webp",
     tier: "D",
     opts: { dbf: true, e: true },
     explanation: {
@@ -4966,7 +4966,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3< Alice",
-    img: "autumn alice.png",
+    img: "autumn alice.webp",
     tier: "D",
     opts: { heal: true, e: true },
     explanation: {
@@ -4987,7 +4987,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3≥ Hina",
-    img: "mech hina.png",
+    img: "mech hina.webp",
     tier: "D",
     opts: { atk: true, e: true },
     explanation: {
@@ -5008,7 +5008,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Flandre",
-    img: "l80 flandre.png",
+    img: "l80 flandre.webp",
     tier: "D",
     opts: { def: true, r: true },
     explanation: {
@@ -5032,7 +5032,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L80 Suwako",
-    img: "mv suwa.jpg",
+    img: "mv suwa.webp",
     tier: "D",
     opts: { supp: true, r: true },
     explanation: {
@@ -5051,7 +5051,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6& Cirno",
-    img: "a6& cirno.png",
+    img: "a6& cirno.webp",
     tier: "D",
     opts: { dbf: true, ex: true },
     explanation: {
@@ -5070,7 +5070,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7.5& Suika",
-    img: "a7.5& suika.png",
+    img: "a7.5& suika.webp",
     tier: "D",
     opts: { atk: true, ex: true },
     explanation: {
@@ -5090,7 +5090,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A10& Minoriko",
-    img: "a10& minoriko.png",
+    img: "a10& minoriko.webp",
     tier: "D",
     opts: { tec: true, ex: true },
     explanation: {
@@ -5119,7 +5119,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12& Nue",
-    img: "a12& nue.jfif",
+    img: "a12& nue.webp",
     tier: "D",
     opts: { dest: true, ex: true },
     explanation: {
@@ -5141,7 +5141,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12& Ichirin",
-    img: "a12& ichirin.png",
+    img: "a12& ichirin.webp",
     tier: "D",
     opts: { tec: true, ex: true },
     explanation: {
@@ -5167,7 +5167,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12& Murasa",
-    img: "a12& Murasa.png",
+    img: "a12& Murasa.webp",
     tier: "D",
     opts: { atk: true, ex: true },
     explanation: {
@@ -5189,7 +5189,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A13& Tojiko",
-    img: "a13& tojiko.png",
+    img: "a13& tojiko.webp",
     tier: "D",
     opts: { spd: true, ex: true },
     explanation: {
@@ -5208,7 +5208,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A15A& Sanae",
-    img: "a15a& sanae atk.png",
+    img: "a15a& sanae atk.webp",
     tier: "D",
     opts: { tec: true, ex: true },
     explanation: {
@@ -5233,7 +5233,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A16& Eternity",
-    img: "a16& eternity.png",
+    img: "a16& eternity.webp",
     tier: "D",
     opts: { heal: true, ex: true },
     explanation: {
@@ -5254,7 +5254,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L50ws Yukari",
-    img: "l50ws yukari.png",
+    img: "l50ws yukari.webp",
     tier: "D",
     opts: { atk: true, b: true },
     explanation: {
@@ -5279,7 +5279,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B1 Reisen",
-    img: "b1 reisen.png",
+    img: "b1 reisen.webp",
     tier: "D",
     opts: { atk: true, u: true },
     explanation: {
@@ -5303,7 +5303,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B5 Reisen",
-    img: "b5 reisen.png",
+    img: "b5 reisen.webp",
     tier: "D",
     opts: { def: true, u: true },
     explanation: {
@@ -5330,7 +5330,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Komachi",
-    img: "b3 komachi.png",
+    img: "b3 komachi.webp",
     tier: "D",
     opts: { spd: true, u: true },
     explanation: {
@@ -5348,7 +5348,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Seija",
-    img: "W5 Seija.png",
+    img: "W5 Seija.webp",
     tier: "D",
     opts: { dest: true, u: true },
     explanation: {
@@ -5374,7 +5374,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Benben",
-    img: "b3 benben.png",
+    img: "b3 benben.webp",
     tier: "D",
     opts: { dbf: true, u: true },
     explanation: {
@@ -5394,7 +5394,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Rei'sen",
-    img: "b3 peacekeeper.png",
+    img: "b3 peacekeeper.webp",
     tier: "D",
     opts: { supp: true, u: true },
     explanation: {
@@ -5421,7 +5421,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B3 Yorihime",
-    img: "b3 yorihimee.png",
+    img: "b3 yorihimee.webp",
     tier: "D",
     opts: { atk: true, u: true },
     explanation: {
@@ -5441,7 +5441,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B5 Alice",
-    img: "b5 alice.png",
+    img: "b5 alice.webp",
     tier: "D",
     opts: { supp: true, u: true },
     explanation: {
@@ -5472,7 +5472,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B5 Yukari",
-    img: "b5 Yukari.png",
+    img: "b5 Yukari.webp",
     tier: "D",
     opts: { heal: true, u: true },
     explanation: {
@@ -5487,7 +5487,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B5 Yuyuko",
-    img: "b5 yuyuko.png",
+    img: "b5 yuyuko.webp",
     tier: "D",
     opts: { dbf: true, u: true },
     explanation: {
@@ -5510,7 +5510,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "B5 Lyrica",
-    img: "b5 lyrica.png",
+    img: "b5 lyrica.webp",
     tier: "D",
     opts: { dest: true, u: true },
     explanation: {
@@ -5530,7 +5530,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "E1 Patchouli",
-    img: "e1 patchouli.png",
+    img: "e1 patchouli.webp",
     tier: "D",
     opts: { atk: true, u: true },
     explanation: {
@@ -5555,7 +5555,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "E1 Meiling",
-    img: "e1 meiling.png",
+    img: "e1 meiling.webp",
     tier: "D",
     opts: { def: true, u: true },
     explanation: {
@@ -5579,7 +5579,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "H5 Doremy",
-    img: "h5 doremy.png",
+    img: "h5 doremy.webp",
     tier: "D",
     opts: { dbf: true, u: true },
     explanation: {
@@ -5600,7 +5600,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Lr Nitori",
-    img: "goki.jpg",
+    img: "goki.webp",
     tier: "D",
     opts: { atk: true, u: true },
     explanation: {
@@ -5622,7 +5622,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "R2 Yuyuko",
-    img: "r2 yuyuko.png",
+    img: "r2 yuyuko.webp",
     tier: "D",
     opts: { spd: true, u: true },
     explanation: {
@@ -5643,7 +5643,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "S2 Satori",
-    img: "s2 satori.png",
+    img: "s2 satori.webp",
     tier: "D",
     opts: { heal: true, u: true },
     explanation: {
@@ -5668,7 +5668,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "S5 Utsuho (Okuu)",
-    img: "s5 utsuho.png",
+    img: "s5 utsuho.webp",
     tier: "D",
     opts: { atk: true, u: true },
     explanation: {
@@ -5684,7 +5684,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "S5 Rin (Orin)",
-    img: "s5 rin.png",
+    img: "s5 rin.webp",
     tier: "D",
     opts: { spd: true, u: true },
     explanation: {
@@ -5702,7 +5702,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W2 Suwako",
-    img: "suwawa.jpg",
+    img: "suwawa.webp",
     tier: "D",
     opts: { dbf: true, u: true },
     explanation: {
@@ -5724,7 +5724,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "W3 Momiji",
-    img: "w3 momiji.png",
+    img: "w3 momiji.webp",
     tier: "D",
     opts: { spd: true, u: true },
     explanation: {
@@ -5743,7 +5743,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Z1 Marisa",
-    img: "z1 marisa.png",
+    img: "z1 marisa.webp",
     tier: "D",
     opts: { dest: true, u: true },
     explanation: {
@@ -5767,7 +5767,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Z3 Alice",
-    img: "z3 alice.png",
+    img: "z3 alice.webp",
     tier: "D",
     opts: { def: true, u: true },
     explanation: {
@@ -5786,7 +5786,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Z3 Remilia",
-    img: "mg remi.jpg",
+    img: "mg remi.webp",
     tier: "D",
     opts: { heal: true, u: true },
     explanation: {
@@ -5810,7 +5810,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Rumia",
-    img: "a6 rumia.png",
+    img: "a6 rumia.webp",
     tier: "D",
     opts: { dest: true, a: true },
     explanation: {
@@ -5833,7 +5833,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Meiling",
-    img: "a6 meiling.png",
+    img: "a6 meiling.webp",
     tier: "D",
     opts: { spd: true, a: true },
     explanation: {
@@ -5854,7 +5854,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Flandre",
-    img: "a6 flandre.png",
+    img: "a6 flandre.webp",
     tier: "D",
     opts: { spd: true, a: true },
     explanation: {
@@ -5877,7 +5877,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Lyrica",
-    img: "Lyrica scar.jpg",
+    img: "Lyrica scar.webp",
     tier: "D",
     opts: { spd: true, a: true },
     explanation: {
@@ -5893,7 +5893,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Yuuka",
-    img: "a6 yuuka.png",
+    img: "a6 yuuka.webp",
     tier: "D",
     opts: { heal: true, a: true },
     explanation: {
@@ -5912,7 +5912,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Yukari",
-    img: "a6 yukari.png",
+    img: "a6 yukari.webp",
     tier: "D",
     opts: { spd: true, a: true },
     explanation: {
@@ -5930,7 +5930,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Yuyuko",
-    img: "yuyu_scar.jpg",
+    img: "yuyu_scar.webp",
     tier: "D",
     opts: { heal: true, a: true },
     explanation: {
@@ -5950,7 +5950,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Lunasa",
-    img: "Lunasa scar.jpg",
+    img: "Lunasa scar.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -5970,7 +5970,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Merlin",
-    img: "Merlin scar.jpg",
+    img: "Merlin scar.webp",
     tier: "D",
     opts: { atk: true, a: true },
     explanation: {
@@ -5991,7 +5991,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7A Reimu",
-    img: "a7a reimu.png",
+    img: "a7a reimu.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -6013,7 +6013,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7B Reimu",
-    img: "a7b reimu.png",
+    img: "a7b reimu.webp",
     tier: "D",
     opts: { spd: true, a: true },
     explanation: {
@@ -6032,7 +6032,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7A Marisa",
-    img: "a7a marisa.png",
+    img: "a7a marisa.webp",
     tier: "D",
     opts: { atk: true, a: true },
     explanation: {
@@ -6049,7 +6049,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7B Marisa",
-    img: "a7b marisa.png",
+    img: "a7b marisa.webp",
     tier: "D",
     opts: { dest: true, a: true },
     explanation: {
@@ -6070,7 +6070,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7A Sakuya",
-    img: "a7a sakuya.png",
+    img: "a7a sakuya.webp",
     tier: "D",
     opts: { spd: true, a: true },
     explanation: {
@@ -6089,7 +6089,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7B Sakuya",
-    img: "a7b sakuya.png",
+    img: "a7b sakuya.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -6113,7 +6113,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7 Chen",
-    img: "a7 chen.png",
+    img: "a7 chen.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -6138,7 +6138,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7 Yukari",
-    img: "a7 yukari.png",
+    img: "a7 yukari.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -6156,7 +6156,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A8 Tewi",
-    img: "a8 tewi.jfif",
+    img: "a8 tewi.webp",
     tier: "D",
     opts: { dest: true, a: true },
     explanation: {
@@ -6178,7 +6178,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A8 Eirin",
-    img: "a8 eirin.png",
+    img: "a8 eirin.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -6196,7 +6196,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A8 Mokou",
-    img: "a8 mokou.png",
+    img: "a8 mokou.webp",
     tier: "D",
     opts: { spd: true, a: true },
     explanation: {
@@ -6216,7 +6216,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A9.7 Akyuu",
-    img: "A9.4 Akyuu.png",
+    img: "A9.4 Akyuu.webp",
     tier: "D",
     opts: { def: true, a: true },
     explanation: {
@@ -6231,7 +6231,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A10 Suwako",
-    img: "a10 suwako.png",
+    img: "a10 suwako.webp",
     tier: "D",
     opts: { dest: true, a: true },
     explanation: {
@@ -6251,7 +6251,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A10.5 Patchouli",
-    img: "a10.5 patchy tec.png",
+    img: "a10.5 patchy tec.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -6271,7 +6271,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12.3 Meiling",
-    img: "a12.3 Meiling.png",
+    img: "a12.3 Meiling.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -6293,7 +6293,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A13 Miko",
-    img: "a13 miko.png",
+    img: "a13 miko.webp",
     tier: "D",
     opts: { def: true, a: true },
     explanation: {
@@ -6309,7 +6309,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A14 Seija",
-    img: "seija.jpg",
+    img: "seija.webp",
     tier: "D",
     opts: { dbf: true, a: true },
     explanation: {
@@ -6329,7 +6329,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A14 Shinmy",
-    img: "shinmy.jpg",
+    img: "shinmy.webp",
     tier: "D",
     opts: { dest: true, a: true },
     explanation: {
@@ -6348,7 +6348,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A16 Okina",
-    img: "A16 Okina.png",
+    img: "A16 Okina.webp",
     tier: "D",
     opts: { tec: true, a: true },
     explanation: {
@@ -6364,7 +6364,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Nazrin",
-    img: "nazrin.png",
+    img: "nazrin.webp",
     tier: "D",
     opts: { supp: true, g: true },
     explanation: {
@@ -6382,7 +6382,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Mike",
-    img: "l1 mike.png",
+    img: "l1 mike.webp",
     tier: "D",
     opts: { supp: true, g: true },
     explanation: {
@@ -6402,7 +6402,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Chimata",
-    img: "l1 chimata.png",
+    img: "l1 chimata.webp",
     tier: "D",
     opts: { atk: true, g: true },
     explanation: {
@@ -6425,7 +6425,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Momoyo",
-    img: "l1 momoyo.png",
+    img: "l1 momoyo.webp",
     tier: "D",
     opts: { dest: true, g: true },
     explanation: {
@@ -6447,7 +6447,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Enoko",
-    img: "l1 enoko.png",
+    img: "l1 enoko.webp",
     tier: "D",
     opts: { spd: true, g: true },
     explanation: {
@@ -6464,7 +6464,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Chiyari",
-    img: "l1 chiyari.png",
+    img: "l1 chiyari.webp",
     tier: "D",
     opts: { atk: true, g: true },
     explanation: {
@@ -6486,7 +6486,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Zanmu",
-    img: "l1 zanmu heal.png",
+    img: "l1 zanmu heal.webp",
     tier: "D",
     opts: { heal: true, g: true },
     explanation: {
@@ -6508,7 +6508,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Ubame",
-    img: "l1 ubame.png",
+    img: "l1 ubame.webp",
     tier: "D",
     opts: { dest: true, g: true },
     explanation: {
@@ -6524,7 +6524,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "L1 Ibaraki's Arm",
-    img: "l1 arm.png",
+    img: "l1 arm.webp",
     tier: "D",
     opts: { dest: true, g: true },
     explanation: {
@@ -6543,7 +6543,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Az1 Marisa",
-    img: "Az1 Marisa.png",
+    img: "Az1 Marisa.webp",
     tier: "D",
     opts: { dbf: true, y: true },
     explanation: {
@@ -6569,7 +6569,7 @@ dataSet[dataSetVersion].characterData = [
   // E tier
   { 
   name: "F1;4 Reimu", 
-  img: "f1;4 Reimu.png", 
+  img: "f1;4 Reimu.webp", 
   tier: "E", 
   opts: { atk: true, b: true },
   explanation: {
@@ -6595,7 +6595,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B3 Kaguya", 
-    img: "b3 kaguya.png", 
+    img: "b3 kaguya.webp", 
     tier: "E", 
     opts: { spd: true, u: true },
     explanation: {
@@ -6616,7 +6616,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B3 Kokoro", 
-    img: "SPOILER_kokoro.jpg", 
+    img: "SPOILER_kokoro.webp", 
     tier: "E", 
     opts: { spd: true, u: true },
     explanation: {
@@ -6633,7 +6633,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B3 Kutaka", 
-    img: "b3 kutaka.png", 
+    img: "b3 kutaka.webp", 
     tier: "E", 
     opts: { tec: true, u: true },
     explanation: {
@@ -6651,7 +6651,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B3 Marisa", 
-    img: "b3 marisa.png", 
+    img: "b3 marisa.webp", 
     tier: "E", 
     opts: { tec: true, u: true },
     explanation: {
@@ -6674,7 +6674,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B3 Reisen", 
-    img: "b3 reisen.png", 
+    img: "b3 reisen.webp", 
     tier: "E", 
     opts: { tec: true, u: true },
     explanation: {
@@ -6698,7 +6698,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B3 Sakuya", 
-    img: "b3 sakuya.png", 
+    img: "b3 sakuya.webp", 
     tier: "E", 
     opts: { tec: true, u: true },
     explanation: {
@@ -6718,7 +6718,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B3 Sanae", 
-    img: "b3 sanae.png", 
+    img: "b3 sanae.webp", 
     tier: "E", 
     opts: { tec: true, u: true },
     explanation: {
@@ -6740,7 +6740,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B3 Youmu", 
-    img: "b3 youmu.png", 
+    img: "b3 youmu.webp", 
     tier: "E", 
     opts: { tec: true, u: true },
     explanation: {
@@ -6761,7 +6761,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B5 Merlin", 
-    img: "b5 merlin.png", 
+    img: "b5 merlin.webp", 
     tier: "E", 
     opts: { spd: true, u: true },
     explanation: {
@@ -6780,7 +6780,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "B5 Mokou", 
-    img: "b5 mokou.png", 
+    img: "b5 mokou.webp", 
     tier: "E", 
     opts: { def: true, u: true },
     explanation: {
@@ -6801,7 +6801,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "E1 Remilia", 
-    img: "e1 remi.png", 
+    img: "e1 remi.webp", 
     tier: "E", 
     opts: { supp: true, u: true },
     explanation: {
@@ -6827,7 +6827,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "E7 Cirno", 
-    img: "e7 cirno.png", 
+    img: "e7 cirno.webp", 
     tier: "E", 
     opts: { atk: true, u: true },
     explanation: {
@@ -6842,7 +6842,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "E7 Daiyousei", 
-    img: "e7 daiyousei.png", 
+    img: "e7 daiyousei.webp", 
     tier: "E", 
     opts: { heal: true, u: true },
     explanation: {
@@ -6866,7 +6866,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "H5 Wriggle", 
-    img: "h5 wriggle.png", 
+    img: "h5 wriggle.webp", 
     tier: "E", 
     opts: { spd: true, u: true },
     explanation: {
@@ -6883,7 +6883,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "R8 Youmu", 
-    img: "r8 youmu.png", 
+    img: "r8 youmu.webp", 
     tier: "E", 
     opts: { spd: true, u: true },
     explanation: {
@@ -6911,7 +6911,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "T5 Reisen", 
-    img: "t5 reisen.png", 
+    img: "t5 reisen.webp", 
     tier: "E", 
     opts: { dest: true, u: true },
     explanation: {
@@ -6934,7 +6934,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "W5 Sanae", 
-    img: "sanarr.jpg", 
+    img: "sanarr.webp", 
     tier: "E", 
     opts: { atk: true, u: true },
     explanation: {
@@ -6953,7 +6953,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A6 Cirno", 
-    img: "a6 cirno.png", 
+    img: "a6 cirno.webp", 
     tier: "E", 
     opts: { dbf: true, a: true },
     explanation: {
@@ -6973,7 +6973,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A6 Daiyousei", 
-    img: "a6 daiyousei.png", 
+    img: "a6 daiyousei.webp", 
     tier: "E", 
     opts: { dbf: true, a: true },
     explanation: {
@@ -6989,7 +6989,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A6 Sakuya", 
-    img: "a6 sakuya.png", 
+    img: "a6 sakuya.webp", 
     tier: "E", 
     opts: { atk: true, a: true },
     explanation: {
@@ -7008,7 +7008,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A6 Youmu", 
-    img: "youmu scar.jpg", 
+    img: "youmu scar.webp", 
     tier: "E", 
     opts: { def: true, a: true },
     explanation: {
@@ -7035,7 +7035,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A6 Remilia",
-    img: "a6 remi.png",
+    img: "a6 remi.webp",
     tier: "E",
     opts: { spd: true, a: true },
     explanation: {
@@ -7053,7 +7053,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A7 Cirno",
-    img: "a7 cirno.png",
+    img: "a7 cirno.webp",
     tier: "E",
     opts: { atk: true, a: true },
     explanation: {
@@ -7076,7 +7076,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A7 Youmu", 
-    img: "a7 youmu.png", 
+    img: "a7 youmu.webp", 
     tier: "E", 
     opts: { dest: true, a: true },
     explanation: {
@@ -7099,7 +7099,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A7 Yuyuko", 
-    img: "a7 yuyuko.png", 
+    img: "a7 yuyuko.webp", 
     tier: "E", 
     opts: { supp: true, a: true },
     explanation: {
@@ -7116,7 +7116,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A8 Reisen", 
-    img: "a6 reisen.png", 
+    img: "a6 reisen.webp", 
     tier: "E", 
     opts: { spd: true, a: true },
     explanation: {
@@ -7138,7 +7138,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A9 Aya", 
-    img: "a9 aya.png", 
+    img: "a9 aya.webp", 
     tier: "E", 
     opts: { dbf: true, a: true },
     explanation: {
@@ -7157,7 +7157,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A10 Kanako", 
-    img: "a10 kanko (why is bitch so big wtf).png", 
+    img: "a10 kanko (why is bitch so big wtf).webp", 
     tier: "E", 
     opts: { atk: true, a: true },
     explanation: {
@@ -7176,7 +7176,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A10 Nitori", 
-    img: "a10 nitori.png", 
+    img: "a10 nitori.webp", 
     tier: "E", 
     opts: { tec: true, a: true },
     explanation: {
@@ -7196,7 +7196,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A10 Sanae", 
-    img: "a10 sanae.png", 
+    img: "a10 sanae.webp", 
     tier: "E", 
     opts: { spd: true, a: true },
     explanation: {
@@ -7213,7 +7213,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A11 Koishi", 
-    img: "a11 koishi.png", 
+    img: "a11 koishi.webp", 
     tier: "E", 
     opts: { spd: true, a: true },
     explanation: {
@@ -7239,7 +7239,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A11 Satori", 
-    img: "a11 satori.png", 
+    img: "a11 satori.webp", 
     tier: "E", 
     opts: { tec: true, a: true },
     explanation: {
@@ -7259,7 +7259,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A12 Byakuren", 
-    img: "a12 byakuren.png", 
+    img: "a12 byakuren.webp", 
     tier: "E", 
     opts: { atk: true, a: true },
     explanation: {
@@ -7277,7 +7277,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A13 Yoshika", 
-    img: "a13 yoshika.jfif", 
+    img: "a13 yoshika.webp", 
     tier: "E", 
     opts: { dbf: true, a: true },
     explanation: {
@@ -7300,7 +7300,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A18 Takane", 
-    img: "A18 Takane.png", 
+    img: "A18 Takane.webp", 
     tier: "E", 
     opts: { dbf: true, a: true },
     explanation: {
@@ -7317,7 +7317,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A18.5 Nitori", 
-    img: "a18.5 nitori.png", 
+    img: "a18.5 nitori.webp", 
     tier: "E", 
     opts: { dest: true, a: true },
     explanation: {
@@ -7339,7 +7339,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Biten", 
-    img: "l1 biten.png", 
+    img: "l1 biten.webp", 
     tier: "E", 
     opts: { tec: true, g: true },
     explanation: {
@@ -7356,7 +7356,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Chen", 
-    img: "l1 chen.png", 
+    img: "l1 chen.webp", 
     tier: "E", 
     opts: { spd: true, g: true },
     explanation: {
@@ -7380,7 +7380,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Chimi", 
-    img: "l1 chimi.jpg", 
+    img: "l1 chimi.webp", 
     tier: "E", 
     opts: { dbf: true, g: true },
     explanation: {
@@ -7395,7 +7395,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Cirno", 
-    img: "l1 cirno.png", 
+    img: "l1 cirno.webp", 
     tier: "E", 
     opts: { dest: true, g: true },
     explanation: {
@@ -7415,7 +7415,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Hecatia", 
-    img: "l1 hecatia.png", 
+    img: "l1 hecatia.webp", 
     tier: "E", 
     opts: { dest: true, g: true },
     explanation: {
@@ -7432,7 +7432,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Hisami", 
-    img: "l1 hisami dest.png", 
+    img: "l1 hisami dest.webp", 
     tier: "E", 
     opts: { dest: true, g: true },
     explanation: {
@@ -7450,7 +7450,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Ichirin", 
-    img: "l1 ichirin.png", 
+    img: "l1 ichirin.webp", 
     tier: "E", 
     opts: { dest: true, g: true },
     explanation: {
@@ -7471,7 +7471,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Kanako", 
-    img: "l1 Kanako.png", 
+    img: "l1 Kanako.webp", 
     tier: "E", 
     opts: { def: true, g: true },
     explanation: {
@@ -7489,7 +7489,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Keiki", 
-    img: "l1 keiki.png", 
+    img: "l1 keiki.webp", 
     tier: "E", 
     opts: { tec: true, g: true },
     explanation: {
@@ -7506,7 +7506,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Kisume", 
-    img: "l1 kisume.png", 
+    img: "l1 kisume.webp", 
     tier: "E", 
     opts: { dest: true, g: true },
     explanation: {
@@ -7521,7 +7521,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Kosuzu", 
-    img: "l1 kosuzu.png", 
+    img: "l1 kosuzu.webp", 
     tier: "E", 
     opts: { dest: true, g: true },
     explanation: {
@@ -7536,7 +7536,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Lily", 
-    img: "l1 lily.png", 
+    img: "l1 lily.webp", 
     tier: "E", 
     opts: { heal: true, g: true },
     explanation: {
@@ -7550,7 +7550,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Megumu", 
-    img: "l1 megumu.png", 
+    img: "l1 megumu.webp", 
     tier: "E", 
     opts: { spd: true, g: true },
     explanation: {
@@ -7569,7 +7569,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Misumaru", 
-    img: "l1 misumaru.png", 
+    img: "l1 misumaru.webp", 
     tier: "E", 
     opts: { tec: true, g: true },
     explanation: {
@@ -7588,7 +7588,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Nue", 
-    img: "l1 nue.png", 
+    img: "l1 nue.webp", 
     tier: "E", 
     opts: { atk: true, g: true },
     explanation: {
@@ -7607,7 +7607,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Okina", 
-    img: "l1 okina.png", 
+    img: "l1 okina.webp", 
     tier: "E", 
     opts: { dest: true, g: true },
     explanation: {
@@ -7622,7 +7622,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Sagume", 
-    img: "l1 sagume.png", 
+    img: "l1 sagume.webp", 
     tier: "E", 
     opts: { dbf: true, g: true },
     explanation: {
@@ -7639,7 +7639,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Sannyo", 
-    img: "l1 sannyo.png", 
+    img: "l1 sannyo.webp", 
     tier: "E", 
     opts: { dbf: true, g: true },
     explanation: {
@@ -7655,7 +7655,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Toyohime", 
-    img: "l1 toyohime.png", 
+    img: "l1 toyohime.webp", 
     tier: "E", 
     opts: { atk: true, g: true },
     explanation: {
@@ -7678,7 +7678,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Tsukasa", 
-    img: "l1 tsukasa.png", 
+    img: "l1 tsukasa.webp", 
     tier: "E", 
     opts: { dbf: true, g: true },
     explanation: {
@@ -7705,7 +7705,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Yuuma", 
-    img: "l1 yuuma.png", 
+    img: "l1 yuuma.webp", 
     tier: "E", 
     opts: { atk: true, g: true },
     explanation: {
@@ -7719,10 +7719,40 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  { 
+    name: "L1 Eika", 
+    img: "eika.webp", 
+    tier: "E", 
+    opts: { dbf: true, g: true },
+    explanation: {
+      pros: [
+        "Decent Damage on Killer",
+        "Decent Debuffs"
+      ],
+      cons: [
+        "Basically does nothing else and has bad killer"
+      ]
+    }
+  },
+  { 
+    name: "L1 Kyouko", 
+    img: "l1 kyouko.webp", 
+    tier: "E", 
+    opts: { dbf: true, g: true },
+    explanation: {
+      pros: [
+        "Decent Damage on Killer",
+        "Decent Debuffs"
+      ],
+      cons: [
+        "Basically does nothing else and has bad killer"
+      ]
+    }
+  },
   // Yukkuri
   { 
     name: "Aa Sanae", 
-    img: "Aa Sanae.png", 
+    img: "Aa Sanae.webp", 
     tier: "Yukkuri", 
     opts: { dest: true, y: true },
     explanation: {
@@ -7734,7 +7764,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Aa Cirno", 
-    img: "yukkuri cirno.png", 
+    img: "yukkuri cirno.webp", 
     tier: "Yukkuri", 
     opts: { atk: true, y: true },
     explanation: {
@@ -7745,7 +7775,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Aa Reimu", 
-    img: "yukkuri reimu.png", 
+    img: "yukkuri reimu.webp", 
     tier: "Yukkuri", 
     opts: { dest: true, y: true },
     explanation: {
@@ -7756,7 +7786,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Aa Yuyuko", 
-    img: "Aa Yuyuko.png", 
+    img: "Aa Yuyuko.webp", 
     tier: "Yukkuri", 
     opts: { dbf: true, y: true },
     explanation: {
@@ -7767,7 +7797,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Aa Remilia", 
-    img: "Aa remilia.png", 
+    img: "Aa remilia.webp", 
     tier: "Yukkuri", 
     opts: { tec: true, y: true },
     explanation: {
@@ -7778,7 +7808,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Aa Youmu", 
-    img: "Aa youmu.png", 
+    img: "Aa youmu.webp", 
     tier: "Yukkuri", 
     opts: { tec: true, y: true },
     explanation: {
@@ -7790,7 +7820,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Aa Flandre", 
-    img: "Aa flandre.png", 
+    img: "Aa flandre.webp", 
     tier: "Yukkuri", 
     opts: { spd: true, y: true },
     explanation: {
@@ -7805,7 +7835,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Aa Alice", 
-    img: "Aa alice.png", 
+    img: "Aa alice.webp", 
     tier: "Yukkuri", 
     opts: { supp: true, y: true },
     explanation: {
@@ -7816,7 +7846,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "Aa Marisa", 
-    img: "yukkuri marisa.png", 
+    img: "yukkuri marisa.webp", 
     tier: "Yukkuri", 
     opts: { supp: true, y: true },
     explanation: {
