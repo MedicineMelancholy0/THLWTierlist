@@ -81,20 +81,22 @@
       </div>
 
     <div class="Important-Links">
-      <a href="https://discord.gg/TCjp7VMTps" class="link-btn"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>
+      <!--<a href="https://discord.gg/TCjp7VMTps" class="link-btn"><strong>Touhou LostWord Unofficial (Tierlist/THLW Decentralized Discord)</strong></a>-->
       <a href="https://docs.google.com/spreadsheets/d/1WO4C0jde8E1bU4QU-58wwuteqLWX7e2vo1tjIZMTM7c/edit?gid=131689753#gid=131689753" class="link-btn"><strong>Calc Sheet (IMPORTANT!)</strong></a>
-      <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="link-btn" title="Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy"><strong>Q&A & Feedback Form</strong></a>
-      <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="link-btn"><strong>View Form Responses</strong></a>
+      <!--<a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="link-btn" title="Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy"><strong>Q&A & Feedback Form</strong></a>
+      <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="link-btn"><strong>View Form Responses</strong></a>-->
       <a href="https://lw.ayako.id/" class="link-btn"><strong>Ayako's LW Data Tracker</strong></a>
     </div>
 
-    <p>Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy</p>
+    <div style="text-align:center;">
+    <p>Now tracking 870+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy</p>
+    </div>
 
     <div class="expl-container">
       <div class="tier-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
       <div class="tier-expl" onclick="openModal('criteria-modal')">Tiering Criteria</div>
       <div class="tier-expl" onclick="openModal('faq-modal')">FAQ</div>
-      <div class="tier-expl" onclick="openModal('changelog-modal')">Changelog</div>
+      <!--<div class="tier-expl" onclick="openModal('changelog-modal')">Changelog</div>-->
     </div>
     
   <div class="theme-toggle">
@@ -117,25 +119,31 @@
 
 <script>
   function toggleIconSize() {
-  const isSmall = document.body.classList.toggle('small-icons');
-  const btn = document.getElementById('size-toggle-btn');
-  
-  if (btn) {
-    btn.textContent = isSmall ? 'Switch to Large Icons' : 'Switch to Small Icons';
-  }
-  
-  localStorage.setItem('iconSize', isSmall ? 'small' : 'large');
-
-  fitNameplateText();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('iconSize') === 'small') {
-    document.body.classList.add('small-icons');
+    const isSmall = document.body.classList.toggle('small-icons');
     const btn = document.getElementById('size-toggle-btn');
-    if (btn) btn.textContent = 'Switch to Large Icons';
+    
+    if (btn) {
+      btn.textContent = isSmall ? 'Switch to Large Icons' : 'Switch to Small Icons';
+    }
+    
+    localStorage.setItem('iconSize', isSmall ? 'small' : 'large');
+
+    fitNameplateText();
   }
-});
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedSize = localStorage.getItem('iconSize');
+    const btn = document.getElementById('size-toggle-btn');
+
+    if (savedSize === 'small') {
+      document.body.classList.add('small-icons');
+      if (btn) btn.textContent = 'Switch to Large Icons';
+    } else if (savedSize === 'large') {
+    } else if (window.matchMedia('(max-width: 600px)').matches) {
+      document.body.classList.add('small-icons');
+      if (btn) btn.textContent = 'Switch to Large Icons';
+    }
+  });
 </script>
 
 <script>
@@ -738,7 +746,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <img src='src/assets/chara/l1 kuro.png' alt='title1' width="150" height="60">
   <p><b>Kuro</b> - ✞︎☜︎☼︎✡︎📬︎ ✞︎☜︎☼︎✡︎📬︎ ✋︎☠︎❄︎☜︎☼︎☜︎💧︎❄︎✋︎☠︎☝︎</p>
 
-  <p>Tierlist Beta 0.0.8, Copyright @MedicineMelancholy0, Updated 4/8/2026</p>
+  <p>Tierlist Beta 0.1.0, Copyright @MedicineMelancholy0, Updated 16/8/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
 
   <div id="expls" class="modal">
@@ -1253,6 +1261,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
+
+<div class="quick-access-bar">
+  <a href="https://discord.gg/TCjp7VMTps" class="quick-btn">Discord</a>
+  <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="quick-btn" title="Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy">Q&A Form</a>
+  <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="quick-btn">Responses</a>
+  <div class="quick-btn" onclick="openModal('changelog-modal')">Changelog</div>
+</div>
 </body>
 
 </html>
