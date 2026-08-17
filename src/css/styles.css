@@ -111,7 +111,7 @@ a:link {
 }
 
 .quick-access-bar .search-container {
-  flex: 1 1 200px;
+  flex: 1 1 400px;
   margin: 0;
   min-width: 150px;
 }
@@ -153,6 +153,10 @@ body {
 .tiers a {
   width: 100%;
   display: block; 
+}
+
+.char-card.hidden {
+  display: none !important;
 }
 
 body.hide-expl-btns .expl {
