@@ -14,6 +14,21 @@ a:link {
   font-size: 20px;
 }*/
 
+#bg-overlay {
+  position: fixed;
+  top: -15vh;
+  left: 0;
+  width: 100vw;
+  height: 130vh;
+  background: var(--bg-img) no-repeat center top;
+  background-size: cover;
+  opacity: var(--bg-opacity, 0.5);
+  z-index: -1;
+  pointer-events: none;
+  transform: translateY(var(--parallax-offset, 0px));
+  will-change: transform;
+}
+
 .collapse-bar {
   display: flex;
   justify-content: flex-end;
@@ -53,6 +68,38 @@ a:link {
   border-radius: 6px;
   border: 1px solid #ccc;
   outline: none;
+}
+
+.quick-access-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 500;
+}
+
+.quick-btn {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #660000;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.quick-btn:hover {
+  background-color: #8a0000;
+  transform: scale(1.05);
 }
 
 .head {
