@@ -62,17 +62,28 @@ a:link {
 #charSearchInput {
   width: 100%;
   font-family: 'Josefin Sans', Arial, sans-serif;
-  max-width: 400px;
+  max-width: 650px;
   padding: 8px 12px;
   font-size: 16px;
   border-radius: 6px;
   border: 1px solid #ccc;
   outline: none;
+  background-color: #000720;
+  color: #ffffff;
+}
+
+#charSearchInput::placeholder {
+  color: #656780;
+}
+
+#charSearchInput:focus {
+  background-color: #131325;
+  border-color: #8a0000;
 }
 
 .quick-access-bar {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   display: flex;
@@ -108,6 +119,12 @@ a:link {
     padding: 10px 20px;
     font-size: 15px;
   }
+}
+
+.quick-access-bar .search-container {
+  flex: 1 1 650px;
+  margin: 0;
+  min-width: 150px;
 }
 
 body {
@@ -147,6 +164,14 @@ body {
 .tiers a {
   width: 100%;
   display: block; 
+}
+
+.char-card.hidden {
+  display: none !important;
+}
+
+body.hide-expl-btns .expl {
+  display: none;
 }
 
 .tier-banner {
@@ -1019,14 +1044,15 @@ body {
 }
 
 .tier-toggle-bar {
-  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 8px auto;
+  background-color: rgba(102, 0, 0, 0.4);
   color: #ffffff;
   font-family: "Josefin Sans", Arial, sans-serif;
-  font-weight: bold;
   text-align: center;
   padding: 6px 12px;
-  margin: 4px auto 12px auto; 
-  max-width: 700px;
   border-radius: 4px;
   cursor: pointer;
   user-select: none;
@@ -1034,7 +1060,7 @@ body {
 }
 
 .tier-toggle-bar:hover {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(126, 0, 0, 0.4)
 }
 
 .Qs {
