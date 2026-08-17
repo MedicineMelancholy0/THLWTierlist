@@ -88,10 +88,6 @@
       <a href="https://lw.ayako.id/" class="link-btn"><strong>Ayako's LW Data Tracker</strong></a>
     </div>
 
-    <div style="text-align:center;">
-    <p>Now tracking 870+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy</p>
-    </div>
-
     <div class="expl-container">
       <div class="tier-expl" onclick="openModal('defs-modal')">Explain Definitions</div>
       <div class="tier-expl" onclick="openModal('criteria-modal')">Tiering Criteria</div>
@@ -112,6 +108,16 @@
     <label for="mode_mami" aria-label="Switch to forest theme">Mamizou Mode</label>
 
   </div>
+    <div class="toggle-row">
+    <button class="button primary" id="size-toggle-btn" onclick="toggleIconSize()">
+      Switch to Small Icons
+    </button>
+
+    <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
+      Hide Explanation Buttons
+    </button>
+  </div>
+
   </div>
   </div>
 
@@ -211,16 +217,6 @@
     <label for="class17">Yukkuri</label>
   </div>
 
-  <div class="toggle-row">
-    <button class="button primary" id="size-toggle-btn" onclick="toggleIconSize()">
-      Switch to Small Icons
-    </button>
-
-    <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
-      Hide Explanation Buttons
-    </button>
-  </div>
-
   <div class="tier-nav">
     <h2>Jump to Tier</h2>
 
@@ -237,7 +233,7 @@
 
 </div>
 
-<!-- search-container stays here, outside filters-panel, wherever it already lives -->
+<!-- search-container stays here, outside filters-panel, wherever it already lives 
 
   <div class="search-container">
   <input
@@ -246,7 +242,7 @@
     placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
     autocomplete="off"
   />
-  </div>
+  </div>-->
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -434,231 +430,224 @@
 
   <br>
 
-  <!-- Main display logic after tierlist.js finishes executing -->
-  <script>
-    let characters = [];
+<!-- Main display logic after tierlist.js finishes executing -->
+<script>
+  let characters = [];
+  const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
 
-    document.addEventListener("DOMContentLoaded", () => {
-      // access dataSet after the deferred script has run
-      if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
-        characters = dataSet[dataSetVersion].characterData;
-      } else {
-        console.error("Database initialization failed. Ensure tierlist.js path is correct.");
-        return;
-      }
-
-      // render of all characters
-      renderTierList(characters);
-    });
-
-    // clear and inject character images, main tierlist function ------------------------------------------------------------------
-    function renderTierList(charList) {
-      // 1. Update total/filtered count display
-      const countDisplay = document.getElementById("total-character-count");
-      if (countDisplay) {
-        countDisplay.textContent = charList.length;
-      }
-
-      // 2. Check if the user is typing in the search bar
-      const searchInput = document.getElementById("charSearchInput");
-      const isSearching = searchInput && searchInput.value.trim().length > 0;
-
-      const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
-
-      activeTiers.forEach(tier => {
-        const container = document.getElementById(tier);
-        const group = document.getElementById(`tier-group-${tier}`);
-
-        if (container) {
-          container.innerHTML = "";
-
-          const matches = charList.filter(item => item.tier === tier);
-          if (group) {
-            group.style.display = matches.length === 0 ? "none" : "";
-          }
-
-          if (isSearching && matches.length > 0) {
-            container.classList.remove("collapsed");
-            const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
-            if (toggleBtn) {
-              toggleBtn.textContent = `▼ Hide ${tier} Tier`;
-            }
-          }
-          
-          matches.forEach(item => {
-            const imgContainer = document.createElement("div");
-            imgContainer.style.display = "inline-block";
-
-            imgContainer.innerHTML = `
-              <img src="src/assets/chara/${item.img}" 
-                  alt="${item.name}" 
-                  title="${item.name}" 
-                  class="charicon" 
-                  loading="lazy" />
-              <div class="cname">${item.name}</div>
-              ${showExplButtons ? '<div class="expl">Explanation</div>' : ''}
-            `;
-
-            container.appendChild(imgContainer);
-
-            if (showExplButtons) {
-              const expBtn = imgContainer.querySelector(".expl");
-              expBtn.addEventListener("click", () => {
-                openExplanationModal(item);
-              });
-            } else {
-              imgContainer.style.cursor = "pointer";
-              imgContainer.addEventListener("click", () => {
-                openExplanationModal(item);
-              });
-            }
-          });
-        }
-      });
-
-      // 3. F Tier Search Logic (Static HTML Check)
-      const fContainer = document.getElementById("F");
-      const fToggleBtn = document.getElementById("toggle-btn-F");
-
-      if (fContainer) {
-        if (isSearching) {
-          const query = searchInput.value.trim().toLowerCase();
-          const fText = fContainer.innerText.toLowerCase();
-
-          if (fText.includes(query)) {
-            fContainer.classList.remove("collapsed");
-            if (fToggleBtn) fToggleBtn.textContent = "▼ Hide F Tier";
-          }
-        } else {
-          // Reset to collapsed when the user clears their search
-          fContainer.classList.add("collapsed");
-          if (fToggleBtn) fToggleBtn.textContent = "▶ Show F Tier";
-        }
-      }
-
-      fitNameplateText();
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
+      characters = dataSet[dataSetVersion].characterData;
+    } else {
+      console.error("Database initialization failed. Ensure tierlist.js path is correct.");
+      return;
     }
 
-    function openExplanationModal(character) {
-      const modal = document.getElementById("expls");
-      const title = document.getElementById("tit");
-      const body = document.getElementById("bod");
+    buildAllCards();   // Creates every card ONCE in the DOM
+    applyFilters();    // Applies initial visibility/search state
+  });
 
-      if (!modal || !title || !body) return;
-      title.innerText = character.name;
-      body.innerHTML = "";
+  function buildAllCards() {
+    activeTiers.forEach(tier => {
+      const container = document.getElementById(tier);
+      if (!container) return;
 
-      if (!character.explanation) {
-        body.innerHTML = "<p class='modal-p'>Girls are now tiering, please wait warmly...</p>";
-        modal.style.display = "block";
-        return;
-      }
+      const matches = characters.filter(item => item.tier === tier);
 
-      const exp = character.explanation;
+      matches.forEach(item => {
+        const imgContainer = document.createElement("div");
+        imgContainer.className = "char-card";
+        imgContainer.style.display = "inline-block";
+        imgContainer.style.cursor = "pointer";
+        imgContainer.dataset.name = item.name.toLowerCase();
+        imgContainer.dataset.opts = item.opts
+          ? Object.keys(item.opts).filter(k => item.opts[k]).join(" ")
+          : "";
 
-      // start of pros and cons
+        imgContainer.innerHTML = `
+          <img src="src/assets/chara/${item.img.replace(/\.(png|jpg)$/, '.webp')}" 
+               alt="${item.name}" 
+               title="${item.name}" 
+               class="charicon" 
+               width="135"
+               height="135"
+               loading="lazy" 
+               decoding="async" />
+          <div class="cname">${item.name}</div>
+          <div class="expl">Explanation</div>
+        `;
 
-      if (exp.pros && exp.pros.length > 0) {
-        body.innerHTML += `<div class="sub-header header-pro">Pros</div>`;
-        exp.pros.forEach(p => body.innerHTML += `<p class="modal-p">${p}</p>`);
-      }
+        imgContainer.addEventListener("click", () => {
+          openExplanationModal(item);
+        });
 
-      if (exp.boons && exp.boons.length > 0) {
-        body.innerHTML += `<div class="sub-header header-boon">Boons</div>`;
-        let list = `<ul class="modal-list">`;
-        exp.boons.forEach(b => list += `<li>${b}</li>`);
-        list += `</ul>`;
-        body.innerHTML += list;
-      }
-
-      if (exp.mixed && exp.mixed.length > 0) {
-        body.innerHTML += `<div class="sub-header header-mixed">Mixed/Slight Issue</div>`;
-        exp.mixed.forEach(m => body.innerHTML += `<p class="modal-p">${m}</p>`);
-      }
-
-      if (exp.cons && exp.cons.length > 0) {
-        body.innerHTML += `<div class="sub-header header-con">Cons</div>`;
-        exp.cons.forEach(c => body.innerHTML += `<p class="modal-p">${c}</p>`);
-      }
-
-      if (exp.nitpick && exp.nitpick.length > 0) {
-        body.innerHTML += `<div class="sub-header header-nitpick">Nitpicks</div>`;
-        let list = `<ul class="modal-list">`;
-        exp.nitpick.forEach(n => list += `<li>${n}</li>`);
-        list += `</ul>`;
-        body.innerHTML += list;
-      }
-
-      if (exp.extra && exp.extra.length > 0) {
-        body.innerHTML += `<div class="sub-header header-extra">Notes</div>`;
-        exp.extra.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
-      }
-
-      modal.style.display = "block";
-    }
-
-    // Safely wire up the close triggers when the DOM is ready
-    document.addEventListener("DOMContentLoaded", () => {
-      const modal = document.getElementById("expls");
-
-      // Closes any modal when its close button (X) is clicked
-      document.addEventListener("click", (event) => {
-        if (event.target.classList.contains("close-btn")) {
-          const modal = event.target.closest(".modal");
-          if (modal) modal.style.display = "none";
-        }
-      });
-
-      // Closes any modal when clicking its dim background overlay
-      window.addEventListener("click", (event) => {
-        const modal = event.target.closest(".modal");
-        if (!modal) return; // click wasn't inside any modal at all
-        if (!event.target.closest(".con")) {
-          modal.style.display = "none"; // click landed on backdrop, not content
-        }
+        container.appendChild(imgContainer);
       });
     });
+
+    if (typeof fitNameplateText === "function") fitNameplateText();
+  }
 
   function applyFilters() {
     const searchInput = document.getElementById("charSearchInput");
     const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : "";
+    const isSearching = searchQuery.length > 0;
+
     const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
       .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters");
     const activeKeys = checkedBoxes.map(box => box.value);
-    const filtered = characters.filter(character => {
-      const matchesSearch = character.name.toLowerCase().includes(searchQuery);
-      let matchesBoxes = true;
-      if (activeKeys.length > 0) {
-        if (!character.opts) {
-          matchesBoxes = false;
-        } else {
-          matchesBoxes = activeKeys.some(key => character.opts[key] === true);
-        }
-      }
-      return matchesSearch && matchesBoxes;
-    });
-    renderTierList(filtered);
 
+    let totalVisible = 0;
+
+    activeTiers.forEach(tier => {
+      const container = document.getElementById(tier);
+      const group = document.getElementById(`tier-group-${tier}`);
+      if (!container) return;
+
+      let tierVisibleCount = 0;
+
+      container.querySelectorAll(".char-card").forEach(card => {
+        const matchesSearch = card.dataset.name.includes(searchQuery);
+        let matchesBoxes = true;
+
+        if (activeKeys.length > 0) {
+          const opts = card.dataset.opts ? card.dataset.opts.split(" ") : [];
+          matchesBoxes = activeKeys.some(key => opts.includes(key));
+        }
+
+        const isMatch = matchesSearch && matchesBoxes;
+        card.classList.toggle("hidden", !isMatch);
+        if (isMatch) tierVisibleCount++;
+      });
+
+      if (group) {
+        group.style.display = tierVisibleCount === 0 ? "none" : "";
+      }
+
+      if (isSearching && tierVisibleCount > 0) {
+        container.classList.remove("collapsed");
+        const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
+        if (toggleBtn) toggleBtn.textContent = `▼ Hide ${tier} Tier`;
+      }
+
+      totalVisible += tierVisibleCount;
+    });
+
+    const countDisplay = document.getElementById("total-character-count");
+    if (countDisplay) countDisplay.textContent = totalVisible;
+
+    const fContainer = document.getElementById("F");
+    const fToggleBtn = document.getElementById("toggle-btn-F");
+    if (fContainer) {
+      if (isSearching) {
+        const fText = fContainer.innerText.toLowerCase();
+        if (fText.includes(searchQuery)) {
+          fContainer.classList.remove("collapsed");
+          if (fToggleBtn) fToggleBtn.textContent = "▼ Hide F Tier";
+        }
+      } else {
+        fContainer.classList.add("collapsed");
+        if (fToggleBtn) fToggleBtn.textContent = "▶ Show F Tier";
+      }
+    }
+
+    if (typeof fitNameplateText === "function") fitNameplateText();
   }
 
-    function filterDefChars() { applyFilters(); }
-    function filterSuppChars() { applyFilters(); }
-    function filterHealChars() { applyFilters(); }
-    function filterDebuffChars() { applyFilters(); }
-    function filterAttackChars() { applyFilters(); }
-    function filterTechChars() { applyFilters(); }
-    function filterSpeedChars() { applyFilters(); }
-    function filterDestChars() { applyFilters(); }
-    function filterPureChars() { applyFilters(); }
-    function filterEpicChars() { applyFilters(); }
-    function filterPhChars() { applyFilters(); }
-    function filterRelicChars() { applyFilters(); }
-    function filterExChars() { applyFilters(); }
-    function filterUltraChars() { applyFilters(); }
-    function filterFesChars() { applyFilters(); }
-    function filterGenChars() { applyFilters(); }
-    function filterYuChars() { applyFilters(); }
-  </script>
+  function openExplanationModal(character) {
+    const modal = document.getElementById("expls");
+    const title = document.getElementById("tit");
+    const body = document.getElementById("bod");
+
+    if (!modal || !title || !body) return;
+    title.innerText = character.name;
+    body.innerHTML = "";
+
+    if (!character.explanation) {
+      body.innerHTML = "<p class='modal-p'>Girls are now tiering, please wait warmly...</p>";
+      modal.style.display = "block";
+      return;
+    }
+
+    const exp = character.explanation;
+
+    if (exp.pros && exp.pros.length > 0) {
+      body.innerHTML += `<div class="sub-header header-pro">Pros</div>`;
+      exp.pros.forEach(p => body.innerHTML += `<p class="modal-p">${p}</p>`);
+    }
+
+    if (exp.boons && exp.boons.length > 0) {
+      body.innerHTML += `<div class="sub-header header-boon">Boons</div>`;
+      let list = `<ul class="modal-list">`;
+      exp.boons.forEach(b => list += `<li>${b}</li>`);
+      list += `</ul>`;
+      body.innerHTML += list;
+    }
+
+    if (exp.mixed && exp.mixed.length > 0) {
+      body.innerHTML += `<div class="sub-header header-mixed">Mixed/Slight Issue</div>`;
+      exp.mixed.forEach(m => body.innerHTML += `<p class="modal-p">${m}</p>`);
+    }
+
+    if (exp.cons && exp.cons.length > 0) {
+      body.innerHTML += `<div class="sub-header header-con">Cons</div>`;
+      exp.cons.forEach(c => body.innerHTML += `<p class="modal-p">${c}</p>`);
+    }
+
+    if (exp.nitpick && exp.nitpick.length > 0) {
+      body.innerHTML += `<div class="sub-header header-nitpick">Nitpicks</div>`;
+      let list = `<ul class="modal-list">`;
+      exp.nitpick.forEach(n => list += `<li>${n}</li>`);
+      list += `</ul>`;
+      body.innerHTML += list;
+    }
+
+    if (exp.extra && exp.extra.length > 0) {
+      body.innerHTML += `<div class="sub-header header-extra">Notes</div>`;
+      exp.extra.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
+    }
+
+    modal.style.display = "block";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Closes modal on close button click
+    document.addEventListener("click", (event) => {
+      if (event.target.classList.contains("close-btn")) {
+        const modal = event.target.closest(".modal");
+        if (modal) modal.style.display = "none";
+      }
+    });
+
+    // Closes modal when clicking backdrop outside content
+    window.addEventListener("click", (event) => {
+      const modal = event.target.closest(".modal");
+      if (!modal) return;
+      if (!event.target.closest(".con")) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+  // Individual filter handler functions called by your filter checkboxes/buttons
+  function filterDefChars() { applyFilters(); }
+  function filterSuppChars() { applyFilters(); }
+  function filterHealChars() { applyFilters(); }
+  function filterDebuffChars() { applyFilters(); }
+  function filterAttackChars() { applyFilters(); }
+  function filterTechChars() { applyFilters(); }
+  function filterSpeedChars() { applyFilters(); }
+  function filterDestChars() { applyFilters(); }
+  function filterPureChars() { applyFilters(); }
+  function filterEpicChars() { applyFilters(); }
+  function filterPhChars() { applyFilters(); }
+  function filterRelicChars() { applyFilters(); }
+  function filterExChars() { applyFilters(); }
+  function filterUltraChars() { applyFilters(); }
+  function filterFesChars() { applyFilters(); }
+  function filterGenChars() { applyFilters(); }
+  function filterYuChars() { applyFilters(); }
+</script>
 
 <!-- Fart Tier -->
 <div class="f-tier-section" id="tier-group-F">
@@ -697,7 +686,7 @@
       </div>
       <div class="f-tier-col">
         - L1 Rin<br>- L1 Utsuho<br>- L1 Koishi<br>- L1 Kogasa<br>- L1 Murasa<br>
-        - L1 Shou<br>- L1 Byakuren<br>- L1 Hatate<br>- L1 Kyouko<br>- L1 Yoshika<br>
+        - L1 Shou<br>- L1 Byakuren<br>- L1 Hatate<br>- L1 Yoshika<br>
         - L1 Seiga<br>- L1 Tojiko<br>- L1 Futo<br>- L1 Miko<br>- L1 Mamizou
       </div>
       <div class="f-tier-col">
@@ -707,7 +696,7 @@
       </div>
       <div class="f-tier-col">
         - L1 Joon<br>- L1 Shion<br>- L1 Eternity<br>- L1 Nemuno<br>- L1 Aunn<br>
-        - L1 Narumi<br>- L1 Mai<br>- L1 Satono<br>- L1 Eika<br>- L1 Urumi<br>
+        - L1 Narumi<br>- L1 Mai<br>- L1 Satono<br>- L1 Urumi<br>
         - L1 Kutaka<br>- L1 Yachie<br>- L1 Mayumi<br>- L1 Saki<br>- L1 Takane
       </div>
       <div class="f-tier-col">
@@ -746,7 +735,7 @@
   <img src='src/assets/chara/l1 kuro.png' alt='title1' width="150" height="60">
   <p><b>Kuro</b> - ✞︎☜︎☼︎✡︎📬︎ ✞︎☜︎☼︎✡︎📬︎ ✋︎☠︎❄︎☜︎☼︎☜︎💧︎❄︎✋︎☠︎☝︎</p>
 
-  <p>Tierlist Beta 0.1.0, Copyright @MedicineMelancholy0, Updated 16/8/2026</p>
+  <p>Tierlist Beta 0.1.1, Copyright @MedicineMelancholy0, Updated 17/8/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
 
   <div id="expls" class="modal">
@@ -1171,7 +1160,7 @@ if (document.fonts) {
 </script>
 
 <script>
-  function toggleTierRow(tierId) {
+function toggleTierRow(tierId) {
   const container = document.getElementById(tierId);
   const toggleBtn = document.getElementById(`toggle-btn-${tierId}`);
   if (!container) return;
@@ -1179,13 +1168,10 @@ if (document.fonts) {
   const isNowCollapsed = container.classList.toggle("collapsed");
 
   if (toggleBtn) {
-    if (tierId === "F") {
-      toggleBtn.textContent = isNowCollapsed ? "▶ Show F Tier" : "▼ Hide F Tier";
-    } else {
-      toggleBtn.textContent = isNowCollapsed 
-        ? `▶ Show ${tierId} Tier (${container.children.length} Units)` 
-        : `▼ Hide ${tierId} Tier`;
-    }
+    const visibleCount = container.querySelectorAll('.char-card:not(.hidden)').length;
+    toggleBtn.textContent = isNowCollapsed 
+      ? `▶ Show ${tierId} Tier (${visibleCount} Units)` 
+      : `▼ Hide ${tierId} Tier`;
   }
 }
 </script>
@@ -1195,22 +1181,23 @@ if (document.fonts) {
 
 function toggleExplButtons() {
   showExplButtons = !showExplButtons;
+  document.body.classList.toggle('hide-expl-btns', !showExplButtons);
+
   const btn = document.getElementById('expl-toggle-btn');
   if (btn) {
     btn.textContent = showExplButtons ? 'Hide Explanation Buttons' : 'Show Explanation Buttons';
   }
   localStorage.setItem('showExplButtons', showExplButtons ? 'true' : 'false');
-  applyFilters(); // re-renders whatever's currently filtered/searched, with the new setting applied
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('showExplButtons');
   if (saved === 'false') {
     showExplButtons = false;
+    document.body.classList.add('hide-expl-btns');
     const btn = document.getElementById('expl-toggle-btn');
     if (btn) btn.textContent = 'Show Explanation Buttons';
   }
-  applyFilters();
 });
 </script>
 
@@ -1267,6 +1254,14 @@ document.addEventListener('DOMContentLoaded', () => {
   <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="quick-btn" title="Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy">Q&A Form</a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="quick-btn">Responses</a>
   <div class="quick-btn" onclick="openModal('changelog-modal')">Changelog</div>
+  <div class="search-container">
+  <input
+    type="text" 
+    id="charSearchInput" 
+    placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
+    autocomplete="off"
+  />
+  </div>
 </div>
 </body>
 
