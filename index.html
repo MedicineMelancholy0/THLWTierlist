@@ -430,8 +430,8 @@
 
   <br>
 
-  <!-- Main display logic after tierlist.js finishes executing -->
-  <script>
+<!-- Main display logic after tierlist.js finishes executing -->
+<script>
   let characters = [];
   const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
 
@@ -443,8 +443,8 @@
       return;
     }
 
-    buildAllCards();   // creates every card ONCE
-    applyFilters();    // then just sets initial visibility
+    buildAllCards();   // Creates every card ONCE in the DOM
+    applyFilters();    // Applies initial visibility/search state
   });
 
   function buildAllCards() {
@@ -466,13 +466,13 @@
 
         imgContainer.innerHTML = `
           <img src="src/assets/chara/${item.img.replace(/\.(png|jpg)$/, '.webp')}" 
-              alt="${item.name}" 
-              title="${item.name}" 
-              class="charicon" 
-              width="135"
-              height="135"
-              loading="lazy" 
-              decoding="async" />
+               alt="${item.name}" 
+               title="${item.name}" 
+               class="charicon" 
+               width="135"
+               height="135"
+               loading="lazy" 
+               decoding="async" />
           <div class="cname">${item.name}</div>
           <div class="expl">Explanation</div>
         `;
@@ -485,193 +485,169 @@
       });
     });
 
-    fitNameplateText(); // run once, right after real elements exist
+    if (typeof fitNameplateText === "function") fitNameplateText();
   }
-
-function applyFilters() {
-  const searchInput = document.getElementById("charSearchInput");
-  const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : "";
-  const isSearching = searchQuery.length > 0;
-
-  const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
-    .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters");
-  const activeKeys = checkedBoxes.map(box => box.value);
-
-  let totalVisible = 0;
-
-  activeTiers.forEach(tier => {
-    const container = document.getElementById(tier);
-    const group = document.getElementById(`tier-group-${tier}`);
-    if (!container) return;
-
-    let tierVisibleCount = 0;
-
-    container.querySelectorAll(".char-card").forEach(card => {
-      const matchesSearch = card.dataset.name.includes(searchQuery);
-      let matchesBoxes = true;
-      if (activeKeys.length > 0) {
-        const opts = card.dataset.opts.split(" ");
-        matchesBoxes = activeKeys.some(key => opts.includes(key));
-      }
-      const isMatch = matchesSearch && matchesBoxes;
-      card.classList.toggle("hidden", !isMatch);
-      if (isMatch) tierVisibleCount++;
-    });
-
-    if (group) {
-      group.style.display = tierVisibleCount === 0 ? "none" : "";
-    }
-
-    if (isSearching && tierVisibleCount > 0) {
-      container.classList.remove("collapsed");
-      const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
-      if (toggleBtn) toggleBtn.textContent = `▼ Hide ${tier} Tier`;
-    }
-
-    totalVisible += tierVisibleCount;
-  });
-
-  const countDisplay = document.getElementById("total-character-count");
-  if (countDisplay) countDisplay.textContent = totalVisible;
-
-  const fContainer = document.getElementById("F");
-  const fToggleBtn = document.getElementById("toggle-btn-F");
-  if (fContainer) {
-    if (isSearching) {
-      const fText = fContainer.innerText.toLowerCase();
-      if (fText.includes(searchQuery)) {
-        fContainer.classList.remove("collapsed");
-        if (fToggleBtn) fToggleBtn.textContent = "▼ Hide F Tier";
-      }
-    } else {
-      fContainer.classList.add("collapsed");
-      if (fToggleBtn) fToggleBtn.textContent = "▶ Show F Tier";
-    }
-  }
-
-  fitNameplateText();
-}
-
-    function openExplanationModal(character) {
-      const modal = document.getElementById("expls");
-      const title = document.getElementById("tit");
-      const body = document.getElementById("bod");
-
-      if (!modal || !title || !body) return;
-      title.innerText = character.name;
-      body.innerHTML = "";
-
-      if (!character.explanation) {
-        body.innerHTML = "<p class='modal-p'>Girls are now tiering, please wait warmly...</p>";
-        modal.style.display = "block";
-        return;
-      }
-
-      const exp = character.explanation;
-
-      // start of pros and cons
-
-      if (exp.pros && exp.pros.length > 0) {
-        body.innerHTML += `<div class="sub-header header-pro">Pros</div>`;
-        exp.pros.forEach(p => body.innerHTML += `<p class="modal-p">${p}</p>`);
-      }
-
-      if (exp.boons && exp.boons.length > 0) {
-        body.innerHTML += `<div class="sub-header header-boon">Boons</div>`;
-        let list = `<ul class="modal-list">`;
-        exp.boons.forEach(b => list += `<li>${b}</li>`);
-        list += `</ul>`;
-        body.innerHTML += list;
-      }
-
-      if (exp.mixed && exp.mixed.length > 0) {
-        body.innerHTML += `<div class="sub-header header-mixed">Mixed/Slight Issue</div>`;
-        exp.mixed.forEach(m => body.innerHTML += `<p class="modal-p">${m}</p>`);
-      }
-
-      if (exp.cons && exp.cons.length > 0) {
-        body.innerHTML += `<div class="sub-header header-con">Cons</div>`;
-        exp.cons.forEach(c => body.innerHTML += `<p class="modal-p">${c}</p>`);
-      }
-
-      if (exp.nitpick && exp.nitpick.length > 0) {
-        body.innerHTML += `<div class="sub-header header-nitpick">Nitpicks</div>`;
-        let list = `<ul class="modal-list">`;
-        exp.nitpick.forEach(n => list += `<li>${n}</li>`);
-        list += `</ul>`;
-        body.innerHTML += list;
-      }
-
-      if (exp.extra && exp.extra.length > 0) {
-        body.innerHTML += `<div class="sub-header header-extra">Notes</div>`;
-        exp.extra.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
-      }
-
-      modal.style.display = "block";
-    }
-
-    // Safely wire up the close triggers when the DOM is ready
-    document.addEventListener("DOMContentLoaded", () => {
-      const modal = document.getElementById("expls");
-
-      // Closes any modal when its close button (X) is clicked
-      document.addEventListener("click", (event) => {
-        if (event.target.classList.contains("close-btn")) {
-          const modal = event.target.closest(".modal");
-          if (modal) modal.style.display = "none";
-        }
-      });
-
-      // Closes any modal when clicking its dim background overlay
-      window.addEventListener("click", (event) => {
-        const modal = event.target.closest(".modal");
-        if (!modal) return; // click wasn't inside any modal at all
-        if (!event.target.closest(".con")) {
-          modal.style.display = "none"; // click landed on backdrop, not content
-        }
-      });
-    });
 
   function applyFilters() {
     const searchInput = document.getElementById("charSearchInput");
     const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : "";
+    const isSearching = searchQuery.length > 0;
+
     const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
       .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters");
     const activeKeys = checkedBoxes.map(box => box.value);
-    const filtered = characters.filter(character => {
-      const matchesSearch = character.name.toLowerCase().includes(searchQuery);
-      let matchesBoxes = true;
-      if (activeKeys.length > 0) {
-        if (!character.opts) {
-          matchesBoxes = false;
-        } else {
-          matchesBoxes = activeKeys.some(key => character.opts[key] === true);
-        }
-      }
-      return matchesSearch && matchesBoxes;
-    });
-    renderTierList(filtered);
 
+    let totalVisible = 0;
+
+    activeTiers.forEach(tier => {
+      const container = document.getElementById(tier);
+      const group = document.getElementById(`tier-group-${tier}`);
+      if (!container) return;
+
+      let tierVisibleCount = 0;
+
+      container.querySelectorAll(".char-card").forEach(card => {
+        const matchesSearch = card.dataset.name.includes(searchQuery);
+        let matchesBoxes = true;
+
+        if (activeKeys.length > 0) {
+          const opts = card.dataset.opts ? card.dataset.opts.split(" ") : [];
+          matchesBoxes = activeKeys.some(key => opts.includes(key));
+        }
+
+        const isMatch = matchesSearch && matchesBoxes;
+        card.classList.toggle("hidden", !isMatch);
+        if (isMatch) tierVisibleCount++;
+      });
+
+      if (group) {
+        group.style.display = tierVisibleCount === 0 ? "none" : "";
+      }
+
+      if (isSearching && tierVisibleCount > 0) {
+        container.classList.remove("collapsed");
+        const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
+        if (toggleBtn) toggleBtn.textContent = `▼ Hide ${tier} Tier`;
+      }
+
+      totalVisible += tierVisibleCount;
+    });
+
+    const countDisplay = document.getElementById("total-character-count");
+    if (countDisplay) countDisplay.textContent = totalVisible;
+
+    const fContainer = document.getElementById("F");
+    const fToggleBtn = document.getElementById("toggle-btn-F");
+    if (fContainer) {
+      if (isSearching) {
+        const fText = fContainer.innerText.toLowerCase();
+        if (fText.includes(searchQuery)) {
+          fContainer.classList.remove("collapsed");
+          if (fToggleBtn) fToggleBtn.textContent = "▼ Hide F Tier";
+        }
+      } else {
+        fContainer.classList.add("collapsed");
+        if (fToggleBtn) fToggleBtn.textContent = "▶ Show F Tier";
+      }
+    }
+
+    if (typeof fitNameplateText === "function") fitNameplateText();
   }
 
-    function filterDefChars() { applyFilters(); }
-    function filterSuppChars() { applyFilters(); }
-    function filterHealChars() { applyFilters(); }
-    function filterDebuffChars() { applyFilters(); }
-    function filterAttackChars() { applyFilters(); }
-    function filterTechChars() { applyFilters(); }
-    function filterSpeedChars() { applyFilters(); }
-    function filterDestChars() { applyFilters(); }
-    function filterPureChars() { applyFilters(); }
-    function filterEpicChars() { applyFilters(); }
-    function filterPhChars() { applyFilters(); }
-    function filterRelicChars() { applyFilters(); }
-    function filterExChars() { applyFilters(); }
-    function filterUltraChars() { applyFilters(); }
-    function filterFesChars() { applyFilters(); }
-    function filterGenChars() { applyFilters(); }
-    function filterYuChars() { applyFilters(); }
-  </script>
+  function openExplanationModal(character) {
+    const modal = document.getElementById("expls");
+    const title = document.getElementById("tit");
+    const body = document.getElementById("bod");
+
+    if (!modal || !title || !body) return;
+    title.innerText = character.name;
+    body.innerHTML = "";
+
+    if (!character.explanation) {
+      body.innerHTML = "<p class='modal-p'>Girls are now tiering, please wait warmly...</p>";
+      modal.style.display = "block";
+      return;
+    }
+
+    const exp = character.explanation;
+
+    if (exp.pros && exp.pros.length > 0) {
+      body.innerHTML += `<div class="sub-header header-pro">Pros</div>`;
+      exp.pros.forEach(p => body.innerHTML += `<p class="modal-p">${p}</p>`);
+    }
+
+    if (exp.boons && exp.boons.length > 0) {
+      body.innerHTML += `<div class="sub-header header-boon">Boons</div>`;
+      let list = `<ul class="modal-list">`;
+      exp.boons.forEach(b => list += `<li>${b}</li>`);
+      list += `</ul>`;
+      body.innerHTML += list;
+    }
+
+    if (exp.mixed && exp.mixed.length > 0) {
+      body.innerHTML += `<div class="sub-header header-mixed">Mixed/Slight Issue</div>`;
+      exp.mixed.forEach(m => body.innerHTML += `<p class="modal-p">${m}</p>`);
+    }
+
+    if (exp.cons && exp.cons.length > 0) {
+      body.innerHTML += `<div class="sub-header header-con">Cons</div>`;
+      exp.cons.forEach(c => body.innerHTML += `<p class="modal-p">${c}</p>`);
+    }
+
+    if (exp.nitpick && exp.nitpick.length > 0) {
+      body.innerHTML += `<div class="sub-header header-nitpick">Nitpicks</div>`;
+      let list = `<ul class="modal-list">`;
+      exp.nitpick.forEach(n => list += `<li>${n}</li>`);
+      list += `</ul>`;
+      body.innerHTML += list;
+    }
+
+    if (exp.extra && exp.extra.length > 0) {
+      body.innerHTML += `<div class="sub-header header-extra">Notes</div>`;
+      exp.extra.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
+    }
+
+    modal.style.display = "block";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Closes modal on close button click
+    document.addEventListener("click", (event) => {
+      if (event.target.classList.contains("close-btn")) {
+        const modal = event.target.closest(".modal");
+        if (modal) modal.style.display = "none";
+      }
+    });
+
+    // Closes modal when clicking backdrop outside content
+    window.addEventListener("click", (event) => {
+      const modal = event.target.closest(".modal");
+      if (!modal) return;
+      if (!event.target.closest(".con")) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+  // Individual filter handler functions called by your filter checkboxes/buttons
+  function filterDefChars() { applyFilters(); }
+  function filterSuppChars() { applyFilters(); }
+  function filterHealChars() { applyFilters(); }
+  function filterDebuffChars() { applyFilters(); }
+  function filterAttackChars() { applyFilters(); }
+  function filterTechChars() { applyFilters(); }
+  function filterSpeedChars() { applyFilters(); }
+  function filterDestChars() { applyFilters(); }
+  function filterPureChars() { applyFilters(); }
+  function filterEpicChars() { applyFilters(); }
+  function filterPhChars() { applyFilters(); }
+  function filterRelicChars() { applyFilters(); }
+  function filterExChars() { applyFilters(); }
+  function filterUltraChars() { applyFilters(); }
+  function filterFesChars() { applyFilters(); }
+  function filterGenChars() { applyFilters(); }
+  function filterYuChars() { applyFilters(); }
+</script>
 
 <!-- Fart Tier -->
 <div class="f-tier-section" id="tier-group-F">
