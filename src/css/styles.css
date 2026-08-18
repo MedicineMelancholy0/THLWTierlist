@@ -86,8 +86,11 @@ a:link {
   top: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 6px;
   padding: 8px 10px;
   background-color: rgba(0, 0, 0, 0.75);
@@ -106,6 +109,12 @@ a:link {
   text-align: center;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s;
+}
+
+.quick-access-bar .search-container {
+  flex: 1 1 100%;
+  margin: 0;
+  min-width: 100px;
 }
 
 .quick-btn.discord-btn {
@@ -127,17 +136,19 @@ a:link {
 }
 
 @media (min-width: 601px) {
+  .quick-access-bar {
+    flex-wrap: nowrap;
+  }
+
+  .quick-access-bar .search-container {
+    flex: 1 1 650px;
+  }
+
   .quick-btn {
     min-width: 80px;
     padding: 10px 20px;
     font-size: 15px;
   }
-}
-
-.quick-access-bar .search-container {
-  flex: 1 1 650px;
-  margin: 0;
-  min-width: 100px;
 }
 
 body {
@@ -1060,7 +1071,7 @@ body {
   display: block;
   width: 100%;
   max-width: 700px;
-  margin: 2px auto 8px auto;
+  margin: 2px auto;
   background-color: rgba(102, 0, 0, 0.5);
   color: #ffffff;
   font-family: "Josefin Sans", Arial, sans-serif;
