@@ -253,18 +253,7 @@
   />
   </div>-->
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const searchInput = document.getElementById("charSearchInput");
-
-      if (searchInput) {
-        searchInput.addEventListener("input", applyFilters);
-      }
-    });
-  </script>
-
-  <p>Welcome to Hibi's Yappage Corner. This is where Hibi will update their yappage.</p>
-  <p>On this week's agenda... by the way everyone please pull mvkaris anthology it is quite relevant to her tier, as she has more damage on average from using antho x2 on aoe which obviously, lets her get 4 yin atk ii for last gauge, firmly making her have the best last gauge damage in the game</p>
+  <p>I think Bl4 (Cf1 Reimu) can be S given time. She needs to have proven feats but she's quite decent as basically the best pure breaker in the game.</p>
 
 <!-- EX -->
 <div class="tier-group" id="tier-group-EX">
@@ -272,15 +261,12 @@
     <div class="tiers">
       <img src="src/assets/tiers/ex3.png" class="tier-banner" alt="EX Tier">
     </div>
-    <div class="tier-expl" onclick="openModal('ex-tier-modal')">Tier Explanation (ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-EX" class="tier-toggle-bar" onclick="toggleTierRow('EX')">
-     ▼ Hide EX Tier
+    <div class="tier-expl" onclick="openModal('ex-tier-modal')">
+      Tier Explanation (ORDERED) <span class="unit-count">(0 Units)</span>
+    </div>
   </div>
 
   <div id="EX" class="tier-row"></div>
-
   <hr class="tier-divider">
 </div>
 
@@ -290,15 +276,12 @@
     <div class="tiers">
       <img src="src/assets/tiers/ss3.png" class="tier-banner" alt="SS Tier">
     </div>
-    <div class="tier-expl" onclick="openModal('ss-tier-modal')">Tier Explanation (ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-SS" class="tier-toggle-bar" onclick="toggleTierRow('SS')">
-     ▼ Hide SS Tier
+    <div class="tier-expl" onclick="openModal('ss-tier-modal')">
+      Tier Explanation (ORDERED) <span class="unit-count">(0 Units)</span>
+    </div>
   </div>
 
   <div id="SS" class="tier-row"></div>
-
   <hr class="tier-divider">
 </div>
 
@@ -445,6 +428,7 @@
   const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
 
   document.addEventListener("DOMContentLoaded", () => {
+    // 1. Initialize dataset
     if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
       characters = dataSet[dataSetVersion].characterData;
     } else {
@@ -452,8 +436,25 @@
       return;
     }
 
+    // 2. Build cards and apply initial filters + tier counts
     buildAllCards();   // Creates every card ONCE in the DOM
-    applyFilters();    // Applies initial visibility/search state
+    applyFilters();    // Applies initial visibility and updates unit counts
+
+    // 3. Modal close handlers
+    document.addEventListener("click", (event) => {
+      if (event.target.classList.contains("close-btn")) {
+        const modal = event.target.closest(".modal");
+        if (modal) modal.style.display = "none";
+      }
+    });
+
+    window.addEventListener("click", (event) => {
+      const modal = event.target.closest(".modal");
+      if (!modal) return;
+      if (!event.target.closest(".con")) {
+        modal.style.display = "none";
+      }
+    });
   });
 
   function buildAllCards() {
@@ -494,6 +495,19 @@
     });
 
     if (typeof fitNameplateText === "function") fitNameplateText();
+  }
+
+  function updateAllTierCounts() {
+    document.querySelectorAll(".tier-group").forEach((tierGroup) => {
+      const cardRow = tierGroup.querySelector(".tier-row");
+      const countSpan = tierGroup.querySelector(".unit-count");
+
+      if (cardRow && countSpan) {
+        // Counts only cards that are currently visible
+        const visibleUnits = cardRow.querySelectorAll(".char-card:not(.hidden)").length;
+        countSpan.textContent = `(${visibleUnits} Units)`;
+      }
+    });
   }
 
   function applyFilters() {
@@ -560,6 +574,9 @@
     }
 
     if (typeof fitNameplateText === "function") fitNameplateText();
+
+    // Updates header counts for every tier based on visible units
+    updateAllTierCounts();
   }
 
   function openExplanationModal(character) {
@@ -618,26 +635,7 @@
     modal.style.display = "block";
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    // Closes modal on close button click
-    document.addEventListener("click", (event) => {
-      if (event.target.classList.contains("close-btn")) {
-        const modal = event.target.closest(".modal");
-        if (modal) modal.style.display = "none";
-      }
-    });
-
-    // Closes modal when clicking backdrop outside content
-    window.addEventListener("click", (event) => {
-      const modal = event.target.closest(".modal");
-      if (!modal) return;
-      if (!event.target.closest(".con")) {
-        modal.style.display = "none";
-      }
-    });
-  });
-
-  // Individual filter handler functions called by your filter checkboxes/buttons
+  // Individual filter handler functions called by filter checkboxes/buttons
   function filterDefChars() { applyFilters(); }
   function filterSuppChars() { applyFilters(); }
   function filterHealChars() { applyFilters(); }
