@@ -114,9 +114,9 @@
       Switch to Small Icons
     </button>
 
-    <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
+    <!--<button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
       Hide Explanation Buttons
-    </button>
+    </button>-->
   </div>
 
   </div>
@@ -475,7 +475,6 @@
                loading="lazy" 
                decoding="async" />
           <div class="cname">${item.name}</div>
-          <div class="expl">Explanation</div>
         `;
 
         imgContainer.addEventListener("click", () => {
@@ -1177,6 +1176,7 @@ function toggleTierRow(tierId) {
 }
 </script>
 
+<!--
 <script>
   let showExplButtons = true;
 
@@ -1200,7 +1200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btn) btn.textContent = 'Show Explanation Buttons';
   }
 });
-</script>
+</script>-->
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
