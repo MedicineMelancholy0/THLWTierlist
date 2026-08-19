@@ -744,14 +744,14 @@ body.small-icons .expl {
   background-color: #8a0000;
 }
 
-.filters-panel {
+.filters-panel, .stats {
   overflow: hidden;
   max-height: 3000px;
   transition: max-height 0.3s ease, opacity 0.2s ease;
   opacity: 1;
 }
 
-.filters-panel.is-collapsed {
+.filters-panel.is-collapsed, .stats.is-collapsed {
   max-height: 0;
   opacity: 0;
   pointer-events: none;
@@ -877,7 +877,7 @@ body.small-icons .expl {
 /* 🟡 Mixed */
 .header-mixed {
   background-color: #ffb703;
-  color: #3b3b3b;
+  color: #000000;
   border-left: 4px solid #ffb703;
   font-weight: bold;
   font-size: 16px;
