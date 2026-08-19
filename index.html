@@ -1,22 +1,37 @@
 <html class="system">
 
 <head>
-  <link rel="shortcut icon" href="src/assets/medi.ico" type="image/x-icon">
-  <link rel="icon" href="src/assets/medi.ico" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Touhou Lostword Community Tierlist</title>
+  <meta name="description" content="The Official Touhou LostWord Community Tierlist by Medi and Hibi. View the #1 rated Tierlist of 2026 for Touhou LostWord Global.">
+  <meta name="keywords" content="Touhou LostWord tier list, THLW tierlist, Touhou LostWord best characters, LostWord TL, Touhou LostWord guide, lostword tierlist, thlw community tierlist, thlw tl, best touhou lostword characters, touhou lostword meta">
+  <meta name="google-site-verification" content="K23sVFWj_hCVviOn21yRcFfU64xJ0RxGsKVgloVvlUY" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="src/assets/medi.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/medi.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="48x48" href="src/assets/medicute.png">
+
+  <!-- Open Graph / Discord Embeds -->
+  <meta property="og:type" content="website">
   <meta property="og:site_name" content="Touhou Lostword Community Tierlist">
   <meta property="og:title" content="Touhou Lostword Community Tierlist">
   <meta property="og:description" content="The Official Touhou LostWord Community Tierlist by Medi and Hibi. View the #1 rated Tierlist of 2026 for Touhou LostWord Global.">
   <meta property="og:image" content="https://i.postimg.cc/mZKnsV9b/medi2.png">
-  <meta property="og:type" content="website">
   <meta property="og:url" content="https://medicinemelancholy0.github.io/THLWTierlist/">
-  <meta name="description" content="The Official Touhou LostWord Community Tierlist by Medi and Hibi. View the #1 rated Tierlist of 2026 for Touhou LostWord Global.">
-  <title>Touhou Lostword Community Tierlist</title>
 
+  <!-- Twitter Card Fallbacks for Discord -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Touhou Lostword Community Tierlist">
+  <meta name="twitter:description" content="The Official Touhou LostWord Community Tierlist by Medi and Hibi. View the #1 rated Tierlist of 2026 for Touhou LostWord Global.">
+  <meta name="twitter:image" content="https://i.postimg.cc/mZKnsV9b/medi2.png">
+
+  <!-- Styles & Scripts -->
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
-  <meta name="keywords" content="Touhou LostWord tier list, THLW tierlist, Touhou LostWord best characters, LostWord TL, Touhou LostWord guide, lostword tierlist, thlw community tierlist, thlw tl, best touhou lostword characters, touhou lostword meta">
+  <script src="src/js/data/tierlist.js" defer></script>
 
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,12 +57,6 @@
     ]
   }
   </script>
-
-  <title>Character Filtering</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="google-site-verification" content="K23sVFWj_hCVviOn21yRcFfU64xJ0RxGsKVgloVvlUY" />
-  <script src="src/js/data/tierlist.js" defer></script>
 </head>
 
 <body>
@@ -113,9 +122,9 @@
       Switch to Small Icons
     </button>
 
-    <button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
+    <!--<button class="button primary" id="expl-toggle-btn" onclick="toggleExplButtons()">
       Hide Explanation Buttons
-    </button>
+    </button>-->
   </div>
 
   </div>
@@ -233,29 +242,31 @@
 
 </div>
 
-<!-- search-container stays here, outside filters-panel, wherever it already lives 
+<input type="checkbox" id="toggle-stats" class="visually-hidden-checkbox">
+<label for="toggle-stats" class="filters-toggle-label">Show/Hide Tier Statistics</label>
 
-  <div class="search-container">
-  <input
-    type="text" 
-    id="charSearchInput" 
-    placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
-    autocomplete="off"
-  />
-  </div>-->
+<div id="stats-panel" class="filters-panel">
+  <div class="stats-content">
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const searchInput = document.getElementById("charSearchInput");
+    <div class="stats-section">
+      <div class="stats-heading">Tier Distribution</div>
+      <div id="stats-tier-dist"></div>
+    </div>
 
-      if (searchInput) {
-        searchInput.addEventListener("input", applyFilters);
-      }
-    });
-  </script>
+    <div class="stats-section">
+      <div class="stats-heading">Average Tier by Rarity</div>
+      <div id="stats-rarity"></div>
+    </div>
 
-  <p>Welcome to Hibi's Yappage Corner. This is where Hibi will update their yappage.</p>
-  <p>On this week's agenda... by the way everyone please pull mvkaris anthology it is quite relevant to her tier, as she has more damage on average from using antho x2 on aoe which obviously, lets her get 4 yin atk ii for last gauge, firmly making her have the best last gauge damage in the game</p>
+    <div class="stats-section">
+      <div class="stats-heading">Average Tier by Class</div>
+      <div id="stats-class"></div>
+    </div>
+
+  </div>
+</div>
+
+  <p>I think Bl4 (Cf1 Reimu) can be S given time. She needs to have proven feats but she's quite decent as basically the best pure breaker in the game.</p>
 
 <!-- EX -->
 <div class="tier-group" id="tier-group-EX">
@@ -263,15 +274,12 @@
     <div class="tiers">
       <img src="src/assets/tiers/ex3.png" class="tier-banner" alt="EX Tier">
     </div>
-    <div class="tier-expl" onclick="openModal('ex-tier-modal')">Tier Explanation (ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-EX" class="tier-toggle-bar" onclick="toggleTierRow('EX')">
-     ▼ Hide EX Tier
+    <div class="tier-expl" onclick="openModal('ex-tier-modal')">
+      Tier Explanation (ORDERED) <span class="unit-count">(0 Units)</span>
+    </div>
   </div>
 
   <div id="EX" class="tier-row"></div>
-
   <hr class="tier-divider">
 </div>
 
@@ -281,15 +289,12 @@
     <div class="tiers">
       <img src="src/assets/tiers/ss3.png" class="tier-banner" alt="SS Tier">
     </div>
-    <div class="tier-expl" onclick="openModal('ss-tier-modal')">Tier Explanation (ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-SS" class="tier-toggle-bar" onclick="toggleTierRow('SS')">
-     ▼ Hide SS Tier
+    <div class="tier-expl" onclick="openModal('ss-tier-modal')">
+      Tier Explanation (ORDERED) <span class="unit-count">(0 Units)</span>
+    </div>
   </div>
 
   <div id="SS" class="tier-row"></div>
-
   <hr class="tier-divider">
 </div>
 
@@ -299,11 +304,9 @@
       <div class="tiers">
         <img src="src/assets/tiers/s3.png" class="tier-banner" alt="S Tier">
       </div>
-      <div class="tier-expl" onclick="openModal('s-tier-modal')">Tier Explanation (ORDERED)</div>
+      <div class="tier-expl" onclick="openModal('s-tier-modal')">
+      Tier Explanation (ORDERED) <span class="unit-count">(0 Units)</span>
     </div>
-
-    <div id="toggle-btn-S" class="tier-toggle-bar" onclick="toggleTierRow('S')">
-      ▼ Hide S Tier
     </div>
 
     <div id="S" class="tier-row"></div>
@@ -317,11 +320,9 @@
       <div class="tiers">
         <img src="src/assets/tiers/a3.png" class="tier-banner" alt="A Tier">
       </div>
-      <div class="tier-expl" onclick="openModal('a-tier-modal')">Tier Explanation (NOT ORDERED)</div>
+      <div class="tier-expl" onclick="openModal('a-tier-modal')">
+      Tier Explanation (NOT ORDERED) <span class="unit-count">(0 Units)</span>
     </div>
-
-    <div id="toggle-btn-A" class="tier-toggle-bar" onclick="toggleTierRow('A')">
-      ▼ Hide A Tier
     </div>
 
     <div id="A" class="tier-row"></div>
@@ -335,11 +336,9 @@
       <div class="tiers">
         <img src="src/assets/tiers/b3.png" class="tier-banner" alt="B Tier">
       </div>
-      <div class="tier-expl" onclick="openModal('b-tier-modal')">Tier Explanation (NOT ORDERED)</div>
+      <div class="tier-expl" onclick="openModal('b-tier-modal')">
+      Tier Explanation (NOT ORDERED) <span class="unit-count">(0 Units)</span>
     </div>
-
-    <div id="toggle-btn-B" class="tier-toggle-bar" onclick="toggleTierRow('B')">
-      ▼ Hide B Tier
     </div>
 
     <div id="B" class="tier-row"></div>
@@ -353,12 +352,10 @@
     <div class="tiers">
       <img src="src/assets/tiers/c4.png" class="tier-banner" alt="C Tier">
     </div>
-    <div class="tier-expl" onclick="openModal('c-tier-modal')">Tier Explanation (NOT ORDERED)</div>
-  </div>
-
-    <div id="toggle-btn-C" class="tier-toggle-bar" onclick="toggleTierRow('C')">
-      ▼ Hide C Tier
+    <div class="tier-expl" onclick="openModal('c-tier-modal')">
+      Tier Explanation (NOT ORDERED) <span class="unit-count">(0 Units)</span>
     </div>
+  </div>
 
     <div id="C" class="tier-row"></div>
 
@@ -371,11 +368,9 @@
     <div class="tiers">
       <img src="src/assets/tiers/d3.png" class="tier-banner" alt="D Tier">
     </div>
-    <div class="tier-expl" onclick="openModal('d-tier-modal')">Tier Explanation (NOT ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-D" class="tier-toggle-bar" onclick="toggleTierRow('D')">
-    ▼ Hide D Tier
+    <div class="tier-expl" onclick="openModal('d-tier-modal')">
+      Tier Explanation (NOT ORDERED) <span class="unit-count">(0 Units)</span>
+    </div>
   </div>
 
   <div id="D" class="tier-row"></div>
@@ -389,11 +384,9 @@
     <div class="tiers">
       <img src="src/assets/tiers/e3.png" class="tier-banner" alt="E Tier">
     </div>
-    <div class="tier-expl" onclick="openModal('e-tier-modal')">Tier Explanation (NOT ORDERED)</div>
-  </div>
-
-  <div id="toggle-btn-E" class="tier-toggle-bar" onclick="toggleTierRow('E')">
-     ▼ Hide E Tier
+    <div class="tier-expl" onclick="openModal('e-tier-modal')">
+      Tier Explanation (NOT ORDERED) <span class="unit-count">(0 Units)</span>
+    </div>
   </div>
 
   <div id="E" class="tier-row"></div>
@@ -436,16 +429,41 @@
   const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
 
   document.addEventListener("DOMContentLoaded", () => {
-    if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
-      characters = dataSet[dataSetVersion].characterData;
-    } else {
-      console.error("Database initialization failed. Ensure tierlist.js path is correct.");
-      return;
-    }
+  // 1. Initialize dataset
+  if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
+    characters = dataSet[dataSetVersion].characterData;
+  } else {
+    console.error("Database initialization failed. Ensure tierlist.js path is correct.");
+    return;
+  }
 
-    buildAllCards();   // Creates every card ONCE in the DOM
-    applyFilters();    // Applies initial visibility/search state
+  // 2. Build cards and apply initial filters + tier counts
+  buildAllCards();   // Creates every card ONCE in the DOM
+  applyFilters();    // Applies initial visibility and updates unit counts
+  renderStats();
+
+  // 3. Attach event listener to search input
+  const searchInput = document.getElementById("charSearchInput");
+  if (searchInput) {
+    searchInput.addEventListener("input", applyFilters);
+  }
+
+  // 4. Modal close handlers
+  document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("close-btn")) {
+      const modal = event.target.closest(".modal");
+      if (modal) modal.style.display = "none";
+    }
   });
+
+  window.addEventListener("click", (event) => {
+    const modal = event.target.closest(".modal");
+    if (!modal) return;
+    if (!event.target.closest(".con")) {
+      modal.style.display = "none";
+    }
+  });
+});
 
   function buildAllCards() {
     activeTiers.forEach(tier => {
@@ -474,7 +492,6 @@
                loading="lazy" 
                decoding="async" />
           <div class="cname">${item.name}</div>
-          <div class="expl">Explanation</div>
         `;
 
         imgContainer.addEventListener("click", () => {
@@ -488,13 +505,26 @@
     if (typeof fitNameplateText === "function") fitNameplateText();
   }
 
+  function updateAllTierCounts() {
+    document.querySelectorAll(".tier-group").forEach((tierGroup) => {
+      const cardRow = tierGroup.querySelector(".tier-row");
+      const countSpan = tierGroup.querySelector(".unit-count");
+
+      if (cardRow && countSpan) {
+        // Counts only cards that are currently visible
+        const visibleUnits = cardRow.querySelectorAll(".char-card:not(.hidden)").length;
+        countSpan.textContent = `(${visibleUnits} Units)`;
+      }
+    });
+  }
+
   function applyFilters() {
     const searchInput = document.getElementById("charSearchInput");
     const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : "";
     const isSearching = searchQuery.length > 0;
 
     const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
-      .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters");
+      .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters" && box.id !== "toggle-stats");
     const activeKeys = checkedBoxes.map(box => box.value);
 
     let totalVisible = 0;
@@ -552,6 +582,9 @@
     }
 
     if (typeof fitNameplateText === "function") fitNameplateText();
+
+    // Updates header counts for every tier based on visible units
+    updateAllTierCounts();
   }
 
   function openExplanationModal(character) {
@@ -610,26 +643,7 @@
     modal.style.display = "block";
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    // Closes modal on close button click
-    document.addEventListener("click", (event) => {
-      if (event.target.classList.contains("close-btn")) {
-        const modal = event.target.closest(".modal");
-        if (modal) modal.style.display = "none";
-      }
-    });
-
-    // Closes modal when clicking backdrop outside content
-    window.addEventListener("click", (event) => {
-      const modal = event.target.closest(".modal");
-      if (!modal) return;
-      if (!event.target.closest(".con")) {
-        modal.style.display = "none";
-      }
-    });
-  });
-
-  // Individual filter handler functions called by your filter checkboxes/buttons
+  // Individual filter handler functions called by filter checkboxes/buttons
   function filterDefChars() { applyFilters(); }
   function filterSuppChars() { applyFilters(); }
   function filterHealChars() { applyFilters(); }
@@ -751,6 +765,7 @@
       <div class="con">
         <span class="close-btn" onclick="closeModal('changelog-modal')">&times;</span>
         <div class="sub-header header-pro">Changelog</div>
+        <p class="modal-p">17/8/26 ~ Uptiered L1 Kyouko and Eika to E</p>
         <p class="modal-p">16/8/26 ~ Downtiered E1 Meiling to D</p>
         <p class="modal-p">14/8/26 ~ Added C3int Yachie to S, Uptiered L80 Remilia to A. Downtiered W5 Yuugi and E1;4 Sakuya to B.</p>
         <p class="modal-p">7/8/26 ~ Added A16& Okina to top of S, added C3int Ran to C, Uptiered L80 Kanako to B. Uptiered L80 Reimu to A. Downtiered L80 Miko to B. Downtiered L0g Suwako and Mugetsu to S below EX Okina.</p>
@@ -1176,6 +1191,7 @@ function toggleTierRow(tierId) {
 }
 </script>
 
+<!--
 <script>
   let showExplButtons = true;
 
@@ -1199,7 +1215,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btn) btn.textContent = 'Show Explanation Buttons';
   }
 });
-</script>
+</script>-->
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -1250,8 +1266,10 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <div class="quick-access-bar">
-  <a href="https://discord.gg/TCjp7VMTps" class="quick-btn">Discord</a>
-  <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="quick-btn" title="Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy">Q&A Form</a>
+  <a href="https://discord.gg/TCjp7VMTps" class="quick-btn discord-btn" aria-label="Discord">
+    <img src="src/css/discord.webp" alt="Discord" class="discord-icon" />
+  </a>
+  <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="quick-btn" title="Now tracking 870+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy">Q&A Form</a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="quick-btn">Responses</a>
   <div class="quick-btn" onclick="openModal('changelog-modal')">Changelog</div>
   <div class="search-container">
@@ -1263,6 +1281,129 @@ document.addEventListener('DOMContentLoaded', () => {
   />
   </div>
 </div>
+
+const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4, C: 3, D: 2, E: 1 };
+
+// Solid versions of your tier colors — your #EX/#SS/etc. rules use
+// low-opacity rgba meant to blend with the background image, which
+// would be too faint against this panel's solid background.
+const TIER_COLORS = {
+  EX: "#e91e8f", SS: "#8e5bd6", S: "#e8b4b8", A: "#f0af6e",
+  B: "#8fbf82", C: "#5aa9e6", D: "#6a41db", E: "#cf9a5c"
+};
+
+const RARITY_KEYS = [
+  { key: "p",  label: "Pure Fes" },
+  { key: "e",  label: "Epic Fes" },
+  { key: "ph", label: "Phantasm Fes" },
+  { key: "r",  label: "Relics and Genics" },
+  { key: "ex", label: "Extended Fes" },
+  { key: "u",  label: "Ultra Fes" },
+  { key: "b",  label: "Battle Pass" },
+  { key: "a",  label: "Festival" },
+  { key: "g",  label: "General" }
+];
+
+const CLASS_KEYS = [
+  { key: "atk",  label: "Attack" },
+  { key: "dest", label: "Destroy" },
+  { key: "spd",  label: "Speed" },
+  { key: "tec",  label: "Tech" },
+  { key: "supp", label: "Support" },
+  { key: "def",  label: "Defense" },
+  { key: "heal", label: "Heal" },
+  { key: "dbf",  label: "Debuff" }
+];
+
+function computeTierDistribution(charList) {
+  return Object.keys(TIER_SCORES).map(tier => ({
+    label: tier,
+    value: charList.filter(c => c.tier === tier).length
+  }));
+}
+
+function computeAveragesByGroup(charList, groupKeys) {
+  return groupKeys.map(({ key, label }) => {
+    const scored = charList.filter(c =>
+      c.opts && c.opts[key] === true && TIER_SCORES.hasOwnProperty(c.tier)
+    );
+    const count = scored.length;
+    const avg = count === 0
+      ? 0
+      : scored.reduce((sum, c) => sum + TIER_SCORES[c.tier], 0) / count;
+    return { label, value: Math.round(avg * 10) / 10, count };
+  });
+}
+
+function renderBarChart(containerEl, rows, { maxValue, colorFn, formatValue }) {
+  if (!containerEl) return;
+  containerEl.innerHTML = "";
+
+  rows.forEach(row => {
+    const pct = maxValue > 0 ? (row.value / maxValue) * 100 : 0;
+    const rowEl = document.createElement("div");
+    rowEl.className = "stat-bar-row";
+    rowEl.innerHTML = `
+      <div class="stat-bar-label">${row.label}</div>
+      <div class="stat-bar-track">
+        <div class="stat-bar-fill" style="width:${Math.max(pct, row.value > 0 ? 3 : 0)}%; background:${colorFn(row)};"></div>
+        <span class="stat-bar-value">${formatValue(row)}</span>
+      </div>
+    `;
+    containerEl.appendChild(rowEl);
+  });
+}
+
+// Computed once from the FULL roster, not the current search/filter —
+// this is a whole-site overview, same as the reference site's dashboard.
+function renderStats() {
+  const tierDist = computeTierDistribution(characters);
+  const maxCount = Math.max(1, ...tierDist.map(t => t.value));
+  renderBarChart(document.getElementById("stats-tier-dist"), tierDist, {
+    maxValue: maxCount,
+    colorFn: row => TIER_COLORS[row.label] || "#888",
+    formatValue: row => row.value
+  });
+
+  const rarityStats = computeAveragesByGroup(characters, RARITY_KEYS);
+  renderBarChart(document.getElementById("stats-rarity"), rarityStats, {
+    maxValue: 8,
+    colorFn: () => "#d4a017",
+    formatValue: row => `${row.value.toFixed(1)} (${row.count})`
+  });
+
+  const classStats = computeAveragesByGroup(characters, CLASS_KEYS);
+  renderBarChart(document.getElementById("stats-class"), classStats, {
+    maxValue: 8,
+    colorFn: () => "#a83232",
+    formatValue: row => `${row.value.toFixed(1)} (${row.count})`
+  });
+}
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.getElementById("toggle-stats");
+  const panel = document.getElementById("stats-panel");
+  if (!checkbox || !panel) return;
+
+  const isCollapsed = localStorage.getItem("stats_collapsed") === "true";
+  if (isCollapsed) {
+    checkbox.checked = true;
+    panel.classList.add("is-collapsed");
+  }
+
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      panel.classList.add("is-collapsed");
+      localStorage.setItem("stats_collapsed", "true");
+    } else {
+      panel.classList.remove("is-collapsed");
+      localStorage.setItem("stats_collapsed", "false");
+    }
+  });
+});
+</script>
+
 </body>
 
 </html>
