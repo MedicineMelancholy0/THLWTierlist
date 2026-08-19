@@ -241,17 +241,13 @@
   </div>
 
 </div>
+<!--
+<input type="checkbox" id="toggle-filters" class="visually-hidden-checkbox">
+<label for="toggle-filters" class="filters-toggle-label">Show/Hide Tier Statistics</label>
 
-<!-- search-container stays here, outside filters-panel, wherever it already lives 
+<div id="stats" class="stats">
 
-  <div class="search-container">
-  <input
-    type="text" 
-    id="charSearchInput" 
-    placeholder="Search character name (e.g. 'C3 Kogasa', 'Mamizou')..." 
-    autocomplete="off"
-  />
-  </div>-->
+-->
 
   <p>I think Bl4 (Cf1 Reimu) can be S given time. She needs to have proven feats but she's quite decent as basically the best pure breaker in the game.</p>
 
@@ -416,34 +412,40 @@
   const activeTiers = ["EX", "SS", "S", "A", "B", "C", "D", "E", "Yukkuri"];
 
   document.addEventListener("DOMContentLoaded", () => {
-    // 1. Initialize dataset
-    if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
-      characters = dataSet[dataSetVersion].characterData;
-    } else {
-      console.error("Database initialization failed. Ensure tierlist.js path is correct.");
-      return;
-    }
+  // 1. Initialize dataset
+  if (typeof dataSet !== 'undefined' && dataSet[dataSetVersion]) {
+    characters = dataSet[dataSetVersion].characterData;
+  } else {
+    console.error("Database initialization failed. Ensure tierlist.js path is correct.");
+    return;
+  }
 
-    // 2. Build cards and apply initial filters + tier counts
-    buildAllCards();   // Creates every card ONCE in the DOM
-    applyFilters();    // Applies initial visibility and updates unit counts
+  // 2. Build cards and apply initial filters + tier counts
+  buildAllCards();   // Creates every card ONCE in the DOM
+  applyFilters();    // Applies initial visibility and updates unit counts
 
-    // 3. Modal close handlers
-    document.addEventListener("click", (event) => {
-      if (event.target.classList.contains("close-btn")) {
-        const modal = event.target.closest(".modal");
-        if (modal) modal.style.display = "none";
-      }
-    });
+  // 3. Attach event listener to search input
+  const searchInput = document.getElementById("charSearchInput");
+  if (searchInput) {
+    searchInput.addEventListener("input", applyFilters);
+  }
 
-    window.addEventListener("click", (event) => {
+  // 4. Modal close handlers
+  document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("close-btn")) {
       const modal = event.target.closest(".modal");
-      if (!modal) return;
-      if (!event.target.closest(".con")) {
-        modal.style.display = "none";
-      }
-    });
+      if (modal) modal.style.display = "none";
+    }
   });
+
+  window.addEventListener("click", (event) => {
+    const modal = event.target.closest(".modal");
+    if (!modal) return;
+    if (!event.target.closest(".con")) {
+      modal.style.display = "none";
+    }
+  });
+});
 
   function buildAllCards() {
     activeTiers.forEach(tier => {
