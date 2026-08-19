@@ -241,7 +241,7 @@
   </div>
 
 </div>
-
+<!--
 <input type="checkbox" id="toggle-stats" class="visually-hidden-checkbox">
 <label for="toggle-stats" class="filters-toggle-label">Show/Hide Tier Statistics</label>
 
@@ -265,6 +265,8 @@
 
   </div>
 </div>
+
+-->
 
   <p>I think Bl4 (Cf1 Reimu) can be S given time. She needs to have proven feats but she's quite decent as basically the best pure breaker in the game.</p>
 
@@ -440,7 +442,7 @@
   // 2. Build cards and apply initial filters + tier counts
   buildAllCards();   // Creates every card ONCE in the DOM
   applyFilters();    // Applies initial visibility and updates unit counts
-  renderStats();
+  // renderStats();
 
   // 3. Attach event listener to search input
   const searchInput = document.getElementById("charSearchInput");
@@ -1282,6 +1284,8 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </div>
 
+<script>
+
 const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4, C: 3, D: 2, E: 1 };
 
 // Solid versions of your tier colors — your #EX/#SS/etc. rules use
@@ -1379,6 +1383,7 @@ function renderStats() {
     formatValue: row => `${row.value.toFixed(1)} (${row.count})`
   });
 }
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -1407,4 +1412,3 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 
 </html>
-
