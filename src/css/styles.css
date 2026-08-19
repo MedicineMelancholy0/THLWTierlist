@@ -62,12 +62,23 @@ a:link {
 #charSearchInput {
   width: 100%;
   font-family: 'Josefin Sans', Arial, sans-serif;
-  max-width: 400px;
+  max-width: 650px;
   padding: 8px 12px;
   font-size: 16px;
   border-radius: 6px;
   border: 1px solid #ccc;
   outline: none;
+  background-color: #000720;
+  color: #ffffff;
+}
+
+#charSearchInput::placeholder {
+  color: #656780;
+}
+
+#charSearchInput:focus {
+  background-color: #131325;
+  border-color: #8a0000;
 }
 
 .quick-access-bar {
@@ -75,8 +86,11 @@ a:link {
   top: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 6px;
   padding: 8px 10px;
   background-color: rgba(0, 0, 0, 0.75);
@@ -97,27 +111,48 @@ a:link {
   transition: background 0.2s, transform 0.15s;
 }
 
+.quick-access-bar .search-container {
+  flex: 1 1 100%;
+  margin: 0;
+  min-width: 100px;
+}
+
+.quick-btn.discord-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+}
+
+.discord-icon {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+}
+
 .quick-btn:hover {
   background-color: #8a0000;
   transform: scale(1.05);
 }
 
 @media (min-width: 601px) {
+  .quick-access-bar {
+    flex-wrap: nowrap;
+  }
+
+  .quick-access-bar .search-container {
+    flex: 1 1 650px;
+  }
+
   .quick-btn {
-    min-width: 140px;
+    min-width: 80px;
     padding: 10px 20px;
     font-size: 15px;
   }
 }
 
-.quick-access-bar .search-container {
-  flex: 1 1 400px;
-  margin: 0;
-  min-width: 150px;
-}
-
 body {
-  padding-bottom: 60px; /* roughly the bar's height */
+  padding-top: 60px; /* roughly the bar's height */
 }
 
 .head {
@@ -709,14 +744,14 @@ body.small-icons .expl {
   background-color: #8a0000;
 }
 
-.filters-panel {
+.filters-panel, .stats {
   overflow: hidden;
   max-height: 3000px;
   transition: max-height 0.3s ease, opacity 0.2s ease;
   opacity: 1;
 }
 
-.filters-panel.is-collapsed {
+.filters-panel.is-collapsed, .stats.is-collapsed {
   max-height: 0;
   opacity: 0;
   pointer-events: none;
@@ -842,7 +877,7 @@ body.small-icons .expl {
 /* 🟡 Mixed */
 .header-mixed {
   background-color: #ffb703;
-  color: #fff;
+  color: #000000;
   border-left: 4px solid #ffb703;
   font-weight: bold;
   font-size: 16px;
@@ -1033,14 +1068,15 @@ body {
 }
 
 .tier-toggle-bar {
-  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 2px auto;
+  background-color: rgba(102, 0, 0, 0.5);
   color: #ffffff;
   font-family: "Josefin Sans", Arial, sans-serif;
-  font-weight: bold;
   text-align: center;
   padding: 6px 12px;
-  margin: 4px auto 12px auto; 
-  max-width: 700px;
   border-radius: 4px;
   cursor: pointer;
   user-select: none;
@@ -1048,7 +1084,7 @@ body {
 }
 
 .tier-toggle-bar:hover {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(126, 0, 0, 0.5)
 }
 
 .Qs {
@@ -1125,4 +1161,69 @@ body {
     width: 100%;
     min-height: 48px;
   }
+}
+
+.stats-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgba(20, 10, 35, 0.9);
+  border: 2px solid #591339;
+  border-radius: 8px;
+  padding: 20px 16px;
+}
+
+.stats-section {
+  margin-bottom: 24px;
+}
+
+.stats-heading {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.stat-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto 6px auto;
+}
+
+.stat-bar-label {
+  width: 130px;
+  flex-shrink: 0;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #e0e0e0;
+  text-align: right;
+}
+
+.stat-bar-track {
+  flex: 1;
+  position: relative;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.stat-bar-value {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
