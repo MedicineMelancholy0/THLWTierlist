@@ -148,7 +148,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "Lr1 Renko - Gengetsu", 
+    name: "Lr1 Renko (Gengetsu)", 
     img: "SPOILER_gengetsu.webp", 
     tier: "EX", 
     opts: { r: true, tec: true },
@@ -384,7 +384,7 @@ dataSet[dataSetVersion].characterData = [
     opts: { atk: true, e: true },
     explanation: {
       pros: [
-        "Thanks to very high damage complimented further by 70% damage to res her nukes are incredibly versatile and reliable on killer. Basically the best g3 nuke in the game on killer lmao.",
+        "Thanks to very high damage complimented further by 70% damage to res her nukes are incredibly versatile and reliable on killer. She is one the best g3 nukes in the game on killer lmao.",
         "Scintillating Crit Buffs and high overall raw buffs her kit in synergy with D cards with gives her a good supportive niche that complements her damage in tandem with her decent innate Util"
       ],
       mixed: [
@@ -643,7 +643,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "Lm1 Maribel - Mugetsu", 
+    name: "Lm1 Maribel (Mugetsu)", 
     img: "mugetsu.webp", 
     tier: "S", 
     opts: { spd: true, r: true },
@@ -1609,7 +1609,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Lr1 Renko - Shinki",
+    name: "Lr1 Renko (Shinki)",
     img: "lr1 shinki.webp",
     tier: "A",
     opts: { atk: true, r: true },
