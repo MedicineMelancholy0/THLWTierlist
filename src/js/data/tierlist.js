@@ -5666,6 +5666,34 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  { 
+    name: "R8 Youmu", 
+    img: "r8 youmu.webp", 
+    tier: "D", 
+    opts: { spd: true, u: true },
+    explanation: {
+      pros: [
+        "High Damage Floor, Low Damage Ceiling (Unless you can hit her very niche killers)"
+      ],
+      boons: [
+        "Fairy Killer"
+      ],
+      mixed: [
+        "RNG Anom Breaks",
+        "Self Setup is... ok but needs help"
+      ],
+      cons: [
+        "No Innate Acc",
+        "Bad Killers",
+        "Very Mixed Breaks",
+        "Basically does nothing for support"
+      ],
+      extra: [
+        "Rebirth helps her a lot.",
+        "first solo phantasm 4t, good for Fire EX"
+      ]
+    }
+  },
   {
     name: "R2 Yuyuko",
     img: "r2 yuyuko.webp",
@@ -6946,34 +6974,6 @@ dataSet[dataSetVersion].characterData = [
         "Rather Selfish, Buffs aren't that good either",
         "Solo Target LW",
         "Bad Killers"
-      ]
-    }
-  },
-  { 
-    name: "R8 Youmu", 
-    img: "r8 youmu.webp", 
-    tier: "E", 
-    opts: { spd: true, u: true },
-    explanation: {
-      pros: [
-        "High Damage Floor, Low Damage Ceiling (Unless you can hit her very niche killers)"
-      ],
-      boons: [
-        "Fairy Killer"
-      ],
-      mixed: [
-        "RNG Anom Breaks",
-        "Self Setup is... ok but needs help"
-      ],
-      cons: [
-        "No Innate Acc",
-        "Bad Killers",
-        "Very Mixed Breaks",
-        "Basically does nothing for support"
-      ],
-      extra: [
-        "Rebirth helps her a lot.",
-        "first solo phantasm 4t, good for Fire EX"
       ]
     }
   },
