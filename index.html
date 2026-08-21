@@ -242,10 +242,29 @@
 
 </div>
 <!--
-<input type="checkbox" id="toggle-filters" class="visually-hidden-checkbox">
-<label for="toggle-filters" class="filters-toggle-label">Show/Hide Tier Statistics</label>
+<input type="checkbox" id="toggle-stats" class="visually-hidden-checkbox">
+<label for="toggle-stats" class="filters-toggle-label">Show/Hide Tier Statistics</label>
 
-<div id="stats" class="stats">
+<div id="stats-panel" class="filters-panel">
+  <div class="stats-content">
+
+    <div class="stats-section">
+      <div class="stats-heading">Tier Distribution</div>
+      <div id="stats-tier-dist"></div>
+    </div>
+
+    <div class="stats-section">
+      <div class="stats-heading">Average Tier by Rarity</div>
+      <div id="stats-rarity"></div>
+    </div>
+
+    <div class="stats-section">
+      <div class="stats-heading">Average Tier by Class</div>
+      <div id="stats-class"></div>
+    </div>
+
+  </div>
+</div>
 
 -->
 
@@ -423,6 +442,7 @@
   // 2. Build cards and apply initial filters + tier counts
   buildAllCards();   // Creates every card ONCE in the DOM
   applyFilters();    // Applies initial visibility and updates unit counts
+  // renderStats();
 
   // 3. Attach event listener to search input
   const searchInput = document.getElementById("charSearchInput");
@@ -506,7 +526,7 @@
     const isSearching = searchQuery.length > 0;
 
     const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
-      .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters");
+      .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters" && box.id !== "toggle-stats");
     const activeKeys = checkedBoxes.map(box => box.value);
 
     let totalVisible = 0;
@@ -747,6 +767,7 @@
       <div class="con">
         <span class="close-btn" onclick="closeModal('changelog-modal')">&times;</span>
         <div class="sub-header header-pro">Changelog</div>
+        <p class="modal-p">21/8/26 ~ Added F1;4 Marisa to A, C3 Kagerou to C, Ar8 Youmu to D. Updated notes for L80 Sakuya.</p>
         <p class="modal-p">17/8/26 ~ Uptiered L1 Kyouko and Eika to E</p>
         <p class="modal-p">16/8/26 ~ Downtiered E1 Meiling to D</p>
         <p class="modal-p">14/8/26 ~ Added C3int Yachie to S, Uptiered L80 Remilia to A. Downtiered W5 Yuugi and E1;4 Sakuya to B.</p>
@@ -1251,7 +1272,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <a href="https://discord.gg/TCjp7VMTps" class="quick-btn discord-btn" aria-label="Discord">
     <img src="src/css/discord.webp" alt="Discord" class="discord-icon" />
   </a>
-  <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="quick-btn" title="Now tracking 840+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy">Q&A Form</a>
+  <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="quick-btn" title="Now tracking 870+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy">Q&A Form</a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="quick-btn">Responses</a>
   <div class="quick-btn" onclick="openModal('changelog-modal')">Changelog</div>
   <div class="search-container">
@@ -1263,7 +1284,133 @@ document.addEventListener('DOMContentLoaded', () => {
   />
   </div>
 </div>
+
+<!--
+<script>
+
+const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4, C: 3, D: 2, E: 1 };
+
+// Solid versions of your tier colors — your #EX/#SS/etc. rules use
+// low-opacity rgba meant to blend with the background image, which
+// would be too faint against this panel's solid background.
+const TIER_COLORS = {
+  EX: "#e91e8f", SS: "#8e5bd6", S: "#e8b4b8", A: "#f0af6e",
+  B: "#8fbf82", C: "#5aa9e6", D: "#6a41db", E: "#cf9a5c"
+};
+
+const RARITY_KEYS = [
+  { key: "p",  label: "Pure Fes" },
+  { key: "e",  label: "Epic Fes" },
+  { key: "ph", label: "Phantasm Fes" },
+  { key: "r",  label: "Relics and Genics" },
+  { key: "ex", label: "Extended Fes" },
+  { key: "u",  label: "Ultra Fes" },
+  { key: "b",  label: "Battle Pass" },
+  { key: "a",  label: "Festival" },
+  { key: "g",  label: "General" }
+];
+
+const CLASS_KEYS = [
+  { key: "atk",  label: "Attack" },
+  { key: "dest", label: "Destroy" },
+  { key: "spd",  label: "Speed" },
+  { key: "tec",  label: "Tech" },
+  { key: "supp", label: "Support" },
+  { key: "def",  label: "Defense" },
+  { key: "heal", label: "Heal" },
+  { key: "dbf",  label: "Debuff" }
+];
+
+function computeTierDistribution(charList) {
+  return Object.keys(TIER_SCORES).map(tier => ({
+    label: tier,
+    value: charList.filter(c => c.tier === tier).length
+  }));
+}
+
+function computeAveragesByGroup(charList, groupKeys) {
+  return groupKeys.map(({ key, label }) => {
+    const scored = charList.filter(c =>
+      c.opts && c.opts[key] === true && TIER_SCORES.hasOwnProperty(c.tier)
+    );
+    const count = scored.length;
+    const avg = count === 0
+      ? 0
+      : scored.reduce((sum, c) => sum + TIER_SCORES[c.tier], 0) / count;
+    return { label, value: Math.round(avg * 10) / 10, count };
+  });
+}
+
+function renderBarChart(containerEl, rows, { maxValue, colorFn, formatValue }) {
+  if (!containerEl) return;
+  containerEl.innerHTML = "";
+
+  rows.forEach(row => {
+    const pct = maxValue > 0 ? (row.value / maxValue) * 100 : 0;
+    const rowEl = document.createElement("div");
+    rowEl.className = "stat-bar-row";
+    rowEl.innerHTML = `
+      <div class="stat-bar-label">${row.label}</div>
+      <div class="stat-bar-track">
+        <div class="stat-bar-fill" style="width:${Math.max(pct, row.value > 0 ? 3 : 0)}%; background:${colorFn(row)};"></div>
+        <span class="stat-bar-value">${formatValue(row)}</span>
+      </div>
+    `;
+    containerEl.appendChild(rowEl);
+  });
+}
+
+// Computed once from the FULL roster, not the current search/filter —
+// this is a whole-site overview, same as the reference site's dashboard.
+function renderStats() {
+  const tierDist = computeTierDistribution(characters);
+  const maxCount = Math.max(1, ...tierDist.map(t => t.value));
+  renderBarChart(document.getElementById("stats-tier-dist"), tierDist, {
+    maxValue: maxCount,
+    colorFn: row => TIER_COLORS[row.label] || "#888",
+    formatValue: row => row.value
+  });
+
+  const rarityStats = computeAveragesByGroup(characters, RARITY_KEYS);
+  renderBarChart(document.getElementById("stats-rarity"), rarityStats, {
+    maxValue: 8,
+    colorFn: () => "#d4a017",
+    formatValue: row => `${row.value.toFixed(1)} (${row.count})`
+  });
+
+  const classStats = computeAveragesByGroup(characters, CLASS_KEYS);
+  renderBarChart(document.getElementById("stats-class"), classStats, {
+    maxValue: 8,
+    colorFn: () => "#a83232",
+    formatValue: row => `${row.value.toFixed(1)} (${row.count})`
+  });
+}
+</script>-->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.getElementById("toggle-stats");
+  const panel = document.getElementById("stats-panel");
+  if (!checkbox || !panel) return;
+
+  const isCollapsed = localStorage.getItem("stats_collapsed") === "true";
+  if (isCollapsed) {
+    checkbox.checked = true;
+    panel.classList.add("is-collapsed");
+  }
+
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      panel.classList.add("is-collapsed");
+      localStorage.setItem("stats_collapsed", "true");
+    } else {
+      panel.classList.remove("is-collapsed");
+      localStorage.setItem("stats_collapsed", "false");
+    }
+  });
+});
+</script>
+
 </body>
 
 </html>
-
