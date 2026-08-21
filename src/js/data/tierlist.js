@@ -2075,17 +2075,17 @@ dataSet[dataSetVersion].characterData = [
         "Good Yin and Crit Buffing Throughout her Kit lets her keep her damage between gauges"
       ],
       boons: [
-        "Skill 3 is Effectively Disposable allowing for freedom of use",
-        "Killers are also Below Average"
+        "Skill 3 is Effectively Disposable allowing for freedom of use"
       ],
       mixed: [
-        "Support is Below Average Throughout her Kit"
+        "Support is Below Average Throughout her Kit",
+        "Killers are also Below Average"
       ],
       cons: [
-        "Has P Issues and Lacks Def Down"
+        "Has P and Acc Issues and Lacks Def Down"
       ],
       extra: [
-        "ANOTHER generic slop BP unit effectively tethered to Cs2 that's just kinda average in everything but has no real notable quirks... great"
+        "ANOTHER generic slop BP unit effectively tethered to Cs2 that's just kinda average in everything but has no real notable quirks... great. Like every other bp unit except for Flandre, she's very low A and only here due to working with cs2. That said, her calcs and crit sustainability are genuinely good, so not a meme"
       ]
     }
   },
