@@ -2065,6 +2065,31 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "F1;4 Marisa",
+    img: "f1;4 marisa.webp",
+    tier: "A",
+    opts: { dest: true, b: true },
+    explanation: {
+      pros: [
+        "High Damage Across her Kit now supported by Real Element Consistency",
+        "Good Yin and Crit Buffing Throughout her Kit lets her keep her damage between gauges"
+      ],
+      boons: [
+        "Skill 3 is Effectively Disposable allowing for freedom of use",
+        "Killers are also Below Average"
+      ],
+      mixed: [
+        "Support is Below Average Throughout her Kit"
+      ],
+      cons: [
+        "Has P Issues and Lacks Def Down"
+      ],
+      extra: [
+        "ANOTHER generic slop BP unit effectively tethered to Cs2 that's just kinda average in everything but has no real notable quirks... great"
+      ]
+    }
+  },
+  {
     name: "B3 Seiran",
     img: "b3 seiran.webp",
     tier: "A",
@@ -2574,16 +2599,15 @@ dataSet[dataSetVersion].characterData = [
     opts: { dbf: true, r: true },
     explanation: {
       pros: [
-        "Great killers on p0 of all attacks",
-        "Decent Debuffs and Utility",
-        "Very story card friendly "
+        "Great Killers on All of Her Attacks giving her a Decent Damage Floor",
+        "Good Yang Debuffing Notably with Anthology + Re2.0 Buffs letting her Amplify Gauge 3 Damage a Lot"
       ],
       cons: [
-        "No AoE Anomaly Breaks, applies unbreakable AoE anoms inline. Can't break the anomalies she reflects either.",
-        "Struggles in Yang Atk, Support, Buff Sustainability. Carried by Atk Anoms but needs significant support.. (@)"
+        "Lacks Utility, notably in regards to having no AoE Anomaly Breaks"
       ],
       mixed: [
-        "While her Damage Isn't Bad (Killers, Rein + Bis and Debuffs) it isn't exactly good either."
+        "Severely Lacks Buffs outside of her Atk Anomalies",
+        "Personal Damage Caps are notably Below Average"
       ]
     }
   },
@@ -3154,6 +3178,28 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "LAST TESTED: Jan 2026"
+      ]
+    }
+  },
+  {
+    name: "C3 Kagerou",
+    img: "c3 kagerou.webp",
+    tier: "C",
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "High Supportive Capabilities Throughout her Kit, being Especially Consistent in the Yang Atk Aspect while keeping up Good Crit Buffs as Well",
+        "7/4 Breaker that agrees with its role (i.e. agi scaling + quick) lets her actually be a good Yang Driver Between Comps",
+        "High-Damaging AoE Spellcards and Last Word lets her be more than just a support bot"
+      ],
+      mixed: [
+        "Will have P Issues Between Gauges making her breaking and damaging roles less consistent"
+      ],
+      cons: [
+        "Solo LW with bad Gauge 3 Support Again so everything goes in the gutter",
+      ],
+      extra: [
+        "Perhaps the best Solo LW with potential to be decent in trios as a mini freeze-getsu but seems to have problems with p and maybe non-eff damage. Being Freeze is almost a con in and of itself due to lacking proper pairings making her support less universal but i guess have fun in your c3 yuyuko comps. Would be high SS with an AoE LW like Villain. Sad."
       ]
     }
   },
@@ -6563,6 +6609,28 @@ dataSet[dataSetVersion].characterData = [
         "Why does this unit exist???",
         "Girl why you so HP",
         "How is she doing this"
+      ]
+    }
+  },
+  {
+    name: "Ar8 Youmu",
+    img: "ar8 youmu.webp",
+    tier: "D",
+    opts: { spd: true, y: true },
+    explanation: {
+      pros: [
+        "Has Innate -4 Def Down on Both Yin and Yang before cards... lol",
+        "Somehow, Someway, her damage is... very good both for her rarity and her tier. Lol. "
+      ],
+      boons: [
+        "Mini Mima skill is pretty cool"
+      ],
+      cons: [
+        "It's a Yukkuri, there's a limit to what they can do in regards to anything for conventional tierlist standards. Yukkuris like this one are designed for unconventional play, so have fun.",
+        "Mega ass P issues"
+      ],
+      extra: [
+        "Spd with 50 agi. Lol"
       ]
     }
   },
