@@ -266,9 +266,11 @@
       </div>
 
     </div>
+
+    <div id="stats-summary" class="stats-summary"></div>
+
   </div>
 </div>
-
 
   <p>I think Bl4 (Cf1 Reimu) can be S given time. She needs to have proven feats but she's quite decent as basically the best pure breaker in the game.</p>
 
@@ -441,6 +443,7 @@
   buildAllCards();   // Creates every card ONCE in the DOM
   applyFilters();    // Applies initial visibility and updates unit counts
   renderStats();
+  renderStatsSummary();
 
   // 3. Attach event listener to search input
   const searchInput = document.getElementById("charSearchInput");
@@ -1268,6 +1271,11 @@ document.addEventListener('DOMContentLoaded', () => {
   <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="quick-btn" title="Now tracking 870+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy">Q&A Form</a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="quick-btn">Responses</a>
   <div class="quick-btn" onclick="openModal('changelog-modal')">Changelog</div>
+  <div class="jtt">
+  <button class="tier-nav-btn" id="back-to-top-btn" onclick="scrollToTop()">
+    ↑ Back to Top
+  </button>
+  </div>
   <div class="search-container">
   <input
     type="text" 
@@ -1386,6 +1394,37 @@ function renderStats() {
       : `<div class="vbar-tier">${scoreToTierLabel(row.value)}</div><div class="vbar-count">(${row.count})</div>`,
     tooltip: row => `${row.label} — avg ${row.value.toFixed(1)}, ${row.count} characters`
   });
+}
+
+function computeOverallStats(charList) {
+  const scores = charList
+    .filter(c => TIER_SCORES.hasOwnProperty(c.tier))
+    .map(c => TIER_SCORES[c.tier])
+    .sort((a, b) => a - b);
+
+  const count = scores.length;
+  if (count === 0) return { count: 0, mean: 0, median: 0 };
+
+  const mean = scores.reduce((sum, s) => sum + s, 0) / count;
+  const mid = Math.floor(count / 2);
+  const median = count % 2 === 0 ? (scores[mid - 1] + scores[mid]) / 2 : scores[mid];
+
+  return { count, mean: Math.round(mean * 10) / 10, median: Math.round(median * 10) / 10 };
+}
+
+function renderStatsSummary() {
+  const summaryEl = document.getElementById("stats-summary");
+  if (!summaryEl) return;
+
+  const totalTracked = characters.filter(c => c.tier !== "Dummy").length;
+  const { count, mean, median } = computeOverallStats(characters);
+
+  summaryEl.innerHTML = `
+    <span><strong>${totalTracked}</strong> Total Characters Tracked</span>
+    <span><strong>${count}</strong> Tiered (Excl. F / Yukkuri)</span>
+    <span>Mean Tier: <strong>${scoreToTierLabel(mean)}</strong> (${mean.toFixed(1)})</span>
+    <span>Median Tier: <strong>${scoreToTierLabel(median)}</strong> (${median.toFixed(1)})</span>
+  `;
 }
 </script>
 
