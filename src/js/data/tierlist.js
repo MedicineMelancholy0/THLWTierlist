@@ -2,20 +2,8 @@ const dataSet = {};
 const dataSetVersion = "tierlist"; 
 dataSet[dataSetVersion] = {};
 
-function toggleTierRow(tierId) {
-  const container = document.getElementById(tierId);
-  const toggleBtn = document.getElementById(`toggle-btn-${tierId}`);
-  
-  if (!container) return;
-
-  const isNowCollapsed = container.classList.toggle("collapsed");
-
-  if (toggleBtn) {
-    toggleBtn.textContent = isNowCollapsed 
-      ? `▶ Show ${tierId} Tier (${container.children.length} Units)` 
-      : `▼ Hide ${tierId} Tier`;
-  }
-}
+const CLASS_FILTER_KEYS = ["def", "supp", "heal", "dbf", "atk", "tec", "spd", "dest"];
+const RARITY_FILTER_KEYS = ["p", "e", "ph", "r", "ex", "u", "b", "a", "g", "y"];
 
 dataSet[dataSetVersion].options = [
   { name: "Filter Pure Fes", key: "p", tooltip: "Check this to remove Pure Fes Characters" },
@@ -148,7 +136,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "Lr1 Renko - Gengetsu", 
+    name: "Lr1 Renko (Gengetsu)", 
     img: "SPOILER_gengetsu.webp", 
     tier: "EX", 
     opts: { r: true, tec: true },
@@ -384,7 +372,7 @@ dataSet[dataSetVersion].characterData = [
     opts: { atk: true, e: true },
     explanation: {
       pros: [
-        "Thanks to very high damage complimented further by 70% damage to res her nukes are incredibly versatile and reliable on killer. Basically the best g3 nuke in the game on killer lmao.",
+        "Thanks to very high damage complimented further by 70% damage to res her nukes are incredibly versatile and reliable on killer. She is one the best g3 nukes in the game on killer lmao.",
         "Scintillating Crit Buffs and high overall raw buffs her kit in synergy with D cards with gives her a good supportive niche that complements her damage in tandem with her decent innate Util"
       ],
       mixed: [
@@ -643,7 +631,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "Lm1 Maribel - Mugetsu", 
+    name: "Lm1 Maribel (Mugetsu)", 
     img: "mugetsu.webp", 
     tier: "S", 
     opts: { spd: true, r: true },
@@ -1609,7 +1597,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Lr1 Renko - Shinki",
+    name: "Lr1 Renko (Shinki)",
     img: "lr1 shinki.webp",
     tier: "A",
     opts: { atk: true, r: true },
@@ -2065,6 +2053,31 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "F1;4 Marisa",
+    img: "f1;4 marisa.webp",
+    tier: "A",
+    opts: { dest: true, b: true },
+    explanation: {
+      pros: [
+        "High Damage Across her Kit now supported by Real Element Consistency",
+        "Good Yin and Crit Buffing Throughout her Kit lets her keep her damage between gauges"
+      ],
+      boons: [
+        "Skill 3 is Effectively Disposable allowing for freedom of use"
+      ],
+      mixed: [
+        "Support is Below Average Throughout her Kit",
+        "Killers are also Below Average"
+      ],
+      cons: [
+        "Has P and Acc Issues and Lacks Def Down"
+      ],
+      extra: [
+        "ANOTHER generic slop BP unit effectively tethered to Cs2 that's just kinda average in everything but has no real notable quirks... great. Like every other bp unit except for Flandre, she's very low A and only here due to working with cs2. That said, her calcs and crit sustainability are genuinely good, so not a meme"
+      ]
+    }
+  },
+  {
     name: "B3 Seiran",
     img: "b3 seiran.webp",
     tier: "A",
@@ -2259,7 +2272,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "C3 Byakuren",
-    img: "c3 byakuren.webp",
+    img: "c3 byakuren.jfif",
     tier: "B",
     opts: { dest: true, e: true },
     explanation: {
@@ -2574,16 +2587,15 @@ dataSet[dataSetVersion].characterData = [
     opts: { dbf: true, r: true },
     explanation: {
       pros: [
-        "Great killers on p0 of all attacks",
-        "Decent Debuffs and Utility",
-        "Very story card friendly "
+        "Great Killers on All of Her Attacks giving her a Decent Damage Floor",
+        "Good Yang Debuffing Notably with Anthology + Re2.0 Buffs letting her Amplify Gauge 3 Damage a Lot"
       ],
       cons: [
-        "No AoE Anomaly Breaks, applies unbreakable AoE anoms inline. Can't break the anomalies she reflects either.",
-        "Struggles in Yang Atk, Support, Buff Sustainability. Carried by Atk Anoms but needs significant support.. (@)"
+        "Lacks Utility, notably in regards to having no AoE Anomaly Breaks"
       ],
       mixed: [
-        "While her Damage Isn't Bad (Killers, Rein + Bis and Debuffs) it isn't exactly good either."
+        "Severely Lacks Buffs outside of her Atk Anomalies",
+        "Personal Damage Caps are notably Below Average"
       ]
     }
   },
@@ -3154,6 +3166,28 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "LAST TESTED: Jan 2026"
+      ]
+    }
+  },
+  {
+    name: "C3 Kagerou",
+    img: "c3 kagerou.webp",
+    tier: "C",
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "High Supportive Capabilities Throughout her Kit, being Especially Consistent in the Yang Atk Aspect while keeping up Good Crit Buffs as Well",
+        "7/4 Breaker that agrees with its role (i.e. agi scaling + quick) lets her actually be a good Yang Driver Between Comps",
+        "High-Damaging AoE Spellcards and Last Word lets her be more than just a support bot"
+      ],
+      mixed: [
+        "Will have P Issues Between Gauges making her breaking and damaging roles less consistent"
+      ],
+      cons: [
+        "Solo LW with bad Gauge 3 Support Again so everything goes in the gutter",
+      ],
+      extra: [
+        "Perhaps the best Solo LW with potential to be decent in trios as a mini freeze-getsu but seems to have problems with p and maybe non-eff damage. Being Freeze is almost a con in and of itself due to lacking proper pairings making her support less universal but i guess have fun in your c3 yuyuko comps. Would be high SS with an AoE LW like Villain. Sad."
       ]
     }
   },
@@ -5119,7 +5153,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A12& Nue",
-    img: "a12& nue.webp",
+    img: "a12& nue.jfif",
     tier: "D",
     opts: { dest: true, ex: true },
     explanation: {
@@ -5617,6 +5651,34 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "This character is extremely sad. Her kit lures players in and when they obtain her they realize how quickly she falls off in practice."
+      ]
+    }
+  },
+  { 
+    name: "R8 Youmu", 
+    img: "r8 youmu.webp", 
+    tier: "D", 
+    opts: { spd: true, u: true },
+    explanation: {
+      pros: [
+        "High Damage Floor, Low Damage Ceiling (Unless you can hit her very niche killers)"
+      ],
+      boons: [
+        "Fairy Killer"
+      ],
+      mixed: [
+        "RNG Anom Breaks",
+        "Self Setup is... ok but needs help"
+      ],
+      cons: [
+        "No Innate Acc",
+        "Bad Killers",
+        "Very Mixed Breaks",
+        "Basically does nothing for support"
+      ],
+      extra: [
+        "Rebirth helps her a lot.",
+        "first solo phantasm 4t, good for Fire EX"
       ]
     }
   },
@@ -6156,7 +6218,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A8 Tewi",
-    img: "a8 tewi.webp",
+    img: "a8 tewi.jfif",
     tier: "D",
     opts: { dest: true, a: true },
     explanation: {
@@ -6566,6 +6628,28 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  {
+    name: "Ar8 Youmu",
+    img: "ar8 youmu.webp",
+    tier: "D",
+    opts: { spd: true, y: true },
+    explanation: {
+      pros: [
+        "Has Innate -4 Def Down on Both Yin and Yang before cards... lol",
+        "Somehow, Someway, her damage is... very good both for her rarity and her tier. Lol. "
+      ],
+      boons: [
+        "Mini Mima skill is pretty cool"
+      ],
+      cons: [
+        "It's a Yukkuri, there's a limit to what they can do in regards to anything for conventional tierlist standards. Yukkuris like this one are designed for unconventional play, so have fun.",
+        "Mega ass P issues"
+      ],
+      extra: [
+        "Spd with 50 agi. Lol"
+      ]
+    }
+  },
   // E tier
   { 
   name: "F1;4 Reimu", 
@@ -6878,34 +6962,6 @@ dataSet[dataSetVersion].characterData = [
         "Rather Selfish, Buffs aren't that good either",
         "Solo Target LW",
         "Bad Killers"
-      ]
-    }
-  },
-  { 
-    name: "R8 Youmu", 
-    img: "r8 youmu.webp", 
-    tier: "E", 
-    opts: { spd: true, u: true },
-    explanation: {
-      pros: [
-        "High Damage Floor, Low Damage Ceiling (Unless you can hit her very niche killers)"
-      ],
-      boons: [
-        "Fairy Killer"
-      ],
-      mixed: [
-        "RNG Anom Breaks",
-        "Self Setup is... ok but needs help"
-      ],
-      cons: [
-        "No Innate Acc",
-        "Bad Killers",
-        "Very Mixed Breaks",
-        "Basically does nothing for support"
-      ],
-      extra: [
-        "Rebirth helps her a lot.",
-        "first solo phantasm 4t, good for Fire EX"
       ]
     }
   },
@@ -7277,7 +7333,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "A13 Yoshika", 
-    img: "a13 yoshika.webp", 
+    img: "a13 yoshika.jfif", 
     tier: "E", 
     opts: { dbf: true, a: true },
     explanation: {
