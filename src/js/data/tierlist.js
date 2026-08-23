@@ -2,20 +2,8 @@ const dataSet = {};
 const dataSetVersion = "tierlist"; 
 dataSet[dataSetVersion] = {};
 
-function toggleTierRow(tierId) {
-  const container = document.getElementById(tierId);
-  const toggleBtn = document.getElementById(`toggle-btn-${tierId}`);
-  
-  if (!container) return;
-
-  const isNowCollapsed = container.classList.toggle("collapsed");
-
-  if (toggleBtn) {
-    toggleBtn.textContent = isNowCollapsed 
-      ? `▶ Show ${tierId} Tier (${container.children.length} Units)` 
-      : `▼ Hide ${tierId} Tier`;
-  }
-}
+const CLASS_FILTER_KEYS = ["def", "supp", "heal", "dbf", "atk", "tec", "spd", "dest"];
+const RARITY_FILTER_KEYS = ["p", "e", "ph", "r", "ex", "u", "b", "a", "g", "y"];
 
 dataSet[dataSetVersion].options = [
   { name: "Filter Pure Fes", key: "p", tooltip: "Check this to remove Pure Fes Characters" },
