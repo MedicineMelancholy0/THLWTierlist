@@ -87,6 +87,7 @@
       <p>Only EX, SS, S, and Yukkuri tiers are ordered from left (best) to right (worst).</p>
       <p>Ratings are only based on CQ (DS) and EBL (NOT EBR) performance of a maxed-out 25 LUCK unit (including FR) with ideal story cards (INCLUDING D CARDS AND ANTHOLOGY CARDS); therefore, the tierlist is not newbie-friendly.</p>
       <p>Contact: This tierlist is primarily managed by medicine.melancholy and _hibi_ on discord. Friend either of us directly or contact us on THLWU (or use the form link)</p>
+      <p><b>UPCOMING PLANS:</b> I plan to feature calcs in character explanation overlays eventually, </p>
       </div>
 
     <div class="Important-Links">
@@ -241,39 +242,46 @@
   </div>
 
 </div>
-<!--
+
+<!-- Stats -->
+
 <input type="checkbox" id="toggle-stats" class="visually-hidden-checkbox">
 <label for="toggle-stats" class="filters-toggle-label">Show/Hide Tier Statistics</label>
 
 <div id="stats-panel" class="filters-panel">
   <div class="stats-content">
+    <div class="stats-columns">
 
-    <div class="stats-section">
-      <div class="stats-heading">Tier Distribution</div>
-      <div id="stats-tier-dist"></div>
+      <div class="stats-section">
+        <div class="stats-heading">Tier Distribution</div>
+        <div id="stats-tier-dist"></div>
+      </div>
+
+      <div class="stats-section">
+        <div class="stats-heading">Average Tier by Rarity</div>
+        <div id="stats-rarity"></div>
+      </div>
+
+      <div class="stats-section">
+        <div class="stats-heading">Average Tier by Class</div>
+        <div id="stats-class"></div>
+      </div>
+
     </div>
 
-    <div class="stats-section">
-      <div class="stats-heading">Average Tier by Rarity</div>
-      <div id="stats-rarity"></div>
-    </div>
-
-    <div class="stats-section">
-      <div class="stats-heading">Average Tier by Class</div>
-      <div id="stats-class"></div>
-    </div>
+    <div id="stats-summary" class="stats-summary"></div>
 
   </div>
 </div>
 
--->
-
+  <div style="text-align:center">
   <p>I think Bl4 (Cf1 Reimu) can be S given time. She needs to have proven feats but she's quite decent as basically the best pure breaker in the game.</p>
+  </div>
 
 <!-- EX -->
 <div class="tier-group" id="tier-group-EX">
   <div class="tier-section">
-    <div class="tiers">
+    <div class="tiers" onclick="toggleTierRow('EX')">
       <img src="src/assets/tiers/ex3.png" class="tier-banner" alt="EX Tier">
     </div>
     <div class="tier-expl" onclick="openModal('ex-tier-modal')">
@@ -288,7 +296,7 @@
 <!-- SS -->
 <div class="tier-group" id="tier-group-SS">
   <div class="tier-section">
-    <div class="tiers">
+    <div class="tiers" onclick="toggleTierRow('SS')"> 
       <img src="src/assets/tiers/ss3.png" class="tier-banner" alt="SS Tier">
     </div>
     <div class="tier-expl" onclick="openModal('ss-tier-modal')">
@@ -303,7 +311,7 @@
   <!-- S -->
    <div class="tier-group" id="tier-group-S">
     <div class="tier-section">
-      <div class="tiers">
+      <div class="tiers" onclick="toggleTierRow('S')">
         <img src="src/assets/tiers/s3.png" class="tier-banner" alt="S Tier">
       </div>
       <div class="tier-expl" onclick="openModal('s-tier-modal')">
@@ -319,7 +327,7 @@
   <!-- A -->
    <div class="tier-group" id="tier-group-A">
     <div class="tier-section">
-      <div class="tiers">
+      <div class="tiers" onclick="toggleTierRow('A')">
         <img src="src/assets/tiers/a3.png" class="tier-banner" alt="A Tier">
       </div>
       <div class="tier-expl" onclick="openModal('a-tier-modal')">
@@ -335,7 +343,7 @@
   <!-- B -->
    <div class="tier-group" id="tier-group-B">
     <div class="tier-section">
-      <div class="tiers">
+      <div class="tiers" onclick="toggleTierRow('B')">
         <img src="src/assets/tiers/b3.png" class="tier-banner" alt="B Tier">
       </div>
       <div class="tier-expl" onclick="openModal('b-tier-modal')">
@@ -351,7 +359,7 @@
   <!-- C -->
    <div class="tier-group" id="tier-group-C">
     <div class="tier-section">
-    <div class="tiers">
+    <div class="tiers" onclick="toggleTierRow('C')">
       <img src="src/assets/tiers/c4.png" class="tier-banner" alt="C Tier">
     </div>
     <div class="tier-expl" onclick="openModal('c-tier-modal')">
@@ -367,7 +375,7 @@
   <!-- D -->
    <div class="tier-group" id="tier-group-D">
     <div class="tier-section">
-    <div class="tiers">
+    <div class="tiers" onclick="toggleTierRow('D')">
       <img src="src/assets/tiers/d3.png" class="tier-banner" alt="D Tier">
     </div>
     <div class="tier-expl" onclick="openModal('d-tier-modal')">
@@ -383,7 +391,7 @@
   <!-- E -->
    <div class="tier-group" id="tier-group-E">
     <div class="tier-section">
-    <div class="tiers">
+    <div class="tiers" onclick="toggleTierRow('E')">
       <img src="src/assets/tiers/e3.png" class="tier-banner" alt="E Tier">
     </div>
     <div class="tier-expl" onclick="openModal('e-tier-modal')">
@@ -410,14 +418,10 @@
 
   <div class="tier-group" id="tier-group-Yukkuri">
     <div class="tier-section">
-    <div class="tiers">
+    <div class="tiers" onclick="toggleTierRow('Yukkuri')">
       <img src="src/assets/tiers/yukkuri2.png" class="tier-banner" alt="Yukkuri Tier">
     </div>
     <div class="tier-expl" onclick="openModal('y-tier-modal')">Tier... Explanation... (Ordered)</div>
-  </div>
-
-  <div id="toggle-btn-Y" class="tier-toggle-bar" onclick="toggleTierRow('Yukkuri')">
-     ▼ Hide Yukkuri Tier
   </div>
 
   <div id="Yukkuri" class="tier-row"></div>
@@ -442,7 +446,8 @@
   // 2. Build cards and apply initial filters + tier counts
   buildAllCards();   // Creates every card ONCE in the DOM
   applyFilters();    // Applies initial visibility and updates unit counts
-  // renderStats();
+  renderStats();
+  renderStatsSummary();
 
   // 3. Attach event listener to search input
   const searchInput = document.getElementById("charSearchInput");
@@ -528,6 +533,8 @@
     const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
       .filter(box => box.id !== "toggle-intro" && box.id !== "toggle-filters" && box.id !== "toggle-stats");
     const activeKeys = checkedBoxes.map(box => box.value);
+    const activeClassKeys = activeKeys.filter(key => CLASS_FILTER_KEYS.includes(key));
+    const activeRarityKeys = activeKeys.filter(key => RARITY_FILTER_KEYS.includes(key));
 
     let totalVisible = 0;
 
@@ -538,16 +545,18 @@
 
       let tierVisibleCount = 0;
 
-      container.querySelectorAll(".char-card").forEach(card => {
-        const matchesSearch = card.dataset.name.includes(searchQuery);
-        let matchesBoxes = true;
+     container.querySelectorAll(".char-card").forEach(card => {
+      const matchesSearch = card.dataset.name.includes(searchQuery);
+      let matchesBoxes = true;
 
-        if (activeKeys.length > 0) {
-          const opts = card.dataset.opts ? card.dataset.opts.split(" ") : [];
-          matchesBoxes = activeKeys.some(key => opts.includes(key));
-        }
+      if (activeClassKeys.length > 0 || activeRarityKeys.length > 0) {
+        const opts = card.dataset.opts ? card.dataset.opts.split(" ") : [];
+        const matchesClass = activeClassKeys.length === 0 || activeClassKeys.some(key => opts.includes(key));
+        const matchesRarity = activeRarityKeys.length === 0 || activeRarityKeys.some(key => opts.includes(key));
+        matchesBoxes = matchesClass && matchesRarity;
+      }
 
-        const isMatch = matchesSearch && matchesBoxes;
+      const isMatch = matchesSearch && matchesBoxes;
         card.classList.toggle("hidden", !isMatch);
         if (isMatch) tierVisibleCount++;
       });
@@ -558,8 +567,7 @@
 
       if (isSearching && tierVisibleCount > 0) {
         container.classList.remove("collapsed");
-        const toggleBtn = document.getElementById(`toggle-btn-${tier}`);
-        if (toggleBtn) toggleBtn.textContent = `▼ Hide ${tier} Tier`;
+        if (group) group.classList.remove("tier-collapsed");
       }
 
       totalVisible += tierVisibleCount;
@@ -666,13 +674,8 @@
 </script>
 
 <!-- Fart Tier -->
-<div class="f-tier-section" id="tier-group-F">
-  <div class="f-tier-title">F Tier</div>
-
-  <!-- Toggle Button -->
-  <div id="toggle-btn-F" class="tier-toggle-bar" onclick="toggleTierRow('F')">
-    ▶ Show F Tier
-  </div>
+<div class="f-tier-section tier-collapsed" id="tier-group-F">
+  <div class="f-tier-title" onclick="toggleTierRow('F')">F Tier</div>
 
   <!-- Collapsible Container (collapsed by default) -->
   <div id="F" class="f-tier-content collapsed">
@@ -751,7 +754,7 @@
   <img src='src/assets/chara/l1 kuro.png' alt='title1' width="150" height="60">
   <p><b>Kuro</b> - ✞︎☜︎☼︎✡︎📬︎ ✞︎☜︎☼︎✡︎📬︎ ✋︎☠︎❄︎☜︎☼︎☜︎💧︎❄︎✋︎☠︎☝︎</p>
 
-  <p>Tierlist Beta 0.1.1, Copyright @MedicineMelancholy0, Updated 17/8/2026</p>
+  <p>Tierlist Beta 0.1.2, Copyright @MedicineMelancholy0, Updated 17/8/2026</p>
   <p>Thank you to Fritty, Chonmi, Firework and Okina Nekomata for WebDev Assistance</p>
 
   <div id="expls" class="modal">
@@ -1180,16 +1183,13 @@ if (document.fonts) {
 <script>
 function toggleTierRow(tierId) {
   const container = document.getElementById(tierId);
-  const toggleBtn = document.getElementById(`toggle-btn-${tierId}`);
+  const tierGroup = document.getElementById(`tier-group-${tierId}`);
   if (!container) return;
 
   const isNowCollapsed = container.classList.toggle("collapsed");
 
-  if (toggleBtn) {
-    const visibleCount = container.querySelectorAll('.char-card:not(.hidden)').length;
-    toggleBtn.textContent = isNowCollapsed 
-      ? `▶ Show ${tierId} Tier (${visibleCount} Units)` 
-      : `▼ Hide ${tierId} Tier`;
+  if (tierGroup) {
+    tierGroup.classList.toggle("tier-collapsed", isNowCollapsed);
   }
 }
 </script>
@@ -1275,6 +1275,11 @@ document.addEventListener('DOMContentLoaded', () => {
   <a href="https://forms.gle/ZNQekaaZD7ubDtpQ8" class="quick-btn" title="Now tracking 870+ forms! The form is checked roughly once per day, dms accepted asap, all data is valuable and will get a response. Some changes may take a bit due to schedule issues. You can also DM me on discord if you want. My @ is medicine.melancholy">Q&A Form</a>
   <a href="https://medicinemelancholy0.github.io/THLWTierlist/form" class="quick-btn">Responses</a>
   <div class="quick-btn" onclick="openModal('changelog-modal')">Changelog</div>
+  <div class="jtt">
+  <button class="tier-nav-btn" id="back-to-top-btn" onclick="scrollToTop()">
+    ↑ Back to Top
+  </button>
+  </div>
   <div class="search-container">
   <input
     type="text" 
@@ -1285,107 +1290,148 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </div>
 
-<!--
+<!-- piss ass stats -->
 <script>
 
 const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4, C: 3, D: 2, E: 1 };
 
-// Solid versions of your tier colors — your #EX/#SS/etc. rules use
-// low-opacity rgba meant to blend with the background image, which
-// would be too faint against this panel's solid background.
 const TIER_COLORS = {
   EX: "#e91e8f", SS: "#8e5bd6", S: "#e8b4b8", A: "#f0af6e",
   B: "#8fbf82", C: "#5aa9e6", D: "#6a41db", E: "#cf9a5c"
 };
 
+const SCORE_TIER_LABELS = { 8: "EX", 7: "SS", 6: "S", 5: "A", 4: "B", 3: "C", 2: "D", 1: "E" };
+function scoreToTierLabel(avg) {
+  const rounded = Math.min(8, Math.max(1, Math.round(avg)));
+  return SCORE_TIER_LABELS[rounded];
+}
+
+// `short` = axis label (fits narrow columns), `label` = full name (shown on hover)
 const RARITY_KEYS = [
-  { key: "p",  label: "Pure Fes" },
-  { key: "e",  label: "Epic Fes" },
-  { key: "ph", label: "Phantasm Fes" },
-  { key: "r",  label: "Relics and Genics" },
-  { key: "ex", label: "Extended Fes" },
-  { key: "u",  label: "Ultra Fes" },
-  { key: "b",  label: "Battle Pass" },
-  { key: "a",  label: "Festival" },
-  { key: "g",  label: "General" }
+  { key: "p",  label: "Pure Fes", short: "Pure" },
+  { key: "e",  label: "Epic Fes", short: "Epic" },
+  { key: "ph", label: "Phantasm Fes", short: "Phantasm" },
+  { key: "r",  label: "Relics and Genics", short: "R&G" },
+  { key: "ex", label: "Extended Fes", short: "ExFes" },
+  { key: "u",  label: "Ultra Fes", short: "Ultra" },
+  { key: "b",  label: "Battle Pass", short: "BP" },
+  { key: "a",  label: "Festival", short: "Fes" },
+  { key: "g",  label: "General", short: "Gen" }
 ];
 
 const CLASS_KEYS = [
-  { key: "atk",  label: "Attack" },
-  { key: "dest", label: "Destroy" },
-  { key: "spd",  label: "Speed" },
-  { key: "tec",  label: "Tech" },
-  { key: "supp", label: "Support" },
-  { key: "def",  label: "Defense" },
-  { key: "heal", label: "Heal" },
-  { key: "dbf",  label: "Debuff" }
+  { key: "atk",  label: "Attack", short: "Attack" },
+  { key: "dest", label: "Destroy", short: "Destroy" },
+  { key: "spd",  label: "Speed", short: "Speed" },
+  { key: "tec",  label: "Tech", short: "Tech" },
+  { key: "supp", label: "Support", short: "Support" },
+  { key: "def",  label: "Defense", short: "Defense" },
+  { key: "heal", label: "Heal", short: "Heal" },
+  { key: "dbf",  label: "Debuff", short: "Debuff" }
 ];
 
 function computeTierDistribution(charList) {
   return Object.keys(TIER_SCORES).map(tier => ({
-    label: tier,
+    label: tier, short: tier,
     value: charList.filter(c => c.tier === tier).length
   }));
 }
 
 function computeAveragesByGroup(charList, groupKeys) {
-  return groupKeys.map(({ key, label }) => {
+  return groupKeys.map(({ key, label, short }) => {
     const scored = charList.filter(c =>
       c.opts && c.opts[key] === true && TIER_SCORES.hasOwnProperty(c.tier)
     );
     const count = scored.length;
-    const avg = count === 0
-      ? 0
-      : scored.reduce((sum, c) => sum + TIER_SCORES[c.tier], 0) / count;
-    return { label, value: Math.round(avg * 10) / 10, count };
+    const avg = count === 0 ? 0 : scored.reduce((sum, c) => sum + TIER_SCORES[c.tier], 0) / count;
+    return { label, short, value: Math.round(avg * 10) / 10, count };
   });
 }
 
-function renderBarChart(containerEl, rows, { maxValue, colorFn, formatValue }) {
+function renderVBarChart(containerEl, rows, { maxValue, colorFn, renderTop, tooltip }) {
   if (!containerEl) return;
   containerEl.innerHTML = "";
+  containerEl.classList.add("vbar-chart");
 
   rows.forEach(row => {
-    const pct = maxValue > 0 ? (row.value / maxValue) * 100 : 0;
-    const rowEl = document.createElement("div");
-    rowEl.className = "stat-bar-row";
-    rowEl.innerHTML = `
-      <div class="stat-bar-label">${row.label}</div>
-      <div class="stat-bar-track">
-        <div class="stat-bar-fill" style="width:${Math.max(pct, row.value > 0 ? 3 : 0)}%; background:${colorFn(row)};"></div>
-        <span class="stat-bar-value">${formatValue(row)}</span>
+    const pct = maxValue > 0 ? Math.min(100, (row.value / maxValue) * 100) : 0;
+    const col = document.createElement("div");
+    col.className = "vbar-col";
+    if (tooltip) col.title = tooltip(row);
+
+    col.innerHTML = `
+      <div class="vbar-value">${renderTop(row)}</div>
+      <div class="vbar-track">
+        <div class="vbar-fill" style="height:${row.value > 0 ? Math.max(pct, 3) : 0}%; background:${colorFn(row)};"></div>
       </div>
+      <div class="vbar-label">${row.short}</div>
     `;
-    containerEl.appendChild(rowEl);
+    containerEl.appendChild(col);
   });
 }
 
-// Computed once from the FULL roster, not the current search/filter —
-// this is a whole-site overview, same as the reference site's dashboard.
 function renderStats() {
   const tierDist = computeTierDistribution(characters);
   const maxCount = Math.max(1, ...tierDist.map(t => t.value));
-  renderBarChart(document.getElementById("stats-tier-dist"), tierDist, {
+  renderVBarChart(document.getElementById("stats-tier-dist"), tierDist, {
     maxValue: maxCount,
     colorFn: row => TIER_COLORS[row.label] || "#888",
-    formatValue: row => row.value
+    renderTop: row => `<div class="vbar-tier">${row.value}</div>`,
+    tooltip: row => `${row.label} Tier — ${row.value} characters`
   });
 
   const rarityStats = computeAveragesByGroup(characters, RARITY_KEYS);
-  renderBarChart(document.getElementById("stats-rarity"), rarityStats, {
+  renderVBarChart(document.getElementById("stats-rarity"), rarityStats, {
     maxValue: 8,
     colorFn: () => "#d4a017",
-    formatValue: row => `${row.value.toFixed(1)} (${row.count})`
+    renderTop: row => row.count === 0
+      ? `<div class="vbar-tier">—</div>`
+      : `<div class="vbar-tier">${scoreToTierLabel(row.value)}</div><div class="vbar-count">(${row.count})</div>`,
+    tooltip: row => `${row.label} — avg ${row.value.toFixed(1)}, ${row.count} characters`
   });
 
   const classStats = computeAveragesByGroup(characters, CLASS_KEYS);
-  renderBarChart(document.getElementById("stats-class"), classStats, {
+  renderVBarChart(document.getElementById("stats-class"), classStats, {
     maxValue: 8,
     colorFn: () => "#a83232",
-    formatValue: row => `${row.value.toFixed(1)} (${row.count})`
+    renderTop: row => row.count === 0
+      ? `<div class="vbar-tier">—</div>`
+      : `<div class="vbar-tier">${scoreToTierLabel(row.value)}</div><div class="vbar-count">(${row.count})</div>`,
+    tooltip: row => `${row.label} — avg ${row.value.toFixed(1)}, ${row.count} characters`
   });
 }
-</script>-->
+
+function computeOverallStats(charList) {
+  const scores = charList
+    .filter(c => TIER_SCORES.hasOwnProperty(c.tier))
+    .map(c => TIER_SCORES[c.tier])
+    .sort((a, b) => a - b);
+
+  const count = scores.length;
+  if (count === 0) return { count: 0, mean: 0, median: 0 };
+
+  const mean = scores.reduce((sum, s) => sum + s, 0) / count;
+  const mid = Math.floor(count / 2);
+  const median = count % 2 === 0 ? (scores[mid - 1] + scores[mid]) / 2 : scores[mid];
+
+  return { count, mean: Math.round(mean * 10) / 10, median: Math.round(median * 10) / 10 };
+}
+
+function renderStatsSummary() {
+  const summaryEl = document.getElementById("stats-summary");
+  if (!summaryEl) return;
+
+  const totalTracked = characters.filter(c => c.tier !== "Dummy").length;
+  const { count, mean, median } = computeOverallStats(characters);
+
+  summaryEl.innerHTML = `
+    <span><strong>${totalTracked}</strong> Total Characters Tracked</span>
+    <span><strong>${count}</strong> Tiered (Excl. F / Yukkuri)</span>
+    <span>Mean Tier: <strong>${scoreToTierLabel(mean)}</strong> (${mean.toFixed(1)})</span>
+    <span>Median Tier: <strong>${scoreToTierLabel(median)}</strong> (${median.toFixed(1)})</span>
+  `;
+}
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
