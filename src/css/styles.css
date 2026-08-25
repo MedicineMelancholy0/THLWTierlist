@@ -105,6 +105,9 @@ a:link {
   background-color: #660000;
   padding: 8px 12px;
   border-radius: 6px;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
