@@ -850,31 +850,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "C3 Sakuya", 
-    img: "c3 sakuya2.webp", 
-    tier: "S", 
-    opts: { supp: true, e: true },
-    explanation: {
-      pros: [
-        "Powerful Last Word Complemented by Dmg to Eff and Res"
-      ],
-      mixed: [
-        "Util and Support, while having a good start, befuddled due to having below average breaks (5 late) for her tier while wanting to conserve her skill 2 for the second/third gauge.",
-        "All this is exemplified by lacking Yang Atk and Agility buffs between gauges which you would expect better from for her tier."
-      ],
-      cons: [
-        "Lacking Youkai Killer with Subpar AoE killers hurts her Gauge 1/2 Perfomance"
-      ],
-      nitpick: [
-        "LW Doesn't break Poison"
-      ],
-      extra: [
-        "Ex in swimsuit just due to her sheer versatility in support and damage. However swimsuit as a niche has very little standing and the rest of her kit isn't really aging that well tbh she is mostly still SS due to technicality",
-        "NOTABLE PAIRINGS (Not included in tiering): Again, basically any yang unit that isn't metal. Ideally someone who can cover her lackluster AoE nuke. Doesn't mesh with Ex Mamizou quite as well as you'd like but can still work."
-      ]
-    }
-  },
-  { 
     name: "C5= Kaguya", 
     img: "c35= kaguya.webp", 
     tier: "S", 
@@ -944,6 +919,31 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Essentially this character just doesn’t have enough of anything to be higher. Breaks, buffs, etc all basically just passing marks but she is basically kinda just a yang version of Chimata with worse killer and card options. Run sanshoku card on her Last Word (50% body -2 yang def)"
+      ]
+    }
+  },
+  { 
+    name: "C3 Sakuya", 
+    img: "c3 sakuya2.webp", 
+    tier: "S", 
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Powerful Last Word Complemented by Dmg to Eff and Res"
+      ],
+      mixed: [
+        "Util and Support, while having a good start, befuddled due to having below average breaks (5 late) for her tier while wanting to conserve her skill 2 for the second/third gauge.",
+        "All this is exemplified by lacking Yang Atk and Agility buffs between gauges which you would expect better from for her tier."
+      ],
+      cons: [
+        "Lacking Youkai Killer with Subpar AoE killers hurts her Gauge 1/2 Perfomance"
+      ],
+      nitpick: [
+        "LW Doesn't break Poison"
+      ],
+      extra: [
+        "Ex in swimsuit just due to her sheer versatility in support and damage. However swimsuit as a niche has very little standing and the rest of her kit isn't really aging that well tbh she is mostly still SS due to technicality",
+        "NOTABLE PAIRINGS (Not included in tiering): Again, basically any yang unit that isn't metal. Ideally someone who can cover her lackluster AoE nuke. Doesn't mesh with Ex Mamizou quite as well as you'd like but can still work."
       ]
     }
   },
