@@ -444,17 +444,22 @@ dataSet[dataSetVersion].characterData = [
     explanation: {
       pros: [
         "7 t1 breaks and -2 cd reduce contribute to helping her be a useful overall utility tool",
-        "High Buff Counts in All Major Stats across her Kit, further complemented by her Anthology card"
+        "High Yang/Agi Buff Counts Stats across her Kit, further complemented by her Anthology card allows her to utilize her damage role",
+        "Great Damage through her kit allows her to contribute as a nuker and a util bot"
       ],
       mixed: [
-        "Great LW Damage tends to be held back by lacking Debuffs and having severe Dmg to Eff issues",
-        "AoE killer is below average for her tier, limiting use further",
-        "Needs to pair with someone with Party P for optimal use as she can’t get 3p t1 by herself without being able to save her sk1 to g2 for some reason (unless you are in a freeze/para/poison stage)",
-        "Lacks party Acc outside of her Sk2 (8cd) which can make pairing/card use a bit annoying"
+        "AoE killer is somewhat below average for her tier, limiting use further",
+        "Lacks party Acc outside of her Sk2 (8cd) which can make pairing/card use a bit annoying",
+        "Generally needs more Crit Atk while lacking Debuffs on her LW. This + Acc Issues can make her consistency questionable without certain pairings",
+        "7/3 breaks with late breaks really holds back her potential utility due to simply being suboptimal and missing a lot of damage if she goes first (very common)",
+        "Generally just lacks the Rank II damage amplification other characters in this tier have. Party Dmg to Eff is quite possibly the least useful offensive Rank II buff as far as this tierlist is concerned, effectively making her only buff Agi II on her Last Word"
+      ],
+      cons: [
+        "Res damage for her is a genuine concern, mostly on her AoE which tends to fraud out like nyfishi but worse",
+        "Extremely held back by her skills. Requires an extraneous unit to maximize her first skill's use (as she has 3p breaks but can't get to 3p unless she uses her first skill twice) which can make for suboptimal play. Further, the Quick on her 3rd skill (her main P skill) is more or less a debuff due to the above flaws. While her buffing skill is on an 8 turn cooldown skill. This makes her optimal use very very limited without proper teammates and can make her fraud out very quickly."
       ],
       extra: [
-        "While she doesn’t have true major flaws there are a lot of aspects in her kit that make her practical use kinda annoying unless you pair with specific people (like c5> hecatia or something) but overall her good aspects are strong enough to weigh them out generally",
-        "Usage: For the love of god pair with someone with party p on their skill. Pairing her with Cb3# Reisen kinda makes stages fall apart lmao you just need to watch for acc. Regardless she has high buff counts in everything and nysen covers the debuff/dmg to eff issue well so... yea... Pinkhecc is also good here."
+        "Usage: This character is lowkey high SS with 150 luck / a party P unit or someone like NYsen, however she is saddled by 100000 micro issues. Performance is similar to nyfishi but worse, where she can very quickly make stages fall apart with proper pairings but has a tendency to stop working the instant a stage has a res enemy or any acc requirements at all. Not to say she is bad, but fixing her issues requires a lot of careful play and she's not as simple a unit as someone like nyfishi while having lower highs. Still, her kit IS real, even when it doesn't agree with herself, and it can really shred stages in the right hands. Recommended pairings: again nyfishi, psaki, smiko (watch for acc), etc."
       ]
     }
   },
