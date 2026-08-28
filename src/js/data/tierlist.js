@@ -524,21 +524,20 @@ dataSet[dataSetVersion].characterData = [
     opts: { atk: true, e: true },
     explanation: {
       pros: [
-        "High Damage Output on her Last Word",
-        "High Yang Atk Buffs Counts across her Kit means she can propel her teammates highly"
+        "Great Damage Across her Entire Kit propelled by her Buffs and Cards, along with her High Scalings and Great Last Word Killers",
+        "One of the Best Raw Yang Supporters in the Entire Game due to her Rank IIs and Effects, Further Complementing her Damage"
       ],
       mixed: [
-        "AoE Killers are subpar (Like pinkhecc) and will be her main make-or-break point",
-        "Somewhat lags behind in Yang Def which can also make to hold her damage back",
-        "Requires Cards for Def Down",
-        "Utility is a bit below average for the tier"
+        "Sources of Damage are Cleanly Divided into 3 as a Dual Scaling Unit, requiring Yang Def and Agi Buffs to Truly Maximize her Damage. Unfortunately, this is unrealistic at best in spite of her Anomaly Buffs, and her Support for Either of the two is Lackluster for her Tier",
+        "Really wants more Crit Atk Buffs to maximize damage",
+        "AoE's p0 Killer isn't Amazing, leading to Worse Consistency in Stages where she Doesn't Hit its Killer"
+
       ],
       cons: [
-        "Really wants more Crit Atk Buffs to maximize damage",
-        "In general she is unrealistic, will preform worse than assumed."
+        "Generally just Lacks Utility. Having 6/3 Breaks with 0 Overflow while having Spd Anomalies makes her Pairings Very Very Annoying Unless you have Someone Breaking for her (Nysen). Due to her Late Breaks, her AoE Damage Largely can't have its Damage Maximized, Especially with the amount of Support it Needs."
       ],
       extra: [
-        "Essentially the same unit as Pinkhecc but slightly better. Worse T1 than pinkhecc but her RankIIs should let her perform ever so slightly better <- should be incorrect as worse t1 for her results in less damage due to needing more t1 in the first place"
+        "Would be EX if she had 7/4 Breaks like Smiko. Generally just really wants more Scaling/Crit Buffs and as soon as that's provided her stages just die. Due to her Yang Buffs her Damage Floor is Very High regardless."
       ]
     }
   },
@@ -856,19 +855,16 @@ dataSet[dataSetVersion].characterData = [
     opts: { dest: true, e: true },
     explanation: {
       pros: [
-        "Actually has achievable high damage thanks to wide killers, good ability to take advantage of -3 def, 50% light and generally going last along with having a high dmg floor and good crit acc",
-        "Generally good party buffs complemented by some slight util"
+        "Actually has achievable and very high damage thanks to wide killers, good ability to take advantage of -3 def, 50% light and generally going last along with having a high dmg floor and good crit acc",
+        "Great Yin/Crit Buffs between All Gauges makes her High Damage Actually Achievable while Providing Good Party Support in All Aspects. Further complemented by Party P and Acc Util for Consistency Buffing"
       ],
       mixed: [
-        "AoE damage, like f1 marisa, has a tendency to vary wildly thanks to only having 1 crit line",
-        "Innate Yin Atk are almost all Self",
-        "Essentially Mono Water"
+        "AoE Damage is Extremely Hit or Miss. Calc Numbers, while Extremely High, are Inflated by Damage to Eff and Reliance on her p0 Killer Range which isn't the Greatest. So Res/Neutral Enemies, Even those she hits Killer on or Especially those who she doesn't, will tend to just... live.",
+        "Kaguya decided she's a special girl and, instead of having 1.5 Self P and 0.5 Party P, she is instead 1.4/0.6. This is a flaw because it means she can't get to 3p by herself with her only real duo partner (A6ae Rumia) unless she burns her 2nd skill which hurts her Gauge 2/3. This translates into most other duo partners (with the obvious exception of Cs2 and L80 Kasen, though those clash with her Freeze application so be aware) which generally makes her AoE less consistent as it's not 3p generally.",
+        "Poor Innate Breaks Supplanted by Random Fire Inline on AoE that she doesn't Break"
       ],
       cons: [
-        "Breaks fall off heavy, made worse due to a lack of yin/freeze units besides A6& Rumia lol???"
-      ],
-      nitpick: [
-        "Stupid evil random fire inline on AoE"
+        "Generally lacks Utility as a Damage Bot, but doesn't have the Universal/Consistent Damage to Warrant a Higher Placement due to the Above Issues"
       ],
       extra: [
         "You can think of her as Ex Kosuzu that trades consistent AoE damage for more util and ease of use. (Kosuzu will tend to be more realistically usable due to killers and pairing)"
