@@ -1139,6 +1139,28 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  {
+    name: "Cf1 Sanae",
+    img: "cf1 sanae.webp",
+    tier: "S",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Extremely High Last Word damage with killer that hits basically 90% of the game",
+        "High Agility Support throughout her Kit"
+      ],
+      boon: [
+        "90% of her AoE damage is in P0 which makes saving SP/not having to use skill 1 an advantage for her"
+      ],
+      mixed: [
+        "Self fast on inflict and Self P is still a detriment on her accuracy support even if it doesn't hurt her as much",
+        "Lacks Youkai Killer on her AoE (still hits a lot of characters)"
+      ],
+      cons: [
+        "Generally just lacks buffs throughout Gauges 2-3 making her AoE inconsistent while her LW lacks Def Down while she herself is rather difficult to properly support and make the most of."
+      ]
+    }
+  },
   // start of A
   {
     name: "A16.3& Kosuzu",
@@ -1303,28 +1325,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Usage: Do not ever even THINK of using this unit without an amazingly competent AoE damage unit because she will just fucking die immediately she genuinely does nothing of value outside of having an upgraded version of eextewi skill but somehow worse util like what are we doing"
-      ]
-    }
-  },
-  {
-    name: "Cf1 Sanae",
-    img: "cf1 sanae.webp",
-    tier: "A",
-    opts: { spd: true, e: true },
-    explanation: {
-      pros: [
-        "Extremely High Last Word damage with killer that hits basically 90% of the game",
-        "High Agility Support throughout her Kit"
-      ],
-      boon: [
-        "90% of her AoE damage is in P0 which makes saving SP/not having to use skill 1 an advantage for her"
-      ],
-      mixed: [
-        "Self fast on inflict and Self P is still a detriment on her accuracy support even if it doesn't hurt her as much",
-        "Lacks Youkai Killer on her AoE (still hits a lot of characters)"
-      ],
-      cons: [
-        "Generally just lacks buffs throughout Gauges 2-3 making her AoE inconsistent while her LW lacks Def Down while she herself is rather difficult to properly support and make the most of."
       ]
     }
   },
@@ -3360,25 +3360,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "C3∫ Ran",
-    img: "c3int ran.webp",
-    tier: "C",
-    opts: { dest: true, e: true },
-    explanation: {
-      pros: [
-        "The Best STLW in the Game backed by a High-Damaging AoE Spellcard making for consistent damage"
-      ],
-      mixed: [
-        "High Buff Counts throughout her Kit, also further supplanted by High Acc Support. However she is rather slow so the buffs aren't as good as they would like to be (aka her skills)",
-        "Leans into Acc Support too much while leaving out space for other kinds of Util or Buffs (Nursen Issue)"
-      ],
-      cons: [
-        "Earth AoE (the bad one) has 7 breaks while the Metal AoE (the good one) doesn't even have anomaly infliction tethering her to require a good breaker or pair of breakers",
-        "Solo Last Word without debuffs so she loses a lot of her potential kit immediately"
-      ]
-    }
-  },
-  {
     name: "C3∫ Sagume",
     img: "C3integral sagume.webp",
     tier: "C",
@@ -5038,6 +5019,25 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Go watch gurrenn lagann it’s a great anime"
+      ]
+    }
+  },
+  {
+    name: "C3∫ Ran",
+    img: "c3int ran.webp",
+    tier: "D",
+    opts: { dest: true, e: true },
+    explanation: {
+      pros: [
+        "The Best STLW in the Game backed by a High-Damaging AoE Spellcard making for consistent damage"
+      ],
+      mixed: [
+        "High Buff Counts throughout her Kit, also further supplanted by High Acc Support. However she is rather slow so the buffs aren't as good as they would like to be (aka her skills)",
+        "Leans into Acc Support too much while leaving out space for other kinds of Util or Buffs (Nursen Issue)"
+      ],
+      cons: [
+        "Earth AoE (the bad one) has 7 breaks while the Metal AoE (the good one) doesn't even have anomaly infliction tethering her to require a good breaker or pair of breakers",
+        "Solo Last Word without debuffs so she loses a lot of her potential kit immediately"
       ]
     }
   },
