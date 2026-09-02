@@ -1060,26 +1060,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "C3 Yukari", 
-    img: "c3 yukari.webp", 
-    tier: "S", 
-    opts: { heal: true, e: true },
-    explanation: {
-      pros: [
-        "High Yang/Crit Support across All Gauges supported by Good Innate Accuracy",
-        "Good Unbind/Party P Utility, along with some Party P",
-        "Very High Damage across her AoE Spellcards"
-      ],
-      mixed: [
-        "Party Anomaly Cleanse can be annoying"
-      ],
-      cons: [
-        "Lacks AoE Anomaly Infliction on Skill making her require a Yang Breaker/Gengetsu type unit to Duo",
-        "Despite having Good Killers and Innate Debuffs her LW tends to hold her back because of being mismatched between AoE and Last Word elements while having... really not that high innate damage on top of lacking Rank II innate damage amplification outside of 1 Party Yang Atk II on her Last Word "
-      ]
-    }
-  },
-  { 
     name: "C3 Narumi", 
     img: "c3 narumi.webp", 
     tier: "S", 
@@ -1210,6 +1190,26 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "70% of this Character's Utility is found in her X-Change which is not counted for her tier. For reference, with X-Change she would likely be EX and have the single highest Damage in the game. However as is rn she's kinda just a better version of C3 Wakasagihime, where it looks like she should have buffs + debuffs + util but fails in everything but debuffs. Atrocious in-between performance + bad killer range makes her unsuitable both as a supporter and an attacker unless practically babied enough to warrant just using her EX counterpart as a switch-in, leaving her overall extremely mid."
+      ]
+    }
+  },
+  { 
+    name: "C3 Yukari", 
+    img: "c3 yukari.webp", 
+    tier: "A", 
+    opts: { heal: true, e: true },
+    explanation: {
+      pros: [
+        "High Yang/Crit Support across All Gauges supported by Good Innate Accuracy",
+        "Good Unbind/Party P Utility, along with some Party P",
+        "Very High Damage across her AoE Spellcards"
+      ],
+      mixed: [
+        "Party Anomaly Cleanse can be annoying"
+      ],
+      cons: [
+        "Lacks AoE Anomaly Infliction on Skill making her require a Yang Breaker/Gengetsu type unit to Duo",
+        "Despite having Good Killers and Innate Debuffs her LW tends to hold her back because of being mismatched between AoE and Last Word elements while having... really not that high innate damage on top of lacking Rank II innate damage amplification outside of 1 Party Yang Atk II on her Last Word "
       ]
     }
   },
