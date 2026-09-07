@@ -610,6 +610,29 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "C3 Tewi", 
+    img: "c3 tewi.webp", 
+    tier: "S", 
+    opts: { e: true, supp: true },
+    explanation: {
+      pros: [
+        "high buffs between gauges helps her between gauge performance a lot. Making it reach the expected minimum for this tier.",
+        "Rather solid damage with a high damage last word compliments these buffs although they can fall behind modern minimums. However this is notably made more realistic due to having 3t gimmicks on both of her skills so she can use them for all 3 gauges without worrying about saving them..",
+        "High Acc and P Utility, with 2 Party P from her Skills to allow for Team Flexibility"
+      ],
+      mixed: [
+        "Has No Innate Def Down BUT the 3t Gimmicks let her use Finest Day for her Last Word. But even so, having no innate def down puts her behind other nukes who generally preform better in modern content despite her amazing buff cheese"
+      ],
+      cons: [
+        "Lacking crit attack, large portion of that good between gauge buffs is behind what one would expect",
+        "due to having average break utility. A lot of her qualities are wasted in both self damage and pairings. Being extremely limited in options for covering this utility and those she can buff. Similar to other characters like nyshi"
+      ],
+      extra: [
+        "A vanilla unit with a weirdly low floor given she can't be supportive. Nysen would be an obvious pairing but even with her tewi doesn't have minimum damage for modern stages. Definitely would be ex of not for the 6/3 breaks. Additionally. Could go up a lot with a normal damage card. 50% normal bullet +4'crit helps a lot for her damage role"
+      ]
+    }
+  },
+  { 
     name: "L0g Suwako", 
     img: "lg suwako.webp", 
     tier: "S", 
@@ -2806,6 +2829,24 @@ dataSet[dataSetVersion].characterData = [
         "Essentially Mono Wood",
         "Self Buffs aren’t Bad but aren’t good",
         "Lacks Yin Def Down outside of AoE"
+      ]
+    }
+  },
+  {
+    name: "A11& Kisume",
+    img: "a11& kisume.webp",
+    tier: "B",
+    opts: { dbf: true, ex: true },
+    explanation: {
+      pros: [
+        "Great Yin and Crit Debuffing Abilities throughout her Kit for High Damage Amplification, made More Versatile with a Seperated Quick Skill from her P and Anom Inflict Skill",
+        "Reasonable Damage Supplanted by Good Killers and High Dmg to Res"
+      ],
+      boons: [
+        "Actually Buffs Accuracy (Weirdly Rare for Dbf Units)"
+      ],
+      cons: [
+        "Has Zero Buffs in her Kit leading to Heavy Reliance on Teammates"
       ]
     }
   },
@@ -7935,6 +7976,21 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "Aa Sakuya", 
+    img: "aa sakuya.webp", 
+    tier: "Yukkuri", 
+    opts: { heal: true, y: true },
+    explanation: {
+      pros: [
+        "has debuffs and ssome buffs"
+      ],
+      mixed: [
+        "Kinda selfish and only really has party barrier cleanse",
+        "is mixed lol"
+      ]
+    }
+  },
+  { 
     name: "Aa Alice", 
     img: "Aa alice.webp", 
     tier: "Yukkuri", 
@@ -7953,17 +8009,6 @@ dataSet[dataSetVersion].characterData = [
     explanation: {
       pros: [
         "Party Crit Atk Up & some small P support"
-      ]
-    }
-  },
-  { 
-    name: "Aa Sakuya", 
-    img: "aa sakuya.webp", 
-    tier: "Yukkuri", 
-    opts: { heal: true, y: true },
-    explanation: {
-      mixed: [
-        "Kinda selfish and only really has party barrier cleanse"
       ]
     }
   }
