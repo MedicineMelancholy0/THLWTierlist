@@ -610,29 +610,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "C3 Tewi", 
-    img: "c3 tewi.webp", 
-    tier: "S", 
-    opts: { e: true, supp: true },
-    explanation: {
-      pros: [
-        "high buffs between gauges helps her between gauge performance a lot. Making it reach the expected minimum for this tier.",
-        "Rather solid damage with a high damage last word compliments these buffs although they can fall behind modern minimums. However this is notably made more realistic due to having 3t gimmicks on both of her skills so she can use them for all 3 gauges without worrying about saving them..",
-        "High Acc and P Utility, with 2 Party P from her Skills to allow for Team Flexibility"
-      ],
-      mixed: [
-        "Has No Innate Def Down BUT the 3t Gimmicks let her use Finest Day for her Last Word. But even so, having no innate def down puts her behind other nukes who generally preform better in modern content despite her amazing buff cheese"
-      ],
-      cons: [
-        "Lacking crit attack, large portion of that good between gauge buffs is behind what one would expect",
-        "Due to having average (6/3) break utility. A lot of her qualities are wasted in both self damage and pairings. Being extremely limited in options for covering this utility and those she can buff. Similar to other characters like nyshi"
-      ],
-      extra: [
-        "A vanilla unit with a weirdly low floor given she can't be supportive. Nysen would be an obvious pairing but even with her tewi doesn't have minimum damage for modern stages. Definitely would be ex of not for the 6/3 breaks. Additionally. Could go up a lot with a normal damage card. 50% normal bullet +4'crit helps a lot for her damage role"
-      ]
-    }
-  },
-  { 
     name: "L0g Suwako", 
     img: "lg suwako.webp", 
     tier: "S", 
@@ -680,6 +657,29 @@ dataSet[dataSetVersion].characterData = [
         "Can't Quite take advantage of her Excessive Crit Acc Buffs",
         "Needs to use extremely rare and tedious to grind cards to get her Ekari tier support (not accounting tediousness of cards into tiering it is just annoying)",
         "Not Freeze/Para Immune"
+      ]
+    }
+  },
+  { 
+    name: "C3 Tewi", 
+    img: "c3 tewi.webp", 
+    tier: "S", 
+    opts: { e: true, supp: true },
+    explanation: {
+      pros: [
+        "high buffs between gauges helps her between gauge performance a lot. Making it reach the expected minimum for this tier.",
+        "Rather solid damage with a high damage last word compliments these buffs although they can fall behind modern minimums. However this is notably made more realistic due to having 3t gimmicks on both of her skills so she can use them for all 3 gauges without worrying about saving them..",
+        "High Acc and P Utility, with 2 Party P from her Skills to allow for Team Flexibility"
+      ],
+      mixed: [
+        "Has No Innate Def Down BUT the 3t Gimmicks let her use Finest Day for her Last Word. But even so, having no innate def down puts her behind other nukes who generally preform better in modern content despite her amazing buff cheese"
+      ],
+      cons: [
+        "Lacking crit attack, large portion of that good between gauge buffs is behind what one would expect",
+        "Due to having average (6/3) break utility. A lot of her qualities are wasted in both self damage and pairings. Being extremely limited in options for covering this utility and those she can buff. Similar to other characters like nyshi"
+      ],
+      extra: [
+        "A vanilla unit with a weirdly low floor given she can't be supportive. Nysen would be an obvious pairing but even with her tewi doesn't have minimum damage for modern stages. Definitely would be ex of not for the 6/3 breaks. Additionally. Could go up a lot with a normal damage card. 50% normal bullet +4'crit helps a lot for her damage role"
       ]
     }
   },
@@ -993,6 +993,24 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "C3 Narumi", 
+    img: "c3 narumi.webp", 
+    tier: "S", 
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "High LW Damage with Decent Buffs for it and Decent Killers making up most of her tier"
+      ],
+      mixed: [
+        "Utility and Buffs, whilst not necessarily bad, are underwhelming for her tier and can lead to consistency issues when not paired with units like Cz2",
+        "Also held back by Dmg to Eff issues"
+      ],
+      cons: [
+        "Let down by lacking good AoE killers and Def Down (Run the Sanshoku card on her Last Word)"
+      ]
+    }
+  },
+  { 
     name: "C3< Nitori", 
     img: "fall nitori.webp", 
     tier: "S", 
@@ -1056,24 +1074,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Side note: her kit agrees with herself and the role shes doing way better than most units below her, hence her placement. which was quite surprising given party charge nonsense (dont use the skill). and while she is forced to be poison because shes not the fastest thing alive with unavoidable agi anoms and highest agi stat you can realistically plan around her in trios (or run cs2 +5sp)"
-      ]
-    }
-  },
-  { 
-    name: "C3 Narumi", 
-    img: "c3 narumi.webp", 
-    tier: "S", 
-    opts: { atk: true, e: true },
-    explanation: {
-      pros: [
-        "High LW Damage with Decent Buffs for it and Decent Killers making up most of her tier"
-      ],
-      mixed: [
-        "Utility and Buffs, whilst not necessarily bad, are underwhelming for her tier and can lead to consistency issues when not paired with units like Cz2",
-        "Also held back by Dmg to Eff issues"
-      ],
-      cons: [
-        "Let down by lacking good AoE killers and Def Down (Run the Sanshoku card on her Last Word)"
       ]
     }
   },
