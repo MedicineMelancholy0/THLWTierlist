@@ -4732,6 +4732,29 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "A6 Rumia",
+    img: "a6 rumia.webp",
+    tier: "C",
+    opts: { dest: true, a: true },
+    explanation: {
+      pros: [
+        "Decent Breaking Ability",
+        "p0 AoE killer means she can actuallly spell nuke. LW nuke potential is similarly not bad. Now both made better with 2.0 buffs leading to actually usable damage!!!"
+      ],
+      boons: [
+        "Deadass has one of the best stat spreads in the game"
+      ],
+      mixed: [
+        "Acc is reliant on Inlines",
+        "Debuffs lots of Crit but nothing for Yin Def",
+        "Tends to have Damage Variance due to low innate Crit Acc and Poor Killers."
+      ],
+      cons: [
+        "Requires Outside Support through Cards and Team Members"
+      ]
+    }
+  },
+  {
     name: "A6 Koakuma",
     img: "a6 koakuma.webp",
     tier: "C",
@@ -5953,29 +5976,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       nitpick: [
         "Tediously Long Animations"
-      ]
-    }
-  },
-  {
-    name: "A6 Rumia",
-    img: "a6 rumia.webp",
-    tier: "C",
-    opts: { dest: true, a: true },
-    explanation: {
-      pros: [
-        "Decent Breaking Ability",
-        "p0 AoE killer means she can actuallly spell nuke. LW nuke potential is similarly not bad. Now both made better with 2.0 buffs leading to actually usable damage!!!"
-      ],
-      boons: [
-        "Deadass has one of the best stat spreads in the game"
-      ],
-      mixed: [
-        "Acc is reliant on Inlines",
-        "Debuffs lots of Crit but nothing for Yin Def",
-        "Tends to have Damage Variance due to low innate Crit Acc and Poor Killers."
-      ],
-      cons: [
-        "Requires Outside Support through Cards and Team Members"
       ]
     }
   },
