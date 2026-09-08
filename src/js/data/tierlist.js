@@ -625,7 +625,7 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "Lacking crit attack, large portion of that good between gauge buffs is behind what one would expect",
-        "due to having average break utility. A lot of her qualities are wasted in both self damage and pairings. Being extremely limited in options for covering this utility and those she can buff. Similar to other characters like nyshi"
+        "Due to having average (6/3) break utility. A lot of her qualities are wasted in both self damage and pairings. Being extremely limited in options for covering this utility and those she can buff. Similar to other characters like nyshi"
       ],
       extra: [
         "A vanilla unit with a weirdly low floor given she can't be supportive. Nysen would be an obvious pairing but even with her tewi doesn't have minimum damage for modern stages. Definitely would be ex of not for the 6/3 breaks. Additionally. Could go up a lot with a normal damage card. 50% normal bullet +4'crit helps a lot for her damage role"
@@ -1035,29 +1035,6 @@ dataSet[dataSetVersion].characterData = [
       extra: [
         "This character’s kit is rather generic and she is basically the epitome of S. Decent in all aspects without true flaws but lacks anything to be higher.",
         "Note: Counts as 2 units for Yukkuri and Genic skills"
-      ]
-    }
-  },
-  { 
-    name: "A16& Satono", 
-    img: "a16& satono.webp", 
-    tier: "S", 
-    opts: { ex: true, spd: true },
-    explanation: {
-      pros: [
-        "Wide Killer Range and Overall High Damage on her lw, with great damage on her aoe",
-        "Very Capable Self Buffs and Decent Party Utility to benefit from said damage",
-        "Great Breaking Ability, akin to C3 Sekibanki"
-      ],
-      boons: [
-        "Immortal vs. 1 unit"
-      ],
-      mixed: [
-        "Support is far below average for her tier, though not necessarily bad."
-      ],
-      cons: [
-        "Lacks Def Down",
-        "Lowkey aoe kinda mid if you dont hit the full killer because only p0 youkai"
       ]
     }
   },
@@ -1975,6 +1952,30 @@ dataSet[dataSetVersion].characterData = [
       ],
       nitpicks: [
         "Evil Self Yin Atk on AoE"
+      ]
+    }
+  },
+  { 
+    name: "A16& Satono", 
+    img: "a16& satono.webp", 
+    tier: "A", 
+    opts: { ex: true, spd: true },
+    explanation: {
+      pros: [
+        "Wide Killer Range and Good Buff Counts on All Gauges give her a Good Damage Floor on her AoE and Last Word, not Lacking in any Major Count",
+        "Good Acc and Barrier sustainability leads to Good Consistentcy/Buffs throughout Performance to Back Up her Damage Role"
+      ],
+      boons: [
+        "Immortal vs. 1 unit"
+      ],
+      mixed: [
+        "Below Average Support, mostly for Crit Atk, along with a Bad Skill 3 Gimmick hold back her role as anything but a Damage Bot",
+        "P Issues can hold back her AoE",
+        "6/3 (Average) Breaks that are Late (No Overflow) on her Quick skill basically means you either ignore her First Skill or pair her with Someone who can Outspeed Her and Break for Her to maximize her damage. Thankfully her First Skill is largely ignorable if pairing with a 7/7 breaker who breaks on their own but this can limit team comps nonetheless."
+      ],
+      cons: [
+        "Low Def Down, even with her BIS, which can hurt her Damage due to Late Breaks and Mediocre Gauge 2 Buffs",
+        "AoE only has Youkai Killer on 1 Line, with an overall low Damage Ceiling even with Full Overlap. This plus her reliance on Dmg to Eff and Mid G2 Buffs hurts her Damage Role as her AoE will sometimes just... fail."
       ]
     }
   },
