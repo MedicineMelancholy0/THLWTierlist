@@ -853,25 +853,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "L80 Kokoro", 
-    img: "l80 kokoro.webp", 
-    tier: "S", 
-    opts: { r: true, atk: true },
-    explanation: {
-      pros: [
-        "Great Damage Output Across the Board",
-        "Good Utility (7 AoE Breaks), Good Self Buffs"
-      ],
-      mixed: [
-        "Killers are Passable but flawed (similar to Sprae)",
-        "Tends to have Weirdly Selfish Buffs"
-      ],
-      cons: [
-        "Wants more Innate Debuffs (UNLESS YOU PULL HER BANNER CARD, WHICH CAN REMEDY THAT)"
-      ]
-    }
-  },
-  { 
     name: "C5= Kaguya", 
     img: "c35= kaguya.webp", 
     tier: "S", 
@@ -938,6 +919,25 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Essentially this character just doesn’t have enough of anything to be higher. Breaks, buffs, etc all basically just passing marks but she is basically kinda just a yang version of Chimata with worse killer and card options. Run sanshoku card on her Last Word (50% body -2 yang def)"
+      ]
+    }
+  },
+  { 
+    name: "L80 Kokoro", 
+    img: "l80 kokoro.webp", 
+    tier: "S", 
+    opts: { r: true, atk: true },
+    explanation: {
+      pros: [
+        "Great Damage Output Across the Board",
+        "Good Utility (7 AoE Breaks), Good Self Buffs"
+      ],
+      mixed: [
+        "Killers are Passable but flawed (similar to Sprae)",
+        "Tends to have Weirdly Selfish Buffs"
+      ],
+      cons: [
+        "Wants more Innate Debuffs (UNLESS YOU PULL HER BANNER CARD, WHICH CAN REMEDY THAT)"
       ]
     }
   },
