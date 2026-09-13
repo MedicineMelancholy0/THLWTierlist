@@ -2111,7 +2111,8 @@ dataSet[dataSetVersion].characterData = [
         "Decent Buffs and Util throughout her Kit"
       ],
       mixed: [
-        "AoE and Last Word can never hit 10 yin attack because her p0 has self -1 yin atk for some reason"
+        "AoE and Last Word can never hit 10 yin attack because her p0 has self -1 yin atk for some reason",
+        "Found Presence Killer is not p0 on her AoE which can lead to large damage inconsistency unless she is already hitting secondary killers"
       ],
       cons: [
         "Though she follows A tier philosophy and kit metrics, generally just lacks the numbers to be higher, similar to the other battle pass units"
