@@ -684,6 +684,29 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "A17& Eika", 
+    img: "a17& eika.webp", 
+    tier: "S", 
+    opts: { tec: true, ex: true },
+    explanation: {
+      pros: [
+        "Great Inflicting + Breaking Ability like the C3 Cirno, but even better since she can break 7 without needing to pop both skills.",
+        "Good Support Across her Kit"
+      ],
+      mixed: [
+        "High Damage tends to be restricted by Suboptimal KIllers"
+      ],
+      cons: [
+        "While she has many universal qualities, her p economy is quite bad, requiring the unit she is supporting or the stage in play to fix this issue",
+        "Wants more Crit Atk"
+      ],
+      extra: [
+        "She basically wants to be the geng to the freeze and para yin units (all two of them) but unfortunately, she runs into a few issues here and there. she does the job but dont expect too much (funnily enough she buffs mv kasen better than geng)",
+        "Mid SS Performance with the Luck P Buff"
+      ]
+    }
+  },
+  { 
   name: "A14.5& Mamizou", 
   img: "A15.5& Mamizou.webp", 
   tier: "S", 
@@ -692,7 +715,7 @@ dataSet[dataSetVersion].characterData = [
     pros: [
       "High damage spells complimented by good killer, average lw nuke effectively carried by defense down patching all damage inconsistency",
       "Just spams breaks from her spells",
-      "Support from her kit is very good, particularly good for buff remove stages and further compliments her ability to be a support/buff bot",
+      "Support from her kit is quite good, particularly good for buff remove stages and further compliments her ability to be a support/buff bot",
       "Killer is perfect overlap, leading to her being very reliable"
     ],
     mixed: [
@@ -756,29 +779,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "NOTABLE PAIRINGS (Not included in tiering): Cstroos, Gengetsu, Ex Sakuya, Mima, Works well in conjunction with Yukata Komachi lol"
-      ]
-    }
-  },
-  { 
-    name: "A17& Eika", 
-    img: "a17& eika.webp", 
-    tier: "S", 
-    opts: { tec: true, ex: true },
-    explanation: {
-      pros: [
-        "Great Inflicting + Breaking Ability like the C3 Cirno, but even better since she can break 7 without needing to pop both skills.",
-        "Good Support Across her Kit"
-      ],
-      mixed: [
-        "High Damage tends to be restricted by Suboptimal KIllers"
-      ],
-      cons: [
-        "While she has many universal qualities, her p economy is quite bad, requiring the unit she is supporting or the stage in play to fix this issue",
-        "Wants more Crit Atk"
-      ],
-      extra: [
-        "She basically wants to be the geng to the freeze and para yin units (all two of them) but unfortunately, she runs into a few issues here and there. she does the job but dont expect too much (funnily enough she buffs mv kasen better than geng)",
-        "Mid SS Performance with the Luck P Buff"
       ]
     }
   },
@@ -5438,10 +5438,31 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Poor Anomaly Breaks",
         "Middling Spell Damage"
+      ]
+    }
+  },
+  { 
+    name: "B3 Reisen", 
+    img: "b3 reisen.webp", 
+    tier: "D", 
+    opts: { tec: true, u: true },
+    explanation: {
+      pros: [
+        "Self Buffs are Good",
+        "AoE is extremely good on killer"
+      ],
+      mixed: [
+        "Lots of useless stuff in her kit (acc down)",
+        "Elemental Combo + Bullet Types will never line up ever"
+      ],
+      cons: [
+        "Breaks Lag Behind in Modern Day, no AoE Anom breaks",
+        "Bad Killers",
+        "No Crit Atk",
+        "Divided Last Word"
       ],
       extra: [
-        "Great Voice",
-        "awful voice"
+        "Formerly top 1. A long time ago."
       ]
     }
   },
@@ -6844,30 +6865,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "B3 Reisen", 
-    img: "b3 reisen.webp", 
-    tier: "E", 
-    opts: { tec: true, u: true },
-    explanation: {
-      pros: [
-        "Self Buffs are Good"
-      ],
-      mixed: [
-        "Lots of useless stuff in her kit (acc down)",
-        "Elemental Combo + Bullet Types will never line up ever"
-      ],
-      cons: [
-        "Breaks Lag Behind in Modern Day, no AoE Anom breaks",
-        "Bad Killers",
-        "No Crit Atk",
-        "Divided Last Word"
-      ],
-      extra: [
-        "Formerly top 1. A long time ago."
-      ]
-    }
-  },
-  { 
     name: "B3 Sakuya", 
     img: "b3 sakuya.webp", 
     tier: "E", 
@@ -6964,6 +6961,29 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Disjointed AoE Spellcard Elements, lagging Anomaly Breaks",
         "Killers are Ultra Shit."
+      ],
+      extra: [
+        "If she can hit her killers her LW nuke becomes extremely potent. Good luck with that though"
+      ]
+    }
+  },
+  { 
+    name: "B5 Medicine", 
+    img: "b5 medicine.png", 
+    tier: "E", 
+    opts: { dbf: true, u: true },
+    explanation: {
+      pros: [
+        "Very strong Spellcard 2 on Killer given proper support",
+        "Barrier Unbind + Minor Barrier Restoration is kinda useful, plus she has Acc on Graze making her Utility somewhat Usable"
+      ],
+      mixed: [
+        "Barrier Anomaly Cleanse is always a mixed bag"
+      ],
+      cons: [
+        "Lacks Buffs Everywhere",
+        "Incapable of AoE Breaking Poison on her Spellcards, where her AoE Poison Application is also RNG",
+        "Bad Killers and a Solo LW that is TRIPLE SCALING makes her useless at worst and a niche pick at best."
       ],
       extra: [
         "If she can hit her killers her LW nuke becomes extremely potent. Good luck with that though"
