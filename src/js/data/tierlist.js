@@ -5894,6 +5894,30 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  { 
+    name: "T5 Reisen", 
+    img: "t5 reisen.webp", 
+    tier: "D", 
+    opts: { dest: true, u: true },
+    explanation: {
+      pros: [
+        "Decent Yang/Crit Support",
+        "Actually Competent AoE Spellcard Damage on Killer"
+      ],
+      mixed: [
+        "Can't Dest"
+      ],
+      cons: [
+        "Breaking Sucks",
+        "Inflicts Anoms, doesn't break them.",
+        "Bad Killers",
+        "Awful just Abysmal Last Word"
+      ],
+      extra: [
+        "lol self dmg to eff up"
+      ]
+    }
+  },
   {
     name: "W2 Suwako",
     img: "suwawa.webp",
@@ -7070,29 +7094,6 @@ dataSet[dataSetVersion].characterData = [
         "Rather Selfish, Buffs aren't that good either",
         "Solo Target LW",
         "Bad Killers"
-      ]
-    }
-  },
-  { 
-    name: "T5 Reisen", 
-    img: "t5 reisen.webp", 
-    tier: "E", 
-    opts: { dest: true, u: true },
-    explanation: {
-      pros: [
-        "Decent Yang/Crit Support"
-      ],
-      mixed: [
-        "Can't Dest"
-      ],
-      cons: [
-        "Breaking Sucks",
-        "Inflicts Anoms, doesn't break them.",
-        "Bad Killers",
-        "Awful just Abysmal Last Word"
-      ],
-      extra: [
-        "lol self dmg to eff up"
       ]
     }
   },
