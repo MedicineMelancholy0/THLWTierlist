@@ -1633,33 +1633,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Lm1 Maribel - Mima",
-    img: "lm1 mima.webp",
-    tier: "A",
-    opts: { r: true, dest: true },
-    explanation: {
-      pros: [
-        "High-Damaging Last Word supported by Attack Anomalies that she does a good job of Inflicting on Herself",
-        "Good Party Crit Support, can turn anyone into a Dest unit thanks to her Resonance"
-      ],
-      mixed: [
-        "Tends to be locked to only working against Moon Weak enemies due to Reliance on Damage to Eff"
-      ],
-      cons: [
-        "Bad AoE Spellcard Damage Consistency is a real concern especially as it deadass needs Yang Attack buffs to optimize its damage???",
-        "Support between Gauges is just bad. Has next to no Agility buffs, low Yin Attack buffs, and doesn't even have good Crit Attack buffs outside of Gauge 1",
-        "Lacks Utility, especially seeing as she has Accuracy Problems between Gauges (outside of Last Word)"
-      ],
-      nitpicks: [
-        "mid?",
-        "? Not Freeze or Paralyze Immune"
-      ],
-      extra: [
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
-      ]
-    }
-  },
-  {
     name: "Lr1 Renko (Shinki)",
     img: "lr1 shinki.webp",
     tier: "A",
@@ -2665,6 +2638,33 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Overall she is extremely bottlenecked by killer, no utility to speak of to make it worth it either."
+      ]
+    }
+  },
+  {
+    name: "Lm1 Maribel - Mima",
+    img: "lm1 mima.webp",
+    tier: "B",
+    opts: { r: true, dest: true },
+    explanation: {
+      pros: [
+        "High-Damaging Last Word supported by Attack Anomalies that she does a good job of Inflicting on Herself",
+        "Good Party Crit Support, can turn anyone into a Dest unit thanks to her Resonance"
+      ],
+      mixed: [
+        "Tends to be locked to only working against Moon Weak enemies due to Reliance on Damage to Eff"
+      ],
+      cons: [
+        "Bad AoE Spellcard Damage Consistency is a real concern especially as it deadass needs Yang Attack buffs to optimize its damage???",
+        "Support between Gauges is just bad. Has next to no Agility buffs, low Yin Attack buffs, and doesn't even have good Crit Attack buffs outside of Gauge 1",
+        "Lacks Utility, especially seeing as she has Accuracy Problems between Gauges (outside of Last Word)"
+      ],
+      nitpicks: [
+        "mid?",
+        "? Not Freeze or Paralyze Immune"
+      ],
+      extra: [
+        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
       ]
     }
   },
