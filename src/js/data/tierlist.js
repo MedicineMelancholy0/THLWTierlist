@@ -385,7 +385,7 @@ dataSet[dataSetVersion].characterData = [
   {
     name: "C3≦ Yuyuko",
     img: "c3lte yuyuko.webp",
-    tier: "A",
+    tier: "SS",
     opts: { tec: true, e: true },
     explanation: {
       pros: [
