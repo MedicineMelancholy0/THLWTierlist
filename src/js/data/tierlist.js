@@ -220,29 +220,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "C5> Miko", 
-    img: "c5 miko.webp", 
-    tier: "EX", 
-    opts: { dest: true, e: true },
-    explanation: {
-      pros: [
-        "Second highest damage in the game lw, CURRENT HIGHEST ON AOE FULL KILLER (until lootori gets her bis anyways)",
-        "Damage is complimented by her having a surprisingly solid buff count throughout her kit avoiding the large issues logwako and looshi (aoe) have. Making her absurd damage very practical",
-        "In addition to her buffing, which is pretty solid for herself and very above average for party, she has proper 4 break aoe and 3 inflict, allowing her to be used both as the damage bot in teams like an l0 and the supportive unit for poison comps",
-        "Lw nlm lets her hit above nyshi...off killer...what"
-      ],
-      cons: [
-        "AoE p0 killers are lacking for her to reach said damage bot peaks, this can be mitigated by attempting to abuse the nlm. But it is a flaw that inhibits her use cases as the damage bot like she wants to do",
-        "Due to the lack of def down and lack of acc, the most common means of shafting, she can very much \"fraud out\" in a similar vain to how f1mors was perceived after release...only...worse. to the point of being an issue.",
-        "worst theme in the game?"
-      ],
-      extra: [
-        "Tldr: a unit with such silly rank ii, scaling, and raw damage gets to keep their raw neutral damage. However, it's only 7mil. A lot to be sure! But not...silly like her eff dmg is.",
-        "The final con is a genuine concern to remember before calling her undertiered, no other character in ex has to deal with both of these issues and they become very prominent very quickly unless the stage is designed to do neither def up nor acc shaft. These issues CAN be fixed by much easier than normal though, due to the sheer damage output. To the point something silly like mv ran can work if 5 actions can work."
-      ]
-    }
-  },
-  { 
     name: "F1 Marisa", 
     img: "f1 mors.webp", 
     tier: "EX", 
@@ -294,9 +271,33 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "C5> Miko", 
+    img: "c5 miko.webp", 
+    tier: "EX", 
+    opts: { dest: true, e: true },
+    explanation: {
+      pros: [
+        "Second highest damage in the game lw, CURRENT HIGHEST ON AOE FULL KILLER (until lootori gets her bis anyways)",
+        "Damage is complimented by her having a surprisingly solid buff count throughout her kit avoiding the large issues logwako and looshi (aoe) have. Making her absurd damage very practical",
+        "In addition to her buffing, which is pretty solid for herself and very above average for party, she has proper 4 break aoe and 3 inflict, allowing her to be used both as the damage bot in teams like an l0 and the supportive unit for poison comps",
+        "Lw nlm lets her hit above nyshi...off killer...what"
+      ],
+      cons: [
+        "AoE p0 killers are lacking for her to reach said damage bot peaks, this can be mitigated by attempting to abuse the nlm. But it is a flaw that inhibits her use cases as the damage bot like she wants to do",
+        "Due to the lack of def down and lack of acc, the most common means of shafting, she can very much \"fraud out\" in a similar vain to how f1mors was perceived after release...only...worse. to the point of being an issue.",
+        "worst theme in the game?"
+      ],
+      extra: [
+        "Tldr: a unit with such silly rank ii, scaling, and raw damage gets to keep their raw neutral damage. However, it's only 7mil. A lot to be sure! But not...silly like her eff dmg is.",
+        "The final con is a genuine concern to remember before calling her undertiered, no other character in ex has to deal with both of these issues and they become very prominent very quickly unless the stage is designed to do neither def up nor acc shaft. These issues CAN be fixed by much easier than normal though, due to the sheer damage output. To the point something silly like mv ran can work if 5 actions can work."
+      ]
+    }
+  },
+  // start of SS
+  { 
     name: "Cb3# Reisen", 
     img: "cb3 reisen.webp", 
-    tier: "EX", 
+    tier: "SS", 
     opts: { e: true, dbf: true },
     explanation: {
       pros: [
@@ -316,7 +317,6 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
-  // start of SS
   { 
     name: "A6æ Rumia", 
     img: "phfes rumia.webp", 
@@ -876,6 +876,28 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "C3≥ Nitori", 
+    img: "mech nitori.webp", 
+    tier: "S", 
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Buffs all Relevant Stats Well across her Kit, mostly on her Spells. Additionally boasts good Acc util for all 3 gauges."
+      ],
+      mixed: [
+        "Great LW and AoE Damage is held back by her Subpar Killers.",
+        "Her 2nd AoE (the one that buffs acc) is very useless in terms of damage",
+        "Having Sk3 being reserved entirely for g3, and then having all her major buffs on a single skill can make practical use a bit problematic in regards to saving her skills between gauges. Essentially used on a gauge-by-gauge basis"
+      ],
+      cons: [
+        "Entirely lacking Debuffs expedites all these issues so much more in terms of practical use"
+      ],
+      extra: [
+        "Essentially this character just doesn’t have enough of anything to be higher. Breaks, buffs, etc all basically just passing marks but she is basically kinda just a yang version of Chimata with worse killer and card options. Run sanshoku card on her Last Word (50% body -2 yang def)"
+      ]
+    }
+  },
+  { 
     name: "L0g Sanae", 
     img: "fake ass sanae.webp", 
     tier: "S", 
@@ -897,28 +919,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "In terms of Cost:Potency, which isn't reflected in this tierlist, she is at the bottom."
-      ]
-    }
-  },
-  { 
-    name: "C3≥ Nitori", 
-    img: "mech nitori.webp", 
-    tier: "S", 
-    opts: { supp: true, e: true },
-    explanation: {
-      pros: [
-        "Buffs all Relevant Stats Well across her Kit, mostly on her Spells. Additionally boasts good Acc util for all 3 gauges."
-      ],
-      mixed: [
-        "Great LW and AoE Damage is held back by her Subpar Killers.",
-        "Her 2nd AoE (the one that buffs acc) is very useless in terms of damage",
-        "Having Sk3 being reserved entirely for g3, and then having all her major buffs on a single skill can make practical use a bit problematic in regards to saving her skills between gauges. Essentially used on a gauge-by-gauge basis"
-      ],
-      cons: [
-        "Entirely lacking Debuffs expedites all these issues so much more in terms of practical use"
-      ],
-      extra: [
-        "Essentially this character just doesn’t have enough of anything to be higher. Breaks, buffs, etc all basically just passing marks but she is basically kinda just a yang version of Chimata with worse killer and card options. Run sanshoku card on her Last Word (50% body -2 yang def)"
       ]
     }
   },
