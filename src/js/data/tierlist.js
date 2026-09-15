@@ -382,6 +382,24 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  {
+    name: "C3≦ Yuyuko",
+    img: "c3lte yuyuko.webp",
+    tier: "A",
+    opts: { tec: true, e: true },
+    explanation: {
+      pros: [
+        "7/7 Breaks on an AoE with Low P Cost, that Breaks Almost Instantly, across 3 Different Anomalies is the Key Secret to Success that lets her Instantly Enable Damage throughout Both AoE Gauges. Further supported by Double Quick + Agility Anoms to Solidify her Breaking Role",
+        "High Dmg to Res Pairs Excellently with her Self Buffs and Def Down II on her Last Word to Capitulate on her Damage Role giving her an Excellent Niche there as well"
+      ],
+      cons: [
+        "Lackluster Killers pose a Massive Threat to her Damage Role, Preventing her from being a Universal Damaging Option in spite of her Dmg to Res as her Killer Range on her Last Word and AoE range from Unimpressive to Bad Respectively"
+      ],
+      mixed: [
+        "Support Role holds her back from being a True Gengetsu as her Buffing is Lacking for EX, mostly due to Self Yin Atk on Boost (While 2t Yin II + Dmg to Eff Up is Underwhelming for the Tier). Additionally, her P is Selfish, further hampering her from being a true Gengetsu with Universal Support"
+      ]
+    }
+  },
   { 
     name: "Cf1# Koishi", 
     img: "cf1 koishi.webp", 
@@ -2792,6 +2810,24 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "L80 Satori",
+    img: "l80 satori.webp",
+    tier: "B",
+    opts: { dest: true, r: true },
+    explanation: {
+      pros: [
+        "Genuinely Good Last Word Damage Supported by Dmg to Eff and Res, Atk Anoms and New Crit II along with Innate Def Down and Good Killers + Crit Acc"
+      ],
+      cons: [
+        "AoE Spellcard Boasts High Theoretical Damage, Supported by Overflow and new P0 Killers, however its p0 Yin on an Otherwise Yang Unit makes it Excessively Difficult to Support in its Consistency. Further, the killer range itself it gains from Re2.0 is Lackluster, further making her damage role questionable",
+        "Aside from Crit II on her Last Word, and Overflow on 2 Anomalies on her AoE, generally lacks Support and Utility through her Kit"
+      ],
+      mixed: [
+        "Buffing Ability is simply Average, notably lacking on Agi between Gauges even with her 2.0 giving it Agi on her AoE"
+      ]
+    }
+  },
+  {
     name: "A8& Tewi",
     img: "a8& tewi.webp",
     tier: "B",
@@ -3755,31 +3791,6 @@ dataSet[dataSetVersion].characterData = [
       mixed: [
         "Needy for Crit Atk, P & Buffs",
         "Great AoE Spellcard Nuke is tied to Relatively Meager Killers"
-      ]
-    }
-  },
-  {
-    name: "L80 Satori",
-    img: "l80 satori.webp",
-    tier: "C",
-    opts: { dest: true, r: true },
-    explanation: {
-      pros: [
-        "Good Damage Potential on Last Word",
-        "Great Breaks All Around"
-      ],
-      cons: [
-        "Spells are extremely midling, AOE spell has a tough time setting up due to being yin ",
-        "Relatively meager self buffing ability (has almost no Agi Buffs) and debuffing ability for modern stages, requires mima treatment"
-      ],
-      mixed: [
-        "Somewhat Middling Support"
-      ],
-      nitpick: [
-        "Impossible to consistency check with "
-      ],
-      extra: [
-        "@"
       ]
     }
   },
@@ -5761,6 +5772,25 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Spare yourself the dolls on this unit, just use them on b3 eiki"
+      ]
+    }
+  },
+  {
+    name: "H5 Yamame",
+    img: "h5 yamame.webp",
+    tier: "D",
+    opts: { heal: true, u: true },
+    explanation: {
+      pros: [
+        "Usable Last Word and AoE Damage with her Last Word having Decent Killers",
+        "Usable Utility in the form of and Barrier Restores and other Minor Traits"
+      ],
+      mixed: [
+        "elf Agi on Boost can mess up her turn order, leading to suboptimal use"
+      ],
+      cons: [
+        "AoE and Last Word are disjointed elements while she herself has no Dmg to Eff/Res, meaning if you want to use her for her AoE Nuke her Last Word becomes effectively worthless outside of being an Ikaruga Bot. Also AoE Killers are Lackluster.",
+        "Is a Dual Scaling Unit that RELIES ON HER Dual Scaling (Bad Yin Atk Stat) for her Damage, leading to her damage never being realistic ever."
       ]
     }
   },
