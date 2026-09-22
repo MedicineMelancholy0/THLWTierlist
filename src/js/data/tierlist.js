@@ -4480,19 +4480,12 @@ dataSet[dataSetVersion].characterData = [
     opts: { def: true, u: true },
     explanation: {
       pros: [
-        "Youkai Killer, Good LW Dmg",
-        "Literally Infinite Barriers for the party lmao??",
-        "Good Yang Buffs & Debuffs"
+        "Good Consistent Last Word backed by Innate Def Down and Youkai Killer",
+        "Amazing Party Barrier Support, further backed by good Yang buffs through her Kit, leading her to fill a good niche for those who want to Graze often for buffs."
       ],
       cons: [
-        "Spellcards aren't very impressive"
-      ],
-      mixed: [
-        "Could use more crit buffs & p",
-        "Random Crit Acc Buffs/Debuffs"
-      ],
-      nitpick: [
-        "Sfes gated, her raw numbers are not high enough to be any higher. if you doubled said numbers shed be ss "
+        "Lacks Crit Atk or P throughout her kit limiting her to only really be useful for one gauge.",
+        "AoE Spellcard does almost no damage and doesn't have any notable utility meaning she is effectively only useful for one turn."
       ]
     }
   },
@@ -4540,31 +4533,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       nitpick: [
         "Mid Ass Stats"
-      ]
-    }
-  },
-  {
-    name: "T5 Tenshi",
-    img: "t5 tenshi.webp",
-    tier: "C",
-    opts: { spd: true, u: true },
-    explanation: {
-      pros: [
-        "Very High Damage Potential on Last Word ",
-        "Good Debuffs & Agility Support"
-      ],
-      mixed: [
-        "RNG Barr Support"
-      ],
-      cons: [
-        "Poor AoE Spellcard Damage",
-        "Needs heavy Yang & Crit support",
-        "Anomalies are Single Target",
-        "Damage to eff means her \"crazy damage\" is often overblown to the point it could fail"
-      ],
-      extra: [
-        "*Possbily the most overblown unit of all time, in a fire stage where she is unable to nuke all enemies (dmg to eff unit) she provides less than even some C tier units",
-        "Solos 4 Ele EX"
       ]
     }
   },
@@ -5921,6 +5889,31 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "Low Damage, Lacks Niches"
+      ]
+    }
+  },
+  {
+    name: "T5 Tenshi",
+    img: "t5 tenshi.webp",
+    tier: "D",
+    opts: { spd: true, u: true },
+    explanation: {
+      pros: [
+        "Very High Damage Potential on Last Word ",
+        "Good Debuffs & Agility Support"
+      ],
+      mixed: [
+        "RNG Barr Support"
+      ],
+      cons: [
+        "Poor AoE Spellcard Damage",
+        "Needs heavy Yang & Crit support",
+        "Anomalies are Single Target",
+        "Damage to eff means her \"crazy damage\" is often overblown to the point it could fail"
+      ],
+      extra: [
+        "*Possbily the most overblown unit of all time, in a fire stage where she is unable to nuke all enemies (dmg to eff unit) she provides less than even some C tier units",
+        "Solos 4 Ele EX"
       ]
     }
   },
@@ -7330,26 +7323,7 @@ dataSet[dataSetVersion].characterData = [
         "Unimpressive Killer Range"
       ]
     }
-  },
-  { 
-    name: "A9 Aya", 
-    img: "a9 aya.webp", 
-    tier: "E", 
-    opts: { dbf: true, a: true },
-    explanation: {
-      mixed: [
-        "Her Buffs and Debuffs are both very mid. Barely any Yang Def Down (the important one)"
-      ],
-      cons: [
-        "Soupy & Dated Breaks",
-        "Her Killers are Bad",
-        "Needs a lot of Support. Even then her damage and util is still bad"
-      ],
-      extra: [
-        "at least her theme is nice"
-      ]
-    }
-  },
+  }
   { 
     name: "A10 Kanako", 
     img: "a10 kanko (why is bitch so big wtf).webp", 
