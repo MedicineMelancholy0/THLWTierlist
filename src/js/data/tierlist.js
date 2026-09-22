@@ -7323,7 +7323,7 @@ dataSet[dataSetVersion].characterData = [
         "Unimpressive Killer Range"
       ]
     }
-  }
+  },
   { 
     name: "A10 Kanako", 
     img: "a10 kanko (why is bitch so big wtf).webp", 
