@@ -1113,6 +1113,29 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  { 
+    name: "A16æ Eternity", 
+    img: "a16ae eternity.webp", 
+    tier: "S", 
+    opts: { heal: true, ph: true },
+    explanation: {
+      pros: [
+        "Great Debuffing Ability leads to Consistent Gauge 3 Performance, Allowing her to Capitalize on her High Damage and Great Dmg to Eff and Res",
+        "Good Utility Mostly Found in her 7/4 Break + Quick and High Accuracy Support"
+      ],
+      mixed: [
+        "Lacks Barrier Restoration Abilities meaning her Utility isn't as Good as it could be",
+        "Slow Innate Agility will make her Gauge 2 Breaks mostly go to Waste, tying her to that role as a breaker for only 1 Gauge"
+      ],
+      cons: [
+        "Tragic Killer Range hurts her Damage Role Immensely, leading her to rely on Raw Damage and Debuffs",
+        "Essentially has ZERO buffs for any Gauge besides Some Crit on her AoE (Which is mostly wasted due to her aforementioned Bad Killers) which kills her Damage Role even more"
+      ],
+      extra: [
+        "70% of this Character's Utility is found in her X-Change which is not counted for her tier. For reference, with X-Change she would likely be EX and have the single highest Damage in the game. However as is rn she's kinda just a better version of C3 Wakasagihime, where it looks like she should have buffs + debuffs + util but fails in everything but debuffs. Atrocious in-between performance + bad killer range makes her unsuitable both as a supporter and an attacker unless practically babied enough to warrant just using her EX counterpart as a switch-in, leaving her overall extremely mid."
+      ]
+    }
+  },
   {
     name: "C3∫ Yachie",
     img: "c3int yachie.webp",
@@ -1185,29 +1208,6 @@ dataSet[dataSetVersion].characterData = [
         "@@@@@@@ Gengetsu moments, aura, and a whole lot of gengetsu",
         "Kosuzu is genuinely amazing in the content she can perform in. The issue is mostly consistency as she has a 0 in some aspects and is ultra-reliant on gengetsu to get away with what she does, preventing an uptier.",
         "She is easily the meta water unit. Only reason she is A is because we do look past the moments when her breaking and buffs are carried. Still, having those moments at all is ridiculous. Hence her placement.",
-      ]
-    }
-  },
-  { 
-    name: "A16æ Eternity", 
-    img: "a16ae eternity.webp", 
-    tier: "A", 
-    opts: { heal: true, ph: true },
-    explanation: {
-      pros: [
-        "Great Debuffing Ability leads to Consistent Gauge 3 Performance, Allowing her to Capitalize on her High Damage and Great Dmg to Eff and Res",
-        "Good Utility Mostly Found in her 7/4 Break + Quick and High Accuracy Support"
-      ],
-      mixed: [
-        "Lacks Barrier Restoration Abilities meaning her Utility isn't as Good as it could be",
-        "Slow Innate Agility will make her Gauge 2 Breaks mostly go to Waste, tying her to that role as a breaker for only 1 Gauge"
-      ],
-      cons: [
-        "Tragic Killer Range hurts her Damage Role Immensely, leading her to rely on Raw Damage and Debuffs",
-        "Essentially has ZERO buffs for any Gauge besides Some Crit on her AoE (Which is mostly wasted due to her aforementioned Bad Killers) which kills her Damage Role even more"
-      ],
-      extra: [
-        "70% of this Character's Utility is found in her X-Change which is not counted for her tier. For reference, with X-Change she would likely be EX and have the single highest Damage in the game. However as is rn she's kinda just a better version of C3 Wakasagihime, where it looks like she should have buffs + debuffs + util but fails in everything but debuffs. Atrocious in-between performance + bad killer range makes her unsuitable both as a supporter and an attacker unless practically babied enough to warrant just using her EX counterpart as a switch-in, leaving her overall extremely mid."
       ]
     }
   },
