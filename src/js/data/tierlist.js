@@ -1670,27 +1670,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "L80 Yuyuko",
-    img: "mv yuyu.webp",
-    tier: "A",
-    opts: { tec: true, r: true },
-    explanation: {
-      pros: [
-        "Good Supportive and Debuffing Skill",
-        "Wood Weakness Inflict immediately takes care of any single gauge, works at 5p"
-      ],
-      cons: [
-        "Poor Killers & Limited Yang Atk & Agi Buffs Limit Personal Damage Output"
-      ],
-      nitpicks: [
-        "Effectively Gauge 3 Locked"
-      ],
-      mixed: [
-        "Can't take advantage of Wood Weak Inflict outside of Last Word"
-      ]
-    }
-  },
-  {
     name: "L80 Sanae",
     img: "Mv sanae.webp",
     tier: "A",
@@ -2845,6 +2824,25 @@ dataSet[dataSetVersion].characterData = [
       ],
       mixed: [
         "Buffing Ability is simply Average, notably lacking on Agi between Gauges even with her 2.0 giving it Agi on her AoE"
+      ]
+    }
+  },
+  {
+    name: "L80 Yuyuko",
+    img: "mv yuyu.webp",
+    tier: "B",
+    opts: { tec: true, r: true },
+    explanation: {
+      pros: [
+        "Wood Weakness Inflict is the crux of her tier allowing for basically anyone (herself included) to handle Gauge 3 without issue",
+        "Good debuffing abilities complement her gauge 3 performance even further "
+      ],
+      cons: [
+        "Buffing abilities are very behind standard, especially as a dual scaling unit. She simply can’t keep up with what she needs for consistent damage.",
+        "Low damage ceilings in general (mostly on her aoe), low utility outside party Acc on boost lead to her having next to no presence outside gauge 3."
+      ],
+      mixed: [
+        "Killer range is average at best and bad at worst as it is mostly carried by parallel presence killer"
       ]
     }
   },
