@@ -509,6 +509,27 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  {
+    name: "C8<< Flandre",
+    img: "c8 flandre.webp",
+    tier: "SS",
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Incredibly high buff cheese complementing the modern efes support p buffing and 4 inflict opens to her an extremely wide range of options. Realistically speaking, making her one of the actually perfect units. ",
+        "Decently wide killer range supports her damage output particularly on her Last Word/G3 damage which is great thanks to def down on her card and aforementioned high buffs while res dmg is good enough across the board."
+      ],
+      mixed: [
+        "Only has AoE anom inflict on her skill meaning her personal breaking ability is quite bad"
+      ],
+      cons: [
+        "The weird self quick and reflect anoms do sort of counteract the versatility gained from her spread. Quite often she will be without a proper geng to contribute to her aside from specifically bl4 especially with her interesting reflect anoms. However, this is not weighed against her in this case. As realistically speaking it can be worked around thanks to how many modern tech units fill the role and flandre's 'fixing of them.' aka the con is a so and so"
+      ],
+      nitpick: [
+        "AoE damage is a little worse than usual for modern efes but it is still generally high enough (375k res vs expected 450k). This can be somewhat compensated when her AoE has a bis as it currently doesnt have a 100% card. "
+      ]
+    }
+  },
   { 
     name: "Ce9 Remilia", 
     img: "ce9 remilia.webp", 
@@ -1470,33 +1491,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Her mega neutral nuke is the only thing keeping her in A since we value neutral damage a lot. This character needs a looot of support to actually work though. Her AoE is also quite good on killer but less reliable."
-      ]
-    }
-  },
-  {
-    name: "C3' Seiga",
-    img: "C3' Seiga.webp",
-    tier: "A",
-    opts: { e: true, tec: true },
-    explanation: {
-      pros: [
-        "Valuable and unique gimmicks",
-        "Blatantly overpowered breaking ability"
-      ],
-      cons: [
-        "Generally lacks Rank I buffs to a sad degree.",
-        "Lacks Def Down I on LW causing rank ii def down to feel worse. Lacks buffs in general, limiting her use.",
-        "The Worst, and I mean the worst Dmg to Eff issues in the game. Almost completely unusable outside of killing SPECIFICALLY the water enemy, which completely ruins majority of her viability"
-      ],
-      nitpicks: [
-        "Spellcard Animations are just so so slow"
-      ],
-      mixed: [
-        "Can't use Crit Acc/Eva buffs",
-        "Killers hit more than you'd expect but are too unconventional to be useful 90% of the time. While her damage potential is high she is very inconsistent in this manner."
-      ],
-      extra: [
-        "Seiga is a unit that *should* have most aspects of a competent kit. But in practice she is basically just a breaker. A good breaker, but still.",
       ]
     }
   },
@@ -2568,6 +2562,33 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "C3' Seiga",
+    img: "C3' Seiga.webp",
+    tier: "B",
+    opts: { e: true, tec: true },
+    explanation: {
+      pros: [
+        "Valuable and unique gimmicks",
+        "Blatantly overpowered breaking ability"
+      ],
+      cons: [
+        "Generally lacks Rank I buffs to a sad degree.",
+        "Lacks Def Down I on LW causing rank ii def down to feel worse. Lacks buffs in general, limiting her use.",
+        "The Worst, and I mean the worst Dmg to Eff issues in the game. Almost completely unusable outside of killing SPECIFICALLY the water enemy, which completely ruins majority of her viability"
+      ],
+      nitpicks: [
+        "Spellcard Animations are just so so slow"
+      ],
+      mixed: [
+        "Can't use Crit Acc/Eva buffs",
+        "Killers hit more than you'd expect but are too unconventional to be useful 90% of the time. While her damage potential is high she is very inconsistent in this manner."
+      ],
+      extra: [
+        "Seiga is a unit that *should* have most aspects of a competent kit. But in practice she is basically just a breaker. A good breaker, but still.",
+      ]
+    }
+  },
+  {
     name: "Cb3# Youmu",
     img: "cb3 youmu.webp",
     tier: "B",
@@ -2824,6 +2845,23 @@ dataSet[dataSetVersion].characterData = [
       ],
       mixed: [
         "Buffing Ability is simply Average, notably lacking on Agi between Gauges even with her 2.0 giving it Agi on her AoE"
+      ]
+    }
+  },
+  {
+    name: "A7& Yukari",
+    img: "a7& yukari.webp",
+    tier: "B",
+    opts: { tec: true, ex: true },
+    explanation: {
+      pros: [
+        "7/7 breaking ability with multiple options for anomaly breaking is obviously very strong and enables many comps"
+      ],
+      cons: [
+        "Basically has 0 buffs throughout her kit and almost all of what she does have is selfish basically killing her tier instantly as, even with her amazing killer range, she is mixed and cannot buff herself to support it at all. Ruining both her damage role and her support role being somehow worse than EXPiece. So she is effectively just a breaker."
+      ],
+      mixed: [
+        "Has P issues between gauges unless the stage inflicts anomalies that she gains P from which can limit said breaking niche"
       ]
     }
   },
@@ -3265,31 +3303,6 @@ dataSet[dataSetVersion].characterData = [
         "THE VILLAIN OF C TIER",
         "RED for Gengetsu for she is the true gengetsu powercreep",
         "she would be SS with an AOE Lw. Maybe low ex due to awful lw killer and awful lw pre effs. She is hilariously underseated due to her st lw. more than ex kosuzu is underseated due to needing gengetsu. In general theyll have the same buffing agi checks breaking etc. For usual play. HOWEVER, her aoe spell p0 is quite bad for what a st lw needs and she is noticeably worse than gengetsu for the nuking turn in duos giving her inconsistency. still, hilariously underseated. if our tierlist didnt hate st lws, shed be high A (aka, if we didnt anti bias her bc of st lw)"
-      ]
-    }
-  },
-  {
-    name: "C8<< Koishi",
-    img: "C8lessthanlessthan Koishi.webp",
-    tier: "C",
-    opts: { spd: true, e: true },
-    explanation: {
-      pros: [
-        "Decent Supporting Ability"
-      ],
-      boons: [
-        "Extremely Good Solo LW"
-      ],
-      mixed: [
-        "Misses out on Breaks/AoE Damage if she wants to maximize Support due to the nature of her kit design",
-        "Disjointed Elemental Spread"
-      ],
-      cons: [
-        "In general, lacks Agi I or II buffs",
-        "Extremely Bad Killers and Solo LW immediately culls usability"
-      ],
-      extra: [
-        "LAST TESTED: Jan 2026"
       ]
     }
   },
@@ -4095,24 +4108,6 @@ dataSet[dataSetVersion].characterData = [
       extra: [
         "---------- worst design in the entire game, ever",
         "Like C3 Mystia she would be S with an AoE LW"
-      ]
-    }
-  },
-  {
-    name: "R8.-5 Youmu",
-    img: "r8.-5 youmu.webp",
-    tier: "C",
-    opts: { spd: true, b: true },
-    explanation: {
-      pros: [
-        "LW Nuke better than L1 Kanako on Usable Killer",
-        "Usable Buffs/Breaking"
-      ],
-      mixed: [
-        "Killer is Very Unconventional though her AoE has decent damage on kilelr"
-      ],
-      cons: [
-        "Lacks Util outside of Breaks"
       ]
     }
   },
@@ -5070,6 +5065,28 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "C8<< Koishi",
+    img: "C8lessthanlessthan Koishi.webp",
+    tier: "D",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Decent Supporting Ability"
+      ],
+      boons: [
+        "Extremely Good Solo LW"
+      ],
+      mixed: [
+        "Misses out on Breaks/AoE Damage if she wants to maximize Support due to the nature of her kit design",
+        "Disjointed Elemental Spread"
+      ],
+      cons: [
+        "In general, lacks Agi I or II buffs",
+        "Extremely Bad Killers and Solo LW immediately culls usability"
+      ]
+    }
+  },
+  {
     name: "C3< Alice",
     img: "autumn alice.webp",
     tier: "D",
@@ -5398,6 +5415,40 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "——— A huge letdown"
+      ]
+    }
+  },
+  {
+    name: "R8.-5 Youmu",
+    img: "r8.-5 youmu.webp",
+    tier: "D",
+    opts: { spd: true, b: true },
+    explanation: {
+      pros: [
+        "LW Nuke better than L1 Kanako on Usable Killer",
+        "Usable Buffs/Breaking"
+      ],
+      mixed: [
+        "Killer is Very Unconventional though her AoE has decent damage on kilelr"
+      ],
+      cons: [
+        "Lacks Util outside of Breaks"
+      ]
+    }
+  },
+  {
+    name: "B1-1 Reisen",
+    img: "b1-1 reisen.webp",
+    tier: "D",
+    opts: { atk: true, b: true },
+    explanation: {
+      pros: [
+        "4 AoE poison inflict on skill (w nyshi duos?)",
+        "Has usable aoe nuke and lw buffs"
+      ],
+      cons: [
+        "Extremely selfish buffs",
+        "Solo LW"
       ]
     }
   },
