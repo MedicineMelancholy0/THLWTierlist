@@ -31,6 +31,30 @@ dataSet[dataSetVersion].characterData = [
   
   // start of EX
   { 
+    name: "D8 Alice", 
+    img: "d8 alice.webp", 
+    tier: "EX", 
+    opts: { p: true, tec: true },
+    explanation: {
+      pros: [
+        "Obscenely high damage everywhere best aoe spellcard in the game best g3 damage in the game with great wide killers literally what do you want me to say",
+        "Extremely great buffs literally has every yin buff in the game leading to perfect synergy with basically every yin unit while also reducing enemy barriers by 3 for 3 turns so they're always full broken basically with her p0 anom breaks",
+        "Simply has great utility in basically all aspects therefore with negative p issues and good acc "
+      ],
+      cons: [
+        "is $300"
+      ],
+      mixed: [
+        "Innate AoE buffs are kinda lackluster and she kinda wants more yin atk there. She is basically 1 yin atk away from killing everything at all times but this is obviously an easy fix",
+        "Nerfs the party so she doesn't pair as well with mv kasen / mv patchouli (genuinely who cares)",
+        "Doesn't have agi anomalies so if for whatever reason you can't use her for damage she can have trouble outspeeding other units (genuinely who cares)"
+      ],
+      extra: [
+        "TLDR she solos everything that doesn't go out of its way to nerf her into the ground"
+      ]
+    }
+  },
+  { 
     name: "L0o Satori", 
     img: "lo satori.webp", 
     tier: "EX", 
@@ -1540,6 +1564,28 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "C3≦ Komachi",
+    img: "C3less than or equal to Komachi.webp",
+    tier: "A",
+    opts: { supp: true, e: true },
+    explanation: {
+      pros: [
+        "Extremely Good Support, up to 1.3k Yin Atk stat for free almost lol"
+      ],
+      boons: [
+        "Great Raw Damage",
+        "Weirdly realistic as she has proven herself to be"
+      ],
+      cons: [
+        "Terrible Killers",
+        "Terrible Breaks, Mid Util (Where Party Barr????)"
+      ],
+      extra: [
+        "Kinda @"
+      ]
+    }
+  },
+  {
     name: "C3≦ Hisami",
     img: "c3lte hisami.webp",
     tier: "A",
@@ -1557,6 +1603,25 @@ dataSet[dataSetVersion].characterData = [
       ],
       boons: [
         "High Accuracy Support throughout her Kit"
+      ]
+    }
+  },
+  {
+    name: "C8>> Yuuma",
+    img: "c8 yuuma.webp",
+    tier: "A",
+    opts: { dbf: true, e: true },
+    explanation: {
+      pros: [
+        "High damage across her kit complemented by great killers and great base damage letting her damage scale well with proper support",
+        "Good debuffing abilities complement said damage notably for Gauge 3 while she herself has reasonable P sustainability meaning she effectively just needs help in buffs/breaking"
+      ],
+      boons: [
+        "Absorbs P from all anoms (lets her be usable kinda anywhere without being insta shafted)"
+      ],
+      cons: [
+        "Lacks buffs/accuracy on her own making her dependent on a geng to do things but otherwise has a very reasonable kit",
+        "Do note however she is dual scaling which, while that does help her calc numbers, makes properly supporting her a lot harder because she doesn't really buff her dual scaling and her calc numbers are unrealistic therefore"
       ]
     }
   },
@@ -2488,28 +2553,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "@@"
-      ]
-    }
-  },
-  {
-    name: "C3≦ Komachi",
-    img: "C3less than or equal to Komachi.webp",
-    tier: "B",
-    opts: { supp: true, e: true },
-    explanation: {
-      pros: [
-        "Extremely Good Support, up to 1.3k Yin Atk stat for free almost lol"
-      ],
-      boons: [
-        "Great Raw Damage",
-        "Weirdly realistic as she has proven herself to be"
-      ],
-      cons: [
-        "Terrible Killers",
-        "Terrible Breaks, Mid Util (Where Party Barr????)"
-      ],
-      extra: [
-        "Kinda @"
       ]
     }
   },
