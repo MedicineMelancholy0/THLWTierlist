@@ -946,6 +946,14 @@ body.small-icons .expl {
   border-left: 4px solid #fcbc81;
 }
 
+.modal-date {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 11px;
+  color: #888888;
+  margin-top: 16px;
+  margin-bottom: 0;
+  text-align: right;
+}
 
 /* Extra */
 .header-extra {
