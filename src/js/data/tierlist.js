@@ -51,6 +51,9 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "TLDR she solos everything that doesn't go out of its way to nerf her into the ground"
+      ],
+      dates: [
+        "Last updated 29/9/2026"
       ]
     }
   },
@@ -1622,6 +1625,9 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Lacks buffs/accuracy on her own making her dependent on a geng to do things but otherwise has a very reasonable kit",
         "Do note however she is dual scaling which, while that does help her calc numbers, makes properly supporting her a lot harder because she doesn't really buff her dual scaling and her calc numbers are unrealistic therefore"
+      ],
+      dates: [
+        "Last updated 29/9/2026"
       ]
     }
   },
