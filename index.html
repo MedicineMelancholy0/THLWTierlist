@@ -206,7 +206,7 @@
     
     <h1>Filter by Rarity</h1>
     <input type="checkbox" id="class9" value="p" onclick="filterPureChars()">
-    <label for="class9">Pure Fes</label>
+    <label for="class9">Pure/Dark Fes</label>
     <input type="checkbox" id="class10" value="e" onclick="filterEpicChars()">
     <label for="class10">Epic Fes</label>
     <input type="checkbox" id="class11" value="ph" onclick="filterPhChars()">
@@ -1307,7 +1307,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- piss ass stats -->
 <script>
 
-const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4, C: 3, D: 2, E: 1 };
+const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4 };
 
 const TIER_COLORS = {
   EX: "#e91e8f", SS: "#8e5bd6", S: "#e8b4b8", A: "#f0af6e",
@@ -1322,7 +1322,7 @@ function scoreToTierLabel(avg) {
 
 // `short` = axis label (fits narrow columns), `label` = full name (shown on hover)
 const RARITY_KEYS = [
-  { key: "p",  label: "Pure Fes", short: "Pure" },
+  { key: "p",  label: "Pure/Dark Fes", short: "Ema" },
   { key: "e",  label: "Epic Fes", short: "Epic" },
   { key: "ph", label: "Phantasm Fes", short: "Phantasm" },
   { key: "r",  label: "Relics and Genics", short: "R&G" },
@@ -1415,6 +1415,7 @@ function renderStats() {
   });
 }
 
+/*
 function computeOverallStats(charList) {
   const scores = charList
     .filter(c => TIER_SCORES.hasOwnProperty(c.tier))
@@ -1429,7 +1430,7 @@ function computeOverallStats(charList) {
   const median = count % 2 === 0 ? (scores[mid - 1] + scores[mid]) / 2 : scores[mid];
 
   return { count, mean: Math.round(mean * 10) / 10, median: Math.round(median * 10) / 10 };
-}
+}*/
 
 function renderStatsSummary() {
   const summaryEl = document.getElementById("stats-summary");
@@ -1441,11 +1442,12 @@ function renderStatsSummary() {
   summaryEl.innerHTML = `
     <span><strong>${totalTracked}</strong> Total Characters Tracked</span>
     <span><strong>${count}</strong> Tiered (Excl. F / Yukkuri)</span>
-    <span>Mean Tier: <strong>${scoreToTierLabel(mean)}</strong> (${mean.toFixed(1)})</span>
-    <span>Median Tier: <strong>${scoreToTierLabel(median)}</strong> (${median.toFixed(1)})</span>
   `;
 }
 </script>
+
+<!--    <span>Mean Tier: <strong>${scoreToTierLabel(mean)}</strong> (${mean.toFixed(1)})</span>
+    <span>Median Tier: <strong>${scoreToTierLabel(median)}</strong> (${median.toFixed(1)})</span> -->
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
