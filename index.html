@@ -1307,7 +1307,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- piss ass stats -->
 <script>
 
-const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4 };
+const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4, C: 3, D: 2, E:1 };
 
 const TIER_COLORS = {
   EX: "#e91e8f", SS: "#8e5bd6", S: "#e8b4b8", A: "#f0af6e",
@@ -1415,7 +1415,7 @@ function renderStats() {
   });
 }
 
-/*
+
 function computeOverallStats(charList) {
   const scores = charList
     .filter(c => TIER_SCORES.hasOwnProperty(c.tier))
@@ -1430,7 +1430,7 @@ function computeOverallStats(charList) {
   const median = count % 2 === 0 ? (scores[mid - 1] + scores[mid]) / 2 : scores[mid];
 
   return { count, mean: Math.round(mean * 10) / 10, median: Math.round(median * 10) / 10 };
-}*/
+}
 
 function renderStatsSummary() {
   const summaryEl = document.getElementById("stats-summary");
