@@ -651,12 +651,11 @@
       body.innerHTML += `<div class="sub-header header-extra">Notes</div>`;
       exp.extra.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
     }
-/*
+
     if (exp.dates && exp.dates.length > 0) {
-      body.innerHTML += `<div class="sub-header header-dates">Notes</div>`;
-      exp.dates.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
+      exp.dates.forEach(d => body.innerHTML += `<p class="modal-date">${d}</p>`);
     }
-*/
+    
     modal.style.display = "block";
   }
 
