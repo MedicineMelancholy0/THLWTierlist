@@ -653,8 +653,8 @@
     }
 /*
     if (exp.dates && exp.dates.length > 0) {
-      body.innerHTML += `<div class="sub-header header-extra">Notes</div>`;
-      exp.extra.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
+      body.innerHTML += `<div class="sub-header header-dates">Notes</div>`;
+      exp.dates.forEach(e => body.innerHTML += `<p class="modal-p">${e}</p>`);
     }
 */
     modal.style.display = "block";
@@ -1308,6 +1308,9 @@ document.addEventListener('DOMContentLoaded', () => {
 <script>
 
 const TIER_SCORES = { EX: 8, SS: 7, S: 6, A: 5, B: 4, C: 3, D: 2, E:1 };
+const AVERAGE_TIER_SCORES = Object.fromEntries(
+  Object.entries(TIER_SCORES).filter(([, score]) => score >= 4)
+);
 
 const TIER_COLORS = {
   EX: "#e91e8f", SS: "#8e5bd6", S: "#e8b4b8", A: "#f0af6e",
@@ -1354,10 +1357,10 @@ function computeTierDistribution(charList) {
 function computeAveragesByGroup(charList, groupKeys) {
   return groupKeys.map(({ key, label, short }) => {
     const scored = charList.filter(c =>
-      c.opts && c.opts[key] === true && TIER_SCORES.hasOwnProperty(c.tier)
+      c.opts && c.opts[key] === true && AVERAGE_TIER_SCORES.hasOwnProperty(c.tier)
     );
     const count = scored.length;
-    const avg = count === 0 ? 0 : scored.reduce((sum, c) => sum + TIER_SCORES[c.tier], 0) / count;
+    const avg = count === 0 ? 0 : scored.reduce((sum, c) => sum + AVERAGE_TIER_SCORES[c.tier], 0) / count;
     return { label, short, value: Math.round(avg * 10) / 10, count };
   });
 }
@@ -1455,20 +1458,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const panel = document.getElementById("stats-panel");
   if (!checkbox || !panel) return;
 
-  const isCollapsed = localStorage.getItem("stats_collapsed") === "true";
-  if (isCollapsed) {
-    checkbox.checked = true;
-    panel.classList.add("is-collapsed");
-  }
+  const saved = localStorage.getItem("stats_collapsed");
+  const isCollapsed = saved !== null ? saved === "true" : true;
+
+  checkbox.checked = isCollapsed;
+  panel.classList.toggle("is-collapsed", isCollapsed);
 
   checkbox.addEventListener("change", () => {
-    if (checkbox.checked) {
-      panel.classList.add("is-collapsed");
-      localStorage.setItem("stats_collapsed", "true");
-    } else {
-      panel.classList.remove("is-collapsed");
-      localStorage.setItem("stats_collapsed", "false");
-    }
+    panel.classList.toggle("is-collapsed", checkbox.checked);
+    localStorage.setItem("stats_collapsed", checkbox.checked ? "true" : "false");
   });
 });
 </script>
