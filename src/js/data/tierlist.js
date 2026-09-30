@@ -2935,30 +2935,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A9& Medicine",
-    img: "a9& medicine.webp",
-    tier: "B",
-    opts: { dbf: true, ex: true },
-    explanation: {
-      pros: [
-        "Yin Def II Debuff + Uses -3 Def Card + Burn = Good Debuffs",
-        "Breaking is Decent"
-      ],
-      cons: [
-        "Mixed Bullet Type LW",
-        "Lacks Yin Atk Buffs to an atrocious degree",
-        "Poor Killers",
-        "Passive 1 Works Against Her (She can't break her own poison)"
-      ],
-      mixed: [
-        "Atk Debuffs are worse than useless",
-        "Essentially Mono Wood",
-        "Self Buffs aren’t Bad but aren’t good",
-        "Lacks Yin Def Down outside of AoE"
-      ]
-    }
-  },
-  {
     name: "A11& Kisume",
     img: "a11& kisume.webp",
     tier: "B",
@@ -3974,6 +3950,28 @@ dataSet[dataSetVersion].characterData = [
       ],
       nitpick: [
         "Her Skill 3 has 1 self barr cleanse. Like why"
+      ]
+    }
+  },
+  {
+    name: "A9& Medicine",
+    img: "a9& medicine.webp",
+    tier: "C",
+    opts: { dbf: true, ex: true },
+    explanation: {
+      pros: [
+        "Rather good debuffing abilities all in all, with 2 seperate debuffing skills, burn, def down II and good debuffing on her AoE"
+      ],
+      cons: [
+        "Generally just has no real buffs or util to speak of",
+        "Passive 1 Works Against Her (She can't break her own poison) making consistent farms essentially go to hell"
+      ],
+      mixed: [
+        "Atk Debuffs are worse than useless (as characters who have atk critmods want those high) especially bad since she has 0 innate def down on her last word because of it",
+        "Damage is genuinely not bad, but it is held back by bad killers, lacking buffs, mixed bullet types and generally just having very weak damage ceilings."
+      ],
+      dates: [
+        "Last updated 30/9/2026"
       ]
     }
   },
