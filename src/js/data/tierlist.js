@@ -103,6 +103,9 @@ dataSet[dataSetVersion].characterData = [
         "Primary killers on ST are kinda whack (but it doesnt matter much cause of her raw dmg!)",
         "Stored Power lasting only 2 turns which can make t3 nuking ever so slightly suboptimal"
       ],
+      cons: [
+        "Unlike everyone else in EX++, she doesn't have 7 aoe break—only 6/3. Leading to worse solo performance and more reliance on breakers to do her thing. That said, she has fast overflow, so this isn't actually that big a deal provided you have a breaker of some kind for her."
+      ],
       extra: [
         "Has nn bias because nn loves the color red so her secondary killer is bluemu secondary killer but better????",
         "DS Solo Count: IDK a lot"
@@ -293,7 +296,7 @@ dataSet[dataSetVersion].characterData = [
         "2t Gimmicks are Kinda Annoying but Mostly Savable"
       ],
       cons: [
-        "Lacks Utility outside of Party P (Self Acc) so she is essentially just a very big damage bot."
+        "Lacks Utility outside of Party P (Self Acc, bad breaks) so she is essentially just a very big damage bot."
       ]
     }
   },
@@ -1180,7 +1183,7 @@ dataSet[dataSetVersion].characterData = [
         "Essentially has ZERO buffs for any Gauge besides Some Crit on her AoE (Which is mostly wasted due to her aforementioned Bad Killers) which kills her Damage Role even more"
       ],
       extra: [
-        "70% of this Character's Utility is found in her X-Change which is not counted for her tier. For reference, with X-Change she would likely be EX and have the single highest Damage in the game. However as is rn she's kinda just a better version of C3 Wakasagihime, where it looks like she should have buffs + debuffs + util but fails in everything but debuffs. Atrocious in-between performance + bad killer range makes her unsuitable both as a supporter and an attacker unless practically babied enough to warrant just using her EX counterpart as a switch-in, leaving her overall extremely mid."
+        "70% of this Character's Utility is found in her X-Change which is not counted for her tier. For reference, with X-Change she would likely be EX and have one of the highest Damage in the game. However as is rn she's kinda just a better version of C3 Wakasagihime, where it looks like she should have buffs + debuffs + util but fails in everything but debuffs. Atrocious in-between performance + bad killer range makes her unsuitable both as a supporter and an attacker unless practically babied enough to warrant just using her EX counterpart as a switch-in, leaving her overall extremely mid."
       ]
     }
   },
