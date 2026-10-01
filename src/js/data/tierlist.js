@@ -2953,31 +2953,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A13& Futo",
-    img: "a13& futo.webp",
-    tier: "B",
-    opts: { heal: true, ex: true },
-    explanation: {
-      pros: [
-        "Great Barr Support Skill, Infinite Barriers for 3 Turns"
-      ],
-      cons: [
-        "Breaks Lag Behind"
-      ],
-      boons: [
-        "Has Fairy Killer"
-      ],
-      mixed: [
-        "Really wants more Buffs Overall",
-        "Killers and Damage are overall so-so. Saved by high dmg to res. (AoE p0 killers are bald)"
-      ],
-      nitpick: [
-        "No Burn Break on LW",
-        "Acc on Boost is SELF"
-      ]
-    }
-  },
-  {
     name: "A16& Mai",
     img: "a16& smai.webp",
     tier: "B",
@@ -3994,6 +3969,31 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "we are not raising this unit, everyone who wants this unit raised should really revaluate our standards at what exdai actually does in a comp. she is a worse version of c3 kyouko. plain and simple. enjoy your c3 cirno tho!!"
+      ]
+    }
+  },
+  {
+    name: "A13& Futo",
+    img: "a13& futo.webp",
+    tier: "C",
+    opts: { heal: true, ex: true },
+    explanation: {
+      pros: [
+        "Great Barr Support Skill, Infinite Barriers for 3 Turns"
+      ],
+      cons: [
+        "Breaks Lag Behind"
+      ],
+      boons: [
+        "Has Fairy Killer"
+      ],
+      mixed: [
+        "Really wants more Buffs Overall",
+        "Killers and Damage are overall so-so. Saved by high dmg to res. (AoE p0 killers are bald)"
+      ],
+      nitpick: [
+        "No Burn Break on LW",
+        "Acc on Boost is SELF"
       ]
     }
   },
