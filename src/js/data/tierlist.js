@@ -3872,6 +3872,25 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "A6& Cirno",
+    img: "a6& cirno.webp",
+    tier: "C",
+    opts: { dbf: true, ex: true },
+    explanation: {
+      pros: [
+        "7 Yin Def Down on LW + 2 Def Down II are easily her best use making her a decent last gauge debuffer"
+      ],
+      boons: [
+        "Permanent Evasion Down is a decent, if niche, tool for Consistency Support"
+      ],
+      cons: [
+        "Lacks Buffs to Support Herself or the Party outside Debuffing",
+        "Doesn't break Freeze on her AoE and then her Perma Eva Down is on her Freeze Inflict Skill so you either bring a freeze breaker or you're fucked",
+        "Disjointed Elements, Bad Killers, and Low Scalings completely kill her damage (lower than EX Medi, btw) and performance outside gauge 3 leaving her to only be useful for debuffing a single gauge"
+      ]
+    }
+  },
+  {
     name: "A6& Koakuma",
     img: "a6& koa.webp",
     tier: "C",
@@ -5239,25 +5258,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A6& Cirno",
-    img: "a6& cirno.webp",
-    tier: "D",
-    opts: { dbf: true, ex: true },
-    explanation: {
-      pros: [
-        "7 Yin Def Down on LW + 2 Def Down II are easily her best use making her a decent last gauge debuffer"
-      ],
-      boons: [
-        "Permanent Evasion Down is a decent, if niche, tool for Consistency Support"
-      ],
-      cons: [
-        "Lacks Buffs to Support Herself or the Party outside Debuffing",
-        "Doesn't break Freeze on her AoE and then her Perma Eva Down is on her Freeze Inflict Skill so you either bring a freeze breaker or you're fucked",
-        "Disjointed Elements, Bad Killers, and Low Scalings completely kill her damage (lower than EX Medi, btw) and performance outside gauge 3 leaving her to only be useful for debuffing a single gauge"
-      ]
-    }
-  },
-  {
     name: "A7.5& Suika",
     img: "a7.5& suika.webp",
     tier: "D",
@@ -6586,6 +6586,32 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  { 
+    name: "A11 Koishi", 
+    img: "a11 koishi.webp", 
+    tier: "D", 
+    opts: { spd: true, a: true },
+    explanation: {
+      pros: [
+        "1.1 Million AoE damage with Rein on killer (this is the only reason for her tier placement in D everything else is abysmal dogshit)"
+      ],
+      mixed: [
+        "Mid DMG on her LW even with killers hit. The damage ceiling is low with those slice values",
+        "Inflicts Anomalies post Spellcard",
+        "Self Setup and Debuffs are Decent but needs more help.",
+        "Good Killers are Secondary on her LW"
+      ],
+      cons: [
+        "Very Little in the way for Support",
+        "Anomaly Breaks are limited to shots",
+        "No Crit Atk"
+      ],
+      extra: [
+        "This units' main claim to fame was having her killers line up with a lot of CQ back in the day.",
+        "Solos water EX (somehow)"
+      ]
+    }
+  },
   {
     name: "A12.3 Meiling",
     img: "a12.3 Meiling.webp",
@@ -7476,32 +7502,6 @@ dataSet[dataSetVersion].characterData = [
         "Breaking Ability is Bad, Tri-Element LW",
         "No Crit Atk",
         "Lacks Supp/Util, big victim of Powercreep"
-      ]
-    }
-  },
-  { 
-    name: "A11 Koishi", 
-    img: "a11 koishi.webp", 
-    tier: "E", 
-    opts: { spd: true, a: true },
-    explanation: {
-      pros: [
-        "Actually Capable AoE Spell with Decent Killers too (it's above base fishi in terms of dmg)"
-      ],
-      mixed: [
-        "Mid DMG on her LW even with killers hit. The damage ceiling is low with those slice values",
-        "Inflicts Anomalies post Spellcard",
-        "Self Setup and Debuffs are Decent but needs more help.",
-        "Good Killers are Secondary on her LW"
-      ],
-      cons: [
-        "Very Little in the way for Support",
-        "Anomaly Breaks are limited to shots",
-        "No Crit Atk"
-      ],
-      extra: [
-        "This units' main claim to fame was having her killers line up with a lot of CQ back in the day.",
-        "Solos water EX (somehow)"
       ]
     }
   },
