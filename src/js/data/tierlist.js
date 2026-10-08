@@ -1719,6 +1719,27 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "L80 Nue",
+    img: "l80 nue.webp",
+    tier: "A",
+    opts: { r: true, spd: true },
+    explanation: {
+      pros: [
+        "Good G3 + LW killers when used with her anthology card similar to L80 Kokoro"
+      ],
+      cons: [
+        "AoE spellcard tends to fall flat even with the Star/Light +4 Crit card as even with the double sync as they are just not that useful for her realistic damage due to bad numbers, made infinitely worse due to having 0—yes ZERO supports. The closest one that works is Mugetsu but Mugetsu basically doesn’t have a Rank II so that falls flat due to aforementioned bad realistic AoE damage"
+      ],
+      mixed: [
+        "Good buff cheese for herself when paired with proper cards—however they are almost all selfish, hurting her supporting role",
+        "Has next to no util meaning she doesn’t really have a role as a supporter despite her speed"
+      ],
+      extra: [
+        "All in all her kit is still quite good even if it’s 2025 kit philosophy and if she was poison most of these could easily be fixed and she could be above shecc but the combination of all these issues makes her unrealistic at best. Too bad Yang/Blind is basically extinct"
+      ]
+    }
+  },
+  {
     name: "L80 Ran",
     img: "l80 ran.webp",
     tier: "A",
