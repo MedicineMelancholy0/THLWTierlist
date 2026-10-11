@@ -8052,17 +8052,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "Aa Cirno", 
-    img: "yukkuri cirno.webp", 
-    tier: "Yukkuri", 
-    opts: { atk: true, y: true },
-    explanation: {
-      pros: [
-        "Wait, she has the budget Mima skill and p0 killers? Ummmm???"
-      ]
-    }
-  },
-  { 
     name: "Aa Reimu", 
     img: "yukkuri reimu.webp", 
     tier: "Yukkuri", 
@@ -8070,55 +8059,6 @@ dataSet[dataSetVersion].characterData = [
     explanation: {
       pros: [
         "Crit Dmg!!!"
-      ]
-    }
-  },
-  { 
-    name: "Aa Yuyuko", 
-    img: "Aa Yuyuko.webp", 
-    tier: "Yukkuri", 
-    opts: { dbf: true, y: true },
-    explanation: {
-      pros: [
-        "Debuff!!!!!!!!!!!"
-      ]
-    }
-  },
-  { 
-    name: "Aa Remilia", 
-    img: "Aa remilia.webp", 
-    tier: "Yukkuri", 
-    opts: { tec: true, y: true },
-    explanation: {
-      pros: [
-        "Crit Dmg!! And non-0 support!!"
-      ]
-    }
-  },
-  { 
-    name: "Aa Youmu", 
-    img: "Aa youmu.webp", 
-    tier: "Yukkuri", 
-    opts: { tec: true, y: true },
-    explanation: {
-      pros: [
-        "A selfish yukkuri with 10% agi scale??",
-        "Excellent."
-      ]
-    }
-  },
-  { 
-    name: "Aa Flandre", 
-    img: "Aa flandre.webp", 
-    tier: "Yukkuri", 
-    opts: { spd: true, y: true },
-    explanation: {
-      pros: [
-        "She has the mugetsu resonance btw.",
-        "All her inline buffs are guaranteed for some reason and she has kinda a crazy amount of them (why a13 seiga is good)"
-      ],
-      mixed: [
-        "And ST Lw. Why did they make a spd yukkuri whatl"
       ]
     }
   },
@@ -8138,13 +8078,62 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
-    name: "Aa Alice", 
-    img: "Aa alice.webp", 
+    name: "Aa Cirno", 
+    img: "yukkuri cirno.webp", 
     tier: "Yukkuri", 
-    opts: { supp: true, y: true },
+    opts: { atk: true, y: true },
     explanation: {
       pros: [
-        "Has more party P and supp than her dumpling gf"
+        "Wait, she has the budget Mima skill and p0 killers? Ummmm???"
+      ]
+    }
+  },
+  { 
+    name: "Aa Youmu", 
+    img: "Aa youmu.webp", 
+    tier: "Yukkuri", 
+    opts: { tec: true, y: true },
+    explanation: {
+      pros: [
+        "A selfish yukkuri with 10% agi scale??",
+        "Excellent."
+      ]
+    }
+  },
+  { 
+    name: "Aa Remilia", 
+    img: "Aa remilia.webp", 
+    tier: "Yukkuri", 
+    opts: { tec: true, y: true },
+    explanation: {
+      pros: [
+        "Crit Dmg!! And non-0 support!!"
+      ]
+    }
+  },
+  { 
+    name: "Aa Yuyuko", 
+    img: "Aa Yuyuko.webp", 
+    tier: "Yukkuri", 
+    opts: { dbf: true, y: true },
+    explanation: {
+      pros: [
+        "Debuff!!!!!!!!!!!"
+      ]
+    }
+  },
+  { 
+    name: "Aa Flandre", 
+    img: "Aa flandre.webp", 
+    tier: "Yukkuri", 
+    opts: { spd: true, y: true },
+    explanation: {
+      pros: [
+        "She has the mugetsu resonance btw.",
+        "All her inline buffs are guaranteed for some reason and she has kinda a crazy amount of them (why a13 seiga is good)"
+      ],
+      mixed: [
+        "And ST Lw. Why did they make a spd yukkuri whatl"
       ]
     }
   },
@@ -8156,6 +8145,17 @@ dataSet[dataSetVersion].characterData = [
     explanation: {
       pros: [
         "Party Crit Atk Up & some small P support"
+      ]
+    }
+  },
+  { 
+    name: "Aa Alice", 
+    img: "Aa alice.webp", 
+    tier: "Yukkuri", 
+    opts: { supp: true, y: true },
+    explanation: {
+      pros: [
+        "Has more party P and supp than her dumpling gf"
       ]
     }
   }
