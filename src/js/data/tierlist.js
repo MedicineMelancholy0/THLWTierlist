@@ -3659,27 +3659,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "L80 Koishi",
-    img: "koosh.webp",
-    tier: "C",
-    opts: { dbf: true, r: true },
-    explanation: {
-      pros: [
-        "Solid Damage Potential on Last Word",
-        "Solid Overall Support and Breaking"
-      ],
-      mixed: [
-        "Middling Debuff Potential without Story Cards",
-        "Trades scaling for extremely high Yin Atk stat. This kind of backfires into making her equal to someone with mid stats into both",
-        "RNG"
-      ],
-      cons: [
-        "Terrible Spellcard Damage",
-        "In practice cant buff or debuff properly so just kinda does nothing if you dont babysit her"
-      ]
-    }
-  },
-  {
     name: "L80 Reisen",
     img: "Mv rei.webp",
     tier: "C",
@@ -5275,6 +5254,27 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Unimpressive Killer Range",
         "No Acc Sources outside of Acc II"
+      ]
+    }
+  },
+  {
+    name: "L80 Koishi",
+    img: "koosh.webp",
+    tier: "D",
+    opts: { dbf: true, r: true },
+    explanation: {
+      pros: [
+        "Solid Damage Potential on Last Word",
+        "Solid Overall Support and Breaking"
+      ],
+      mixed: [
+        "Middling Debuff Potential without Story Cards",
+        "Trades scaling for extremely high Yin Atk stat. This kind of backfires into making her equal to someone with mid stats into both",
+        "RNG"
+      ],
+      cons: [
+        "Terrible Spellcard Damage",
+        "In practice cant buff or debuff properly so just kinda does nothing if you dont babysit her"
       ]
     }
   },
