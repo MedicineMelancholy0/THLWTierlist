@@ -3718,27 +3718,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "L80 Marisa",
-    img: "l80 marisa.webp",
-    tier: "C",
-    opts: { spd: true, r: true },
-    explanation: {
-      pros: [
-        "High Util between Gauges thanks to Short & Useful Skills and Good Breaks (6 Early)",
-        "Last Gauge Nuking is Decent thanks to Ample Innate Def Down"
-      ],
-      cons: [
-        "Notably Lacks AoE Spellcard Damage. Never use it for damage, ever.",
-        "Buffs and Support between Gauges is notably below average for her tier. Really isn't the amazing support she once was."
-      ],
-      extra: [
-        "@ instead lmao",
-        "Just use mugetsu usually, mvmors is less reliable as your other unit needs to be able to break themselves. and if you can use sanmu you always will.",
-        "NOTABLE PAIRINGS (Not included in tiering): Same as Mugetsu but worse. Yang/Burn is possibly the most neutered archetype in the game."
-      ]
-    }
-  },
-  {
     name: "L80 Mokou",
     img: "l80 mokou.webp",
     tier: "C",
@@ -5275,6 +5254,27 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Terrible Spellcard Damage",
         "In practice cant buff or debuff properly so just kinda does nothing if you dont babysit her"
+      ]
+    }
+  },
+  {
+    name: "L80 Marisa",
+    img: "l80 marisa.webp",
+    tier: "D",
+    opts: { spd: true, r: true },
+    explanation: {
+      pros: [
+        "High Util between Gauges thanks to Short & Useful Skills and Good Breaks (6 Early)",
+        "Last Gauge Nuking is Decent thanks to Ample Innate Def Down"
+      ],
+      cons: [
+        "Notably Lacks AoE Spellcard Damage. Never use it for damage, ever.",
+        "Buffs and Support between Gauges is notably below average for her tier. Really isn't the amazing support she once was."
+      ],
+      extra: [
+        "@ instead lmao",
+        "Just use mugetsu usually, mvmors is less reliable as your other unit needs to be able to break themselves. and if you can use sanmu you always will.",
+        "NOTABLE PAIRINGS (Not included in tiering): Same as Mugetsu but worse. Yang/Burn is possibly the most neutered archetype in the game."
       ]
     }
   },
