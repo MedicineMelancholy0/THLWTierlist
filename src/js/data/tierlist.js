@@ -2271,6 +2271,21 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "T5 Rin",
+    img: "t5 orin.webp",
+    tier: "A",
+    opts: { atk: true, u: true },
+    explanation: {
+      pros: [
+        "High damage output on aoe and last word, further complemented by perfect praecard access making her easily coast by on killer",
+        "Good buff counts across all gauges making her easy to support with someone like cs2# satori making her bona-fide A"
+      ],
+      cons: [
+        "Doesn't really have a notable util/support role to speak of while her damage numbers aren't enough to warrant an uptier"
+      ]
+    }
+  },
+  {
     name: "A13 Seiga",
     img: "seiga.webp",
     tier: "A",
@@ -7872,6 +7887,22 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Can't Set Herself Up Well, Fully Yang LW but primarily buffs Yin (also dual scaling lol)",
         "Unimpressive Killers (but she can still hit more impressive dmg than anticipated)"
+      ]
+    }
+  },
+  { 
+    name: "L1 Nareko", 
+    img: "l1 nareko.webp", 
+    tier: "E", 
+    opts: { def: true, g: true },
+    explanation: {
+      pros: [
+        "has 3 def down on lw",
+        "best breaks in e tier"
+      ],
+      cons: [
+        "bad buffs",
+        "bad damage"
       ]
     }
   },
