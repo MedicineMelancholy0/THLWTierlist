@@ -1499,32 +1499,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "C3' Junko",
-    img: "C3' Junko.webp",
-    tier: "A",
-    opts: { spd: true, e: true },
-    explanation: {
-      pros: [
-        "Hilarious damage for being fully neutral. AoE has very very high damage potential."
-      ],
-      cons: [
-        "Shitty breaking is not complemented by her speed!",
-        "Set up is so horrendously bad"
-      ],
-      nitpicks: [
-        "Junko is yet again ruining her personality for the sake of \"haha bunny mommy\""
-      ],
-      mixed: [
-        "Damage has huge variance due to dedicating most of her kit to RNG Crits while she lacks consistently good killers outside EBL content",
-        "Support is not useless, but very underwhelming.",
-        "(use mugetsu)"
-      ],
-      extra: [
-        "Her mega neutral nuke is the only thing keeping her in A since we value neutral damage a lot. This character needs a looot of support to actually work though. Her AoE is also quite good on killer but less reliable."
-      ]
-    }
-  },
-  {
     name: "C3' Nemuno",
     img: "c3' nemuno.webp",
     tier: "A",
@@ -1543,29 +1517,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       mixed: [
         "AoE Benefits Very Little from Crit Acc II Meaning there's 0 Damage Amp and her AoE Damage Falls off a Cliff Unless you hit Niche Killers"
-      ]
-    }
-  },
-  {
-    name: "Cf1# Reimu",
-    img: "ny reimu.webp",
-    tier: "A",
-    opts: { spd: true, e: true },
-    explanation: {
-      pros: [
-        "Very high, yet weirdly unreliable last word nuking.",
-        "Attack anoms help a lot for her damage consistency in achieving her heights."
-      ],
-      cons: [
-        "While her last word works fine, her aoe is especially lacking in killer. With some of the worst killer for a nuking aoe in the game and lacking the raw damage to make it nuke outside of killer content. She has all other facets of a strong aoe nuke role, but this is her massive flaw keeping her in the lower tiers."
-      ],
-      mixed: [
-        "Is yin, poison, extremely fast, and with selfish agi. Making her very difficult to play around in general. Even beyond normal tiering standard."
-      ],
-      extra: [
-        "Remember everyone, a lastword will probably kill even if it hits 17mil or 3mil. But if your aoe isnt solid you will suffer in the current era.",
-        "Earlier unreliable was used to describe her lw, this is due to her last word having high innate crit acc and her having high crit acc buffs without being 100% at cap. Meaning one must be quite good at ensuring she has no issues with crit acc.",
-        "Her only time shes duod was with maidkasa in the easiest stage in 2 years in a 5 action comp and youre telling me her ass is supposed to contend with cz2 yikes."
       ]
     }
   },
@@ -2656,6 +2607,32 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "C3' Junko",
+    img: "C3' Junko.webp",
+    tier: "B",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Hilarious damage for being fully neutral. AoE has very very high damage potential."
+      ],
+      cons: [
+        "Shitty breaking is not complemented by her speed!",
+        "Set up is so horrendously bad"
+      ],
+      nitpicks: [
+        "Junko is yet again ruining her personality for the sake of \"haha bunny mommy\""
+      ],
+      mixed: [
+        "Damage has huge variance due to dedicating most of her kit to RNG Crits while she lacks consistently good killers outside EBL content",
+        "Support is not useless, but very underwhelming.",
+        "(use mugetsu)"
+      ],
+      extra: [
+        "Her mega neutral nuke is the only thing keeping her in A since we value neutral damage a lot. This character needs a looot of support to actually work though. Her AoE is also quite good on killer but less reliable."
+      ]
+    }
+  },
+  {
     name: "Cb3# Youmu",
     img: "cb3 youmu.webp",
     tier: "B",
@@ -2674,6 +2651,29 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "She is basically just Cz1 that trades in all the utility for... more damage... which Cz1 wasn't lacking in to begin with"
+      ]
+    }
+  },
+  {
+    name: "Cf1# Reimu",
+    img: "ny reimu.webp",
+    tier: "B",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Very high, yet weirdly unreliable last word nuking.",
+        "Attack anoms help a lot for her damage consistency in achieving her heights."
+      ],
+      cons: [
+        "While her last word works fine, her aoe is especially lacking in killer. With some of the worst killer for a nuking aoe in the game and lacking the raw damage to make it nuke outside of killer content. She has all other facets of a strong aoe nuke role, but this is her massive flaw keeping her in the lower tiers."
+      ],
+      mixed: [
+        "Is yin, poison, extremely fast, and with selfish agi. Making her very difficult to play around in general. Even beyond normal tiering standard."
+      ],
+      extra: [
+        "Remember everyone, a lastword will probably kill even if it hits 17mil or 3mil. But if your aoe isnt solid you will suffer in the current era.",
+        "Earlier unreliable was used to describe her lw, this is due to her last word having high innate crit acc and her having high crit acc buffs without being 100% at cap. Meaning one must be quite good at ensuring she has no issues with crit acc.",
+        "Her only time shes duod was with maidkasa in the easiest stage in 2 years in a 5 action comp and youre telling me her ass is supposed to contend with cz2 yikes."
       ]
     }
   },
