@@ -5557,7 +5557,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
   name: "F1.-5 Reimu", 
-  img: "f1.-5 Reimu.webp", 
+  img: "f1.-5 reimu.webp", 
   tier: "D", 
   opts: { atk: true, b: true },
   explanation: {
