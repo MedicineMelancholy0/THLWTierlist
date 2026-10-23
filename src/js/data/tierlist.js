@@ -166,6 +166,25 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "A16æ Okina", 
+    img: "a16ae okina.webp", 
+    tier: "EX", 
+    opts: { tec: true, ph: true },
+    explanation: {
+      pros: [
+        "Insane practical damage boosted by 50% Damage to Res, Atk Anoms with 7/7 Early Breaks makes this unit effectively a Yang Froyo with an amazing skillset that allows her to retain gimmick for her gauge 3.",
+        "Agility is in a good range for both supporting units as a Gengbot (especially since her targets are Yang Hard units) and to function as a nuker with a higher agi supporter"
+      ],
+      mixed: [
+        "Fitting a gengbot role herself is hard for her due to lack of additional agi and the overall low buffs outside of Yang Hard but as a damage unit this doesnt ever matter and it moreso benefits her usage of atk anoms much more."
+      ],
+      cons: [
+        "Has precisely zero acc in her kit which doesnt affect her breaker role as she has sure-hit but it sure as hell hurts her damage role lol",
+        "Damage is cleanly cleaved into three thanks to being dual scaling where she has next to no scaling buffs for last gauge which can make her lw damage end up mid despite the atrociously high calc number kinda like smiko"
+      ]
+    }
+  },
+  { 
     name: "Lr1 Renko (Gengetsu)", 
     img: "SPOILER_gengetsu.webp", 
     tier: "EX", 
@@ -5534,6 +5553,20 @@ dataSet[dataSetVersion].characterData = [
         "Extremely selfish buffs",
         "Solo LW"
       ]
+    }
+  },
+  { 
+  name: "F1.-5 Reimu", 
+  img: "f1.-5 Reimu.webp", 
+  tier: "D", 
+  opts: { atk: true, b: true },
+  explanation: {
+    pros: [
+      "aoe nuke probably and has youkai anti"
+    ],
+    cons: [
+      "self everything no fucking anom dual scaling ass stats dual attribute die"
+    ]
     }
   },
   {
