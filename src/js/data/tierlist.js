@@ -212,6 +212,28 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "L0r Byakuren", 
+    img: "l0r byakuren.webp", 
+    tier: "EX", 
+    opts: { p: true, def: true },
+    explanation: {
+      pros: [
+        "John damage with 60% dmg to eff + res, atk anom, insane sk3 scale, self sufficient buffs all round and wide range of anti, aoe def down bis that makes her usable everywhere",
+        "Insane acc replenishment girl is NOT missing 😭, also good sp which basically makes any 4 para breakers usable for her "
+      ],
+      boons: [
+        "7/4 break albeit really slow + no good overflow so this is more situational for supporting yang hard units who are notoriously slower anyways"
+      ],
+      mixed: [
+        "She doesn't actually provide the atk anom herself so she will need support still",
+        "Reliance on a yang gengbot is somewhat high"
+      ],
+      dates: [
+        "Last updated 30/10/2026"
+      ]
+    }
+  },
+  { 
     name: "L80 Kasen", 
     img: "kassy.webp", 
     tier: "EX", 
@@ -934,6 +956,25 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "You can think of her as Ex Kosuzu that trades consistent AoE damage for more util and ease of use. (Kosuzu will tend to be more realistically usable due to killers and pairing)"
+      ]
+    }
+  },
+  { 
+    name: "Laa1 Marisa", 
+    img: "laa1 marisa.webp", 
+    tier: "S", 
+    opts: { tec: true, e: true },
+    explanation: {
+      pros: [
+        "7/7 multi-anom breaker with average support capability supported by her self fast + skill distribution",
+        "Decent Anti Range with okay damage, paired with a lot of Yang DEF Debuffs for G3"
+      ],
+      cons: [
+        "She has close to zero buffs in G3, mediocre buffs and the spread out triple self fast skill setup makes it rather difficult to utilize her damage role",
+        "Her Rank II is terrible, Yukkuri Sync is not good for DS standards"
+      ],
+      dates: [
+        "Last updated 30/10/2026"
       ]
     }
   },
