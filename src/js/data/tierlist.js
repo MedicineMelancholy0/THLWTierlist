@@ -1456,29 +1456,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "C3 Reimu",
-    img: "c3 reimu.webp",
-    tier: "A",
-    opts: { spd: true, e: true },
-    explanation: {
-      pros: [
-        "Self Sufficient in Yang & Agility Buffs Especially",
-        "Extremely Strong AoE Spellcard Damage, Decent LW Damage",
-        "Great Debuffs and Utility, reasonably good support."
-      ],
-      cons: [
-        "Lacks AoE Anomaly Breaks",
-        "Lacks Crit Atk"
-      ],
-      mixed: [
-        "Considerable Dmg to Eff Issues"
-      ],
-      extra: [
-        "@ except it's c3 cirno"
-      ]
-    }
-  },
-  {
     name: "Ce1 Flandre",
     img: "C3 prae2.webp",
     tier: "A",
@@ -1931,29 +1908,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A15& Seiran",
-    img: "a15& Seiran.webp",
-    tier: "A",
-    opts: { dest: true, ex: true },
-    explanation: {
-      pros: [
-        "Very Good LW Damage with Killers that hit more than one would expect",
-        "Overall Good Buffs"
-      ],
-      cons: [
-        "Very Inconsistent AoE Damage",
-        "Lacks Def Down or Accuracy"
-      ],
-      nitpicks: [
-        "Bad P Economy"
-      ],
-      mixed: [
-        "Breaks are a bit below Average",
-        "Killers are still Very Unconventional and Inconsistent aside from God"
-      ]
-    }
-  },
-  {
     name: "A15& Clownpiece",
     img: "a16& clownpiss.webp",
     tier: "A",
@@ -2358,6 +2312,29 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "C3 Reimu",
+    img: "c3 reimu.webp",
+    tier: "B",
+    opts: { spd: true, e: true },
+    explanation: {
+      pros: [
+        "Self Sufficient in Yang & Agility Buffs Especially",
+        "Extremely Strong AoE Spellcard Damage, Decent LW Damage",
+        "Great Debuffs and Utility, reasonably good support."
+      ],
+      cons: [
+        "Lacks AoE Anomaly Breaks",
+        "Lacks Crit Atk"
+      ],
+      mixed: [
+        "Considerable Dmg to Eff Issues"
+      ],
+      extra: [
+        "@ except it's c3 cirno"
+      ]
+    }
+  },
+  {
     name: "C3 Marisa",
     img: "c3 marisa.webp",
     tier: "B",
@@ -2573,6 +2550,33 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Her mega neutral nuke is the only thing keeping her in A since we value neutral damage a lot. This character needs a looot of support to actually work though. Her AoE is also quite good on killer but less reliable."
+      ]
+    }
+  },
+  {
+    name: "C8<< Kokoro",
+    img: "C8lessthanlessthan Kokoro.webp",
+    tier: "B",
+    opts: { tec: true, e: true },
+    explanation: {
+      pros: [
+        "Behold the TRUE secret hidden gengetsu clone who is actually able to replace gengetsu*",
+        "Actually good breaking ability. 7 aoe breaks with 1p Break (She's not Bp Remi but it's still decent)",
+        "Decent Supportive Abilities"
+      ],
+      boons: [
+        "The SURPERIOR Chunni Design. I'm sorry Koishi fans she just is."
+      ],
+      mixed: [
+        "Killer Range isn't Bad but isn't Super Amazing"
+      ],
+      cons: [
+        "Solo LW instantly kills her"
+      ],
+      extra: [
+        "THE (former) VILLAIN OF C TIER",
+        "RED for Gengetsu for she is the true gengetsu powercreep",
+        "she would be SS with an AOE Lw. Maybe low ex due to awful lw killer and awful lw pre effs. She is hilariously underseated due to her st lw. more than ex kosuzu is underseated due to needing gengetsu. In general theyll have the same buffing agi checks breaking etc. For usual play. HOWEVER, her aoe spell p0 is quite bad for what a st lw needs and she is noticeably worse than gengetsu for the nuking turn in duos giving her inconsistency. still, hilariously underseated. if our tierlist didnt hate st lws, shed be high A (aka, if we didnt anti bias her bc of st lw)"
       ]
     }
   },
@@ -2916,6 +2920,29 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "Has Zero Buffs in her Kit leading to Heavy Reliance on Teammates"
+      ]
+    }
+  },
+  {
+    name: "A15& Seiran",
+    img: "a15& Seiran.webp",
+    tier: "B",
+    opts: { dest: true, ex: true },
+    explanation: {
+      pros: [
+        "Very Good LW Damage with Killers that hit more than one would expect",
+        "Overall Good Buffs"
+      ],
+      cons: [
+        "Very Inconsistent AoE Damage",
+        "Lacks Def Down or Accuracy"
+      ],
+      nitpicks: [
+        "Bad P Economy"
+      ],
+      mixed: [
+        "Breaks are a bit below Average",
+        "Killers are still Very Unconventional and Inconsistent aside from God"
       ]
     }
   },
@@ -3372,33 +3399,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   // start of C
-  {
-    name: "C8<< Kokoro",
-    img: "C8lessthanlessthan Kokoro.webp",
-    tier: "C",
-    opts: { tec: true, e: true },
-    explanation: {
-      pros: [
-        "Behold the TRUE secret hidden gengetsu clone who is actually able to replace gengetsu*",
-        "Actually good breaking ability. 7 aoe breaks with 1p Break (She's not Bp Remi but it's still decent)",
-        "Decent Supportive Abilities"
-      ],
-      boons: [
-        "The SURPERIOR Chunni Design. I'm sorry Koishi fans she just is."
-      ],
-      mixed: [
-        "Killer Range isn't Bad but isn't Super Amazing"
-      ],
-      cons: [
-        "Solo LW instantly kills her"
-      ],
-      extra: [
-        "THE VILLAIN OF C TIER",
-        "RED for Gengetsu for she is the true gengetsu powercreep",
-        "she would be SS with an AOE Lw. Maybe low ex due to awful lw killer and awful lw pre effs. She is hilariously underseated due to her st lw. more than ex kosuzu is underseated due to needing gengetsu. In general theyll have the same buffing agi checks breaking etc. For usual play. HOWEVER, her aoe spell p0 is quite bad for what a st lw needs and she is noticeably worse than gengetsu for the nuking turn in duos giving her inconsistency. still, hilariously underseated. if our tierlist didnt hate st lws, shed be high A (aka, if we didnt anti bias her bc of st lw)"
-      ]
-    }
-  },
   {
     name: "C3 Kogasa",
     img: "c3 kogasa.webp",
@@ -3976,32 +3976,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A7& Lily",
-    img: "a7& lily.webp",
-    tier: "C",
-    opts: { dest: true, ex: true },
-    explanation: {
-      pros: [
-        "Youkai Killer",
-        "Acc Sufficient",
-        "Her Effects are Decent"
-      ],
-      mixed: [
-        "Killers Overlap with NLM Lines",
-        "Essentially a Mono Sun Unit",
-        "Needs a considerable amount of support"
-      ],
-      cons: [
-        "Shit Breaks",
-        "Shit Spellcard Dmg",
-        "0 Anomaly Interactions on Ability"
-      ],
-      nitpick: [
-        "Her Skill 3 has 1 self barr cleanse. Like why"
-      ]
-    }
-  },
-  {
     name: "A9& Medicine",
     img: "a9& medicine.webp",
     tier: "C",
@@ -4145,25 +4119,6 @@ dataSet[dataSetVersion].characterData = [
         "Divided Bullet Type Last Word",
         "Next to no self buffs aside from Agi, Lacks P (She wants P as a breaker)",
         "Low Innate Yang Def Down"
-      ]
-    }
-  },
-  {
-    name: "B3;6 Eirin",
-    img: "b3;6 eirin.webp",
-    tier: "C",
-    opts: { tec: true, b: true },
-    explanation: {
-      pros: [
-        "Good Self Buffs"
-      ],
-      mixed: [
-        "Lacks Yang Atk outside of Spells",
-        "Mid Anomaly Breaks",
-        "Devastatingly High LW and AoE Damage tied to Poor, Mismatched Killers and Reliance on Dmg to Eff"
-      ],
-      cons: [
-        "Weirdly Selfish Buffs"
       ]
     }
   },
@@ -4875,30 +4830,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "A6 Patchouli",
-    img: "a6 patchouli.webp",
-    tier: "C",
-    opts: { dest: true, a: true },
-    explanation: {
-      pros: [
-        "Nice Damage Potential",
-        "Decent AoE Spell",
-        "Healthy amounts of Crit Acc"
-      ],
-      mixed: [
-        "Support & Self Setup are very Card Reliant",
-        "Dated Anomaly Breaks"
-      ],
-      cons: [
-        "Very Mixed Elements",
-        "Bad Killers"
-      ],
-      extra: [
-        "EX tier in satisfying animations"
-      ]
-    }
-  },
-  {
     name: "A6 Sunny",
     img: "a6 sunny.webp",
     tier: "C",
@@ -5354,6 +5285,32 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "A7& Lily",
+    img: "a7& lily.webp",
+    tier: "D",
+    opts: { dest: true, ex: true },
+    explanation: {
+      pros: [
+        "Youkai Killer",
+        "Acc Sufficient",
+        "Her Effects are Decent"
+      ],
+      mixed: [
+        "Killers Overlap with NLM Lines",
+        "Essentially a Mono Sun Unit",
+        "Needs a considerable amount of support"
+      ],
+      cons: [
+        "Shit Breaks",
+        "Shit Spellcard Dmg",
+        "0 Anomaly Interactions on Ability"
+      ],
+      nitpick: [
+        "Her Skill 3 has 1 self barr cleanse. Like why"
+      ]
+    }
+  },
+  {
     name: "A7.5& Suika",
     img: "a7.5& suika.webp",
     tier: "D",
@@ -5559,6 +5516,25 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "——— A huge letdown"
+      ]
+    }
+  },
+  {
+    name: "B3;6 Eirin",
+    img: "b3;6 eirin.webp",
+    tier: "D",
+    opts: { tec: true, b: true },
+    explanation: {
+      pros: [
+        "Good Self Buffs"
+      ],
+      mixed: [
+        "Lacks Yang Atk outside of Spells",
+        "Mid Anomaly Breaks",
+        "Devastatingly High LW and AoE Damage tied to Poor, Mismatched Killers and Reliance on Dmg to Eff"
+      ],
+      cons: [
+        "Weirdly Selfish Buffs"
       ]
     }
   },
@@ -6280,6 +6256,30 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "A6 Patchouli",
+    img: "a6 patchouli.webp",
+    tier: "D",
+    opts: { dest: true, a: true },
+    explanation: {
+      pros: [
+        "Nice Damage Potential",
+        "Decent AoE Spell",
+        "Healthy amounts of Crit Acc"
+      ],
+      mixed: [
+        "Support & Self Setup are very Card Reliant",
+        "Dated Anomaly Breaks"
+      ],
+      cons: [
+        "Very Mixed Elements",
+        "Bad Killers"
+      ],
+      extra: [
+        "EX tier in satisfying animations"
+      ]
+    }
+  },
+  {
     name: "A6 Flandre",
     img: "a6 flandre.webp",
     tier: "D",
@@ -6741,22 +6741,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       cons: [
         "Rather Selfish Buffs"
-      ]
-    }
-  },
-  {
-    name: "A13 Miko",
-    img: "a13 miko.webp",
-    tier: "D",
-    opts: { def: true, a: true },
-    explanation: {
-      pros: [
-        "Pretty Good Yang Def Buffs for the Party and Yang Atk Buffs for herself"
-      ],
-      cons: [
-        "RNG Anoms Post SCs",
-        "Breaks are a complete mess",
-        "Unimpressive Killers with no Crit Atk to Speak of"
       ]
     }
   },
@@ -7676,6 +7660,22 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  {
+    name: "A13 Miko",
+    img: "a13 miko.webp",
+    tier: "E",
+    opts: { def: true, a: true },
+    explanation: {
+      pros: [
+        "Pretty Good Yang Def Buffs for the Party and Yang Atk Buffs for herself"
+      ],
+      cons: [
+        "RNG Anoms Post SCs",
+        "Breaks are a complete mess",
+        "Unimpressive Killers with no Crit Atk to Speak of"
+      ]
+    }
+  },
   { 
     name: "A18 Takane", 
     img: "A18 Takane.webp", 
@@ -8067,6 +8067,20 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "She has a good amount of main story farms and she's one of the best purple heart slaves in the game. Truly a queen of queens."
+      ]
+    }
+  },
+  { 
+    name: "L1 Yorihime", 
+    img: "l1 yorihime.webp", 
+    tier: "E", 
+    opts: { spd: true, g: true },
+    explanation: {
+      pros: [
+        "Aoe nuke maybe with high killer"
+      ],
+      cons: [
+        "wdym the 6 year old unit has nothing to offer except damage"
       ]
     }
   },
