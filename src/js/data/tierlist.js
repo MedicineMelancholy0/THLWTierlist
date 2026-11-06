@@ -563,7 +563,8 @@ dataSet[dataSetVersion].characterData = [
         "For some reasons, she breaks both Poison and Freeze, this isn't exactly useful but it exists"
       ],
       mixed: [
-        "Is a Freeze unit with only 6/3 breaks so it's noticeably harder for you to pair her with (even if she is this high)"
+        "Is a Freeze unit with only 6/3 breaks so it's noticeably harder for you to pair her with (even if she is this high)",
+        "LW Hits the entire game but her AoE is a lot more niche (still around 220 though)"
       ],
       cons: [
         "She lacks Yang Atk + Crit Atk after using her skills and her buffs are noticeably low in Gauge 2 and 3, making it more dependent on her teammate's buffs.",
