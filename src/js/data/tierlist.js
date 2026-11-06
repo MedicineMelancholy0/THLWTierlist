@@ -549,6 +549,31 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  { 
+    name: "C3< Mayumi", 
+    img: "fall mayumi.webp", 
+    tier: "SS", 
+    opts: { e: true, spd: true },
+    explanation: {
+      pros: [
+        "Great Damage with 75% Damage to Res, good anti range, no agi anom with self fast and most of all, all of her gimmicks being 3T making it really easy to use her as your usual nuker",
+        "Can slot debuff cards for her LW thanks to 80% Sharp 3T!! (holy powercreep)"
+      ],
+      boons: [
+        "For some reasons, she breaks both Poison and Freeze, this isn't exactly useful but it exists"
+      ],
+      mixed: [
+        "Is a Freeze unit with only 6/3 breaks so it's noticeably harder for you to pair her with (even if she is this high)"
+      ],
+      cons: [
+        "She lacks Yang Atk + Crit Atk after using her skills and her buffs are noticeably low in Gauge 2 and 3, making it more dependent on her teammate's buffs.",
+        "In general she lacks a utility role (looks at 6/3 breaks)."
+      ],
+      dates: [
+        "Last updated 6/11/2026"
+      ]
+    }
+  },
   {
     name: "C8<< Flandre",
     img: "c8 flandre.webp",
@@ -1969,6 +1994,30 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Low Def Down, even with her BIS, which can hurt her Damage due to Late Breaks and Mediocre Gauge 2 Buffs",
         "AoE only has Youkai Killer on 1 Line, with an overall low Damage Ceiling even with Full Overlap. This plus her reliance on Dmg to Eff and Mid G2 Buffs hurts her Damage Role as her AoE will sometimes just... fail."
+      ]
+    }
+  },
+  { 
+    name: "A16.8& Kasen", 
+    img: "a16.8& kasen.webp", 
+    tier: "A", 
+    opts: { ex: true, dest: true },
+    explanation: {
+      pros: [
+        "As of writing, the highest damage of any exfes across both lw and aoe supported by 3t damage buffs like ex kosuzu and decent-ish buffs between gauges thanks to mv shion ds card (tldr good damage role for a) also has  a debuff card for her last word"
+      ],
+      mixed: [
+        "Similar to Gun Nemuno her rank I buffs aren't actually that good. mostly on g2. really needs to be carried to work.",
+        "Killer range is kinda mediocre and her base crit acc isn't great either which can limit use"
+      ],
+      cons: [
+        "Has zero burn inflict on her skills meaning she can't even really be carried by cs2 requiring her to pair with a 7/7 like froyo, live remi, or yuyukata. In general she has 0 utility role."
+      ],
+      extra: [
+        "Very low A. Subject to drop at first signs of failure due to having very low utility or support and generally being overly reliant on 3 units."
+      ],
+      dates: [
+        "Last updated 6/11/2026"
       ]
     }
   },
