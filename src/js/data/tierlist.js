@@ -4468,29 +4468,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "E1 Sakuya",
-    img: "e1 sakuya.webp",
-    tier: "C",
-    opts: { dest: true, u: true },
-    explanation: {
-      pros: [
-        "Very High Damage Potential with High Crit Accuracy & Decent Killers",
-        "Self Sufficienct in Crit, Accuracy & P",
-        "Breaking Ability now up to par (good)"
-      ],
-      mixed: [
-        "Middling Self Setup in Yang Atk & Agility"
-      ],
-      cons: [
-        "Low Support",
-        "Sun locked"
-      ],
-      nitpick: [
-        "Lost her incinerate & charge in recent Buffs"
-      ]
-    }
-  },
-  {
     name: "E9 Remilia",
     img: "e9 remilia.webp",
     tier: "C",
@@ -5954,6 +5931,29 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Very similar to kannagi ngl"
+      ]
+    }
+  },
+  {
+    name: "E1 Sakuya",
+    img: "e1 sakuya.webp",
+    tier: "D",
+    opts: { dest: true, u: true },
+    explanation: {
+      pros: [
+        "Very High Damage Potential with High Crit Accuracy & Decent Killers",
+        "Self Sufficienct in Crit, Accuracy & P",
+        "Breaking Ability now up to par (good)"
+      ],
+      mixed: [
+        "Middling Self Setup in Yang Atk & Agility"
+      ],
+      cons: [
+        "Low Support",
+        "Sun locked"
+      ],
+      nitpick: [
+        "Lost her incinerate & charge in recent Buffs"
       ]
     }
   },
