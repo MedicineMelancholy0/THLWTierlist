@@ -8127,7 +8127,7 @@ dataSet[dataSetVersion].characterData = [
   },
   { 
     name: "L1 Shizuha", 
-    img: "l1 shizuuha.webp", 
+    img: "l1 shizuha.webp", 
     tier: "E", 
     opts: { supp: true, g: true },
     explanation: {
