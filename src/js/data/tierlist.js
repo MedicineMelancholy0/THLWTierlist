@@ -314,29 +314,6 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
-  { 
-    name: "C5> Miko", 
-    img: "c5 miko.webp", 
-    tier: "EX", 
-    opts: { dest: true, e: true },
-    explanation: {
-      pros: [
-        "Second highest damage in the game lw, CURRENT HIGHEST ON AOE FULL KILLER (until lootori gets her bis anyways)",
-        "Damage is complimented by her having a surprisingly solid buff count throughout her kit avoiding the large issues logwako and looshi (aoe) have. Making her absurd damage very practical",
-        "In addition to her buffing, which is pretty solid for herself and very above average for party, she has proper 4 break aoe and 3 inflict, allowing her to be used both as the damage bot in teams like an l0 and the supportive unit for poison comps",
-        "Lw nlm lets her hit above nyshi...off killer...what"
-      ],
-      cons: [
-        "AoE p0 killers are lacking for her to reach said damage bot peaks, this can be mitigated by attempting to abuse the nlm. But it is a flaw that inhibits her use cases as the damage bot like she wants to do",
-        "Due to the lack of def down and lack of acc, the most common means of shafting, she can very much \"fraud out\" in a similar vain to how f1mors was perceived after release...only...worse. to the point of being an issue.",
-        "worst theme in the game?"
-      ],
-      extra: [
-        "Tldr: a unit with such silly rank ii, scaling, and raw damage gets to keep their raw neutral damage. However, it's only 7mil. A lot to be sure! But not...silly like her eff dmg is.",
-        "The final con is a genuine concern to remember before calling her undertiered, no other character in ex has to deal with both of these issues and they become very prominent very quickly unless the stage is designed to do neither def up nor acc shaft. These issues CAN be fixed by much easier than normal though, due to the sheer damage output. To the point something silly like mv ran can work if 5 actions can work."
-      ]
-    }
-  },
   // start of SS
   { 
     name: "L10.1 Flandre", 
@@ -352,6 +329,34 @@ dataSet[dataSetVersion].characterData = [
         "Will tend to want more Yin Atk Buffs in Practice",
         "Killers, while not bad, will tend to leave more to be desired and her high innate Crit Acc will lead to much Damage Variance outside Killer",
         "Having a Quick skill on a Party P skill will lead to whatever damage she has on the gauge it's used on to be usually ass and the Quick is essentially a debuff"
+      ]
+    }
+  },
+  { 
+    name: "C3< Megumu", 
+    img: "fall megumu.webp", 
+    tier: "SS", 
+    opts: { e: true, dest: true },
+    explanation: {
+      pros: [
+        "Universal Damage with 50% Dmg to Res (again), good anti range, no outspeeding mechanic and 3T gimmick makes it extremely convenient for her to fulfill the damage role.",
+        "She has consistent offensive buffs with really good NLM in her nuking spell which makes it truly universal even with (some) anti change scenarios"
+      ],
+      boons: [
+        "Similar to Mayumi, for some reasons has both Freeze and Poison break that doesn't change anything from her usage."
+      ],
+      nitpick: [
+        "Her SC2 genuinely has no use despite also being an AoE spell"
+      ],
+      mixed: [
+        "Her Rank 2 gimmicks aren't really impactful for her use case but it's generally fine with just the base stuffs and you can utilize this to manage skills at will)",
+        "Kinda lack scaling buffs which hurts her damage role a bit"
+      ],
+      cons: [
+        "No Def Down, No Accuracy, No Utility (6/3 breaks anyone? would be EX EASILY with 7), not really doing anything much else other than nuking and it might hinder her G3 nuke without assistance"
+      ],
+      dates: [
+        "Last updated 13/11/2026"
       ]
     }
   },
@@ -402,6 +407,29 @@ dataSet[dataSetVersion].characterData = [
         "If yin = true, use gengetsu, accept no substitute.",
         "Many many characters require gengetsu to exist simply due to her ability to break debuff AND fix their flaws with her buffs AND still nuke in effective content. Just spam aoe spells and save her own burn skill for second gauge.",
         "Solos 4 Ele EX"
+      ]
+    }
+  },
+  { 
+    name: "C5> Miko", 
+    img: "c5 miko.webp", 
+    tier: "SS", 
+    opts: { dest: true, e: true },
+    explanation: {
+      pros: [
+        "Second highest damage in the game lw, CURRENT HIGHEST ON AOE FULL KILLER (until lootori gets her bis anyways)",
+        "Damage is complimented by her having a surprisingly solid buff count throughout her kit avoiding the large issues logwako and looshi (aoe) have. Making her absurd damage very practical",
+        "In addition to her buffing, which is pretty solid for herself and very above average for party, she has proper 4 break aoe and 3 inflict, allowing her to be used both as the damage bot in teams like an l0 and the supportive unit for poison comps",
+        "Lw nlm lets her hit above nyshi...off killer...what"
+      ],
+      cons: [
+        "AoE p0 killers are lacking for her to reach said damage bot peaks, this can be mitigated by attempting to abuse the nlm. But it is a flaw that inhibits her use cases as the damage bot like she wants to do",
+        "Due to the lack of def down and lack of acc, the most common means of shafting, she can very much \"fraud out\" in a similar vain to how f1mors was perceived after release...only...worse. to the point of being an issue.",
+        "worst theme in the game?"
+      ],
+      extra: [
+        "Tldr: a unit with such silly rank ii, scaling, and raw damage gets to keep their raw neutral damage. However, it's only 7mil. A lot to be sure! But not...silly like her eff dmg is.",
+        "The final con is a genuine concern to remember before calling her undertiered, no other character in ex has to deal with both of these issues and they become very prominent very quickly unless the stage is designed to do neither def up nor acc shaft. These issues CAN be fixed by much easier than normal though, due to the sheer damage output. To the point something silly like mv ran can work if 5 actions can work."
       ]
     }
   },
@@ -646,10 +674,30 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
+  {
+    name: "C3>> Yorihime",
+    img: "c3 yorihime.webp",
+    tier: "SS",
+    opts: { e: true, dest: true },
+    explanation: {
+      pros: [
+        "AoE Nuke + LW Nuke gives her a pretty straightforward gameplan",
+        "Good Gimmicks pair well to make her AoE nuke viable."
+      ],
+      cons: [
+        "Utility is Below Average for her tier in terms of Breaks, P, and especially Acc which she has 0 of.",
+        "Really wants more Yin Atk and Crit Atk buffs to maximize dmg output. Also completely lacks def down."
+      ],
+      extra: [
+        "Ultimately this character is a very generic AoE nuke unit. Lacks the crazy dmg to res or util like her sister, ending up good but still kinda mid."
+      ]
+    }
+  },
+  // start of S
   { 
     name: "L80 Aya", 
     img: "l80 aya.webp", 
-    tier: "SS", 
+    tier: "S", 
     opts: { r: true, spd: true },
     explanation: {
       pros: [
@@ -673,26 +721,6 @@ dataSet[dataSetVersion].characterData = [
       ]
     }
   },
-  {
-    name: "C3>> Yorihime",
-    img: "c3 yorihime.webp",
-    tier: "SS",
-    opts: { e: true, dest: true },
-    explanation: {
-      pros: [
-        "AoE Nuke + LW Nuke gives her a pretty straightforward gameplan",
-        "Good Gimmicks pair well to make her AoE nuke viable."
-      ],
-      cons: [
-        "Utility is Below Average for her tier in terms of Breaks, P, and especially Acc which she has 0 of.",
-        "Really wants more Yin Atk and Crit Atk buffs to maximize dmg output. Also completely lacks def down."
-      ],
-      extra: [
-        "Ultimately this character is a very generic AoE nuke unit. Lacks the crazy dmg to res or util like her sister, ending up good but still kinda mid."
-      ]
-    }
-  },
-  // start of S
   { 
     name: "A16& Okina", 
     img: "a16& okina.webp", 
@@ -867,6 +895,25 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "Laa1 Marisa", 
+    img: "laa1 marisa.webp", 
+    tier: "S", 
+    opts: { tec: true, e: true },
+    explanation: {
+      pros: [
+        "7/7 multi-anom breaker with average support capability supported by her self fast + skill distribution",
+        "Decent Anti Range with okay damage, paired with a lot of Yang DEF Debuffs for G3"
+      ],
+      cons: [
+        "She has close to zero buffs in G3, mediocre buffs and the spread out triple self fast skill setup makes it rather difficult to utilize her damage role",
+        "Her Rank II is terrible, Yukkuri Sync is not good for DS standards"
+      ],
+      dates: [
+        "Last updated 30/10/2026"
+      ]
+    }
+  },
+  { 
     name: "Lr Aya", 
     img: "zenki.webp", 
     tier: "S", 
@@ -956,25 +1003,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Gets a lot from the P Luck Buff"
-      ]
-    }
-  },
-  { 
-    name: "Laa1 Marisa", 
-    img: "laa1 marisa.webp", 
-    tier: "S", 
-    opts: { tec: true, e: true },
-    explanation: {
-      pros: [
-        "7/7 multi-anom breaker with average support capability supported by her self fast + skill distribution",
-        "Decent Anti Range with okay damage, paired with a lot of Yang DEF Debuffs for G3"
-      ],
-      cons: [
-        "She has close to zero buffs in G3, mediocre buffs and the spread out triple self fast skill setup makes it rather difficult to utilize her damage role",
-        "Her Rank II is terrible, Yukkuri Sync is not good for DS standards"
-      ],
-      dates: [
-        "Last updated 30/10/2026"
       ]
     }
   },
@@ -3521,32 +3549,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "C3 Remilia",
-    img: "c3 remilia.webp",
-    tier: "C",
-    opts: { def: true, e: true },
-    explanation: {
-      pros: [
-        "High Damage Potential",
-        "Great Breaking Capability"
-      ],
-      boons: [
-        "Her stat distribution is very minmaxed"
-      ],
-      mixed: [
-        "Killers are a Mixed Bag"
-      ],
-      cons: [
-        "Lacking in Atk Self Setup or Support",
-        "No Accuracy in her Kit",
-        "Often times nerfed or lacks places for use in content"
-      ],
-      nitpick: [
-        "Bis isn't a bis for no reason"
-      ]
-    }
-  },
-  {
     name: "C3 Kasen",
     img: "c3 kasen seal.webp",
     tier: "C",
@@ -5052,6 +5054,32 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Aa! Damegami-sama!"
+      ]
+    }
+  },
+  {
+    name: "C3 Remilia",
+    img: "c3 remilia.webp",
+    tier: "D",
+    opts: { def: true, e: true },
+    explanation: {
+      pros: [
+        "High Damage Potential",
+        "Great Breaking Capability"
+      ],
+      boons: [
+        "Her stat distribution is very minmaxed"
+      ],
+      mixed: [
+        "Killers are a Mixed Bag"
+      ],
+      cons: [
+        "Lacking in Atk Self Setup or Support",
+        "No Accuracy in her Kit",
+        "Often times nerfed or lacks places for use in content"
+      ],
+      nitpick: [
+        "Bis isn't a bis for no reason"
       ]
     }
   },
@@ -8094,6 +8122,21 @@ dataSet[dataSetVersion].characterData = [
       cons: [
         "Killers are pretty Mid",
         "Lacks Atk or Acc Buffs, needs Support"
+      ]
+    }
+  },
+  { 
+    name: "L1 Shizuha", 
+    img: "l1 shizuuha.webp", 
+    tier: "E", 
+    opts: { supp: true, g: true },
+    explanation: {
+      pros: [
+        "HUGE party 1.5p on rein",
+        "AoE and LW can nuke Oni killer stages unironically"
+      ],
+      cons: [
+        "0/10 in anything else in her kit you know the drill"
       ]
     }
   },
