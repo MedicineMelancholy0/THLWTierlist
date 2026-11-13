@@ -454,6 +454,32 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "C3< Mayumi", 
+    img: "fall mayumi.webp", 
+    tier: "SS", 
+    opts: { e: true, spd: true },
+    explanation: {
+      pros: [
+        "Great Damage with 75% Damage to Res, good anti range, no agi anom with self fast and most of all, all of her gimmicks being 3T making it really easy to use her as your usual nuker",
+        "Can slot debuff cards for her LW thanks to 80% Sharp 3T!! (holy powercreep)"
+      ],
+      boons: [
+        "For some reasons, she breaks both Poison and Freeze, this isn't exactly useful but it exists"
+      ],
+      mixed: [
+        "Is a Freeze unit with only 6/3 breaks so it's noticeably harder for you to pair her with (even if she is this high)",
+        "LW Hits the entire game but her AoE is a lot more niche (still around 220 though)"
+      ],
+      cons: [
+        "She lacks Yang Atk + Crit Atk after using her skills and her buffs are noticeably low in Gauge 2 and 3, making it more dependent on her teammate's buffs.",
+        "In general she lacks a utility role (looks at 6/3 breaks)."
+      ],
+      dates: [
+        "Last updated 6/11/2026"
+      ]
+    }
+  },
+  { 
     name: "Cf1# Koishi", 
     img: "cf1 koishi.webp", 
     tier: "SS", 
@@ -574,32 +600,6 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "NOTABLE PAIRINGS (Not included in tiering): Mv Reimu, Susak/Sushimyon, L80 Yuyuko (Duh!), C3 Cirno, Mugetsu"
-      ]
-    }
-  },
-  { 
-    name: "C3< Mayumi", 
-    img: "fall mayumi.webp", 
-    tier: "SS", 
-    opts: { e: true, spd: true },
-    explanation: {
-      pros: [
-        "Great Damage with 75% Damage to Res, good anti range, no agi anom with self fast and most of all, all of her gimmicks being 3T making it really easy to use her as your usual nuker",
-        "Can slot debuff cards for her LW thanks to 80% Sharp 3T!! (holy powercreep)"
-      ],
-      boons: [
-        "For some reasons, she breaks both Poison and Freeze, this isn't exactly useful but it exists"
-      ],
-      mixed: [
-        "Is a Freeze unit with only 6/3 breaks so it's noticeably harder for you to pair her with (even if she is this high)",
-        "LW Hits the entire game but her AoE is a lot more niche (still around 220 though)"
-      ],
-      cons: [
-        "She lacks Yang Atk + Crit Atk after using her skills and her buffs are noticeably low in Gauge 2 and 3, making it more dependent on her teammate's buffs.",
-        "In general she lacks a utility role (looks at 6/3 breaks)."
-      ],
-      dates: [
-        "Last updated 6/11/2026"
       ]
     }
   },
