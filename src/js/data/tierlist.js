@@ -333,6 +333,32 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   { 
+    name: "Lm1 Maribel (Yumemi)", 
+    img: "lm1 yumemi.webp", 
+    tier: "SS", 
+    opts: { r: true, atk: true },
+    explanation: {
+      pros: [
+        "Universal damage unit with damage to res, insane self sufficient buffs (reaching 10 yang atk + crit atk g1/g2) thanks to atk anoms + perma buffing and further amplified by early anomaly breaking in her AoE and def down in her BiS for LW.",
+        "Due to her self sufficient buffs, her more preferred supporter only needs to give agi + acc so any 7/4 units work, even yin units such as bl4, froyo."
+      ],
+      mixed: [
+        "Skill 2 has self 3 perma agi which is a condition that needs to be worked around. If using it in turn 1, you're locked behind a supporter that can outspeed via agi anoms or self fast and you'll lose out on the early freeze break. If using it in turn 2, you would want a supporter that can cover her buffs for g1 still. HOWEVER her skills 2 (and 3) are pretty disposable all things considered so this shouldn't be that bad a problem."
+      ],
+      cons: [
+        "Has next to no accuracy in her entire kit. Also lacks Agility buffs",
+        "AoE killer is uhm... kinda mediocre with only 2 usable tags. That's it. This might pose to be a really big problem for her later on because this aoe killer is really not that good."
+      ],
+      extra: [
+        "Just use yumors, reso counts as 2 people, acc + agi support every turn, self fast 3 skills, and def + crit def down in sk3... yikes",
+        "Also this tier is very theoretical based on her numbers because her damage calcs are awesome (her AoE is basically l0 tier) and her buffs are great in spite of her kit being... itself. Stay tuned for any potential updates."
+      ],
+      dates: [
+        "Last updated 20/11/2026"
+      ]
+    }
+  },
+  { 
     name: "C3< Megumu", 
     img: "fall megumu.webp", 
     tier: "SS", 
@@ -3218,6 +3244,21 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "Usage: Her AoE is 75% of her value as it has found pres much like bp flan, plus it can break. Note this AoE is very backloaded and the Found pres is only on line 6"
+      ]
+    }
+  },
+  {
+    name: "S2.-5 Satori",
+    img: "s2.-5 satori.webp",
+    tier: "B",
+    opts: { heal: true, b: true },
+    explanation: {
+      pros: [
+        "Atk Anoms and decent buffs allows her to have buffs coverage consistently through gauges, making her damage consistent to use"
+      ],
+      cons: [
+        "No Anom inflict outside of LW (which is ass)",
+        "Her damage is still low"
       ]
     }
   },
