@@ -2536,27 +2536,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "C5= Mokou",
-    img: "c5 mokou.webp",
-    tier: "B",
-    opts: { atk: true, e: true },
-    explanation: {
-      pros: [
-        "She has the mv sanae skill but better (Free 50% Dmg Up)",
-        "Breaking is Decent",
-        "Praecard Beneficiary"
-      ],
-      cons: [
-        "Disjointed LW bullet types",
-        "Shit Killers cull usefulness immediately, extreme killer bottleneck",
-        "Awful support, pretty much just agi scattered everywhere."
-      ],
-      nitpicks: [
-        "THAT EVIL 70% FREEZE INLINE THAT I HATE"
-      ]
-    }
-  },
-  {
     name: "C5> Koishi",
     img: "PANK KOOSH.webp",
     tier: "B",
@@ -3632,6 +3611,27 @@ dataSet[dataSetVersion].characterData = [
       ],
       extra: [
         "@"
+      ]
+    }
+  },
+  {
+    name: "C5= Mokou",
+    img: "c5 mokou.webp",
+    tier: "C",
+    opts: { atk: true, e: true },
+    explanation: {
+      pros: [
+        "She has the mv sanae skill but better (Free 50% Dmg Up)",
+        "Breaking is Decent",
+        "Praecard Beneficiary"
+      ],
+      cons: [
+        "Disjointed LW bullet types",
+        "Shit Killers cull usefulness immediately, extreme killer bottleneck",
+        "Awful support, pretty much just agi scattered everywhere."
+      ],
+      nitpicks: [
+        "THAT EVIL 70% FREEZE INLINE THAT I HATE"
       ]
     }
   },
