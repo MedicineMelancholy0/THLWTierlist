@@ -514,6 +514,10 @@ body.small-icons .expl {
   box-sizing: border-box;
 }
 
+:root:has(#mode_light:checked) .cname {
+  color: #ffff;
+}
+
 #EX .cname {
   background-color: rgba(333, 10, 91, 0.7);
 }
